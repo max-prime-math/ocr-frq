@@ -66,6 +66,22 @@ def _normalise_common_ocr(text: str) -> str:
     return text
 
 
+def _normalise_rubric_artifacts(text: str) -> str:
+    text = re.sub(r"([A-Za-z])\$(.+?)\$(?=[A-Za-z])", r"\1 $\2$ ", text)
+    text = re.sub(r"\\\s*([{}])", r"\1", text)
+    text = re.sub(r"\\\s*/\s*\\", " / ", text)
+    text = re.sub(r"\\\s*/", " / ", text)
+    text = re.sub(r"/\s*\\", " / ", text)
+    text = re.sub(r"([A-Za-z])\$(?=[A-Za-z0-9(])", r"\1 $", text)
+    text = re.sub(r"(?<=[0-9A-Za-z)])\$([A-Za-z])", r"$ \1", text)
+    text = re.sub(r"(?<=\w)\$(?=-)", "", text)
+    text = re.sub(r"(?<=\))\$(?=\d)", " $", text)
+    text = re.sub(r"(?<=\})(?=\([a-z]\))", "\n", text)
+    text = re.sub(r"\$\s*([0-9]+\s*:\s*\{)", r"\1", text)
+    text = re.sub(r"(\})\$", r"\1", text)
+    return text
+
+
 def _clean_math_span(span: str) -> str:
     span = _normalise_common_ocr(span)
 
@@ -90,9 +106,11 @@ def _clean_math_span(span: str) -> str:
     return span
 
 
-def _clean_math_spans(text: str) -> str:
+def _clean_math_spans(text: str, rubric_mode: bool = False) -> str:
     def replace_math(match: re.Match[str]) -> str:
         inner = _clean_math_span(match.group(1))
+        if rubric_mode and (":" in inner or "/" in inner):
+            return inner
         if "/" in inner or any(keyword in inner for keyword in _DISPLAY_MATH_KEYWORDS):
             return f"#align(center)[$ {inner} $]"
         return f"${inner}$"
@@ -105,6 +123,20 @@ def render_text(text: str) -> str:
     t = _strip_control_chars(text)
     t = _normalise_common_ocr(t)
     t = _clean_math_spans(t)
+    t = _convert_newlines(t)
+    return t.strip()
+
+
+def render_rubric_text(text: str) -> str:
+    """Prepare grading-scheme text with extra cleanup for malformed rubric notation."""
+    t = _strip_control_chars(text)
+    t = _normalise_common_ocr(t)
+    t = _normalise_rubric_artifacts(t)
+    t = _clean_math_spans(t, rubric_mode=True)
+    t = t.replace("$", "")
+    t = re.sub(r"(?<=\})(?=\([a-z]\))", "\n", t)
+    t = re.sub(r"\s*/\s*", " / ", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
     t = _convert_newlines(t)
     return t.strip()
 
@@ -322,13 +354,18 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
 
     rubric = extraction.get("grading_scheme") or ""
     lines.append("#rubric-block[")
-    for line in _render_section_content(
-        rubric,
-        rubric_tables,
-        rubric_figures,
-        placeholder="_[Grading scheme not extracted]_",
-    ):
-        lines.append(line)
+    if rubric:
+        lines.append(render_rubric_text(rubric))
+        for table in rubric_tables:
+            lines.append("")
+            lines.append(_render_table(table))
+        for fig in rubric_figures:
+            rendered = _render_figure(fig)
+            if rendered:
+                lines.append("")
+                lines.append(rendered)
+    else:
+        lines.append("_[Grading scheme not extracted]_")
     lines.append("]")
     return "\n".join(lines)
 
