@@ -7,6 +7,7 @@ Run with:
 
 import io
 import os
+import subprocess
 import sys
 import tempfile
 import zipfile
@@ -23,6 +24,31 @@ from exam_extractor import extract_exam_page
 from figure_extract import materialise_figures
 from typst_gen import build_document
 from renderer import page_count, render_page, save_temp_image
+
+# ---------------------------------------------------------------------------
+# Version
+# ---------------------------------------------------------------------------
+
+def _resolve_app_version() -> str:
+    """Get version from environment or git commit SHA."""
+    override = os.environ.get("OCR_FRQ_APP_VERSION", "").strip()
+    if override:
+        return override
+
+    repo_root = Path(__file__).parent
+    try:
+        sha = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=repo_root,
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+    except Exception:
+        sha = "unknown"
+    return sha
+
+
+APP_VERSION = _resolve_app_version()
 
 # ---------------------------------------------------------------------------
 # Pricing
@@ -129,7 +155,7 @@ for key, default in {
 
 with st.sidebar:
     st.title("OCR-FRQ")
-    st.caption("Free-response PDFs → Typst")
+    st.caption(f"Free-response PDFs → Typst · v{APP_VERSION}")
     st.divider()
 
     api_key = st.text_input(
