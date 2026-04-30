@@ -77,6 +77,13 @@ def test_render_text_expands_digit_prefixed_kx():
     assert "3 x^2" in rendered
 
 
+def test_build_document_repairs_trailing_unit_exponent():
+    doc = build_document([_page_result(extraction=_frq(
+        question="(a) $a(7.5) = v'(7.5) = (v(8) - v(7))/(8 - 7) = -0.1$ miles/minute$^2$"
+    ))])
+    assert '$text("miles/minute")^2$' in doc
+
+
 def test_question_parts_render_as_native_enum():
     block = render_frq_block(_frq(question="(a) Find $f(x)$.\n(b) Explain the result."))
     assert '#enum(numbering: "(a)"' in block

@@ -7,6 +7,9 @@ question, solution, and grading scheme sections for each FRQ page.
 
 import logging
 import re
+import subprocess
+import tempfile
+from pathlib import Path
 from typing import Optional
 
 from models import FRQExtraction
@@ -226,6 +229,60 @@ def render_rubric_text(text: str) -> str:
     t = re.sub(r"[ \t]{2,}", " ", t)
     t = _convert_newlines(t)
     return t.strip()
+
+
+def _repair_typst_document(text: str) -> str:
+    """Repair common invalid Typst patterns without another API call."""
+
+    def repair_trailing_unit_power(match: re.Match[str]) -> str:
+        math_block = match.group(1)
+        unit = " ".join(match.group(2).split())
+        exponent = match.group(3).strip()
+        return f'{math_block} $text("{unit}")^{exponent}$'
+
+    def repair_inline_unit_power(match: re.Match[str]) -> str:
+        math_span = match.group(1)
+        unit = " ".join(match.group(2).split())
+        exponent = match.group(3).strip()
+        return f'{math_span} $text("{unit}")^{exponent}$'
+
+    text = re.sub(
+        r'(#align\(center\)\[\$.*?\$\])\s+([A-Za-z][A-Za-z0-9/ \-]+?)\$\^([^$]+)\$',
+        repair_trailing_unit_power,
+        text,
+        flags=re.DOTALL,
+    )
+    text = re.sub(
+        r'(\$[^$\n]+\$)\s+([A-Za-z][A-Za-z0-9/ \-]+?)\$\^([^$]+)\$',
+        repair_inline_unit_power,
+        text,
+    )
+    text = re.sub(r'(?<!\$)\$\^([^$]+)\$', lambda m: f'#super[{m.group(1).strip()}]', text)
+    text = re.sub(r'\$([A-Za-z][A-Za-z0-9/ \-]+)\$', lambda m: m.group(1) if " " in m.group(1) or "/" in m.group(1) else m.group(0), text)
+    return text
+
+
+def _validate_typst_document(text: str) -> Optional[str]:
+    """Compile-check generated Typst and return stderr on failure."""
+    try:
+        with tempfile.TemporaryDirectory(prefix="ocr-frq-typst-") as tmpdir:
+            tmp_path = Path(tmpdir)
+            typ_path = tmp_path / "output.typ"
+            pdf_path = tmp_path / "output.pdf"
+            typ_path.write_text(text, encoding="utf-8")
+            result = subprocess.run(
+                ["typst", "compile", str(typ_path), str(pdf_path)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if result.returncode == 0:
+                return None
+            return (result.stderr or result.stdout or "Typst compile failed").strip()
+    except FileNotFoundError:
+        return None
+    except Exception as exc:
+        return f"Typst validation failed unexpectedly: {exc}"
 
 
 def _split_top_level_parts(text: str) -> Optional[list[tuple[str, str]]]:
@@ -490,4 +547,10 @@ def build_document(
         blocks.append("#line(length: 100%, stroke: 0.5pt)\n\n#v(12pt)")
 
     body = "\n\n".join(blocks)
-    return _PREAMBLE + body + "\n"
+    document = _PREAMBLE + body + "\n"
+    document = _repair_typst_document(document)
+    validation_error = _validate_typst_document(document)
+    if validation_error:
+        logger.warning("Typst validation failed after local repair:\n%s", validation_error)
+        document += f"\n// Typst validation warning:\n// {validation_error.replace(chr(10), chr(10) + '// ')}\n"
+    return document
