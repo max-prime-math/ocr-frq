@@ -28,6 +28,7 @@ _BROKEN_TOKENS = (
     ("d ot", "dot"),
 )
 _FUNCTION_NAMES = ("sin", "cos", "tan", "log", "ln", "exp", "lim", "dif", "dot")
+_TEXT_SENTINEL = "\x00\x01"
 
 
 def _strip_control_chars(text: str) -> str:
@@ -96,12 +97,39 @@ def _clean_math_span(span: str) -> str:
 
     # Convert LaTeX-style text{...} fragments to Typst math text.
     span = re.sub(r"\\?text\s*\{([^{}]*)\}", lambda m: f'text("{m.group(1).strip()}")', span)
+    span = re.sub(r'"([^"]+)"', lambda m: f'text("{m.group(1)}")', span)
     span = re.sub(r"(\^)\{([a-zA-Z0-9])\}", r"\1\2", span)
     span = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", span)
     span = re.sub(r"\b([a-z])([a-z](?:\^|_))", r"\1 \2", span)
     span = re.sub(r"\b([a-eg-z])([xyt])\b", r"\1 \2", span)
     span = re.sub(r"\b([fgh])\s+([a-z])\b", r"\1(\2)", span)
     span = re.sub(r"\b([fgh])([a-z])\b", r"\1(\2)", span)
+
+    protected: list[str] = []
+
+    def protect_text(match: re.Match[str]) -> str:
+        protected.append(match.group(0))
+        return f"{_TEXT_SENTINEL}{len(protected) - 1}\x00"
+
+    span = re.sub(r'text\(".*?"\)', protect_text, span)
+
+    prose_pattern = re.compile(r"\b[A-Za-z][A-Za-z'-]*(?:\s+[A-Za-z][A-Za-z'-]*)*\b")
+
+    def wrap_prose(match: re.Match[str]) -> str:
+        phrase = match.group(0)
+        words = phrase.split()
+        if all(word in typst_math or len(word) == 1 for word in words):
+            return phrase
+        if len(words) == 1 and "'" in phrase:
+            return phrase
+        return f'text("{phrase}")'
+
+    span = prose_pattern.sub(wrap_prose, span)
+
+    def restore_text(match: re.Match[str]) -> str:
+        return protected[int(match.group(1))]
+
+    span = re.sub(rf"{re.escape(_TEXT_SENTINEL)}(\d+)\x00", restore_text, span)
     span = re.sub(r"[ \t]{2,}", " ", span).strip()
     return span
 
