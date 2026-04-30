@@ -46,6 +46,7 @@ def _convert_newlines(text: str) -> str:
 
 def _normalise_common_ocr(text: str) -> str:
     text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"\\{2,}(?=(frac|text|cdot|times|div|sin|cos|tan|log|ln|exp|lim|dif)\b)", r"\\", text)
     text = text.replace(r"\cdot", "dot")
     text = text.replace(r"\times", "times")
     text = text.replace(r"\div", "div")
@@ -83,8 +84,66 @@ def _normalise_rubric_artifacts(text: str) -> str:
     return text
 
 
+def _extract_braced(text: str, start: int) -> tuple[str | None, int]:
+    if start >= len(text) or text[start] != "{":
+        return None, start
+    depth = 0
+    chars: list[str] = []
+    for idx in range(start, len(text)):
+        ch = text[idx]
+        if ch == "{":
+            if depth > 0:
+                chars.append(ch)
+            depth += 1
+            continue
+        if ch == "}":
+            depth -= 1
+            if depth == 0:
+                return "".join(chars), idx + 1
+            chars.append(ch)
+            continue
+        chars.append(ch)
+    return None, start
+
+
+def _replace_latex_frac(text: str) -> str:
+    prefixes = (r"\frac", "frac")
+    out: list[str] = []
+    i = 0
+    while i < len(text):
+        matched = None
+        for prefix in prefixes:
+            if text.startswith(prefix, i):
+                matched = prefix
+                break
+        if matched is None:
+            out.append(text[i])
+            i += 1
+            continue
+
+        j = i + len(matched)
+        while j < len(text) and text[j].isspace():
+            j += 1
+        numer, j2 = _extract_braced(text, j)
+        if numer is None:
+            out.append(text[i])
+            i += 1
+            continue
+        while j2 < len(text) and text[j2].isspace():
+            j2 += 1
+        denom, j3 = _extract_braced(text, j2)
+        if denom is None:
+            out.append(text[i])
+            i += 1
+            continue
+        out.append(f"(({_replace_latex_frac(numer)})/({_replace_latex_frac(denom)}))")
+        i = j3
+    return "".join(out)
+
+
 def _clean_math_span(span: str) -> str:
     span = _normalise_common_ocr(span)
+    span = _replace_latex_frac(span)
 
     typst_math = {
         "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta", "iota", "kappa",
