@@ -445,6 +445,10 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
                     if qnum in exam_by_qnum:
                         exam_q = exam_by_qnum[qnum]
                         ext["question"] = exam_q["question"]
+                        # Merge metadata from exam: unit, section, calculator
+                        ext["unit"] = exam_q.get("unit")
+                        ext["section"] = exam_q.get("section")
+                        ext["calculator"] = exam_q.get("calculator")
                         # Merge figures: exam question figures + SG solution/rubric figures
                         exam_figs = [dict(f, section="question") for f in exam_q.get("figures", [])]
                         sg_figs = ext.get("figures", [])

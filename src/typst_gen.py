@@ -147,13 +147,32 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
     """Render one FRQ extraction as a Typst block. Returns a multi-line string."""
     lines: list[str] = []
 
-    qnum = extraction.get("question_number")
-    heading = f"Question {qnum}" if qnum is not None else "Question"
-    lines.append(f"= {heading}")
+    lines.append("= Question")
     lines.append("")
 
+    # Build comment with metadata
+    comment_parts = []
     if source:
-        lines.append(f"// {source}")
+        comment_parts.append(f"source: {source}")
+
+    qnum = extraction.get("question_number")
+    if qnum is not None:
+        comment_parts.append(f"question {qnum}")
+
+    calculator = extraction.get("calculator")
+    if calculator:
+        comment_parts.append(calculator)
+
+    unit = extraction.get("unit")
+    if unit:
+        comment_parts.append(unit)
+
+    section = extraction.get("section")
+    if section:
+        comment_parts.append(section)
+
+    if comment_parts:
+        lines.append("// " + " | ".join(comment_parts))
         lines.append("")
 
     if extraction.get("flagged"):

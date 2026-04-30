@@ -80,6 +80,14 @@ Extraction rules:
 - Return the full question text including all sub-parts.
 - Preserve the structure of questions (sub-parts a, b, c, etc.)
 - A page with 2 questions should return 2 question entries.
+
+Unit and section identification:
+- Identify the AP Calculus unit this question belongs to (e.g., "Unit 1: Limits and Continuity",
+  "Unit 2: Differentiation", etc.). Use the full official title.
+- Identify the section: "Part A" (calculator allowed) or "Part B" (calculator not allowed).
+- If a question spans multiple units, use the highest-numbered unit (e.g., if Units 2 and 5,
+  use Unit 5). Similarly for sections, use the latter one if applicable.
+- Determine calculator status: "Calculator active" for Part A, "Calculator prohibited" for Part B.
 \
 """
 
@@ -156,8 +164,20 @@ _OUTPUT_SCHEMA = {
                             "additionalProperties": False,
                         },
                     },
+                    "unit": {
+                        "anyOf": [{"type": "string"}, {"type": "null"}],
+                        "description": "AP Calculus unit (e.g., 'Unit 1: Limits and Continuity') or null.",
+                    },
+                    "section": {
+                        "anyOf": [{"type": "string"}, {"type": "null"}],
+                        "description": "Section identifier ('Part A' or 'Part B') or null.",
+                    },
+                    "calculator": {
+                        "anyOf": [{"type": "string"}, {"type": "null"}],
+                        "description": "'Calculator active' or 'Calculator prohibited' or null.",
+                    },
                 },
-                "required": ["question_number", "question", "figures"],
+                "required": ["question_number", "question", "figures", "unit", "section", "calculator"],
                 "additionalProperties": False,
             },
         },
