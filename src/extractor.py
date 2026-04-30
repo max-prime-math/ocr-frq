@@ -61,10 +61,18 @@ Math notation rules (Typst syntax):
 - Write math operators without backslashes: integral, sum, product, lim, sqrt(x), abs(x), floor(x), ceil(x).
 - Write Greek letters without backslashes: alpha, beta, pi, theta, lambda, etc.
 - Write fractions as a/b for simple cases or (numerator)/(denominator) for complex ones.
-- Comparisons and special values: use <= for ≤, >= for ≥, != for ≠, approx for ≈, infinity for ∞, times for ×.
+- Comparisons and special values: use <= for ≤, >= for ≥, != for ≠, approx for ≈, infinity for ∞, times for ×, dot for •.
+- Do NOT write `cdot` — use `dot` (or `times` for multiplication). Example: `a dot b` or `a times b`.
 - Derivatives: write as f'(x) or (dif y)/(dif x); integrals as integral_a^b f(x) dif x.
 - Subscripts and superscripts work the same as LaTeX: x_0, e^x, a_(n+1).
 - If a symbol cannot be reliably recovered, use a descriptive placeholder like [integral expression].
+
+Figure detection rules:
+- Scan each region (question, solution, grading_scheme) for diagrams, graphs, plots, circuit diagrams, geometric figures, sketches, or any other non-text visual elements.
+- For each figure found, return a normalized bounding box [x, y, width, height] in [0,1] coordinates (origin = top-left of full page).
+- Include the section the figure belongs to ("question", "solution", or "grading_scheme").
+- Include any nearby caption text, or null if no caption is visible.
+- If no figures are present, return an empty array.
 
 Extraction rules:
 - Do not guess or invent content. If a field is unclear or absent, return null.
@@ -119,6 +127,42 @@ _OUTPUT_SCHEMA = {
             "anyOf": [{"type": "string"}, {"type": "null"}],
             "description": "Grading rubric from the right column with point-value annotations.",
         },
+        "figures": {
+            "type": "array",
+            "description": "List of detected figures/diagrams/graphs on the page.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "section": {
+                        "type": "string",
+                        "enum": ["question", "solution", "grading_scheme"],
+                        "description": "Which section this figure belongs to.",
+                    },
+                    "x": {
+                        "type": "number",
+                        "description": "Normalized x-coordinate [0,1] of the left edge of the figure bounding box.",
+                    },
+                    "y": {
+                        "type": "number",
+                        "description": "Normalized y-coordinate [0,1] of the top edge of the figure bounding box.",
+                    },
+                    "width": {
+                        "type": "number",
+                        "description": "Normalized width [0,1] of the figure bounding box.",
+                    },
+                    "height": {
+                        "type": "number",
+                        "description": "Normalized height [0,1] of the figure bounding box.",
+                    },
+                    "caption": {
+                        "anyOf": [{"type": "string"}, {"type": "null"}],
+                        "description": "Any visible caption or label for the figure.",
+                    },
+                },
+                "required": ["section", "x", "y", "width", "height", "caption"],
+                "additionalProperties": False,
+            },
+        },
         "flagged": {
             "type": "boolean",
             "description": "True if confidence is low, content is ambiguous, or a field is substantially unclear.",
@@ -135,6 +179,7 @@ _OUTPUT_SCHEMA = {
         "question",
         "solution",
         "grading_scheme",
+        "figures",
         "flagged",
         "flag_reason",
     ],

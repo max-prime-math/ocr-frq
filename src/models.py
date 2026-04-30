@@ -5,6 +5,15 @@ models.py — TypedDict definitions for FRQ extraction results.
 from typing import Literal, Optional, TypedDict
 
 
+class FigureInfo(TypedDict):
+    section: Literal["question", "solution", "grading_scheme"]
+    x: float
+    y: float
+    width: float
+    height: float
+    caption: Optional[str]
+
+
 class FRQExtraction(TypedDict):
     page_type: Literal["frq", "skip"]
     skip_reason: Optional[str]       # title_page | cover_sheet | instructions | section_separator | other
@@ -12,6 +21,7 @@ class FRQExtraction(TypedDict):
     question: Optional[str]
     solution: Optional[str]
     grading_scheme: Optional[str]
+    figures: Optional[list]          # list of FigureInfo dicts
     flagged: bool
     flag_reason: Optional[str]
 

@@ -96,10 +96,34 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
     lines.append(render_text(question) if question else "_[Question text not extracted]_")
     lines.append("")
 
+    figures = extraction.get("figures") or []
+    for fig in figures:
+        if fig.get("section") == "question":
+            caption = fig.get("caption") or ""
+            file_path = fig.get("file_path", "")
+            if file_path:
+                lines.append(f"#figure(")
+                lines.append(f'  image("{file_path}", width: 80%),')
+                if caption:
+                    lines.append(f'  caption: [{caption}],')
+                lines.append(f")")
+                lines.append("")
+
     solution = extraction.get("solution") or ""
     solution_body = render_text(solution) if solution else "_[Solution not extracted]_"
     lines.append("#solution-block[")
     lines.append(solution_body)
+    for fig in figures:
+        if fig.get("section") == "solution":
+            caption = fig.get("caption") or ""
+            file_path = fig.get("file_path", "")
+            if file_path:
+                lines.append("")
+                lines.append(f"#figure(")
+                lines.append(f'  image("{file_path}", width: 80%),')
+                if caption:
+                    lines.append(f'  caption: [{caption}],')
+                lines.append(f")")
     lines.append("]")
     lines.append("")
 
@@ -107,6 +131,17 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
     rubric_body = render_text(rubric) if rubric else "_[Grading scheme not extracted]_"
     lines.append("#rubric-block[")
     lines.append(rubric_body)
+    for fig in figures:
+        if fig.get("section") == "grading_scheme":
+            caption = fig.get("caption") or ""
+            file_path = fig.get("file_path", "")
+            if file_path:
+                lines.append("")
+                lines.append(f"#figure(")
+                lines.append(f'  image("{file_path}", width: 80%),')
+                if caption:
+                    lines.append(f'  caption: [{caption}],')
+                lines.append(f")")
     lines.append("]")
 
     return "\n".join(lines)

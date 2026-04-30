@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 import anthropic
 from cache import FRQCache
 from extractor import extract_page
+from figure_extract import materialise_figures
 from typst_gen import build_document
 from renderer import page_count, render_page, save_temp_image
 
@@ -54,10 +55,16 @@ def _progress(done: int, total: int) -> float:
     return max(0.0, min(1.0, done / total)) if total > 0 else 0.0
 
 
-def _build_zip(typ_content: str) -> bytes:
+def _build_zip(typ_content: str, figures_dir: str | None = None) -> bytes:
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("output.typ", typ_content.encode("utf-8"))
+        if figures_dir:
+            figures_path = Path(figures_dir)
+            if figures_path.exists():
+                for fig_file in figures_path.glob("*.png"):
+                    arcname = f"figures/{fig_file.name}"
+                    zf.write(fig_file, arcname=arcname)
     return buf.getvalue()
 
 
@@ -73,6 +80,7 @@ for key, default in {
     "usage_log": [],
     "model_used": None,
     "processing_error": None,
+    "figures_dir": None,
 }.items():
     if key not in st.session_state:
         st.session_state[key] = default
@@ -133,6 +141,7 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
         st.stop()
 
     tmpdir = tempfile.mkdtemp()
+    figures_dir = os.path.join(tmpdir, "figures")
     client = anthropic.Anthropic(api_key=api_key)
     cache = FRQCache("cache/frq")
 
@@ -159,6 +168,7 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
     try:
         for pdf_path in pdf_paths:
             fname = Path(pdf_path).name
+            stem = Path(pdf_path).stem
             n = page_count(pdf_path)
 
             for page_idx in range(n):
@@ -178,6 +188,24 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
                         )
                     finally:
                         Path(tmp_img).unlink(missing_ok=True)
+
+                    # Process figures if any were detected
+                    if extraction.get("figures"):
+                        try:
+                            question_num = extraction.get("question_number")
+                            materialised = materialise_figures(
+                                extraction["figures"],
+                                img,
+                                pdf_path,
+                                page_idx,
+                                figures_dir,
+                                stem,
+                                question_number=question_num,
+                            )
+                            extraction["figures"] = materialised
+                        except Exception as e:
+                            import logging
+                            logging.exception("Error materialising figures: %s", e)
 
                     all_results.append({
                         "fname": fname,
@@ -213,6 +241,7 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
     st.session_state.results = all_results
     st.session_state.usage_log = usage_log
     st.session_state.model_used = model
+    st.session_state.figures_dir = figures_dir
     st.session_state.processed = bool(all_results)
     st.session_state.processing_error = processing_error
 
@@ -322,7 +351,8 @@ if not frq_pages:
     st.stop()
 
 typ_content = build_document(results)
-zip_bytes = _build_zip(typ_content)
+figures_dir = st.session_state.figures_dir
+zip_bytes = _build_zip(typ_content, figures_dir=figures_dir)
 
 st.download_button(
     label="⬇️ Download output.zip",
