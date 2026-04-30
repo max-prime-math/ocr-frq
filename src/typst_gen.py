@@ -78,6 +78,8 @@ def _clean_math_span(span: str) -> str:
     for word in typst_math:
         span = span.replace(f"\\{word}", word)
 
+    # Convert LaTeX-style text{...} fragments to Typst math text.
+    span = re.sub(r"\\?text\s*\{([^{}]*)\}", lambda m: f'text("{m.group(1).strip()}")', span)
     span = re.sub(r"(\^)\{([a-zA-Z0-9])\}", r"\1\2", span)
     span = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", span)
     span = re.sub(r"\b([a-z])([a-z](?:\^|_))", r"\1 \2", span)
