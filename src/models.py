@@ -50,6 +50,7 @@ class ExamQuestion(TypedDict):
     question_number: Optional[int]
     question: str
     figures: Optional[list]  # list of FigureInfo dicts (pre-materialisation)
+    tables: Optional[list]   # list of TableInfo dicts
     unit: Optional[str]      # e.g. "Unit 1: Limits and Continuity"
     section: Optional[str]   # e.g. "Part A" or "Part B"
     calculator: Optional[str]  # "Calculator active" or "Calculator prohibited"

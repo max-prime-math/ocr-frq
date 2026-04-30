@@ -79,6 +79,7 @@ def _clean_math_span(span: str) -> str:
         span = span.replace(f"\\{word}", word)
 
     span = re.sub(r"(\^)\{([a-zA-Z0-9])\}", r"\1\2", span)
+    span = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", span)
     span = re.sub(r"\b([a-z])([a-z](?:\^|_))", r"\1 \2", span)
     span = re.sub(r"\b([a-eg-z])([xyt])\b", r"\1 \2", span)
     span = re.sub(r"\b([fgh])\s+([a-z])\b", r"\1(\2)", span)

@@ -71,6 +71,12 @@ def test_render_text_expands_kx():
     assert "$k x^2 + k y$" in rendered
 
 
+def test_render_text_expands_digit_prefixed_kx():
+    rendered = render_text("Perimeter is $k + integral_0^k sqrt(1 + (2kx - 3x^2)^2) dif x$.")
+    assert "2 k x" in rendered
+    assert "3 x^2" in rendered
+
+
 def test_question_parts_render_as_native_enum():
     block = render_frq_block(_frq(question="(a) Find $f(x)$.\n(b) Explain the result."))
     assert '#enum(numbering: "(a)"' in block

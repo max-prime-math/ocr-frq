@@ -48,6 +48,7 @@ Your job for each page:
       - Extract the question_number (integer) if visible (e.g. "1", "2"), or null
       - Extract the full question text (may include sub-parts a, b, c, d…)
       - Identify figures (diagrams, graphs, plots, geometric figures) and return normalized bounding boxes
+      - Identify clearly rectangular text tables and return them as structured rows/cells
    c. Return one entry per question found.
 3. If it is an ignorable extra page:
    a. Set page_type to "skip"
@@ -70,10 +71,18 @@ Math notation rules (Typst syntax):
 
 Figure detection rules:
 - Scan the page for diagrams, graphs, plots, circuit diagrams, geometric figures, sketches, or any other non-text visual elements.
+- Do not classify rectangular text tables as figures. Return those under `tables` instead.
 - For each figure found, return a normalized bounding box [x, y, width, height] in [0,1] coordinates (origin = top-left of full page).
 - Include any nearby caption or label, or null if no caption is visible.
 - Figures should be associated with the question they appear in (by proximity and context).
 - If no figures are present in a question, return an empty array.
+
+Table extraction rules:
+- Detect only clearly rectangular tables with visible rows and columns.
+- Return `headers` as the top row if the table has a header row; otherwise return an empty array.
+- Return `rows` as the body rows in reading order, preserving cell text in Typst-friendly notation.
+- Do not include bounding boxes for tables.
+- If no tables are present in a question, return an empty array.
 
 Extraction rules:
 - Do not guess or invent content. If a field is unclear or absent, return null.
@@ -164,6 +173,34 @@ _OUTPUT_SCHEMA = {
                             "additionalProperties": False,
                         },
                     },
+                    "tables": {
+                        "type": "array",
+                        "description": "List of rectangular text tables on this question.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "headers": {
+                                    "type": "array",
+                                    "items": {"type": "string"},
+                                    "description": "Header row values, or an empty array if there is no header row.",
+                                },
+                                "rows": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "array",
+                                        "items": {"type": "string"},
+                                    },
+                                    "description": "Table body rows in reading order.",
+                                },
+                                "caption": {
+                                    "anyOf": [{"type": "string"}, {"type": "null"}],
+                                    "description": "Visible caption or title, if any.",
+                                },
+                            },
+                            "required": ["headers", "rows", "caption"],
+                            "additionalProperties": False,
+                        },
+                    },
                     "unit": {
                         "anyOf": [{"type": "string"}, {"type": "null"}],
                         "description": "AP Calculus unit (e.g., 'Unit 1: Limits and Continuity') or null.",
@@ -177,7 +214,7 @@ _OUTPUT_SCHEMA = {
                         "description": "'Calculator active' or 'Calculator prohibited' or null.",
                     },
                 },
-                "required": ["question_number", "question", "figures", "unit", "section", "calculator"],
+                "required": ["question_number", "question", "figures", "tables", "unit", "section", "calculator"],
                 "additionalProperties": False,
             },
         },
