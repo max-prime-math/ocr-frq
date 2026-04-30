@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 import anthropic
 from cache import FRQCache
 from extractor import extract_page
+from exam_extractor import extract_exam_page
 from figure_extract import materialise_figures
 from typst_gen import build_document
 from renderer import page_count, render_page, save_temp_image
@@ -55,6 +56,41 @@ def _progress(done: int, total: int) -> float:
     return max(0.0, min(1.0, done / total)) if total > 0 else 0.0
 
 
+def _detect_pairs(uploaded_files: list) -> tuple[list[dict], list[str]]:
+    """
+    Detect paired exam and SG files from uploaded files.
+
+    Returns:
+        (pairs, warnings)
+        pairs: list of {"sg_file": file, "exam_file": file|None}
+        warnings: list of warning strings (orphaned exam files, etc.)
+    """
+    pairs = []
+    warnings = []
+    sg_by_stem = {}
+    exam_by_stem = {}
+
+    # Categorize files
+    for uf in uploaded_files:
+        name = uf.name
+        if name.startswith("SG-"):
+            stem = name[3:]  # Remove "SG-" prefix
+            sg_by_stem[stem] = uf
+        else:
+            exam_by_stem[name] = uf
+
+    # Create pairs
+    for stem, sg_file in sg_by_stem.items():
+        exam_file = exam_by_stem.pop(stem, None)
+        pairs.append({"sg_file": sg_file, "exam_file": exam_file})
+
+    # Warn about orphaned exam files
+    for name, exam_file in exam_by_stem.items():
+        warnings.append(f"⚠️ Exam file '{name}' has no matching SG (SG-{name}). Skipping.")
+
+    return pairs, warnings
+
+
 def _build_zip(typ_content: str, figures_dir: str | None = None) -> bytes:
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED) as zf:
@@ -81,6 +117,8 @@ for key, default in {
     "model_used": None,
     "processing_error": None,
     "figures_dir": None,
+    "pairs": [],
+    "pair_warnings": [],
 }.items():
     if key not in st.session_state:
         st.session_state[key] = default
@@ -133,7 +171,22 @@ uploaded_files = st.file_uploader(
 
 if not uploaded_files:
     st.info("Upload one or more PDFs to get started.")
+    st.info("💡 Tip: Pair original exams with scoring guides (e.g. BC-2009.pdf + SG-BC-2009.pdf)")
     st.stop()
+
+# Detect pairs before showing Process button
+pairs, pair_warnings = _detect_pairs(uploaded_files)
+for warning in pair_warnings:
+    st.warning(warning)
+
+# Show detected pairs
+if pairs:
+    st.markdown("**Detected file pairs:**")
+    for i, pair in enumerate(pairs):
+        sg_name = pair["sg_file"].name
+        exam_name = pair["exam_file"].name if pair["exam_file"] else "(no exam file)"
+        status_icon = "✓" if pair["exam_file"] else "⚠"
+        st.caption(f"{status_icon} {exam_name} ↔ {sg_name}")
 
 if st.button("Process PDFs", type="primary", use_container_width=True):
     if not api_key:
@@ -143,17 +196,22 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
     tmpdir = tempfile.mkdtemp()
     figures_dir = os.path.join(tmpdir, "figures")
     client = anthropic.Anthropic(api_key=api_key)
-    cache = FRQCache("cache/frq")
+    sg_cache = FRQCache("cache/frq")
+    exam_cache = FRQCache("cache/exam")
 
-    pdf_paths = []
+    # Write uploaded files to tmpdir
+    pdf_files = {}
     for uf in uploaded_files:
         dest = os.path.join(tmpdir, uf.name)
         with open(dest, "wb") as fh:
             fh.write(uf.read())
-        pdf_paths.append(dest)
+        pdf_files[uf.name] = dest
 
+    # Calculate total pages for progress
     try:
-        total_pages = sum(page_count(p) for p in pdf_paths)
+        total_pages = sum(page_count(pdf_files[pair["sg_file"].name]) +
+                         (page_count(pdf_files[pair["exam_file"].name]) if pair["exam_file"] else 0)
+                         for pair in pairs)
     except Exception as exc:
         st.error(f"Could not read PDFs: {exc}")
         st.stop()
@@ -166,22 +224,26 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
     processing_error = None
 
     try:
-        for pdf_path in pdf_paths:
-            fname = Path(pdf_path).name
-            stem = Path(pdf_path).stem
-            n = page_count(pdf_path)
+        for pair in pairs:
+            sg_file = pair["sg_file"]
+            exam_file = pair["exam_file"]
+            sg_path = pdf_files[sg_file.name]
+            exam_path = pdf_files[exam_file.name] if exam_file else None
+            sg_stem = Path(sg_path).stem
 
-            for page_idx in range(n):
-                status.text(f"{fname} — page {page_idx + 1} of {n}")
-
+            # Process SG pages
+            sg_results = []
+            sg_page_count = page_count(sg_path)
+            for page_idx in range(sg_page_count):
+                status.text(f"SG: {sg_file.name} — page {page_idx + 1} of {sg_page_count}")
                 try:
-                    img = render_page(pdf_path, page_idx, dpi=220)
+                    img = render_page(sg_path, page_idx, dpi=220)
                     tmp_img = save_temp_image(img)
                     try:
                         extraction = extract_page(
                             tmp_img,
                             client=client,
-                            cache=cache,
+                            cache=sg_cache,
                             force=force_ocr,
                             model=model,
                             usage_out=usage_log,
@@ -189,39 +251,38 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
                     finally:
                         Path(tmp_img).unlink(missing_ok=True)
 
-                    # Process figures if any were detected
+                    # Materialise SG figures
                     if extraction.get("figures"):
                         try:
                             question_num = extraction.get("question_number")
                             materialised = materialise_figures(
                                 extraction["figures"],
                                 img,
-                                pdf_path,
+                                sg_path,
                                 page_idx,
                                 figures_dir,
-                                stem,
+                                sg_stem,
                                 question_number=question_num,
                             )
                             extraction["figures"] = materialised
                         except Exception as e:
                             import logging
-                            logging.exception("Error materialising figures: %s", e)
+                            logging.exception("Error materialising SG figures: %s", e)
 
-                    all_results.append({
-                        "fname": fname,
+                    sg_results.append({
+                        "fname": sg_file.name,
                         "page": page_idx,
                         "extraction": extraction,
                         "error": None,
-                        "pdf_path": pdf_path,
+                        "pdf_path": sg_path,
                     })
-
                 except Exception as exc:
-                    all_results.append({
-                        "fname": fname,
+                    sg_results.append({
+                        "fname": sg_file.name,
                         "page": page_idx,
                         "extraction": None,
                         "error": str(exc),
-                        "pdf_path": pdf_path,
+                        "pdf_path": sg_path,
                     })
 
                 pages_done += 1
@@ -230,8 +291,84 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
                 st.session_state.model_used = model
                 progress_bar.progress(
                     _progress(pages_done, total_pages),
-                    text=f"{pages_done} / {total_pages} pages",
+                    text=f"{pages_done} / {total_pages} pages (SG)",
                 )
+
+            # Process exam pages (if present) and merge
+            exam_by_qnum = {}
+            exam_stem = Path(exam_path).stem if exam_path else None
+            if exam_path:
+                exam_page_count = page_count(exam_path)
+                for page_idx in range(exam_page_count):
+                    status.text(f"Exam: {exam_file.name} — page {page_idx + 1} of {exam_page_count}")
+                    try:
+                        img = render_page(exam_path, page_idx, dpi=220)
+                        tmp_img = save_temp_image(img)
+                        try:
+                            exam_extraction = extract_exam_page(
+                                tmp_img,
+                                client=client,
+                                cache=exam_cache,
+                                force=force_ocr,
+                                model=model,
+                                usage_out=usage_log,
+                            )
+                        finally:
+                            Path(tmp_img).unlink(missing_ok=True)
+
+                        # Build lookup: qnum -> exam question data
+                        if exam_extraction.get("page_type") == "exam":
+                            for q in exam_extraction.get("questions", []):
+                                qnum = q.get("question_number")
+                                if qnum is not None:
+                                    # Materialise exam figures for this question
+                                    if q.get("figures"):
+                                        try:
+                                            materialised = materialise_figures(
+                                                q["figures"],
+                                                img,
+                                                exam_path,
+                                                page_idx,
+                                                figures_dir,
+                                                exam_stem,
+                                                question_number=qnum,
+                                            )
+                                            q["figures"] = materialised
+                                        except Exception as e:
+                                            import logging
+                                            logging.exception("Error materialising exam figures: %s", e)
+                                    exam_by_qnum[qnum] = q
+                    except Exception:
+                        pass  # Silently skip exam page errors for now
+
+                    pages_done += 1
+                    st.session_state.results = all_results
+                    st.session_state.usage_log = usage_log
+                    st.session_state.model_used = model
+                    progress_bar.progress(
+                        _progress(pages_done, total_pages),
+                        text=f"{pages_done} / {total_pages} pages (Exam)",
+                    )
+
+            # Merge SG + exam results by question_number
+            for sg_result in sg_results:
+                if sg_result.get("error") or sg_result.get("extraction", {}).get("page_type") != "frq":
+                    all_results.append(sg_result)
+                else:
+                    ext = sg_result["extraction"]
+                    qnum = ext.get("question_number")
+                    if qnum in exam_by_qnum:
+                        exam_q = exam_by_qnum[qnum]
+                        ext["question"] = exam_q["question"]
+                        # Merge figures: exam question figures + SG solution/rubric figures
+                        exam_figs = [dict(f, section="question") for f in exam_q.get("figures", [])]
+                        sg_figs = ext.get("figures", [])
+                        ext["figures"] = exam_figs + sg_figs
+                    else:
+                        # No exam match: flag it but use SG question text
+                        ext["flagged"] = True
+                        ext["flag_reason"] = "Question text from SG (no matching exam page)"
+                    all_results.append(sg_result)
 
     except Exception as exc:
         processing_error = str(exc)
@@ -242,6 +379,7 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
     st.session_state.usage_log = usage_log
     st.session_state.model_used = model
     st.session_state.figures_dir = figures_dir
+    st.session_state.pairs = pairs
     st.session_state.processed = bool(all_results)
     st.session_state.processing_error = processing_error
 

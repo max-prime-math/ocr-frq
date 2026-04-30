@@ -32,3 +32,18 @@ class PageResult(TypedDict):
     extraction: Optional[FRQExtraction]
     error: Optional[str]
     pdf_path: str
+
+
+class ExamQuestion(TypedDict):
+    question_number: Optional[int]
+    question: str
+    figures: Optional[list]  # list of FigureInfo dicts (pre-materialisation)
+
+
+class ExamPageResult(TypedDict):
+    fname: str
+    page: int           # 0-based page index in the source PDF
+    questions: list     # list of ExamQuestion; empty for skipped pages
+    page_type: str      # "exam" | "skip"
+    error: Optional[str]
+    pdf_path: str
