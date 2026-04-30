@@ -553,6 +553,7 @@ def materialise_figures(
         # Return updated figure dict with file path.
         result = dict(record["fig"])
         result["file_path"] = f"figures/{filename}"
+        result["render_width"] = round(width, 4)
         out.append(result)
 
     return out

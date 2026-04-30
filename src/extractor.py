@@ -71,10 +71,19 @@ Math notation rules (Typst syntax):
 
 Figure detection rules:
 - Scan each region (question, solution, grading_scheme) for diagrams, graphs, plots, circuit diagrams, geometric figures, sketches, or any other non-text visual elements.
+- Do not classify rectangular text tables as figures. If a region contains a table with rows and columns, return it under `tables` instead.
 - For each figure found, return a normalized bounding box [x, y, width, height] in [0,1] coordinates (origin = top-left of full page).
 - Include the section the figure belongs to ("question", "solution", or "grading_scheme").
 - Include any nearby caption text, or null if no caption is visible.
 - If no figures are present, return an empty array.
+
+Table extraction rules:
+- Detect only clearly rectangular tables with visible rows and columns.
+- For each table, return the section it belongs to ("question", "solution", or "grading_scheme").
+- Return `headers` as the top row if the table has a header row; otherwise return an empty array.
+- Return `rows` as the body rows in reading order, preserving each cell's text as closely as possible in Typst-friendly notation.
+- Do not include bounding boxes for tables.
+- If no tables are present, return an empty array.
 
 Extraction rules:
 - Do not guess or invent content. If a field is unclear or absent, return null.
@@ -173,6 +182,39 @@ _OUTPUT_SCHEMA = {
                 "additionalProperties": False,
             },
         },
+        "tables": {
+            "type": "array",
+            "description": "List of detected rectangular tables on the page.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "section": {
+                        "type": "string",
+                        "enum": ["question", "solution", "grading_scheme"],
+                        "description": "Which section this table belongs to.",
+                    },
+                    "headers": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "Header row values, or an empty array if there is no header row.",
+                    },
+                    "rows": {
+                        "type": "array",
+                        "description": "Table body rows in reading order.",
+                        "items": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                        },
+                    },
+                    "caption": {
+                        "anyOf": [{"type": "string"}, {"type": "null"}],
+                        "description": "Visible caption or title for the table, if any.",
+                    },
+                },
+                "required": ["section", "headers", "rows", "caption"],
+                "additionalProperties": False,
+            },
+        },
         "unit": {
             "anyOf": [{"type": "string"}, {"type": "null"}],
             "description": "AP Calculus unit (e.g., 'Unit 1: Limits and Continuity') or null.",
@@ -202,6 +244,7 @@ _OUTPUT_SCHEMA = {
         "solution",
         "grading_scheme",
         "figures",
+        "tables",
         "unit",
         "section",
         "calculator",

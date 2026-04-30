@@ -6,6 +6,7 @@ question, solution, and grading scheme sections for each FRQ page.
 """
 
 import logging
+import re
 from typing import Optional
 
 from models import FRQExtraction
@@ -13,9 +14,21 @@ from models import FRQExtraction
 logger = logging.getLogger(__name__)
 
 
-# ---------------------------------------------------------------------------
-# Text helpers
-# ---------------------------------------------------------------------------
+_INLINE_MATH_RE = re.compile(r"\$\s*(.*?)\s*\$", re.DOTALL)
+_DISPLAY_MATH_KEYWORDS = ("integral", "sum", "product", "lim")
+_PARTS_RE = re.compile(r"(?m)^\(([a-z])\)\s+")
+_BROKEN_TOKENS = (
+    ("di f", "dif"),
+    ("c os", "cos"),
+    ("ta n", "tan"),
+    ("si n", "sin"),
+    ("l og", "log"),
+    ("l n", "ln"),
+    ("c do t", "dot"),
+    ("d ot", "dot"),
+)
+_FUNCTION_NAMES = ("sin", "cos", "tan", "log", "ln", "exp", "lim", "dif", "dot")
+
 
 def _strip_control_chars(text: str) -> str:
     return "".join(ch for ch in text if ch in "\n\r\t" or ord(ch) >= 32)
@@ -30,88 +43,190 @@ def _convert_newlines(text: str) -> str:
     return text
 
 
-def _clean_math_spans(text: str) -> str:
-    r"""
-    Clean up math notation inside $...$ spans and promote complex math to display mode.
+def _normalise_common_ocr(text: str) -> str:
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = text.replace(r"\cdot", "dot")
+    text = text.replace(r"\times", "times")
+    text = text.replace(r"\div", "div")
+    text = text.replace("cdot", "dot")
+    text = text.replace("−", "-")
+    text = text.replace("×", "times")
+    text = text.replace("•", "dot")
 
-    - Removes LaTeX-specific syntax (\cdot, stray backslashes, etc.)
-    - Fixes Typst-specific issues (e^{x} → e^x, implicit multiplication)
-    - Promotes fractions, integrals, sums, products, and limits to display mode
-    """
-    import re
+    for broken, fixed in _BROKEN_TOKENS:
+        text = re.sub(rf"\b{re.escape(broken)}\b", fixed, text)
 
-    # Known Typst math words that should not have backslashes
+    for name in _FUNCTION_NAMES:
+        pieces = r"\s*".join(re.escape(ch) for ch in name)
+        text = re.sub(rf"\b{pieces}\b", name, text)
+
+    # Remove OCR-noise asterisks when they sit between word/math characters.
+    text = re.sub(r"(?<=[A-Za-z0-9\)\]])\s*\*\s*(?=[A-Za-z0-9\(\[])", " ", text)
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    return text
+
+
+def _clean_math_span(span: str) -> str:
+    span = _normalise_common_ocr(span)
+
     typst_math = {
         "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta", "iota", "kappa",
         "lambda", "mu", "nu", "xi", "omicron", "pi", "rho", "sigma", "tau", "upsilon",
         "phi", "chi", "psi", "omega", "sqrt", "integral", "sum", "product", "lim", "sin",
-        "cos", "tan", "log", "ln", "exp", "abs", "floor", "ceil", "dif", "dot", "times",
+        "cos", "tan", "log", "ln", "exp", "abs", "floor", "ceil", "dif", "dot", "times", "div",
     }
+    for word in typst_math:
+        span = span.replace(f"\\{word}", word)
 
-    def clean_span(span: str) -> str:
-        """Clean math notation in a span string."""
-        # Replace LaTeX-style multiplication and other symbols
-        span = span.replace(r"\cdot", "dot")
-        span = span.replace(r"\times", "times")
-        span = span.replace(r"\div", "div")
+    span = re.sub(r"(\^)\{([a-zA-Z0-9])\}", r"\1\2", span)
+    span = re.sub(r"\b([a-z])([a-z](?:\^|_))", r"\1 \2", span)
+    span = re.sub(r"\b([a-eg-z])([xyt])\b", r"\1 \2", span)
+    span = re.sub(r"\b([fgh])\s+([a-z])\b", r"\1(\2)", span)
+    span = re.sub(r"\b([fgh])([a-z])\b", r"\1(\2)", span)
+    span = re.sub(r"[ \t]{2,}", " ", span).strip()
+    return span
 
-        # Strip backslashes before Typst math words
-        for word in typst_math:
-            span = span.replace(f"\\{word}", word)
 
-        # Fix e^{x} → e^x (Typst doesn't need curly braces for single-character exponents)
-        span = re.sub(r'(\^)\{([a-zA-Z0-9])\}', r'\1\2', span)
+def _clean_math_spans(text: str) -> str:
+    def replace_math(match: re.Match[str]) -> str:
+        inner = _clean_math_span(match.group(1))
+        if "/" in inner or any(keyword in inner for keyword in _DISPLAY_MATH_KEYWORDS):
+            return f"#align(center)[$ {inner} $]"
+        return f"${inner}$"
 
-        # Fix implicit multiplication patterns: ft -> f(t), kx -> k x, kx^2 -> k x^2, etc.
-        # Be conservative: only fix patterns we're confident about
-        # Pattern 1: single letter followed by (lowercase letter) = function call -> f(x), g(t)
-        span = re.sub(r'\b([a-z])([a-z])\b', lambda m: f"{m.group(1)}({m.group(2)})" if m.group(1) in "fghijklmnpqrstu" else m.group(0), span)
-        # Pattern 2: digit or constant followed by letter at word boundary: k x, 2 x, etc.
-        # But only for single-letter constants before single-letter variables
-        span = re.sub(r'([a-z])([A-Z]+)(\^|\s|$)', r"\1 \2\3", span)  # k X^2 -> k X^2 (already has space)
-        # Pattern 3: specific problematic cases: kx^2 -> k x^2 (when not already spaced)
-        span = re.sub(r'([a-z])([a-z]\^)', lambda m: f"{m.group(1)} {m.group(2)}", span)
-
-        return span
-
-    def should_use_display_mode(span: str) -> bool:
-        """Check if math expression should be rendered in display mode."""
-        # Trigger on fractions, integrals, sums, products, limits
-        return any(keyword in span for keyword in ["/", "integral", "sum", "product", "lim"])
-
-    # Find and clean all $...$ and $ ... $ spans
-    # This regex finds either $...$ or $ ... $ (with spaces), non-greedy
-    def replace_math(match):
-        full_match = match.group(0)
-        inner = match.group(1)
-        cleaned = clean_span(inner)
-
-        # Decide on display mode
-        if should_use_display_mode(cleaned):
-            # Use aligned display mode (centered)
-            return f"#align(center)[$ {cleaned} $]"
-        else:
-            # Keep as inline math
-            return f"${cleaned}$"
-
-    result = re.sub(r'\$\s*(.*?)\s*\$', replace_math, text)
-    return result
+    return _INLINE_MATH_RE.sub(replace_math, text)
 
 
 def render_text(text: str) -> str:
     """Prepare extracted text for embedding in a Typst content block."""
     t = _strip_control_chars(text)
+    t = _normalise_common_ocr(t)
     t = _clean_math_spans(t)
     t = _convert_newlines(t)
-    return t
+    return t.strip()
 
 
-# ---------------------------------------------------------------------------
-# Document structure
-# ---------------------------------------------------------------------------
+def _split_top_level_parts(text: str) -> Optional[list[tuple[str, str]]]:
+    matches = list(_PARTS_RE.finditer(text))
+    if not matches:
+        return None
+    expected = [chr(ord("a") + idx) for idx in range(len(matches))]
+    labels = [match.group(1) for match in matches]
+    if labels != expected:
+        return None
 
-# The \\ in Python string literals → single \ in the output, which Typst
-# treats as a forced line break when it appears at the end of a line.
+    parts: list[tuple[str, str]] = []
+    for idx, match in enumerate(matches):
+        start = match.end()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(text)
+        body = text[start:end].strip()
+        parts.append((match.group(1), body))
+    return parts
+
+
+def _indent_block(text: str, prefix: str) -> str:
+    return "\n".join(prefix + line if line else prefix.rstrip() for line in text.splitlines())
+
+
+def _render_parts(text: str) -> Optional[str]:
+    parts = _split_top_level_parts(text)
+    if not parts:
+        return None
+
+    lines = ["#enum(numbering: \"(a)\","]
+    for _, body in parts:
+        rendered = render_text(body) if body else "_[Part text not extracted]_"
+        lines.append("  [")
+        lines.append(_indent_block(rendered, "    "))
+        lines.append("  ],")
+    lines.append(")")
+    return "\n".join(lines)
+
+
+def _render_table(table: dict) -> str:
+    headers = [render_text(cell) for cell in table.get("headers", [])]
+    rows = [[render_text(cell) for cell in row] for row in table.get("rows", [])]
+    column_count = 0
+    for row in [headers] + rows:
+        column_count = max(column_count, len(row))
+    column_count = max(1, column_count)
+
+    lines = [
+        "#table(",
+        f"  columns: {column_count},",
+        "  stroke: 0.5pt,",
+        "  inset: 6pt,",
+    ]
+
+    if headers:
+        padded = headers + [""] * (column_count - len(headers))
+        for cell in padded:
+            lines.append(f"  [*{cell}*],")
+
+    for row in rows:
+        padded = row + [""] * (column_count - len(row))
+        for cell in padded:
+            lines.append(f"  [{cell}],")
+
+    lines.append(")")
+    return "\n".join(lines)
+
+
+def _figure_width(fig: dict) -> str:
+    fraction = fig.get("render_width")
+    if isinstance(fraction, (int, float)) and fraction > 0:
+        return f"{min(100, max(1, round(fraction * 100, 1)))}%"
+    width = fig.get("width")
+    if isinstance(width, (int, float)) and width > 0:
+        return f"{min(100, max(1, round(width * 100, 1)))}%"
+    return "auto"
+
+
+def _render_figure(fig: dict) -> Optional[str]:
+    file_path = fig.get("file_path", "")
+    if not file_path:
+        return None
+    width = _figure_width(fig)
+    return "\n".join([
+        "#figure(",
+        f'  image("{file_path}", width: {width}),',
+        ")",
+    ])
+
+
+def _render_question_body(text: str) -> str:
+    rendered_parts = _render_parts(text)
+    if rendered_parts is not None:
+        return rendered_parts
+    return render_text(text)
+
+
+def _render_section_content(
+    body_text: str,
+    tables: list[dict],
+    figures: list[dict],
+    question_mode: bool = False,
+    placeholder: str = "_[Content not extracted]_",
+) -> list[str]:
+    lines: list[str] = []
+    if body_text:
+        lines.append(_render_question_body(body_text) if question_mode else render_text(body_text))
+    else:
+        lines.append(placeholder)
+
+    for table in tables:
+        lines.append("")
+        lines.append(_render_table(table))
+
+    for fig in figures:
+        rendered = _render_figure(fig)
+        if rendered:
+            lines.append("")
+            lines.append(rendered)
+
+    return lines
+
+
 _PREAMBLE = """\
 #set document(title: "AP Exam Scoring Guidelines")
 #set page(paper: "us-letter", margin: (x: 2.5cm, y: 2.5cm))
@@ -146,92 +261,72 @@ _PREAMBLE = """\
 def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) -> str:
     """Render one FRQ extraction as a Typst block. Returns a multi-line string."""
     lines: list[str] = []
-
-    lines.append("= Question")
+    qnum = extraction.get("question_number")
+    lines.append(f"= Question {qnum}" if qnum is not None else "= Question")
     lines.append("")
 
-    # Build comment with metadata
     comment_parts = []
     if source:
         comment_parts.append(f"source: {source}")
-
-    qnum = extraction.get("question_number")
-    if qnum is not None:
-        comment_parts.append(f"question {qnum}")
-
     calculator = extraction.get("calculator")
     if calculator:
         comment_parts.append(calculator)
-
     unit = extraction.get("unit")
     if unit:
         comment_parts.append(unit)
-
     section = extraction.get("section")
     if section:
         comment_parts.append(section)
-
     if comment_parts:
         lines.append("// " + " | ".join(comment_parts))
         lines.append("")
 
     if extraction.get("flagged"):
         reason = extraction.get("flag_reason") or "low confidence"
-        lines.append(f"#text(fill: red.darken(20%))[*⚠ Flagged for review: {reason}*]")
+        lines.append(f"#text(fill: red.darken(20%))[*Flagged for review: {reason}*]")
         lines.append("")
 
+    figures = extraction.get("figures") or []
+    tables = extraction.get("tables") or []
+    question_figures = [fig for fig in figures if fig.get("section") == "question"]
+    solution_figures = [fig for fig in figures if fig.get("section") == "solution"]
+    rubric_figures = [fig for fig in figures if fig.get("section") == "grading_scheme"]
+    question_tables = [table for table in tables if table.get("section") == "question"]
+    solution_tables = [table for table in tables if table.get("section") == "solution"]
+    rubric_tables = [table for table in tables if table.get("section") == "grading_scheme"]
+
     question = extraction.get("question") or ""
-    lines.append(render_text(question) if question else "_[Question text not extracted]_")
+    lines.extend(_render_section_content(
+        question,
+        question_tables,
+        question_figures,
+        question_mode=True,
+        placeholder="_[Question text not extracted]_",
+    ) if question else ["_[Question text not extracted]_"])
     lines.append("")
 
-    figures = extraction.get("figures") or []
-    for fig in figures:
-        if fig.get("section") == "question":
-            caption = fig.get("caption") or ""
-            file_path = fig.get("file_path", "")
-            if file_path:
-                lines.append(f"#figure(")
-                lines.append(f'  image("{file_path}", width: 80%),')
-                if caption:
-                    lines.append(f'  caption: [{caption}],')
-                lines.append(f")")
-                lines.append("")
-
     solution = extraction.get("solution") or ""
-    solution_body = render_text(solution) if solution else "_[Solution not extracted]_"
     lines.append("#solution-block[")
-    lines.append(solution_body)
-    for fig in figures:
-        if fig.get("section") == "solution":
-            caption = fig.get("caption") or ""
-            file_path = fig.get("file_path", "")
-            if file_path:
-                lines.append("")
-                lines.append(f"#figure(")
-                lines.append(f'  image("{file_path}", width: 80%),')
-                if caption:
-                    lines.append(f'  caption: [{caption}],')
-                lines.append(f")")
+    for line in _render_section_content(
+        solution,
+        solution_tables,
+        solution_figures,
+        placeholder="_[Solution not extracted]_",
+    ):
+        lines.append(line)
     lines.append("]")
     lines.append("")
 
     rubric = extraction.get("grading_scheme") or ""
-    rubric_body = render_text(rubric) if rubric else "_[Grading scheme not extracted]_"
     lines.append("#rubric-block[")
-    lines.append(rubric_body)
-    for fig in figures:
-        if fig.get("section") == "grading_scheme":
-            caption = fig.get("caption") or ""
-            file_path = fig.get("file_path", "")
-            if file_path:
-                lines.append("")
-                lines.append(f"#figure(")
-                lines.append(f'  image("{file_path}", width: 80%),')
-                if caption:
-                    lines.append(f'  caption: [{caption}],')
-                lines.append(f")")
+    for line in _render_section_content(
+        rubric,
+        rubric_tables,
+        rubric_figures,
+        placeholder="_[Grading scheme not extracted]_",
+    ):
+        lines.append(line)
     lines.append("]")
-
     return "\n".join(lines)
 
 
@@ -247,23 +342,23 @@ def build_document(
     """
     blocks: list[str] = []
 
-    for r in page_results:
-        if r.get("error"):
-            blocks.append(f"// Error on page {r['page'] + 1}: {r['error']}")
+    for result in page_results:
+        if result.get("error"):
+            blocks.append(f"// Error on page {result['page'] + 1}: {result['error']}")
             continue
 
-        extraction: Optional[dict] = r.get("extraction")
+        extraction: Optional[dict] = result.get("extraction")
         if extraction is None:
             continue
 
         if extraction["page_type"] == "skip":
             if include_skipped_comments:
                 reason = extraction.get("skip_reason") or "unknown"
-                blocks.append(f"// Page {r['page'] + 1} skipped: {reason}")
+                blocks.append(f"// Page {result['page'] + 1} skipped: {reason}")
             continue
 
-        fname = r.get("fname", "")
-        source = f"{fname} p{r['page'] + 1}" if fname else f"p{r['page'] + 1}"
+        fname = result.get("fname", "")
+        source = f"{fname} p{result['page'] + 1}" if fname else f"p{result['page'] + 1}"
         blocks.append(render_frq_block(extraction, source=source))
         blocks.append("#line(length: 100%, stroke: 0.5pt)\n\n#v(12pt)")
 

@@ -17,6 +17,11 @@ def _make_extraction(page_type, skip_reason=None, flagged=False, flag_reason=Non
         "question": question,
         "solution": solution,
         "grading_scheme": grading_scheme,
+        "figures": [],
+        "tables": [],
+        "unit": None,
+        "section": None,
+        "calculator": None,
         "flagged": flagged,
         "flag_reason": flag_reason,
     }

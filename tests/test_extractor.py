@@ -16,6 +16,11 @@ def _make_extraction(**kwargs):
         "question": None,
         "solution": None,
         "grading_scheme": None,
+        "figures": [],
+        "tables": [],
+        "unit": None,
+        "section": None,
+        "calculator": None,
         "flagged": False,
         "flag_reason": None,
     }
@@ -29,7 +34,8 @@ def _make_extraction(**kwargs):
 
 REQUIRED_KEYS = {
     "page_type", "skip_reason", "question_number", "question",
-    "solution", "grading_scheme", "flagged", "flag_reason",
+    "solution", "grading_scheme", "figures", "tables",
+    "unit", "section", "calculator", "flagged", "flag_reason",
 }
 
 

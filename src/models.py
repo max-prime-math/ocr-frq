@@ -12,6 +12,14 @@ class FigureInfo(TypedDict):
     width: float
     height: float
     caption: Optional[str]
+    file_path: str
+
+
+class TableInfo(TypedDict):
+    section: Literal["question", "solution", "grading_scheme"]
+    headers: list[str]
+    rows: list[list[str]]
+    caption: Optional[str]
 
 
 class FRQExtraction(TypedDict):
@@ -22,6 +30,7 @@ class FRQExtraction(TypedDict):
     solution: Optional[str]
     grading_scheme: Optional[str]
     figures: Optional[list]          # list of FigureInfo dicts
+    tables: Optional[list]           # list of TableInfo dicts
     unit: Optional[str]              # e.g. "Unit 1: Limits and Continuity"
     section: Optional[str]           # e.g. "Part A" or "Part B"
     calculator: Optional[str]        # "Calculator active" or "Calculator prohibited"
