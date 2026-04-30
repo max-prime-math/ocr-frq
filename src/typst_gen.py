@@ -31,7 +31,13 @@ def _convert_newlines(text: str) -> str:
 
 
 def _clean_math_spans(text: str) -> str:
-    """Clean up math notation inside $...$ spans without mangling prose."""
+    r"""
+    Clean up math notation inside $...$ spans and promote complex math to display mode.
+
+    - Removes LaTeX-specific syntax (\cdot, stray backslashes, etc.)
+    - Fixes Typst-specific issues (e^{x} → e^x, implicit multiplication)
+    - Promotes fractions, integrals, sums, products, and limits to display mode
+    """
     import re
 
     # Known Typst math words that should not have backslashes
@@ -53,6 +59,9 @@ def _clean_math_spans(text: str) -> str:
         for word in typst_math:
             span = span.replace(f"\\{word}", word)
 
+        # Fix e^{x} → e^x (Typst doesn't need curly braces for single-character exponents)
+        span = re.sub(r'(\^)\{([a-zA-Z0-9])\}', r'\1\2', span)
+
         # Fix implicit multiplication patterns: ft -> f(t), kx -> k x, kx^2 -> k x^2, etc.
         # Be conservative: only fix patterns we're confident about
         # Pattern 1: single letter followed by (lowercase letter) = function call -> f(x), g(t)
@@ -65,9 +74,27 @@ def _clean_math_spans(text: str) -> str:
 
         return span
 
+    def should_use_display_mode(span: str) -> bool:
+        """Check if math expression should be rendered in display mode."""
+        # Trigger on fractions, integrals, sums, products, limits
+        return any(keyword in span for keyword in ["/", "integral", "sum", "product", "lim"])
+
     # Find and clean all $...$ and $ ... $ spans
     # This regex finds either $...$ or $ ... $ (with spaces), non-greedy
-    result = re.sub(r'\$\s*(.*?)\s*\$', clean_span, text)
+    def replace_math(match):
+        full_match = match.group(0)
+        inner = match.group(1)
+        cleaned = clean_span(inner)
+
+        # Decide on display mode
+        if should_use_display_mode(cleaned):
+            # Use aligned display mode (centered)
+            return f"#align(center)[$ {cleaned} $]"
+        else:
+            # Keep as inline math
+            return f"${cleaned}$"
+
+    result = re.sub(r'\$\s*(.*?)\s*\$', replace_math, text)
     return result
 
 
