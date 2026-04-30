@@ -28,6 +28,41 @@ except ImportError:
     _CV2_AVAILABLE = False
 
 
+def _average_hash(cropped: Image.Image, size: int = 16) -> Optional[np.ndarray]:
+    """Compute 16x16 average hash of an image. Returns flat uint8 array of 0/1."""
+    if not _CV2_AVAILABLE:
+        return None
+    try:
+        gray = cropped.convert("L").resize((size, size))
+        arr = np.array(gray)
+        return (arr > arr.mean()).astype(np.uint8).reshape(-1)
+    except Exception:
+        return None
+
+
+def _hash_distance(a: np.ndarray, b: np.ndarray) -> int:
+    """Hamming distance between two hash arrays (count of differing bits)."""
+    return int(np.count_nonzero(a != b))
+
+
+def _are_similar_figures(img1: Image.Image, img2: Image.Image) -> bool:
+    """Check if two images are perceptually similar (size + hash)."""
+    w1, h1 = img1.size
+    w2, h2 = img2.size
+    # Gate on size ratio (neither dimension may differ by >35%)
+    width_ratio = max(w1, w2) / max(1, min(w1, w2))
+    height_ratio = max(h1, h2) / max(1, min(h1, h2))
+    if width_ratio > 1.35 or height_ratio > 1.35:
+        return False
+
+    hash1 = _average_hash(img1)
+    hash2 = _average_hash(img2)
+    if hash1 is None or hash2 is None:
+        return False
+
+    return _hash_distance(hash1, hash2) <= 24
+
+
 # ---------------------------------------------------------------------------
 # Coordinate conversion
 # ---------------------------------------------------------------------------
@@ -329,11 +364,23 @@ def _reject_figure_crop(cropped: Image.Image, page_size: tuple[int, int]) -> boo
     """
     Return True when a proposed figure crop is obviously low-value.
 
-    Rejects: very small crops, nearly blank crops, and large text-only crops.
+    Rejects: very small crops, nearly blank crops, large/thin text-only crops,
+    near-full-page crops, and thin header/label strips.
     """
     cw, ch = cropped.size
     pw, ph = page_size
     if cw < 40 or ch < 40:
+        return True
+
+    crop_area = cw * ch
+    page_area = max(1, pw * ph)
+
+    # Reject near-full-page crops (e.g., full exam page scans)
+    if crop_area > page_area * 0.85:
+        return True
+
+    # Reject thin horizontal strips (e.g., page headers, labels)
+    if ch > 0 and cw / ch > 10 and ch < 80:
         return True
 
     if not _CV2_AVAILABLE:
@@ -345,8 +392,6 @@ def _reject_figure_crop(cropped: Image.Image, page_size: tuple[int, int]) -> boo
     if ink_ratio < 0.003:
         return True
 
-    crop_area = cw * ch
-    page_area = max(1, pw * ph)
     if crop_area > page_area * 0.2 and ink_ratio < 0.05:
         return True
 
@@ -354,6 +399,8 @@ def _reject_figure_crop(cropped: Image.Image, page_size: tuple[int, int]) -> boo
     contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     text_like = 0
     graphic_like = 0
+    small = 0
+    large = 0
     text_height = max(18, int(ch * 0.08))
     text_width = max(120, int(cw * 0.35))
     long_span = max(36, int(max(cw, ch) * 0.12))
@@ -378,8 +425,17 @@ def _reject_figure_crop(cropped: Image.Image, page_size: tuple[int, int]) -> boo
         elif is_long_rule or area > max(300, crop_area * 0.01) or w >= long_span or h >= long_span:
             graphic_like += 1
 
+        if area > max(300, crop_area * 0.01):
+            large += 1
+        else:
+            small += 1
+
     # Reject text-only crops.
     if graphic_like == 0 and text_like > 0:
+        return True
+
+    # Reject dense small-contour regions (e.g., text with many lines/borders).
+    if large == 0 and small > 25:
         return True
 
     return False
@@ -401,6 +457,8 @@ def materialise_figures(
     """
     Crop and save figure bounding boxes from a page.
 
+    Deduplicates similar crops before saving to avoid redundant PNGs.
+
     Args:
         figures:       List of figure dicts from Claude extraction
                       (with normalized x, y, width, height in [0,1] space).
@@ -414,13 +472,14 @@ def materialise_figures(
     Returns:
         List of figure dicts with added "file_path" field (e.g., "figures/SG-BC-2009_q3_fig_1.png").
     """
-    out: list[dict] = []
     base_dir = Path(output_dir)
     base_dir.mkdir(parents=True, exist_ok=True)
 
     if not figures:
-        return out
+        return []
 
+    # Phase 1: Extract and filter candidates
+    candidates: list[dict] = []
     w, h = page_image.size
     for idx, fig in enumerate(figures, start=1):
         x = max(0.0, min(1.0, float(fig.get("x", 0.0))))
@@ -451,6 +510,36 @@ def materialise_figures(
             logger.warning("Rejecting low-value figure crop: %s", fig)
             continue
 
+        candidates.append({
+            "index": idx,
+            "fig": dict(fig),
+            "image": cropped,
+        })
+
+    # Phase 2: Deduplicate similar crops
+    survivors: list[dict] = []
+    consumed: set[int] = set()
+    for i, candidate in enumerate(candidates):
+        if i in consumed:
+            continue
+        survivors.append(candidate)
+        consumed.add(i)
+
+        # Find similar crops and skip them
+        for j in range(i + 1, len(candidates)):
+            if j in consumed:
+                continue
+            if _are_similar_figures(candidate["image"], candidates[j]["image"]):
+                logger.debug(
+                    "Deduplicating figure %d (similar to %d)",
+                    candidates[j]["index"],
+                    candidate["index"],
+                )
+                consumed.add(j)
+
+    # Phase 3: Save survivors
+    out: list[dict] = []
+    for idx, record in enumerate(survivors, start=1):
         # Generate filename.
         if question_number is not None:
             filename = f"{stem}_q{question_number}_fig_{idx}.png"
@@ -458,11 +547,11 @@ def materialise_figures(
             filename = f"{stem}_p{page_index}_fig_{idx}.png"
 
         path = base_dir / filename
-        cropped.save(path, format="PNG")
+        record["image"].save(path, format="PNG")
         logger.debug("Saved figure: %s", path)
 
         # Return updated figure dict with file path.
-        result = dict(fig)
+        result = dict(record["fig"])
         result["file_path"] = f"figures/{filename}"
         out.append(result)
 

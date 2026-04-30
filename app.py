@@ -13,6 +13,7 @@ import tempfile
 import zipfile
 from pathlib import Path
 
+from PIL import Image
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
@@ -21,7 +22,7 @@ import anthropic
 from cache import FRQCache
 from extractor import extract_page
 from exam_extractor import extract_exam_page
-from figure_extract import materialise_figures
+from figure_extract import materialise_figures, _average_hash, _hash_distance, _are_similar_figures
 from typst_gen import build_document
 from renderer import page_count, render_page, save_temp_image
 
@@ -80,6 +81,64 @@ def _compute_cost(usage_log: list, model: str) -> dict:
 
 def _progress(done: int, total: int) -> float:
     return max(0.0, min(1.0, done / total)) if total > 0 else 0.0
+
+
+def _deduplicate_saved_figures(combined_figs: list[dict], figures_dir: str) -> list[dict]:
+    """
+    Deduplicate across saved PNG files (e.g., same figure from exam and SG).
+
+    Loads saved PNGs, computes perceptual hashes, removes duplicates,
+    and deletes the duplicate files from disk.
+    """
+    if not combined_figs or len(combined_figs) < 2:
+        return combined_figs
+
+    base_dir = Path(figures_dir)
+    records = []
+    for i, fig in enumerate(combined_figs):
+        file_path = fig.get("file_path", "")
+        if not file_path:
+            continue
+        full_path = base_dir / file_path.replace("figures/", "")
+        if not full_path.exists():
+            records.append((i, fig, None))
+            continue
+        try:
+            img = Image.open(full_path)
+            records.append((i, fig, img))
+        except Exception as e:
+            import logging
+            logging.exception("Could not load figure for dedup: %s", e)
+            records.append((i, fig, None))
+
+    # Deduplicate: greedy clustering
+    survivors_idx = set()
+    for i in range(len(records)):
+        if i in survivors_idx:
+            continue
+        if records[i][2] is None:
+            survivors_idx.add(i)
+            continue
+
+        survivors_idx.add(i)
+        # Find and mark similar figures as duplicates
+        for j in range(i + 1, len(records)):
+            if j in survivors_idx:
+                continue
+            if records[j][2] is not None and _are_similar_figures(records[i][2], records[j][2]):
+                # Mark j as duplicate of i: delete its file
+                try:
+                    fig_j = records[j][1]
+                    file_path_j = fig_j.get("file_path", "")
+                    if file_path_j:
+                        full_path_j = base_dir / file_path_j.replace("figures/", "")
+                        full_path_j.unlink(missing_ok=True)
+                    survivors_idx.discard(j)
+                except Exception:
+                    pass
+
+    # Return only the survivors
+    return [records[i][1] for i in sorted(survivors_idx)]
 
 
 def _detect_pairs(uploaded_files: list) -> tuple[list[dict], list[str]]:
@@ -389,7 +448,10 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
                         # Merge figures: exam question figures + SG solution/rubric figures
                         exam_figs = [dict(f, section="question") for f in exam_q.get("figures", [])]
                         sg_figs = ext.get("figures", [])
-                        ext["figures"] = exam_figs + sg_figs
+                        combined = exam_figs + sg_figs
+                        # Deduplicate same figure from exam and SG
+                        combined = _deduplicate_saved_figures(combined, figures_dir)
+                        ext["figures"] = combined
                     else:
                         # No exam match: flag it but use SG question text
                         ext["flagged"] = True

@@ -62,6 +62,8 @@ Math notation rules (Typst syntax):
 - Write fractions as a/b for simple cases or (numerator)/(denominator) for complex ones.
 - Comparisons and special values: use <= for ≤, >= for ≥, != for ≠, approx for ≈, infinity for ∞, times for ×, dot for •.
 - Do NOT write `cdot` — use `dot` (or `times` for multiplication). Example: `a dot b` or `a times b`.
+- Always write function application with parentheses: `f(x)`, `g(t)`, not `fx` or `gt`.
+- Always separate a constant from a variable with a space: `k x^2`, not `kx^2`.
 - Derivatives: write as f'(x) or (dif y)/(dif x); integrals as integral_a^b f(x) dif x.
 - Subscripts and superscripts work the same as LaTeX: x_0, e^x, a_(n+1).
 - If a symbol cannot be reliably recovered, use a descriptive placeholder like [integral expression].

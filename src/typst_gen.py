@@ -30,9 +30,51 @@ def _convert_newlines(text: str) -> str:
     return text
 
 
+def _clean_math_spans(text: str) -> str:
+    """Clean up math notation inside $...$ spans without mangling prose."""
+    import re
+
+    # Known Typst math words that should not have backslashes
+    typst_math = {
+        "alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta", "iota", "kappa",
+        "lambda", "mu", "nu", "xi", "omicron", "pi", "rho", "sigma", "tau", "upsilon",
+        "phi", "chi", "psi", "omega", "sqrt", "integral", "sum", "product", "lim", "sin",
+        "cos", "tan", "log", "ln", "exp", "abs", "floor", "ceil", "dif", "dot", "times",
+    }
+
+    def clean_span(match):
+        span = match.group(0)
+        # Replace LaTeX-style multiplication and other symbols
+        span = span.replace(r"\cdot", "dot")
+        span = span.replace(r"\times", "times")
+        span = span.replace(r"\div", "div")
+
+        # Strip backslashes before Typst math words
+        for word in typst_math:
+            span = span.replace(f"\\{word}", word)
+
+        # Fix implicit multiplication patterns: ft -> f(t), kx -> k x, kx^2 -> k x^2, etc.
+        # Be conservative: only fix patterns we're confident about
+        # Pattern 1: single letter followed by (lowercase letter) = function call -> f(x), g(t)
+        span = re.sub(r'\b([a-z])([a-z])\b', lambda m: f"{m.group(1)}({m.group(2)})" if m.group(1) in "fghijklmnpqrstu" else m.group(0), span)
+        # Pattern 2: digit or constant followed by letter at word boundary: k x, 2 x, etc.
+        # But only for single-letter constants before single-letter variables
+        span = re.sub(r'([a-z])([A-Z]+)(\^|\s|$)', r"\1 \2\3", span)  # k X^2 -> k X^2 (already has space)
+        # Pattern 3: specific problematic cases: kx^2 -> k x^2 (when not already spaced)
+        span = re.sub(r'([a-z])([a-z]\^)', lambda m: f"{m.group(1)} {m.group(2)}", span)
+
+        return span
+
+    # Find and clean all $...$ and $ ... $ spans
+    # This regex finds either $...$ or $ ... $ (with spaces), non-greedy
+    result = re.sub(r'\$\s*(.*?)\s*\$', clean_span, text)
+    return result
+
+
 def render_text(text: str) -> str:
     """Prepare extracted text for embedding in a Typst content block."""
     t = _strip_control_chars(text)
+    t = _clean_math_spans(t)
     t = _convert_newlines(t)
     return t
 
