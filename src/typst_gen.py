@@ -48,8 +48,8 @@ def _clean_math_spans(text: str) -> str:
         "cos", "tan", "log", "ln", "exp", "abs", "floor", "ceil", "dif", "dot", "times",
     }
 
-    def clean_span(match):
-        span = match.group(0)
+    def clean_span(span: str) -> str:
+        """Clean math notation in a span string."""
         # Replace LaTeX-style multiplication and other symbols
         span = span.replace(r"\cdot", "dot")
         span = span.replace(r"\times", "times")
