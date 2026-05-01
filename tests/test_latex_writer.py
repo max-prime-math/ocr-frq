@@ -58,9 +58,9 @@ def test_render_frq_block_escapes_special_chars():
 def test_render_frq_block_basic():
     extraction = _frq(question_number=1)
     output = render_frq_block(extraction)
-    assert r"\section*{Question 1}" in output
-    assert r"\begin{frqsolution}" in output
-    assert r"\begin{frqrubric}" in output
+    assert r"\question" in output
+    assert r"\begin{solution}" in output
+    assert r"\end{solution}" in output
 
 
 def test_render_frq_block_with_source():
@@ -87,10 +87,10 @@ def test_render_frq_block_with_metadata():
 def test_build_document_single_page():
     results = [_page_result()]
     doc = build_document(results)
-    assert r"\documentclass[12pt]{article}" in doc
-    assert r"\begin{document}" in doc
-    assert r"\end{document}" in doc
-    assert "Question 1" in doc
+    assert r"\documentclass[12pt,addpoints]{exam}" in doc
+    assert r"\begin{questions}" in doc
+    assert r"\end{questions}" in doc
+    assert r"\question" in doc
 
 
 def test_build_document_multiple_pages():
@@ -99,8 +99,8 @@ def test_build_document_multiple_pages():
         _page_result(page=1, extraction=_frq(question_number=2)),
     ]
     doc = build_document(results)
-    assert "Question 1" in doc
-    assert "Question 2" in doc
+    assert r"\question" in doc
+    assert doc.count(r"\question") == 2
 
 
 def test_build_document_skipped_pages():
@@ -114,7 +114,7 @@ def test_build_document_skipped_pages():
     ]
     doc = build_document(results, include_skipped_comments=True)
     assert "title_page" in doc
-    assert "Question 2" in doc
+    assert r"\question" in doc
 
 
 def test_build_document_errors():
@@ -124,3 +124,17 @@ def test_build_document_errors():
     doc = build_document(results)
     assert "Error on page 1" in doc
     assert "Failed to extract" in doc
+
+
+def test_rubric_in_solution():
+    extraction = _frq(solution="x = 1", grading_scheme="1 point")
+    output = render_frq_block(extraction)
+    assert r"\begin{solution}" in output
+    assert "Rubric:" in output
+    assert "1 point" in output
+    assert r"\end{solution}" in output
+    # Rubric should be inside solution
+    solution_start = output.index(r"\begin{solution}")
+    solution_end = output.index(r"\end{solution}")
+    rubric_pos = output.index("Rubric:")
+    assert solution_start < rubric_pos < solution_end

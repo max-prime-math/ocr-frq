@@ -55,35 +55,16 @@ _COMMAND_MATH_PATTERN = re.compile(
 )
 _MATH_ENVIRONMENTS = ("array", "cases", "matrix", "pmatrix", "bmatrix", "vmatrix", "Vmatrix")
 
-_PREAMBLE = r"""\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
+_PREAMBLE = r"""\documentclass[12pt,addpoints]{exam}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{enumitem}
-\usepackage{xcolor}
-\usepackage{mdframed}
 \usepackage{graphicx}
 
-\definecolor{solutionbg}{rgb}{0.95,0.98,0.95}
-\definecolor{rubricbg}{rgb}{0.95,0.95,1.00}
-
-\newenvironment{frqsolution}{%
-  \begin{mdframed}[backgroundcolor=solutionbg,linecolor=green!50!black,linewidth=0.8pt]
-  \textbf{Solution}\par\smallskip
-}{%
-  \end{mdframed}
-}
-
-\newenvironment{frqrubric}{%
-  \begin{mdframed}[backgroundcolor=rubricbg,linecolor=blue!60!black,linewidth=0.8pt]
-  \textbf{Grading Scheme}\par\smallskip
-}{%
-  \end{mdframed}
-}
-
 \begin{document}
+\begin{questions}
 """
 
 _POSTAMBLE = r"""
+\end{questions}
 \end{document}
 """
 
@@ -319,7 +300,7 @@ def _by_section(items: list[dict], section: str) -> list[dict]:
 
 def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) -> str:
     """
-    Render one FRQ extraction as a LaTeX block.
+    Render one FRQ extraction as a LaTeX question block (exam class).
 
     Args:
         extraction: FRQExtraction dict with question/solution/grading_scheme.
@@ -330,31 +311,26 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
     """
     lines: list[str] = []
 
-    qnum = extraction.get("question_number")
-    heading = f"Question {qnum}" if qnum is not None else "Question"
-    lines.append(rf"\section*{{{heading}}}")
-
+    lines.append(r"\question")
     if source:
         lines.append(f"% {source}")
 
     meta = []
     unit = extraction.get("unit")
     if unit:
-        meta.append(f"\\textit{{{unit}}}")
+        meta.append(unit)
     section = extraction.get("section")
     if section:
-        meta.append(f"\\textit{{{section}}}")
+        meta.append(section)
     calculator = extraction.get("calculator")
     if calculator:
-        meta.append(f"\\textit{{{calculator}}}")
+        meta.append(calculator)
     if meta:
-        lines.append(" \\\\[6pt] ".join(meta))
-        lines.append(r"\\[6pt]")
+        lines.append("% " + " | ".join(meta))
 
     if extraction.get("flagged"):
         reason = extraction.get("flag_reason") or "low confidence"
-        lines.append(rf"\textbf{{\textcolor{{red}}{{[Flagged for review: {reason}]}}}} \\")
-        lines.append("")
+        lines.append(f"% [Flagged for review: {reason}]")
 
     figures = extraction.get("figures") or []
     tables = extraction.get("tables") or []
@@ -370,21 +346,23 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
     _render_tables(lines, question_tables)
     _render_figures(lines, question_figures)
 
-    lines.append("")
-    lines.append(r"\begin{frqsolution}")
     solution = extraction.get("solution") or ""
+    rubric = extraction.get("grading_scheme") or ""
+
+    lines.append(r"\begin{solution}")
     lines.append(_render_text(solution) if solution else r"\textit{[Solution not extracted]}")
     _render_tables(lines, solution_tables)
     _render_figures(lines, solution_figures)
-    lines.append(r"\end{frqsolution}")
 
-    lines.append("")
-    lines.append(r"\begin{frqrubric}")
-    rubric = extraction.get("grading_scheme") or ""
-    lines.append(_render_text(rubric) if rubric else r"\textit{[Grading scheme not extracted]}")
-    _render_tables(lines, rubric_tables)
-    _render_figures(lines, rubric_figures)
-    lines.append(r"\end{frqrubric}")
+    if rubric:
+        lines.append(r"\\")
+        lines.append("Rubric:")
+        lines.append(r"\\")
+        lines.append(_render_text(rubric))
+        _render_tables(lines, rubric_tables)
+        _render_figures(lines, rubric_figures)
+
+    lines.append(r"\end{solution}")
 
     return "\n".join(lines)
 
@@ -393,10 +371,10 @@ def build_document(
     page_results: list[dict],
     include_skipped_comments: bool = True,
 ) -> str:
-    """
-    Build a complete LaTeX document from a list of PageResult dicts.
+    r"""
+    Build a complete LaTeX document from a list of PageResult dicts (exam class).
 
-    Only pages with page_type == "frq" produce content blocks.
+    Only pages with page_type == "frq" produce \question blocks.
     Skipped pages appear as comments if include_skipped_comments is True.
 
     Args:
@@ -410,7 +388,7 @@ def build_document(
 
     for result in page_results:
         if result.get("error"):
-            blocks.append(f"% Error on page {result['page'] + 1}: {result['error']}\n")
+            blocks.append(f"% Error on page {result['page'] + 1}: {result['error']}")
             continue
 
         extraction: Optional[dict] = result.get("extraction")
@@ -426,7 +404,6 @@ def build_document(
         fname = result.get("fname", "")
         source = f"{fname} p{result['page'] + 1}" if fname else f"p{result['page'] + 1}"
         blocks.append(render_frq_block(extraction, source=source))
-        blocks.append(r"\bigskip\hrule\bigskip")
 
     body = "\n\n".join(blocks)
     return _PREAMBLE + body + "\n" + _POSTAMBLE
