@@ -23,7 +23,7 @@ from cache import FRQCache
 from extractor import extract_page
 from exam_extractor import extract_exam_page
 from figure_extract import materialise_figures, _average_hash, _hash_distance, _are_similar_figures
-from typst_gen import build_document
+from latex_writer import build_document
 from renderer import page_count, render_page, save_temp_image
 
 # ---------------------------------------------------------------------------
@@ -176,10 +176,10 @@ def _detect_pairs(uploaded_files: list) -> tuple[list[dict], list[str]]:
     return pairs, warnings
 
 
-def _build_zip(typ_content: str, figures_dir: str | None = None) -> bytes:
+def _build_zip(tex_content: str, figures_dir: str | None = None) -> bytes:
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-        zf.writestr("output.typ", typ_content.encode("utf-8"))
+        zf.writestr("output.tex", tex_content.encode("utf-8"))
         if figures_dir:
             figures_path = Path(figures_dir)
             if figures_path.exists():
@@ -214,7 +214,7 @@ for key, default in {
 
 with st.sidebar:
     st.title("OCR-FRQ")
-    st.caption(f"Free-response PDFs → Typst · v{APP_VERSION}")
+    st.caption(f"Free-response PDFs → LaTeX · v{APP_VERSION}")
     st.divider()
 
     api_key = st.text_input(
@@ -239,14 +239,14 @@ with st.sidebar:
 
     st.divider()
     st.caption("Responses cached in `cache/frq/` — repeated runs are cheap.")
-    st.caption("Output is Typst (`.typ`) — compile with `typst compile output.typ`.")
+    st.caption("Output is LaTeX (`.tex`) — compile with `pdflatex output.tex`.")
 
 # ---------------------------------------------------------------------------
 # Main area
 # ---------------------------------------------------------------------------
 
 st.title("OCR-FRQ")
-st.caption("Upload AP exam scoring guidelines PDFs to extract FRQ content as Typst.")
+st.caption("Upload AP exam scoring guidelines PDFs to extract FRQ content as LaTeX.")
 
 uploaded_files = st.file_uploader(
     "Drop PDF files here",
@@ -584,9 +584,9 @@ if not frq_pages:
     st.warning("No FRQ pages were extracted — nothing to download.")
     st.stop()
 
-typ_content = build_document(results)
+tex_content = build_document(results)
 figures_dir = st.session_state.figures_dir
-zip_bytes = _build_zip(typ_content, figures_dir=figures_dir)
+zip_bytes = _build_zip(tex_content, figures_dir=figures_dir)
 
 st.download_button(
     label="⬇️ Download output.zip",
@@ -597,8 +597,8 @@ st.download_button(
     use_container_width=True,
 )
 
-with st.expander("Preview Typst"):
-    preview = typ_content[:5000]
-    if len(typ_content) > 5000:
-        preview += "\n\n// … (truncated)"
-    st.code(preview, language="text")
+with st.expander("Preview LaTeX"):
+    preview = tex_content[:5000]
+    if len(tex_content) > 5000:
+        preview += "\n\n% … (truncated)"
+    st.code(preview, language="latex")
