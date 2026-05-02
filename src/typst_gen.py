@@ -32,6 +32,9 @@ _BROKEN_TOKENS = (
 )
 _FUNCTION_NAMES = ("sin", "cos", "tan", "log", "ln", "exp", "lim", "dif", "dot")
 _TEXT_SENTINEL = "\x00\x01"
+_DOCUMENT_FUNCTION_NAMES = (
+    "sin", "cos", "tan", "log", "ln", "exp", "lim", "dif", "dot", "sqrt", "frac",
+)
 
 
 def _strip_control_chars(text: str) -> str:
@@ -223,7 +226,6 @@ def render_rubric_text(text: str) -> str:
     t = _normalise_common_ocr(t)
     t = _normalise_rubric_artifacts(t)
     t = _clean_math_spans(t, rubric_mode=True)
-    t = t.replace("$", "")
     t = re.sub(r"(?<=\})(?=\([a-z]\))", "\n", t)
     t = re.sub(r"\s*/\s*", " / ", t)
     t = re.sub(r"[ \t]{2,}", " ", t)
@@ -262,6 +264,16 @@ def _repair_typst_document(text: str) -> str:
     return text
 
 
+def _cleanup_document_ocr_typos(text: str) -> str:
+    cleaned = text
+    for name in _DOCUMENT_FUNCTION_NAMES:
+        pieces = r"\s*".join(re.escape(ch) for ch in name)
+        cleaned = re.sub(rf"\b{pieces}\b", name, cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\b(sin|cos|tan|log|ln|exp|sqrt|lim|dif)\s+(?=\()", r"\1", cleaned)
+    cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+    return cleaned
+
+
 def _validate_typst_document(text: str) -> Optional[str]:
     """Compile-check generated Typst and return stderr on failure."""
     try:
@@ -283,6 +295,90 @@ def _validate_typst_document(text: str) -> Optional[str]:
         return None
     except Exception as exc:
         return f"Typst validation failed unexpectedly: {exc}"
+
+
+def _extract_error_line_number(error_text: str) -> Optional[int]:
+    match = re.search(r"output\.typ:(\d+):(\d+)", error_text)
+    if match:
+        return int(match.group(1))
+    match = re.search(r"line\s+(\d+)", error_text, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+    return None
+
+
+def _repair_unclosed_delimiter_line(line: str) -> str:
+    stripped = line.strip()
+    if "#align(center)[" in stripped and "$" not in stripped:
+        match = re.search(r"(#align\(center\)\[)\s*(.*?)\s*(\]\\?)$", line)
+        if match:
+            inner = match.group(2).strip()
+            if any(token in inner for token in ("integral", "sum", "product", "lim", "frac", "sqrt", "_", "^")):
+                return f"{match.group(1)}$ {inner} ${match.group(3)}"
+    return line
+
+
+def _balance_delimiters_globally(text: str) -> str:
+    repaired = text
+    if repaired.count("[") > repaired.count("]"):
+        repaired += "]" * (repaired.count("[") - repaired.count("]"))
+    if repaired.count("(") > repaired.count(")"):
+        repaired += ")" * (repaired.count("(") - repaired.count(")"))
+    if repaired.count("{") > repaired.count("}"):
+        repaired += "}" * (repaired.count("{") - repaired.count("}"))
+    if len(re.findall(r"(?<!\\)\$", repaired)) % 2 == 1:
+        repaired += "$"
+    return repaired
+
+
+def _repair_from_typst_error(text: str, error_text: str) -> str:
+    repaired = text
+    line_no = _extract_error_line_number(error_text)
+    applied_line_fix = False
+
+    if line_no is not None:
+        lines = repaired.splitlines()
+        idx = line_no - 1
+        if 0 <= idx < len(lines):
+            if "unclosed delimiter" in error_text.lower():
+                lines[idx] = _repair_unclosed_delimiter_line(lines[idx])
+                repaired = "\n".join(lines)
+                applied_line_fix = True
+
+    if "unclosed delimiter" in error_text.lower() and not applied_line_fix:
+        lines = repaired.splitlines()
+        lines = [_repair_unclosed_delimiter_line(line) for line in lines]
+        repaired = "\n".join(lines)
+
+    repaired = _cleanup_document_ocr_typos(repaired)
+    repaired = _repair_typst_document(repaired)
+    repaired = _balance_delimiters_globally(repaired)
+    return repaired
+
+
+def _compile_with_repair(text: str, max_attempts: int = 2) -> tuple[str, Optional[str], int]:
+    attempts = 0
+    candidate = _cleanup_document_ocr_typos(text)
+    candidate = _repair_typst_document(candidate)
+    error = _validate_typst_document(candidate)
+
+    while error and attempts < max_attempts:
+        attempts += 1
+        updated = _repair_from_typst_error(candidate, error)
+        if updated == candidate:
+            break
+        candidate = updated
+        error = _validate_typst_document(candidate)
+
+    return candidate, error, attempts
+
+
+def _validate_rendered_block(block: str, max_attempts: int = 2) -> tuple[str, Optional[str], int]:
+    block_doc = _PREAMBLE + block + "\n"
+    repaired_doc, error, attempts = _compile_with_repair(block_doc, max_attempts=max_attempts)
+    if not repaired_doc.startswith(_PREAMBLE):
+        return block, error, attempts
+    return repaired_doc[len(_PREAMBLE):].lstrip("\n"), error, attempts
 
 
 def _split_top_level_parts(text: str) -> Optional[list[tuple[str, str]]]:
@@ -543,13 +639,20 @@ def build_document(
 
         fname = result.get("fname", "")
         source = f"{fname} p{result['page'] + 1}" if fname else f"p{result['page'] + 1}"
-        blocks.append(render_frq_block(extraction, source=source))
+        block = render_frq_block(extraction, source=source)
+        block, block_error, _ = _validate_rendered_block(block, max_attempts=2)
+        if block_error:
+            block = (
+                f"// Block compile warning for {source}:\n"
+                f"// {block_error.replace(chr(10), chr(10) + '// ')}\n"
+                + block
+            )
+        blocks.append(block)
         blocks.append("#line(length: 100%, stroke: 0.5pt)\n\n#v(12pt)")
 
     body = "\n\n".join(blocks)
     document = _PREAMBLE + body + "\n"
-    document = _repair_typst_document(document)
-    validation_error = _validate_typst_document(document)
+    document, validation_error, _ = _compile_with_repair(document, max_attempts=3)
     if validation_error:
         logger.warning("Typst validation failed after local repair:\n%s", validation_error)
         document += f"\n// Typst validation warning:\n// {validation_error.replace(chr(10), chr(10) + '// ')}\n"

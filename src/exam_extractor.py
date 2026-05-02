@@ -11,6 +11,7 @@ Prompt caching is applied to the system prompt for efficiency.
 import base64
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -19,6 +20,24 @@ import anthropic
 from cache import FRQCache
 
 logger = logging.getLogger(__name__)
+
+
+def _parse_json_text(raw: str):
+    text = raw.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\\s*", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\\s*```$", "", text)
+        text = text.strip()
+
+    decoder = json.JSONDecoder()
+    for idx, ch in enumerate(text):
+        if ch in "[{":
+            try:
+                obj, _ = decoder.raw_decode(text[idx:])
+                return obj
+            except json.JSONDecodeError:
+                continue
+    return json.loads(text)
 
 # ---------------------------------------------------------------------------
 # System prompt
@@ -297,22 +316,17 @@ def extract_exam_page(
                         "text": (
                             "Extract all questions from this exam page. "
                             "For each question, provide its number (if visible), full text, and any figures. "
-                            "Write all math in Typst syntax ($...$), using `dot` not `cdot`."
+                            "Write all math in Typst syntax ($...$), using `dot` not `cdot`. "
+                            "Return only valid JSON matching the schema in your instructions."
                         ),
                     },
                 ],
             }
         ],
-        output_config={
-            "format": {
-                "type": "json_schema",
-                "schema": _OUTPUT_SCHEMA,
-            }
-        },
     )
 
     raw = next(b.text for b in response.content if b.type == "text")
-    result = json.loads(raw)
+    result = _parse_json_text(raw)
 
     u = response.usage
     usage = {

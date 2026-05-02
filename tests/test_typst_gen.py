@@ -5,6 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
+import typst_gen
 from typst_gen import build_document, render_frq_block, render_text
 
 
@@ -186,3 +187,20 @@ def test_error_pages_appear_as_comments():
         "pdf_path": "/tmp/f.pdf",
     }])
     assert "// Error on page 3: network timeout" in doc
+
+
+def test_compile_loop_repairs_unclosed_align_math(monkeypatch):
+    def fake_validate(text: str):
+        if "#align(center)[$ integral_0^1 f(x) dif x $]" in text:
+            return None
+        if "#align(center)[ integral_0^1 f(x) dif x ]" in text:
+            return "error: unclosed delimiter\n  --> output.typ:4:20"
+        return None
+
+    monkeypatch.setattr(typst_gen, "_validate_typst_document", fake_validate)
+
+    repaired, err, attempts = typst_gen._compile_with_repair("#align(center)[ integral_0^1 f(x) dif x ]\n", max_attempts=2)
+
+    assert err is None
+    assert attempts >= 1
+    assert "#align(center)[$ integral_0^1 f(x) dif x $]" in repaired
