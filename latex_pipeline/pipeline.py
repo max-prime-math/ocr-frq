@@ -7,10 +7,17 @@ from .contracts import FigureRef, QuestionBlock, TableRef
 
 
 _MARKDOWN_TABLE_RE = re.compile(r"(?:^|\n)(?:\|.*\|\n?)+", re.MULTILINE)
+_ARRAY_TABLE_RE = re.compile(r"\\begin\{array\}.*?\\end\{array\}", re.DOTALL)
 
 
 def _strip_markdown_tables(text: str) -> str:
     cleaned = _MARKDOWN_TABLE_RE.sub("\n", text)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
+
+
+def _strip_embedded_table_blocks(text: str) -> str:
+    cleaned = _ARRAY_TABLE_RE.sub(" ", text)
     cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
     return cleaned.strip()
 
@@ -68,10 +75,13 @@ def merge_blocks(sg_results: Iterable[dict], exam_questions_by_num: dict[int, di
 
         if any(table.section == "question" for table in tables):
             prompt = _strip_markdown_tables(prompt)
+            prompt = _strip_embedded_table_blocks(prompt)
         if any(table.section == "solution" for table in tables):
             solution = _strip_markdown_tables(solution)
+            solution = _strip_embedded_table_blocks(solution)
         if any(table.section == "grading_scheme" for table in tables):
             grading = _strip_markdown_tables(grading)
+            grading = _strip_embedded_table_blocks(grading)
 
         for fig in exam_q.get("figures") or []:
             file_path = fig.get("file_path")
@@ -85,6 +95,15 @@ def merge_blocks(sg_results: Iterable[dict], exam_questions_by_num: dict[int, di
                         render_height=float(fig.get("render_height")) if fig.get("render_height") is not None else (float(fig.get("height")) if fig.get("height") is not None else None),
                     )
                 )
+
+        seen_paths: set[str] = set()
+        deduped_figures: list[FigureRef] = []
+        for fig in figures:
+            if fig.file_path in seen_paths:
+                continue
+            seen_paths.add(fig.file_path)
+            deduped_figures.append(fig)
+        figures = deduped_figures
 
         block_id = f"q{int(qnum):02d}-sgp{int(row.get('page', 0)) + 1:02d}"
         warnings: list[str] = []

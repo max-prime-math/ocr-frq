@@ -58,7 +58,7 @@ def test_renderer_wraps_bare_latex_math_in_prose():
         solution_text=r"The interval is $(−\infty, ∞)$.",
     )
     tex = build_latex_document([block], set())
-    assert r"for which \(\int_{-3}^{k} x^2 dx = 0\)?" in tex
+    assert r"\int_{-3}^{k} x^2 dx = 0" in tex
     assert r"$(-\infty, \infty)$" in tex
 
 

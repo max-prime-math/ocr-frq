@@ -184,6 +184,11 @@ def _wrap_inline_math(match: re.Match[str]) -> str:
     return rf"\({text}\)"
 
 
+def _wrap_dollar_math(match: re.Match[str]) -> str:
+    text = match.group(1).strip()
+    return f"${text}$"
+
+
 def _wrap_display_math(match: re.Match[str]) -> str:
     text = match.group(1).strip()
     return rf"\[{text}\]"
@@ -247,6 +252,8 @@ def _looks_like_bare_math(text: str) -> bool:
         return False
     if any(token in stripped for token in (r"\(", r"\[", "$$", "$")):
         return False
+    if len(stripped.split()) > 8:
+        return False
     if len(stripped.split()) > 4 and not any(ch in stripped for ch in "=+-*/^_[]{}()\\"):
         return False
     if re.fullmatch(r"[A-Za-z0-9\\\^_{}\[\]()+\-*/=<>|.,'` :]+", stripped) is None:
@@ -262,7 +269,7 @@ def _looks_like_bare_math(text: str) -> bool:
     )
 
 
-def _sanitize_latex_text(text: str, *, auto_wrap_whole: bool = True) -> str:
+def _sanitize_latex_text(text: str, *, auto_wrap_whole: bool = True, wrap_bare_spans: bool = True) -> str:
     env_block = _wrap_math_environment_block(text)
     if env_block is not None:
         return env_block
@@ -271,7 +278,8 @@ def _sanitize_latex_text(text: str, *, auto_wrap_whole: bool = True) -> str:
     cleaned = _normalise_dollar_runs(cleaned)
     cleaned = _balance_delimited_math(_escape_percent(cleaned))
     cleaned = _repair_protected_math(cleaned)
-    cleaned = _wrap_bare_math_spans(cleaned)
+    if wrap_bare_spans:
+        cleaned = _wrap_bare_math_spans(cleaned)
     cleaned = _repair_protected_math(cleaned)
     cleaned = _normalise_mixed_math_delimiters(cleaned)
     cleaned = _dedupe_math_delimiters(cleaned)
@@ -281,12 +289,25 @@ def _sanitize_latex_text(text: str, *, auto_wrap_whole: bool = True) -> str:
     return cleaned
 
 
-def _render_text(text: str, *, auto_wrap_whole: bool = True) -> str:
-    cleaned = _sanitize_latex_text(text, auto_wrap_whole=auto_wrap_whole)
+def _render_text(text: str, *, auto_wrap_whole: bool = True, wrap_bare_spans: bool = True, wrap_bare_lines: bool = True) -> str:
+    cleaned = _sanitize_latex_text(text, auto_wrap_whole=auto_wrap_whole, wrap_bare_spans=wrap_bare_spans)
 
     def render_plain_segment(segment: str) -> str:
-        rendered = _escape_plain_text(segment)
-        rendered = rendered.replace("\r\n", "\n").replace("\r", "\n")
+        normalized = segment.replace("\r\n", "\n").replace("\r", "\n")
+        lines: list[str] = []
+        for raw_line in normalized.split("\n"):
+            line = raw_line.strip()
+            if not line:
+                lines.append("")
+                continue
+            if wrap_bare_lines and _looks_like_bare_math(line):
+                if any(token in line for token in ("=", r"\int", r"\frac", r"\sum", r"\lim", r"\prod")):
+                    lines.append(rf"\[{line}\]")
+                else:
+                    lines.append(rf"\({line}\)")
+                continue
+            lines.append(_escape_plain_text(line))
+        rendered = "\n".join(lines)
         rendered = rendered.replace("\n\n", " \\par ")
         rendered = rendered.replace("\n", " ")
         return rendered
@@ -310,23 +331,74 @@ def _render_text(text: str, *, auto_wrap_whole: bool = True) -> str:
 
 def _normalise_grading_text(text: str) -> str:
     cleaned = _strip_control_chars(text)
+    cleaned = cleaned.replace(r"\{", "(")
+    cleaned = cleaned.replace(r"\}", ")")
     cleaned = cleaned.replace(r"\left\{\begin{array}{l}", "(")
     cleaned = cleaned.replace(r"\begin{array}{l}", "(")
     cleaned = cleaned.replace(r"\end{array}\right.", ")")
     cleaned = cleaned.replace(r"\end{array}", ")")
+    cleaned = cleaned.replace(r"\left<", "<")
+    cleaned = cleaned.replace(r"\left(", "(")
+    cleaned = cleaned.replace(r"\right.", ")")
     cleaned = cleaned.replace(r"\begin{cases}", "(")
     cleaned = cleaned.replace(r"\end{cases}", ")")
     cleaned = cleaned.replace(r"\\", "; ")
+    cleaned = cleaned.replace("&", ";")
     cleaned = re.sub(r"\\text\{([^{}]*)\}", r"\1", cleaned)
     cleaned = cleaned.replace(" / ", "; ")
     cleaned = cleaned.replace(" - OR - ", " OR ")
-    cleaned = re.sub(r"\s*;\s*", "; ", cleaned)
+
+    protected: list[str] = []
+
+    def protect(match: re.Match[str]) -> str:
+        protected.append(match.group(0))
+        return f"__RUBRIC_MATH_{len(protected) - 1}__"
+
+    def protect_command(match: re.Match[str]) -> str:
+        protected.append(f"${match.group(1).strip()}$")
+        return f"__RUBRIC_MATH_{len(protected) - 1}__"
+
+    cleaned = _PROTECTED_MATH_PATTERN.sub(protect, cleaned)
+    cleaned = _COMMAND_MATH_PATTERN.sub(protect_command, cleaned)
+
+    def format_plain(segment: str) -> str:
+        segment = segment.replace('"', "")
+        segment = segment.replace("{", "(")
+        segment = segment.replace("}", ")")
+        segment = re.sub(r"\s*(Question\s+\d+[^:]*:)", r" \\par \1", segment)
+        segment = re.sub(r"\s*(Part \([a-z]\):)", r" \\par \1", segment)
+        segment = re.sub(r"\s*-\s*(\d+\s+point[s]?:)", r" \\par - \1", segment)
+        segment = re.sub(r"([(;])\s*(\d+\s*:\s*)", r"\1 \\par \2", segment)
+        segment = re.sub(r"\s*(Note:)", r" \\par \1", segment)
+        segment = re.sub(r"\s*;\s*", "; ", segment)
+        segment = segment.replace("Question \\par ", "Question ")
+        return segment
+
+    parts: list[str] = []
+    last = 0
+    for match in _PROTECTED_MATH_PATTERN.finditer(cleaned):
+        plain = cleaned[last:match.start()]
+        if plain:
+            parts.append(format_plain(plain))
+        parts.append(match.group(0))
+        last = match.end()
+    tail = cleaned[last:]
+    if tail:
+        parts.append(format_plain(tail))
+    cleaned = "".join(parts)
+
+    for idx, block in enumerate(protected):
+        cleaned = cleaned.replace(f"__RUBRIC_MATH_{idx}__", block)
+
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
     return cleaned
 
 
 def _render_grading_text(text: str) -> str:
-    return _render_text(_normalise_grading_text(text), auto_wrap_whole=False)
+    cleaned = _normalise_grading_text(text)
+    rendered = _render_text(cleaned, auto_wrap_whole=False, wrap_bare_spans=False, wrap_bare_lines=False)
+    rendered = rendered.replace(r"\(\)", "")
+    return rendered
 
 
 def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:

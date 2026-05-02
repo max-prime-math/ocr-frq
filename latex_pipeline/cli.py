@@ -48,6 +48,18 @@ def _is_nontrivial_text(value: object) -> bool:
     return isinstance(value, str) and len(value.strip()) >= 12
 
 
+def _is_table_like_figure(figure: dict) -> bool:
+    text = " ".join(
+        str(figure.get(key) or "")
+        for key in ("description", "caption", "label")
+    ).lower()
+    if not text:
+        return False
+    if "table" in text and not any(token in text for token in ("graph", "diagram", "plot", "curve")):
+        return True
+    return False
+
+
 def _normalize_sg_extraction(extraction: dict) -> tuple[dict, list[str]]:
     warnings: list[str] = []
     raw_page_type = str(extraction.get("page_type") or "").strip().lower()
@@ -63,6 +75,9 @@ def _normalize_sg_extraction(extraction: dict) -> tuple[dict, list[str]]:
     if page_type == "skip":
         extraction.setdefault("skip_reason", extraction.get("skip_reason") or "other")
         return extraction, warnings
+
+    if "question" not in extraction and isinstance(extraction.get("question_prompt"), str):
+        extraction["question"] = extraction.get("question_prompt")
 
     question_text = extraction.get("question") or ""
     solution_text = extraction.get("solution") or ""
@@ -83,6 +98,9 @@ def _normalize_sg_extraction(extraction: dict) -> tuple[dict, list[str]]:
         warnings.append("missing_solution_text")
     if not _is_nontrivial_text(grading_text):
         warnings.append("missing_grading_text")
+
+    if extraction.get("tables") and extraction.get("figures"):
+        extraction["figures"] = [fig for fig in extraction.get("figures", []) if not _is_table_like_figure(fig)]
 
     return extraction, warnings
 
@@ -108,6 +126,8 @@ def _normalize_exam_extraction(extraction: dict) -> tuple[dict, list[str]]:
             question["question"] = question.get("question_text")
         normalized_figures: list[dict] = []
         for figure in question.get("figures", []) or []:
+            if question.get("tables") and _is_table_like_figure(figure):
+                continue
             if all(key in figure for key in ("x", "y", "width", "height")):
                 normalized_figures.append(figure)
                 continue

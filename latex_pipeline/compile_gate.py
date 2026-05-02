@@ -18,6 +18,8 @@ def compile_latex(tex_path: str, pdf_path: str) -> tuple[bool, str]:
         f"-jobname={pdf.stem}",
         str(tex),
     ]
-    proc = subprocess.run(cmd, capture_output=True, text=True)
-    output = ((proc.stdout or "") + (proc.stderr or "")).strip()
+    proc = subprocess.run(cmd, capture_output=True, text=False)
+    stdout = (proc.stdout or b"").decode("utf-8", errors="replace")
+    stderr = (proc.stderr or b"").decode("utf-8", errors="replace")
+    output = (stdout + stderr).strip()
     return proc.returncode == 0 and pdf.exists(), output
