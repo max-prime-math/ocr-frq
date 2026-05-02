@@ -12,6 +12,7 @@ cache TTL only pay for the image + user tokens, not the system prompt tokens.
 import base64
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -20,6 +21,24 @@ import anthropic
 from cache import FRQCache
 
 logger = logging.getLogger(__name__)
+
+
+def _parse_json_text(raw: str):
+    text = raw.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\\s*", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\\s*```$", "", text)
+        text = text.strip()
+
+    decoder = json.JSONDecoder()
+    for idx, ch in enumerate(text):
+        if ch in "[{":
+            try:
+                obj, _ = decoder.raw_decode(text[idx:])
+                return obj
+            except json.JSONDecodeError:
+                continue
+    return json.loads(text)
 
 # ---------------------------------------------------------------------------
 # System prompt
@@ -322,22 +341,17 @@ def extract_page(
                             "Classify this page and extract its content. "
                             "Determine whether it is a real FRQ question page or an ignorable extra page. "
                             "If it is a real FRQ page, extract the question, left-column solution, and "
-                            "right-column grading scheme. Write all math in Typst syntax ($...$)."
+                            "right-column grading scheme. Write all math in Typst syntax ($...$). "
+                            "Return only valid JSON matching the schema in your instructions."
                         ),
                     },
                 ],
             }
         ],
-        output_config={
-            "format": {
-                "type": "json_schema",
-                "schema": _OUTPUT_SCHEMA,
-            }
-        },
     )
 
     raw = next(b.text for b in response.content if b.type == "text")
-    result = json.loads(raw)
+    result = _parse_json_text(raw)
 
     u = response.usage
     usage = {

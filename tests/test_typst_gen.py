@@ -85,27 +85,6 @@ def test_build_document_repairs_trailing_unit_exponent():
     assert '$text("miles/minute")^2$' in doc
 
 
-def test_build_document_runs_document_repair_callback(monkeypatch):
-    calls = []
-
-    def fake_validate(text: str):
-        if "// repaired" in text:
-            return None
-        return "error: bad Typst\n  --> output.typ:3:1"
-
-    def repair(kind: str, text: str, context):
-        calls.append((kind, context))
-        return text + "\n// repaired"
-
-    monkeypatch.setattr(typst_gen, "_validate_typst_document", fake_validate)
-
-    doc = build_document([_page_result()], repair_callback=repair)
-
-    assert "// repaired" in doc
-    assert calls and calls[0][0] == "document"
-    assert "output.typ:3:1" in calls[0][1]
-
-
 def test_question_parts_render_as_native_enum():
     block = render_frq_block(_frq(question="(a) Find $f(x)$.\n(b) Explain the result."))
     assert '#enum(numbering: "(a)"' in block
@@ -208,3 +187,20 @@ def test_error_pages_appear_as_comments():
         "pdf_path": "/tmp/f.pdf",
     }])
     assert "// Error on page 3: network timeout" in doc
+
+
+def test_compile_loop_repairs_unclosed_align_math(monkeypatch):
+    def fake_validate(text: str):
+        if "#align(center)[$ integral_0^1 f(x) dif x $]" in text:
+            return None
+        if "#align(center)[ integral_0^1 f(x) dif x ]" in text:
+            return "error: unclosed delimiter\n  --> output.typ:4:20"
+        return None
+
+    monkeypatch.setattr(typst_gen, "_validate_typst_document", fake_validate)
+
+    repaired, err, attempts = typst_gen._compile_with_repair("#align(center)[ integral_0^1 f(x) dif x ]\n", max_attempts=2)
+
+    assert err is None
+    assert attempts >= 1
+    assert "#align(center)[$ integral_0^1 f(x) dif x $]" in repaired
