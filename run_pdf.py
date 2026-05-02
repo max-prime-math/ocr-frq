@@ -16,16 +16,18 @@ import anthropic
 from cache import FRQCache
 from extractor import extract_page
 from renderer import page_count, render_page, save_temp_image
-from latex_writer import build_document
+from typst_gen import build_document
+from typst_repair import make_typst_repair_callback
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="OCR-FRQ: extract FRQ PDFs to LaTeX.")
+    parser = argparse.ArgumentParser(description="OCR-FRQ: extract FRQ PDFs to Typst.")
     parser.add_argument("pdf", nargs="+", help="Input PDF file(s).")
-    parser.add_argument("--output", default="output.tex", help="Output .tex file.")
+    parser.add_argument("--output", default="output.typ", help="Output .typ file.")
     parser.add_argument("--model", default="claude-haiku-4-5", help="Claude model ID.")
     parser.add_argument("--cache", default="cache/frq", help="Cache directory.")
     parser.add_argument("--force", action="store_true", help="Bypass cache.")
+    parser.add_argument("--repair", action="store_true", help="Use a second Claude pass for suspicious Typst spans and compile failures.")
     args = parser.parse_args()
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
@@ -35,6 +37,12 @@ def main() -> None:
 
     client = anthropic.Anthropic(api_key=api_key)
     cache = FRQCache(args.cache)
+    repair_callback = make_typst_repair_callback(
+        client,
+        args.model,
+        enable_span_repair=args.repair,
+        enable_document_repair=args.repair,
+    ) if args.repair else None
 
     all_results: list[dict] = []
     usage_log: list[dict] = []
@@ -103,8 +111,8 @@ def main() -> None:
     else:
         print("All pages served from cache.")
 
-    tex_content = build_document(all_results)
-    Path(args.output).write_text(tex_content, encoding="utf-8")
+    typst_content = build_document(all_results, repair_callback=repair_callback)
+    Path(args.output).write_text(typst_content, encoding="utf-8")
     print(f"\nOutput written to {args.output}")
 
 

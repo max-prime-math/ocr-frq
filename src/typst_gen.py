@@ -10,11 +10,13 @@ import re
 import subprocess
 import tempfile
 from pathlib import Path
-from typing import Optional
+from typing import Callable, Optional
 
 from models import FRQExtraction
 
 logger = logging.getLogger(__name__)
+
+RepairCallback = Callable[[str, str, Optional[str]], Optional[str]]
 
 
 _INLINE_MATH_RE = re.compile(r"\$\s*(.*?)\s*\$", re.DOTALL)
@@ -31,6 +33,7 @@ _BROKEN_TOKENS = (
     ("d ot", "dot"),
 )
 _FUNCTION_NAMES = ("sin", "cos", "tan", "log", "ln", "exp", "lim", "dif", "dot")
+_SPAN_REPAIR_RE = re.compile(r"\b(?:s\s*i\s*n|c\s*o\s*s|t\s*a\s*n|d\s*i\s*f|l\s*o\s*g|l\s*n|e\s*x\s*p|d\s*o\s*t)\b", re.IGNORECASE)
 _TEXT_SENTINEL = "\x00\x01"
 
 
@@ -69,6 +72,25 @@ def _normalise_common_ocr(text: str) -> str:
     text = re.sub(r"(?<=[A-Za-z0-9\)\]])\s*\*\s*(?=[A-Za-z0-9\(\[])", " ", text)
     text = re.sub(r"[ \t]{2,}", " ", text)
     return text
+
+
+def _looks_like_ocr_noise(text: str) -> bool:
+    if _SPAN_REPAIR_RE.search(text):
+        return True
+    return bool(
+        re.search(r"\b(?:[A-Za-z]\s+){2,}[A-Za-z]\b", text)
+        or re.search(r"\b[A-Za-z]\s+[=+\-*/^_]\s+[A-Za-z0-9]\b", text)
+    )
+
+
+def _apply_span_repair(text: str, repair_callback: RepairCallback | None, kind: str) -> str:
+    if repair_callback is None or not _looks_like_ocr_noise(text):
+        return text
+
+    repaired = repair_callback(kind, text, None)
+    if not repaired:
+        return text
+    return _strip_control_chars(repaired)
 
 
 def _normalise_rubric_artifacts(text: str) -> str:
@@ -208,18 +230,20 @@ def _clean_math_spans(text: str, rubric_mode: bool = False) -> str:
     return _INLINE_MATH_RE.sub(replace_math, text)
 
 
-def render_text(text: str) -> str:
+def render_text(text: str, repair_callback: RepairCallback | None = None) -> str:
     """Prepare extracted text for embedding in a Typst content block."""
     t = _strip_control_chars(text)
+    t = _apply_span_repair(t, repair_callback, "span")
     t = _normalise_common_ocr(t)
     t = _clean_math_spans(t)
     t = _convert_newlines(t)
     return t.strip()
 
 
-def render_rubric_text(text: str) -> str:
+def render_rubric_text(text: str, repair_callback: RepairCallback | None = None) -> str:
     """Prepare grading-scheme text with extra cleanup for malformed rubric notation."""
     t = _strip_control_chars(text)
+    t = _apply_span_repair(t, repair_callback, "rubric")
     t = _normalise_common_ocr(t)
     t = _normalise_rubric_artifacts(t)
     t = _clean_math_spans(t, rubric_mode=True)
@@ -517,6 +541,8 @@ def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) ->
 def build_document(
     page_results: list[dict],
     include_skipped_comments: bool = True,
+    repair_callback: RepairCallback | None = None,
+    max_repair_attempts: int = 1,
 ) -> str:
     """
     Build a complete Typst document from a list of PageResult dicts.
@@ -550,6 +576,16 @@ def build_document(
     document = _PREAMBLE + body + "\n"
     document = _repair_typst_document(document)
     validation_error = _validate_typst_document(document)
+
+    attempts = 0
+    while validation_error and repair_callback is not None and attempts < max_repair_attempts:
+        attempts += 1
+        repaired = repair_callback("document", document, validation_error)
+        if not repaired or repaired == document:
+            break
+        document = _repair_typst_document(_strip_control_chars(repaired))
+        validation_error = _validate_typst_document(document)
+
     if validation_error:
         logger.warning("Typst validation failed after local repair:\n%s", validation_error)
         document += f"\n// Typst validation warning:\n// {validation_error.replace(chr(10), chr(10) + '// ')}\n"

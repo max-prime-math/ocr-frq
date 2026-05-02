@@ -5,6 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
+import typst_gen
 from typst_gen import build_document, render_frq_block, render_text
 
 
@@ -82,6 +83,27 @@ def test_build_document_repairs_trailing_unit_exponent():
         question="(a) $a(7.5) = v'(7.5) = (v(8) - v(7))/(8 - 7) = -0.1$ miles/minute$^2$"
     ))])
     assert '$text("miles/minute")^2$' in doc
+
+
+def test_build_document_runs_document_repair_callback(monkeypatch):
+    calls = []
+
+    def fake_validate(text: str):
+        if "// repaired" in text:
+            return None
+        return "error: bad Typst\n  --> output.typ:3:1"
+
+    def repair(kind: str, text: str, context):
+        calls.append((kind, context))
+        return text + "\n// repaired"
+
+    monkeypatch.setattr(typst_gen, "_validate_typst_document", fake_validate)
+
+    doc = build_document([_page_result()], repair_callback=repair)
+
+    assert "// repaired" in doc
+    assert calls and calls[0][0] == "document"
+    assert "output.typ:3:1" in calls[0][1]
 
 
 def test_question_parts_render_as_native_enum():

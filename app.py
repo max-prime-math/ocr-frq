@@ -23,7 +23,8 @@ from cache import FRQCache
 from extractor import extract_page
 from exam_extractor import extract_exam_page
 from figure_extract import materialise_figures, _average_hash, _hash_distance, _are_similar_figures
-from latex_writer import build_document
+from typst_gen import build_document
+from typst_repair import make_typst_repair_callback
 from renderer import page_count, render_page, save_temp_image
 
 # ---------------------------------------------------------------------------
@@ -176,10 +177,10 @@ def _detect_pairs(uploaded_files: list) -> tuple[list[dict], list[str]]:
     return pairs, warnings
 
 
-def _build_zip(tex_content: str, figures_dir: str | None = None) -> bytes:
+def _build_zip(typst_content: str, figures_dir: str | None = None) -> bytes:
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-        zf.writestr("output.tex", tex_content.encode("utf-8"))
+        zf.writestr("output.typ", typst_content.encode("utf-8"))
         if figures_dir:
             figures_path = Path(figures_dir)
             if figures_path.exists():
@@ -214,7 +215,7 @@ for key, default in {
 
 with st.sidebar:
     st.title("OCR-FRQ")
-    st.caption(f"Free-response PDFs → LaTeX · v{APP_VERSION}")
+    st.caption(f"Free-response PDFs → Typst · v{APP_VERSION}")
     st.divider()
 
     api_key = st.text_input(
@@ -237,16 +238,34 @@ with st.sidebar:
         help="Ignore cached results and re-call Claude for every page.",
     )
 
+    typst_repair = st.checkbox(
+        "Typst repair pass",
+        value=True,
+        help="Use a second Claude pass for suspicious Typst spans and compile failures.",
+    )
+
     st.divider()
     st.caption("Responses cached in `cache/frq/` — repeated runs are cheap.")
-    st.caption("Output is LaTeX (`.tex`) — compile with `pdflatex output.tex`.")
+    st.caption("Output is Typst (`.typ`) — compile with `typst compile output.typ`.")
+
+client = anthropic.Anthropic(api_key=api_key) if api_key else None
+repair_callback = (
+    make_typst_repair_callback(
+        client,
+        model,
+        enable_span_repair=typst_repair,
+        enable_document_repair=typst_repair,
+    )
+    if client and typst_repair
+    else None
+)
 
 # ---------------------------------------------------------------------------
 # Main area
 # ---------------------------------------------------------------------------
 
 st.title("OCR-FRQ")
-st.caption("Upload AP exam scoring guidelines PDFs to extract FRQ content as LaTeX.")
+st.caption("Upload AP exam scoring guidelines PDFs to extract FRQ content as Typst.")
 
 uploaded_files = st.file_uploader(
     "Drop PDF files here",
@@ -280,7 +299,6 @@ if st.button("Process PDFs", type="primary", use_container_width=True):
 
     tmpdir = tempfile.mkdtemp()
     figures_dir = os.path.join(tmpdir, "figures")
-    client = anthropic.Anthropic(api_key=api_key)
     sg_cache = FRQCache("cache/frq")
     exam_cache = FRQCache("cache/exam")
 
@@ -584,9 +602,9 @@ if not frq_pages:
     st.warning("No FRQ pages were extracted — nothing to download.")
     st.stop()
 
-tex_content = build_document(results)
+typst_content = build_document(results, repair_callback=repair_callback)
 figures_dir = st.session_state.figures_dir
-zip_bytes = _build_zip(tex_content, figures_dir=figures_dir)
+zip_bytes = _build_zip(typst_content, figures_dir=figures_dir)
 
 st.download_button(
     label="⬇️ Download output.zip",
@@ -597,8 +615,8 @@ st.download_button(
     use_container_width=True,
 )
 
-with st.expander("Preview LaTeX"):
-    preview = tex_content[:5000]
-    if len(tex_content) > 5000:
+with st.expander("Preview Typst"):
+    preview = typst_content[:5000]
+    if len(typst_content) > 5000:
         preview += "\n\n% … (truncated)"
-    st.code(preview, language="latex")
+    st.code(preview, language="typst")
