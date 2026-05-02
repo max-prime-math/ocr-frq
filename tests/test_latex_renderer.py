@@ -65,10 +65,10 @@ def test_renderer_wraps_bare_latex_math_in_prose():
 def test_question_figures_are_included():
     block = _make_block(
         question_text="See the graph. (a) Compute x.",
-        figures=[FigureRef(section="question", file_path="figures/sample.png", caption="Sample graph")],
+        figures=[FigureRef(section="question", file_path="figures/sample.png", caption="Sample graph", render_width=0.3)],
     )
     tex = build_latex_document([block], set())
-    assert r"\includegraphics[width=0.8\linewidth]{figures/sample.png}" in tex
+    assert r"\includegraphics[width=0.392\linewidth]{figures/sample.png}" in tex
     assert "Sample graph" in tex
 
 

@@ -73,6 +73,8 @@ _POSTAMBLE = r"""
 \end{document}
 """
 
+_PAGE_TO_TEXT_WIDTH = 8.5 / 6.5
+
 
 def _escape_percent(text: str) -> str:
     return re.sub(r"(?<!\\)%", r"\\%", text)
@@ -363,8 +365,10 @@ def _combine_extra_parts(intro: str, parts: dict[str, str]) -> str:
 def _render_figures(lines: list[str], figures: list[FigureRef]) -> None:
     for fig in figures:
         fig_path = fig.file_path.replace("\\", "/")
+        width_fraction = fig.render_width if fig.render_width is not None else 0.6
+        width_fraction = min(0.95, max(0.12, width_fraction * _PAGE_TO_TEXT_WIDTH))
         lines.append(r"\begin{center}")
-        lines.append(rf"\includegraphics[width=0.8\linewidth]{{{fig_path}}}")
+        lines.append(rf"\includegraphics[width={width_fraction:.3f}\linewidth]{{{fig_path}}}")
         if fig.caption:
             lines.append(rf"\\ { _escape_plain_text(fig.caption.strip()) }")
         lines.append(r"\end{center}")

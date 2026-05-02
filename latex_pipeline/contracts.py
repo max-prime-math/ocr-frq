@@ -8,6 +8,8 @@ class FigureRef:
     section: str
     file_path: str
     caption: str | None = None
+    render_width: float | None = None
+    render_height: float | None = None
 
 
 @dataclass(slots=True)

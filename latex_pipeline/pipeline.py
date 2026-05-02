@@ -41,6 +41,8 @@ def merge_blocks(sg_results: Iterable[dict], exam_questions_by_num: dict[int, di
                         section=str(fig.get("section") or "question"),
                         file_path=str(file_path),
                         caption=fig.get("caption"),
+                        render_width=float(fig.get("render_width")) if fig.get("render_width") is not None else (float(fig.get("width")) if fig.get("width") is not None else None),
+                        render_height=float(fig.get("render_height")) if fig.get("render_height") is not None else (float(fig.get("height")) if fig.get("height") is not None else None),
                     )
                 )
 
@@ -79,6 +81,8 @@ def merge_blocks(sg_results: Iterable[dict], exam_questions_by_num: dict[int, di
                         section="question",
                         file_path=str(file_path),
                         caption=fig.get("caption"),
+                        render_width=float(fig.get("render_width")) if fig.get("render_width") is not None else (float(fig.get("width")) if fig.get("width") is not None else None),
+                        render_height=float(fig.get("render_height")) if fig.get("render_height") is not None else (float(fig.get("height")) if fig.get("height") is not None else None),
                     )
                 )
 
