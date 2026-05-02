@@ -26,8 +26,8 @@ logger = logging.getLogger(__name__)
 def _parse_json_text(raw: str):
     text = raw.strip()
     if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\\s*", "", text, flags=re.IGNORECASE)
-        text = re.sub(r"\\s*```$", "", text)
+        text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\s*```$", "", text)
         text = text.strip()
 
     decoder = json.JSONDecoder()
@@ -73,20 +73,15 @@ Your job for each page:
    b. Choose the most fitting skip_reason.
    c. Set question, solution, and grading_scheme to null.
 
-Math notation rules (Typst syntax):
-- Use $...$ with no spaces inside the dollar signs for inline math.
-- Use $ ... $ with a space after the opening $ and before the closing $ for display/block equations.
-- Do NOT use LaTeX delimiters such as \\(...\\) or \\[...\\].
-- Write math operators without backslashes: integral, sum, product, lim, sqrt(x), abs(x), floor(x), ceil(x).
-- Write Greek letters without backslashes: alpha, beta, pi, theta, lambda, etc.
-- Write fractions as a/b for simple cases or (numerator)/(denominator) for complex ones.
-- Comparisons and special values: use <= for ≤, >= for ≥, != for ≠, approx for ≈, infinity for ∞, times for ×, dot for •.
-- Do NOT write `cdot` — use `dot` (or `times` for multiplication). Example: `a dot b` or `a times b`.
-- Always write function application with parentheses: `f(x)`, `g(t)`, not `fx` or `gt`.
-- Always separate a constant from a variable with a space: `k x^2`, not `kx^2`.
-- Derivatives: write as f'(x) or (dif y)/(dif x); integrals as integral_a^b f(x) dif x.
-- Subscripts and superscripts work the same as LaTeX: x_0, e^x, a_(n+1).
-- If a symbol cannot be reliably recovered, use a descriptive placeholder like [integral expression].
+Math notation rules (LaTeX syntax):
+- Use standard LaTeX math notation inside $...$ for inline math and $$...$$ for display math when needed.
+- Use LaTeX commands such as \\int, \\sum, \\prod, \\lim, \\sqrt{...}, \\frac{...}{...}, \\cdot, \\times.
+- Write Greek letters with backslashes: \\alpha, \\beta, \\pi, \\theta, \\lambda, etc.
+- Use \\le, \\ge, \\ne, \\approx, \\infty for comparisons and special values.
+- Always write function application with parentheses: f(x), g(t), not fx or gt.
+- Derivatives may be written as f'(x), \\frac{dy}{dx}, or \\frac{dr}{d\\theta}; integrals as \\int_a^b f(x)\\,dx.
+- Use \\text{...} for words that must appear inside math.
+- If a symbol cannot be reliably recovered, use a descriptive placeholder in brackets.
 
 Figure detection rules:
 - Scan each region (question, solution, grading_scheme) for diagrams, graphs, plots, circuit diagrams, geometric figures, sketches, or any other non-text visual elements.
@@ -100,7 +95,7 @@ Table extraction rules:
 - Detect only clearly rectangular tables with visible rows and columns.
 - For each table, return the section it belongs to ("question", "solution", or "grading_scheme").
 - Return `headers` as the top row if the table has a header row; otherwise return an empty array.
-- Return `rows` as the body rows in reading order, preserving each cell's text as closely as possible in Typst-friendly notation.
+- Return `rows` as the body rows in reading order, preserving each cell's text as closely as possible in LaTeX-friendly notation.
 - Do not include bounding boxes for tables.
 - If no tables are present, return an empty array.
 
@@ -284,6 +279,7 @@ def extract_page(
     force: bool = False,
     model: str = "claude-haiku-4-5",
     usage_out: Optional[list] = None,
+    debug_out: Optional[list] = None,
 ) -> dict:
     """
     Classify and extract content from one rendered FRQ page image.
@@ -341,7 +337,7 @@ def extract_page(
                             "Classify this page and extract its content. "
                             "Determine whether it is a real FRQ question page or an ignorable extra page. "
                             "If it is a real FRQ page, extract the question, left-column solution, and "
-                            "right-column grading scheme. Write all math in Typst syntax ($...$). "
+                            "right-column grading scheme. Write all math in LaTeX syntax. "
                             "Return only valid JSON matching the schema in your instructions."
                         ),
                     },
@@ -352,6 +348,9 @@ def extract_page(
 
     raw = next(b.text for b in response.content if b.type == "text")
     result = _parse_json_text(raw)
+
+    if debug_out is not None:
+        debug_out.append({"raw": raw, "parsed": result})
 
     u = response.usage
     usage = {
