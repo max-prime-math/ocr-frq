@@ -60,11 +60,17 @@ Extra pages that should be skipped include:
 - Section separator pages
 - Any other pages that do not contain a real FRQ question with solution and rubric
 
+Important exception:
+- If a page clearly contains the scoring-guide solution and grading rubric for a numbered FRQ,
+  treat it as an FRQ page even if the original question prompt is partially missing or not visible.
+  In that case, extract the solution and grading rubric, keep the question field null or partial if needed,
+  and do not mark the page as skip.
+
 Your job for each page:
 1. Decide whether this is a real FRQ question page or an ignorable extra page.
 2. If it is a real FRQ page:
    a. Extract the question number (integer) from the header, or null if not visible.
-   b. Extract the full question prompt from the top of the page (may contain sub-parts a, b, c, d…).
+   b. Extract the full question prompt from the top of the page (may contain sub-parts a, b, c, d…). If the prompt is not visible on this page, return null instead of skipping the page.
    c. Extract the worked solution from the LEFT column.
    d. Extract the grading rubric from the RIGHT column (usually point values with criteria).
    e. Flag the page if confidence is low, content is ambiguous, or any field is substantially unclear.
