@@ -190,10 +190,13 @@ _RUBRIC_START_RE = re.compile(
     r"(?:"
     # \\ + newline: only safe before a $-prefixed rubric (not inside array rows)
     r"\\\\\n(?=\$\$?\s*\d+\s*(?:[:\\]|\\left|\\{))"
-    r"|\n\n(?="                               # blank line before any rubric form
-    r"\$\$?\s*\d+\s*(?:[:\\]|\\left|\\{)"    # $N:, $N\left{, $$N: etc.
-    r"|\d+\s*:\s+[a-z]"                      # N : lowercase criterion
-    r"|Note\s*:"                              # Note:
+    r"|\\\\\n(?=\$\\mathbf\{\d+\}\\left)"       # \\ before $\mathbf{N}\left
+    r"|\n\n(?="                                   # blank line before any rubric form
+    r"\$\$?\s*\d+\s*(?:[:\\]|\\left|\\{)"        # $N:, $N\left{, $$N: etc.
+    r"|\$\\mathbf\{\d+\}\\left"                  # $\mathbf{N}\left (bold N)
+    r"|\$\$\s*\n\\begin\{aligned\}\s*\n\s*&\s*\d+"  # $$\begin{aligned}\n& N: (aligned rubric)
+    r"|\d+\s*:\s+[a-z]"                          # N : lowercase criterion
+    r"|Note\s*:"                                  # Note:
     r"))",
     re.IGNORECASE,
 )
@@ -211,9 +214,15 @@ _RUBRIC_ITEM_RE = re.compile(
     r"|\d+\s*:\s+\$\$.*?\$\$(?:\\\\\n?)?"                 # N: $$...$$ (digit-colon-$$)
     r"|\d+\s*:\s+\$.*?\$(?:\\\\\n?)?"                     # N: $...$ (digit-colon-$)
     r"|\d+\s*:\s+[a-z][^\n]*(?:\\\\\n?)?"                 # N : criterion line
-    r"|Note\s*:[^\n]+",                                    # Note: ...
+    r"|(?:(?<=\n)|(?<=\A))Note\s*:[^\n]+",                 # Note: at line start only
     re.DOTALL | re.IGNORECASE,
 )
+
+
+_RUBRIC_CENTER_BLOCK_RE = re.compile(
+    r"\\begin\{center\}.*?\\end\{center\}", re.DOTALL
+)
+_RUBRIC_CRITERION_RE = re.compile(r"\d+\s*:\s+", re.IGNORECASE)
 
 
 def _split_solution_rubric(text: str) -> tuple[str, str]:
@@ -222,18 +231,75 @@ def _split_solution_rubric(text: str) -> tuple[str, str]:
 
     Rubric annotations always appear as a trailing block after all solution
     sub-parts. Returns (text, "") if no rubric boundary is found.
+
+    Handles two rubric formats:
+    - $N:\\left\\{...\\right.$ / $$N...$$ annotation blocks
+    - \\begin{center}\\begin{tabular}...\\end{tabular}\\end{center} rubric tables
+      (used in some years for convergence-test breakdowns, etc.)
     """
     m = _RUBRIC_START_RE.search(text)
     if m is None:
         return text.strip(), ""
-    return text[: m.start()].strip(), text[m.end() :].strip()
+
+    rubric_boundary = m.start()
+
+    # If a \\begin{center}...\\end{center} block immediately precedes the rubric
+    # boundary (only whitespace between) and that block contains rubric-like
+    # content (N : patterns), extend the rubric start backwards to include it.
+    preceding = text[:rubric_boundary].rstrip()
+    if preceding.endswith("\\end{center}"):
+        cb_matches = list(_RUBRIC_CENTER_BLOCK_RE.finditer(text[:rubric_boundary]))
+        if cb_matches:
+            last_cb = cb_matches[-1]
+            # Only treat as rubric if the center block has N : criterion patterns
+            if _RUBRIC_CRITERION_RE.search(last_cb.group()):
+                rubric_boundary = last_cb.start()
+
+    return text[:rubric_boundary].strip(), text[rubric_boundary:].strip()
+
+
+_TABULAR_RUBRIC_RE = re.compile(
+    r"(?:\\begin\{center\}\s*)?"
+    r"\\begin\{tabular\}\{[^}]*\}(.*?)\\end\{tabular\}"
+    r"(?:\s*\\end\{center\})?",
+    re.DOTALL,
+)
+
+
+def _flatten_rubric_tables(rubric_text: str) -> str:
+    """
+    Convert \\begin{tabular}...\\end{tabular} rubric tables into flat criterion
+    lines.  Rubric tables (e.g. convergence-test point breakdowns) contain rows
+    like '1 : sets up ratio \\\\' that are valid rubric criteria once extracted.
+    """
+    def repl(m: re.Match) -> str:
+        inner = m.group(1)
+        # Split on \\\\ (LaTeX row separator) and strip table structure
+        rows = re.split(r"\\\\", inner)
+        lines: list[str] = []
+        for row in rows:
+            row = re.sub(r"\\hline|&\s*", " ", row).strip()
+            row = re.sub(r"\s{2,}", " ", row)
+            if row:
+                lines.append(row)
+        return "\n".join(lines)
+
+    return _TABULAR_RUBRIC_RE.sub(repl, rubric_text)
+
+
+def _strip_mathbf_numbers(text: str) -> str:
+    """Remove \\mathbf{N} bold wrapping from point-count numbers in rubric items."""
+    return re.sub(r"\\mathbf\{(\d+)\}", r"\1", text)
 
 
 def _split_rubric_items(rubric_text: str) -> list[str]:
     """Extract individual rubric annotation items from the rubric block."""
+    # Flatten any tabular rubric tables and strip bold number formatting first
+    cleaned = _flatten_rubric_tables(rubric_text)
+    cleaned = _strip_mathbf_numbers(cleaned)
     return [
         m.group(0).rstrip("\\\\\n").strip()
-        for m in _RUBRIC_ITEM_RE.finditer(rubric_text)
+        for m in _RUBRIC_ITEM_RE.finditer(cleaned)
         if m.group(0).strip()
     ]
 
@@ -243,6 +309,13 @@ _UNDELIMITED_MATH_RE = re.compile(
     r"(?:[a-zA-Z\d])"       # letter or digit
     r"(?:\^|_)"             # followed by ^ or _
     r"\{"                   # opening brace — marks a bare superscript/subscript
+)
+# Additional math commands that are invalid in text mode
+_UNDELIMITED_MATH_CMDS_RE = re.compile(
+    r"\\(?:geq|leq|neq|approx|text\{|cdot|times|frac\{|sqrt\{|int\b|sum\b|infty"
+    r"|Rightarrow|rightarrow|Leftarrow|leftarrow|iff|to\b|alpha|beta|theta|pi\b"
+    r"|partial|nabla)",
+    re.IGNORECASE,
 )
 
 
@@ -259,7 +332,8 @@ def _rubric_item_safe(item: str) -> str:
         return item  # already fully in math delimiters
     # Only look for bare math OUTSIDE existing $...$ spans
     outside_math = re.sub(r"\$.*?\$", "", stripped, flags=re.DOTALL)
-    if _UNDELIMITED_MATH_RE.search(outside_math):
+    if (_UNDELIMITED_MATH_RE.search(outside_math)
+            or _UNDELIMITED_MATH_CMDS_RE.search(outside_math)):
         return rf"\({stripped}\)"
     return item
 
@@ -302,7 +376,7 @@ def _render_question_block(block: QuestionBlock) -> str:
     # $$...$$ (before _sanitize converts them to \[...\]), then sanitize each piece.
     if block.sg_text:
         sol_text_raw, rubric_text_raw = _split_solution_rubric(block.sg_text)
-        sol_text = _sanitize(sol_text_raw or block.sg_text)
+        sol_text = _sanitize(_strip_mathbf_numbers(sol_text_raw or block.sg_text))
         # Extract rubric items from raw text, sanitize each individually.
         # Convert $$...$$ → $...$ (inline) so rubric items stay left-aligned —
         # \[...\] display math would center them, which looks inconsistent.
