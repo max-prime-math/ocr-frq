@@ -528,6 +528,11 @@ def parse_exam_zip(
 
     tex, fig_paths = _extract_and_save_figures(tex, images, figures_dir, prefix)
 
+    # Wrap figures in \begin{center}...\end{center} BEFORE block extraction so
+    # _find_tail_preamble can detect inter-question figures and assign them to
+    # the correct question's intro (e.g. a graph shown before "5. A car is...")
+    tex = _center_bare_figures(tex)
+
     starts = _find_question_starts(tex)
     if not starts:
         return {}
