@@ -56,7 +56,7 @@ _INCLUDEGRAPHICS_RE = re.compile(
 def _normalize_includegraphics_opts(opts: str) -> str:
     """Convert adjustbox options to plain graphicx options."""
     opts = re.sub(r"\balt=\{[^}]*\}", "", opts)
-    opts = re.sub(r"\bmax\s+width\s*=[^,\]]+", r"width=0.8\\linewidth", opts)
+    opts = re.sub(r"\bmax\s+width\s*=[^,\]]+", r"width=0.6\\linewidth", opts)
     opts = re.sub(r"(?:,\s*)?\bcenter\b(?:\s*,)?", "", opts)
     opts = re.sub(r",\s*,", ",", opts)
     return opts.strip(" ,")
@@ -117,7 +117,7 @@ def _extract_and_save_figures(
         ref = m.group(2)
         new_ref = internal_to_out.get(ref, ref)
         if not opts or "width" not in opts:
-            opts = "width=0.8\\linewidth"
+            opts = "width=0.6\\linewidth"
         return f"\\includegraphics[{opts}]{{{new_ref}}}"
 
     tex = _INCLUDEGRAPHICS_RE.sub(repl, tex)
@@ -608,7 +608,7 @@ def parse_exam_zip(
         orphan_figs = [p for p in fig_paths if p not in assigned]
         for p in orphan_figs:
             extra_prefix_parts.append(
-                f"\\begin{{center}}\n\\includegraphics[width=0.8\\linewidth]{{{p}}}\n\\end{{center}}"
+                f"\\begin{{center}}\n\\includegraphics[width=0.6\\linewidth]{{{p}}}\n\\end{{center}}"
             )
 
         # Orphan tables (before first question position)

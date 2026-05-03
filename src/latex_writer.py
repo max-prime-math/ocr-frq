@@ -38,6 +38,8 @@ _PREAMBLE = r"""\documentclass[12pt,addpoints,answers]{exam}
 \usepackage[utf8]{inputenc}
 \printanswers
 \unframedsolutions
+% Suppress the exam class's automatic "Solution:" title — we print our own headers.
+\renewcommand{\solutiontitle}{}
 
 \begin{document}
 """
@@ -274,6 +276,11 @@ def _meta_comment(block: QuestionBlock) -> str:
 def _render_question_block(block: QuestionBlock) -> str:
     lines: list[str] = []
     lines.append(r"\question")
+    # \leavevmode forces horizontal mode so the question-number label anchors
+    # to the TOP of the first content block.  Without it, when a question starts
+    # with \begin{center}\includegraphics{...}, LaTeX may place the label at the
+    # bottom of the image instead of the top.
+    lines.append(r"\leavevmode")
     lines.append(_meta_comment(block))
 
     q_text = _sanitize(block.question_text)
