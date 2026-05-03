@@ -262,9 +262,14 @@ def _render_question_block(block: QuestionBlock) -> str:
     if block.sg_text:
         sol_text_raw, rubric_text_raw = _split_solution_rubric(block.sg_text)
         sol_text = _sanitize(sol_text_raw or block.sg_text)
-        # Extract rubric items from raw text, sanitize each individually
+        # Extract rubric items from raw text, sanitize each individually.
+        # Convert $$...$$ → $...$ (inline) so rubric items stay left-aligned —
+        # \[...\] display math would center them, which looks inconsistent.
         rubric_items_raw = _split_rubric_items(rubric_text_raw)
-        rubric_items = [_sanitize(item) for item in rubric_items_raw]
+        rubric_items = [
+            _sanitize(re.sub(r"\$\$\s*(.*?)\s*\$\$", r"$\1$", item, flags=re.DOTALL))
+            for item in rubric_items_raw
+        ]
 
         lines.append(r"\begin{solution}")
 
