@@ -59,7 +59,7 @@ def process_year(
     print(f"    Parsing exam zip…", flush=True)
     exam_qs = parse_exam_zip(str(exam_zip), str(figures_dir), year, form)
     print(f"    Parsing SG zip…", flush=True)
-    sg_texts = parse_sg_zip(str(sg_zip))
+    sg_texts = parse_sg_zip(str(sg_zip), str(figures_dir), year, form)
 
     if not exam_qs:
         print(f"    No questions parsed from exam zip!", flush=True)

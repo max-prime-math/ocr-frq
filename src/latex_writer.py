@@ -82,7 +82,22 @@ def _normalize_display_math(text: str) -> str:
         inner = m.group(1).strip()
         if not inner:
             return ""
-        if r"\begin{aligned}" in inner or r"\begin{cases}" in inner or r"\begin{array}" in inner:
+        # Convert $$\begin{aligned}...\end{aligned}$$ → \begin{align*}...\end{align*}
+        # Only when content has no nested environments (array, cases, matrix, etc.)
+        # which require being inside \[...\] to render correctly.
+        if r"\begin{aligned}" in inner:
+            has_nested = any(
+                env in inner
+                for env in (r"\begin{array}", r"\begin{cases}", r"\begin{matrix}",
+                             r"\begin{pmatrix}", r"\begin{bmatrix}", r"\left\{",
+                             r"\left[", r"\left(")
+            )
+            if not has_nested:
+                body = re.sub(r"\\begin\{aligned\}", "", inner)
+                body = re.sub(r"\\end\{aligned\}", "", body).strip()
+                return rf"\begin{{align*}}{body}\end{{align*}}"
+            return rf"\[{inner}\]"
+        if r"\begin{cases}" in inner or r"\begin{array}" in inner:
             return rf"\[{inner}\]"
         if "\n" in inner:
             return rf"\[{inner}\]"
@@ -295,12 +310,15 @@ def _render_question_block(block: QuestionBlock) -> str:
         # ── Solution ──────────────────────────────────────────────────────────
         lines.append(r"\textbf{Solution:}\par")
         sol_intro, sol_parts = _split_parts(sol_text)
-        if sol_intro:
+        # Drop intro that's just a bare letter label like "(a)\\" with no content
+        # (e.g. slope-field parts whose solution was a figure that is unavailable).
+        if sol_intro and not re.fullmatch(r"\s*\([a-f]\)\s*\\*\s*", sol_intro):
             lines.append(sol_intro)
         if sol_parts:
             lines.append(r"\begin{parts}")
             for _label, body in sol_parts:
-                lines.append(rf"\part {body}")
+                if body.strip():   # skip empty parts
+                    lines.append(rf"\part {body}")
             lines.append(r"\end{parts}")
         elif not sol_intro:
             lines.append(sol_text)

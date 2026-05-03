@@ -648,16 +648,31 @@ def parse_exam_zip(
     return questions
 
 
-def parse_sg_zip(zip_path: str) -> dict[int, str]:
+def parse_sg_zip(
+    zip_path: str,
+    figures_dir: str | None = None,
+    year: int | None = None,
+    form: str = "",
+) -> dict[int, str]:
     """
     Parse a Mathpix scoring guide zip into {question_number: combined_sg_text}.
 
     The returned text is the solution + rubric for each question, ready to drop
     into a \\begin{solution}...\\end{solution} block.
+
+    If figures_dir and year are provided, solution figures (completed slope fields,
+    sketches, etc.) are extracted from the zip and referenced in the returned text.
     """
-    tex, _images = _load_zip(zip_path)
+    tex, images = _load_zip(zip_path)
     tex = _strip_header(tex)
     tex = _remove_boilerplate_sections(tex)
+
+    # Extract SG solution figures if the zip has image files.
+    # Most years include completed slope fields, sketches, and diagram solutions.
+    if figures_dir and year is not None and images:
+        form_tag = "-form-b" if form.upper() == "B" else ""
+        prefix = f"sg-bc-{year}{form_tag}"
+        tex, _ = _extract_and_save_figures(tex, images, figures_dir, prefix)
 
     # Detect format by presence of \section*{Question N}
     if re.search(r"\\section\*\{(?:[^}]*\s)?Question\s+\d+", tex, re.IGNORECASE):
