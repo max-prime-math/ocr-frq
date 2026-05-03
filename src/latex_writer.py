@@ -1,21 +1,55 @@
 """
-latex_writer.py — Render extracted FRQ data as LaTeX.
+latex_writer.py — Render QuestionBlock records as exam-class LaTeX.
 
-Adapted from ocr-mcq's latex_writer.py with FRQ-specific rendering.
-Produces a standalone article-class document with clearly separated
-question, solution, and grading scheme sections.
+Document structure:
+  \\section*{YEAR AP Calculus BC [Form B]}
+  \\begin{questions}
+  \\question
+  % Q1 | YEAR Calculus BC | Part A | Calculator Active
+  question intro...
+  \\begin{parts}
+  \\part sub-part (a)...
+  \\end{parts}
+  \\begin{solution}
+  (combined solution + rubric from SG)
+  \\end{solution}
+  ...
+  \\end{questions}
+
+Metadata comment goes UNDER \\question (not above it).
 """
 
-import logging
+from __future__ import annotations
+
 import re
 from pathlib import Path
-from typing import Optional
 
-from models import FRQExtraction
+from .contracts import QuestionBlock
 
-logger = logging.getLogger(__name__)
 
-_UNICODE_MATH_REPLACEMENTS = {
+# ── document preamble / postamble ─────────────────────────────────────────────
+
+_PREAMBLE = r"""\documentclass[12pt,addpoints,answers]{exam}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\printanswers
+\unframedsolutions
+
+\begin{document}
+"""
+
+_POSTAMBLE = r"""
+\end{document}
+"""
+
+
+# ── math sanitization (adapted from existing latex_writer.py) ─────────────────
+
+_UNICODE_MATH = {
     "−": "-",
     "∞": r"\infty",
     "≤": r"\le",
@@ -25,407 +59,177 @@ _UNICODE_MATH_REPLACEMENTS = {
     "×": r"\times",
 }
 
-_PROTECTED_MATH_PATTERN = re.compile(
+_PROTECTED_RE = re.compile(
     r"(\\\(.+?\\\)|\\\[.+?\\\]|\$\$.+?\$\$|(?<!\\)\$.+?(?<!\\)\$)",
     re.DOTALL,
 )
 
-_INTERVAL_ATOM = r"(?:-?(?:\d+(?:\.\d+)?|\\infty))"
-_INTERVAL_PATTERN = re.compile(
-    rf"(?<!\\)((?:[\(\[]\s*{_INTERVAL_ATOM}\s*,\s*{_INTERVAL_ATOM}\s*[\)\]])(?:\s+and\s+[\(\[]\s*{_INTERVAL_ATOM}\s*,\s*{_INTERVAL_ATOM}\s*[\)\]])*(?:\s+only)?)"
-)
-_RANGE_PATTERN = re.compile(
-    r"(?<!\\)("
-    r"(?:-?\d+(?:\.\d+)?)\s*(?:<=|>=|\\leq?|\\geq?)\s*[A-Za-z]\s*(?:<=|>=|\\leq?|\\geq?)\s*(?:-?\d+(?:\.\d+)?)"
-    r"(?:\s+and\s+(?:-?\d+(?:\.\d+)?)\s*(?:<=|>=|\\leq?|\\geq?)\s*[A-Za-z]\s*(?:<=|>=|\\leq?|\\geq?)\s*(?:-?\d+(?:\.\d+)?))*"
-    r")"
-)
-_INLINE_EQUATION_PATTERN = re.compile(
-    r"(?<![A-Za-z\\])("
-    r"(?:[A-Za-z](?:\([A-Za-z0-9,+\-*/^_{}\s]*\))?(?:_[A-Za-z0-9{}]+)?(?:\^[A-Za-z0-9{}]+)?)"
-    r"\s*=\s*"
-    r"[A-Za-z0-9\\{}_^()+\-*/\s]+"
-    r")"
-)
-_COMMAND_MATH_PATTERN = re.compile(
-    r"("
-    r"\\(?:int|iint|iiint|sum|prod|lim|frac|dfrac|tfrac|sqrt|sin|cos|tan|cot|sec|csc|ln|log|exp|Rightarrow)"
-    r"(?:\\.|[^?.!,;:])*"
-    r")"
-)
-_MATH_ENVIRONMENTS = ("array", "cases", "matrix", "pmatrix", "bmatrix", "vmatrix", "Vmatrix")
+_DISPLAY_MATH_RE = re.compile(r"\$\$(.+?)\$\$", re.DOTALL)
 
-_PREAMBLE = r"""\documentclass[12pt,addpoints]{exam}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{graphicx}
 
-\begin{document}
-\begin{questions}
-"""
+def _strip_control(text: str) -> str:
+    return "".join(ch for ch in text if ch in "\n\r\t" or ord(ch) >= 32)
 
-_POSTAMBLE = r"""
-\end{questions}
-\end{document}
-"""
+
+def _apply_unicode(text: str) -> str:
+    for src, dst in _UNICODE_MATH.items():
+        text = text.replace(src, dst)
+    return text
+
+
+def _normalize_display_math(text: str) -> str:
+    def repl(m: re.Match) -> str:
+        inner = m.group(1).strip()
+        if not inner:
+            return ""
+        if r"\begin{aligned}" in inner or r"\begin{cases}" in inner or r"\begin{array}" in inner:
+            return rf"\[{inner}\]"
+        if "\n" in inner:
+            return rf"\[{inner}\]"
+        return rf"\[{inner}\]"
+    return _DISPLAY_MATH_RE.sub(repl, text)
+
+
+def _balance_dollars(text: str) -> str:
+    count = len(re.findall(r"(?<!\\)\$", text))
+    if count % 2 == 1:
+        text += "$"
+    return text
 
 
 def _escape_percent(text: str) -> str:
     return re.sub(r"(?<!\\)%", r"\\%", text)
 
 
-def _strip_control_chars(text: str) -> str:
-    return "".join(ch for ch in text if ch in "\n\r\t" or ord(ch) >= 32)
+def _sanitize(text: str) -> str:
+    """Light sanitization pass on Mathpix-sourced LaTeX."""
+    text = _strip_control(text)
+    text = _apply_unicode(text)
+    text = _normalize_display_math(text)
+    text = _escape_percent(text)
+    text = _balance_dollars(text)
+    # Normalize runs of 3+ newlines
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
-def _normalise_unicode_math(text: str) -> str:
-    repaired = _strip_control_chars(text)
-    for src, dst in _UNICODE_MATH_REPLACEMENTS.items():
-        repaired = repaired.replace(src, dst)
-    repaired = re.sub(r"(?<![A-Za-z\\])(?:bigint|igint)(?=\s*_)", r"\\int", repaired)
-    repaired = _normalise_mixed_math_delimiters(repaired)
-    return repaired
+# ── question/part splitting ───────────────────────────────────────────────────
+
+_PART_RE = re.compile(r"(?:^|\n)[ \t]*\(([a-f])\)[ \t]+", re.MULTILINE)
 
 
-def _normalise_mixed_math_delimiters(text: str) -> str:
-    repaired = text
-    repaired = repaired.replace(r"\left(\(", r"\left(")
-    repaired = repaired.replace(r"\left[\(", r"\left[")
-    repaired = repaired.replace(r"\left\{\(", r"\left\{")
-    repaired = repaired.replace(r"\left(\[", r"\left(")
-    repaired = repaired.replace(r"\left[\[", r"\left[")
-    repaired = repaired.replace(r"\)\right)", r"\right)")
-    repaired = repaired.replace(r"\)\right]", r"\right]")
-    repaired = repaired.replace(r"\)\right\}", r"\right\}")
-    repaired = repaired.replace(r"\]\right)", r"\right)")
-    repaired = repaired.replace(r"\]\right]", r"\right]")
-    return repaired
-
-
-def _count_unescaped_dollars(text: str) -> int:
-    return len(re.findall(r"(?<!\\)\$", text))
-
-
-def _normalise_dollar_runs(text: str) -> str:
-    def repl(match: re.Match[str]) -> str:
-        count = len(match.group(0))
-        return "$$" if count % 2 == 0 else "$"
-
-    return re.sub(r"(?<!\\)\${2,}", repl, text)
-
-
-def _repair_math_content(text: str) -> str:
-    repaired = text
-    repaired = repaired.replace(r"\(", "")
-    repaired = repaired.replace(r"\)", "")
-    repaired = repaired.replace(r"\[", "")
-    repaired = repaired.replace(r"\]", "")
-    repaired = re.sub(r"\\([()\[\]])", "", repaired)
-    repaired = repaired.replace("$$", "")
-    repaired = re.sub(r"\\([)\]])(?=!)", "", repaired)
-    return repaired
-
-
-def _repair_protected_math(text: str) -> str:
-    def repl(match: re.Match[str]) -> str:
-        block = match.group(0)
-        if block.startswith(r"\(") and block.endswith(r"\)"):
-            return rf"\({_repair_math_content(block[2:-2])}\)"
-        if block.startswith(r"\[") and block.endswith(r"\]"):
-            return rf"\[{_repair_math_content(block[2:-2])}\]"
-        if block.startswith("$$") and block.endswith("$$"):
-            return f"$${_repair_math_content(block[2:-2])}$$"
-        if block.startswith("$") and block.endswith("$"):
-            return f"${_repair_math_content(block[1:-1])}$"
-        return block
-
-    return _PROTECTED_MATH_PATTERN.sub(repl, text)
-
-
-def _dedupe_math_delimiters(text: str) -> str:
-    repaired = text
-    while r"\(\(" in repaired:
-        repaired = repaired.replace(r"\(\(", r"\(")
-    while r"\)\)" in repaired:
-        repaired = repaired.replace(r"\)\)", r"\)")
-    while r"\[\[" in repaired:
-        repaired = repaired.replace(r"\[\[", r"\[")
-    while r"\]\]" in repaired:
-        repaired = repaired.replace(r"\]\]", r"\]")
-    repaired = re.sub(r"(\\\(.+?\\\))\\\)", r"\1", repaired)
-    repaired = re.sub(r"(\\\[.+?\\\])\\\]", r"\1", repaired)
-    return repaired
-
-
-def _wrap_inline_math(match: re.Match[str]) -> str:
-    text = match.group(1).strip()
-    return rf"\({text}\)"
-
-
-def _wrap_math_environment_block(text: str) -> str | None:
-    stripped = text.strip()
-    for env in _MATH_ENVIRONMENTS:
-        begin = rf"\begin{{{env}}}"
-        end = rf"\end{{{env}}}"
-        if stripped.startswith(begin) and stripped.endswith(end):
-            return rf"\[{stripped}\]"
-    return None
-
-
-def _wrap_bare_math_spans(text: str) -> str:
-    parts: list[str] = []
-    last = 0
-    for match in _PROTECTED_MATH_PATTERN.finditer(text):
-        plain = text[last:match.start()]
-        plain = _INTERVAL_PATTERN.sub(_wrap_inline_math, plain)
-        plain = _RANGE_PATTERN.sub(_wrap_inline_math, plain)
-        plain = _INLINE_EQUATION_PATTERN.sub(_wrap_inline_math, plain)
-        plain = _COMMAND_MATH_PATTERN.sub(_wrap_inline_math, plain)
-        parts.append(plain)
-        parts.append(match.group(0))
-        last = match.end()
-
-    tail = text[last:]
-    tail = _INTERVAL_PATTERN.sub(_wrap_inline_math, tail)
-    tail = _RANGE_PATTERN.sub(_wrap_inline_math, tail)
-    tail = _INLINE_EQUATION_PATTERN.sub(_wrap_inline_math, tail)
-    tail = _COMMAND_MATH_PATTERN.sub(_wrap_inline_math, tail)
-    parts.append(tail)
-    return "".join(parts)
-
-
-def _balance_delimited_math(text: str) -> str:
-    repaired = text
-
-    paren_open = repaired.count(r"\(")
-    paren_close = repaired.count(r"\)")
-    if paren_open > paren_close:
-        repaired += r"\)" * (paren_open - paren_close)
-
-    bracket_open = repaired.count(r"\[")
-    bracket_close = repaired.count(r"\]")
-    if bracket_open > bracket_close:
-        repaired += r"\]" * (bracket_open - bracket_close)
-
-    dollar_count = _count_unescaped_dollars(repaired)
-    if dollar_count % 2 == 1:
-        repaired += "$"
-
-    return repaired
-
-
-def _looks_like_bare_math(text: str) -> bool:
-    stripped = text.strip()
-    if not stripped:
-        return False
-    if any(token in stripped for token in (r"\(", r"\[", "$$", "$")):
-        return False
-    if len(stripped.split()) > 4 and not any(ch in stripped for ch in "=+-*/^_[]{}()\\"):
-        return False
-
-    import re
-    if re.fullmatch(r"[A-Za-z0-9\\\^_{}\[\]()+\-*/=<>|.,'` :]+", stripped) is None:
-        return False
-
-    return any(
-        (
-            re.search(r"[=^_]", stripped),
-            re.search(r"[A-Za-z]\(", stripped),
-            re.search(r"\\[A-Za-z]+", stripped),
-            re.search(r"\[[^\]]+\]", stripped),
-            re.search(r"\d", stripped) and re.search(r"[A-Za-z]", stripped),
-        )
-    )
-
-
-def _render_text(text: str) -> str:
-    env_block = _wrap_math_environment_block(text)
-    if env_block is not None:
-        return env_block
-
-    cleaned = _normalise_unicode_math(text)
-    cleaned = _normalise_dollar_runs(cleaned)
-    cleaned = _balance_delimited_math(_escape_percent(cleaned))
-    cleaned = _repair_protected_math(cleaned)
-    cleaned = _wrap_bare_math_spans(cleaned)
-    cleaned = _repair_protected_math(cleaned)
-    cleaned = _normalise_mixed_math_delimiters(cleaned)
-    cleaned = _dedupe_math_delimiters(cleaned)
-    cleaned = _balance_delimited_math(cleaned)
-    if _looks_like_bare_math(cleaned):
-        return rf"\({cleaned}\)"
-    return cleaned
-
-
-def _render_figures(lines: list[str], figures: list[dict]) -> None:
-    for fig in figures:
-        file_path = fig.get("file_path")
-        if not file_path:
-            continue
-        lines.append(r"\begin{center}")
-        lines.append(rf"\includegraphics[width=0.65\linewidth]{{{file_path}}}")
-        lines.append(r"\end{center}")
-
-
-def _render_tables(lines: list[str], tables: list[dict]) -> None:
-    for table in tables:
-        headers = table.get("headers", [])
-        rows = table.get("rows", [])
-        col_count = 0
-        for row in [headers] + rows:
-            col_count = max(col_count, len(row))
-        col_count = max(1, col_count)
-
-        lines.append(r"\begin{center}")
-        lines.append(rf"\begin{{tabular}}{{{'l' * col_count}}}")
-        lines.append(r"\hline")
-
-        if headers:
-            line_parts = [_render_text(cell) for cell in headers]
-            lines.append(" & ".join(line_parts) + r" \\")
-            lines.append(r"\hline")
-
-        for row in rows:
-            padded = row + [""] * (col_count - len(row))
-            line_parts = [_render_text(cell) for cell in padded]
-            lines.append(" & ".join(line_parts) + r" \\")
-
-        lines.append(r"\hline")
-        lines.append(r"\end{tabular}")
-        lines.append(r"\end{center}")
-
-
-def _by_section(items: list[dict], section: str) -> list[dict]:
-    return [item for item in items if item.get("section") == section]
-
-
-def render_frq_block(extraction: FRQExtraction, source: Optional[str] = None) -> str:
+def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:
     """
-    Render one FRQ extraction as a LaTeX question block (exam class).
+    Split question text into (intro, [(label, body), ...]).
 
-    Args:
-        extraction: FRQExtraction dict with question/solution/grading_scheme.
-        source:     Optional label (e.g. filename + page) added as a comment.
-
-    Returns:
-        Multi-line LaTeX string (no trailing newline).
+    Returns empty parts list if no (a), (b), ... sub-parts are found.
     """
+    matches = list(_PART_RE.finditer(text))
+    if not matches:
+        return text.strip(), []
+
+    intro = text[: matches[0].start()].strip()
+    parts: list[tuple[str, str]] = []
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        body = text[start:end].strip()
+        # Strip trailing \\ (Mathpix line-break artifact at end of sub-part text)
+        body = re.sub(r"\\\\+\s*$", "", body).strip()
+        if body:
+            parts.append((m.group(1), body))
+
+    return intro, parts
+
+
+# ── per-block rendering ───────────────────────────────────────────────────────
+
+def _meta_comment(block: QuestionBlock) -> str:
+    form_label = " Form B" if block.form.upper() == "B" else ""
+    calc = "Calculator Active" if block.calculator_active else "Calculator Prohibited"
+    part = f"Part {block.part}"
+    return f"% Q{block.question_number} | {block.year} Calculus BC{form_label} | {part} | {calc}"
+
+
+def _render_question_block(block: QuestionBlock) -> str:
     lines: list[str] = []
-
     lines.append(r"\question")
-    if source:
-        lines.append(f"% {source}")
+    lines.append(_meta_comment(block))
 
-    meta = []
-    unit = extraction.get("unit")
-    if unit:
-        meta.append(unit)
-    section = extraction.get("section")
-    if section:
-        meta.append(section)
-    calculator = extraction.get("calculator")
-    if calculator:
-        meta.append(calculator)
-    if meta:
-        lines.append("% " + " | ".join(meta))
+    q_text = _sanitize(block.question_text)
+    intro, parts = _split_parts(q_text)
 
-    if extraction.get("flagged"):
-        reason = extraction.get("flag_reason") or "low confidence"
-        lines.append(f"% [Flagged for review: {reason}]")
+    if intro:
+        lines.append(intro)
 
-    figures = extraction.get("figures") or []
-    tables = extraction.get("tables") or []
-    question_figures = _by_section(figures, "question")
-    solution_figures = _by_section(figures, "solution")
-    rubric_figures = _by_section(figures, "grading_scheme")
-    question_tables = _by_section(tables, "question")
-    solution_tables = _by_section(tables, "solution")
-    rubric_tables = _by_section(tables, "grading_scheme")
+    if parts:
+        lines.append(r"\begin{parts}")
+        for _label, body in parts:
+            lines.append(rf"\part {_sanitize(body)}")
+        lines.append(r"\end{parts}")
+    elif not intro:
+        # No intro and no parts — question text is empty (shouldn't happen)
+        lines.append(r"\emph{[Question text not available]}")
 
-    question = extraction.get("question") or ""
-    lines.append(_render_text(question) if question else r"\textit{[Question text not extracted]}")
-    _render_tables(lines, question_tables)
-    _render_figures(lines, question_figures)
-
-    solution = extraction.get("solution") or ""
-    rubric = extraction.get("grading_scheme") or ""
-
-    lines.append(r"\begin{solution}")
-    lines.append(_render_text(solution) if solution else r"\textit{[Solution not extracted]}")
-    _render_tables(lines, solution_tables)
-    _render_figures(lines, solution_figures)
-
-    if rubric:
-        lines.append(r"\\")
-        lines.append("Rubric:")
-        lines.append(r"\\")
-        lines.append(_render_text(rubric))
-        _render_tables(lines, rubric_tables)
-        _render_figures(lines, rubric_figures)
-
-    lines.append(r"\end{solution}")
+    # Solution block: combined solution + rubric from SG
+    sg = _sanitize(block.sg_text)
+    if sg:
+        lines.append(r"\begin{solution}")
+        lines.append(sg)
+        lines.append(r"\end{solution}")
 
     return "\n".join(lines)
 
 
-def build_document(
-    page_results: list[dict],
-    include_skipped_comments: bool = True,
+# ── year section rendering ────────────────────────────────────────────────────
+
+def _section_title(year: int, form: str) -> str:
+    form_label = " Form B" if form.upper() == "B" else ""
+    return rf"\section*{{{year} AP Calculus BC{form_label}}}"
+
+
+def _render_year_section(year: int, blocks: list[QuestionBlock], form: str = "") -> str:
+    lines: list[str] = []
+    lines.append(_section_title(year, form))
+    lines.append("")
+    lines.append(r"\begin{questions}")
+    lines.append("")
+    for block in sorted(blocks, key=lambda b: b.question_number):
+        lines.append(_render_question_block(block))
+        lines.append("")
+    lines.append(r"\end{questions}")
+    return "\n".join(lines)
+
+
+# ── combined document ─────────────────────────────────────────────────────────
+
+def build_combined_document(
+    blocks_by_year: dict[int, list[QuestionBlock]],
+    form_b_by_year: dict[int, list[QuestionBlock]] | None = None,
 ) -> str:
-    r"""
-    Build a complete LaTeX document from a list of PageResult dicts (exam class).
-
-    Only pages with page_type == "frq" produce \question blocks.
-    Skipped pages appear as comments if include_skipped_comments is True.
-
-    Args:
-        page_results:             List of PageResult dicts from extraction.
-        include_skipped_comments: Whether to include % comments for skipped pages.
-
-    Returns:
-        Complete LaTeX document string.
     """
-    blocks: list[str] = []
+    Build a single combined LaTeX document for all years.
 
-    for result in page_results:
-        if result.get("error"):
-            blocks.append(f"% Error on page {result['page'] + 1}: {result['error']}")
-            continue
-
-        extraction: Optional[dict] = result.get("extraction")
-        if extraction is None:
-            continue
-
-        if extraction["page_type"] == "skip":
-            if include_skipped_comments:
-                reason = extraction.get("skip_reason") or "unknown"
-                blocks.append(f"% Page {result['page'] + 1} skipped: {reason}")
-            continue
-
-        fname = result.get("fname", "")
-        source = f"{fname} p{result['page'] + 1}" if fname else f"p{result['page'] + 1}"
-        blocks.append(render_frq_block(extraction, source=source))
-
-    body = "\n\n".join(blocks)
-    return _PREAMBLE + body + "\n" + _POSTAMBLE
-
-
-def write_tex_file(
-    page_results: list[dict],
-    output_path: str,
-    include_skipped_comments: bool = True,
-) -> None:
+    blocks_by_year:  {year: [QuestionBlock, ...]} for standard exams
+    form_b_by_year:  {year: [QuestionBlock, ...]} for Form B exams (optional)
     """
-    Write a complete LaTeX .tex file for *page_results*.
+    sections: list[str] = []
 
-    Args:
-        page_results:             List of PageResult dicts from extraction.
-        output_path:              Destination file path (created/overwritten).
-        include_skipped_comments: Whether to include % comments for skipped pages.
-    """
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    content = build_document(page_results, include_skipped_comments)
+    all_years = sorted(set(list(blocks_by_year.keys()) + list((form_b_by_year or {}).keys())))
 
-    with open(output_path, "w", encoding="utf-8") as fh:
-        fh.write(content)
+    for year in all_years:
+        if year in blocks_by_year and blocks_by_year[year]:
+            sections.append(_render_year_section(year, blocks_by_year[year], form=""))
+        if form_b_by_year and year in form_b_by_year and form_b_by_year[year]:
+            sections.append(_render_year_section(year, form_b_by_year[year], form="B"))
 
-    logger.info("Wrote LaTeX to %s", output_path)
+    body = "\n\n".join(sections)
+    return _PREAMBLE + "\n" + body + "\n" + _POSTAMBLE
+
+
+# ── file I/O ──────────────────────────────────────────────────────────────────
+
+def write_tex(path: str, content: str) -> None:
+    out = Path(path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(content, encoding="utf-8")

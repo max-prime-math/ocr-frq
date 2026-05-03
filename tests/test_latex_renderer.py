@@ -14,6 +14,10 @@ def _make_block(**overrides) -> QuestionBlock:
         "question_text": "What is 1+1?",
         "solution_text": "It is 2.",
         "grading_text": "1 point for correct answer.",
+        "unit": "Unit 1: Sample Unit",
+        "section_label": "Part A",
+        "calculator_label": "Calculator active",
+        "source_comment": "SG-BC-2018.pdf p2 | BC-2018.pdf p2",
         "figures": [],
         "tables": [],
         "source_sg_page": 2,
@@ -29,6 +33,10 @@ def test_document_uses_exam_class_and_solution_env():
     assert r"\documentclass[12pt,addpoints,answers]{exam}" in tex
     assert r"\begin{questions}" in tex
     assert r"\question" in tex
+    assert "% Unit 1: Sample Unit" in tex
+    assert "% Section Part A" in tex
+    assert "% Calculator active" in tex
+    assert "% SG-BC-2018.pdf p2 | BC-2018.pdf p2" in tex
     assert r"\begin{solution}" in tex
     assert r"\textbf{Scoring Guide}\par" in tex
 
@@ -69,7 +77,7 @@ def test_question_figures_are_included():
     )
     tex = build_latex_document([block], set())
     assert r"\includegraphics[width=0.392\linewidth]{figures/sample.png}" in tex
-    assert "Sample graph" in tex
+    assert "Sample graph" not in tex
 
 
 def test_grading_text_does_not_wrap_whole_rubric_in_math_mode():
@@ -94,4 +102,4 @@ def test_tables_render_as_tabular_blocks():
     tex = build_latex_document([block], set())
     assert r"\begin{tabular}{|l|l|}" in tex
     assert "Table of values" in tex
-    assert r"$t$ & People in line" in tex
+    assert "People in line" in tex
