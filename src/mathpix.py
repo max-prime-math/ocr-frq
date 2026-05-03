@@ -393,6 +393,40 @@ _EXAM_BOILERPLATE_RE = re.compile(
 )
 
 
+_ABOVE_REF_RE = re.compile(
+    r"(?:in the |the )?(?:figure|graph|table|diagram|curve)\s+above|shown\s+above",
+    re.IGNORECASE,
+)
+_VISUAL_ELEMENT_RE = re.compile(
+    r"\\includegraphics|\\begin\{center\}|\\begin\{tabular\}",
+)
+
+
+def _fix_above_below_language(text: str) -> str:
+    """
+    When question text says 'figure/table above' but there is no visual element
+    (figure or table) before that reference, replace 'above' with 'below'.
+
+    This handles cases where Mathpix placed the reference figure/table after the
+    question text (e.g. inside a \\part body that follows).
+    """
+    result: list[str] = []
+    last = 0
+    for m in _ABOVE_REF_RE.finditer(text):
+        before_ref = text[last:m.start()]
+        result.append(before_ref)
+        # Check whether a visual element appears anywhere before this reference
+        has_visual_before = bool(_VISUAL_ELEMENT_RE.search(text[:m.start()]))
+        matched = m.group(0)
+        if not has_visual_before:
+            # Change 'above' → 'below' since the figure/table follows the text
+            matched = re.sub(r"\babove\b", "below", matched, flags=re.IGNORECASE)
+        result.append(matched)
+        last = m.end()
+    result.append(text[last:])
+    return "".join(result)
+
+
 def _clean_exam_question(text: str) -> str:
     text = _clean_block(text)
     text = re.sub(r"\\graphicspath\{[^}]+\}\s*", "", text)
@@ -556,24 +590,60 @@ def parse_exam_zip(
             part=part,
         )
 
-    # Figures that appeared before the first question marker in Mathpix (e.g. the
-    # region R graph in 2003 Q1) are not captured by block extraction.  Assign any
-    # unassigned figures to Q1 by prepending them to its question text.
-    assigned = {p for q in questions.values() for p in q.figure_paths}
-    orphans = [p for p in fig_paths if p not in assigned]
-    if orphans and 1 in questions:
+    # Content (figures, tables) that appeared before the first question marker in
+    # Mathpix is not captured by block extraction.  Two cases:
+    #
+    # 1. Orphan IMAGES: figures saved to fig_paths but not assigned to any block.
+    # 2. Orphan TABLES: \begin{center}\begin{tabular}...\end{tabular}\end{center}
+    #    blocks in the tex before the first question position (e.g. 2012/2016/2017 Q1).
+    #
+    # Both are prepended to Q1's question text so "the table/figure above" language
+    # in Q1's question body is visually correct.
+    if 1 in questions:
         q1 = questions[1]
-        prefix = "\n".join(
-            f"\\begin{{center}}\n\\includegraphics[width=0.8\\linewidth]{{{p}}}\n\\end{{center}}"
-            for p in orphans
-        )
-        questions[1] = ExamQuestion(
-            question_number=q1.question_number,
-            question_text=(prefix + "\n" + q1.question_text).strip(),
-            figure_paths=orphans + q1.figure_paths,
-            calculator_active=q1.calculator_active,
-            part=q1.part,
-        )
+        extra_prefix_parts: list[str] = []
+
+        # Orphan images
+        assigned = {p for q in questions.values() for p in q.figure_paths}
+        orphan_figs = [p for p in fig_paths if p not in assigned]
+        for p in orphan_figs:
+            extra_prefix_parts.append(
+                f"\\begin{{center}}\n\\includegraphics[width=0.8\\linewidth]{{{p}}}\n\\end{{center}}"
+            )
+
+        # Orphan tables (before first question position)
+        if starts:
+            first_pos = starts[0][0]
+            pre_q = tex[:first_pos]
+            # Find center-wrapped blocks containing tabular content
+            for m in re.finditer(r"\\begin\{center\}(.*?)\\end\{center\}", pre_q, re.DOTALL):
+                inner = m.group(1)
+                if "\\begin{tabular}" in inner or "\\begin{array}" in inner:
+                    block = _clean_block(m.group(0))
+                    if block:
+                        extra_prefix_parts.append(block)
+
+        if extra_prefix_parts:
+            prefix = "\n".join(extra_prefix_parts)
+            questions[1] = ExamQuestion(
+                question_number=q1.question_number,
+                question_text=(prefix + "\n" + q1.question_text).strip(),
+                figure_paths=orphan_figs + q1.figure_paths,
+                calculator_active=q1.calculator_active,
+                part=q1.part,
+            )
+
+    # Fix directional language ("figure above") once all orphan content is in place.
+    for qnum, q in questions.items():
+        fixed = _fix_above_below_language(q.question_text)
+        if fixed != q.question_text:
+            questions[qnum] = ExamQuestion(
+                question_number=q.question_number,
+                question_text=fixed,
+                figure_paths=q.figure_paths,
+                calculator_active=q.calculator_active,
+                part=q.part,
+            )
 
     return questions
 
