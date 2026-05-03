@@ -207,7 +207,9 @@ _RUBRIC_START_RE = re.compile(
 #   N $\left\{  (1999 style)   $\mathbf{N}\left\{  (some years)
 #   $$N..$$     (display math) N : criterion   Note: ...
 _RUBRIC_ITEM_RE = re.compile(
-    r"\$\$\s*\d+.*?\$\$"                                  # $$N...$$ display math
+    # $$N[sep]...$$ — require rubric-style sep after N to avoid matching plain
+    # solution values like $$18.770$$ or $$t=3$$.
+    r"\$\$\s*\d+\s*(?:[:\\{]|\\left|\\begin\{).*?\$\$"
     r"|\$\\mathbf\{\d+\}\\left.*?\$(?:\\\\\n?)?"          # $\mathbf{N}\left{...$
     r"|\$\d+\s*(?:[:\\]|\\left|\\{).*?\$(?:\\\\\n?)?"     # $N:..$ or $N\left{..$
     r"|\d+\s*\$\\left.*?\$(?:\\\\\n?)?"                   # N $\left{..$ (digit then $)
@@ -229,13 +231,14 @@ def _split_solution_rubric(text: str) -> tuple[str, str]:
     """
     Split combined SG text into (solution_text, rubric_text).
 
-    Rubric annotations always appear as a trailing block after all solution
-    sub-parts. Returns (text, "") if no rubric boundary is found.
+    Primary: find the first rubric annotation boundary (_RUBRIC_START_RE) and
+    split there.  For interleaved SGs (rubric for (a) appears before solution
+    for (b)), check whether the "rubric section" still contains sub-part markers
+    (b)–(f).  If it does, extract only the rubric annotation blocks from that
+    section and prepend the remaining solution content to the solution text.
 
-    Handles two rubric formats:
-    - $N:\\left\\{...\\right.$ / $$N...$$ annotation blocks
-    - \\begin{center}\\begin{tabular}...\\end{tabular}\\end{center} rubric tables
-      (used in some years for convergence-test breakdowns, etc.)
+    Also extends backwards to include \\begin{center}\\begin{tabular} rubric
+    tables that immediately precede a detected annotation boundary.
     """
     m = _RUBRIC_START_RE.search(text)
     if m is None:
@@ -243,19 +246,48 @@ def _split_solution_rubric(text: str) -> tuple[str, str]:
 
     rubric_boundary = m.start()
 
-    # If a \\begin{center}...\\end{center} block immediately precedes the rubric
-    # boundary (only whitespace between) and that block contains rubric-like
-    # content (N : patterns), extend the rubric start backwards to include it.
+    # If a \begin{center}...\end{center} with rubric criteria immediately
+    # precedes the boundary, extend backwards to include it.
     preceding = text[:rubric_boundary].rstrip()
     if preceding.endswith("\\end{center}"):
         cb_matches = list(_RUBRIC_CENTER_BLOCK_RE.finditer(text[:rubric_boundary]))
         if cb_matches:
             last_cb = cb_matches[-1]
-            # Only treat as rubric if the center block has N : criterion patterns
             if _RUBRIC_CRITERION_RE.search(last_cb.group()):
                 rubric_boundary = last_cb.start()
 
-    return text[:rubric_boundary].strip(), text[rubric_boundary:].strip()
+    sol_text   = text[:rubric_boundary].strip()
+    rubric_text = text[rubric_boundary:].strip()
+
+    # Interleaving detection: if the detected rubric section still contains
+    # sub-part solution markers (b)–(f), those parts were swept in because a
+    # rubric annotation for (a) appeared BEFORE the solution for (b).
+    # Find the LAST sub-part marker in the FULL text; the rubric only starts
+    # at the first rubric boundary AFTER that last sub-part's content ends.
+    if rubric_text and re.search(r"(?:^|\n)[ \t]*\([b-f]\)[ \t]+", rubric_text, re.MULTILINE):
+        # Re-scan: find the last (a)–(f) marker in the full text
+        all_part_markers = list(re.finditer(r"(?:^|\n)[ \t]*\([a-f]\)[ \t]+", text, re.MULTILINE))
+        if all_part_markers:
+            last_part_pos = all_part_markers[-1].start()
+            # Use the first rubric boundary that comes AFTER the last part marker
+            all_rubric_starts = list(_RUBRIC_START_RE.finditer(text))
+            later_starts = [m for m in all_rubric_starts if m.start() > last_part_pos]
+            if later_starts:
+                new_boundary = later_starts[0].start()
+                # Extend backwards for center block rubric tables
+                pre = text[:new_boundary].rstrip()
+                if pre.endswith("\\end{center}"):
+                    cbs = list(_RUBRIC_CENTER_BLOCK_RE.finditer(text[:new_boundary]))
+                    if cbs and _RUBRIC_CRITERION_RE.search(cbs[-1].group()):
+                        new_boundary = cbs[-1].start()
+                sol_text    = text[:new_boundary].strip()
+                rubric_text = text[new_boundary:].strip()
+            else:
+                # No rubric boundary after last part — all content is solution
+                sol_text    = text.strip()
+                rubric_text = ""
+
+    return sol_text, rubric_text
 
 
 _TABULAR_RUBRIC_RE = re.compile(
@@ -314,7 +346,7 @@ _UNDELIMITED_MATH_RE = re.compile(
 _UNDELIMITED_MATH_CMDS_RE = re.compile(
     r"\\(?:geq|leq|neq|approx|text\{|cdot|times|frac\{|sqrt\{|int\b|sum\b|infty"
     r"|Rightarrow|rightarrow|Leftarrow|leftarrow|iff|to\b|alpha|beta|theta|pi\b"
-    r"|partial|nabla)",
+    r"|partial|nabla|left|right|begin\{array|begin\{cases|begin\{align)",
     re.IGNORECASE,
 )
 
@@ -334,7 +366,12 @@ def _rubric_item_safe(item: str) -> str:
     outside_math = re.sub(r"\$.*?\$", "", stripped, flags=re.DOTALL)
     if (_UNDELIMITED_MATH_RE.search(outside_math)
             or _UNDELIMITED_MATH_CMDS_RE.search(outside_math)):
-        return rf"\({stripped}\)"
+        # Items containing array/cases/aligned environments must use display math
+        # \[...\] — using $...$ or \(...\) inside \begin{parts} items triggers
+        # "Not allowed in LR mode" when the item contains \begin{array} etc.
+        if re.search(r"\\begin\{(?:array|cases|aligned|matrix)\}", stripped):
+            return rf"\[{stripped}\]"
+        return f"${stripped}$"
     return item
 
 
