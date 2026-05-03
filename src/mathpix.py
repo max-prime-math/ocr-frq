@@ -373,10 +373,22 @@ def _clean_block(text: str) -> str:
 
 
 _EXAM_BOILERPLATE_RE = re.compile(
-    r"(?m)^(?:CALCULUS BC|AP\s+CALCULUS|SECTION\s+II|"
-    r"Time[\-—]|Number of (?:questions|problems)|"
-    r"Percent of total|(?:No|A graphing) calculator[^\n]*|"
-    r"(?:students and parents at|For AP professionals)[^\n]*)[\\\\\n]?\s*$",
+    r"(?m)^[^\n]*"                           # start of any line
+    r"(?:"
+    r"©\s*\d{4}|Copyright\s*©"              # copyright symbol
+    r"|All rights reserved"                  # rights notice
+    r"|apcentral\.collegeboard|collegeboard\.com|collegeboard\.org"  # URLs
+    r"|CALCULUS BC\b|AP\s+CALCULUS"          # exam header
+    r"|SECTION\s+II\b"                       # section header
+    r"|Time[\s\-—]\d"                        # time notice  e.g. "Time-45 minutes"
+    r"|Number of (?:questions|problems)"
+    r"|Percent of total"
+    r"|REMEMBER TO SHOW|WRITE ALL WORK"
+    r"|END OF (?:PART|SECTION|EXAM)"
+    r"|Note:\s*Use the axes"                 # common exam note
+    r")"
+    r"[^\n]*$"                               # rest of line
+    r"(?:\n|$)",
     re.IGNORECASE,
 )
 
@@ -396,8 +408,35 @@ def _clean_exam_question(text: str) -> str:
     text = re.sub(r"\\end\{table\}\s*", "", text)
     text = _strip_command_with_braces(text, "captionsetup")
     text = _strip_command_with_braces(text, "caption")
+    # Wrap bare \includegraphics (not already inside \begin{center}) in a center env
+    text = _center_bare_figures(text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+_BARE_FIGURE_RE = re.compile(
+    r"\\includegraphics(?:\[[^\]]*\])?\{[^}]+\}(?:\\\\)?"  # figure + optional trailing \\
+)
+
+
+def _center_bare_figures(text: str) -> str:
+    """Wrap \\includegraphics not already inside \\begin{center} with a center env."""
+    result: list[str] = []
+    last = 0
+    for m in _BARE_FIGURE_RE.finditer(text):
+        before = text[last:m.start()]
+        preceding = text[max(0, m.start() - 60) : m.start()]
+        # Strip the optional trailing \\ from the match so it doesn't appear after \end{center}
+        fig_cmd = re.sub(r"\\\\$", "", m.group(0))
+        if "\\begin{center}" in preceding and "\\end{center}" not in preceding:
+            result.append(before)
+            result.append(fig_cmd)
+        else:
+            result.append(before)
+            result.append(f"\\begin{{center}}\n{fig_cmd}\n\\end{{center}}")
+        last = m.end()
+    result.append(text[last:])
+    return "".join(result)
 
 
 _UUID_FIGURE_RE = re.compile(

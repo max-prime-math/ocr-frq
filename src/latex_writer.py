@@ -118,11 +118,21 @@ def _sanitize(text: str) -> str:
 _PART_RE = re.compile(r"(?:^|\n)[ \t]*\(([a-f])\)[ \t]+", re.MULTILINE)
 
 
+_TRAILING_FIGURE_RE = re.compile(
+    r"\s*\\begin\{center\}\s*\\includegraphics[^\n]+\s*\\end\{center\}\s*$",
+    re.DOTALL,
+)
+
+
 def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:
     """
     Split text into (intro, [(label, body), ...]).
 
     Returns empty parts list if no (a), (b), ... sub-parts are found.
+
+    Figures that Mathpix placed after the last sub-part (but logically belong
+    to the question setup) are promoted to the intro so they appear before
+    \\begin{parts}.
     """
     matches = list(_PART_RE.finditer(text))
     if not matches:
@@ -134,10 +144,19 @@ def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:
         start = m.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         body = text[start:end].strip()
-        # Strip trailing \\ (Mathpix line-break artifact at end of sub-part text)
         body = re.sub(r"\\\\+\s*$", "", body).strip()
         if body:
             parts.append((m.group(1), body))
+
+    # Promote any trailing figures from the last part to the intro.
+    # Mathpix often places question-setup figures after all sub-parts.
+    if parts:
+        last_label, last_body = parts[-1]
+        m = _TRAILING_FIGURE_RE.search(last_body)
+        if m:
+            trailing_fig = m.group(0).strip()
+            parts[-1] = (last_label, last_body[: m.start()].strip())
+            intro = (intro + "\n\n" + trailing_fig).strip() if intro else trailing_fig
 
     return intro, parts
 
