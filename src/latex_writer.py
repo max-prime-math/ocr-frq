@@ -120,7 +120,7 @@ _PART_RE = re.compile(r"(?:^|\n)[ \t]*\(([a-f])\)[ \t]+", re.MULTILINE)
 
 def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:
     """
-    Split question text into (intro, [(label, body), ...]).
+    Split text into (intro, [(label, body), ...]).
 
     Returns empty parts list if no (a), (b), ... sub-parts are found.
     """
@@ -140,6 +140,92 @@ def _split_parts(text: str) -> tuple[str, list[tuple[str, str]]]:
             parts.append((m.group(1), body))
 
     return intro, parts
+
+
+# ── solution / rubric splitting ───────────────────────────────────────────────
+
+# Matches the separator immediately before the first rubric annotation block.
+# Rubric annotations always appear after all solution sub-parts and take the form:
+#   $N:\left\{...\right.$    (inline math rubric array)
+#   $$N:\{...\}$$            (display math rubric block)
+#   N : criterion text       (standalone point annotation)
+#   Note: ...
+_RUBRIC_START_RE = re.compile(
+    r"(?:"
+    # \\ + newline: only safe before a $-prefixed rubric (not inside array rows)
+    r"\\\\\n(?=\$\$?\s*\d+\s*(?:[:\\]|\\left|\\{))"
+    r"|\n\n(?="                               # blank line before any rubric form
+    r"\$\$?\s*\d+\s*(?:[:\\]|\\left|\\{)"    # $N:, $N\left{, $$N: etc.
+    r"|\d+\s*:\s+[a-z]"                      # N : lowercase criterion
+    r"|Note\s*:"                              # Note:
+    r"))",
+    re.IGNORECASE,
+)
+
+# Matches one complete rubric annotation item.
+# Handles the many notation variants found across years 1998–2019:
+#   $N:\left\{  (modern)       $N\left\{   (old, no colon)
+#   N $\left\{  (1999 style)   $\mathbf{N}\left\{  (some years)
+#   $$N..$$     (display math) N : criterion   Note: ...
+_RUBRIC_ITEM_RE = re.compile(
+    r"\$\$\s*\d+.*?\$\$"                                  # $$N...$$ display math
+    r"|\$\\mathbf\{\d+\}\\left.*?\$(?:\\\\\n?)?"          # $\mathbf{N}\left{...$
+    r"|\$\d+\s*(?:[:\\]|\\left|\\{).*?\$(?:\\\\\n?)?"     # $N:..$ or $N\left{..$
+    r"|\d+\s*\$\\left.*?\$(?:\\\\\n?)?"                   # N $\left{..$ (digit then $)
+    r"|\d+\s*:\s+\$\$.*?\$\$(?:\\\\\n?)?"                 # N: $$...$$ (digit-colon-$$)
+    r"|\d+\s*:\s+\$.*?\$(?:\\\\\n?)?"                     # N: $...$ (digit-colon-$)
+    r"|\d+\s*:\s+[a-z][^\n]*(?:\\\\\n?)?"                 # N : criterion line
+    r"|Note\s*:[^\n]+",                                    # Note: ...
+    re.DOTALL | re.IGNORECASE,
+)
+
+
+def _split_solution_rubric(text: str) -> tuple[str, str]:
+    """
+    Split combined SG text into (solution_text, rubric_text).
+
+    Rubric annotations always appear as a trailing block after all solution
+    sub-parts. Returns (text, "") if no rubric boundary is found.
+    """
+    m = _RUBRIC_START_RE.search(text)
+    if m is None:
+        return text.strip(), ""
+    return text[: m.start()].strip(), text[m.end() :].strip()
+
+
+def _split_rubric_items(rubric_text: str) -> list[str]:
+    """Extract individual rubric annotation items from the rubric block."""
+    return [
+        m.group(0).rstrip("\\\\\n").strip()
+        for m in _RUBRIC_ITEM_RE.finditer(rubric_text)
+        if m.group(0).strip()
+    ]
+
+
+_UNDELIMITED_MATH_RE = re.compile(
+    r"(?<!\\)(?<!\$)"       # not inside existing math
+    r"(?:[a-zA-Z\d])"       # letter or digit
+    r"(?:\^|_)"             # followed by ^ or _
+    r"\{"                   # opening brace — marks a bare superscript/subscript
+)
+
+
+def _rubric_item_safe(item: str) -> str:
+    """
+    Ensure a rubric item can be placed as \\part content.
+
+    Criterion lines like '1: x^{\\prime\\prime}(4)' contain bare LaTeX math
+    outside $...$ which crashes pdflatex. Wrap such items in \\( \\).
+    Items that are already $...$ or \\[...\\] blocks are left unchanged.
+    """
+    stripped = item.strip()
+    if stripped.startswith(("$", "\\[", "\\(")):
+        return item  # already fully in math delimiters
+    # Only look for bare math OUTSIDE existing $...$ spans
+    outside_math = re.sub(r"\$.*?\$", "", stripped, flags=re.DOTALL)
+    if _UNDELIMITED_MATH_RE.search(outside_math):
+        return rf"\({stripped}\)"
+    return item
 
 
 # ── per-block rendering ───────────────────────────────────────────────────────
@@ -171,11 +257,44 @@ def _render_question_block(block: QuestionBlock) -> str:
         # No intro and no parts — question text is empty (shouldn't happen)
         lines.append(r"\emph{[Question text not available]}")
 
-    # Solution block: combined solution + rubric from SG
-    sg = _sanitize(block.sg_text)
-    if sg:
+    # Solution block: split on RAW text so that rubric boundary patterns see
+    # $$...$$ (before _sanitize converts them to \[...\]), then sanitize each piece.
+    if block.sg_text:
+        sol_text_raw, rubric_text_raw = _split_solution_rubric(block.sg_text)
+        sol_text = _sanitize(sol_text_raw or block.sg_text)
+        # Extract rubric items from raw text, sanitize each individually
+        rubric_items_raw = _split_rubric_items(rubric_text_raw)
+        rubric_items = [_sanitize(item) for item in rubric_items_raw]
+
         lines.append(r"\begin{solution}")
-        lines.append(sg)
+
+        # ── Solution ──────────────────────────────────────────────────────────
+        lines.append(r"\textbf{Solution:}\par")
+        sol_intro, sol_parts = _split_parts(sol_text)
+        if sol_intro:
+            lines.append(sol_intro)
+        if sol_parts:
+            lines.append(r"\begin{parts}")
+            for _label, body in sol_parts:
+                lines.append(rf"\part {body}")
+            lines.append(r"\end{parts}")
+        elif not sol_intro:
+            lines.append(sol_text)
+
+        # ── Rubric ────────────────────────────────────────────────────────────
+        if rubric_items:
+            lines.append(r"\par\medskip")
+            lines.append(r"\textbf{Rubric:}\par")
+            lines.append(r"\begin{parts}")
+            for item in rubric_items:
+                lines.append(rf"\part {_rubric_item_safe(item)}")
+            lines.append(r"\end{parts}")
+        elif rubric_text_raw.strip():
+            # Items couldn't be extracted — show as a flat block
+            lines.append(r"\par\medskip")
+            lines.append(r"\textbf{Rubric:}\par")
+            lines.append(_sanitize(rubric_text_raw))
+
         lines.append(r"\end{solution}")
 
     return "\n".join(lines)

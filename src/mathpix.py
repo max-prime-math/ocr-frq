@@ -408,6 +408,26 @@ _UUID_FIGURE_RE = re.compile(
 )
 
 
+_PART_A_RE = re.compile(r"(?m)^[ \t]*\(a\)")
+
+
+def _strip_sg_question_preamble(text: str) -> str:
+    """
+    Strip the question statement that appears at the top of SG blocks in 1998–2017.
+
+    The SG format for those years repeats the question: context paragraph, then
+    (a) question text\\, (b) question text\\, ..., then (a) solution, (b) solution, ...
+
+    The second occurrence of '^(a)' at line-start is where the solution begins.
+    For 2018+ the SG already starts with '(a) solution', so there is only one
+    occurrence and nothing is stripped.
+    """
+    matches = list(_PART_A_RE.finditer(text))
+    if len(matches) < 2:
+        return text
+    return text[matches[1].start():].strip()
+
+
 def _clean_sg_block(text: str) -> str:
     text = _clean_block(text)
     text = re.sub(r"\\href\{[^}]+\}\{([^}]+)\}", r"\1", text)
@@ -439,6 +459,7 @@ def _clean_sg_block(text: str) -> str:
     elif diff < 0:
         text = text.rstrip() + "\n\\end{center}" * (-diff)
     text = re.sub(r"\n{3,}", "\n\n", text)
+    text = _strip_sg_question_preamble(text)
     return text.strip()
 
 
