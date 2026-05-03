@@ -556,6 +556,25 @@ def parse_exam_zip(
             part=part,
         )
 
+    # Figures that appeared before the first question marker in Mathpix (e.g. the
+    # region R graph in 2003 Q1) are not captured by block extraction.  Assign any
+    # unassigned figures to Q1 by prepending them to its question text.
+    assigned = {p for q in questions.values() for p in q.figure_paths}
+    orphans = [p for p in fig_paths if p not in assigned]
+    if orphans and 1 in questions:
+        q1 = questions[1]
+        prefix = "\n".join(
+            f"\\begin{{center}}\n\\includegraphics[width=0.8\\linewidth]{{{p}}}\n\\end{{center}}"
+            for p in orphans
+        )
+        questions[1] = ExamQuestion(
+            question_number=q1.question_number,
+            question_text=(prefix + "\n" + q1.question_text).strip(),
+            figure_paths=orphans + q1.figure_paths,
+            calculator_active=q1.calculator_active,
+            part=q1.part,
+        )
+
     return questions
 
 
