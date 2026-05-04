@@ -189,15 +189,26 @@ def _find_question_starts(body: str) -> list[tuple[int, int]]:
 
 _CENTER_BLOCK_RE = re.compile(r"\\begin\{center\}.*?\\end\{center\}", re.DOTALL)
 _CAPTION_TAIL_RE = re.compile(r"\s*\n[^\n]*\\\\\s*$")
+# Display math blocks $$...$$ containing function definitions placed between questions
+_DISPLAY_DEF_TAIL_RE = re.compile(
+    r"(\$\$\s*(?:\\begin\{(?:cases|aligned|align\*?|pmatrix|bmatrix)\}|[A-Za-z\\(]).{5,}?\$\$)\s*$",
+    re.DOTALL,
+)
 
 
 def _find_tail_preamble(text: str) -> tuple[str, int] | None:
     """
     Find the last \\begin{center}...\\end{center} block at the tail of text,
-    optionally followed by a caption line ending with \\\\.
+    or a $$...$$ display math block containing a function definition, that
+    belongs to the NEXT question rather than the current one.
 
     Returns (preamble_text, start_position) or None.
     """
+    # First check for display math definitions (piecewise, aligned conditions, etc.)
+    dm = _DISPLAY_DEF_TAIL_RE.search(text)
+    if dm and not text[dm.end():].strip():
+        return text[dm.start():], dm.start()
+
     matches = list(_CENTER_BLOCK_RE.finditer(text))
     if not matches:
         return None
@@ -385,6 +396,7 @@ _EXAM_BOILERPLATE_RE = re.compile(
     r"|Percent of total"
     r"|REMEMBER TO SHOW|WRITE ALL WORK"
     r"|END OF (?:PART|SECTION|EXAM)"
+    r"|(?:No|A graphing) calculator"         # calculator policy line
     r"|Note:\s*Use the axes"                 # common exam note
     r")"
     r"[^\n]*$"                               # rest of line
@@ -676,8 +688,42 @@ def parse_sg_zip(
 
     # Detect format by presence of \section*{Question N}
     if re.search(r"\\section\*\{(?:[^}]*\s)?Question\s+\d+", tex, re.IGNORECASE):
-        return _parse_sg_new(tex)
-    return _parse_sg_old(tex)
+        result = _parse_sg_new(tex)
+    else:
+        result = _parse_sg_old(tex)
+
+    # Apply year/question-specific corrections for known Mathpix OCR errors.
+    if year is not None:
+        result = {
+            qnum: _apply_sg_corrections(text, year, qnum, form)
+            for qnum, text in result.items()
+        }
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Known Mathpix OCR corrections (specific year/question typos)
+# ---------------------------------------------------------------------------
+
+_SG_CORRECTIONS: dict[tuple[int, str, int], list[tuple[str, str]]] = {
+    # 1998 BC Q2: variable z should be x in exponential terms
+    (1998, "", 2): [
+        (r"e^{2z}", r"e^{2x}"),
+        (r"e^{bz}", r"e^{bx}"),
+    ],
+    # 1998 BC Q3: antiderivative evaluation upper bound 2 should be x
+    (1998, "", 3): [
+        (r"\right]_{0}^{2}", r"\right]_{0}^{x}"),
+    ],
+}
+
+
+def _apply_sg_corrections(text: str, year: int, qnum: int, form: str = "") -> str:
+    """Apply known OCR/transcription corrections for a specific year/question."""
+    key = (year, form.upper() if form else "", qnum)
+    for pattern, replacement in _SG_CORRECTIONS.get(key, []):
+        text = text.replace(pattern, replacement)
+    return text
 
 
 def _parse_sg_new(tex: str) -> dict[int, str]:
