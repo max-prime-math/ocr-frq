@@ -12,6 +12,7 @@ Produces a single combined exam-class LaTeX/PDF in output_dir.
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -23,6 +24,53 @@ from .mathpix import parse_exam_zip, parse_sg_zip
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MATHPIX_DIR = REPO_ROOT / "mathpix"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "output_latex"
+CORRECTIONS_FILE = REPO_ROOT / "corrections" / "corrections.json"
+
+
+def _load_corrections() -> dict[tuple[int, str, int], list[dict]]:
+    """Load corrections.json into a lookup keyed by (year, form, question)."""
+    if not CORRECTIONS_FILE.exists():
+        return {}
+    data = json.loads(CORRECTIONS_FILE.read_text(encoding="utf-8"))
+    result: dict[tuple[int, str, int], list[dict]] = {}
+    for entry in data.get("corrections", []):
+        key = (int(entry["year"]), entry.get("form", "").upper(), int(entry["question"]))
+        result[key] = entry.get("sg_patches", [])
+    return result
+
+
+def _apply_corrections(
+    blocks: list[QuestionBlock],
+    corrections: dict[tuple[int, str, int], list[dict]],
+) -> list[QuestionBlock]:
+    """Apply manual sg_text corrections to matching blocks."""
+    if not corrections:
+        return blocks
+    patched: list[QuestionBlock] = []
+    for block in blocks:
+        key = (block.year, block.form.upper(), block.question_number)
+        patches = corrections.get(key, [])
+        if not patches:
+            patched.append(block)
+            continue
+        sg = block.sg_text
+        for patch in patches:
+            if "sg_find" in patch and "sg_replace" in patch:
+                sg = sg.replace(patch["sg_find"], patch["sg_replace"])
+            elif "sg_append" in patch:
+                sg = sg.rstrip() + "\n\n" + patch["sg_append"]
+        patched.append(QuestionBlock(
+            question_number=block.question_number,
+            year=block.year,
+            exam=block.exam,
+            form=block.form,
+            part=block.part,
+            calculator_active=block.calculator_active,
+            question_text=block.question_text,
+            sg_text=sg,
+            figure_paths=block.figure_paths,
+        ))
+    return patched
 
 # All years with Mathpix zips (no 2024)
 _ALL_YEARS = list(range(1998, 2020))
@@ -124,6 +172,10 @@ def main(argv: list[str] | None = None) -> int:
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
 
+    corrections = _load_corrections()
+    if corrections:
+        print(f"Loaded {len(corrections)} manual correction(s) from corrections.json", flush=True)
+
     print("FRQ pipeline", flush=True)
     print(f"Years: {years}", flush=True)
     print(f"Output: {output_dir}", flush=True)
@@ -136,12 +188,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Processing {year}…", flush=True)
         std = process_year(year, figures_dir, form="")
         if std:
-            blocks_by_year[year] = std
+            blocks_by_year[year] = _apply_corrections(std, corrections)
 
         if not args.no_form_b and year in _FORM_B_YEARS:
             fb = process_year(year, figures_dir, form="B")
             if fb:
-                form_b_by_year[year] = fb
+                form_b_by_year[year] = _apply_corrections(fb, corrections)
 
     total_qs = sum(len(v) for v in blocks_by_year.values()) + sum(len(v) for v in form_b_by_year.values())
     print(f"\nTotal questions: {total_qs}", flush=True)

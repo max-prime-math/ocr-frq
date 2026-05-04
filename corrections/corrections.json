@@ -1,0 +1,53 @@
+{
+  "_comment": "Manual corrections for known content errors in Mathpix SG exports. Applied to QuestionBlock.sg_text after parsing. Each patch is applied in order: sg_find/sg_replace for text substitutions, sg_append to add missing content at the end.",
+  "corrections": [
+    {
+      "year": 2009,
+      "form": "",
+      "question": 3,
+      "note": "Part (d) solution truncated mid-sentence. The answer arctan(19.21913) is in the SG rubric tail but not the solution body.",
+      "sg_patches": [
+        {
+          "sg_find": "The angle between the path of the diver and the water is",
+          "sg_replace": "The angle between the path of the diver and the water is $\\arctan(19.21913) \\approx 1.518$ or 1.519 radians."
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "form": "B",
+      "question": 3,
+      "note": "Part (c) solution truncated after stating perpendicular slope is 1. Missing: f'(x)=1/(2sqrt(x))=1 => x=1/4, P=(1/4, 1/2).",
+      "sg_patches": [
+        {
+          "sg_find": "Thus a line perpendicular to the graph of $g$ has slope 1 .",
+          "sg_replace": "Thus a line perpendicular to the graph of $g$ has slope 1 .\n\n$f^{\\prime}(x)=\\frac{1}{2\\sqrt{x}}=1 \\Rightarrow \\sqrt{x}=\\frac{1}{2} \\Rightarrow x=\\frac{1}{4}$\n\n$f\\!\\left(\\frac{1}{4}\\right)=\\sqrt{\\frac{1}{4}}=\\frac{1}{2}$\n\nThe coordinates of point $P$ are $\\left(\\frac{1}{4}, \\frac{1}{2}\\right)$."
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "form": "",
+      "question": 5,
+      "note": "Part (c) rubric missing entirely. Mathpix only captured two scoring notes but not the 5-point criteria for the separation of variables solution.",
+      "sg_patches": [
+        {
+          "sg_find": "Note: $\\max 2 / 5[1-1-0-0-0]$ if no constant of integration",
+          "sg_replace": "$5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivative of } \\frac{1}{100-B} \\text { term } \\\\ 1: \\text { antiderivative of } \\frac{1}{5} \\text { term } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } B(t)\\end{array}\\right.$\n\nNote: $\\max 2 / 5[1-1-0-0-0]$ if no constant of integration"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "form": "",
+      "question": 5,
+      "note": "Entire solution missing from Mathpix OCR — captured only as 'Note: This solution is valid for x > -1.' DE: dy/dx = y^2(2x+2), f(0) = -1.",
+      "sg_patches": [
+        {
+          "sg_find": "Note: This solution is valid for $x>-1$.",
+          "sg_replace": "(a) $f(0)=-1, \\quad f^{\\prime}(0)=(-1)^{2}(2 \\cdot 0+2)=2$\n\n$\\lim_{x \\rightarrow 0} \\frac{f(x)+1}{\\sin x}=\\frac{f^{\\prime}(0)}{\\cos 0}=\\frac{2}{1}=2$\n\n(b) $f(0)=-1, \\quad \\left.\\frac{d y}{d x}\\right|_{x=0}=(-1)^{2}(2)=2$\n\n$f(0.25) \\approx-1+2(0.25)=-0.5$\n\n$\\left.\\frac{d y}{d x}\\right|_{x=0.25}=(-0.5)^{2}(2(0.25)+2)=0.25 \\cdot 2.5=0.625$\n\n$f(0.5) \\approx-0.5+0.625(0.25)=-0.34375$\n\n(c) $\\frac{d y}{y^{2}}=(2 x+2) d x$\n\n$\\int y^{-2} d y=\\int(2 x+2) d x$\n\n$-\\frac{1}{y}=x^{2}+2 x+C$\n\n$f(0)=-1: \\quad 1=0+0+C \\Rightarrow C=1$\n\n$-\\frac{1}{y}=x^{2}+2 x+1=(x+1)^{2}$\n\n$f(x)=-\\frac{1}{(x+1)^{2}}$\n\nNote: This solution is valid for $x>-1$.\n\n$2:\\left\\{\\begin{array}{l}1: \\lim _{x \\rightarrow 0} \\frac{f(x)+1}{\\sin x} \\\\ 1: \\text { answer }\\end{array}\\right.$\n\n$3:\\left\\{\\begin{array}{l}1: \\text { Euler's method with two steps } \\\\ 1: y(0.25) \\\\ 1: y(0.5)\\end{array}\\right.$\n\n$5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } f(x)\\end{array}\\right.$"
+        }
+      ]
+    }
+  ]
+}
