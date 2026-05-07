@@ -48,12 +48,15 @@ def init_session_state():
         st.session_state.output_pdf_path = None
 
 
-def validate_api_key():
-    """Check if Anthropic API key is configured."""
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        st.error("⚠️ Anthropic API key not found. Set `ANTHROPIC_API_KEY` environment variable.")
-        return False
-    return True
+def get_anthropic_client():
+    """Get Anthropic client from user input or environment variable.
+
+    Returns tuple of (client, is_valid).
+    The API key is never stored or logged for security.
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+
+    return api_key
 
 
 def main():
@@ -65,11 +68,25 @@ def main():
         st.header("⚙️ Settings")
         st.markdown("---")
 
-        api_key_valid = validate_api_key()
-        if api_key_valid:
+        st.subheader("🔑 Anthropic API Key")
+        api_key_input = st.text_input(
+            "Enter your API key",
+            type="password",
+            key="api_key_input",
+            help="Your API key is not saved. It's only used for this session.",
+        )
+
+        # Try to use input key, fall back to env var
+        api_key = api_key_input or os.environ.get("ANTHROPIC_API_KEY", "")
+
+        if api_key:
             st.success("✓ API key configured")
+            api_key_valid = True
         else:
-            st.info("Set ANTHROPIC_API_KEY environment variable to enable processing")
+            st.warning("⚠️ No API key provided. Enter your key to enable processing.")
+            api_key_valid = False
+
+        st.markdown("---")
 
         use_cache = st.checkbox("Use cache for Claude responses", value=True)
         dpi = st.slider("Figure extraction DPI", min_value=100, max_value=300, value=200, step=50)
@@ -135,8 +152,8 @@ placeholders so MathPix can cleanly OCR the text and math.
 
                         logger.info(f"Starting figure extraction on {input_pdf.name}")
 
-                        # Initialize Claude client and cache
-                        client = Anthropic()
+                        # Initialize Claude client and cache with provided API key
+                        client = Anthropic(api_key=api_key)
                         cache = FRQCache() if use_cache else None
 
                         progress_bar.progress(10, text="Analyzing PDF structure...")
