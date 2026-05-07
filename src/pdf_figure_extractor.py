@@ -18,8 +18,12 @@ from typing import Optional
 
 from PIL import Image
 
-from .cache import FRQCache
-from .renderer import render_page
+try:
+    from cache import FRQCache
+    from renderer import render_page
+except ImportError:
+    from .cache import FRQCache
+    from .renderer import render_page
 
 logger = logging.getLogger(__name__)
 
