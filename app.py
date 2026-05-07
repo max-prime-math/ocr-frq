@@ -70,10 +70,11 @@ def main():
 
         st.subheader("🔑 Anthropic API Key")
         api_key_input = st.text_input(
-            "Enter your API key",
+            "Password",
             type="password",
-            key="api_key_input",
-            help="Your API key is not saved. It's only used for this session.",
+            key="anthropic_api_key",
+            help="Enter your Anthropic API key. Not saved, session-only.",
+            placeholder="sk-...",
         )
 
         # Try to use input key, fall back to env var
