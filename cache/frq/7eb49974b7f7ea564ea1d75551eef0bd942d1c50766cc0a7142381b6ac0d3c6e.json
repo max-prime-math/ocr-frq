@@ -1,0 +1,13 @@
+{
+  "page_type": "real_FRQ",
+  "question_number": 2,
+  "question": "(a) Find the area of $S$, the region enclosed by the curve $r = r(\\theta)$ for $0 \\le \\theta \\le \\sqrt{\\pi}$.\n\n(b) Find the average distance from the origin to a point on the curve $r = r(\\theta)$ for $0 \\le \\theta \\le \\sqrt{\\pi}$.\n\n(c) A line through the origin makes an angle $m$ with the positive $x$-axis, where $0 < m < \\frac{\\pi}{2}$. Find the area of the region enclosed by the curve $r = r(\\theta)$ and the line $y = mx$ for $0 \\le \\theta \\le \\tan^{-1}m$.\n\n(d) As $k \\to \\infty$, the circle $r = k\\cos\\theta$ grows to enclose all points to the right of the $y$-axis. Let $A(k)$ be the area of the region enclosed by the circle that lies outside the curve $r = r(\\theta)$. Find $\\lim_{k \\to \\infty} A(k)$.",
+  "solution": "(a) $\\frac{1}{2}\\int_0^{\\sqrt{\\pi}} (r(\\theta))^2\\,d\\theta = 3.534292$\n\nThe area of $S$ is $3.534$.\n\n(b) $\\frac{1}{\\sqrt{\\pi} - 0}\\int_0^{\\sqrt{\\pi}} r(\\theta)\\,d\\theta = 1.579933$\n\nThe average distance from the origin to a point on the curve $r = r(\\theta)$ for $0 \\le \\theta \\le \\sqrt{\\pi}$ is $1.580$ (or $1.579$).\n\n(c) $\\tan\\theta = \\frac{y}{x} = m \\Rightarrow \\theta = \\tan^{-1}m$\n\n$\\frac{1}{2}\\int_0^{\\tan^{-1}m} (r(\\theta))^2\\,d\\theta = \\frac{1}{2}\\left(\\frac{1}{2}\\int_0^{\\sqrt{\\pi}} (r(\\theta))^2\\,d\\theta\\right)$\n\n(d) As $k \\to \\infty$, the circle $r = k\\cos\\theta$ grows to enclose all points to the right of the $y$-axis.\n\n$\\lim_{k \\to \\infty} A(k) = \\frac{1}{2}\\int_0^{\\pi/2} (r(\\theta))^2\\,d\\theta = \\frac{1}{2}\\int_0^{\\pi/2}\\left(3\\sqrt{\\theta}\\sin(\\theta^2)\\right)^2\\,d\\theta = 3.324$",
+  "grading_scheme": "Part (a): 2 points\n  1 point: integral\n  1 point: answer\n\nPart (b): 2 points\n  1 point: integral\n  1 point: answer\n\nPart (c): 3 points\n  1 point: equates polar areas\n  1 point: inverse trigonometric function applied to $m$ as limit of integration\n  1 point: equation\n\nPart (d): 2 points\n  1 point: limits of integration\n  1 point: answer with integral",
+  "unit": "Unit 8: Applications of Integration",
+  "section": "Part B",
+  "calculator_allowed": false,
+  "figures": [],
+  "tables": [],
+  "confidence_flag": false
+}

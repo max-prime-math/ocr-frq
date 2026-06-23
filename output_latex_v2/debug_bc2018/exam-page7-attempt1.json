@@ -1,0 +1,14 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"exam\",\n  \"questions\": [\n    {\n      \"question_number\": 6,\n      \"question_text\": \"The Maclaurin series for $\\\\ln(1 + x)$ is given by\\n$$x - \\\\frac{x^2}{2} + \\\\frac{x^3}{3} - \\\\frac{x^4}{4} + \\\\cdots + (-1)^{n+1}\\\\frac{x^n}{n} + \\\\cdots$$\\n\\nOn its interval of convergence, this series converges to $\\\\ln(1 + x)$. Let $f$ be the function defined by\\n$$f(x) = x \\\\ln\\\\left(1 + \\\\frac{x}{3}\\\\right).$$\\n\\n(a) Write the first four nonzero terms and the general term of the Maclaurin series for $f$.\\n\\n(b) Determine the interval of convergence of the Maclaurin series for $f$. Show the work that leads to your answer.\\n\\n(c) Let $P_4(x)$ be the fourth-degree Taylor polynomial for $f$ about $x = 0$. Use the alternating series error bound to find an upper bound for $\\\\left|P_4(2) - f(2)\\\\right|$.\",\n      \"figures\": [],\n      \"tables\": []\n    }\n  ]\n}\n```",
+  "parsed": {
+    "page_type": "exam",
+    "questions": [
+      {
+        "question_number": 6,
+        "question_text": "The Maclaurin series for $\\ln(1 + x)$ is given by\n$$x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\cdots + (-1)^{n+1}\\frac{x^n}{n} + \\cdots$$\n\nOn its interval of convergence, this series converges to $\\ln(1 + x)$. Let $f$ be the function defined by\n$$f(x) = x \\ln\\left(1 + \\frac{x}{3}\\right).$$\n\n(a) Write the first four nonzero terms and the general term of the Maclaurin series for $f$.\n\n(b) Determine the interval of convergence of the Maclaurin series for $f$. Show the work that leads to your answer.\n\n(c) Let $P_4(x)$ be the fourth-degree Taylor polynomial for $f$ about $x = 0$. Use the alternating series error bound to find an upper bound for $\\left|P_4(2) - f(2)\\right|$.",
+        "figures": [],
+        "tables": []
+      }
+    ]
+  }
+}

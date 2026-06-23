@@ -1,0 +1,14 @@
+{
+  "page_type": "FRQ",
+  "question_number": 5,
+  "question": null,
+  "solution": "(a) $f'(x) = \\frac{-3(4x - 7)}{(2x^2 - 7x + 5)^2}$\n\n$f'(3) = \\frac{(-3)(5)}{(18 - 21 + 5)^2} = \\frac{-15}{4}$\n\n(b) $f'(x) = \\frac{-3(4x - 7)}{(2x^2 - 7x + 5)^2} = 0 \\Rightarrow x = \\frac{7}{4}$\n\nThe only critical point in the interval $1 < x < 2.5$ has $x$-coordinate $\\frac{7}{4}$.\n\n$f'$ changes sign from positive to negative at $x = \\frac{7}{4}$.\n\nTherefore, $f$ has a relative maximum at $x = \\frac{7}{4}$.\n\n(c) $\\int_5^{\\infty} f(x)\\,dx = \\lim_{b \\to \\infty} \\int_5^b \\frac{3}{2x^2 - 7x + 5}\\,dx = \\lim_{b \\to \\infty} \\int_5^b \\left(\\frac{2}{2x - 5} - \\frac{1}{x - 1}\\right)\\,dx$\n\n$= \\lim_{b \\to \\infty} [\\ln(2x - 5) - \\ln(x - 1)]_5^b = \\lim_{b \\to \\infty} \\left[\\ln\\left(\\frac{2x - 5}{x - 1}\\right)\\right]_5^b$\n\n$= \\lim_{b \\to \\infty} \\left[\\ln\\left(\\frac{2b - 5}{b - 1}\\right) - \\ln\\left(\\frac{5}{4}\\right)\\right] = \\ln 2 - \\ln\\left(\\frac{5}{4}\\right) = \\ln\\left(\\frac{8}{5}\\right)$\n\n(d) $f$ is continuous, positive, and decreasing on $[5, \\infty)$.\n\nThe series converges by the integral test since $\\int_5^{\\infty} \\frac{3}{2x^2 - 7x + 5}\\,dx$ converges.\n\n— OR —\n\n$\\frac{3}{2n^2 - 7n + 5} > 0$ and $\\frac{1}{n^2} > 0$ for $n \\ge 5$.\n\nSince $\\lim_{n \\to \\infty} \\frac{\\frac{3}{2n^2 - 7n + 5}}{\\frac{1}{n^2}} = \\frac{3}{2}$ and the series $\\sum_{n=5}^{\\infty} \\frac{1}{n^2}$ converges,\n\nthe series $\\sum_{n=5}^{\\infty} \\frac{3}{2n^2 - 7n + 5}$ converges by the limit comparison test.",
+  "grading_scheme": "(a) 2 : $f'(3)$\n\n(b) 2 : \\begin{cases} 1 : \\text{$x$-coordinate} \\\\ 1 : \\text{relative maximum with justification} \\end{cases}\n\n(c) 3 : \\begin{cases} 1 : \\text{antiderivative} \\\\ 1 : \\text{limit expression} \\\\ 1 : \\text{answer} \\end{cases}\n\n(d) 2 : \\text{answer with conditions}",
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part B",
+  "calculator_active": false,
+  "figures": [],
+  "tables": [],
+  "confidence": "high",
+  "flags": []
+}

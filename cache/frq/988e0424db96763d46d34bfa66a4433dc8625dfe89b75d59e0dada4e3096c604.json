@@ -1,0 +1,14 @@
+{
+  "page_type": "FRQ",
+  "question_number": 1,
+  "question": null,
+  "solution": "(a) Volume = $\\int_0^{10} A(h) \\, dh$\n\n$= (2 - 0) \\cdot A(0) + (5 - 2) \\cdot A(2) + (10 - 5) \\cdot A(5)$\n\n$= 2 \\cdot 50.3 + 3 \\cdot 14.4 + 5 \\cdot 6.5$\n\n$= 176.3$ cubic feet\n\n(b) The approximation in part (a) is an overestimate because a left Riemann sum is used and $A$ is decreasing.\n\n(c) $\\int_0^{10} f(h) \\, dh = 101.325338$\n\nThe volume is $101.325$ cubic feet.\n\n(d) Using the model, $V(h) = \\int_0^h f(x) \\, dx$.\n\n$\\frac{dV}{dt}\\bigg|_{h=5} = \\left[\\frac{dV}{dh} \\cdot \\frac{dh}{dt}\\right]_{h=5}$\n\n$= \\left[f(h) \\cdot \\frac{dh}{dt}\\right]_{h=5}$\n\n$= f(5) \\cdot 0.26 = 1.694419$\n\nWhen $h = 5$, the volume of water is changing at a rate of $1.694$ cubic feet per minute.",
+  "grading_scheme": "1 : units in parts (a), (c), and (d)\n\n2 : {\n  1 : left Riemann sum\n  1 : approximation\n}\n\n1 : overestimate with reason\n\n2 : {\n  1 : integral\n  1 : answer\n}\n\n3 : {\n  2 : $\\frac{dV}{dt}$\n  1 : answer\n}",
+  "tables": [],
+  "figures": [],
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part A",
+  "calculator_status": "Calculator active",
+  "confidence_flag": false,
+  "notes": "The question prompt itself is not visible on this page; only the worked solution and grading rubric are shown. This is a valid FRQ page containing the complete solution and rubric for Question 1."
+}

@@ -1,0 +1,35 @@
+{
+  "page_type": "real_frq",
+  "question_number": 1,
+  "question": "(a) Evaluate $\\int_0^5 E(t)\\,dt$. (b) Find and interpret $\\frac{1}{5-0}\\int_0^5 L(t)\\,dt$. (c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$. At what time is the number of fish in the lake at a maximum? Justify your answer. (d) Is the rate of change in the number of fish in the lake increasing or decreasing at $t = 5$? Explain your reasoning.",
+  "solution": "(a) $\\int_0^5 E(t)\\,dt = 153.457690$\n\nTo the nearest whole number, 153 fish enter the lake from midnight to 5 a.m.\n\n(b) $\\frac{1}{5-0}\\int_0^5 L(t)\\,dt = 6.059038$\n\nThe average number of fish that leave the lake per hour from midnight to 5 a.m. is 6.059 fish per hour.\n\n(c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$.\n\n$E(t) - L(t) = 0 \\Rightarrow t = 6.20356$\n\n$E(t) - L(t) > 0$ for $0 \\le t < 6.20356$, and $E(t) - L(t) < 0$ for $6.20356 < t \\le 8$. Therefore the greatest number of fish in the lake is at $t = 6.204$ (or 6.203).\n\n— OR —\n\nLet $A(t)$ be the change in the number of fish in the lake from midnight to $t$ hours after midnight.\n\n$A(t) = \\int_0^t (E(s) - L(s))\\,ds$\n\n$A'(t) = E(t) - L(t) = 0 \\Rightarrow t = C = 6.20356$\n\n| $t$ | $A(t)$ |\n|---|---|\n| 0 | 0 |\n| $C$ | 135.01492 |\n| 8 | 80.91998 |\n\nTherefore the greatest number of fish in the lake is at time $t = 6.204$ (or 6.203).\n\n(d) $E'(5) - L'(5) = -10.7228 < 0$\n\nBecause $E'(5) - L'(5) < 0$, the rate of change in the number of fish is decreasing at time $t = 5$.",
+  "grading_scheme": "Part (a): 2 points\n$1$ : integral\n$1$ : answer\n\nPart (b): 2 points\n$1$ : integral\n$1$ : answer\n\nPart (c): 3 points\n$1$ : sets $E(t) - L(t) = 0$\n$1$ : answer\n$1$ : justification\n\nPart (d): 2 points\n$1$ : considers $E'(5)$ and $L'(5)$\n$1$ : answer with explanation",
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part A",
+  "calculator_status": "Calculator active",
+  "flags": [],
+  "figures": [],
+  "tables": [
+    {
+      "section": "solution",
+      "headers": [
+        "$t$",
+        "$A(t)$"
+      ],
+      "rows": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "$C$",
+          "135.01492"
+        ],
+        [
+          "8",
+          "80.91998"
+        ]
+      ]
+    }
+  ]
+}

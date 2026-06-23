@@ -1,0 +1,17 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"exam\",\n  \"questions\": [\n    {\n      \"question_number\": 1,\n      \"question_text\": \"People enter a line for an escalator at a rate modeled by the function $r$ given by\\n$$r(t) = \\\\begin{cases} 44\\\\left(\\\\frac{t}{100}\\\\right)^3\\\\left(1-\\\\frac{t}{300}\\\\right)^7 & \\\\text{for } 0 \\\\le t \\\\le 300 \\\\\\\\ 0 & \\\\text{for } t > 300, \\\\end{cases}$$\\nwhere $r(t)$ is measured in people per second and $t$ is measured in seconds. As people get on the escalator, they exit the line at a constant rate of 0.7 person per second. There are 20 people in line at time $t = 0$.\\n\\n(a) How many people enter the line for the escalator during the time interval $0 \\\\le t \\\\le 300$?\\n\\n(b) During the time interval $0 \\\\le t \\\\le 300$, there are always people in line for the escalator. How many people are in line at time $t = 300$?\\n\\n(c) For $t > 300$, what is the first time $t$ that there are no people in line for the escalator?\\n\\n(d) For $0 \\\\le t \\\\le 300$, at what time $t$ is the number of people in line a minimum? To the nearest whole number, find the number of people in line at this time. Justify your answer.\",\n      \"figures\": [],\n      \"tables\": [],\n      \"unit\": \"Unit 6: Integration and Accumulation of Change\",\n      \"section\": \"Part A\",\n      \"calculator_status\": \"Calculator active\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "page_type": "exam",
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "People enter a line for an escalator at a rate modeled by the function $r$ given by\n$$r(t) = \\begin{cases} 44\\left(\\frac{t}{100}\\right)^3\\left(1-\\frac{t}{300}\\right)^7 & \\text{for } 0 \\le t \\le 300 \\\\ 0 & \\text{for } t > 300, \\end{cases}$$\nwhere $r(t)$ is measured in people per second and $t$ is measured in seconds. As people get on the escalator, they exit the line at a constant rate of 0.7 person per second. There are 20 people in line at time $t = 0$.\n\n(a) How many people enter the line for the escalator during the time interval $0 \\le t \\le 300$?\n\n(b) During the time interval $0 \\le t \\le 300$, there are always people in line for the escalator. How many people are in line at time $t = 300$?\n\n(c) For $t > 300$, what is the first time $t$ that there are no people in line for the escalator?\n\n(d) For $0 \\le t \\le 300$, at what time $t$ is the number of people in line a minimum? To the nearest whole number, find the number of people in line at this time. Justify your answer.",
+        "figures": [],
+        "tables": [],
+        "unit": "Unit 6: Integration and Accumulation of Change",
+        "section": "Part A",
+        "calculator_status": "Calculator active"
+      }
+    ]
+  }
+}

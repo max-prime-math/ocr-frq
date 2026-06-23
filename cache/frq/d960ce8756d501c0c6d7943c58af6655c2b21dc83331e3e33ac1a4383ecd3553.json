@@ -1,0 +1,14 @@
+{
+  "page_type": "FRQ",
+  "question_number": 2,
+  "question": "Let $f$ be the function given by $f(x) = 2xe^{2x}$.\n(a) Find $\\lim_{x \\to -\\infty} f(x)$ and $\\lim_{x \\to \\infty} f(x)$.\n(b) Find the absolute minimum value of $f$. Justify that your answer is an absolute minimum.\n(c) What is the range of $f$?\n(d) Consider the family of functions defined by $y = bxe^{bx}$, where $b$ is a nonzero constant. Show that the absolute minimum value of $bxe^{bx}$ is the same for all nonzero values of $b$.",
+  "solution": "(a) $\\lim_{x \\to -\\infty} 2xe^{2x} = 0$\n\n$\\lim_{x \\to \\infty} 2xe^{2x} = \\infty$ or DNE\n\n(b) $f'(x) = 2e^{2x} + 2x \\cdot 2e^{2x} = 2e^{2x}(1 + 2x) = 0$\n\nif $x = -1/2$\n\n$f(-1/2) = -1/e$ or $-0.368$ or $-0.367$\n\n$-1/e$ is an absolute minimum value because:\n\n(i) $f'(x) < 0$ for all $x < -1/2$ and\n$f'(x) > 0$ for all $x > -1/2$\n\n-or-\n\n(ii) $f'(x)$ shows $-$ then $+$ with sign change at $x = -1/2$, and $x = -1/2$ is the only critical number\n\n(c) Range of $f$ is $[-1/e, \\infty)$ or $[-0.367, \\infty)$ or $[-0.368, \\infty)$\n\n(d) $y' = be^{bx} + b^2 xe^{bx} = be^{bx}(1 + bx) = 0$\n\nif $x = -1/b$\n\nAt $x = -1/b$, $y = -1/e$\n\n$y$ has an absolute minimum value of $-1/e$ for all nonzero $b$",
+  "grading_scheme": "Question 2 (9 points total)\n\n(a) 2 points\n{ 1: 0 as $x \\to -\\infty$\n  1: $\\infty$ or DNE as $x \\to \\infty$ }\n\n(b) 3 points\n{ 1: solves $f'(x) = 0$\n  1: evaluates $f$ at student's critical point\n     0/1 if not local minimum from student's derivative\n  1: justifies absolute minimum value\n     0/1 for a local argument\n     0/1 without explicit symbolic derivative }\nNote: 0/3 if no absolute minimum based on student's derivative\n\n(c) 1 point\n{ 1: answer }\nNote: must include the left-hand endpoint; exclude the right-hand \"endpoint\"\n\n(d) 3 points\n{ 1: sets $y' = be^{bx}(1 + bx) = 0$\n  1: solves student's $y' = 0$\n  1: evaluates $y$ at a critical number and gets a value independent of $b$ }\nNote: 0/3 if only considering specific values of $b$",
+  "unit": "Unit 5: Analytical Applications of Differentiation",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited",
+  "confidence_flag": false,
+  "flags": [],
+  "figures": [],
+  "tables": []
+}

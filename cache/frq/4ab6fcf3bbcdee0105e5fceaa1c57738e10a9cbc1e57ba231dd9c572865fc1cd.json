@@ -1,0 +1,42 @@
+{
+  "page_type": "FRQ",
+  "question_number": 3,
+  "question": null,
+  "solution": "(a) $f(-6) = f(-2) + \\int_{-2}^{-6} f'(x)\\,dx = 7 - \\int_{-6}^{-2} f'(x)\\,dx = 7 - 4 = 3$\n\n$f(5) = f(-2) + \\int_{-2}^{5} f'(x)\\,dx = 7 - 2\\pi + 3 = 10 - 2\\pi$\n\n(b) $f'(x) > 0$ on the intervals $[-6, -2]$ and $(2, 5)$.\nTherefore, $f$ is increasing on the intervals $[-6, -2]$ and $[2, 5]$.\n\n(c) The absolute minimum will occur at a critical point where $f'(x) = 0$ or at an endpoint.\n\n$f'(x) = 0 \\Rightarrow x = -2, x = 2$\n\n| $x$ | $f(x)$ |\n| -6 | 3 |\n| -2 | 7 |\n| 2 | $7 - 2\\pi$ |\n| 5 | $10 - 2\\pi$ |\n\nThe absolute minimum value is $f(2) = 7 - 2\\pi$.\n\n(d) $f''(-5) = \\frac{2 - 0}{-6 - (-2)} = -\\frac{1}{2}$\n\n$\\lim_{x \\to 3^-} \\frac{f'(x) - f'(3)}{x - 3} = 2$ and $\\lim_{x \\to 3^+} \\frac{f'(x) - f'(3)}{x - 3} = -1$\n\n$f''(3)$ does not exist because\n$$\\lim_{x \\to 3^-} \\frac{f'(x) - f'(3)}{x - 3} \\neq \\lim_{x \\to 3^+} \\frac{f'(x) - f'(3)}{x - 3}.$$",
+  "grading_scheme": "(a) 3 : $\\begin{cases} 1 : \\text{uses initial condition} \\\\ 1 : f(-6) \\\\ 1 : f(5) \\end{cases}$\n\n(b) 2 : answer with justification\n\n(c) 2 : $\\begin{cases} 1 : \\text{considers } x = 2 \\\\ 1 : \\text{answer with justification} \\end{cases}$\n\n(d) 2 : $\\begin{cases} 1 : f''(-5) \\\\ 1 : f''(3) \\text{ does not exist, with explanation} \\end{cases}$",
+  "unit": "Unit 5: Analytical Applications of Differentiation",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited",
+  "confidence_flag": false,
+  "flags": [
+    "The original question prompt is not visible on this page; only the solution and grading rubric are shown."
+  ],
+  "figures": [],
+  "tables": [
+    {
+      "section": "solution",
+      "headers": [
+        "$x$",
+        "$f(x)$"
+      ],
+      "rows": [
+        [
+          "$-6$",
+          "$3$"
+        ],
+        [
+          "$-2$",
+          "$7$"
+        ],
+        [
+          "$2$",
+          "$7 - 2\\pi$"
+        ],
+        [
+          "$5$",
+          "$10 - 2\\pi$"
+        ]
+      ]
+    }
+  ]
+}

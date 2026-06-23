@@ -1,0 +1,24 @@
+{
+  "page_type": "FRQ",
+  "question_number": 1,
+  "question": "Let $R$ be the region in the first quadrant bounded by the graph of $y = 8 - x^{3/2}$, the $x$-axis, and the $y$-axis.\n\n(a) Find the area of the region $R$.\n\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\n\n(c) The vertical line $x = k$ divides the region $R$ into two regions such that when these two regions are revolved about the $x$-axis, they generate solids with equal volumes. Find the value of $k$.",
+  "solution": "(a)\n$$A = \\int_0^8 \\left(8 - x^{3/2}\\right) dx$$\n$$= 8x - \\frac{2}{5}x^{5/2}\\Big|_0^8 = 32 - \\frac{64}{5} = \\frac{96}{5} = 19.2$$\n\n(b)\n$$V = \\pi\\int_0^8\\left(8 - x^{3/2}\\right)^2 dx$$\n$$= \\frac{576\\pi}{5} = 115.2\\pi \\approx 361.911$$\n\n(c)\n$$\\pi\\int_0^k\\left(8 - x^{3/2}\\right)^2 dx = \\frac{115.2\\pi}{2}$$\n\nor\n$$\\left[\\pi\\int_0^k\\left(8 - x^{3/2}\\right)^2 dx = \\pi\\int_k^8\\left(8 - x^{3/2}\\right)^2 dx\\right]$$\n\n$$\\int_0^k\\left(8 - x^{3/2}\\right)^2 dx = 57.6$$\n\n$$\\int_0^k\\left(64 - 16x^{3/2} + x^3\\right) dx = 57.6$$\n\n$$64k - \\frac{32}{5}k^{5/2} + \\frac{k^4}{4} = 57.6$$\n\n$$k \\approx 0.995 \\text{ or } 0.994$$",
+  "grading_scheme": "(a)\n3 points: \n- 2: integral\n- 1: integrand\n- 1: limits\n- 1: answer\n\n(b)\n3 points:\n- 2: integral\n- 1: integrand\n- 1: limits and constant\n- 1: answer\n\n(c)\n3 points:\n- 1: integral with $k$ in limits\n- 1: equates volumes\n- 1: answer\n\nNote: 0/1 for answer in each part if no setup points earned",
+  "unit": "Unit 8: Applications of Integration",
+  "section": "Part A",
+  "calculator_status": "Calculator active",
+  "figures": [
+    {
+      "section": "question",
+      "bounding_box": [
+        0.0,
+        0.35,
+        0.5,
+        0.65
+      ],
+      "caption": "Graph of $y = 8 - x^{3/2}$ with region $R$ bounded by the curve, $x$-axis, and $y$-axis. Point $(0,8)$ marked on $y$-axis, point $(8,0)$ marked on $x$-axis."
+    }
+  ],
+  "tables": [],
+  "confidence_flag": false
+}

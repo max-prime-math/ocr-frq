@@ -1,0 +1,14 @@
+{
+  "page_type": "fRQ",
+  "question_number": 3,
+  "unit": "Unit 5: Analytical Applications of Differentiation",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited",
+  "question": "Let $f$ be a function that has derivatives of all orders for all real numbers. Assume $f(0) = 5$, $f'(0) = -3$, $f''(0) = 1$, and $f'''(0) = 4$.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x = 0$ and use it to approximate $f(0.2)$.\n\n(b) Write the fourth-degree Taylor polynomial for $g$, where $g(x) = f(x^2)$, about $x = 0$.\n\n(c) Write the third-degree Taylor polynomial for $h$, where $h(x) = \\int_0^x f(t)\\,dt$, about $x = 0$.\n\n(d) Let $h$ be defined as in part (c). Given that $f(1) = 3$, either find the exact value of $h(1)$ or explain why it cannot be determined.",
+  "solution": "(a) $P_3(f)(x) = 5 - 3x + \\frac{1}{2}x^2 + \\frac{2}{3}x^3$\n\n$f(0.2) \\approx P_3(f)(0.2) = 5 - 3(0.2) + \\frac{0.04}{2} + \\frac{2(0.008)}{3} = 5 - 0.6 + 0.02 + \\frac{0.016}{3} = 4.425$\n\n(b) $P_4(g)(x) = P_4(f)(x^2) = 5 - 3x^2 + \\frac{1}{2}x^4$\n\n(c) $P_3(h)(x) = \\int_0^x \\left(5 - 3t + \\frac{1}{2}t^2\\right)\\,dt = \\left[5t - \\frac{3}{2}t^2 + \\frac{1}{6}t^3\\right]_0^x = 5x - \\frac{3}{2}x^2 + \\frac{1}{6}x^3$\n\n(d) $h(1) = \\int_0^1 f(t)\\,dt$. This cannot be determined because $f(t)$ is known only for $t = 0$ and $t = 1$.",
+  "grading_scheme": "{\n  \"3\": {\n    \"(a)\": {\n      \"2\": \"$5 - 3x + \\frac{1}{2}x^2 + \\frac{2}{3}x^3$\",\n      \"<-1>\": \"each incorrect term, extra term, or $+ \\cdots$\",\n      \"1\": \"approximates $f(0.2)$\",\n      \"<-1>\": \"for incorrect use of $=$\"\n    },\n    \"(b)\": {\n      \"2\": \"$P_4(f)(x^2)$\",\n      \"<-1>\": \"each incorrect or extra term\"\n    },\n    \"(c)\": {\n      \"1\": \"$P_3(h)(x) = \\int_0^x P_2(f)(t)\\,dt$\",\n      \"1\": \"answer\",\n      \"0/1\": \"if any incorrect or extra terms\"\n    },\n    \"(d)\": {\n      \"1\": \"$h(1)$ cannot be determined\",\n      \"1\": \"reason\"\n    }\n  }\n}",
+  "figures": [],
+  "tables": [],
+  "confidence": 0.95,
+  "notes": "This is a BC Calculus question on Taylor polynomials. The page contains the question prompt, worked solutions on the left, and detailed rubric on the right."
+}

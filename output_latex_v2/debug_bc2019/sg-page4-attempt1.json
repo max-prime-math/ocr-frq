@@ -1,0 +1,42 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"real_frq\",\n  \"question_number\": 3,\n  \"question\": \"(a) $\\\\int_{-6}^{5} f(x)\\\\,dx = \\\\int_{-6}^{-2} f(x)\\\\,dx + \\\\int_{-2}^{5} f(x)\\\\,dx$\\n\\n(b) $\\\\int_{3}^{5} (2f'(x) + 4)\\\\,dx$\\n\\n(c) Find the absolute maximum value of $g(x) = \\\\int_{-2}^{x} f(t)\\\\,dt$ on the interval $[-2, 5]$.\\n\\n(d) $\\\\lim_{x \\\\to 1} \\\\frac{10^3 - 3f'(x)}{f(x) - \\\\arctan x}$\",\n  \"solution\": \"(a) $\\\\int_{-6}^{5} f(x)\\\\,dx = \\\\int_{-6}^{-2} f(x)\\\\,dx + \\\\int_{-2}^{5} f(x)\\\\,dx$\\n\\n$\\\\Rightarrow 7 = \\\\int_{-6}^{-2} f(x)\\\\,dx + 2 + \\\\left(9 - \\\\frac{9\\\\pi}{4}\\\\right)$\\n\\n$\\\\Rightarrow \\\\int_{-6}^{-2} f(x)\\\\,dx = 7 - \\\\left(11 - \\\\frac{9\\\\pi}{4}\\\\right) = \\\\frac{9\\\\pi}{4} - 4$\\n\\n(b) $\\\\int_{3}^{5} (2f'(x) + 4)\\\\,dx = 2\\\\int_{3}^{5} f'(x)\\\\,dx + \\\\int_{3}^{4} 4\\\\,dx$\\n\\n$= 2(f(5) - f(3)) + 4(5 - 3)$\\n\\n$= 2(0 - (3 - \\\\sqrt{5})) + 8$\\n\\n$= 2(-3 + \\\\sqrt{5}) + 8 = 2 + 2\\\\sqrt{5}$\\n\\n\u2014 OR \u2014\\n\\n$\\\\int_{3}^{5} (2f'(x) + 4)\\\\,dx = [2f(x) + 4x]_{x=3}^{x=5}$\\n\\n$= (2f(5) + 20) - (2f(3) + 12)$\\n\\n$= (2 \\\\cdot 0 + 20) - (2(3 - \\\\sqrt{5}) + 12)$\\n\\n$= 2 + 2\\\\sqrt{5}$\\n\\n(c) $g'(x) = f(x) = 0 \\\\Rightarrow x = -1, x = \\\\frac{1}{2}, x = 5$\\n\\nTable of values:\\n\\n| $x$ | $g(x)$ |\\n|-----|--------|\\n| $-2$ | $0$ |\\n| $-1$ | $\\\\frac{1}{2}$ |\\n| $\\\\frac{1}{2}$ | $-\\\\frac{1}{4}$ |\\n| $5$ | $11 - \\\\frac{9\\\\pi}{4}$ |\\n\\nOn the interval $-2 \\\\le x \\\\le 5$, the absolute maximum value of $g$ is $g(5) = 11 - \\\\frac{9\\\\pi}{4}$.\\n\\n(d) $\\\\lim_{x \\\\to 1} \\\\frac{10^3 - 3f'(x)}{f(x) - \\\\arctan x} = \\\\frac{10^3 - 3f'(1)}{f(1) - \\\\arctan 1}$\\n\\n$= \\\\frac{10 - 3 \\\\cdot 2}{1 - \\\\arctan 1} = \\\\frac{4}{1 - \\\\frac{\\\\pi}{4}}$\",\n  \"grading_scheme\": \"Part (a): 3 points\\n$1 : \\\\int_{-6}^{5} f(x)\\\\,dx = \\\\int_{-6}^{-2} f(x)\\\\,dx + \\\\int_{-2}^{5} f(x)\\\\,dx$\\n$1 : \\\\int_{-2}^{5} f(x)\\\\,dx$\\n$1 : $ answer\\n\\nPart (b): 2 points\\n$1 : $ Fundamental Theorem of Calculus\\n$1 : $ answer\\n\\nPart (c): 3 points\\n$1 : g'(x) = f(x)$\\n$1 : $ identifies $x = -1$ as a candidate\\n$1 : $ answer with justification\\n\\nPart (d): 1 point\\n$1 : $ answer\",\n  \"figures\": [],\n  \"tables\": [\n    {\n      \"section\": \"solution\",\n      \"headers\": [\"$x$\", \"$g(x)$\"],\n      \"rows\": [\n        [\"$-2$\", \"$0$\"],\n        [\"$-1$\", \"$\\\\frac{1}{2}$\"],\n        [\"$\\\\frac{1}{2}$\", \"$-\\\\frac{1}{4}$\"],\n        [\"$5$\", \"$11 - \\\\frac{9\\\\pi}{4}$\"]\n      ]\n    }\n  ],\n  \"unit\": \"Unit 6: Integration and Accumulation of Change\",\n  \"section\": \"Part B\",\n  \"calculator_status\": \"Calculator prohibited\",\n  \"confidence_flag\": false\n}\n```",
+  "parsed": {
+    "page_type": "real_frq",
+    "question_number": 3,
+    "question": "(a) $\\int_{-6}^{5} f(x)\\,dx = \\int_{-6}^{-2} f(x)\\,dx + \\int_{-2}^{5} f(x)\\,dx$\n\n(b) $\\int_{3}^{5} (2f'(x) + 4)\\,dx$\n\n(c) Find the absolute maximum value of $g(x) = \\int_{-2}^{x} f(t)\\,dt$ on the interval $[-2, 5]$.\n\n(d) $\\lim_{x \\to 1} \\frac{10^3 - 3f'(x)}{f(x) - \\arctan x}$",
+    "solution": "(a) $\\int_{-6}^{5} f(x)\\,dx = \\int_{-6}^{-2} f(x)\\,dx + \\int_{-2}^{5} f(x)\\,dx$\n\n$\\Rightarrow 7 = \\int_{-6}^{-2} f(x)\\,dx + 2 + \\left(9 - \\frac{9\\pi}{4}\\right)$\n\n$\\Rightarrow \\int_{-6}^{-2} f(x)\\,dx = 7 - \\left(11 - \\frac{9\\pi}{4}\\right) = \\frac{9\\pi}{4} - 4$\n\n(b) $\\int_{3}^{5} (2f'(x) + 4)\\,dx = 2\\int_{3}^{5} f'(x)\\,dx + \\int_{3}^{4} 4\\,dx$\n\n$= 2(f(5) - f(3)) + 4(5 - 3)$\n\n$= 2(0 - (3 - \\sqrt{5})) + 8$\n\n$= 2(-3 + \\sqrt{5}) + 8 = 2 + 2\\sqrt{5}$\n\n\u2014 OR \u2014\n\n$\\int_{3}^{5} (2f'(x) + 4)\\,dx = [2f(x) + 4x]_{x=3}^{x=5}$\n\n$= (2f(5) + 20) - (2f(3) + 12)$\n\n$= (2 \\cdot 0 + 20) - (2(3 - \\sqrt{5}) + 12)$\n\n$= 2 + 2\\sqrt{5}$\n\n(c) $g'(x) = f(x) = 0 \\Rightarrow x = -1, x = \\frac{1}{2}, x = 5$\n\nTable of values:\n\n| $x$ | $g(x)$ |\n|-----|--------|\n| $-2$ | $0$ |\n| $-1$ | $\\frac{1}{2}$ |\n| $\\frac{1}{2}$ | $-\\frac{1}{4}$ |\n| $5$ | $11 - \\frac{9\\pi}{4}$ |\n\nOn the interval $-2 \\le x \\le 5$, the absolute maximum value of $g$ is $g(5) = 11 - \\frac{9\\pi}{4}$.\n\n(d) $\\lim_{x \\to 1} \\frac{10^3 - 3f'(x)}{f(x) - \\arctan x} = \\frac{10^3 - 3f'(1)}{f(1) - \\arctan 1}$\n\n$= \\frac{10 - 3 \\cdot 2}{1 - \\arctan 1} = \\frac{4}{1 - \\frac{\\pi}{4}}$",
+    "grading_scheme": "Part (a): 3 points\n$1 : \\int_{-6}^{5} f(x)\\,dx = \\int_{-6}^{-2} f(x)\\,dx + \\int_{-2}^{5} f(x)\\,dx$\n$1 : \\int_{-2}^{5} f(x)\\,dx$\n$1 : $ answer\n\nPart (b): 2 points\n$1 : $ Fundamental Theorem of Calculus\n$1 : $ answer\n\nPart (c): 3 points\n$1 : g'(x) = f(x)$\n$1 : $ identifies $x = -1$ as a candidate\n$1 : $ answer with justification\n\nPart (d): 1 point\n$1 : $ answer",
+    "figures": [],
+    "tables": [
+      {
+        "section": "solution",
+        "headers": [
+          "$x$",
+          "$g(x)$"
+        ],
+        "rows": [
+          [
+            "$-2$",
+            "$0$"
+          ],
+          [
+            "$-1$",
+            "$\\frac{1}{2}$"
+          ],
+          [
+            "$\\frac{1}{2}$",
+            "$-\\frac{1}{4}$"
+          ],
+          [
+            "$5$",
+            "$11 - \\frac{9\\pi}{4}$"
+          ]
+        ]
+      }
+    ],
+    "unit": "Unit 6: Integration and Accumulation of Change",
+    "section": "Part B",
+    "calculator_status": "Calculator prohibited",
+    "confidence_flag": false
+  }
+}

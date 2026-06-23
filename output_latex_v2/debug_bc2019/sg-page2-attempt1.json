@@ -1,0 +1,38 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"real_FRQ\",\n  \"question_number\": 1,\n  \"question\": \"(a) $\\\\int_0^5 E(t)\\\\,dt = 153.457690$. To the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\\n\\n(b) $\\\\frac{1}{5-0}\\\\int_0^5 L(t)\\\\,dt = 6.059038$. The average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\\n\\n(c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$. Find the time at which the greatest number of fish is in the lake.\\n\\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at time $t = 5$? Justify your answer.\",\n  \"solution\": \"(a) $\\\\int_0^5 E(t)\\\\,dt = 153.457690$\\n\\nTo the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\\n\\n(b) $\\\\frac{1}{5-0}\\\\int_0^5 L(t)\\\\,dt = 6.059038$\\n\\nThe average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\\n\\n(c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$.\\n\\n$E(t) - L(t) = 0 \\\\Rightarrow t = 6.20356$\\n\\n$E(t) - L(t) > 0$ for $0 \\\\le t < 6.20356$, and $E(t) - L(t) < 0$ for $6.20356 < t \\\\le 8$. Therefore the greatest number of fish in the lake is at time $t = 6.204$ (or 6.203).\\n\\n\u2014 OR \u2014\\n\\nLet $A(t)$ be the change in the number of fish in the lake from midnight to $t$ hours after midnight.\\n\\n$A(t) = \\\\int_0^t (E(s) - L(s))\\\\,ds$\\n\\n$A'(t) = E(t) - L(t) = 0 \\\\Rightarrow t = C = 6.20356$\\n\\n| $t$ | $A(t)$ |\\n|-----|--------|\\n| 0 | 0 |\\n| $C$ | 135.01492 |\\n| 8 | 80.91998 |\\n\\nTherefore the greatest number of fish in the lake is at time $t = 6.204$ (or 6.203).\\n\\n(d) $E'(5) - L'(5) = -10.7228 < 0$\\n\\nBecause $E'(5) - L'(5) < 0$, the rate of change in the number of fish is decreasing at time $t = 5$.\",\n  \"grading_scheme\": \"(a) 2 : { 1 : integral, 1 : answer }\\n\\n(b) 2 : { 1 : integral, 1 : answer }\\n\\n(c) 3 : { 1 : sets $E(t) - L(t) = 0$, 1 : answer, 1 : justification }\\n\\n(d) 2 : { 1 : considers $E'(5)$ and $L'(5)$, 1 : answer with explanation }\",\n  \"unit\": \"Unit 5: Analytical Applications of Differentiation\",\n  \"section\": \"Part A\",\n  \"calculator_status\": \"Calculator active\",\n  \"confidence_flag\": false,\n  \"figures\": [],\n  \"tables\": [\n    {\n      \"section\": \"solution\",\n      \"headers\": [\"$t$\", \"$A(t)$\"],\n      \"rows\": [\n        [\"0\", \"0\"],\n        [\"$C$\", \"135.01492\"],\n        [\"8\", \"80.91998\"]\n      ]\n    }\n  ]\n}\n```",
+  "parsed": {
+    "page_type": "real_FRQ",
+    "question_number": 1,
+    "question": "(a) $\\int_0^5 E(t)\\,dt = 153.457690$. To the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\n\n(b) $\\frac{1}{5-0}\\int_0^5 L(t)\\,dt = 6.059038$. The average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\n\n(c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$. Find the time at which the greatest number of fish is in the lake.\n\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at time $t = 5$? Justify your answer.",
+    "solution": "(a) $\\int_0^5 E(t)\\,dt = 153.457690$\n\nTo the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\n\n(b) $\\frac{1}{5-0}\\int_0^5 L(t)\\,dt = 6.059038$\n\nThe average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\n\n(c) The rate of change in the number of fish in the lake at time $t$ is given by $E(t) - L(t)$.\n\n$E(t) - L(t) = 0 \\Rightarrow t = 6.20356$\n\n$E(t) - L(t) > 0$ for $0 \\le t < 6.20356$, and $E(t) - L(t) < 0$ for $6.20356 < t \\le 8$. Therefore the greatest number of fish in the lake is at time $t = 6.204$ (or 6.203).\n\n\u2014 OR \u2014\n\nLet $A(t)$ be the change in the number of fish in the lake from midnight to $t$ hours after midnight.\n\n$A(t) = \\int_0^t (E(s) - L(s))\\,ds$\n\n$A'(t) = E(t) - L(t) = 0 \\Rightarrow t = C = 6.20356$\n\n| $t$ | $A(t)$ |\n|-----|--------|\n| 0 | 0 |\n| $C$ | 135.01492 |\n| 8 | 80.91998 |\n\nTherefore the greatest number of fish in the lake is at time $t = 6.204$ (or 6.203).\n\n(d) $E'(5) - L'(5) = -10.7228 < 0$\n\nBecause $E'(5) - L'(5) < 0$, the rate of change in the number of fish is decreasing at time $t = 5$.",
+    "grading_scheme": "(a) 2 : { 1 : integral, 1 : answer }\n\n(b) 2 : { 1 : integral, 1 : answer }\n\n(c) 3 : { 1 : sets $E(t) - L(t) = 0$, 1 : answer, 1 : justification }\n\n(d) 2 : { 1 : considers $E'(5)$ and $L'(5)$, 1 : answer with explanation }",
+    "unit": "Unit 5: Analytical Applications of Differentiation",
+    "section": "Part A",
+    "calculator_status": "Calculator active",
+    "confidence_flag": false,
+    "figures": [],
+    "tables": [
+      {
+        "section": "solution",
+        "headers": [
+          "$t$",
+          "$A(t)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "$C$",
+            "135.01492"
+          ],
+          [
+            "8",
+            "80.91998"
+          ]
+        ]
+      }
+    ]
+  }
+}

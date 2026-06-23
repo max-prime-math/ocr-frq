@@ -1,0 +1,304 @@
+{
+  "source": "mathpix/pre-calc-40s_jan_13_mg-only_cleaned_aggressive.zip",
+  "exam_info": {
+    "type": "Manitoba Pre-Calculus 40S",
+    "date": "January 2013",
+    "total_questions": 23
+  },
+  "questions": [
+    {
+      "number": 1,
+      "questionType": "frq",
+      "body": "Gina correctly started to answer the following question. Complete her solution.\n\nQuestion: Solve the following equation for all real values of $\\theta$.\n\nExpress your answer in radians correct to 3 decimal places.\n\n$$\n3 \\sin ^{2} \\theta-14 \\sin \\theta-5=0\n$$\n\nGina's solution: $3 \\sin ^{2} \\theta-14 \\sin \\theta-5=0$\n\n$$\n(3 \\sin \\theta+1)(\\sin \\theta-5)=0\n$$",
+      "solution": "$$\n\\begin{array}{r}\n3 \\sin ^{2} \\theta-14 \\sin \\theta-5=0 \\\\\n(3 \\sin \\theta+1)(\\sin \\theta-5)=0\n\\end{array}\n$$\n\n$$\n\\begin{array}{lll}\n\\sin \\theta=-\\frac{1}{3} & \\sin \\theta=5 & 1 / 2 \\text { mark for } \\sin \\theta=5 \\\\\n\\text { no solution } & 1 / 2 \\text { mark for no solution }\n\\end{array}\n$$\n\n$$\n\\theta_{r}=0.339837\n$$\n\n$$\n\\theta=3.481429,5.943348 \\quad 1 \\text { mark }\\left(\\frac{1}{2} \\text { mark for each value of } \\theta\\right)\n$$\n\n$$\n\\begin{aligned}\n& \\theta=3.481+2 k \\pi, k \\in \\mathrm{I} \\\\\n& \\theta=5.943+2 k \\pi, k \\in \\mathrm{I}\n\\end{aligned}\n$$\n\n1 mark for general solution\n\n\nNote(s):\n\n\\begin{itemize}\n  \\item give maximum of 2 marks for solution in degrees: $\\theta=199.471^{\\circ}+360^{\\circ} k, k \\in \\mathrm{I}$\n\\end{itemize}\n\n$$\n\\theta=340.529^{\\circ}+360^{\\circ} k, k \\in \\mathrm{I}\n$$\n\n\n$$\ny=3 \\sin ^{2} \\theta-14 \\sin \\theta-5\n$$\n\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-02_622_660_603_207}\\\\\nor\\\\\nFind all zeros over the reals.\n\n$$\n\\theta=3.481+2 k \\pi, k \\in \\mathrm{I}\n$$\n\n$\\theta=5.943+2 k \\pi, k \\in \\mathrm{I}$\n\n$$\n\\frac{1}{2} \\text { mark for equation }\n$$\n\n$\\frac{1}{2}$ mark for justification\n\n\n1 mark for general solution\\\\",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-02_622_660_603_207.jpg"
+      ]
+    },
+    {
+      "number": 2,
+      "questionType": "frq",
+      "body": "Find and simplify the 6 th term in the binomial expansion of $\\left(3 x^{4}-\\frac{1}{x^{3}}\\right)^{9}$.",
+      "solution": "$$\n\\begin{array}{rlr}\nt_{6} & ={ }_{9} C_{5}\\left(3 x^{4}\\right)^{4}\\left(-\\frac{1}{x^{3}}\\right)^{5} & 2 \\text { marks (1 mark for }{ }_{9} C_{5}, 1 / 2 \\text { mark for each consistent factor) } \\\\\n& =(126)\\left(81 x^{16}\\right)\\left(-\\frac{1}{x^{15}}\\right) & \\\\\n& =-10206 x & \\begin{array}{l}\n1 \\text { mark for simplification }(1 / 2 \\text { mark for evaluating coefficient, } 1 / 2 \\text { mark } \\\\\n\\text { for simplifying variable })\n\\end{array}\n\\end{array}\n$$",
+      "points": 0.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-b-binomial",
+      "images": []
+    },
+    {
+      "number": 3,
+      "questionType": "frq",
+      "body": "The number of times a website is visited can be modeled by the function:\n\n$$\nA=800(e)^{r t}\n$$\n\nwhere $A=$ the total number of visitors at time $t$\n\n$t=$ the time in days $(t \\geq 0)$\n\n$r=$ the rate of growth\n\nAfter 5 days, 40000 people have visited the site.\n\nDetermine the number of visitors expected after 9 days.\n\nExpress your answer as a whole number.",
+      "solution": "$40000=800 e^{r 5}$\\\\\n$\\frac{1}{2}$ mark for substitution\n\n$$\n\\begin{array}{rlr}\n\\frac{40000}{800} & =e^{5 r} & \\\\\n\\ln 50 & =\\ln e^{5 r} & 1 / 2 \\text { mark for applying logs } \\\\\n\\ln 50 & =5 r & 1 \\text { mark for log theorem } \\\\\n\\frac{\\ln 50}{5} & =r & \\\\\nr & =0.782404601 &\n\\end{array}\n$$\n\n$$\n\\begin{aligned}\n& A=800 e^{(0.782404601)(9)} \\\\\n& A=914610.103 \\\\\n& A=914610\n\\end{aligned}\n$$\n\n$\\frac{1}{2}$ mark for substitution\\\\\n$\\frac{1}{2}$ mark for calculations with base $e$\\\\\n\nUse calculator to find the value of $r$.\\\\\n$y=40000$\\\\\n$y=800 e^{5 x}$\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-05_462_491_898_191}\\\\\nor\\\\\nFind the point of intersection of these two functions.\n\n$$\nx=0.782404601\n$$\n\nSubstitute $x$ for $r$ into formula.\n\n$$\n\\begin{aligned}\n\\therefore A & =800 e^{(0.782404601)(9)} \\\\\nA & =914610.103 \\\\\nA & =914610\n\\end{aligned}\n$$\n\n$\\frac{1}{2}$ mark for equations\\\\\n$\\frac{1}{2}$ mark for justification\n\n1 mark for finding the value of $x$ at the intersection point\n\n1 mark for value of $A$",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-c-exponential",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-05_462_491_898_191.jpg"
+      ]
+    },
+    {
+      "number": 4,
+      "questionType": "frq",
+      "body": "Solve algebraically:\n\n$$\n10^{3 x}=7^{x+5}\n$$\n\nExpress your answer correct to 3 decimal places.",
+      "solution": "$$\n\\begin{array}{rlrl}\n10^{3 x} & =7^{x+5} & \\\\\n\\log 10^{3 x} & =\\log 7^{x+5} & 1 / 2 \\text { mark for applying logs } \\\\\n3 x(\\log 10) & =(x+5) \\log 7 & 1 \\text { mark for power rule } & \\\\\n3 x \\log 10 & =x \\log 7+5 \\log 7 & & \\\\\n3 x \\log 10-x \\log 7 & =5 \\log 7 & 1 / 2 \\text { mark for collecting terms with } x & \\\\\nx & =\\frac{5 \\log 7}{3 \\log 10-\\log 7} & 1 / 2 \\text { mark for solving for } x \\\\\nx & =1.960873 & 1 / 2 \\text { mark for evaluating quotient of } \\\\\nx & =1.961 & & \\text { logarithms }\n\\end{array}\n$$\n\n\n$$\n\\begin{aligned}\n10^{3 x} & =7^{x+5} \\\\\n\\log 10^{3 x} & =\\log 7^{x+5} \\\\\n3 x(\\log 10) & =(x+5) \\log 7 \\\\\n3 x & =x \\log 7+5 \\log 7\n\\end{aligned}\n$$\n\n$3 x-x \\log 7=5 \\log 7$\n\n$$\n\\begin{aligned}\n& x=\\frac{5 \\log 7}{3-\\log 7} \\\\\n& x=1.960873 \\\\\n& x=1.961\n\\end{aligned}\n$$",
+      "points": 0.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-d-logarithm",
+      "images": []
+    },
+    {
+      "number": 5,
+      "questionType": "frq",
+      "body": "A word contains two Ms, two Es, two Ns, and no other repeated letters.\n\nSuppose one of the Ns is replaced by an M.\n\nWill this replacement result in greater or fewer permutations?\n\nJustify your reasoning.",
+      "solution": "$2 \\mathrm{Ms}, 2 \\mathrm{Es}, 2 \\mathrm{Ns}: \\frac{(\\text { total number of letters })!}{2!2!2!}$ 1 mark for dividing the total number of letters by $2!2!2!$\n\n$$\n\\frac{(\\text { total number of letters })!}{8}\n$$\n\n$3 \\mathrm{Ms}, 2 \\mathrm{Es}, 1 \\mathrm{~N}$ : $\\frac{\\text { (total number of letters)! }}{3!2!1!}$ 1 mark for dividing the total number of letters by $3!2!1!$\n\n$$\n\\frac{(\\text { total number of letters })!}{12}\n$$\n\nIf one of the Ns is changed to an M, there would be fewer permutations.\n\n\nIf one of the Ns is changed to an M, there would be fewer permutations because you would be dividing the total number of letters by a larger number.\n\n2 marks for justification\\\\",
+      "points": 2.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": []
+    },
+    {
+      "number": 6,
+      "questionType": "frq",
+      "body": "There is a group of 16 boys and 12 girls. How many ways can a committee of 3 people be formed if there must be at least 2 girls on the committee?\n\nExpress your answer as a whole number.",
+      "solution": "Case 1: 2 girls, 1 boy\\\\\nCase 2: 3 girls\n\n$$\n{ }_{12} C_{2} \\cdot{ }_{16} C_{1}=1056\n$$\n\n$$\n{ }_{12} C_{3}=220\n$$\n\n$$\n1056+220=1276\n$$\n\n1 mark for case 1 ( $\\frac{1}{2}$ mark for each factor shown in a product)\\\\\n1 mark for case 2\\\\\n1 mark for addition of cases\\\\\n\nCase 1: 2 boys, 1 girl\\\\\nCase 2: 3 boys\\\\\nAll possibilities\\\\\n${ }_{16} C_{2} \\cdot{ }_{12} C_{1}=1440$\n\n$$\n{ }_{16} C_{3}=560\n$$\n\n${ }_{28} C_{3}=3276$\\\\\n$3276-1440-560=1276$\n\n1 mark for case 1 ( $\\frac{1}{2}$ mark for each factor shown in a product)\\\\\n1 mark for case 2\\\\\n$\\frac{1}{2}$ mark for all possible cases\\\\\n$\\frac{1}{2}$ mark for subtraction from total\\\\\n\nA student is using the formula $s=\\theta r$ to find an arc length of a circle. Given a central angle measure of $35^{\\circ}$ and a radius of 6 cm , the student's solution is as follows:\n\n$$\n\\begin{aligned}\n& s=(35)(6) \\\\\n& s=210 \\mathrm{~cm}\n\\end{aligned}\n$$\n\nExplain why this solution is incorrect.\\\\\nWrite the correct solution.\n\n\nWhen using the formula $s=\\theta r$, the angle must be in radians. $\\frac{1}{2}$ mark for explanation\\\\\n$35^{\\circ}\\left(\\frac{\\pi}{180^{\\circ}}\\right)=\\frac{35 \\pi}{180} \\quad$ or $\\quad \\frac{7 \\pi}{36}$\\\\\n$\\therefore s=\\theta r$\n\n$$\n\\begin{aligned}\n& =\\frac{7 \\pi}{36}(6) \\\\\n& =\\frac{42 \\pi}{36} \\mathrm{~cm} \\quad \\text { or } \\quad \\frac{7 \\pi}{6} \\mathrm{~cm} \\quad \\text { or } \\quad 3.665 \\mathrm{~cm}\n\\end{aligned}\n$$\n\n1 mark for conversion to radians\n\n$$\n\\frac{1}{2} \\text { mark for simplification }\n$$\n\n\nNote(s):\n\n\\begin{itemize}\n  \\item award 1 mark for correct final answer with no work\n\\end{itemize}\n\nGiven the graph of $f(x)$ below, explain how you would",
+      "points": 2.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": []
+    },
+    {
+      "number": 7,
+      "questionType": "frq",
+      "body": "sketch the graph of $y=|f(x)|$.\n\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-10_637_641_476_249}",
+      "solution": "The negative $y$ values are reflected over the $x$-axis.\n\n1 mark for explanation\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-10_637_641_476_249.jpg"
+      ]
+    },
+    {
+      "number": 8,
+      "questionType": "frq",
+      "body": "Claire correctly solves the following equation:\n\n$$\n\\log _{2}(6-x)+\\log _{2}(3-x)=2\n$$\n\nShe finds two possible values of $x$ : $x=2$ and $x=7$.\n\nIdentify which one of these values is unacceptable and explain why.",
+      "solution": "If $x$ is greater than 3 , you have a negative argument $\\therefore x=2$ but $x \\neq 7$.\\\\\nor\\\\\nThe domain is restricted to values of $x<3 \\therefore x=2$.\n\n1 mark for explanation\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-d-logarithm",
+      "images": []
+    },
+    {
+      "number": 9,
+      "questionType": "frq",
+      "body": "Given the graph of the function $f(x)$ below, state the domain of $y=\\sqrt{f(x)}$.\n\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-12_831_860_517_234}",
+      "solution": "The domain is $\\{x \\in \\mathbb{R} \\mid x \\leq-1$ or $x \\geq 3\\}$.\\\\\nor\n\n1 mark for domain\\\\\n\nThe domain is $(-\\infty,-1] \\cup[3, \\infty)$.",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-12_831_860_517_234.jpg"
+      ]
+    },
+    {
+      "number": 10,
+      "questionType": "frq",
+      "body": "A school offers 4 different Science courses, 3 different Mathematics courses, and 2 different English courses.\n\nJulie must select 1 Science course, 1 Mathematics course, and 1 English course. She thinks this creates 9 options for her timetable.\n\nShow why Julie is incorrect.",
+      "solution": "Julie should have multiplied the number of options.\\\\\nor\\\\\n$4 \\times 3 \\times 2=24$ different options\n\n1 mark for justification\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": []
+    },
+    {
+      "number": 11,
+      "questionType": "frq",
+      "body": "Explain how Pascal's triangle can be used to determine the coefficients in the binomial expansion of $(x+y)^{n}$.",
+      "solution": "The $(n+1)^{\\text {st }}$ row of Pascal's triangle corresponds to the coefficients of the terms in the expansion of the binomial $(x+y)^{n}$.\n\n1 mark for explanation\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-b-binomial",
+      "images": []
+    },
+    {
+      "number": 12,
+      "questionType": "frq",
+      "body": "Prove the identity below for all permissible values of $x$ :\n\n$$\n\\frac{1+\\cos 2 x}{\\sin 2 x}=\\cot x\n$$",
+      "solution": "$$\n\\begin{aligned}\n\\text { LHS } & =\\frac{1+2 \\cos ^{2} x-1}{2 \\sin x \\cos x} \\\\\n& =\\frac{2 \\cos ^{2} x}{2 \\sin x \\cos x} \\\\\n& =\\frac{\\cos x}{\\sin x} \\\\\n& =\\cot x \\\\\n& =\\text { RHS }\n\\end{aligned}\n$$\n\n1 mark for identity\\\\\n$\\frac{1}{2}$ mark for identity\\\\\n1 mark for simplification\\\\\n$\\frac{1}{2}$ mark for identity\\\\\n\n$$\n\\begin{array}{rlr}\n\\text { LHS } & =\\frac{1+1-2 \\sin ^{2} x}{2 \\sin x \\cos x} & \\\\\n& =\\frac{1 / 2 \\text { mark for identity }}{2 \\sin x \\cos x} & \\\\\n& =\\frac{1-\\sin ^{2} x}{\\sin x \\cos x} & \\\\\n& =\\frac{\\cos ^{2} x}{\\sin x \\cos x} & \\\\\n& =\\frac{\\cos x}{\\sin x} \\text { mark for simplification } \\\\\n& =\\cot x & \\\\\n& =\\text { RHS } & 1 / 2 \\text { mark for identity } \\\\\n& 1 / 2 \\text { mark for simplification } \\\\\n& \\mathbf{3} \\text { marks for identity }\n\\end{array}\n$$\n\n\n\n$$\n\\begin{aligned}\n\\text { LHS } & =\\frac{1+\\cos ^{2} x-\\sin ^{2} x}{2 \\sin x \\cos x} \\\\\n& =\\frac{2 \\cos ^{2} x}{2 \\sin x \\cos x} \\\\\n& =\\frac{\\cos x}{\\sin x} \\\\\n& =\\cot x \\\\\n& =\\text { RHS }\n\\end{aligned}\n$$\n\n$\\frac{1}{2}$ mark for identity\\\\\n$\\frac{1}{2}$ mark for identity\\\\\n$\\frac{1}{2}$ mark for identity $\\left(1-\\sin ^{2} x=\\cos ^{2} x\\right)$\\\\\n1 mark for simplification\\\\\n$\\frac{1}{2}$ mark for identity\\\\",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": []
+    },
+    {
+      "number": 13,
+      "questionType": "frq",
+      "body": "Your classmate, Leo, was absent for one of his math lessons.\n\nExplain to Leo how to determine the cosecant ratio for an angle in standard position given that $\\mathrm{P}(-3,-4)$ is a point on the terminal arm of the angle.",
+      "solution": "\\begin{itemize}\n  \\item Locate the point $(-3,-4)$ on the coordinate plane.\n  \\item Draw a right-angle triangle by connecting the point $(-3,-4)$ to the $x$-axis and to the origin.\n  \\item The angle created with the $x$-axis and the line connecting the point with the origin (the terminal arm) is $\\theta$.\n  \\item Determine the length of the terminal arm by using the Pythagorean Theorem.\n  \\item Once you have the lengths of all three sides of the triangle, find $\\sin \\theta$.\n  \\item Invert the $\\sin \\theta$ ratio to find $\\csc \\theta$.\n\\end{itemize}\n\n\n\\begin{itemize}\n  \\item Determine the value of $r$ using the Pythagorean Theorem.\\\\\n$\\frac{1}{2}$ mark\n  \\item Determine the value of $\\sin \\theta\\left(\\sin \\theta=\\frac{y}{r}\\right)$.\n  \\item Identify the correct quadrant.\n  \\item Invert the $\\sin \\theta$ ratio to find $\\csc \\theta$. $\\frac{1}{2}$ mark $\\frac{1}{2}$ mark $\\frac{1}{2}$ mark \n\\end{itemize}\n\nNote(s):\n\n\\begin{itemize}\n  \\item award a maximum of 1 mark for correct work shown without an explanation in words\n\\end{itemize}\n\nGiven the following graphs:\n\n$$\nf(x)\n$$\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-18_688_695_526_298}\n\\end{center}\n\n\\begin{figure}[h]\n\\begin{center}\n\\captionsetup{labelformat=empty}\n\\caption{$g(x)$}\n  \\includegraphics[alt={},max width=\\textwidth]{2795df6c-6e2d-4017-aae1-564aebe344d4-18_686_691_526_1168}\n\\end{center}\n\\end{figure}",
+      "points": 2.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-18_688_695_526_298.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-18_686_691_526_1168.jpg"
+      ]
+    },
+    {
+      "number": 14,
+      "questionType": "frq",
+      "body": "Sketch the graph of $f(x)+g(x)$.",
+      "solution": "\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-18_894_912_1433_249}\n\\end{center}\n\n2 marks ( $\\frac{1}{2}$ mark for each point where the graph changes direction)\n\n$$\n[(-2,-2) ;(0,4) ;(1,4) ;(4,1)]\n$$\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-18_135_234_1703_1179}\n\\end{center}\n\nNote(s):\n\n\\begin{itemize}\n  \\item deduct a maximum of 1 mark for incorrect domain\n\\end{itemize}\n\nIf $(2,3)$ is a point on the graph of $y=f(x)$, what point must be on the graph of $y=3 f\\left(\\frac{1}{4} x\\right)$ ?\\\\\na) $\\left(\\frac{1}{2}, 1\\right)$\\\\\nb) $\\left(\\frac{1}{2}, 9\\right)$\\\\\nc) $(8,1)$\\\\\nd) $(8,9)$\n\n\nConsider the arc drawn on each circle. Which arc measure is closest to 3 radians?\n\n\\begin{figure}[h]\n\\begin{center}\n\\captionsetup{labelformat=empty}\n\\caption{a)}\n  \\includegraphics[alt={},max width=\\textwidth]{2795df6c-6e2d-4017-aae1-564aebe344d4-19_193_211_1301_234}\n\\end{center}\n\\end{figure}\n\n\\begin{figure}[h]\n\\begin{center}\n\\captionsetup{labelformat=empty}\n\\caption{b)}\n  \\includegraphics[alt={},max width=\\textwidth]{2795df6c-6e2d-4017-aae1-564aebe344d4-19_130_133_1330_671}\n\\end{center}\n\\end{figure}\n\n\\begin{figure}[h]\n\\begin{center}\n\\captionsetup{labelformat=empty}\n\\caption{c)}\n  \\includegraphics[alt={},max width=\\textwidth]{2795df6c-6e2d-4017-aae1-564aebe344d4-19_223_227_1284_1123}\n\\end{center}\n\\end{figure}\n\n\\begin{figure}[h]\n\\begin{center}\n\\captionsetup{labelformat=empty}\n\\caption{d)}\n  \\includegraphics[alt={},max width=\\textwidth]{2795df6c-6e2d-4017-aae1-564aebe344d4-19_231_270_1284_1546}\n\\end{center}\n\\end{figure}\n\n\nIf $\\log _{2} x=4$, then $\\log _{2}(2 x)$ is equal to:\\\\\na) 5\\\\\nb) 8\\\\\nc) 16\\\\\nd) 32\n\nSimplify the following expression:\n\n$$\n\\cos ^{2} x\\left(1+\\cot ^{2} x\\right)\n$$\n\na) $\\sin ^{2} x$\\\\\nb) $\\cos ^{2} x$\\\\\nc) $\\cot ^{2} x$\\\\\nd) $\\sec ^{2} x$\n\nQuestion 20\n\nIdentify the graph of the function $y=\\frac{x}{x}$.\\\\\na)\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-20_523_514_1173_322}\\\\\nb)\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-20_526_512_1112_1173}\\\\\nc)\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-20_530_519_1789_317}\\\\\nd)\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-20_540_515_1774_1181}\n\nHow many terms are in the expansion of $\\left(3 y^{2}-4 z\\right)^{7}$ ?\\\\\na) 2\\\\\nb) 6\\\\\nc) 7\\\\\nd) 8\n\nQuestion 22\\\\\nR6\n\nDetermine one possible restriction for the domain of $y=(x+3)^{2}-4$ so that its inverse is a function.\\\\\na) $x \\leq-3$\\\\\nb) $x \\leq 0$\\\\\nc) $x \\leq 3$\\\\\nd) $x \\leq 4$\n\nQuestion 23\n\nFind the total possible number of arrangements for 7 adults and 3 children seated in a row if the 3 children must sit together.\\\\\na) 10 !\\\\\nb) $8!3!$\\\\\nc) $7!3!$\\\\\nd) 7 !\n\nQuestion 24",
+      "points": 0.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-18_894_912_1433_249.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-18_135_234_1703_1179.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-19_193_211_1301_234.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-19_130_133_1330_671.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-19_223_227_1284_1123.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-19_231_270_1284_1546.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-20_523_514_1173_322.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-20_526_512_1112_1173.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-20_530_519_1789_317.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-20_540_515_1774_1181.jpg"
+      ]
+    },
+    {
+      "number": 15,
+      "questionType": "frq",
+      "body": "Identify the value of the $x$-intercept of the function $y=\\ln (x-2)$.\n\na) -1\n\nb) 0\n\nc) 2\n\nd) 3\n\nGiven $\\log _{b} a=3$, give one example of possible values for $a$ and $b$ that make this equation true.",
+      "solution": "Answers will vary but $b^{3}=a$.\\\\\nSome possible solutions are: $a=8 \\quad b=2$\\\\\nor\n\n$$\na=27 \\quad b=3\n$$\n\nor\n\n$$\na=64 \\quad b=4\n$$\n\n\nThe range of the graph of $y=f(x)$ is $[-3,2]$.\\\\\nExplain why there is no effect on the range of the graph that is a result of the transformation $y=f(-x)$.\n\n\n$y=f(-x)$ is a reflection over the $y$-axis.\\\\\nThe domain is affected, but the range remains the same.\n\n1 mark for explanation\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-d-logarithm",
+      "images": []
+    },
+    {
+      "number": 16,
+      "questionType": "frq",
+      "body": "Sketch the graph of $y=(x+1)(x-2)^{2}(x+5)$.\n\nIdentify the $x$-intercepts and $y$-intercept.",
+      "solution": "$x$-intercepts: $-5,-1$, and 2\\\\\n$y$-intercept: 20\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-23_991_1215_859_210}\n\nNote(s):\n\n\\begin{itemize}\n  \\item if no graph is shown, give $\\frac{1}{2}$ mark for $x$-intercepts $\\left(-5,-1\\right.$, and 2 ) and $\\frac{1}{2}$ mark for $y$-intercept (20)\n  \\item relative maximum and minimum are not required\n\\end{itemize}\n\nThe graph of the function $y=\\sin x$ has been transformed to create a new graph.\\\\\nThe range of this new graph is $[-4,4]$ and the zeros are $x=k \\frac{\\pi}{2}$, where $k$ is an integer.\\\\\nWrite the equation that corresponds to this new graph.\n\n\n$$\n\\begin{aligned}\n\\text { Amplitude } & =4 & & 1 \\text { mark for correct amplitude } \\\\\n\\text { Period } & =\\pi & & 1 / 2 \\text { mark for correct period } \\\\\n\\therefore b & =\\frac{2 \\pi}{\\pi}=2 & & 1 / 2 \\text { mark for consistent value of } b \\\\\ny & =4 \\sin (2 x) & & \\mathbf{2} \\text { marks }\n\\end{aligned}\n$$\n\nor\n\nNote(s):\n\n\\begin{itemize}\n  \\item deduct $\\frac{1}{2}$ mark for a translation that results in an incorrect range and/or zeros\n\\end{itemize}\n\nQuestion 29\n\nGiven the functions $f(x)=x^{2}-1$ and $g(x)=x+1$, state the domain of $\\frac{g(x)}{f(x)}$.\n\n\nDomain: $x \\in \\mathbb{R}$ where $x \\neq 1$ and $x \\neq-1$ 1 mark ( $\\frac{1}{2}$ mark for $x \\neq 1, \\frac{1}{2}$ mark for $x \\neq-1$ )\\\\\na)",
+      "points": 0.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-23_991_1215_859_210.jpg"
+      ]
+    },
+    {
+      "number": 17,
+      "questionType": "frq",
+      "body": "sketch the graph of $y=-f(x)$.\n\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-27_544_579_569_259}",
+      "solution": "\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-27_540_578_567_1014}\n\\end{center}\n\nDetermine the coordinates of a point $(x, y)$ on the unit circle if you are given $\\theta=30^{\\circ}$ where $\\theta$ is in standard position.\n\n\n$\\mathrm{P}(\\theta)=(\\cos \\theta, \\sin \\theta)$\\\\\nIf $\\theta=30^{\\circ}$, then the coordinates of $\\mathrm{P}(\\theta)$ would be $\\left(\\cos 30^{\\circ}, \\sin 30^{\\circ}\\right)$.\n\n1 mark for answer stated as coordinate point\\\\\nor\\\\\n$\\mathrm{P}\\left(30^{\\circ}\\right)=\\left(\\frac{\\sqrt{3}}{2}, \\frac{1}{2}\\right)$",
+      "points": 0.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-27_544_579_569_259.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-27_540_578_567_1014.jpg"
+      ]
+    },
+    {
+      "number": 18,
+      "questionType": "frq",
+      "body": "Given the following sinusoidal equation:\n\n$$\nP(t)=3000 \\sin \\left[\\frac{\\pi}{10}(t-2010)\\right]+10000\n$$\n\nDetermine the maximum value of $\\mathrm{P}(t)$ and a value of $t$ at which this maximum occurs.",
+      "solution": "$$\n\\begin{aligned}\n\\text { Maximum value } & =10000+3000 & & 1 \\text { mark for maximum value } \\\\\n& =13000 & & \\\\\n13000 & =3000 \\sin \\left[\\frac{\\pi}{10}(t-2010)\\right]+10000 & & \\\\\n3000 & =3000 \\sin \\left[\\frac{\\pi}{10}(t-2010)\\right] & & 1 / 2 \\text { mark for simplifying } \\\\\n1 & =\\sin \\left[\\frac{\\pi}{10}(t-2010)\\right] & & 1 \\text { mark for exact value } \\\\\n\\frac{\\pi}{2} & =\\frac{\\pi}{10}(t-2010) & & 1 / 2 \\text { mark for solving for } t \\\\\n5 & =t-2010 & & \\mathbf{3} \\text { marks } \\\\\nt & =2015 & &\n\\end{aligned}\n$$\n\nNote(s):\n\n\\begin{itemize}\n  \\item the period of the function is $20 \\therefore$ other acceptable answers are: $t=2015 \\pm 20$\n\\end{itemize}\n\n\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-29_787_1180_638_174}\n\\end{center}\n\n1 mark for period\n\n$$\n\\begin{aligned}\n\\mathrm{P}(t) & =13000 \\\\\nt & =2015\n\\end{aligned}\n$$\n\n\u2234 the maximum value is 13000 when $t=2015$.\n\n1 mark for maximum value\\\\\n1 mark for solving for $t$\\\\",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-29_787_1180_638_174.jpg"
+      ]
+    },
+    {
+      "number": 19,
+      "questionType": "frq",
+      "body": "Sketch the graph of $y=\\sqrt{2 x-2}$.",
+      "solution": "$$\n\\begin{aligned}\ny & =\\sqrt{2 x-2} \\\\\n& =\\sqrt{2(x-1)}\n\\end{aligned}\n$$\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-30_922_1049_928_163}\n\\end{center}\n\n1 mark for domain: $[1, \\infty)$\\\\\n1 mark for shape (graph of a radical function)\\\\\n1 mark for horizontal compression\\\\\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-31_921_1209_431_225}\n\\end{center}\n\n1 mark for domain of $y=\\sqrt{2 x-2}:[1, \\infty)$\\\\\n1 mark for invariant points where $y=0$ and $y=1$ ( $\\frac{1}{2}$ mark for each point)\\\\\n$\\frac{1}{2}$ mark for graph of $y=\\sqrt{2 x-2}$ drawn above the graph of $y=2 x-2$ between the invariant points $\\frac{1}{2}$ mark for graph of $y=\\sqrt{2 x-2}$ drawn below the graph of $y=2 x-2$ after the invariant point where $y=1$\\\\\n\u25a1\\\\\n\nGiven $f(x)=2 x-6$, write the equation of $f^{-1}(x)$.\n\n\nSwitch the $x$ and $y$ values.\n\n$$\nx=2 y-6\n$$\n\n1 mark for switching $x$ and $y$ values\n\n$$\n\\begin{aligned}\n& x+6=2 y \\\\\n& \\frac{x+6}{2}=y\n\\end{aligned}\n$$\n\n$\\frac{1}{2}$ mark for solving for $y$\\\\\n$\\therefore f^{-1}(x)=\\frac{x+6}{2}$\\\\\n$\\frac{1}{2}$ mark for writing equation of $f^{-1}(x)$\n\n\nQuestion 37\\\\\nR8\n\nFrank tried to expand a logarithmic expression using the laws of logarithms. He made one error.\\\\\nFrank's solution: $\\log _{a} \\frac{(x+2)}{z w}=\\log _{a} x+\\log _{a} 2-\\log _{a} z-\\log _{a} w$\\\\\nWrite the correct solution.\n\n\nCorrect solution: $\\log _{a} \\frac{(x+2)}{z w}=\\log _{a}(x+2)-\\log _{a} z-\\log _{a} w$\n\n1 mark for correct solution\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-d-logarithm",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-30_922_1049_928_163.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-31_921_1209_431_225.jpg"
+      ]
+    },
+    {
+      "number": 20,
+      "questionType": "frq",
+      "body": "Determine all non-permissible values of $\\theta$ over the interval $[0,2 \\pi]$.\n\n$$\n\\frac{\\sin \\theta}{1+\\cos \\theta}+\\csc \\theta+\\cot \\theta\n$$\n\nExplain your reasoning.",
+      "solution": "To determine non-permissible values, the denominator 1 mark for explanation needs to equal zero.\n\nThe denominators of this expression are \" $1+\\cos \\theta$ \" and \" $\\sin \\theta$ \" (since $\\csc \\theta=\\frac{1}{\\sin \\theta}$ and $\\cot \\theta=\\frac{\\cos \\theta}{\\sin \\theta}$ ).\n\n1 mark ( $\\frac{1}{2}$ mark for identifying each restriction)\n\n$$\n\\begin{aligned}\n\\therefore 1+\\cos \\theta & =0 & \\sin \\theta & =0 \\\\\n\\cos \\theta & =-1 & \\theta & =0, \\pi, 2 \\pi \\\\\n\\theta & =\\pi & &\n\\end{aligned}\n$$\n\n1 mark for all non-permissible values of $\\theta$ ( $\\frac{1}{2}$ mark for each equation)\\\\\n\u2234 the non-permissible values of $\\theta$ over $[0,2 \\pi]$ are $0, \\pi$, and $2 \\pi$.\n\nGiven the following graphs:\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-34_678_717_483_283}\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-34_682_714_485_1119}\\\\\na) Determine the value of $[f \\cdot g](0)$.\\\\\nb) Determine the value of $g(f(4))$.\\\\\nc) Determine a value for $k$ where $f(k)=1$.\n\n\na) $f(0)=-1$\n\n$$\ng(0)=2\n$$\n\n$$\n\\begin{aligned}\n{[f \\cdot g](0) } & =(-1)(2) \\\\\n& =-2\n\\end{aligned}\n$$\n\nb) $f(4)=-1$\n\n$$\ng(-1)=3\n$$\n\n1 mark for the value of $[f \\cdot g](0)$\n\n\n$\\frac{1}{2}$ mark for $f(4)$\\\\\n$\\frac{1}{2}$ mark for $g(f(4))$ consistent with $f(4)$ value\n\n\n1 mark for a value for $k$\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-34_678_717_483_283.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-34_682_714_485_1119.jpg"
+      ]
+    },
+    {
+      "number": 21,
+      "questionType": "frq",
+      "body": "Given that $h(x)=2 x^{2}+5 x-3$ and that $h(x)=f(x) \\cdot g(x)$, determine $f(x)$ and $g(x)$.",
+      "solution": "$$\n\\begin{aligned}\n& f(x)=2 x-1 \\\\\n& g(x)=x+3\n\\end{aligned}\n$$\n\n1 mark for two correct factors of $h(x)$\\\\\n1 mark\\\\\nOther answers are possible.\\\\\nQuestion 41\n\nThe graph of $y=2 \\cos \\theta+1$ below can be used to solve the equation $\\cos \\theta=-\\frac{1}{2}$ over the interval $[-2 \\pi, 2 \\pi]$. Indicate on the graph where to find the solutions to the equation $\\cos \\theta=-\\frac{1}{2}$.\n\n\nThe solution to the equation $\\cos \\theta=-\\frac{1}{2}$ is found where the graph of $y=2 \\cos \\theta+1$ crosses the $x$-axis.\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-35_884_955_1499_229}\n\n1 mark for indicating solutions on graph \nNote(s):\n\n\\begin{itemize}\n  \\item give $\\frac{1}{2}$ mark for indicating 1,2 , or 3 of the solutions\n\\end{itemize}\n\nThe function $f(x)$ is transformed.\\\\\nA new function, $y=\\frac{1}{f(x)}$, is created that does not have any vertical asymptotes.\\\\\nWhat can you conclude about the original function $f(x)$ ?\n\n\nIf $f(x)$ does not have any $x$-intercepts, then the transformation would not have any vertical asymptotes.\\\\\nor\\\\\n$f(x)$ cannot equal zero.\\\\\nor\n\n$$\nf \\neq 0\n$$\n\n1 mark for conclusion\\\\\n\nNote(s):\n\n\\begin{itemize}\n  \\item award $\\frac{1}{2}$ mark for a correct example without a given conclusion\n\\end{itemize}\n\nQuestion 43\n\nDraw the angle $-\\frac{7 \\pi}{8}$ in standard position.\n\n\n\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-36_667_726_1935_216}\n\\end{center}\n\n1 mark for angle drawn in Quadrant III\\\\",
+      "points": 1.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-35_884_955_1499_229.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-36_667_726_1935_216.jpg"
+      ]
+    },
+    {
+      "number": 22,
+      "questionType": "frq",
+      "body": "Determine the exact value of:\n\n$$\n4 \\cos \\left(\\frac{11 \\pi}{12}\\right)\n$$",
+      "solution": "$$\n\\begin{array}{rlr}\n4 \\cos \\left(\\frac{11 \\pi}{12}\\right) & =4 \\cos \\left(\\frac{\\pi}{4}+\\frac{2 \\pi}{3}\\right) & 1 \\text { mark for combination } \\\\\n& =4\\left[\\cos \\frac{\\pi}{4} \\cos \\frac{2 \\pi}{3}-\\sin \\frac{\\pi}{4} \\sin \\frac{2 \\pi}{3}\\right] & \\\\\n& =4\\left[\\left(\\frac{\\sqrt{2}}{2}\\right)\\left(-\\frac{1}{2}\\right)-\\left(\\frac{\\sqrt{2}}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right)\\right] & 2 \\text { marks }\\left(\\frac{1}{2} \\text { mark for each exact value }\\right) \\\\\n& =4\\left[\\frac{-\\sqrt{2}-\\sqrt{6}}{4}\\right] & 3 \\text { marks } \\\\\n& =-\\sqrt{2}-\\sqrt{6}\n\\end{array}\n$$\n\n\n\n$\\frac{11 \\pi}{12}$ has a reference angle of $\\frac{\\pi}{12}$.\n\n$$\n\\begin{aligned}\n\\cos \\left(\\frac{\\pi}{12}\\right) & =\\cos \\left(\\frac{\\pi}{4}-\\frac{\\pi}{6}\\right) \\\\\n& =\\cos \\frac{\\pi}{4} \\cos \\frac{\\pi}{6}+\\sin \\frac{\\pi}{4} \\sin \\frac{\\pi}{6} \\\\\n& =\\left(\\frac{\\sqrt{2}}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right)+\\left(\\frac{\\sqrt{2}}{2}\\right)\\left(\\frac{1}{2}\\right) \\\\\n& =\\frac{\\sqrt{6}+\\sqrt{2}}{4}\n\\end{aligned}\n$$\n\nSince $\\frac{11 \\pi}{12}$ is in Quadrant II, cosine is negative.\\\\\n$\\therefore 4 \\cos \\left(\\frac{11 \\pi}{12}\\right)=4\\left(\\frac{-\\sqrt{6}-\\sqrt{2}}{4}\\right)$\n\n$$\n=-\\sqrt{6}-\\sqrt{2}\n$$\n\n$\\frac{1}{2}$ mark for correct reference angle\\\\\n$\\frac{1}{2}$ mark for substitution into correct identity\n\n1 mark for exact values\n\n1 mark for the concept that $\\cos \\left(\\frac{11 \\pi}{12}\\right)$ is $<0$\n\n\nNote(s):\n\n\\begin{itemize}\n  \\item $\\frac{-2-2 \\sqrt{3}}{\\sqrt{2}}$ is an acceptable way to write the solution\n  \\item in Method 1 , another possible combination is $\\left(\\frac{\\pi}{6}+\\frac{3 \\pi}{4}\\right)$\n  \\item deduct $\\frac{1}{2}$ mark if answer is not expressed as a single fraction\n  \\item in Method 2, the reference angle need not be explicitly stated in order to obtain full marks\n\\end{itemize}",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": []
+    },
+    {
+      "number": 23,
+      "questionType": "frq",
+      "body": "Sketch the graph of $f(x)=\\frac{x-4}{x^{2}-3 x-4}$.",
+      "solution": "\\begin{center}\n\\includegraphics[width=0.8\\textwidth, alt={}]{2795df6c-6e2d-4017-aae1-564aebe344d4-39_829_796_708_212}\n\\end{center}\n\n1 mark for vertical asymptote at $x=-1$\\\\\n$\\frac{1}{2}$ mark for graph left of vertical asymptote\\\\\n$\\frac{1}{2}$ mark for graph right of vertical asymptote 1 mark for point of discontinuity at $x=4$\n\n\n$$\n\\begin{aligned}\nf(x) & =\\frac{x-4}{x^{2}-3 x-4} \\\\\n& =\\frac{x-4}{(x-4)(x+1)} \\\\\n& =\\frac{1}{x+1} \\text { with a point of discontinuity at } x=4\n\\end{aligned}\n$$\n\npoint of discontinuity: $f(4)=\\frac{1}{5}$\\\\\n\u2234 there is a point of discontinuity at $\\left(4, \\frac{1}{5}\\right)$\n\n$$\ny \\text {-intercept: } \\begin{aligned}\nf(0) & =\\frac{0-4}{(0)^{2}-3(0)-4} \\\\\n& =\\frac{-4}{-4} \\\\\n& =1\n\\end{aligned}\n$$\n\nEstimate the value of $\\log _{5} 35$.\\\\\nJustify your answer.\n\n\n$$\n5^{2}=25 \\quad 5^{3}=125\n$$\n\nThe value of $\\log _{5} 35$ is more than 2 but less than 2.5.\n\n$$\n\\frac{1}{2} \\text { mark for justification }\n$$\n\n$\\frac{1}{2}$ mark for estimated answer\n\n\n\nIf $p(x)=x^{5}-12 x+1$, determine the remainder when $p(x)$ is divided by $(x+2)$.\n\n\n\n$$\n\\begin{aligned}\np(x) & =x^{5}-12 x+1 \\\\\np(-2) & =(-2)^{5}-12(-2)+1 \\\\\n& =-32+24+1 \\\\\n& =-7\n\\end{aligned}\n$$\n\n\n1 mark for substitution\n\n\n$$\n- 2 \\longdiv { 1 0 0 0 0 0 0 }\n$$\n\n1 mark for correct set-up of synthetic division\\\\\n\\includegraphics[width=0.8\\textwidth, alt={}, center]{2795df6c-6e2d-4017-aae1-564aebe344d4-40_195_418_1963_1138}\n\n\nThe remainder is -7 .\n\nDescribe the effects on the graph of $y=f(x)$ when asked for the graph of $y=f(x-3)+5$.\n\n\nShift right 3 and up $5 \\frac{1}{2}$ mark for horizontal translation\\\\\n$\\frac{1}{2}$ mark for vertical translation\\\\\nor\\\\\n1 mark\\\\\n$(x+3, y+5)$\n\nFind the exact value of the following expression:\n\n$$\n\\sin \\left(\\frac{11 \\pi}{3}\\right) \\cdot \\sec \\left(\\frac{4 \\pi}{3}\\right) \\cdot \\tan \\left(-\\frac{5 \\pi}{6}\\right)\n$$\n\n\n$=\\left(-\\frac{\\sqrt{3}}{2}\\right)(-2)\\left(\\frac{1}{\\sqrt{3}}\\right)$\\\\\n1 mark for $\\sin \\left(\\frac{11 \\pi}{3}\\right)\\left(\\frac{1}{2}\\right.$ mark for quadrant, $\\frac{1}{2}$ mark for value $)$\\\\\n$=1$\\\\\n1 mark for $\\sec \\left(\\frac{4 \\pi}{3}\\right)\\left(\\frac{1}{2}\\right.$ mark for quadrant, $1 / 2$ mark for value)\\\\\n1 mark for $\\tan \\left(-\\frac{5 \\pi}{6}\\right)\\left(\\frac{1}{2}\\right.$ mark for quadrant, $1 / 2$ mark for value $)$\\\\\n\n\\end{document}",
+      "points": 3.0,
+      "tagInput": "Pre-Calculus 40S, Manitoba, January 2013",
+      "classId": "pre-calc-40s",
+      "unitId": "unit-a-trig",
+      "images": [
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-39_829_796_708_212.jpg",
+        "2795df6c-6e2d-4017-aae1-564aebe344d4-40_195_418_1963_1138.jpg"
+      ]
+    }
+  ]
+}

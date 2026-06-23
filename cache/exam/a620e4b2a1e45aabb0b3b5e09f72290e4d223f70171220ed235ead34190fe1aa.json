@@ -1,0 +1,45 @@
+{
+  "page_type": "exam",
+  "questions": [
+    {
+      "question_number": 6,
+      "question_text": "A function $f$ has derivatives of all orders for all real numbers $x$. A portion of the graph of $f$ is shown above, along with the line tangent to the graph of $f$ at $x = 0$. Selected derivatives of $f$ at $x = 0$ are given in the table above.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x = 0$.\n\n(b) Write the first three nonzero terms of the Maclaurin series for $e^x$. Write the second-degree Taylor polynomial for $e^xf(x)$ about $x = 0$.\n\n(c) Let $h$ be the function defined by $h(x) = \\int_0^x f(t)\\,dt$. Use the Taylor polynomial found in part (a) to find an approximation for $h(1)$.\n\n(d) It is known that the Maclaurin series for $h$ converges to $h(x)$ for all real numbers $x$. It is also known that the individual terms of the series for $h(1)$ alternate in sign and decrease in absolute value to 0. Use the alternating series error bound to show that the approximation found in part (c) differs from $h(1)$ by at most 0.45.",
+      "figures": [
+        {
+          "bounding_box": [
+            0.0,
+            0.05,
+            0.55,
+            0.65
+          ],
+          "caption": "Graph of $f$ with tangent line at $x=0$"
+        }
+      ],
+      "tables": [
+        {
+          "headers": [
+            "$n$",
+            "$f^{(n)}(0)$"
+          ],
+          "rows": [
+            [
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "$-\\frac{23}{2}$"
+            ],
+            [
+              "4",
+              "54"
+            ]
+          ]
+        }
+      ],
+      "unit": "Unit 10: Infinite Sequences and Series",
+      "section": "Part B",
+      "calculator_status": "Calculator prohibited"
+    }
+  ]
+}

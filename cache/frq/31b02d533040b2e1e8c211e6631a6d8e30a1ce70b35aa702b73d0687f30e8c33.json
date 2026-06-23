@@ -1,0 +1,14 @@
+{
+  "page_type": "real_frq",
+  "question_number": 6,
+  "question": null,
+  "solution": "(a) $f(0) = 0$\n$f'(0) = 1$\n$f''(0) = -1(1) = -1$\n$f'''(0) = -2(-1) = 2$\n$f^{(4)}(0) = -3(2) = -6$\n\nThe first four nonzero terms are\n$$0 + 1x + \\frac{-1}{2!}x^2 + \\frac{2}{3!}x^3 + \\frac{-6}{4!}x^4 = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4}.$$\n\nThe general term is $\\frac{(-1)^{n+1}x^n}{n}$.\n\n(b) For $x = 1$, the Maclaurin series becomes $\\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n}$.\n\nThe series does not converge absolutely because the harmonic series diverges.\n\nThe series alternates with terms that decrease in magnitude to 0, and therefore the series converges conditionally.\n\n(c) $\\int_0^x f(t)\\,dt = \\int_0^x \\left( t - \\frac{t^2}{2} + \\frac{t^3}{3} - \\frac{t^4}{4} + \\cdots + \\frac{(-1)^{n+1}t^n}{n} + \\cdots \\right) dt$\n\n$$= \\left[ \\frac{t^2}{2} - \\frac{t^3}{3 \\cdot 2} + \\frac{t^4}{4 \\cdot 3} - \\frac{t^5}{5 \\cdot 4} + \\cdots + \\frac{(-1)^{n+1}t^{n+1}}{(n+1)n} + \\cdots \\right]_{t=0}^{t=x}$$\n\n$$= \\frac{x^2}{2} - \\frac{x^3}{6} + \\frac{x^4}{12} - \\frac{x^5}{20} + \\cdots + \\frac{(-1)^{n+1}x^{n+1}}{(n+1)n} + \\cdots$$\n\n(d) The terms alternate in sign and decrease in magnitude to 0. By the alternating series error bound, the error $\\left|P_4\\left(\\frac{1}{2}\\right) - g\\left(\\frac{1}{2}\\right)\\right|$ is bounded by the magnitude of the first unused term, $\\left|- \\frac{(1/2)^5}{20}\\right|$.\n\nThus, $\\left|P_4\\left(\\frac{1}{2}\\right) - g\\left(\\frac{1}{2}\\right)\\right| \\le \\left|- \\frac{(1/2)^5}{20}\\right| = \\frac{1}{32 \\cdot 20} < \\frac{1}{500}$.",
+  "grading_scheme": "Question 6\n\n(a) 3 points: $\\{1 : f''(0), f'''(0), \\text{ and } f^{(4)}(0)$; $1 : \\text{verify terms}$; $1 : \\text{general term}\\}$\n\n(b) 2 points: converges conditionally with reason\n\n(c) 3 points: $\\{1 : \\text{two terms}$; $1 : \\text{remaining terms}$; $1 : \\text{general term}\\}$\n\n(d) 1 point: error bound",
+  "unit": "Unit 10: Infinite Sequences and Series",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited",
+  "figures": [],
+  "tables": [],
+  "confidence": "high",
+  "notes": null
+}

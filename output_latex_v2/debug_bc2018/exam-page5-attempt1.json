@@ -1,0 +1,38 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"exam\",\n  \"questions\": [\n    {\n      \"question_number\": 4,\n      \"question_text\": \"The height of a tree at time $t$ is given by a twice-differentiable function $H$, where $H(t)$ is measured in meters and $t$ is measured in years. Selected values of $H(t)$ are given in the table above.\\n\\n(a) Use the data in the table to estimate $H'(6)$. Using correct units, interpret the meaning of $H'(6)$ in the context of the problem.\\n\\n(b) Explain why there must be at least one time $t$, for $2 < t < 10$, such that $H'(t) = 2$.\\n\\n(c) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the average height of the tree over the time interval $2 \\\\le t \\\\le 10$.\\n\\n(d) The height of the tree, in meters, can also be modeled by the function $G$, given by $G(x) = \\\\frac{100x}{1 + x}$, where $x$ is the diameter of the base of the tree, in meters. When the tree is 50 meters tall, the diameter of the base of the tree is increasing at a rate of 0.03 meter per year. According to this model, what is the rate of change of the height of the tree with respect to time, in meters per year, at the time when the tree is 50 meters tall?\",\n      \"figures\": [],\n      \"tables\": [\n        {\n          \"headers\": [\n            \"$t$ (years)\",\n            \"2\",\n            \"3\",\n            \"5\",\n            \"7\",\n            \"10\"\n          ],\n          \"rows\": [\n            [\n              \"$H(t)$ (meters)\",\n              \"1.5\",\n              \"2\",\n              \"6\",\n              \"11\",\n              \"15\"\n            ]\n          ]\n        }\n      ],\n      \"unit\": \"Unit 3: Differentiation\",\n      \"section\": \"Part B\",\n      \"calculator_status\": \"Calculator prohibited\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "page_type": "exam",
+    "questions": [
+      {
+        "question_number": 4,
+        "question_text": "The height of a tree at time $t$ is given by a twice-differentiable function $H$, where $H(t)$ is measured in meters and $t$ is measured in years. Selected values of $H(t)$ are given in the table above.\n\n(a) Use the data in the table to estimate $H'(6)$. Using correct units, interpret the meaning of $H'(6)$ in the context of the problem.\n\n(b) Explain why there must be at least one time $t$, for $2 < t < 10$, such that $H'(t) = 2$.\n\n(c) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the average height of the tree over the time interval $2 \\le t \\le 10$.\n\n(d) The height of the tree, in meters, can also be modeled by the function $G$, given by $G(x) = \\frac{100x}{1 + x}$, where $x$ is the diameter of the base of the tree, in meters. When the tree is 50 meters tall, the diameter of the base of the tree is increasing at a rate of 0.03 meter per year. According to this model, what is the rate of change of the height of the tree with respect to time, in meters per year, at the time when the tree is 50 meters tall?",
+        "figures": [],
+        "tables": [
+          {
+            "headers": [
+              "$t$ (years)",
+              "2",
+              "3",
+              "5",
+              "7",
+              "10"
+            ],
+            "rows": [
+              [
+                "$H(t)$ (meters)",
+                "1.5",
+                "2",
+                "6",
+                "11",
+                "15"
+              ]
+            ]
+          }
+        ],
+        "unit": "Unit 3: Differentiation",
+        "section": "Part B",
+        "calculator_status": "Calculator prohibited"
+      }
+    ]
+  }
+}

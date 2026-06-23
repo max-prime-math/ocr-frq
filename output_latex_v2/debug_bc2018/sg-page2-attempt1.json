@@ -1,0 +1,43 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"real_frq\",\n  \"question_number\": 1,\n  \"question\": \"(a) $\\\\int_0^{300} r(t)\\\\,dt = 270$. According to the model, 270 people enter the line for the escalator during the time interval $0 \\\\le t \\\\le 300$.\\n\\n(b) $20 + \\\\int_0^{300} (r(t) - 0.7)\\\\,dt = 20 + \\\\int_0^{300} r(t)\\\\,dt - 0.7 \\\\cdot 300 = 80$. According to the model, 80 people are in line at time $t = 300$.\\n\\n(c) Based on part (b), the number of people in line at time $t = 300$ is 80. The first time $t$ that there are no people in line is $300 + \\\\frac{80}{0.7} = 414.286$ (or 414.285) seconds.\\n\\n(d) The total number of people in line at time $t$, $0 \\\\le t \\\\le 300$, is modeled by $20 + \\\\int_0^t r(x)\\\\,dx - 0.7t$. $r(t) - 0.7 = 0 \\\\Rightarrow t_1 = 33.013298, t_2 = 166.574719$.\",\n  \"solution\": \"(a) $\\\\int_0^{300} r(t)\\\\,dt = 270$\\n\\nAccording to the model, 270 people enter the line for the escalator during the time interval $0 \\\\le t \\\\le 300$.\\n\\n(b) $20 + \\\\int_0^{300} (r(t) - 0.7)\\\\,dt = 20 + \\\\int_0^{300} r(t)\\\\,dt - 0.7 \\\\cdot 300 = 80$\\n\\nAccording to the model, 80 people are in line at time $t = 300$.\\n\\n(c) Based on part (b), the number of people in line at time $t = 300$ is 80.\\n\\nThe first time $t$ that there are no people in line is $300 + \\\\frac{80}{0.7} = 414.286$ (or 414.285) seconds.\\n\\n(d) The total number of people in line at time $t$, $0 \\\\le t \\\\le 300$, is modeled by $20 + \\\\int_0^t r(x)\\\\,dx - 0.7t$.\\n\\n$r(t) - 0.7 = 0 \\\\Rightarrow t_1 = 33.013298, t_2 = 166.574719$\\n\\n\\\\begin{array}{c|c}\\nt & \\\\text{People in line for escalator} \\\\\\\\\\n\\\\hline\\n0 & 20 \\\\\\\\\\nt_1 & 3.803 \\\\\\\\\\nt_2 & 158.070 \\\\\\\\\\n300 & 80\\n\\\\end{array}\\n\\nThe number of people in line is a minimum at time $t = 33.013$ seconds, when there are 4 people in line.\",\n  \"grading_scheme\": \"(a) 2 points: $\\\\{1 : \\\\text{integral}, 1 : \\\\text{answer}\\\\}$\\n\\n(b) 2 points: $\\\\{1 : \\\\text{considers rate out}, 1 : \\\\text{answer}\\\\}$\\n\\n(c) 1 point: $\\\\{1 : \\\\text{answer}\\\\}$\\n\\n(d) 4 points: $\\\\{1 : \\\\text{considers } r(t) - 0.7 = 0, 1 : \\\\text{identifies } t = 33.013, 1 : \\\\text{answers}, 1 : \\\\text{justification}\\\\}$\",\n  \"unit\": \"Unit 6: Integration and Accumulation of Change\",\n  \"section\": \"Part A\",\n  \"calculator_active\": true,\n  \"figures\": [],\n  \"tables\": [\n    {\n      \"section\": \"solution\",\n      \"headers\": [\"$t$\", \"People in line for escalator\"],\n      \"rows\": [\n        [\"0\", \"20\"],\n        [\"$t_1$\", \"3.803\"],\n        [\"$t_2$\", \"158.070\"],\n        [\"300\", \"80\"]\n      ]\n    }\n  ],\n  \"confidence\": \"high\",\n  \"flags\": []\n}\n```",
+  "parsed": {
+    "page_type": "real_frq",
+    "question_number": 1,
+    "question": "(a) $\\int_0^{300} r(t)\\,dt = 270$. According to the model, 270 people enter the line for the escalator during the time interval $0 \\le t \\le 300$.\n\n(b) $20 + \\int_0^{300} (r(t) - 0.7)\\,dt = 20 + \\int_0^{300} r(t)\\,dt - 0.7 \\cdot 300 = 80$. According to the model, 80 people are in line at time $t = 300$.\n\n(c) Based on part (b), the number of people in line at time $t = 300$ is 80. The first time $t$ that there are no people in line is $300 + \\frac{80}{0.7} = 414.286$ (or 414.285) seconds.\n\n(d) The total number of people in line at time $t$, $0 \\le t \\le 300$, is modeled by $20 + \\int_0^t r(x)\\,dx - 0.7t$. $r(t) - 0.7 = 0 \\Rightarrow t_1 = 33.013298, t_2 = 166.574719$.",
+    "solution": "(a) $\\int_0^{300} r(t)\\,dt = 270$\n\nAccording to the model, 270 people enter the line for the escalator during the time interval $0 \\le t \\le 300$.\n\n(b) $20 + \\int_0^{300} (r(t) - 0.7)\\,dt = 20 + \\int_0^{300} r(t)\\,dt - 0.7 \\cdot 300 = 80$\n\nAccording to the model, 80 people are in line at time $t = 300$.\n\n(c) Based on part (b), the number of people in line at time $t = 300$ is 80.\n\nThe first time $t$ that there are no people in line is $300 + \\frac{80}{0.7} = 414.286$ (or 414.285) seconds.\n\n(d) The total number of people in line at time $t$, $0 \\le t \\le 300$, is modeled by $20 + \\int_0^t r(x)\\,dx - 0.7t$.\n\n$r(t) - 0.7 = 0 \\Rightarrow t_1 = 33.013298, t_2 = 166.574719$\n\n\\begin{array}{c|c}\nt & \\text{People in line for escalator} \\\\\n\\hline\n0 & 20 \\\\\nt_1 & 3.803 \\\\\nt_2 & 158.070 \\\\\n300 & 80\n\\end{array}\n\nThe number of people in line is a minimum at time $t = 33.013$ seconds, when there are 4 people in line.",
+    "grading_scheme": "(a) 2 points: $\\{1 : \\text{integral}, 1 : \\text{answer}\\}$\n\n(b) 2 points: $\\{1 : \\text{considers rate out}, 1 : \\text{answer}\\}$\n\n(c) 1 point: $\\{1 : \\text{answer}\\}$\n\n(d) 4 points: $\\{1 : \\text{considers } r(t) - 0.7 = 0, 1 : \\text{identifies } t = 33.013, 1 : \\text{answers}, 1 : \\text{justification}\\}$",
+    "unit": "Unit 6: Integration and Accumulation of Change",
+    "section": "Part A",
+    "calculator_active": true,
+    "figures": [],
+    "tables": [
+      {
+        "section": "solution",
+        "headers": [
+          "$t$",
+          "People in line for escalator"
+        ],
+        "rows": [
+          [
+            "0",
+            "20"
+          ],
+          [
+            "$t_1$",
+            "3.803"
+          ],
+          [
+            "$t_2$",
+            "158.070"
+          ],
+          [
+            "300",
+            "80"
+          ]
+        ]
+      }
+    ],
+    "confidence": "high",
+    "flags": []
+  }
+}

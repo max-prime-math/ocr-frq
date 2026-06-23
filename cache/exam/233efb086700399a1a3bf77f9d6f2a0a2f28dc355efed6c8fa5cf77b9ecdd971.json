@@ -1,0 +1,14 @@
+{
+  "page_type": "exam",
+  "questions": [
+    {
+      "question_number": 6,
+      "question_text": "A function $f$ has derivatives of all orders for $-1 < x < 1$. The derivatives of $f$ satisfy the conditions\n\n$f(0) = 0$\n$f'(0) = 1$\n$f^{(n+1)}(0) = -n \\cdot f^{(n)}(0)$ for all $n \\ge 1$\n\nThe Maclaurin series for $f$ converges to $f(x)$ for $|x| < 1$.\n\n(a) Show that the first four nonzero terms of the Maclaurin series for $f$ are $x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4}$, and write the general term of the Maclaurin series for $f$.\n\n(b) Determine whether the Maclaurin series described in part (a) converges absolutely, converges conditionally, or diverges at $x = 1$. Explain your reasoning.\n\n(c) Write the first four nonzero terms and the general term of the Maclaurin series for $g(x) = \\int_0^x f(t)\\,dt$.\n\n(d) Let $P_n\\left(\\frac{1}{2}\\right)$ represent the $n$th-degree Taylor polynomial for $g$ about $x = 0$ evaluated at $x = \\frac{1}{2}$, where $g$ is the function defined in part (c). Use the alternating series error bound to show that\n\n$$\\left|P_4\\left(\\frac{1}{2}\\right) - g\\left(\\frac{1}{2}\\right)\\right| < \\frac{1}{500}.$$",
+      "figures": [],
+      "tables": [],
+      "unit": "Unit 10: Infinite Sequences and Series",
+      "section": "Part B",
+      "calculator_active": false
+    }
+  ]
+}

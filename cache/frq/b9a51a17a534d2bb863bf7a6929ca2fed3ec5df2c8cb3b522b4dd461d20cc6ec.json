@@ -1,0 +1,25 @@
+{
+  "page_type": "FRQ",
+  "question_number": 4,
+  "unit": "Unit 5: Analytical Applications of Differentiation",
+  "section": "Part B",
+  "calculator_active": false,
+  "question": "Consider the differential equation given by $\\frac{dy}{dx} = \\frac{xy}{2}$.\n\n(a) On the axes provided below, sketch a slope field for the given differential equation at the nine points indicated.\n\n(b) Let $y = f(x)$ be the particular solution to the given differential equation with the initial condition $f(0) = 3$. Use Euler's method starting at $x = 0$, with a step size of $0.1$, to approximate $f(0.2)$. Show the work that leads to your answer.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(0) = 3$. Use your solution to find $f(0.2)$.",
+  "solution": "(a) [Slope field diagram with nine line segments showing negative, zero, and positive slopes from left to right with increasing steepness from bottom to top at $x = -1, 0, 1$ and $y = 1, 2, 3$.]\n\n(b) Using Euler's method:\n$$f(0.1) \\approx f(0) + f'(0)(0.1) = 3 + \\frac{1}{2}(0)(3)(0.1) = 3$$\n\n$$f(0.2) \\approx f(0.1) + f'(0.1)(0.1) = 3 + \\frac{1}{2}(0.1)(3)(0.1) = 3 + \\frac{0.03}{2} = 3.015$$\n\n(c) Separating variables:\n$$\\frac{dy}{dx} = \\frac{xy}{2}$$\n\n$$\\int \\frac{dy}{y} = \\int \\frac{x}{2}\\,dx$$\n\n$$\\ln|y| = \\frac{1}{4}x^2 + C_1$$\n\n$$y = Ce^{x^2/4}$$\n\nUsing the initial condition $f(0) = 3$:\n$$3 = Ce^0 \\implies C = 3$$\n\n$$y = 3e^{x^2/4}$$\n\n$$f(0.2) = 3e^{0.04/4} = 3e^{0.01} = 3.030$$",
+  "grading_scheme": "Part (a): 1 point\n- Line segments at nine points with negative, zero, positive slope left to right and increasing steepness bottom to top at $x = 1$ and $x = -1$\n\nPart (b): 2 points\n- 1 point: Euler's Method equations or equivalent table\n- 1 point: Answer (not eligible without first point)\n- Special Case: 1/2 for first iteration 3.015 and second iteration 3.045\n\nPart (c): 6 points\n- 1 point: Separates variables\n- 1 point: Antiderivative of $dy$ term\n- 1 point: Antiderivative of $dx$ term\n- 1 point: Solves for $y$\n- 1 point: Solves for constant of integration\n- 1 point: Evaluates $f(0.2)$\n- Note: max 4/6 [1-1-1-0-1] if no constant of integration",
+  "figures": [
+    {
+      "section": "question",
+      "bounding_box": [
+        0.05,
+        0.22,
+        0.35,
+        0.45
+      ],
+      "caption": "Coordinate axes for slope field at nine points"
+    }
+  ],
+  "tables": [],
+  "confidence": 0.95,
+  "flags": []
+}

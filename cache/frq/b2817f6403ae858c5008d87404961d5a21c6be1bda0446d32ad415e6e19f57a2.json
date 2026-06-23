@@ -1,0 +1,25 @@
+{
+  "page_type": "FRQ",
+  "question_number": 5,
+  "question": "The temperature outside a house during a 24-hour period is given by $F(t) = 80 - 10\\cos\\left(\\frac{\\pi t}{12}\\right)$, $0 \\le t \\le 24$, where $F(t)$ is measured in degrees Fahrenheit and $t$ is measured in hours.\n\n(a) Sketch the graph of $F$ on the grid below.\n\n(b) Find the average temperature, to the nearest degree Fahrenheit, between $t = 6$ and $t = 14$.\n\n(c) An air conditioner cooled the house whenever the outside temperature was at or above 78 degrees Fahrenheit. For what values of $t$ was the air conditioner cooling the house?\n\n(d) The cost of cooling the house accumulates at the rate of $\\$0.05$ per hour for each degree the outside temperature exceeds 78 degrees Fahrenheit. What was the total cost, to the nearest cent, to cool the house for this 24-hour period?",
+  "solution": "(a) [Bell-shaped graph with minimum 70 at $t = 0, t = 24$ only and maximum 90 at $t = 12$ only]\n\n(b) $\\text{Avg.} = \\frac{1}{14-6}\\int_6^{14}\\left[80 - 10\\cos\\left(\\frac{\\pi t}{12}\\right)\\right]dt$\n\n$= \\frac{1}{8}(697.295795)$\n\n$= 87.162 \\text{ or } 87.161$\n\n$\\approx 87° \\text{ F}$\n\n(c) $80 - 10\\cos\\left(\\frac{\\pi t}{12}\\right) - 78 \\ge 0$\n\n$2 - 10\\cos\\left(\\frac{\\pi t}{12}\\right) \\ge 0$\n\n$\\begin{cases}5.230\\\\\\text{or}\\\\5.231\\end{cases} \\le t \\le \\begin{cases}18.769\\\\\\text{or}\\\\18.770\\end{cases}$\n\n(d) $C = 0.05\\int_{5.231}^{18.770}\\left(\\left[80 - 10\\cos\\left(\\frac{\\pi t}{12}\\right)\\right] - 78\\right)dt$\n\n$= 0.05(101.92741) = 5.096 \\approx \\$5.10$",
+  "grading_scheme": "**1: bell shaped graph**\n- minimum 70 at $t = 0, t = 24$ only\n- maximum 90 at $t = 12$ only\n\n**3: integral** [for part (b)]\n- 2: integral\n  - 1: limits and $\\frac{1}{14-6}$\n  - 1: integrand\n- 1: answer\n  - 0/1 if integral not of the form $\\frac{1}{b-a}\\int_a^b F(t)\\,dt$\n\n**2: inequality or equation** [for part (c)]\n- 1: inequality or equation\n- 1: solutions with interval\n\n**3: integral** [for part (d)]\n- 2: integral\n  - 1: limits and 0.05\n  - 1: integrand\n- 1: answer\n  - 0/1 if integral not of the form $k\\int_a^b(F(t) - 78)\\,dt$",
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part A",
+  "calculator_status": "Calculator active",
+  "figures": [
+    {
+      "section": "question",
+      "bounding_box": [
+        0.05,
+        0.25,
+        0.45,
+        0.55
+      ],
+      "caption": null
+    }
+  ],
+  "tables": [],
+  "confidence": "high",
+  "flags": []
+}

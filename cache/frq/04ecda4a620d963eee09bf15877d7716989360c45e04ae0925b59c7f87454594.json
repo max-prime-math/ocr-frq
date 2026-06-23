@@ -1,0 +1,13 @@
+{
+  "page_type": "real_frq",
+  "question_number": 3,
+  "question": "(a) Find $f(-5)$ given information about $f(1)$ and integrals of $g(x)$.\n\n(b) Find $\\int_1^6 g(x)\\,dx$.\n\n(c) Determine on what intervals the graph of $f$ is increasing and concave up, and explain why.\n\n(d) Identify a point of inflection of the graph of $f$ and explain why.",
+  "solution": "(a) $f(-5) = f(1) + \\int_1^{-5} g(x)\\,dx = f(1) - \\int_{-5}^1 g(x)\\,dx = 3 - \\left(-9 - \\frac{3}{2} + 1\\right) = 3 - \\left(-\\frac{19}{2}\\right) = \\frac{25}{2}$\n\n(b) $\\int_1^6 g(x)\\,dx = \\int_1^3 g(x)\\,dx + \\int_3^6 g(x)\\,dx = \\int_1^3 2\\,dx + \\int_3^6 2(x-4)^2\\,dx = 4 + \\left[\\frac{2}{3}(x-4)^3\\right]_{x=3}^{x=6} = 4 + \\frac{16}{3} - \\left(-\\frac{2}{3}\\right) = 10$\n\n(c) The graph of $f$ is increasing and concave up on $0 < x < 1$ and $4 < x < 6$ because $f'(x) = g(x) > 0$ and $f''(x) = g(x)$ is increasing on those intervals.\n\n(d) The graph of $f$ has a point of inflection at $x = 4$ because $f''(x) = g(x)$ changes from decreasing to increasing at $x = 4$.",
+  "grading_scheme": "Part (a): 2 points\n  1 point: integral setup\n  1 point: answer\n\nPart (b): 3 points\n  1 point: split at $x = 3$\n  1 point: antiderivative of $2(x-4)^2$\n  1 point: answer\n\nPart (c): 2 points\n  1 point: intervals\n  1 point: reason\n\nPart (d): 2 points\n  1 point: answer\n  1 point: reason",
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part B",
+  "calculator_active": false,
+  "figures": [],
+  "tables": [],
+  "confidence_flag": false
+}

@@ -1,0 +1,24 @@
+{
+  "page_type": "exam",
+  "questions": [
+    {
+      "question_number": 3,
+      "question_text": "The continuous function $f$ is defined on the closed interval $-6 \\le x \\le 5$. The figure above shows a portion of the graph of $f$, consisting of two line segments and a quarter of a circle centered at the point $(5, 3)$. It is known that the point $(3, 3 - \\sqrt{5})$ is on the graph of $f$.\n\n(a) If $\\int_{-6}^{5} f(x)\\,dx = 7$, find the value of $\\int_{-6}^{-2} f(x)\\,dx$. Show the work that leads to your answer.\n\n(b) Evaluate $\\int_{3}^{5} (2f'(x) + 4)\\,dx$.\n\n(c) The function $g$ is given by $g(x) = \\int_{-2}^{x} f(t)\\,dt$. Find the absolute maximum value of $g$ on the interval $-2 \\le x \\le 5$. Justify your answer.\n\n(d) Find $\\lim_{x \\to 1} \\frac{10^x - 3f'(x)}{f(x) - \\arctan x}$.",
+      "figures": [
+        {
+          "caption": "Graph of f",
+          "bounding_box": [
+            0.15,
+            0.25,
+            0.7,
+            0.45
+          ]
+        }
+      ],
+      "tables": []
+    }
+  ],
+  "unit": "Unit 6: Integration and Accumulation of Change",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited"
+}

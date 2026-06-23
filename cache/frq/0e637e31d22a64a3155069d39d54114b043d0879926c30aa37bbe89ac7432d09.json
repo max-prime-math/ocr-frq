@@ -1,0 +1,13 @@
+{
+  "page_type": "real_frq_question",
+  "question_number": 4,
+  "question": "(a) Find $\\frac{dV}{dt}$ when $h = 4$.\n\n(b) Find $\\frac{d^2h}{dt^2}$ and determine whether the rate of change of the height of the water is increasing or decreasing when the height of the water is 3 feet.\n\n(c) Find $h(t)$, the height of the water as a function of time.",
+  "solution": "(a) $V = \\pi r^2 h = \\pi(1)^2 h = \\pi h$\n\n$\\frac{dV}{dt}\\bigg|_{h=4} = \\pi \\frac{dh}{dt}\\bigg|_{h=4} = \\pi\\left(-\\frac{1}{10}\\sqrt{4}\\right) = -\\frac{\\pi}{5}$ cubic feet per second\n\n(b) $\\frac{d^2h}{dt^2} = -\\frac{1}{20\\sqrt{h}} \\cdot \\frac{dh}{dt} = -\\frac{1}{20\\sqrt{h}} \\cdot \\left(-\\frac{1}{10}\\sqrt{h}\\right) = \\frac{1}{200}$\n\nBecause $\\frac{d^2h}{dt^2} = \\frac{1}{200} > 0$ for $h > 0$, the rate of change of the height is increasing when the height of the water is 3 feet.\n\n(c) $\\frac{dh}{\\sqrt{h}} = -\\frac{1}{10} dt$\n\n$\\int \\frac{dh}{\\sqrt{h}} = \\int -\\frac{1}{10} dt$\n\n$2\\sqrt{h} = -\\frac{1}{10}t + C$\n\n$2\\sqrt{5} = -\\frac{1}{10} \\cdot 0 + C \\Rightarrow C = 2\\sqrt{5}$\n\n$2\\sqrt{h} = -\\frac{1}{10}t + 2\\sqrt{5}$\n\n$h(t) = \\left(-\\frac{1}{20}t + \\sqrt{5}\\right)^2$",
+  "grading_scheme": "Part (a): 2 points\n  1 : $\\frac{dV}{dt} = \\pi \\frac{dh}{dt}$\n  1 : answer with units\n\nPart (b): 3 points\n  1 : $\\frac{d}{dh}\\left(\\frac{1}{10}\\sqrt{h}\\right) = -\\frac{1}{20\\sqrt{h}}$\n  1 : $\\frac{d^2h}{dt^2} = -\\frac{1}{20\\sqrt{h}} \\cdot \\frac{dh}{dt}$\n  1 : answer with explanation\n\nPart (c): 4 points\n  1 : separation of variables\n  1 : antiderivatives\n  1 : constant of integration and uses initial condition\n  1 : $h(t)$\n\nNote: $0/4$ if no separation of variables\n\nNote: max $2/4$ [1-1-0-0] if no constant of integration",
+  "unit": "Unit 7: Differential Equations",
+  "section": "Part B",
+  "calculator_status": "Calculator prohibited",
+  "figures": [],
+  "tables": [],
+  "confidence_flag": false
+}

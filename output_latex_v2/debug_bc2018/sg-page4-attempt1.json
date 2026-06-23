@@ -1,0 +1,17 @@
+{
+  "raw": "```json\n{\n  \"page_type\": \"real_question\",\n  \"question_number\": 3,\n  \"question\": \"(a) Given $f(-5) = f(1) + \\\\int_1^{-5} g(x)\\\\,dx = f(1) - \\\\int_{-5}^1 g(x)\\\\,dx$, find $f(-5)$.\\n\\n(b) Find $\\\\int_1^6 g(x)\\\\,dx$.\\n\\n(c) Determine the intervals where the graph of $f$ is increasing and concave up.\\n\\n(d) Identify any points of inflection of the graph of $f$ and justify your answer.\",\n  \"solution\": \"(a) $f(-5) = f(1) + \\\\int_1^{-5} g(x)\\\\,dx = f(1) - \\\\int_{-5}^1 g(x)\\\\,dx = 3 - \\\\left(-9 - \\\\frac{3}{2} + 1\\\\right) = 3 - \\\\left(-\\\\frac{19}{2}\\\\right) = \\\\frac{25}{2}$\\n\\n(b) $\\\\int_1^6 g(x)\\\\,dx = \\\\int_1^3 g(x)\\\\,dx + \\\\int_3^6 g(x)\\\\,dx = \\\\int_1^3 2\\\\,dx + \\\\int_3^6 2(x-4)^2\\\\,dx = 4 + \\\\left[\\\\frac{2}{3}(x-4)^3\\\\right]_{x=3}^{x=6} = 4 + \\\\frac{16}{3} - \\\\left(-\\\\frac{2}{3}\\\\right) = 10$\\n\\n(c) The graph of $f$ is increasing and concave up on $0 < x < 1$ and $4 < x < 6$ because $f'(x) = g(x) > 0$ and $f''(x) = g'(x)$ is increasing on those intervals.\\n\\n(d) The graph of $f$ has a point of inflection at $x = 4$ because $f''(x) = g(x)$ changes from decreasing to increasing at $x = 4$.\",\n  \"grading_scheme\": \"Part (a): 2 points { 1 : integral; 1 : answer }\\n\\nPart (b): 3 points { 1 : split at $x = 3$; 1 : antiderivative of $2(x-4)^2$; 1 : answer }\\n\\nPart (c): 2 points { 1 : intervals; 1 : reason }\\n\\nPart (d): 2 points { 1 : answer; 1 : reason }\",\n  \"unit\": \"Unit 5: Analytical Applications of Differentiation\",\n  \"section\": \"Part B\",\n  \"calculator_status\": \"Calculator prohibited\",\n  \"figures\": [],\n  \"tables\": [],\n  \"confidence\": \"high\",\n  \"notes\": null\n}\n```",
+  "parsed": {
+    "page_type": "real_question",
+    "question_number": 3,
+    "question": "(a) Given $f(-5) = f(1) + \\int_1^{-5} g(x)\\,dx = f(1) - \\int_{-5}^1 g(x)\\,dx$, find $f(-5)$.\n\n(b) Find $\\int_1^6 g(x)\\,dx$.\n\n(c) Determine the intervals where the graph of $f$ is increasing and concave up.\n\n(d) Identify any points of inflection of the graph of $f$ and justify your answer.",
+    "solution": "(a) $f(-5) = f(1) + \\int_1^{-5} g(x)\\,dx = f(1) - \\int_{-5}^1 g(x)\\,dx = 3 - \\left(-9 - \\frac{3}{2} + 1\\right) = 3 - \\left(-\\frac{19}{2}\\right) = \\frac{25}{2}$\n\n(b) $\\int_1^6 g(x)\\,dx = \\int_1^3 g(x)\\,dx + \\int_3^6 g(x)\\,dx = \\int_1^3 2\\,dx + \\int_3^6 2(x-4)^2\\,dx = 4 + \\left[\\frac{2}{3}(x-4)^3\\right]_{x=3}^{x=6} = 4 + \\frac{16}{3} - \\left(-\\frac{2}{3}\\right) = 10$\n\n(c) The graph of $f$ is increasing and concave up on $0 < x < 1$ and $4 < x < 6$ because $f'(x) = g(x) > 0$ and $f''(x) = g'(x)$ is increasing on those intervals.\n\n(d) The graph of $f$ has a point of inflection at $x = 4$ because $f''(x) = g(x)$ changes from decreasing to increasing at $x = 4$.",
+    "grading_scheme": "Part (a): 2 points { 1 : integral; 1 : answer }\n\nPart (b): 3 points { 1 : split at $x = 3$; 1 : antiderivative of $2(x-4)^2$; 1 : answer }\n\nPart (c): 2 points { 1 : intervals; 1 : reason }\n\nPart (d): 2 points { 1 : answer; 1 : reason }",
+    "unit": "Unit 5: Analytical Applications of Differentiation",
+    "section": "Part B",
+    "calculator_status": "Calculator prohibited",
+    "figures": [],
+    "tables": [],
+    "confidence": "high",
+    "notes": null
+  }
+}

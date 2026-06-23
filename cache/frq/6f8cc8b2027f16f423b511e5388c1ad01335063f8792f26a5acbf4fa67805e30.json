@@ -1,0 +1,18 @@
+{
+  "page_type": "real_frq",
+  "question_number": 6,
+  "exam_info": {
+    "subject": "AP Calculus BC",
+    "year": 2018,
+    "section": "Part B",
+    "calculator_status": "Calculator prohibited",
+    "unit": "Unit 10: Infinite Sequences and Series"
+  },
+  "question": "Consider the function $f(x) = x \\ln\\left(1 + \\frac{x}{3}\\right)$.\n\n(a) Find the first four nonzero terms and the general term of the Maclaurin series for $f(x)$.\n\n(b) Find the interval of convergence of the Maclaurin series for $f(x)$.\n\n(c) Use the alternating series error bound to find an upper bound for $|P_4(2) - f(2)|$, where $P_4$ is the fourth-degree Taylor polynomial for $f(x)$ centered at $x = 0$.",
+  "solution": "**Part (a):**\nThe first four nonzero terms are $\\frac{x^2}{3} - \\frac{x^3}{2 \\cdot 3^2} + \\frac{x^4}{3 \\cdot 3^3} - \\frac{x^5}{4 \\cdot 3^4}$.\n\nThe general term is $(-1)^{n+1} \\frac{x^{n+1}}{n \\cdot 3^n}$.\n\n**Part (b):**\n$$\\lim_{n \\to \\infty} \\left| \\frac{(-1)^{n+2} x^{n+2}}{(n+1)(3^{n+1})} \\cdot \\frac{n \\cdot 3^n}{(-1)^{n+1} x^{n+1}} \\right| = \\lim_{n \\to \\infty} \\left| \\frac{-x}{3} \\cdot \\frac{n}{n+1} \\right| = \\left| \\frac{x}{3} \\right|$$\n\n$\\left| \\frac{x}{3} \\right| < 1$ for $|x| < 3$.\n\nTherefore, the radius of convergence of the Maclaurin series for $f$ is $3$.\n\n**OR**\n\nThe radius of convergence of the Maclaurin series for $\\ln(1 + x)$ is $1$, so the series for $f(x) = x \\ln\\left(1 + \\frac{x}{3}\\right)$ converges absolutely for $\\left|\\frac{x}{3}\\right| < 1$.\n\n$\\left|\\frac{x}{3}\\right| < 1 \\Rightarrow |x| < 3$\n\nTherefore, the radius of convergence of the Maclaurin series for $f$ is $3$.\n\nWhen $x = -3$, the series is $\\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{(-3)^{n+1}}{n \\cdot 3^n} = \\sum_{n=1}^{\\infty} \\frac{3}{n}$, which diverges by comparison to the harmonic series.\n\nWhen $x = 3$, the series is $\\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{3^{n+1}}{n \\cdot 3^n} = \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{3}{n}$, which converges by the alternating series test.\n\nThe interval of convergence of the Maclaurin series for $f$ is $-3 < x \\le 3$.\n\n**Part (c):**\nBy the alternating series error bound, an upper bound for $|P_4(2) - f(2)|$ is the magnitude of the next term of the alternating series.\n\n$$|P_4(2) - f(2)| < \\left| -\\frac{2^5}{4 \\cdot 3^4} \\right| = \\frac{8}{81}$$",
+  "grading_scheme": "**Part (a):** 2 points\n- 1 point: first four terms\n- 1 point: general term\n\n**Part (b):** 5 points\n- 1 point: sets up ratio test (or other method)\n- 1 point: computes limit of ratio\n- 1 point: radius of convergence\n- 1 point: considers both endpoints\n- 1 point: analysis and interval of convergence\n\n**OR** 5 points\n- 1 point: radius for $\\ln(1+x)$ series\n- 1 point: substitutes $\\frac{x}{3}$\n- 1 point: radius of convergence\n- 1 point: considers both endpoints\n- 1 point: analysis and interval of convergence\n\n**Part (c):** 2 points\n- 1 point: uses fifth-degree term as error bound\n- 1 point: answer",
+  "figures": [],
+  "tables": [],
+  "confidence": "high",
+  "flags": []
+}
