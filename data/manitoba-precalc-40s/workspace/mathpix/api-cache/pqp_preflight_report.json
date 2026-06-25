@@ -1,0 +1,446 @@
+{
+  "catalog": "/home/max/testgen-suite/ocr-frq/mb-exams/catalog/question_catalog.json",
+  "questionCount": 967,
+  "sourceDocumentCount": 63,
+  "requiredStudentBooklets": [
+    "pc_2013_jan_sb1",
+    "pc_2013_jan_sb2",
+    "pc_2013_jun_sb1",
+    "pc_2013_jun_sb2",
+    "pc_2014_jan_sb1",
+    "pc_2014_jan_sb2",
+    "pc_2014_jun_sb1",
+    "pc_2014_jun_sb2",
+    "pc_2015_jan_sb1",
+    "pc_2015_jan_sb2",
+    "pc_2015_jun_sb1",
+    "pc_2015_jun_sb2",
+    "pc_2016_jan_sb1",
+    "pc_2016_jan_sb2",
+    "pc_2016_jun_sb1",
+    "pc_2016_jun_sb2",
+    "pc_2017_jan_sb1",
+    "pc_2017_jan_sb2",
+    "pc_2017_jun_sb1",
+    "pc_2017_jun_sb2",
+    "pc_2018_jan_sb1",
+    "pc_2018_jan_sb2",
+    "pc_2018_jun_sb1",
+    "pc_2018_jun_sb2",
+    "pc_2019_jan_sb1",
+    "pc_2019_jan_sb2",
+    "pc_2019_jun_sb1",
+    "pc_2019_jun_sb2",
+    "pc_2020_jan_sb1",
+    "pc_2020_jan_sb2",
+    "pc_2024_jan_sb1",
+    "pc_2024_jan_sb2",
+    "pc_2024_jun_sb1",
+    "pc_2024_jun_sb2",
+    "pc_2025_jan_sb1",
+    "pc_2025_jan_sb2",
+    "pc_2025_jun_sb1",
+    "pc_2025_jun_sb2",
+    "pc_2026_jan_sb1",
+    "pc_2026_jan_sb2",
+    "pc_2026_jun_sb1",
+    "pc_2026_jun_sb2"
+  ],
+  "requiredMarkingGuides": [
+    "pc_2013_jan_mg",
+    "pc_2013_jun_mg",
+    "pc_2014_jan_mg",
+    "pc_2014_jun_mg",
+    "pc_2015_jan_mg",
+    "pc_2015_jun_mg",
+    "pc_2016_jan_mg",
+    "pc_2016_jun_mg",
+    "pc_2017_jan_mg",
+    "pc_2017_jun_mg",
+    "pc_2018_jan_mg",
+    "pc_2018_jun_mg",
+    "pc_2019_jan_mg",
+    "pc_2019_jun_mg",
+    "pc_2020_jan_mg",
+    "pc_2024_jan_mg",
+    "pc_2024_jun_mg",
+    "pc_2025_jan_mg",
+    "pc_2025_jun_mg",
+    "pc_2026_jan_mg",
+    "pc_2026_jun_mg"
+  ],
+  "missingSources": [],
+  "missingManifestEntries": [
+    "pc_2013_jan_mg",
+    "pc_2013_jan_sb1",
+    "pc_2013_jan_sb2",
+    "pc_2013_jun_mg",
+    "pc_2013_jun_sb1",
+    "pc_2013_jun_sb2",
+    "pc_2014_jan_mg",
+    "pc_2014_jan_sb1",
+    "pc_2014_jan_sb2",
+    "pc_2014_jun_mg",
+    "pc_2014_jun_sb1",
+    "pc_2014_jun_sb2",
+    "pc_2015_jan_mg",
+    "pc_2015_jan_sb1",
+    "pc_2015_jan_sb2",
+    "pc_2015_jun_mg",
+    "pc_2015_jun_sb1",
+    "pc_2015_jun_sb2",
+    "pc_2016_jan_mg",
+    "pc_2016_jan_sb1",
+    "pc_2016_jan_sb2",
+    "pc_2016_jun_mg",
+    "pc_2016_jun_sb1",
+    "pc_2016_jun_sb2",
+    "pc_2017_jan_mg",
+    "pc_2017_jan_sb1",
+    "pc_2017_jan_sb2",
+    "pc_2017_jun_mg",
+    "pc_2017_jun_sb1",
+    "pc_2017_jun_sb2",
+    "pc_2018_jan_mg",
+    "pc_2018_jan_sb1",
+    "pc_2018_jan_sb2",
+    "pc_2018_jun_mg",
+    "pc_2018_jun_sb1",
+    "pc_2018_jun_sb2",
+    "pc_2019_jan_mg",
+    "pc_2019_jan_sb1",
+    "pc_2019_jan_sb2",
+    "pc_2019_jun_mg",
+    "pc_2019_jun_sb1",
+    "pc_2019_jun_sb2",
+    "pc_2020_jan_mg",
+    "pc_2020_jan_sb1",
+    "pc_2020_jan_sb2",
+    "pc_2024_jan_mg",
+    "pc_2024_jan_sb1",
+    "pc_2024_jan_sb2",
+    "pc_2024_jun_mg",
+    "pc_2024_jun_sb1",
+    "pc_2024_jun_sb2",
+    "pc_2025_jan_mg",
+    "pc_2025_jan_sb1",
+    "pc_2025_jan_sb2",
+    "pc_2025_jun_mg",
+    "pc_2025_jun_sb1",
+    "pc_2025_jun_sb2",
+    "pc_2026_jan_mg",
+    "pc_2026_jan_sb1",
+    "pc_2026_jan_sb2",
+    "pc_2026_jun_sb2"
+  ],
+  "missingOutputs": {
+    "pc_2013_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2013_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2013_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2013_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2013_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2013_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2014_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2015_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2016_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2017_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2018_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2019_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2020_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2020_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2020_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2024_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jun_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jun_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2025_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2026_jan_mg": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2026_jan_sb1": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2026_jan_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ],
+    "pc_2026_jun_sb2": [
+      "mmd",
+      "lines_json",
+      "tex_zip"
+    ]
+  },
+  "mitex": "/home/max/.cargo/bin/mitex",
+  "readyForExporter": false,
+  "note": "This is a preflight scaffold. After the Mathpix cache is populated, the PQP exporter should segment lines.json/mmd by catalog pages and convert LaTeX math to Typst with mitex."
+}

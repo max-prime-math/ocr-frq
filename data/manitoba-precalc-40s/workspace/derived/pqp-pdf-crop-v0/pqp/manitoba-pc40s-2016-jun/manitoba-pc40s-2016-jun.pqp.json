@@ -1,0 +1,5150 @@
+{
+  "format": "portable-question-package",
+  "version": "1.0",
+  "producer": {
+    "app": "ocr-frq",
+    "appVersion": "manitoba-pqp-export-1",
+    "exportedAt": "2026-06-23T17:34:43.480576Z"
+  },
+  "source": {
+    "kind": "pdf",
+    "label": "Manitoba Pre-Calculus 40S June 2016",
+    "collection": "Manitoba Pre-Calculus 40S Provincial Exams",
+    "publisher": "Manitoba Education and Early Childhood Learning",
+    "year": 2016,
+    "originFiles": [
+      "exams-mg-2013-2026.pdf",
+      "pc_16_jun_sb1.pdf",
+      "pc_16_jun_sb2.pdf"
+    ],
+    "extensions": {
+      "term": "jun",
+      "session": "June 2016"
+    }
+  },
+  "classes": [
+    {
+      "id": "manitoba-pre-calculus-40s",
+      "name": "Manitoba Pre-Calculus 40S",
+      "units": [
+        {
+          "id": "outcome-p",
+          "name": "Permutations, Combinations, and Binomial Theorem",
+          "sections": [
+            {
+              "id": "p1",
+              "name": "P1"
+            },
+            {
+              "id": "p3",
+              "name": "P3"
+            },
+            {
+              "id": "p4",
+              "name": "P4"
+            }
+          ]
+        },
+        {
+          "id": "outcome-r",
+          "name": "Relations and Functions",
+          "sections": [
+            {
+              "id": "r1",
+              "name": "R1"
+            },
+            {
+              "id": "r2",
+              "name": "R2"
+            },
+            {
+              "id": "r3",
+              "name": "R3"
+            },
+            {
+              "id": "r5",
+              "name": "R5"
+            },
+            {
+              "id": "r6",
+              "name": "R6"
+            },
+            {
+              "id": "r7",
+              "name": "R7"
+            },
+            {
+              "id": "r8",
+              "name": "R8"
+            },
+            {
+              "id": "r9",
+              "name": "R9"
+            },
+            {
+              "id": "r10",
+              "name": "R10"
+            },
+            {
+              "id": "r11",
+              "name": "R11"
+            },
+            {
+              "id": "r12",
+              "name": "R12"
+            },
+            {
+              "id": "r13",
+              "name": "R13"
+            },
+            {
+              "id": "r14",
+              "name": "R14"
+            }
+          ]
+        },
+        {
+          "id": "outcome-t",
+          "name": "Trigonometry",
+          "sections": [
+            {
+              "id": "t1",
+              "name": "T1"
+            },
+            {
+              "id": "t2",
+              "name": "T2"
+            },
+            {
+              "id": "t4",
+              "name": "T4"
+            },
+            {
+              "id": "t5",
+              "name": "T5"
+            },
+            {
+              "id": "t6",
+              "name": "T6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "mb-pc40s-2016-jun-q01",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 1 2 marks 101 A wheel has a diameter of 20 cm and rotates through a central angle of 252 .\uf06f Determine how far the wheel rolled."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 1 T1 A wheel has a diameter of 20 cm and rotates through a central angle of 252 .\uf06f Determine how far the wheel rolled. Solution ( ) 252 180 7 5 7 20 5 2 14 cm 43.982 cm s r \uf8eb \uf8f6 \u03c0 = \uf8ec \uf8f7 \uf8ed \uf8f8 \u03c0 = = \u03c0 \uf8eb \uf8f6\uf8eb \uf8f6 = \uf8ec \uf8f7\uf8ec \uf8f7 \uf8ed \uf8f8\uf8ed \uf8f8 = \u03c0 = or \uf06f \uf06f \u03b8 \u03b8 1 mark for conversion 1 mark for substitution 2 marks"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "calculator-active",
+          "frq",
+          "T1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t1",
+        "sectionName": "T1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "calculator-active"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q01-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "1",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            9
+          ],
+          "markingGuidePages": [
+            1710
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q01-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q01-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 1 2 marks 101 A wheel has a diameter of 20 cm and rotates through a central angle of 252 .\uf06f Determine how far the wheel rolled. Pre-Calculus Mathematics: Booklet 1 (June 2016) 1",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q02",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 2 3 marks 102 Solve the following equation over the interval [ ] 0, 2\u03c0 : 2 3sin 10sin 8 0 \u03b8 \u03b8 \u2212 \u2212 ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 2 T5 Solve the following equation over the interval [ ] 0, 2\u03c0 : 2 3sin 10sin 8 0 \u2212 \u2212 = \u03b8 \u03b8 Solution ( )( ) 2 3sin 10sin 8 0 3sin 2 sin 4 0 2 sin sin 4 3 0.729 728 No solution 3.871 5.553 r \u2212 \u2212 = + \u2212 = = \u2212 = = = = \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 1 mark for solving for sin\u03b8 (\u00bd mark for each branch) 2 marks for solving for \u03b8 (1 mark for indicating no solution, \u00bd mark for each value) 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "calculator-active",
+          "frq",
+          "T5"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t5",
+        "sectionName": "T5",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T5",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "calculator-active"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q02-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "2",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            10
+          ],
+          "markingGuidePages": [
+            1712
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q02-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q02-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 2 3 marks 102 Solve the following equation over the interval [ ] 0, 2\u03c0 : 2 3sin 10sin 8 0 \u03b8 \u03b8 \u2212 \u2212 = 2 Pre-Calculus Mathematics: Booklet 1 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q03",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 3 3 marks 103 Determine and simplify the fourth term in the expansion of ( ) 8 4 2 3 . x y \u2212"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 3 P4 Determine and simplify the fourth term in the expansion of ( ) 8 4 2 3 . x y \u2212 Solution ( ) ( ) ( )( ) 5 3 4 4 8 3 20 3 20 3 2 3 56 32 27 48 384 t C x y x y x y = \u2212 = \u2212 = \u2212 2 marks (1 mark for 8 3 C , \u00bd mark for each consistent factor) 1 mark for simplification (\u00bd mark for coefficient, \u00bd mark for exponents) 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "calculator-active",
+          "frq",
+          "P4"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p4",
+        "sectionName": "P4",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P4",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "calculator-active"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q03-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "3",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            11
+          ],
+          "markingGuidePages": [
+            1716
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q03-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q03-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 3 3 marks 103 Determine and simplify the fourth term in the expansion of ( ) 8 4 2 3 . x y \u2212 Pre-Calculus Mathematics: Booklet 1 (June 2016) 3",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q04",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 4 3 marks 104 Sheeva\u2019s bank is lending her $50 000 at an annual interest rate of 6%, compounded monthly, to purchase a car. Given that the last payment will be a partial payment, determine how many full monthly payments of $800 Sheeva will have to make. The formula below may be used. Express your answer as a whole number. ( ) 1 1 where the present value of the amount borrowed the amount of each periodic payment annual interest rate (as a decimal) the number of compounding periods per year the number of e n R i PV i PV R i n \u2212 \uf8ee \uf8f9 \u2212 + \uf8f0 \uf8fb = = = = = qual periodic payments"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 4 R10 Sheeva\u2019s bank is lending her $50 000 at an annual interest rate of 6%, compounded monthly, to purchase a car. Given that the last payment will be a partial payment, determine how many full monthly payments of $800 Sheeva will have to make. The formula below may be used. Express your answer as a whole number. Solution ( ) 0.06 800 1 1 12 50 000 0.06 12 250 800 1 1 0.005 0.3125 1 1.005 0.6875 1.005 0.6875 1.005 log 0.6875 log1.005 log 0.6875 log1.005 75.125 880 88 75 full monthly payments are needed n n n n n n n n \u2212 \u2212 \u2212 \u2212 \u2212 \uf8ee \uf8f9 \uf8eb \uf8f6 \u2212 + \uf8ef \uf8fa \uf8ec \uf8f7 \uf8ed \uf8f8 \uf8ef \uf8fa \uf8f0 \uf8fb = \uf8ee \uf8f9 = \u2212 + \uf8f0 \uf8fb = \u2212 \u2212 = \u2212 = = \u2212 = \u2212 = \u2234 \u00bd mark for substitution \u00bd mark for simplification \u00bd mark for applying logarithms 1 mark for power law \u00bd mark for solving for n 3 marks ( ) 1 1 where the present value of the amount borrowed the amount of each periodic payment annual interest rate (as a decimal) the number of compounding periods per year the number of e n R i PV i PV R i n \u2212 \uf8ee \uf8f9 \u2212 + \uf8f0 \uf8fb = = = = = qual periodic payments"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "calculator-active",
+          "frq",
+          "R10"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r10",
+        "sectionName": "R10",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R10",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "calculator-active"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q04-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "4",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            12
+          ],
+          "markingGuidePages": [
+            1720
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q04-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q04-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 4 3 marks 104 Sheeva\u2019s bank is lending her $50 000 at an annual interest rate of 6%, compounded monthly, to purchase a car. Given that the last payment will be a partial payment, determine how many full monthly payments of $800 Sheeva will have to make. The formula below may be used. Expres",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q05",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 5 2 marks 105 An employee asked 10 people in an ice cream shop to wait in line. Determine the number of different arrangements possible if two of the people, Jamie and John, refused to stand next to each other in the line. Note: A calculator is not required for the remaining test questions."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 5 P1 An employee asked 10 people in an ice cream shop to wait in line. Determine the number of different arrangements possible if two of the people, Jamie and John, refused to stand next to each other in the line. Solution 10! 9!2! 2 903 040 \u2212 \u00bd mark for 10! 1 mark for product of 9!2! (\u00bd mark for 9!, \u00bd mark for 2!) \u00bd mark for subtraction 2 marks"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "calculator-active",
+          "frq",
+          "P1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p1",
+        "sectionName": "P1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "calculator-active"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q05-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "5",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            13
+          ],
+          "markingGuidePages": [
+            1724
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q05-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q05-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 5 2 marks 105 An employee asked 10 people in an ice cream shop to wait in line. Determine the number of different arrangements possible if two of the people, Jamie and John, refused to stand next to each other in the line. Note: A calculator is not required for the remaining test questions.",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q06",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 6 1 mark 106 The point ( ) 2, 4 \u2212 is on the graph of ( ). f x State the coordinates of the corresponding point when ( ) f x is reflected over the y-axis."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 6 R5 The point ( ) 2, 4 \u2212 is on the graph of ( ). f x State the coordinates of the corresponding point when ( ) f x is reflected over the y-axis. Solution ( ) 2, 4 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R5"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r5",
+        "sectionName": "R5",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R5",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q06-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "6",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            14
+          ],
+          "markingGuidePages": [
+            1726
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q06-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q06-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 6 1 mark 106 The point ( ) 2, 4 \u2212 is on the graph of ( ). f x State the coordinates of the corresponding point when ( ) f x is reflected over the y-axis. 6 Pre-Calculus Mathematics: Booklet 1 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q07",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 7 2 marks 107 Given the graphs of ( ) f x and ( ) g x , sketch the graph of ( )( ) f g x + . y x 1 1 ( ) f x \u2022 ( ) g x y x 1 1 ( )( ) f g x + 1 y x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 7 R1 Given the graphs of ( ) f x and ( ), g x sketch the graph of ( )( ). f g x + Solution 1 mark for operation of addition 1 mark for restricted domain 2 marks y x 1 1 ( ) f x \u2022 ( ) g x y x 1 1 ( )( ) f g x + 1 y x 1"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r1",
+        "sectionName": "R1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q07-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "7",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            15
+          ],
+          "markingGuidePages": [
+            1728
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q07-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q07-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 7 2 marks 107 Given the graphs of ( ) f x and ( ) g x , sketch the graph of ( )( ) f g x + . y x 1 1 ( ) f x \u2022 ( ) g x y x 1 1 ( )( ) f g x + 1 y x 1 Pre-Calculus Mathematics: Booklet 1 (June 2016) 7",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q08",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 8 3 marks 108 Using the laws of logarithms, fully expand the expression: 3 2 log 1 w x y \uf8eb \uf8f6 \uf8ec \uf8f7 \u2212 \uf8ed \uf8f8"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 8 R8 Using the laws of logarithms, fully expand the expression: 3 2 log 1 w x y \uf8eb \uf8f6 \uf8ec \uf8f7 \u2212 \uf8ed \uf8f8 Solution ( ) 2 2 2 3log log log 1 w x y + \u2212 \u2212 1 mark for power law 1 mark for product law 1 mark for quotient law 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R8"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r8",
+        "sectionName": "R8",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R8",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q08-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "8",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            16
+          ],
+          "markingGuidePages": [
+            1730
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q08-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q08-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 8 3 marks 108 Using the laws of logarithms, fully expand the expression: 3 2 log 1 w x y \uf8eb \uf8f6 \uf8ec \uf8f7 \u2212 \uf8ed \uf8f8 8 Pre-Calculus Mathematics: Booklet 1 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q09",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 9 4 marks 109 Solve the following equation algebraically for \u03b8 , where 0 2 : \u2264 \u2264 \u03c0 \u03b8 2cos 2 1 \u03b8 ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 9 T5, T6 Solve the following equation algebraically for \u03b8 , where 0 2 \u2264 \u2264 \u03c0 \u03b8 : 2cos 2 1 = \u03b8 Solution Method 1 ( ) 2 2 2 2 2cos 1 1 4cos 2 1 3 cos 4 3 cos 2 3 3 cos cos 2 2 5 7 , , 6 6 6 6 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u2212 = \u2212 = = = \u00b1 = = \u2212 \u03c0 11\u03c0 \u03c0 \u03c0 = = Method 2 ( ) 2 2 2 2 2 1 2sin 1 2 4sin 1 4sin 1 1 sin 4 1 sin 2 1 1 sin sin 2 2 , , 6 6 6 6 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u2212 = \u2212 = \u2212 = \u2212 = = \u00b1 = = \u2212 \u03c0 5\u03c0 7\u03c0 11\u03c0 = = Note(s): \uf0a7 Deduct a maximum of 1 mark if student omits second branch when taking the square root. 1 mark for substitution of an appropriate identity 1 mark for solving for cos\u03b8 (\u00bd mark for each value) 2 marks (\u00bd mark for each value of \u03b8 ) 4 marks 1 mark for substitution of an appropriate identity 1 mark for solving for sin\u03b8 (\u00bd mark for each value) 2 marks (\u00bd mark for each value of \u03b8 ) 4 marks"
+        }
+      },
+      "scoring": {
+        "points": 4.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "T5",
+          "T6",
+          "T5, T6"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t5",
+        "sectionName": "T5",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T5, T6",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q09-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "9",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            17
+          ],
+          "markingGuidePages": [
+            1732
+          ],
+          "marksText": "4 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q09-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q09-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 9 4 marks 109 Solve the following equation algebraically for \u03b8 , where 0 2 : \u2264 \u2264 \u03c0 \u03b8 2cos 2 1 \u03b8 = Pre-Calculus Mathematics: Booklet 1 (June 2016) 9",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q10",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 10 3 marks 110 Given the graph of ( ) y f x = , sketch the graph of ( ) 2 1 . y f x = \u2212 The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . 1 1 y x 1 1 y x ( ) f x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 10 R1, R2, R3 Given the graph of ( ) y f x = , sketch the graph of ( ) 2 1 . y f x = \u2212 Solution 1 mark for vertical stretch 1 mark for horizontal translation 1 mark for absolute value 3 marks y x 1 1 1 1 y x ( ) f x"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R1",
+          "R2",
+          "R3",
+          "R1, R2, R3"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r1",
+        "sectionName": "R1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R1, R2, R3",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q10-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "10",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            18
+          ],
+          "markingGuidePages": [
+            1736
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q10-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q10-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 10 3 marks 110 Given the graph of ( ) y f x = , sketch the graph of ( ) 2 1 . y f x = \u2212 The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . 1 1 y x 1 1 y x ( ) f x 10 Pre-Calculus Mathematics: Booklet 1 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q11",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 11 3 marks 111 Prove the identity for all permissible values of \u03b8 : 2 tan sin cos tan sin 1 cos + = \u2212 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 Left-Hand Side Right-Hand Side"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 11 T6 Prove the identity for all permissible values of \u03b8 : 2 tan sin cos tan sin 1 cos + = \u2212 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 Solution Left-Hand Side Right-Hand Side 2 2 2 2 2 2 2 tan sin cos tan sin 1 cos sin sin sin cos cos sin cos sin sin sin 1 cos cos cos sin cos sin 1 cos cos 1 cos + \u2212 + + + \uf067 \uf067 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 1 mark for correct substitution of identities 1 mark for algebraic strategies 1 mark for logical process to prove the identity 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "T6"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t6",
+        "sectionName": "T6",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T6",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q11-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "11",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            19
+          ],
+          "markingGuidePages": [
+            1738
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q11-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q11-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 11 3 marks 111 Prove the identity for all permissible values of \u03b8 : 2 tan sin cos tan sin 1 cos + = \u2212 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 \u03b8 Left-Hand Side Right-Hand Side Pre-Calculus Mathematics: Booklet 1 (June 2016) 11",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q12",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 12 1 mark 112 Raoul has 8 shirts, 5 pairs of pants, and 3 hats. He adds the options together and determines that he has 16 different outfits to wear. Raoul made an error in calculating the number of different outfits. Describe how to determine the correct number of outfits."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 12 P1 Raoul has 8 shirts, 5 pairs of pants, and 3 hats. He adds the options together and determines that he has 16 different outfits to wear. Raoul made an error in calculating the number of different outfits. Describe how to determine the correct number of outfits. Solution Raoul should have multiplied the number of clothing items to determine the total number of outfits. 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "P1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p1",
+        "sectionName": "P1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q12-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "12",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            20
+          ],
+          "markingGuidePages": [
+            1740
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q12-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q12-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 12 1 mark 112 Raoul has 8 shirts, 5 pairs of pants, and 3 hats. He adds the options together and determines that he has 16 different outfits to wear. Raoul made an error in calculating the number of different outfits. Describe how to determine the correct number of outfits. 12 Pre-Calculus ",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q13",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 13 a) 1 mark b) 1 mark 113 114 Given ( ) 2 1 f x x = \u2212 and ( ) 2 1: g x x = + a) Determine ( ) ( ) f x g x \uf067 . b) Determine ( ) ( ). g g x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 13 R1 Given ( ) 2 1 f x x = \u2212 and ( ) 2 1: g x x = + a) Determine ( ) ( ). f x g x \uf067 b) Determine ( ) ( ). g g x Solution a) b) ( ) ( ) ( )( ) 2 3 2 3 2 2 1 1 2 2 1 2 2 1 f x g x x x x x x x x x = \u2212 + = + \u2212 \u2212 = \u2212 + \u2212 \uf067 ( ) ( ) ( ) 2 2 4 2 4 2 1 1 2 1 1 2 2 g g x x x x x x = + + = + + + = + + 1 mark for product 1 mark 1 mark for composition 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r1",
+        "sectionName": "R1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q13-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "13",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            21
+          ],
+          "markingGuidePages": [
+            1742
+          ],
+          "marksText": "a) 1 mark; b) 1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q13-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q13-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 13 a) 1 mark b) 1 mark 113 114 Given ( ) 2 1 f x x = \u2212 and ( ) 2 1: g x x = + a) Determine ( ) ( ) f x g x \uf067 . b) Determine ( ) ( ). g g x Pre-Calculus Mathematics: Booklet 1 (June 2016) 13",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q14",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 14 2 marks 115 Given the graph of ( ) y f x = , sketch the graph of ( ). y f x = The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . y x 1 1 1 1 y x ( ) f x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 14 R13 Given the graph of ( ) y f x = , sketch the graph of ( ). y f x = Solution 1 mark for restricting the domain \u00bd mark for shape between invariant points \u00bd mark for shape to the left of invariant points 2 marks y x \uf067 \uf067 \uf067 1 1 1 1 y x ( ) f x"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 1",
+          "no-calculator",
+          "frq",
+          "R13"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r13",
+        "sectionName": "R13",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R13",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 1,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q14-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "14",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb1.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            22
+          ],
+          "markingGuidePages": [
+            1746
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q14-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q14-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 14 2 marks 115 Given the graph of ( ) y f x = , sketch the graph of ( ). y f x = The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . y x 1 1 1 1 y x ( ) f x 14 Pre-Calculus Mathematics: Booklet 1 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q15",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 15 1 mark Given the polynomial function ( ) 4 2 5 2 6 P x x x x = \u2212 \u2212 + , if ( )1 0 P = , identify which statement is true. a) The y-intercept is 1. b) ( ) P x has a factor of ( )1 . x + c) The graph has a zero at 1. d) The graph has a zero at 1 \u2212."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 15 R11 Given the polynomial function ( ) 4 2 5 2 6 P x x x x = \u2212 \u2212 + , if ( )1 0 P = , identify which statement is true. a) The y-intercept is 1. b) ( ) P x has a factor of ( )1 . x + c) The graph has a zero at 1 d) The graph has a zero at 1 \u2212."
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "The y-intercept is 1."
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "( ) P x has a factor of ( )1 . x +"
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "The graph has a zero at 1."
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "The graph has a zero at 1 \u2212."
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "R11"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r11",
+        "sectionName": "R11",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R11",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q15-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "15",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            5
+          ],
+          "markingGuidePages": [
+            1751
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q15-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q15-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 15 1 mark Given the polynomial function ( ) 4 2 5 2 6 P x x x x = \u2212 \u2212 + , if ( )1 0 P = , identify which statement is true. a) The y-intercept is 1. b) ( ) P x has a factor of ( )1 . x + c) The graph has a zero at 1. d) The graph has a zero at 1 \u2212. ",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "C"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q16",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 16 1 mark There are 6 different books that are being distributed evenly amongst three people. Identify which expression represents the number of possible combinations. a) 6 2 6 2 6 2 C C C \uf067 \uf067 b) 6 2 4 2 2 2 C C C \uf067 \uf067 c) 2 2 2 2 2 2 C C C \uf067 \uf067 d) 6 2 3 C \uf067"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 16 P3 There are 6 different books that are being distributed evenly amongst three people. Identify which expression represents the number of possible combinations. a) 6 2 6 2 6 2 C C C \uf067 \uf067 b) 6 2 4 2 2 2 C C C \uf067 \uf067 c) 2 2 2 2 2 2 C C C \uf067 \uf067 d) 6 2 3 C \uf067"
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "6 2 6 2 6 2 C C C \uf067 \uf067"
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "6 2 4 2 2 2 C C C \uf067 \uf067"
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "2 2 2 2 2 2 C C C \uf067 \uf067"
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "6 2 3 C \uf067"
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "P3"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p3",
+        "sectionName": "P3",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P3",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q16-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "16",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            5
+          ],
+          "markingGuidePages": [
+            1751
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q16-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q16-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 16 1 mark There are 6 different books that are being distributed evenly amongst three people. Identify which expression represents the number of possible combinations. a) 6 2 6 2 6 2 C C C \uf067 \uf067 b) 6 2 4 2 2 2 C C C \uf067 \uf067 c) 2 2 2 2 2 2 C C C \uf067 \uf067 d) 6 2 3 C \uf067 Pre-Calculus Mathematics: Booklet 2",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "B"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q17",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 17 1 mark Identify the graph that corresponds to the function ( ) ( ) 2 . f x x = \u2212 \u2212 a) b) c) d)"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 17 R13 Identify the graph that corresponds to the function ( ) ( ) 2 . f x x = \u2212 \u2212 a) b) c) d)"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "R13"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r13",
+        "sectionName": "R13",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R13",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q17-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "17",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            6
+          ],
+          "markingGuidePages": [
+            1752
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q17-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q17-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 17 1 mark Identify the graph that corresponds to the function ( ) ( ) 2 . f x x = \u2212 \u2212 a) b) c) d) ",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "D"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q18",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 18 1 mark Solve: 7 log 2 7 x = a) 1 x = b) 2 x = c) 7 x = d) 49 x = \uf067 1 1 y x \uf067 \uf067 1 1 y x \uf067 y x 1 1 \uf067 \uf067 1 1 \uf067 y x \uf067"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 18 R7 Solve: 7 log 2 7 x = a) 1 x = b) 2 x = c) 7 x = d) 49 x = \uf067 1 1 y x \uf067 \uf067 1 1 y x \uf067 y x 1 1 \uf067 \uf067 1 1 \uf067 y x \uf067"
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "1 x ="
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "2 x ="
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "7 x ="
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "49 x = \uf067 1 1 y x \uf067 \uf067 1 1 y x \uf067 y x 1 1 \uf067 \uf067 1 1 \uf067 y x \uf067"
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "R7"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r7",
+        "sectionName": "R7",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R7",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q18-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "18",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            6
+          ],
+          "markingGuidePages": [
+            1752
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q18-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q18-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 18 1 mark Solve: 7 log 2 7 x = a) 1 x = b) 2 x = c) 7 x = d) 49 x = \uf067 1 1 y x \uf067 \uf067 1 1 y x \uf067 y x 1 1 \uf067 \uf067 1 1 \uf067 y x \uf067 2 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "B"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q19",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 19 1 mark Identify the equation that has a general solution of 2 6 where 5 2 6 k k k \u03b8 \u03b8 \u03c0 \uf8fc = + \u03c0 \uf8f4\uf8f4 \u2208 \uf8fd \u03c0 \uf8f4 = + \u03c0 \uf8f4\uf8fe \uf0a2. a) 1 sin 2 \u03b8 = b) 1 cos 2 \u03b8 = c) 3 sin 2 \u03b8 = d) 3 cos 2 \u03b8 ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 19 T5 Identify the equation that has a general solution of 2 6 where . 5 2 6 k k k \u03c0 \uf8fc = + \u03c0 \uf8f4\uf8f4 \u2208 \uf8fd \u03c0 \uf8f4 = + \u03c0 \uf8f4\uf8fe \uf0a2 \u03b8 \u03b8 a) 1 sin 2 = \u03b8 b) 1 cos 2 = \u03b8 c) 3 sin 2 = \u03b8 d) 3 cos 2 = \u03b8"
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "1 sin 2 \u03b8 ="
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "1 cos 2 \u03b8 ="
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "3 sin 2 \u03b8 ="
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "3 cos 2 \u03b8 ="
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "T5"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t5",
+        "sectionName": "T5",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T5",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q19-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "19",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            7
+          ],
+          "markingGuidePages": [
+            1753
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q19-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q19-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 19 1 mark Identify the equation that has a general solution of 2 6 where 5 2 6 k k k \u03b8 \u03b8 \u03c0 \uf8fc = + \u03c0 \uf8f4\uf8f4 \u2208 \uf8fd \u03c0 \uf8f4 = + \u03c0 \uf8f4\uf8fe \uf0a2. a) 1 sin 2 \u03b8 = b) 1 cos 2 \u03b8 = c) 3 sin 2 \u03b8 = d) 3 cos 2 \u03b8 = ",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "A"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q20",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 20 1 mark Identify the function that has a domain of 2 x \u2264\u2212 and a range of 3. y \u2265 a) 2 3 y x = + + b) ( ) 2 3 y x = \u2212 + + c) 2 3 y x = \u2212 \u2212 \u2212 d) ( ) 2 3 y x = \u2212\u2212 \u2212 \u2212"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 20 R13 Identify the function that has a domain of 2 x \u2264\u2212 and a range of 3 y \u2265 . a) 2 3 y x = + + b) ( ) 2 3 y x = \u2212 + + c) 2 3 y x = \u2212 \u2212 \u2212 d) ( ) 2 3 y x = \u2212\u2212 \u2212 \u2212"
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "2 3 y x = + +"
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "( ) 2 3 y x = \u2212 + +"
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "2 3 y x = \u2212 \u2212 \u2212"
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "( ) 2 3 y x = \u2212\u2212 \u2212 \u2212"
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "R13"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r13",
+        "sectionName": "R13",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R13",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q20-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "20",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            7
+          ],
+          "markingGuidePages": [
+            1753
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q20-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q20-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 20 1 mark Identify the function that has a domain of 2 x \u2264\u2212 and a range of 3. y \u2265 a) 2 3 y x = + + b) ( ) 2 3 y x = \u2212 + + c) 2 3 y x = \u2212 \u2212 \u2212 d) ( ) 2 3 y x = \u2212\u2212 \u2212 \u2212 Pre-Calculus Mathematics: Booklet 2 (June 2016) 3",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "B"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q21",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 21 1 mark Given ( ) 3 2 f x x = + , identify ( ) 1 . f x \u2212 a) ( ) 1 3 2 f x x \u2212 = \u2212 \u2212 b) ( ) 1 2 3 f x x \u2212 = + c) ( ) 1 2 3 x f x \u2212 = \u2212 d) ( ) 1 2 3 x f x \u2212 \u2212 ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 21 R6 Given ( ) 3 2 f x x = + , identify ( ) 1 . f x \u2212 a) ( ) 1 3 2 f x x \u2212 = \u2212 \u2212 b) ( ) 1 2 3 f x x \u2212 = + c) ( ) 1 2 3 x f x \u2212 = \u2212 d) ( ) 1 2 3 x f x \u2212 \u2212 ="
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "( ) 1 3 2 f x x \u2212 = \u2212 \u2212"
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "( ) 1 2 3 f x x \u2212 = +"
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "( ) 1 2 3 x f x \u2212 = \u2212"
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "( ) 1 2 3 x f x \u2212 \u2212 ="
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "R6"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r6",
+        "sectionName": "R6",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R6",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q21-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "21",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            8
+          ],
+          "markingGuidePages": [
+            1754
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q21-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q21-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 21 1 mark Given ( ) 3 2 f x x = + , identify ( ) 1 . f x \u2212 a) ( ) 1 3 2 f x x \u2212 = \u2212 \u2212 b) ( ) 1 2 3 f x x \u2212 = + c) ( ) 1 2 3 x f x \u2212 = \u2212 d) ( ) 1 2 3 x f x \u2212 \u2212 = ",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "D"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q22",
+      "kind": "mcq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 22 1 mark Identify a possible value for the angle \u03b8 sketched in standard position. a) 2 b) 3 c) 4 d) 5 y \u03b8 x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 22 T1 Identify a possible value for the angle \u03b8 sketched in standard position. a) 2 b) 3 c) 4 d) 5 y \u03b8 x"
+        },
+        "choices": [
+          {
+            "id": "A",
+            "body": {
+              "format": "plain",
+              "text": "2"
+            }
+          },
+          {
+            "id": "B",
+            "body": {
+              "format": "plain",
+              "text": "3"
+            }
+          },
+          {
+            "id": "C",
+            "body": {
+              "format": "plain",
+              "text": "4"
+            }
+          },
+          {
+            "id": "D",
+            "body": {
+              "format": "plain",
+              "text": "5 y \u03b8 x"
+            }
+          }
+        ]
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "mcq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "mcq",
+          "T1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t1",
+        "sectionName": "T1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T1",
+            "learningOutcomeSource": "answer-key",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q22-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "22",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            8
+          ],
+          "markingGuidePages": [
+            1754
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q22-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q22-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 22 1 mark Identify a possible value for the angle \u03b8 sketched in standard position. a) 2 b) 3 c) 4 d) 5 y \u03b8 x 4 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      },
+      "answer": {
+        "type": "choice",
+        "value": "C"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q23",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 23 3 marks 116 Solve the following equation: ( ) ( ) 3 3 log 3 log 5 2 x x + + \u2212 ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 23 R10 Solve the following equation: ( ) ( ) 3 3 log 3 log 5 2 x x + + \u2212 = Solution ( )( ) ( )( ) ( )( ) 3 2 2 2 log 3 5 2 3 5 3 2 15 9 2 24 0 6 4 0 6 4 x x x x x x x x x x x x \uf8ee + \u2212 \uf8f9= \uf8f0 \uf8fb + \u2212 = \u2212 \u2212 = \u2212 \u2212 = \u2212 + = = = \u2212 1 mark for product law 1 mark for exponential form \u00bd mark for solving for x \u00bd mark for rejecting extraneous root 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R10"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r10",
+        "sectionName": "R10",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R10",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q23-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "23",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            9
+          ],
+          "markingGuidePages": [
+            1756
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q23-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q23-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 23 3 marks 116 Solve the following equation: ( ) ( ) 3 3 log 3 log 5 2 x x + + \u2212 = Pre-Calculus Mathematics: Booklet 2 (June 2016) 5",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q24",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 24 1 mark 117 State a coterminal angle for . 4 9\u03c0 = \u03b8"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 24 T1 State a coterminal angle for . 4 9\u03c0 = \u03b8 Solution 8 4 4 4 405 360 45 9\u03c0 \u03c0 17\u03c0 + = \u2212 = or \uf06f \uf06f \uf06f Note(s): \uf0a7 Other answers are possible. 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t1",
+        "sectionName": "T1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q24-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "24",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            10
+          ],
+          "markingGuidePages": [
+            1760
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q24-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q24-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 24 1 mark 117 State a coterminal angle for . 4 9\u03c0 = \u03b8 6 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q25",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 25 4 marks 118 Sketch the graph of the function ( ) 2 2 2 . 1 x f x x + = \u2212 y x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 25 R14 Sketch the graph of the function ( ) 2 2 2 . 1 x f x x + = \u2212 Solution ( ) 2 1 x f x + = ( ) ( )1 1 x x \u2212 + ( ) ( ) 2 1 there is a point of discontinuity (hole) at 1, 1 vertical asymptote at 1 horizontal asymptote at 0 x x y = \u2212 \u2234 \u2212 \u2212 = = 1 mark for asymptotic behaviour at 1 x = 1 mark for asymptotic behaviour at 0 y = 1 mark for point of discontinuity (hole) at ( ) 1, 1 \u2212 \u2212 (\u00bd mark for 1 x = \u2212, \u00bd mark for 1 y = \u2212) \u00bd mark for graph left of 1 x = \u00bd mark for graph right of 1 x = 4 marks 1 x y 1"
+        }
+      },
+      "scoring": {
+        "points": 4.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R14"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r14",
+        "sectionName": "R14",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R14",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q25-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "25",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            11
+          ],
+          "markingGuidePages": [
+            1762
+          ],
+          "marksText": "4 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q25-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q25-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 25 4 marks 118 Sketch the graph of the function ( ) 2 2 2 . 1 x f x x + = \u2212 y x Pre-Calculus Mathematics: Booklet 2 (June 2016) 7",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q26",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 26 2 marks 119 Justify why the binomial expansion of ( ) 7 3 x x + does not have a term containing 10. x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 26 P4 Justify why the binomial expansion of ( ) 7 3 x x + does not have a term containing 10. x Solution Method 1 ( ) ( ) ( ) ( ) ( ) 1 2 7 6 5 3 3 7 9 11 , , , , , , x x x x x x x x \uf04b \uf04b The exponents increase by 2. Therefore 10 x is not in the pattern. Method 2 ( ) 7 3 10 7 2 10 7 2 10 2 3 3 2 r r r x x x x x r r r \u2212 + = = + = = = The binomial expansion does not contain 10 x because the value of r must be a whole number. 1 mark for determining the pattern 1 mark for justification 2 marks \u00bd mark for substitution \u00bd mark for solving for r 1 mark for justification 2 marks"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "P4"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p4",
+        "sectionName": "P4",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P4",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q26-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "26",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            12
+          ],
+          "markingGuidePages": [
+            1766
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q26-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q26-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 26 2 marks 119 Justify why the binomial expansion of ( ) 7 3 x x + does not have a term containing 10. x 8 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q27",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 27 4 marks 120 Sketch the graph of sin ( 1) 3 2 y x \u03c0 \uf8eb \uf8f6 = \u2212 \u2212 + \uf8ec \uf8f7 \uf8ed \uf8f8 over the domain [ ] 0, 6 . y x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 27 T4 Sketch the graph of ( ) sin 1 3 2 y x \u03c0 \uf8eb \uf8f6 = \u2212 \u2212 + \uf8ec \uf8f7 \uf8ed \uf8f8 over the domain [ ] 0, 6 . Solution 2 period 4 2 \u03c0 = = \u03c0 Note(s): \uf0a7 Deduct \u00bd mark if the domain [ ] 0,6 is not completely sketched. 1 mark for vertical reflection 1 mark for horizontal translation 1 mark for period 1 mark for vertical translation 4 marks \uf067 \uf067 4 3 2 1 4 3 2 1 5 6 7 y x"
+        }
+      },
+      "scoring": {
+        "points": 4.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T4"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t4",
+        "sectionName": "T4",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T4",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q27-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "27",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            13
+          ],
+          "markingGuidePages": [
+            1768
+          ],
+          "marksText": "4 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q27-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q27-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 27 4 marks 120 Sketch the graph of sin ( 1) 3 2 y x \u03c0 \uf8eb \uf8f6 = \u2212 \u2212 + \uf8ec \uf8f7 \uf8ed \uf8f8 over the domain [ ] 0, 6 . y x Pre-Calculus Mathematics: Booklet 2 (June 2016) 9",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q28",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 28 2 marks 121 When ( ) 4 3 3 5 14 P x x kx x = \u2212 + \u2212 is divided by ( ) 2 x + , the remainder is 8 \u2212. Determine the value of k."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 28 R11 When ( ) 4 3 3 5 14 P x x kx x = \u2212 + \u2212 is divided by ( ) 2 x + , the remainder is 8. \u2212 Determine the value of k. Solution Method 1 ( ) ( ) ( ) 4 3 2 8 3 2 2 5 2 14 8 48 8 10 14 8 24 8 32 8 4 x k k k k k = \u2212 \u2212= \u2212 \u2212 \u2212 + \u2212 \u2212 \u2212= + \u2212 \u2212 \u2212= + \u2212 = = \u2212 Method 2 2 3 0 5 14 6 2 12 4 24 8 38 3 6 2 12 4 19 8 24 k k k k k k k k \u2212 \u2212 \u2212 \u2193 \u2212 + \u2212 \u2212 + \u2212 \u2212 + \u2212 \u2212 + 8 8 24 32 8 4 k k k \u2212= + \u2212 = = \u2212 \u00bd mark for 2 x = \u2212 1 mark for remainder theorem \u00bd mark for solving for k 2 marks \u00bd mark for 2 x = \u2212 1 mark for synthetic division (or any other equivalent strategy) \u00bd mark for solving for k 2 marks"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R11"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r11",
+        "sectionName": "R11",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R11",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q28-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "28",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            14
+          ],
+          "markingGuidePages": [
+            1770
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q28-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q28-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 28 2 marks 121 When ( ) 4 3 3 5 14 P x x kx x = \u2212 + \u2212 is divided by ( ) 2 x + , the remainder is 8 \u2212. Determine the value of k. 10 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q29",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 29 a) 3 marks b) 1 mark 122 123 Given that 7 cos where 12 = \u03b1 \u03b1 is in quadrant IV, and 3 sin where 5 = \u03b2 \u03b2 is in quadrant I, determine the exact value of: a) ( ) sin \u03b1 \u03b2 \u2212 b) ( ) csc \u03b1 \u03b2 \u2212"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 29 T6 Given that 7 cos where 12 = \u03b1 \u03b1 is in quadrant IV, and 3 sin where 5 = \u03b2 \u03b2 is in quadrant I, determine the exact value of: a) ( ) sin \u2212 \u03b1 \u03b2 b) ( ) csc \u2212 \u03b1 \u03b2 Solution a) b) Note(s): \uf0a7 accept any of the following values for : 4, or 4 x x x = \u00b1 = \uf0a7 accept any of the following values for : 95, 95, or 95 y y y y = \u00b1 = = \u2212 \u00bd mark for value of x \u00bd mark for value of y \u00bd mark for sin\u03b1 \u00bd mark for cos\u03b2 1 mark for substitution into correct identity 3 marks ( ) 2 2 2 2 2 2 2 2 12 7 5 3 95 16 95 4 sin sin cos cos sin 95 4 7 3 12 5 12 5 4 95 21 60 60 4 95 21 60 y x y x y x \u03b1 \u03b2 \u03b1 \u03b2 \u03b1 \u03b2 \u2212 = \u2212 = = = \u00b1 = \u00b1 = \u2212 = \u2212 \uf8eb \uf8f6 \u2212 \uf8eb \uf8f6 \uf8eb \uf8f6\uf8eb\uf8f6 = \u2212 \uf8ec \uf8f7 \uf8ec \uf8f7\uf8ec\uf8f7 \uf8ec \uf8f7\uf8ed \uf8f8 \uf8ed \uf8f8\uf8ed\uf8f8 \uf8ed \uf8f8 \u2212 = \u2212 \u2212 \u2212 = ( ) 60 csc 4 95 21 \u03b1 \u03b2 \u2212 = \u2212 \u2212 1 mark \u03b2 r \u03b1\u03b1 \u03b2 7 12 y r \u03b1 5 3 x \u03b2"
+        }
+      },
+      "scoring": {
+        "points": 4.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T6"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t6",
+        "sectionName": "T6",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T6",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q29-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "29",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            15
+          ],
+          "markingGuidePages": [
+            1772
+          ],
+          "marksText": "a) 3 marks; b) 1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q29-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q29-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 29 a) 3 marks b) 1 mark 122 123 Given that 7 cos where 12 = \u03b1 \u03b1 is in quadrant IV, and 3 sin where 5 = \u03b2 \u03b2 is in quadrant I, determine the exact value of: a) ( ) sin \u03b1 \u03b2 \u2212 b) ( ) csc \u03b1 \u03b2 \u2212 Pre-Calculus Mathematics: Booklet 2 (June 2016) 11",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q30",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 30 1 mark 124 Describe the difference between the graph of ( ) ( ) 7 2 2 x f x x + = + and the graph of ( ) ( ) 7 2 2 x g x x \u2212 = + at 2. x = \u2212"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 30 R14 Describe the difference between the graph of ( ) ( ) 7 2 2 x f x x + = + and the graph of ( ) ( ) 7 2 2 x g x x \u2212 = + at 2. x = \u2212 Solution The graph of ( ) ( ) 7 2 2 x f x x + = + has a point of discontinuity and the graph of ( ) ( ) 7 2 2 x g x x \u2212 = + has an asymptote. 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R14"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r14",
+        "sectionName": "R14",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R14",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q30-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "30",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            16
+          ],
+          "markingGuidePages": [
+            1776
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q30-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q30-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 30 1 mark 124 Describe the difference between the graph of ( ) ( ) 7 2 2 x f x x + = + and the graph of ( ) ( ) 7 2 2 x g x x \u2212 = + at 2. x = \u2212 12 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q31",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 31 2 marks 125 Sketch the graph of ( ) 3 2. x f x = + y x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 31 R9 Sketch the graph of ( ) 3 2. x f x = + Solution 1 mark for increasing exponential function 1 mark for asymptotic behaviour at 2 y = 2 marks \uf067 \uf067 x y ( ) 1, 5 1 1"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R9"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r9",
+        "sectionName": "R9",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R9",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q31-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "31",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            17
+          ],
+          "markingGuidePages": [
+            1778
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q31-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q31-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 31 2 marks 125 Sketch the graph of ( ) 3 2. x f x = + y x Pre-Calculus Mathematics: Booklet 2 (June 2016) 13",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q32",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 32 3 marks 126 Solve algebraically: 3 2 n C n = \u2212"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 32 P3 Solve algebraically: 3 2 nC n = \u2212 Solution ( ) ( ) ( ) ! 2 3 !3! 1 2 n n n n n n = \u2212 \u2212 \u2212 \u2212 ( ) 3 n \u2212 ( ) ! 3 n \u2212 2 !3! n = \u2212 ( ) ( )( ) 2 1 6 6 0 3 2 0 3 2 n n n n n n n n \u2212 = \u2212 \u2212 = \u2212 + = = = \u2212 \u00bd mark for substitution 1 mark for factorial expansion \u00bd mark for simplification of factorials \u00bd mark for rejecting extraneous root \u00bd mark for the value of n 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "P3"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-p",
+        "unitName": "Permutations, Combinations, and Binomial Theorem",
+        "sectionId": "p3",
+        "sectionName": "P3",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "P3",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q32-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "32",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            18
+          ],
+          "markingGuidePages": [
+            1782
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q32-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q32-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 32 3 marks 126 Solve algebraically: 3 2 n C n = \u2212 14 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q33",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 33 1 mark 127 Describe the error that was made when solving the following equation: 2 sin sin 2 1 \u03b8 \u03b8 + \u2212 = \u2234 No solution \u2234No solution"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 33 T5 Describe the error that was made when solving the following equation: 2 sin sin 2 1 + \u2212 = \u03b8 \u03b8 Solution The student did not apply the zero product principle before factoring. 1 mark \u2234 No solution \u2234No solution"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T5"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t5",
+        "sectionName": "T5",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T5",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q33-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "33",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            19
+          ],
+          "markingGuidePages": [
+            1786
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q33-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q33-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 33 1 mark 127 Describe the error that was made when solving the following equation: 2 sin sin 2 1 \u03b8 \u03b8 + \u2212 = \u2234 No solution \u2234No solution Pre-Calculus Mathematics: Booklet 2 (June 2016) 15",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q34",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 34 3 marks 128 Sketch the graph of the polynomial function with the following characteristics. \u2022 a y-intercept of 9 \u2212 \u2022 zeroes at 1 \u2212 and 3 \u2022 the zero at 1 \u2212 has a multiplicity of 1 and the zero at 3 has a multiplicity of 2 y x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 34 R12 Sketch the graph of the polynomial function with the following characteristics. \u2022 a y-intercept of 9 \u2212 \u2022 zeroes at 1 \u2212 and 3 \u2022 the zero at 1 \u2212 has a multiplicity of 1 and the zero at 3 has a multiplicity of 2 Solution 1 mark for x-intercepts \u00bd mark for y-intercept 1 mark for multiplicity (\u00bd mark for multiplicity at 3 x = , \u00bd mark for multiplicity at 1 x = \u2212) \u00bd mark for shape of a cubic function 3 marks x y 9 \u2212 3 1 \u2212"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R12"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r12",
+        "sectionName": "R12",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R12",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q34-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "34",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            20
+          ],
+          "markingGuidePages": [
+            1788
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q34-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q34-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 34 3 marks 128 Sketch the graph of the polynomial function with the following characteristics. \u2022 a y-intercept of 9 \u2212 \u2022 zeroes at 1 \u2212 and 3 \u2022 the zero at 1 \u2212 has a multiplicity of 1 and the zero at 3 has a multiplicity of 2 y x 16 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q35",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 35 2 marks 129 Given 1 cot , where 3 \u03b8 \u03b8 = \u2212 is in quadrant II, determine the exact value of sin\u03b8."
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 35 T2 Given 1 cot , where 3 \u03b8 \u03b8 = \u2212 is in quadrant II, determine the exact value of sin\u03b8. Solution Note(s): \uf0a7 accept any of the following values for : 10, 10 r r r = \u00b1 = \u00bd mark for substitution \u00bd mark for solving for r 1 mark for sin\u03b8 (\u00bd mark for the quadrant, \u00bd mark for the value) 2 marks ( ) ( ) 2 2 2 2 2 2 2 cot 1 3 10 10 3 sin 10 x y r x y r r r \u03b8 \u03b8 = = + = \u2212 + = = \u00b1 = y 3 r \u03b8 1 r x"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T2"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t2",
+        "sectionName": "T2",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T2",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q35-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "35",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            21
+          ],
+          "markingGuidePages": [
+            1792
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q35-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q35-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 35 2 marks 129 Given 1 cot , where 3 \u03b8 \u03b8 = \u2212 is in quadrant II, determine the exact value of sin\u03b8. Pre-Calculus Mathematics: Booklet 2 (June 2016) 17",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q36",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 36 2 marks 130 Given the function ( ) f x , sketch the graph of the reciprocal, ( ) 1 . f x The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . y x 1 ( ) f x 1 y x 1 1 ( ) 1 f x"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 36 R1 Given the function ( ) f x , sketch the graph of the reciprocal, ( ) 1 . f x Solution 1 mark for asymptotic behaviour at 1 x = \u00bd mark for graph left of vertical asymptote at 1 x = \u00bd mark for graph right of vertical asymptote at 1 x = 2 marks y x 1 ( ) f x 1 y x \uf067 \uf067 1 1 \uf067 ( ) 1 f x"
+        }
+      },
+      "scoring": {
+        "points": 2.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R1"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r1",
+        "sectionName": "R1",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R1",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q36-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "36",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            22
+          ],
+          "markingGuidePages": [
+            1794
+          ],
+          "marksText": "2 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q36-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q36-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 36 2 marks 130 Given the function ( ) f x , sketch the graph of the reciprocal, ( ) 1 . f x The graph of ( ) f x has already been drawn for your reference. No marks will be awarded for the graph of ( ) f x . y x 1 ( ) f x 1 y x 1 1 ( ) 1 f x 18 Pre-Calculus Mathematics: Booklet 2 (June 2016",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q37",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 37 3 marks 131 The volume of a planter, in the shape of a rectangular prism, can be modelled by the polynomial function ( ) 3 2 3 34 48 V x x x x = + \u2212 + . Determine the factors of the function, ( ) V x , which represent possible dimensions of this planter. ( ) V x ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 37 R12 The volume of a planter, in the shape of a rectangular prism, can be modelled by the polynomial function ( ) 3 2 3 34 48 V x x x x = + \u2212 + . Determine the factors of the function, ( ) V x , which represent possible dimensions of this planter. Solution ( ) ( ) ( ) ( )( ) ( ) ( )( )( ) 2 3 2 2 3 2 34 2 48 0 2 is a factor 2 1 3 34 48 2 10 48 1 5 24 0 2 5 24 2 8 3 x V x x x x V x x x x + \u2212 + = \u2234 \u2212 \u2212 \u2193 \u2212 \u2212 = \u2212 + \u2212 = \u2212 + \u2212 1 mark for identifying one possible value of x 1 mark for synthetic division (or any other equivalent strategy) 1 mark for identifying all factors 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R12"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r12",
+        "sectionName": "R12",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R12",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q37-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "37",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            23
+          ],
+          "markingGuidePages": [
+            1796
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q37-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q37-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 37 3 marks 131 The volume of a planter, in the shape of a rectangular prism, can be modelled by the polynomial function ( ) 3 2 3 34 48 V x x x x = + \u2212 + . Determine the factors of the function, ( ) V x , which represent possible dimensions of this planter. ( ) V x = Pre-Calculus Mathematic",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q38",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 38 1 mark 132 Describe how to determine the range of the inverse of the following graph. 1 y x 1"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 38 R6 Describe how to determine the range of the inverse of the following graph. Solution The domain of the graph becomes the range of the inverse. y x 1 1 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R6"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r6",
+        "sectionName": "R6",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R6",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q38-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "38",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            24
+          ],
+          "markingGuidePages": [
+            1798
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q38-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q38-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 38 1 mark 132 Describe how to determine the range of the inverse of the following graph. 1 y x 1 20 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q39",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 39 3 marks 133 Sketch the graph of the function 2 1. y x = + x y 1"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 39 R13 Sketch the graph of the function 2 1. y x = + Solution 1 mark for shape of a radical function 1 mark for vertical translation 1 mark for horizontal compression 3 marks x 1 y \uf067 \uf067 ( ) 2, 3 ( ) 0, 1"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R13"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r13",
+        "sectionName": "R13",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R13",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q39-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "39",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            25
+          ],
+          "markingGuidePages": [
+            1800
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q39-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q39-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 39 3 marks 133 Sketch the graph of the function 2 1. y x = + x y 1 1 Pre-Calculus Mathematics: Booklet 2 (June 2016) 21",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q40",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 40 a) 2 marks b) 1 mark 134 135 Given the following characteristics of a sinusoidal function: \u2022 an amplitude of 2 \u2022 a vertical translation down 3 units \u2022 a period of 4 \u03c0 a) Determine an equation of this sinusoidal function in the form ( ) sin . y a b x c d = \u2212 + b) Determine the range of this function. Range:"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 40 T4 Given the following characteristics of a sinusoidal function: \u2022 an amplitude of 2 \u2022 a vertical translation down 3 units \u2022 a period of 4 \u03c0 a) Determine an equation of this sinusoidal function in the form ( ) sin . y a b x c d = \u2212 + b) Determine the range of this function. Solution a) b) Note(s): \uf0a7 Other answers are possible for a). ( ) 2 4 8 2sin 8 3 b b y x \u03c0 = \u03c0 = = \u2212 { } [ ] Range: | , 5 1 Range: 5, 1 y y y \u2208 \u2212\u2264 \u2264\u2212 \u2212 \u2212 or \uf0a1 1 mark for the value of b \u00bd mark for amplitude \u00bd mark for vertical translation 2 marks 1 mark"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "T4"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-t",
+        "unitName": "Trigonometry",
+        "sectionId": "t4",
+        "sectionName": "T4",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "T4",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q40-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "40",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            26
+          ],
+          "markingGuidePages": [
+            1802
+          ],
+          "marksText": "a) 2 marks; b) 1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q40-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q40-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 40 a) 2 marks b) 1 mark 134 135 Given the following characteristics of a sinusoidal function: \u2022 an amplitude of 2 \u2022 a vertical translation down 3 units \u2022 a period of 4 \u03c0 a) Determine an equation of this sinusoidal function in the form ( ) sin . y a b x c d = \u2212 + b) Determine the range of th",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q41",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 41 1 mark 136 Suah was given the graph of ( ) f x and asked to graph ( ). y f x = Her solution is given on the graph below. Describe the error Suah made when sketching the graph of ( ). y f x = f (x)"
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 41 R13 Suah was given the graph of ( ) f x and asked to graph ( ). y f x = Her solution is given on the graph below. Describe the error Suah made when sketching the graph of ( ). y f x = Solution Suah\u2019s graph did not cross the invariant point at 1 y = . 1 mark f (x)"
+        }
+      },
+      "scoring": {
+        "points": 1.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R13"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r13",
+        "sectionName": "R13",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R13",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q41-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "41",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            27
+          ],
+          "markingGuidePages": [
+            1806
+          ],
+          "marksText": "1 mark"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q41-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q41-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 41 1 mark 136 Suah was given the graph of ( ) f x and asked to graph ( ). y f x = Her solution is given on the graph below. Describe the error Suah made when sketching the graph of ( ). y f x = f (x) Pre-Calculus Mathematics: Booklet 2 (June 2016) 23",
+          "catalogDiagnostics": []
+        }
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q42",
+      "kind": "frq",
+      "content": {
+        "stem": {
+          "format": "plain",
+          "text": "Question 42 3 marks 137 Solve: 2 1 9 27 x x + ="
+        },
+        "solution": {
+          "format": "plain",
+          "text": "Question 42 R10 Solve: 2 1 9 27 x x + = Solution ( ) 2 1 2 3 4 2 3 3 3 3 3 4 2 3 2 x x x x x x x + + = = + = = \u2212 1 mark for changing to a common base 1 mark for exponent law (\u00bd mark for each side) \u00bd mark for equating exponents \u00bd mark for solving for x 3 marks"
+        }
+      },
+      "scoring": {
+        "points": 3.0
+      },
+      "classification": {
+        "questionType": "frq",
+        "tags": [
+          "Manitoba",
+          "Pre-Calculus 40S",
+          "2016",
+          "June",
+          "June 2016",
+          "Booklet 2",
+          "no-calculator",
+          "frq",
+          "R10"
+        ],
+        "classId": "manitoba-pre-calculus-40s",
+        "className": "Manitoba Pre-Calculus 40S",
+        "unitId": "outcome-r",
+        "unitName": "Relations and Functions",
+        "sectionId": "r10",
+        "sectionName": "R10",
+        "extensions": {
+          "manitobaPrecalc": {
+            "learningOutcome": "R10",
+            "learningOutcomeSource": "marking-guide-heading",
+            "booklet": 2,
+            "calculatorPolicy": "no-calculator"
+          }
+        }
+      },
+      "assets": [
+        "mb-pc40s-2016-jun-q42-question-p1"
+      ],
+      "provenance": {
+        "sourceApp": "ocr-frq",
+        "sourceLabel": "Manitoba Pre-Calculus 40S June 2016",
+        "sourceQuestionNumber": "42",
+        "confidence": "medium",
+        "originFiles": [
+          "exams-mg-2013-2026.pdf",
+          "pc_16_jun_sb2.pdf"
+        ],
+        "extensions": {
+          "studentPages": [
+            28
+          ],
+          "markingGuidePages": [
+            1808
+          ],
+          "marksText": "3 marks"
+        }
+      },
+      "extensions": {
+        "manitobaPrecalc": {
+          "sourceAssets": {
+            "questionCrops": [
+              "mb-pc40s-2016-jun-q42-question-p1"
+            ],
+            "solutionCrops": [
+              "mb-pc40s-2016-jun-q42-solution-p1"
+            ]
+          },
+          "sourcePdfTextPreview": "Question 42 3 marks 137 Solve: 2 1 9 27 x x + = 24 Pre-Calculus Mathematics: Booklet 2 (June 2016)",
+          "catalogDiagnostics": []
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "mb-pc40s-2016-jun-q01-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q01-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q01-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=9"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q01-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q01-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q01-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1710"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q02-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q02-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q02-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=10"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q02-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q02-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q02-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1712"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q03-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q03-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q03-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=11"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q03-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q03-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q03-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1716"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q04-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q04-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q04-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=12"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q04-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q04-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q04-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1720"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q05-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q05-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q05-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=13"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q05-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q05-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q05-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1724"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q06-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q06-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q06-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=14"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q06-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q06-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q06-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1726"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q07-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q07-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q07-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=15"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q07-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q07-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q07-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1728"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q08-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q08-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q08-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=16"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q08-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q08-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q08-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1730"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q09-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q09-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q09-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=17"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q09-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q09-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q09-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1732"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q10-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q10-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q10-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=18"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q10-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q10-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q10-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1736"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q11-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q11-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q11-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=19"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q11-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q11-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q11-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1738"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q12-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q12-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q12-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=20"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q12-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q12-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q12-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1740"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q13-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q13-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q13-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=21"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q13-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q13-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q13-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1742"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q14-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q14-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q14-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb1.pdf#page=22"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q14-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q14-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q14-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1746"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q15-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q15-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q15-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=5"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q15-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q15-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q15-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1751"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q16-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q16-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q16-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=5"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q16-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q16-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q16-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1751"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q17-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q17-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q17-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=6"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q17-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q17-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q17-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1752"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q18-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q18-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q18-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=6"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q18-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q18-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q18-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1752"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q19-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q19-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q19-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=7"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q19-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q19-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q19-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1753"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q20-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q20-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q20-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=7"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q20-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q20-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q20-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1753"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q21-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q21-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q21-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=8"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q21-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q21-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q21-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1754"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q22-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q22-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q22-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=8"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q22-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q22-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q22-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1754"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q23-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q23-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q23-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=9"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q23-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q23-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q23-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1756"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q24-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q24-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q24-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=10"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q24-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q24-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q24-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1760"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q25-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q25-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q25-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=11"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q25-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q25-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q25-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1762"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q26-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q26-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q26-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=12"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q26-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q26-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q26-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1766"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q27-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q27-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q27-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=13"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q27-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q27-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q27-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1768"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q28-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q28-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q28-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=14"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q28-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q28-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q28-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1770"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q29-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q29-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q29-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=15"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q29-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q29-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q29-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1772"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q30-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q30-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q30-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=16"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q30-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q30-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q30-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1776"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q31-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q31-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q31-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=17"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q31-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q31-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q31-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1778"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q32-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q32-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q32-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=18"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q32-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q32-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q32-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1782"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q33-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q33-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q33-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=19"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q33-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q33-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q33-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1786"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q34-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q34-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q34-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=20"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q34-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q34-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q34-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1788"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q35-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q35-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q35-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=21"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q35-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q35-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q35-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1792"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q36-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q36-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q36-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=22"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q36-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q36-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q36-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1794"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q37-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q37-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q37-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=23"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q37-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q37-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q37-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1796"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q38-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q38-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q38-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=24"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q38-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q38-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q38-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1798"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q39-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q39-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q39-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=25"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q39-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q39-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q39-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1800"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q40-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q40-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q40-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=26"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q40-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q40-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q40-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1802"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q41-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q41-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q41-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=27"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q41-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q41-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q41-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1806"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q42-question-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q42-question-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q42-question-p1.png"
+      },
+      "source": {
+        "originalPath": "pc_16_jun_sb2.pdf#page=28"
+      },
+      "extensions": {
+        "role": "question-crop"
+      }
+    },
+    {
+      "id": "mb-pc40s-2016-jun-q42-solution-p1",
+      "kind": "image",
+      "filename": "mb-pc40s-2016-jun-q42-solution-p1.png",
+      "mimeType": "image/png",
+      "storage": {
+        "mode": "external",
+        "path": "assets/mb-pc40s-2016-jun-q42-solution-p1.png"
+      },
+      "source": {
+        "originalPath": "exams-mg-2013-2026.pdf#page=1808"
+      },
+      "extensions": {
+        "role": "solution-crop"
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "level": "warning",
+      "code": "MCQ_CHOICES_NOT_PARSED",
+      "message": "MCQ choices are preserved in the question crop, but text choices were not parsed cleanly.",
+      "questionId": "mb-pc40s-2016-jun-q17"
+    }
+  ],
+  "extensions": {
+    "manitobaPrecalc": {
+      "catalog": "/home/max/testgen-suite/ocr-frq/mb-exams/catalog/question_catalog.json",
+      "notes": [
+        "Question and solution text were extracted from PDFs.",
+        "Question crops are attached as question assets.",
+        "Solution crops are preserved in question extensions but not attached as visible question assets."
+      ]
+    }
+  }
+}

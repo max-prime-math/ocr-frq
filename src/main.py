@@ -5,7 +5,7 @@ Usage:
   python -m src.main [--years 1998,1999,...] [--output-dir OUTPUT_DIR] [--force]
   python -m src.main --year 2018
 
-Processes BC and BC Form B exams from the mathpix/ directory.
+Processes BC and BC Form B exams from data/ap-calculus-bc/mathpix-zips/.
 Produces a single combined exam-class LaTeX/PDF in output_dir.
 """
 
@@ -22,9 +22,10 @@ from .latex_writer import build_combined_document, write_tex
 from .mathpix import parse_exam_zip, parse_sg_zip
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-MATHPIX_DIR = REPO_ROOT / "mathpix"
-DEFAULT_OUTPUT_DIR = REPO_ROOT / "output_latex"
-CORRECTIONS_FILE = REPO_ROOT / "corrections" / "corrections.json"
+AP_DATA_DIR = REPO_ROOT / "data" / "ap-calculus-bc"
+MATHPIX_DIR = AP_DATA_DIR / "mathpix-zips"
+DEFAULT_OUTPUT_DIR = REPO_ROOT / "outputs" / "ap-calculus-bc" / "latex"
+CORRECTIONS_FILE = AP_DATA_DIR / "corrections" / "corrections.json"
 
 
 def _load_corrections() -> dict[tuple[int, str, int], list[dict]]:
