@@ -1,5 +1,20 @@
 # Manitoba Pre-Calculus 40S PQP Recovery Plan
 
+## January 2014 pilot completed
+
+The corrected 43-page marking guide has been submitted and fetched. All 43
+question-header mappings agree with the original PDF. The two existing student
+booklet caches also match their expected page headers and were reused.
+
+See `derived/pilot-2014-jan/README.md` for the separate 44-question staging PQP,
+portable ZIP, review PDF, and outstanding visual review. It contains 29 editable
+Mathpix solutions, 5 original-guide image fallbacks, and 10 MCQ answer-key
+solutions. All 44 complete questions render in Typst and parse in TestGen.
+The original bulk export has not been replaced by this pilot.
+
+For the next sitting, verify the ordered page mapping before paying for OCR;
+a changed binary hash alone does not prove the old OCR content is unusable.
+
 ## Goal
 
 Produce a working, traceable PQP record for every English Manitoba
@@ -89,7 +104,7 @@ python3 tools/manitoba-precalc-40s/pqp/mathpix_submit_manitoba.py \
 python3 tools/manitoba-precalc-40s/pqp/mathpix_submit_manitoba.py \
   --id pc_2014_jan_mg --input-set filtered --force
 python3 tools/manitoba-precalc-40s/pqp/mathpix_fetch_manitoba.py \
-  --id pc_2014_jan_mg --poll
+  --id pc_2014_jan_mg --poll --overwrite
 python3 tools/manitoba-precalc-40s/pqp/export_manitoba_pqp_mathpix.py \
   --year 2014 --term jan
 python3 tools/manitoba-precalc-40s/pqp/audit_manitoba_pqp_mathpix_content.py
