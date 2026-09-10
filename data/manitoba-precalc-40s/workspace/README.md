@@ -4,6 +4,9 @@ This directory keeps original PDFs, derived audit artifacts, Mathpix output, and
 
 Repo-relative path: `data/manitoba-precalc-40s/workspace/`.
 
+See `SOURCE_AUDIT.md` for the verified official inventory and `PLAN.md` for the
+question-first recovery plan.
+
 ## Layout
 
 - `source-pdfs/student-booklets/`: original student booklets, one PDF per booklet.
@@ -31,6 +34,7 @@ For a one-machine setup, putting those two lines in `~/.zshrc` is fine. Do not c
 From the repository root:
 
 ```sh
+python3 tools/manitoba-precalc-40s/pqp/audit_manitoba_source_inventory.py --strict
 python3 tools/manitoba-precalc-40s/pqp/mathpix_status_manitoba.py
 python3 tools/manitoba-precalc-40s/pqp/mathpix_prepare_manitoba_inputs.py
 python3 tools/manitoba-precalc-40s/pqp/mathpix_submit_manitoba.py --dry-run
@@ -39,6 +43,16 @@ python3 tools/manitoba-precalc-40s/pqp/mathpix_fetch_manitoba.py --poll
 python3 tools/manitoba-precalc-40s/pqp/export_manitoba_pqp_mathpix.py
 python3 tools/manitoba-precalc-40s/pqp/audit_manitoba_pqp_mathpix_content.py
 ```
+
+The inventory currently covers all 21 published English sittings under the
+current curriculum: January/June 2013–2019, January 2020, and January/June
+2024–2026. Tests were suspended after January 2020 through June 2023.
+
+All 63 documents already have cached Mathpix output. Do not resubmit everything
+by default. First run the status and preflight commands, then resubmit only an
+input whose page selection changed or whose cached OCR failed review. Question
+booklets and marking guides are separate inputs so they can be repaired without
+paying to OCR the other source again.
 
 Useful narrower commands:
 
@@ -53,3 +67,5 @@ The submit script writes `mathpix/api-cache/mathpix_manifest.json`. The fetch sc
 Run `mathpix_prepare_manitoba_inputs.py` before submitting. It writes lower-cost page-filtered PDFs under `mathpix/api-inputs/page-filtered/`. The submit script uses those filtered PDFs automatically when present; pass `--input-set original` only if you intentionally want to upload the full original PDFs.
 
 The current final exporter is `tools/manitoba-precalc-40s/pqp/export_manitoba_pqp_mathpix.py`. It uses local Mathpix `lines.json`/`mmd` data and converts LaTeX math to Typst with `mitex` when available.
+
+See `PLAN.md` for the question-first recovery and quality workflow.

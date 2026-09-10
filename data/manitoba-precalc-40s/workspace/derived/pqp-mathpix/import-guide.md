@@ -31,11 +31,19 @@ Do not import from `data/manitoba-precalc-40s/workspace/derived/pqp-pdf-crop-v0/
 
 ## Remaining Manual Review
 
-None from the automated audit.
+The package set has passed structural validation, but it has not passed a full
+editorial or visual review. In particular, 669 written-response solutions use
+raw source-PDF text after the corresponding marking-guide Mathpix segment was
+rejected. This fallback often loses equation layout and must be repaired or
+reviewed before the full set is considered classroom-ready.
 
 The previous unmatched set consisted of 186 MCQs plus `mb-pc40s-2013-jan-q32`.
 The MCQs now have concise answer-key solutions, and `mb-pc40s-2013-jan-q32` now uses the marking-guide solution graph image after the `Solution` marker.
 
 ## Recommendation
 
-Ready to upload into test-generator: yes.
+Ready for a private TestGen staging import: yes.
+
+Ready for general classroom publication: no. Prioritize question/choice/image
+review, then repair marking-guide extraction and solutions as described in the
+workspace `PLAN.md`.

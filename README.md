@@ -75,7 +75,7 @@ Important files:
 
 The active Manitoba workspace is `data/manitoba-precalc-40s/workspace/`.
 
-Primary import-ready output:
+Generated PQP candidates (structurally importable, not yet editorially approved):
 
 ```text
 data/manitoba-precalc-40s/workspace/derived/pqp-mathpix/pqp/
@@ -90,12 +90,17 @@ Core commands:
 
 ```bash
 python3 tools/manitoba-precalc-40s/pqp/mathpix_status_manitoba.py
+python3 tools/manitoba-precalc-40s/pqp/audit_manitoba_source_inventory.py --strict
 python3 tools/manitoba-precalc-40s/pqp/mathpix_prepare_manitoba_inputs.py
 python3 tools/manitoba-precalc-40s/pqp/mathpix_submit_manitoba.py --dry-run
 python3 tools/manitoba-precalc-40s/pqp/mathpix_fetch_manitoba.py --poll
 python3 tools/manitoba-precalc-40s/pqp/export_manitoba_pqp_mathpix.py
 python3 tools/manitoba-precalc-40s/pqp/audit_manitoba_pqp_mathpix_content.py
 ```
+
+Do not equate a successful schema/import audit with question quality. In the
+current generated set, 669 solutions use raw PDF text fallback and require
+repair or visual review. See `data/manitoba-precalc-40s/workspace/PLAN.md`.
 
 The older image-crop PQP output remains archived under:
 

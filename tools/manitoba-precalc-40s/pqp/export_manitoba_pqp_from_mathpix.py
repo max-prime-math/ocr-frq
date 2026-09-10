@@ -10,7 +10,15 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
-from manitoba_mathpix_common import CACHE_DIR, MB_DIR, downloaded_outputs, load_manifest, source_documents
+from manitoba_mathpix_common import (
+    CACHE_DIR,
+    MB_DIR,
+    downloaded_outputs,
+    filtered_input_path,
+    load_manifest,
+    sha256_file,
+    source_documents,
+)
 
 
 CATALOG_JSON = MB_DIR / "catalog" / "question_catalog.json"
@@ -44,6 +52,32 @@ def missing_output_ids(doc_ids: set[str]) -> dict[str, list[str]]:
     return missing
 
 
+def changed_upload_inputs(manifest: dict[str, Any], documents) -> list[dict[str, str]]:
+    """Find source/upload files that no longer match the completed Mathpix job."""
+    changed: list[dict[str, str]] = []
+    entries = manifest.get("documents", {})
+    for doc in documents:
+        entry = entries.get(doc.id)
+        if not entry:
+            continue
+        upload_path = doc.path if entry.get("uploadInputSet") == "original" else filtered_input_path(doc)
+        if not upload_path.exists():
+            changed.append({"id": doc.id, "reason": "current-upload-input-missing"})
+            continue
+        recorded_sha = str(entry.get("uploadSha256") or "")
+        current_sha = sha256_file(upload_path)
+        if recorded_sha and recorded_sha != current_sha:
+            changed.append(
+                {
+                    "id": doc.id,
+                    "reason": "current-upload-input-differs-from-completed-job",
+                    "recordedSha256": recorded_sha,
+                    "currentSha256": current_sha,
+                }
+            )
+    return changed
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--strict", action="store_true", help="Exit nonzero when required Mathpix outputs are missing.")
@@ -51,12 +85,14 @@ def main() -> None:
 
     catalog = load_catalog()
     manifest = load_manifest()
-    source_ids = {doc.id for doc in source_documents()}
+    documents = source_documents()
+    source_ids = {doc.id for doc in documents}
     catalog_student_ids = {doc_id_for_catalog_row(row) for row in catalog}
     catalog_mg_ids = {mg_id_for_catalog_row(row) for row in catalog}
     missing_sources = sorted((catalog_student_ids | catalog_mg_ids) - source_ids)
     missing_manifest = sorted((catalog_student_ids | catalog_mg_ids) - set(manifest.get("documents", {})))
     missing_outputs = missing_output_ids(catalog_student_ids | catalog_mg_ids)
+    changed_inputs = changed_upload_inputs(manifest, documents)
 
     report = {
         "catalog": str(CATALOG_JSON),
@@ -67,12 +103,15 @@ def main() -> None:
         "missingSources": missing_sources,
         "missingManifestEntries": missing_manifest,
         "missingOutputs": missing_outputs,
+        "changedUploadInputs": changed_inputs,
         "mitex": shutil.which("mitex") or "/home/max/.cargo/bin/mitex",
-        "readyForExporter": not missing_sources and not missing_manifest and not missing_outputs,
+        "readyForExporter": not missing_sources
+        and not missing_manifest
+        and not missing_outputs
+        and not changed_inputs,
         "note": (
-            "This is a preflight scaffold. After the Mathpix cache is populated, "
-            "the PQP exporter should segment lines.json/mmd by catalog pages and "
-            "convert LaTeX math to Typst with mitex."
+            "A changed upload input means the cached Mathpix result was produced from a different "
+            "PDF than the one the exporter would use now. Review or resubmit it before export."
         ),
     }
 

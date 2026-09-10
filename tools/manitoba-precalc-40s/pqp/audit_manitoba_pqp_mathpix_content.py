@@ -266,6 +266,7 @@ def main() -> None:
     question_count = 0
     diagnostics_count: Counter[str] = Counter()
     info_count: Counter[str] = Counter()
+    fallback_by_package: Counter[str] = Counter()
     stem_groups: dict[tuple[str, str], list[str]] = defaultdict(list)
 
     for path in package_paths:
@@ -284,6 +285,7 @@ def main() -> None:
             solution_ext = solution.get("extensions") if isinstance(solution.get("extensions"), dict) else {}
             if isinstance(solution_ext, dict) and solution_ext.get("source") == "source-pdf-text":
                 info_count["solution_source_pdf_fallback"] += 1
+                fallback_by_package[package_id] += 1
             records.extend(question_records(package_id, path.parent, package_assets, question))
             stem = content.get("stem", {}).get("text", "") if isinstance(content.get("stem"), dict) else ""
             stem_norm = normalize_text(stem)
@@ -305,11 +307,15 @@ def main() -> None:
             )
 
     summary = Counter(record["issue"] for record in records)
+    if fallback_by_package:
+        summary["solution_source_pdf_text_requires_review"] = sum(fallback_by_package.values())
     by_issue_package: dict[str, dict[str, int]] = defaultdict(dict)
     for record in records:
         issue = record["issue"]
         package = record["package"]
         by_issue_package[issue][package] = by_issue_package[issue].get(package, 0) + 1
+    if fallback_by_package:
+        by_issue_package["solution_source_pdf_text_requires_review"] = dict(fallback_by_package)
 
     report = {
         "root": PQP_DIR.relative_to(MB_DIR.parent).as_posix(),
