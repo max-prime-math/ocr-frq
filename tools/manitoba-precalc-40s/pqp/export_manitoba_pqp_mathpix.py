@@ -1463,10 +1463,14 @@ def export_session(year: int, term: str) -> Path:
         },
     }
 
-    schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-    errors = sorted(Draft202012Validator(schema).iter_errors(package), key=lambda error: error.path)
-    if errors:
-        raise RuntimeError("\n".join(error.message for error in errors[:20]))
+    # The shared schema is optional in the standalone ingest checkout.  The
+    # TestGen importer remains the authoritative structural validator when the
+    # schema is not present alongside this tool.
+    if SCHEMA_PATH.exists():
+        schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+        errors = sorted(Draft202012Validator(schema).iter_errors(package), key=lambda error: error.path)
+        if errors:
+            raise RuntimeError("\n".join(error.message for error in errors[:20]))
 
     referenced_filenames = {asset["filename"] for asset in assets.values()}
     for path in assets_dir.glob("*"):
