@@ -364,7 +364,7 @@ def split_image_choice_items(
                 "id": choice_id,
                 "body": {
                     "format": "typst",
-                    "text": clean_typst_artifacts(latex_to_typst(latex_choice)),
+                    "text": latex_to_typst(latex_choice),
                     "extensions": {"latexSource": latex_choice},
                 },
             }
@@ -432,7 +432,7 @@ def split_choice_items(
                 "id": choice_id,
                 "body": {
                     "format": "typst",
-                    "text": clean_typst_artifacts(latex_to_typst(latex_choice)),
+                    "text": latex_to_typst(latex_choice),
                     "extensions": {"latexSource": latex_choice},
                 },
             }
@@ -1101,27 +1101,8 @@ def normalize_typst_paragraphs(text: str) -> str:
 def latex_to_typst(text: str) -> str:
     if not text.strip():
         return ""
-    if not MITEX.exists():
-        return text
-    with tempfile.TemporaryDirectory(prefix="manitoba-mitex-") as tmpdir:
-        tmp = Path(tmpdir)
-        source = tmp / "input.tex"
-        output = tmp / "output.typ"
-        source.write_text(latex_document(text), encoding="utf-8")
-        for image_path in re.findall(r"\\includegraphics(?:\[[^\]]*\])?\{([^}]+)\}", text):
-            image_file = tmp / image_path
-            image_file.parent.mkdir(parents=True, exist_ok=True)
-            image_file.write_bytes(b"x")
-        result = subprocess.run(
-            [str(MITEX), "compile", "-i", str(source), "-o", str(output)],
-            check=False,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        if result.returncode != 0 or not output.exists():
-            return latex_to_typst_fallback(text)
-        return clean_typst_output(output.read_text(encoding="utf-8"))
+    from manitoba_typst_conversion import convert_many
+    return convert_many([text])[0]
 
 
 def doc_page_map(doc_id: str) -> dict[int, dict[str, Any]]:
@@ -1383,8 +1364,8 @@ def export_session(year: int, term: str) -> Path:
                 "source": {"originalPath": filename},
             }
 
-        typst_stem = clean_typst_artifacts(latex_to_typst(latex_stem))
-        typst_solution = clean_typst_artifacts(latex_to_typst(latex_solution))
+        typst_stem = latex_to_typst(latex_stem)
+        typst_solution = latex_to_typst(latex_solution)
 
         content: dict[str, Any] = {
             "stem": {
@@ -1462,6 +1443,9 @@ def export_session(year: int, term: str) -> Path:
             ],
         },
     }
+
+    from manitoba_typst_conversion import apply_reviewed_overrides
+    apply_reviewed_overrides(package)
 
     # The shared schema is optional in the standalone ingest checkout.  The
     # TestGen importer remains the authoritative structural validator when the

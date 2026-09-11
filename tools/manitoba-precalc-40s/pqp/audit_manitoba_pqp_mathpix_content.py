@@ -111,7 +111,7 @@ def looks_like_appendix_outcome_table(text: str) -> bool:
 
 
 def snippet(text: str, limit: int = 220) -> str:
-    return re.sub(r"\s+", " ", text).strip()[:limit]
+    return re.sub(r"\s+", " ", text).strip()[:limit].rstrip()
 
 
 def content_fields(question: dict[str, Any], *, include_extensions: bool = False) -> list[tuple[str, str]]:

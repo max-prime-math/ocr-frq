@@ -3,7 +3,7 @@
   "version": "1.0",
   "producer": {
     "app": "ocr-frq",
-    "appVersion": "manitoba-mathpix-pqp-1",
+    "appVersion": "manitoba-mathpix-pqp-typst-2",
     "exportedAt": "2026-09-11T00:53:23.509834Z"
   },
   "source": {
@@ -167,17 +167,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "A section of a car windshield is cleaned by a wiper as shown in the diagram below. The arm of the\n\nwiper is 22 inches, and it rotates through a central angle of \\(132^{\\circ}\\). Determine the length of the arc that is\n\ncreated by the tip of the wiper.\n\n\\includegraphics[width=0.361\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-01_560_768_586_678.jpg}",
+          "text": "A section of a car windshield is cleaned by a wiper as shown in the diagram below. The arm of the\n\nwiper is 22 inches\\, and it rotates through a central angle of $132 ^(degree )$. Determine the length of the arc that is\n\ncreated by the tip of the wiper.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-01_560_768_586_678.jpg\", width: 36.1%)",
           "extensions": {
-            "latexSource": "A section of a car windshield is cleaned by a wiper as shown in the diagram below. The arm of the\n\nwiper is 22 inches, and it rotates through a central angle of \\(132^{\\circ}\\). Determine the length of the arc that is\n\ncreated by the tip of the wiper.\n\n\\includegraphics[width=0.361\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-01_560_768_586_678.jpg}"
+            "latexSource": "A section of a car windshield is cleaned by a wiper as shown in the diagram below. The arm of the\n\nwiper is 22 inches, and it rotates through a central angle of \\(132^{\\circ}\\). Determine the length of the arc that is\n\ncreated by the tip of the wiper.\n\n\\includegraphics[width=0.361\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-01_560_768_586_678.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\theta  =132 \\times \\frac{\\pi}{180} \\\\  =\\frac{132 \\pi}{180} \\text { or } \\frac{11 \\pi}{15} \\end{aligned} \\]\n\n\\[ 1 \\text { mark for conversion } \\]\n\n\\[ \\begin{aligned}  s=\\theta r \\\\  s=\\frac{11 \\pi}{15}(22) \\\\  s=\\frac{242 \\pi}{15} \\text { inches } \\end{aligned} \\]\n\n\\[ 1 \\text { mark for substitution } \\]\n\n\\[ 2 \\text { marks } \\]\n\n\\[ \\begin{gathered} \\mathbf{0 r} \\\\ s=50.684 \\text { inches } \\end{gathered} \\]",
+          "text": "$   theta  & = 132  times  frac(pi ,180 ) \\  & = frac(132  pi ,180 ) \" or \" frac(11  pi ,15 )   $\n\n$  1  \" mark for conversion \"  $\n\n$   & s = theta  r  \\  & s = frac(11  pi ,15 )\\(22 \\) \\  & s = frac(242  pi ,15 ) \" inches \"   $\n\n$  1  \" mark for substitution \"  $\n\n$  2  \" marks \"  $\n\n$   bold(0  r ) \\  s = 50.684  \" inches \"   $",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\theta & =132 \\times \\frac{\\pi}{180} \\\\ & =\\frac{132 \\pi}{180} \\text { or } \\frac{11 \\pi}{15} \\end{aligned} \\]\n\n\\[ 1 \\text { mark for conversion } \\]\n\n\\[ \\begin{aligned} & s=\\theta r \\\\ & s=\\frac{11 \\pi}{15}(22) \\\\ & s=\\frac{242 \\pi}{15} \\text { inches } \\end{aligned} \\]\n\n\\[ 1 \\text { mark for substitution } \\]\n\n\\[ 2 \\text { marks } \\]\n\n\\[ \\begin{gathered} \\mathbf{0 r} \\\\ s=50.684 \\text { inches } \\end{gathered} \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -254,15 +256,17 @@
           "format": "typst",
           "text": "There are 20 boys and 11 girls who can be selected to be on a team.\n\nDetermine the number of ways that 7 boys and 5 girls can be selected for this team.",
           "extensions": {
-            "latexSource": "There are 20 boys and 11 girls who can be selected to be on a team.\n\nDetermine the number of ways that 7 boys and 5 girls can be selected for this team."
+            "latexSource": "There are 20 boys and 11 girls who can be selected to be on a team.\n\nDetermine the number of ways that 7 boys and 5 girls can be selected for this team.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ { }_{20} C_{7} \\cdot{ }_{11} C_{5}=35814240 \\]\n\n\\[ \\begin{aligned}  \\frac{1}{2} \\text { mark for }{ }_{20} C_{7} \\\\  \\frac{1}{2} \\text { mark for }{ }_{11} C_{5} \\\\  1 \\text { mark for the product of combinations } \\\\  2 \\text { marks } \\end{aligned} \\]",
+          "text": "$   \"\" _(20 ) C _(7 ) dot.c  \"\" _(11 ) C _(5 )= 35814240   $\n\n$   & frac(1 ,2 ) \" mark for \" \"\" _(20 ) C _(7 ) \\  & frac(1 ,2 ) \" mark for \" \"\" _(11 ) C _(5 ) \\  & 1  \" mark for the product of combinations \" \\  & 2  \" marks \"   $",
           "extensions": {
             "latexSource": "\\[ { }_{20} C_{7} \\cdot{ }_{11} C_{5}=35814240 \\]\n\n\\[ \\begin{aligned} & \\frac{1}{2} \\text { mark for }{ }_{20} C_{7} \\\\ & \\frac{1}{2} \\text { mark for }{ }_{11} C_{5} \\\\ & 1 \\text { mark for the product of combinations } \\\\ & 2 \\text { marks } \\end{aligned} \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -335,17 +339,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "(4117)\n\nA water filtration system which removes impurities from a sample of water can be modelled by\n\n\\(P=0.25(0.55)^{n}\\), where:\n\n\\(P=\\) the percentage of impurities remaining, in decimal form\n\n\\(n=\\) the number of filters\n\nDetermine, algebraically, how many filters are required so that less than \\(1 \\%\\) of the impurities remain in\n\nthe water sample. Express your answer as a whole number.",
+          "text": "\\(4117\\)\n\nA water filtration system which removes impurities from a sample of water can be modelled by\n\n$P = 0.25 \\(0.55 \\)^(n )$\\, where:\n\n$P = $ the percentage of impurities remaining\\, in decimal form\n\n$n = $ the number of filters\n\nDetermine\\, algebraically\\, how many filters are required so that less than $1  % $ of the impurities remain in\n\nthe water sample. Express your answer as a whole number.",
           "extensions": {
-            "latexSource": "(4117)\n\nA water filtration system which removes impurities from a sample of water can be modelled by\n\n\\(P=0.25(0.55)^{n}\\), where:\n\n\\(P=\\) the percentage of impurities remaining, in decimal form\n\n\\(n=\\) the number of filters\n\nDetermine, algebraically, how many filters are required so that less than \\(1 \\%\\) of the impurities remain in\n\nthe water sample. Express your answer as a whole number."
+            "latexSource": "(4117)\n\nA water filtration system which removes impurities from a sample of water can be modelled by\n\n\\(P=0.25(0.55)^{n}\\), where:\n\n\\(P=\\) the percentage of impurities remaining, in decimal form\n\n\\(n=\\) the number of filters\n\nDetermine, algebraically, how many filters are required so that less than \\(1 \\%\\) of the impurities remain in\n\nthe water sample. Express your answer as a whole number.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ 0.01=0.25(0.55)^{n} \\]\n\n\\[ 0.04=(0.55)^{n} \\]\n\n\\[ \\log (0.04)=n \\log (0.55) \\]\n\n\\[ \\frac{\\log (0.04)}{\\log (0.55)}=n \\]\n\n\\[ n=5.384203 \\]\n\n\\[ \\therefore 6 \\text { filters are needed } \\]\n\n\\(\\frac{1}{2}\\) mark for substitution\n\n\\(\\frac{1}{2}\\) mark for applying logarithms\n\n\\(\\frac{1}{2}\\) mark for power law\n\n\\(\\frac{1}{2}\\) mark for solving for \\(n\\)\n\n2 marks",
+          "text": "$  0.01 = 0.25 \\(0.55 \\)^(n )  $\n\n$  0.04 = \\(0.55 \\)^(n )  $\n\n$  log  \\(0.04 \\)= n  log  \\(0.55 \\)  $\n\n$  frac(log  \\(0.04 \\),log  \\(0.55 \\))= n   $\n\n$  n = 5.384203   $\n\n$  therefore  6  \" filters are needed \"  $\n\n$frac(1 ,2 )$ mark for substitution\n\n$frac(1 ,2 )$ mark for applying logarithms\n\n$frac(1 ,2 )$ mark for power law\n\n$frac(1 ,2 )$ mark for solving for $n $\n\n2 marks",
           "extensions": {
             "latexSource": "\\[ 0.01=0.25(0.55)^{n} \\]\n\n\\[ 0.04=(0.55)^{n} \\]\n\n\\[ \\log (0.04)=n \\log (0.55) \\]\n\n\\[ \\frac{\\log (0.04)}{\\log (0.55)}=n \\]\n\n\\[ n=5.384203 \\]\n\n\\[ \\therefore 6 \\text { filters are needed } \\]\n\n\\(\\frac{1}{2}\\) mark for substitution\n\n\\(\\frac{1}{2}\\) mark for applying logarithms\n\n\\(\\frac{1}{2}\\) mark for power law\n\n\\(\\frac{1}{2}\\) mark for solving for \\(n\\)\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -418,17 +424,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "In the binomial expansion of \\(\\left(x^{2}-\\frac{2}{y}\\right)^{8}\\), determine the middle term in simplified form.",
+          "text": "In the binomial expansion of $lr(\\( x ^(2 )- frac(2 ,y )\\) )^(8 )$\\, determine the middle term in simplified form.",
           "extensions": {
-            "latexSource": "In the binomial expansion of \\(\\left(x^{2}-\\frac{2}{y}\\right)^{8}\\), determine the middle term in simplified form."
+            "latexSource": "In the binomial expansion of \\(\\left(x^{2}-\\frac{2}{y}\\right)^{8}\\), determine the middle term in simplified form.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\(t_{5}={ }_{8} C_{4}\\left(x^{2}\\right)^{8-4}\\left(-\\frac{2}{y}\\right)^{4} 2\\) marks (1 mark for \\({ }_{8} C_{4}, \\frac{1}{2}\\) mark for each consistent factor)\n\n\\(t_{5}=70 x^{8}\\left(\\frac{16}{y^{4}}\\right)\\)\n\n\\(t_{5}=\\frac{1120 x^{8}}{y^{4}}\\)\n\n1 mark for simplification ( \\(\\frac{1}{2}\\) mark for coefficient, \\(\\frac{1}{2}\\) mark for exponents)\n\n3 marks",
+          "text": "$t _(5 )=  \"\" _(8 ) C _(4 )lr(\\( x ^(2 )\\) )^(8 - 4 )lr(\\( - frac(2 ,y )\\) )^(4 ) 2 $ marks \\(1 mark for $ \"\" _(8 ) C _(4 )\\, frac(1 ,2 )$ mark for each consistent factor\\)\n\n$t _(5 )= 70  x ^(8 )lr(\\( frac(16 ,y ^(4 ))\\) )$\n\n$t _(5 )= frac(1120  x ^(8 ),y ^(4 ))$\n\n1 mark for simplification \\( $frac(1 ,2 )$ mark for coefficient\\, $frac(1 ,2 )$ mark for exponents\\)\n\n3 marks",
           "extensions": {
             "latexSource": "\\(t_{5}={ }_{8} C_{4}\\left(x^{2}\\right)^{8-4}\\left(-\\frac{2}{y}\\right)^{4} 2\\) marks (1 mark for \\({ }_{8} C_{4}, \\frac{1}{2}\\) mark for each consistent factor)\n\n\\(t_{5}=70 x^{8}\\left(\\frac{16}{y^{4}}\\right)\\)\n\n\\(t_{5}=\\frac{1120 x^{8}}{y^{4}}\\)\n\n1 mark for simplification ( \\(\\frac{1}{2}\\) mark for coefficient, \\(\\frac{1}{2}\\) mark for exponents)\n\n3 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -501,17 +509,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve the following equation algebraically over the interval \\([0,2 \\pi]\\).\n\n\\[ 6 \\sin ^{2} \\theta+\\sin \\theta-1=0 \\]",
+          "text": "Solve the following equation algebraically over the interval $\\[0 \\,2  pi \\]$.\n\n$  6  sin  ^(2 ) theta + sin  theta - 1 = 0   $",
           "extensions": {
-            "latexSource": "Solve the following equation algebraically over the interval \\([0,2 \\pi]\\).\n\n\\[ 6 \\sin ^{2} \\theta+\\sin \\theta-1=0 \\]"
+            "latexSource": "Solve the following equation algebraically over the interval \\([0,2 \\pi]\\).\n\n\\[ 6 \\sin ^{2} \\theta+\\sin \\theta-1=0 \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} (3 \\sin \\theta-1)  (2 \\sin \\theta+1)=0 \\\\ 3 \\sin \\theta-1  =0 \\quad 2 \\sin \\theta+1=0 \\\\ \\sin \\theta  =\\frac{1}{3} \\quad \\sin \\theta=-\\frac{1}{2} \\quad 1 \\text { mark for solving for } \\sin \\theta(1 / 2 \\text { mark for each branch }) \\\\ \\theta_{r}  =0.339836 \\\\ \\theta  =0.340 \\quad \\theta=\\frac{7 \\pi}{6} \\\\ \\theta  =2.802 \\quad 2 \\text { marks }(1 / 2 \\text { mark for each value of } \\theta) \\end{aligned} \\]\n\nor\n\n\\[ \\theta=0.340,2.802,3.665,5.760 \\quad \\mathbf{3} \\text { marks } \\]",
+          "text": "$   \\(3  sin  theta - 1 \\) & \\(2  sin  theta + 1 \\)= 0  \\  3  sin  theta - 1  & = 0  quad  2  sin  theta + 1 = 0  \\  sin  theta  & = frac(1 ,3 ) quad  sin  theta = - frac(1 ,2 ) quad  1  \" mark for solving for \" sin  theta \\(1  \\/ 2  \" mark for each branch \"\\) \\  theta _(r ) & = 0.339836  \\  theta  & = 0.340  quad  theta = frac(7  pi ,6 ) \\  theta  & = 2.802  quad  2  \" marks \"\\(1  \\/ 2  \" mark for each value of \" theta \\)   $\n\nor\n\n$  theta = 0.340 \\,2.802 \\,3.665 \\,5.760  quad  bold(3 ) \" marks \"  $",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} (3 \\sin \\theta-1) & (2 \\sin \\theta+1)=0 \\\\ 3 \\sin \\theta-1 & =0 \\quad 2 \\sin \\theta+1=0 \\\\ \\sin \\theta & =\\frac{1}{3} \\quad \\sin \\theta=-\\frac{1}{2} \\quad 1 \\text { mark for solving for } \\sin \\theta(1 / 2 \\text { mark for each branch }) \\\\ \\theta_{r} & =0.339836 \\\\ \\theta & =0.340 \\quad \\theta=\\frac{7 \\pi}{6} \\\\ \\theta & =2.802 \\quad 2 \\text { marks }(1 / 2 \\text { mark for each value of } \\theta) \\end{aligned} \\]\n\nor\n\n\\[ \\theta=0.340,2.802,3.665,5.760 \\quad \\mathbf{3} \\text { marks } \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -584,17 +594,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(y=f(-x+4)\\).\n\n\\includegraphics[width=0.478\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_890_1015_466_468.jpg}\n\n\\includegraphics[width=0.479\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_1001_1017_1533_468.jpg}\n\nThe graph of\n\n\\(f(x)\\) has already\n\nbeen drawn for\n\nyour reference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\).",
+          "text": "Given the graph of $y = f \\(x \\)$\\, sketch the graph of $y = f \\(- x + 4 \\)$.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-06_890_1015_466_468.jpg\", width: 47.8%)\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-06_1001_1017_1533_468.jpg\", width: 47.9%)\n\nThe graph of\n\n$f \\(x \\)$ has already\n\nbeen drawn for\n\nyour reference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n$f \\(x \\)$.",
           "extensions": {
-            "latexSource": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(y=f(-x+4)\\).\n\n\\includegraphics[width=0.478\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_890_1015_466_468.jpg}\n\n\\includegraphics[width=0.479\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_1001_1017_1533_468.jpg}\n\nThe graph of\n\n\\(f(x)\\) has already\n\nbeen drawn for\n\nyour reference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\)."
+            "latexSource": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(y=f(-x+4)\\).\n\n\\includegraphics[width=0.478\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_890_1015_466_468.jpg}\n\n\\includegraphics[width=0.479\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-06_1001_1017_1533_468.jpg}\n\nThe graph of\n\n\\(f(x)\\) has already\n\nbeen drawn for\n\nyour reference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\includegraphics[width=0.400\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-06_739_849_1461_258.jpg}\n\n1 mark for reflection over the \\(y\\)-axis\n\n1 mark for horizontal translation\n\n2 marks",
+          "text": "#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-06_739_849_1461_258.jpg\", width: 40.0%)\n\n1 mark for reflection over the $y $-axis\n\n1 mark for horizontal translation\n\n2 marks",
           "extensions": {
             "latexSource": "\\includegraphics[width=0.400\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-06_739_849_1461_258.jpg}\n\n1 mark for reflection over the \\(y\\)-axis\n\n1 mark for horizontal translation\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -683,17 +695,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Given the following triangle, determine \\(\\csc \\theta\\).\n\n\\includegraphics[width=0.352\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-07_691_747_526_674.jpg}",
+          "text": "Given the following triangle\\, determine $csc  theta $.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-07_691_747_526_674.jpg\", width: 35.2%)",
           "extensions": {
-            "latexSource": "Given the following triangle, determine \\(\\csc \\theta\\).\n\n\\includegraphics[width=0.352\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-07_691_747_526_674.jpg}"
+            "latexSource": "Given the following triangle, determine \\(\\csc \\theta\\).\n\n\\includegraphics[width=0.352\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-07_691_747_526_674.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} x^{2}+y^{2}  =r^{2}   \\\\ 2^{2}+y^{2}  =5^{2}   1 / 2 \\text { mark for substitution } \\\\ y^{2}  =21   \\\\ y  = \\pm \\sqrt{21}   1 / 2 \\text { mark for solving for } y \\\\ \\csc \\theta  =-\\frac{5}{\\sqrt{21}}   1 \\text { mark for } \\csc \\theta\\left(\\frac{1}{2} \\text { mark for quadrant, } \\frac{1}{2} \\text { mark for value }\\right) \\end{aligned} \\]\n\n- Accept any of the following values for \\(y: y= \\pm \\sqrt{21,} \\mathrm{y}=\\sqrt{21}\\), or \\(y=-\\sqrt{21}\\).",
+          "text": "$   x ^(2 )+ y ^(2 ) & = r ^(2 ) & & \\  2 ^(2 )+ y ^(2 ) & = 5 ^(2 ) & & 1  \\/ 2  \" mark for substitution \" \\  y ^(2 ) & = 21  & & \\  y  & =  plus.minus  sqrt(21 ) & & 1  \\/ 2  \" mark for solving for \" y  \\  csc  theta  & = - frac(5 ,sqrt(21 )) & & 1  \" mark for \" csc  theta lr(\\( frac(1 ,2 ) \" mark for quadrant, \" frac(1 ,2 ) \" mark for value \"\\) )   $\n\n- Accept any of the following values for $y :  y =  plus.minus  sqrt(21 \\,) upright(y )= sqrt(21 )$\\, or $y = - sqrt(21 )$.",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} x^{2}+y^{2} & =r^{2} & & \\\\ 2^{2}+y^{2} & =5^{2} & & 1 / 2 \\text { mark for substitution } \\\\ y^{2} & =21 & & \\\\ y & = \\pm \\sqrt{21} & & 1 / 2 \\text { mark for solving for } y \\\\ \\csc \\theta & =-\\frac{5}{\\sqrt{21}} & & 1 \\text { mark for } \\csc \\theta\\left(\\frac{1}{2} \\text { mark for quadrant, } \\frac{1}{2} \\text { mark for value }\\right) \\end{aligned} \\]\n\n- Accept any of the following values for \\(y: y= \\pm \\sqrt{21,} \\mathrm{y}=\\sqrt{21}\\), or \\(y=-\\sqrt{21}\\).",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -780,17 +794,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve algebraically.\n\n\\[ { }_{n} P_{2}=9 n \\]",
+          "text": "Solve algebraically.\n\n$   \"\" _(n ) P _(2 )= 9  n   $",
           "extensions": {
-            "latexSource": "Solve algebraically.\n\n\\[ { }_{n} P_{2}=9 n \\]"
+            "latexSource": "Solve algebraically.\n\n\\[ { }_{n} P_{2}=9 n \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\frac{n!}{(n-2)!}  =9 n \\\\ \\frac{n(n-1)(n-2)!}{(n-2)!}  =9 n \\end{aligned} \\]\n\n\\[ \\begin{aligned} n(n-1)  =9 n \\\\ n^{2}-n  =9 n \\\\ n^{2}-10 n  =0 \\\\ n(n-10)  =0 \\\\ n-10  =10 \\end{aligned} \\]\n\n\\(\\frac{1}{2}\\) mark for substitution into equation\n\n1 mark for factorial expansion\n\n\\(\\frac{1}{2}\\) mark for simplification of factorials\n\n\\(\\frac{1}{2}\\) mark for rejecting the extraneous root\n\n\\(\\frac{1}{2}\\) mark for the value of \\(n\\)\n\n3 marks",
+          "text": "$   frac(n ! ,\\(n - 2 \\)! ) & = 9  n  \\  frac(n \\(n - 1 \\)\\(n - 2 \\)! ,\\(n - 2 \\)! ) & = 9  n    $\n\n$   n \\(n - 1 \\) & = 9  n  \\  n ^(2 )- n  & = 9  n  \\  n ^(2 )- 10  n  & = 0  \\  n \\(n - 10 \\) & = 0  \\  n - 10  & = 10    $\n\n$frac(1 ,2 )$ mark for substitution into equation\n\n1 mark for factorial expansion\n\n$frac(1 ,2 )$ mark for simplification of factorials\n\n$frac(1 ,2 )$ mark for rejecting the extraneous root\n\n$frac(1 ,2 )$ mark for the value of $n $\n\n3 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\frac{n!}{(n-2)!} & =9 n \\\\ \\frac{n(n-1)(n-2)!}{(n-2)!} & =9 n \\end{aligned} \\]\n\n\\[ \\begin{aligned} n(n-1) & =9 n \\\\ n^{2}-n & =9 n \\\\ n^{2}-10 n & =0 \\\\ n(n-10) & =0 \\\\ n-10 & =10 \\end{aligned} \\]\n\n\\(\\frac{1}{2}\\) mark for substitution into equation\n\n1 mark for factorial expansion\n\n\\(\\frac{1}{2}\\) mark for simplification of factorials\n\n\\(\\frac{1}{2}\\) mark for rejecting the extraneous root\n\n\\(\\frac{1}{2}\\) mark for the value of \\(n\\)\n\n3 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -863,17 +879,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Describe the transformations applied to the graph of \\(f(x)\\) to obtain the graph of \\(g(x)\\).\n\n\\includegraphics[width=0.388\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-09_695_824_524_627.jpg}",
+          "text": "Describe the transformations applied to the graph of $f \\(x \\)$ to obtain the graph of $g \\(x \\)$.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-09_695_824_524_627.jpg\", width: 38.8%)",
           "extensions": {
-            "latexSource": "Describe the transformations applied to the graph of \\(f(x)\\) to obtain the graph of \\(g(x)\\).\n\n\\includegraphics[width=0.388\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-09_695_824_524_627.jpg}"
+            "latexSource": "Describe the transformations applied to the graph of \\(f(x)\\) to obtain the graph of \\(g(x)\\).\n\n\\includegraphics[width=0.388\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-09_695_824_524_627.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "A reflection over the \\(x\\)-axis then a vertical translation of one unit down.\n\nor\n\nA vertical translation of one unit up then a reflection over the \\(x\\)-axis.\n\n1 mark for reflection over the \\(x\\)-axis\n\n1 mark for vertical translation\n\n2 marks\n\nNote(s):\n\n- Award a maximum of 1 mark if correct transformations are given in the incorrect order.",
+          "text": "A reflection over the $x $-axis then a vertical translation of one unit down.\n\nor\n\nA vertical translation of one unit up then a reflection over the $x $-axis.\n\n1 mark for reflection over the $x $-axis\n\n1 mark for vertical translation\n\n2 marks\n\nNote\\(s\\):\n\n- Award a maximum of 1 mark if correct transformations are given in the incorrect order.",
           "extensions": {
             "latexSource": "A reflection over the \\(x\\)-axis then a vertical translation of one unit down.\n\nor\n\nA vertical translation of one unit up then a reflection over the \\(x\\)-axis.\n\n1 mark for reflection over the \\(x\\)-axis\n\n1 mark for vertical translation\n\n2 marks\n\nNote(s):\n\n- Award a maximum of 1 mark if correct transformations are given in the incorrect order.",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -948,17 +966,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Determine, algebraically, the value of the leading coefficient of the graph of the polynomial function, \\(p(x)\\).\n\n\\includegraphics[width=0.410\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-10_824_871_489_560.jpg}",
+          "text": "Determine\\, algebraically\\, the value of the leading coefficient of the graph of the polynomial function\\, $p \\(x \\)$.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-10_824_871_489_560.jpg\", width: 41.0%)",
           "extensions": {
-            "latexSource": "Determine, algebraically, the value of the leading coefficient of the graph of the polynomial function, \\(p(x)\\).\n\n\\includegraphics[width=0.410\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-10_824_871_489_560.jpg}"
+            "latexSource": "Determine, algebraically, the value of the leading coefficient of the graph of the polynomial function, \\(p(x)\\).\n\n\\includegraphics[width=0.410\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-10_824_871_489_560.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} p(x)  =a(x+3)(x+1)^{3}(x-1) \\\\ -12  =a(3)(1)^{3}(-1) \\\\ -12  =-3 a \\\\ a  =4 \\end{aligned} \\]\n\n\\(\\frac{1}{2}\\) mark for factors of \\(p(x)\\)\n\n\\(\\frac{1}{2}\\) mark for odd multiplicity for \\((x+1)\\) greater than 1\n\n\\(\\frac{1}{2}\\) mark for substituting \\(p(0)=-12\\)\n\n\\(\\frac{1}{2}\\) mark for value of \\(a\\)\n\n2 marks",
+          "text": "$   p \\(x \\) & = a \\(x + 3 \\)\\(x + 1 \\)^(3 )\\(x - 1 \\) \\  - 12  & = a \\(3 \\)\\(1 \\)^(3 )\\(- 1 \\) \\  - 12  & = - 3  a  \\  a  & = 4    $\n\n$frac(1 ,2 )$ mark for factors of $p \\(x \\)$\n\n$frac(1 ,2 )$ mark for odd multiplicity for $\\(x + 1 \\)$ greater than 1\n\n$frac(1 ,2 )$ mark for substituting $p \\(0 \\)= - 12 $\n\n$frac(1 ,2 )$ mark for value of $a $\n\n2 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} p(x) & =a(x+3)(x+1)^{3}(x-1) \\\\ -12 & =a(3)(1)^{3}(-1) \\\\ -12 & =-3 a \\\\ a & =4 \\end{aligned} \\]\n\n\\(\\frac{1}{2}\\) mark for factors of \\(p(x)\\)\n\n\\(\\frac{1}{2}\\) mark for odd multiplicity for \\((x+1)\\) greater than 1\n\n\\(\\frac{1}{2}\\) mark for substituting \\(p(0)=-12\\)\n\n\\(\\frac{1}{2}\\) mark for value of \\(a\\)\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1033,17 +1053,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Frank, Liam, Chan, and Thao are going to a movie.\n\nDetermine the number of ways they can sit in a row of four chairs, if Frank and Chan must sit beside\n\neach other.",
+          "text": "Frank\\, Liam\\, Chan\\, and Thao are going to a movie.\n\nDetermine the number of ways they can sit in a row of four chairs\\, if Frank and Chan must sit beside\n\neach other.",
           "extensions": {
-            "latexSource": "Frank, Liam, Chan, and Thao are going to a movie.\n\nDetermine the number of ways they can sit in a row of four chairs, if Frank and Chan must sit beside\n\neach other."
+            "latexSource": "Frank, Liam, Chan, and Thao are going to a movie.\n\nDetermine the number of ways they can sit in a row of four chairs, if Frank and Chan must sit beside\n\neach other.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "3!2!\n\n12\n\n\\(\\frac{1}{2}\\) mark for 3!\n\n\\(\\frac{1}{2}\\) mark for 2! as a product of factorials\n\n1 mark",
+          "text": "3!2!\n\n12\n\n$frac(1 ,2 )$ mark for 3!\n\n$frac(1 ,2 )$ mark for 2! as a product of factorials\n\n1 mark",
           "extensions": {
             "latexSource": "3!2!\n\n12\n\n\\(\\frac{1}{2}\\) mark for 3!\n\n\\(\\frac{1}{2}\\) mark for 2! as a product of factorials\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1116,17 +1138,20 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Determine, algebraically, if \\(f(x)=\\frac{1}{x+5}\\) and \\(g(x)=\\frac{1}{x-5}\\) are inverses of each other.\n\nJustify your answer.",
+          "text": "Determine\\, algebraically\\, if $f \\(x \\)= frac(1 ,x + 5 )$ and $g \\(x \\)= frac(1 ,x - 5 )$ are inverses of each other.\n\nJustify your answer.",
           "extensions": {
-            "latexSource": "Determine, algebraically, if \\(f(x)=\\frac{1}{x+5}\\) and \\(g(x)=\\frac{1}{x-5}\\) are inverses of each other.\n\nJustify your answer."
+            "latexSource": "Determine, algebraically, if \\(f(x)=\\frac{1}{x+5}\\) and \\(g(x)=\\frac{1}{x-5}\\) are inverses of each other.\n\nJustify your answer.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Method 1\n\nLet \\(f(x)=y\\)\n\n\\[ \\begin{array}{rlrl} y  =\\frac{1}{x+5}   \\\\ x  =\\frac{1}{y+5}   1 \\text { mark for switching } x \\text { and } y \\text { values } \\\\ y+5  =\\frac{1}{x}   \\\\ y  =\\frac{1}{x}-5   1 / 2 \\text { mark for solving for } y \\\\ f^{-1}(x)  =\\frac{1}{x}-5   \\\\ \\therefore f^{-1}(x)  \\neq g(x)  1 / 2 \\text { mark for justification } \\end{array} \\]\n\n2 marks\n\nMethod 2\n\n\\[ \\begin{aligned} f(g(x))  =\\frac{1}{\\left(\\frac{1}{x-5}\\right)+5}  1 \\text { mark for } f(g(x)) \\text { or } g(f(x))  g(f(x)) \\end{aligned} \\begin{aligned}  \\frac{1}{\\left(\\frac{1}{x+5}\\right)-5} \\\\  =\\frac{1}{\\frac{1+5 x-25}{x-5}} \\\\  =\\frac{1}{\\frac{5 x-24}{x-5}} \\\\  =\\frac{x-5}{5 x-24} \\end{aligned} \\quad \\frac{1}{x+5} \\text { mark for simplification } \\quad=\\frac{1}{\\frac{-5 x-24}{x+5}}, \\quad=\\frac{x+5}{-5 x-24} . \\]\n\n∴ They are not inverses because \\(f(g(x)) \\neq x\\) or \\(\\mathrm{g}(f(x)) \\neq x . \\quad \\frac{1}{2}\\) mark for justification\n\n2 marks",
+          "text": "*Method 1: Find the inverse.*\n\n$ y &= frac(1, x+5) \\\n  x &= frac(1, y+5) \\\n  y+5 &= frac(1, x) \\\n  y &= frac(1, x)-5 $\n\nTherefore $f^(-1)(x)=frac(1,x)-5$, which is not $g(x)=frac(1,x-5)$. The functions are not inverses.\n\n*Method 2: Check composition.*\n\n$ f(g(x)) &= frac(1, frac(1,x-5)+5) \\\n         &= frac(x-5, 5x-24) $\n\nSimilarly,\n\n$ g(f(x)) &= frac(1, frac(1,x+5)-5) \\\n         &= frac(x+5, -5x-24) $\n\nNeither composition is identically $x$, confirming that the functions are not inverses.\n\nScoring: 1 mark for setting up the inverse or a composition; $frac(1,2)$ mark for simplification; $frac(1,2)$ mark for justification.",
           "extensions": {
             "latexSource": "Method 1\n\nLet \\(f(x)=y\\)\n\n\\[ \\begin{array}{rlrl} y & =\\frac{1}{x+5} & & \\\\ x & =\\frac{1}{y+5} & & 1 \\text { mark for switching } x \\text { and } y \\text { values } \\\\ y+5 & =\\frac{1}{x} & & \\\\ y & =\\frac{1}{x}-5 & & 1 / 2 \\text { mark for solving for } y \\\\ f^{-1}(x) & =\\frac{1}{x}-5 & & \\\\ \\therefore f^{-1}(x) & \\neq g(x) & 1 / 2 \\text { mark for justification } \\end{array} \\]\n\n2 marks\n\nMethod 2\n\n\\[ \\begin{aligned} f(g(x)) & =\\frac{1}{\\left(\\frac{1}{x-5}\\right)+5} & 1 \\text { mark for } f(g(x)) \\text { or } g(f(x)) & g(f(x)) \\end{aligned} \\begin{aligned} & \\frac{1}{\\left(\\frac{1}{x+5}\\right)-5} \\\\ & =\\frac{1}{\\frac{1+5 x-25}{x-5}} \\\\ & =\\frac{1}{\\frac{5 x-24}{x-5}} \\\\ & =\\frac{x-5}{5 x-24} \\end{aligned} \\quad \\frac{1}{x+5} \\text { mark for simplification } \\quad=\\frac{1}{\\frac{-5 x-24}{x+5}}, \\quad=\\frac{x+5}{-5 x-24} . \\]\n\n∴ They are not inverses because \\(f(g(x)) \\neq x\\) or \\(\\mathrm{g}(f(x)) \\neq x . \\quad \\frac{1}{2}\\) mark for justification\n\n2 marks",
-            "source": "mathpix"
+            "source": "editorial-repair",
+            "typstConversion": "mitex-wasm-native-2026-09",
+            "editorialRepair": "Reconstructed the two methods from the guide OCR; separated overlapping composition equations and scoring notes."
           }
         }
       },
@@ -1199,17 +1224,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Using the graphs of \\(y=f(x)\\) and \\(y=g(x)\\), solve \\(f(x)=g(x)\\).\n\n\\includegraphics[width=0.450\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-13_820_957_545_571.jpg}",
+          "text": "Using the graphs of $y = f \\(x \\)$ and $y = g \\(x \\)$\\, solve $f \\(x \\)= g \\(x \\)$.\n\n#image(\"assets/ea511ce9-a71e-446a-8297-3947035d1152-13_820_957_545_571.jpg\", width: 45.0%)",
           "extensions": {
-            "latexSource": "Using the graphs of \\(y=f(x)\\) and \\(y=g(x)\\), solve \\(f(x)=g(x)\\).\n\n\\includegraphics[width=0.450\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-13_820_957_545_571.jpg}"
+            "latexSource": "Using the graphs of \\(y=f(x)\\) and \\(y=g(x)\\), solve \\(f(x)=g(x)\\).\n\n\\includegraphics[width=0.450\\textwidth]{assets/ea511ce9-a71e-446a-8297-3947035d1152-13_820_957_545_571.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ x=2 \\]",
+          "text": "$  x = 2   $",
           "extensions": {
             "latexSource": "\\[ x=2 \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1284,17 +1311,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "An angle in standard position measures \\(\\frac{3 \\pi}{4}\\).\n\nDetermine in which quadrant the terminal arm of this angle is located after a rotation of 3 radians.\n\nJustify your answer.",
+          "text": "An angle in standard position measures $frac(3  pi ,4 )$.\n\nDetermine in which quadrant the terminal arm of this angle is located after a rotation of 3 radians.\n\nJustify your answer.",
           "extensions": {
-            "latexSource": "An angle in standard position measures \\(\\frac{3 \\pi}{4}\\).\n\nDetermine in which quadrant the terminal arm of this angle is located after a rotation of 3 radians.\n\nJustify your answer."
+            "latexSource": "An angle in standard position measures \\(\\frac{3 \\pi}{4}\\).\n\nDetermine in which quadrant the terminal arm of this angle is located after a rotation of 3 radians.\n\nJustify your answer.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\includegraphics[width=0.230\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-14_666_488_799_346.jpg}\n\nThe angle \\(\\frac{3 \\pi}{4}\\) terminates in quadrant II. A rotation of 3 radians is almost a half rotation;\n\ntherefore, the terminal arm is located in quadrant IV.\n\n1 mark for justification\n\n1 mark",
+          "text": "#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-14_666_488_799_346.jpg\", width: 23.0%)\n\nThe angle $frac(3  pi ,4 )$ terminates in quadrant II. A rotation of 3 radians is almost a half rotation\\;\n\ntherefore\\, the terminal arm is located in quadrant IV.\n\n1 mark for justification\n\n1 mark",
           "extensions": {
             "latexSource": "\\includegraphics[width=0.230\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-14_666_488_799_346.jpg}\n\nThe angle \\(\\frac{3 \\pi}{4}\\) terminates in quadrant II. A rotation of 3 radians is almost a half rotation;\n\ntherefore, the terminal arm is located in quadrant IV.\n\n1 mark for justification\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1369,17 +1398,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Prove the following identity for all permissible values of \\(\\theta\\).\n\n\\[ \\frac{\\sin 2 \\theta}{1-\\cos 2 \\theta}=\\cot \\theta \\]\n\n\\begin{tabular}{|l|l|} \\hline Left-Hand Side  Right-Hand Side \\\\ \\hline \\end{tabular}",
+          "text": "Prove the following identity for all permissible values of $theta $.\n\n$  frac(sin  2  theta ,1 - cos  2  theta )= cot  theta   $\n\n#table(stroke: none,\ncolumns: 2,\nalign: (left, left, ),\ntable.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), \ntable.hline(stroke: .5pt),\n[Left-Hand Side ], [Right-Hand Side ],\ntable.hline(stroke: .5pt),\n[],\n);",
           "extensions": {
-            "latexSource": "Prove the following identity for all permissible values of \\(\\theta\\).\n\n\\[ \\frac{\\sin 2 \\theta}{1-\\cos 2 \\theta}=\\cot \\theta \\]\n\n\\begin{tabular}{|l|l|} \\hline Left-Hand Side & Right-Hand Side \\\\ \\hline \\end{tabular}"
+            "latexSource": "Prove the following identity for all permissible values of \\(\\theta\\).\n\n\\[ \\frac{\\sin 2 \\theta}{1-\\cos 2 \\theta}=\\cot \\theta \\]\n\n\\begin{tabular}{|l|l|} \\hline Left-Hand Side & Right-Hand Side \\\\ \\hline \\end{tabular}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\begin{tabular}[t]{|l|l|} \\hline Left-Hand Side  Right-Hand Side \\\\ \\hline \\[ \\begin{aligned}  \\frac{\\sin 2 \\theta}{1-\\cos 2 \\theta} \\\\  \\frac{2 \\sin \\theta \\cos \\theta}{1-\\left(1-2 \\sin ^{2} \\theta\\right)} \\\\  \\frac{2 \\sin \\theta \\cos \\theta}{2 \\sin ^{2} \\theta} \\\\  \\frac{\\cos \\theta}{\\sin \\theta} \\\\  \\cot \\theta \\end{aligned} \\]  \\begin{tabular}[t]{l} \\(\\cot \\theta\\) \\\\ 1 mark for correct substitution of identities 1 mark for appropriate algebraic strategies 1 mark for logical process to prove the identity 3 marks \\end{tabular} \\\\ \\hline \\end{tabular}",
+          "text": "#table(stroke: none,\ncolumns: 2,\nalign: (left, left, ),\ntable.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), \ntable.hline(stroke: .5pt),\n[Left-Hand Side ], [Right-Hand Side ],\ntable.hline(stroke: .5pt),\n[$   & frac(sin  2  theta ,1 - cos  2  theta ) \\  & frac(2  sin  theta  cos  theta ,1 - lr(\\( 1 - 2  sin  ^(2 ) theta \\) )) \\  & frac(2  sin  theta  cos  theta ,2  sin  ^(2 ) theta ) \\  & frac(cos  theta ,sin  theta ) \\  & cot  theta    $ ], [#table(stroke: none,\ncolumns: 1,\nalign: (left, ),\n\n[$cot  theta $ ],\n[1 mark for correct substitution of identities 1 mark for appropriate algebraic strategies 1 mark for logical process to prove the identity 3 marks ],\n); ],\ntable.hline(stroke: .5pt),\n[],\n);",
           "extensions": {
             "latexSource": "\\begin{tabular}[t]{|l|l|} \\hline Left-Hand Side & Right-Hand Side \\\\ \\hline \\[ \\begin{aligned} & \\frac{\\sin 2 \\theta}{1-\\cos 2 \\theta} \\\\ & \\frac{2 \\sin \\theta \\cos \\theta}{1-\\left(1-2 \\sin ^{2} \\theta\\right)} \\\\ & \\frac{2 \\sin \\theta \\cos \\theta}{2 \\sin ^{2} \\theta} \\\\ & \\frac{\\cos \\theta}{\\sin \\theta} \\\\ & \\cot \\theta \\end{aligned} \\] & \\begin{tabular}[t]{l} \\(\\cot \\theta\\) \\\\ 1 mark for correct substitution of identities 1 mark for appropriate algebraic strategies 1 mark for logical process to prove the identity 3 marks \\end{tabular} \\\\ \\hline \\end{tabular}",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1452,17 +1483,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "If the range of \\(y=f(x)\\) is \\(-3 \\leq y \\leq 6\\), determine the range of \\(y=2 f(3 x)\\).",
+          "text": "If the range of $y = f \\(x \\)$ is $- 3  <=  y  <=  6 $\\, determine the range of $y = 2  f \\(3  x \\)$.",
           "extensions": {
-            "latexSource": "If the range of \\(y=f(x)\\) is \\(-3 \\leq y \\leq 6\\), determine the range of \\(y=2 f(3 x)\\)."
+            "latexSource": "If the range of \\(y=f(x)\\) is \\(-3 \\leq y \\leq 6\\), determine the range of \\(y=2 f(3 x)\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ [-6,12] \\]\n\nor\n\n\\[ -6 \\leq y \\leq 12 \\]",
+          "text": "$  \\[- 6 \\,12 \\]  $\n\nor\n\n$  - 6  <=  y  <=  12   $",
           "extensions": {
             "latexSource": "\\[ [-6,12] \\]\n\nor\n\n\\[ -6 \\leq y \\leq 12 \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1535,17 +1568,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Maurice incorrectly solved the equation, \\(\\sin \\theta+1=0\\), over the interval \\(\\left[0^{\\circ}, 360^{\\circ}\\right]\\).\n\n\\[ \\begin{aligned}  \\sin \\theta+1=0 \\\\  \\sin \\theta=-1 \\\\  \\sin \\theta=270^{\\circ} \\end{aligned} \\]\n\nDescribe his error.",
+          "text": "Maurice incorrectly solved the equation\\, $sin  theta + 1 = 0 $\\, over the interval $lr(\\[ 0 ^(degree )\\, 360 ^(degree )\\] )$.\n\n$   & sin  theta + 1 = 0  \\  & sin  theta = - 1  \\  & sin  theta = 270 ^(degree )   $\n\nDescribe his error.",
           "extensions": {
-            "latexSource": "Maurice incorrectly solved the equation, \\(\\sin \\theta+1=0\\), over the interval \\(\\left[0^{\\circ}, 360^{\\circ}\\right]\\).\n\n\\[ \\begin{aligned} & \\sin \\theta+1=0 \\\\ & \\sin \\theta=-1 \\\\ & \\sin \\theta=270^{\\circ} \\end{aligned} \\]\n\nDescribe his error."
+            "latexSource": "Maurice incorrectly solved the equation, \\(\\sin \\theta+1=0\\), over the interval \\(\\left[0^{\\circ}, 360^{\\circ}\\right]\\).\n\n\\[ \\begin{aligned} & \\sin \\theta+1=0 \\\\ & \\sin \\theta=-1 \\\\ & \\sin \\theta=270^{\\circ} \\end{aligned} \\]\n\nDescribe his error.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Maurice should have written that \\(\\theta\\) is equal to \\(270^{\\circ}\\) not \\(\\sin \\theta=270^{\\circ}\\).",
+          "text": "Maurice should have written that $theta $ is equal to $270 ^(degree )$ not $sin  theta = 270 ^(degree )$.",
           "extensions": {
             "latexSource": "Maurice should have written that \\(\\theta\\) is equal to \\(270^{\\circ}\\) not \\(\\sin \\theta=270^{\\circ}\\).",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -1618,17 +1653,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "If \\(P(3,5)\\) is a point on the graph of \\(y=f(x)\\), identify the corresponding point on the graph of\n\n\\(y=f(x-1)+7\\).",
+          "text": "If $P \\(3 \\,5 \\)$ is a point on the graph of $y = f \\(x \\)$\\, identify the corresponding point on the graph of\n\n$y = f \\(x - 1 \\)+ 7 $.",
           "extensions": {
-            "latexSource": "If \\(P(3,5)\\) is a point on the graph of \\(y=f(x)\\), identify the corresponding point on the graph of\n\n\\(y=f(x-1)+7\\)."
+            "latexSource": "If \\(P(3,5)\\) is a point on the graph of \\(y=f(x)\\), identify the corresponding point on the graph of\n\n\\(y=f(x-1)+7\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: D\n\n\\((4,12)\\)",
+          "text": "Correct answer: D\n\n$\\(4 \\,12 \\)$",
           "extensions": {
             "latexSource": "Correct answer: D\n\n\\((4,12)\\)",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -1636,9 +1673,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\((2,12)\\)",
+              "text": "$\\(2 \\,12 \\)$",
               "extensions": {
-                "latexSource": "\\((2,12)\\)"
+                "latexSource": "\\((2,12)\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1646,9 +1684,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\((4,-2)\\)",
+              "text": "$\\(4 \\,- 2 \\)$",
               "extensions": {
-                "latexSource": "\\((4,-2)\\)"
+                "latexSource": "\\((4,-2)\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1656,9 +1695,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\((2,-2)\\)",
+              "text": "$\\(2 \\,- 2 \\)$",
               "extensions": {
-                "latexSource": "\\((2,-2)\\)"
+                "latexSource": "\\((2,-2)\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1666,9 +1706,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\((4,12)\\)",
+              "text": "$\\(4 \\,12 \\)$",
               "extensions": {
-                "latexSource": "\\((4,12)\\)"
+                "latexSource": "\\((4,12)\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -1747,17 +1788,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify how the graph of \\(y=3^{x}\\) is transformed to the graph of \\(y=3^{-x}\\).",
+          "text": "Identify how the graph of $y = 3 ^(x )$ is transformed to the graph of $y = 3 ^(- x )$.",
           "extensions": {
-            "latexSource": "Identify how the graph of \\(y=3^{x}\\) is transformed to the graph of \\(y=3^{-x}\\)."
+            "latexSource": "Identify how the graph of \\(y=3^{x}\\) is transformed to the graph of \\(y=3^{-x}\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: B\n\nreflected over the \\(y\\)-axis",
+          "text": "Correct answer: B\n\nreflected over the $y $-axis",
           "extensions": {
             "latexSource": "Correct answer: B\n\nreflected over the \\(y\\)-axis",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -1765,9 +1808,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "reflected over the \\(x\\)-axis",
+              "text": "reflected over the $x $-axis",
               "extensions": {
-                "latexSource": "reflected over the \\(x\\)-axis"
+                "latexSource": "reflected over the \\(x\\)-axis",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1775,9 +1819,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "reflected over the \\(y\\)-axis",
+              "text": "reflected over the $y $-axis",
               "extensions": {
-                "latexSource": "reflected over the \\(y\\)-axis"
+                "latexSource": "reflected over the \\(y\\)-axis",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1785,9 +1830,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "reflected over both the \\(x\\)-axis and the \\(y\\)-axis",
+              "text": "reflected over both the $x $-axis and the $y $-axis",
               "extensions": {
-                "latexSource": "reflected over both the \\(x\\)-axis and the \\(y\\)-axis"
+                "latexSource": "reflected over both the \\(x\\)-axis and the \\(y\\)-axis",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1795,9 +1841,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "reflected over the line \\(y=x\\)",
+              "text": "reflected over the line $y = x $",
               "extensions": {
-                "latexSource": "reflected over the line \\(y=x\\)"
+                "latexSource": "reflected over the line \\(y=x\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -1876,17 +1923,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify the equation \\(\\log _{a} b=c\\) in exponential form.",
+          "text": "Identify the equation $log  _(a ) b = c $ in exponential form.",
           "extensions": {
-            "latexSource": "Identify the equation \\(\\log _{a} b=c\\) in exponential form."
+            "latexSource": "Identify the equation \\(\\log _{a} b=c\\) in exponential form.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: B\n\n\\(a^{c}=b\\)",
+          "text": "Correct answer: B\n\n$a ^(c )= b $",
           "extensions": {
             "latexSource": "Correct answer: B\n\n\\(a^{c}=b\\)",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -1894,9 +1943,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\(b^{c}=a\\)",
+              "text": "$b ^(c )= a $",
               "extensions": {
-                "latexSource": "\\(b^{c}=a\\)"
+                "latexSource": "\\(b^{c}=a\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1904,9 +1954,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\(a^{c}=b\\)",
+              "text": "$a ^(c )= b $",
               "extensions": {
-                "latexSource": "\\(a^{c}=b\\)"
+                "latexSource": "\\(a^{c}=b\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1914,9 +1965,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\(a^{b}=c\\)",
+              "text": "$a ^(b )= c $",
               "extensions": {
-                "latexSource": "\\(a^{b}=c\\)"
+                "latexSource": "\\(a^{b}=c\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -1924,9 +1976,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\(c^{a}=b\\)",
+              "text": "$c ^(a )= b $",
               "extensions": {
-                "latexSource": "\\(c^{a}=b\\)"
+                "latexSource": "\\(c^{a}=b\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2005,17 +2058,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify the graph of \\(y=\\tan x\\).",
+          "text": "Identify the graph of $y = tan  x $.",
           "extensions": {
-            "latexSource": "Identify the graph of \\(y=\\tan x\\)."
+            "latexSource": "Identify the graph of \\(y=\\tan x\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: C\n\n\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg}",
+          "text": "Correct answer: C\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg\", width: 35.1%)",
           "extensions": {
             "latexSource": "Correct answer: C\n\n\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg}",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2023,9 +2078,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_747_517_257.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_747_517_257.jpg\", width: 35.2%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_747_517_257.jpg}"
+                "latexSource": "\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_747_517_257.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2033,9 +2089,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_746_517_1130.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_746_517_1130.jpg\", width: 35.1%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_746_517_1130.jpg}"
+                "latexSource": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_715_746_517_1130.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2043,9 +2100,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg\", width: 35.1%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg}"
+                "latexSource": "\\includegraphics[width=0.351\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_736_746_1589_249.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2053,9 +2111,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_742_753_1581_1125.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_742_753_1581_1125.jpg\", width: 35.4%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_742_753_1581_1125.jpg}"
+                "latexSource": "\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-02_742_753_1581_1125.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2141,15 +2200,17 @@
           "format": "typst",
           "text": "Identify which of the following graphs represents a logarithmic function.",
           "extensions": {
-            "latexSource": "Identify which of the following graphs represents a logarithmic function."
+            "latexSource": "Identify which of the following graphs represents a logarithmic function.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: B\n\n\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg}",
+          "text": "Correct answer: B\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg\", width: 38.6%)",
           "extensions": {
             "latexSource": "Correct answer: B\n\n\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg}",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2157,9 +2218,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.385\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_839_819_582_236.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_839_819_582_236.jpg\", width: 38.5%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.385\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_839_819_582_236.jpg}"
+                "latexSource": "\\includegraphics[width=0.385\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_839_819_582_236.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2167,9 +2229,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg\", width: 38.6%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg}"
+                "latexSource": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_834_820_584_1097.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2177,9 +2240,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.384\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_830_817_1587_236.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_830_817_1587_236.jpg\", width: 38.4%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.384\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_830_817_1587_236.jpg}"
+                "latexSource": "\\includegraphics[width=0.384\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_830_817_1587_236.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2187,9 +2251,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_836_820_1609_1108.jpg}",
+              "text": "#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_836_820_1609_1108.jpg\", width: 38.6%)",
               "extensions": {
-                "latexSource": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_836_820_1609_1108.jpg}"
+                "latexSource": "\\includegraphics[width=0.386\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-03_836_820_1609_1108.jpg}",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2273,9 +2338,10 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "If the volume of a box is represented by \\(V(x)=(x+4)(x+2)(x-1)\\), identify a possible value of \\(x\\).",
+          "text": "If the volume of a box is represented by $V \\(x \\)= \\(x + 4 \\)\\(x + 2 \\)\\(x - 1 \\)$\\, identify a possible value of $x $.",
           "extensions": {
-            "latexSource": "If the volume of a box is represented by \\(V(x)=(x+4)(x+2)(x-1)\\), identify a possible value of \\(x\\)."
+            "latexSource": "If the volume of a box is represented by \\(V(x)=(x+4)(x+2)(x-1)\\), identify a possible value of \\(x\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
@@ -2283,7 +2349,8 @@
           "text": "Correct answer: D\n\n4",
           "extensions": {
             "latexSource": "Correct answer: D\n\n4",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2293,7 +2360,8 @@
               "format": "typst",
               "text": "-4",
               "extensions": {
-                "latexSource": "-4"
+                "latexSource": "-4",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2303,7 +2371,8 @@
               "format": "typst",
               "text": "-1",
               "extensions": {
-                "latexSource": "-1"
+                "latexSource": "-1",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2313,7 +2382,8 @@
               "format": "typst",
               "text": "1",
               "extensions": {
-                "latexSource": "1"
+                "latexSource": "1",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2323,7 +2393,8 @@
               "format": "typst",
               "text": "4",
               "extensions": {
-                "latexSource": "4"
+                "latexSource": "4",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2402,17 +2473,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify a coterminal angle for \\(\\theta=-\\frac{\\pi}{3}\\).",
+          "text": "Identify a coterminal angle for $theta = - frac(pi ,3 )$.",
           "extensions": {
-            "latexSource": "Identify a coterminal angle for \\(\\theta=-\\frac{\\pi}{3}\\)."
+            "latexSource": "Identify a coterminal angle for \\(\\theta=-\\frac{\\pi}{3}\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: D\n\n\\(\\frac{11 \\pi}{3}\\)",
+          "text": "Correct answer: D\n\n$frac(11  pi ,3 )$",
           "extensions": {
             "latexSource": "Correct answer: D\n\n\\(\\frac{11 \\pi}{3}\\)",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2420,9 +2493,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\(\\frac{\\pi}{3}\\)",
+              "text": "$frac(pi ,3 )$",
               "extensions": {
-                "latexSource": "\\(\\frac{\\pi}{3}\\)"
+                "latexSource": "\\(\\frac{\\pi}{3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2430,9 +2504,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\(\\frac{4 \\pi}{3}\\)",
+              "text": "$frac(4  pi ,3 )$",
               "extensions": {
-                "latexSource": "\\(\\frac{4 \\pi}{3}\\)"
+                "latexSource": "\\(\\frac{4 \\pi}{3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2440,9 +2515,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\(\\frac{7 \\pi}{3}\\)",
+              "text": "$frac(7  pi ,3 )$",
               "extensions": {
-                "latexSource": "\\(\\frac{7 \\pi}{3}\\)"
+                "latexSource": "\\(\\frac{7 \\pi}{3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2450,9 +2526,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\(\\frac{11 \\pi}{3}\\)",
+              "text": "$frac(11  pi ,3 )$",
               "extensions": {
-                "latexSource": "\\(\\frac{11 \\pi}{3}\\)"
+                "latexSource": "\\(\\frac{11 \\pi}{3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2531,9 +2608,10 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify the value of \\(n\\) in the equation \\({ }_{n} C_{3}={ }_{n} C_{6}\\).",
+          "text": "Identify the value of $n $ in the equation $ \"\" _(n ) C _(3 )=  \"\" _(n ) C _(6 )$.",
           "extensions": {
-            "latexSource": "Identify the value of \\(n\\) in the equation \\({ }_{n} C_{3}={ }_{n} C_{6}\\)."
+            "latexSource": "Identify the value of \\(n\\) in the equation \\({ }_{n} C_{3}={ }_{n} C_{6}\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
@@ -2541,7 +2619,8 @@
           "text": "Correct answer: C\n\n9",
           "extensions": {
             "latexSource": "Correct answer: C\n\n9",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2551,7 +2630,8 @@
               "format": "typst",
               "text": "3",
               "extensions": {
-                "latexSource": "3"
+                "latexSource": "3",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2561,7 +2641,8 @@
               "format": "typst",
               "text": "6",
               "extensions": {
-                "latexSource": "6"
+                "latexSource": "6",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2571,7 +2652,8 @@
               "format": "typst",
               "text": "9",
               "extensions": {
-                "latexSource": "9"
+                "latexSource": "9",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2581,7 +2663,8 @@
               "format": "typst",
               "text": "18",
               "extensions": {
-                "latexSource": "18"
+                "latexSource": "18",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2660,17 +2743,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Identify the equation of the function, \\(f(x)\\), for the following graph.\n\n\\includegraphics[width=0.366\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-05_725_777_455_300.jpg}",
+          "text": "Identify the equation of the function\\, $f \\(x \\)$\\, for the following graph.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-05_725_777_455_300.jpg\", width: 36.6%)",
           "extensions": {
-            "latexSource": "Identify the equation of the function, \\(f(x)\\), for the following graph.\n\n\\includegraphics[width=0.366\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-05_725_777_455_300.jpg}"
+            "latexSource": "Identify the equation of the function, \\(f(x)\\), for the following graph.\n\n\\includegraphics[width=0.366\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-05_725_777_455_300.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Correct answer: A\n\n\\(f(x)=\\frac{2 x}{x+3}\\)",
+          "text": "Correct answer: A\n\n$f \\(x \\)= frac(2  x ,x + 3 )$",
           "extensions": {
             "latexSource": "Correct answer: A\n\n\\(f(x)=\\frac{2 x}{x+3}\\)",
-            "source": "answer-key"
+            "source": "answer-key",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "choices": [
@@ -2678,9 +2763,10 @@
             "id": "A",
             "body": {
               "format": "typst",
-              "text": "\\(f(x)=\\frac{2 x}{x+3}\\)",
+              "text": "$f \\(x \\)= frac(2  x ,x + 3 )$",
               "extensions": {
-                "latexSource": "\\(f(x)=\\frac{2 x}{x+3}\\)"
+                "latexSource": "\\(f(x)=\\frac{2 x}{x+3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2688,9 +2774,10 @@
             "id": "B",
             "body": {
               "format": "typst",
-              "text": "\\(f(x)=\\frac{2}{x+3}\\)",
+              "text": "$f \\(x \\)= frac(2 ,x + 3 )$",
               "extensions": {
-                "latexSource": "\\(f(x)=\\frac{2}{x+3}\\)"
+                "latexSource": "\\(f(x)=\\frac{2}{x+3}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2698,9 +2785,10 @@
             "id": "C",
             "body": {
               "format": "typst",
-              "text": "\\(f(x)=\\frac{2 x^{2}}{x(x+3)}\\)",
+              "text": "$f \\(x \\)= frac(2  x ^(2 ),x \\(x + 3 \\))$",
               "extensions": {
-                "latexSource": "\\(f(x)=\\frac{2 x^{2}}{x(x+3)}\\)"
+                "latexSource": "\\(f(x)=\\frac{2 x^{2}}{x(x+3)}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           },
@@ -2708,9 +2796,10 @@
             "id": "D",
             "body": {
               "format": "typst",
-              "text": "\\(f(x)=\\frac{3 x^{2}}{x(x+2)}\\)",
+              "text": "$f \\(x \\)= frac(3  x ^(2 ),x \\(x + 2 \\))$",
               "extensions": {
-                "latexSource": "\\(f(x)=\\frac{3 x^{2}}{x(x+2)}\\)"
+                "latexSource": "\\(f(x)=\\frac{3 x^{2}}{x(x+2)}\\)",
+                "typstConversion": "mitex-wasm-native-2026-09"
               }
             }
           }
@@ -2791,17 +2880,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Match the following radical functions with their graphs.\n\nPlace the appropriate letter in this column.\n\n\\[ \\begin{aligned}  f(x)=2 \\sqrt{-(x+3)} \\\\  g(x)=-2 \\sqrt{(x+3)} \\\\  h(x)=3 \\sqrt{(x-2)} \\\\  k(x)=\\sqrt{3(x-2)} \\end{aligned} \\]\n\nA)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_745_747_1069_257.jpg}\n\nB)\n\n\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_747_753_1069_1134.jpg}\n\nC)\n\n\\includegraphics[width=0.353\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_751_1851_257.jpg}\n\nD)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_749_1851_1138.jpg}",
+          "text": "Match the following radical functions with their graphs.\n\nPlace the appropriate letter in this column.\n\n$   & f \\(x \\)= 2  sqrt(- \\(x + 3 \\)) \\  & g \\(x \\)= - 2  sqrt(\\(x + 3 \\)) \\  & h \\(x \\)= 3  sqrt(\\(x - 2 \\)) \\  & k \\(x \\)= sqrt(3 \\(x - 2 \\))   $\n\nA\\)\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_745_747_1069_257.jpg\", width: 35.2%)\n\nB\\)\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_747_753_1069_1134.jpg\", width: 35.4%)\n\nC\\)\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_751_1851_257.jpg\", width: 35.3%)\n\nD\\)\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_749_1851_1138.jpg\", width: 35.2%)",
           "extensions": {
-            "latexSource": "Match the following radical functions with their graphs.\n\nPlace the appropriate letter in this column.\n\n\\[ \\begin{aligned} & f(x)=2 \\sqrt{-(x+3)} \\\\ & g(x)=-2 \\sqrt{(x+3)} \\\\ & h(x)=3 \\sqrt{(x-2)} \\\\ & k(x)=\\sqrt{3(x-2)} \\end{aligned} \\]\n\nA)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_745_747_1069_257.jpg}\n\nB)\n\n\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_747_753_1069_1134.jpg}\n\nC)\n\n\\includegraphics[width=0.353\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_751_1851_257.jpg}\n\nD)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_749_1851_1138.jpg}"
+            "latexSource": "Match the following radical functions with their graphs.\n\nPlace the appropriate letter in this column.\n\n\\[ \\begin{aligned} & f(x)=2 \\sqrt{-(x+3)} \\\\ & g(x)=-2 \\sqrt{(x+3)} \\\\ & h(x)=3 \\sqrt{(x-2)} \\\\ & k(x)=\\sqrt{3(x-2)} \\end{aligned} \\]\n\nA)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_745_747_1069_257.jpg}\n\nB)\n\n\\includegraphics[width=0.354\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_747_753_1069_1134.jpg}\n\nC)\n\n\\includegraphics[width=0.353\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_751_1851_257.jpg}\n\nD)\n\n\\includegraphics[width=0.352\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-06_751_749_1851_1138.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\includegraphics[width=0.166\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_77_352_589_271.jpg}\n\n\\(g(x)=-2 \\sqrt{(x+3)}\\)\n\nC\n\n2 marks\n\n2 marks\n\n\\(h(x)=3 \\sqrt{(x-2)}\\)\n\n\\(k(x)=\\sqrt{3(x-2)}\\)\n\n\\includegraphics[width=0.349\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_746_741_1061_260.jpg}\n\n\\includegraphics[width=0.353\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_750_1848_256.jpg}\n\n\\(\\frac{1}{2}\\) mark for each correct answer\n\n\\includegraphics[width=0.348\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_741_739_1063_1143.jpg}\n\n\\includegraphics[width=0.350\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_743_1848_1139.jpg}",
+          "text": "#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_77_352_589_271.jpg\", width: 16.6%)\n\n$g \\(x \\)= - 2  sqrt(\\(x + 3 \\))$\n\nC\n\n2 marks\n\n2 marks\n\n$h \\(x \\)= 3  sqrt(\\(x - 2 \\))$\n\n$k \\(x \\)= sqrt(3 \\(x - 2 \\))$\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_746_741_1061_260.jpg\", width: 34.9%)\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_750_1848_256.jpg\", width: 35.3%)\n\n$frac(1 ,2 )$ mark for each correct answer\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_741_739_1063_1143.jpg\", width: 34.8%)\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_743_1848_1139.jpg\", width: 35.0%)",
           "extensions": {
             "latexSource": "\\includegraphics[width=0.166\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_77_352_589_271.jpg}\n\n\\(g(x)=-2 \\sqrt{(x+3)}\\)\n\nC\n\n2 marks\n\n2 marks\n\n\\(h(x)=3 \\sqrt{(x-2)}\\)\n\n\\(k(x)=\\sqrt{3(x-2)}\\)\n\n\\includegraphics[width=0.349\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_746_741_1061_260.jpg}\n\n\\includegraphics[width=0.353\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_750_1848_256.jpg}\n\n\\(\\frac{1}{2}\\) mark for each correct answer\n\n\\includegraphics[width=0.348\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_741_739_1063_1143.jpg}\n\n\\includegraphics[width=0.350\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-23_743_743_1848_1139.jpg}",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -2888,17 +2979,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Express \\(p(x)=x^{3}-2 x^{2}-4 x+8\\) as a product of factors.\n\n\\[ p(x)= \\]",
+          "text": "Express $p \\(x \\)= x ^(3 )- 2  x ^(2 )- 4  x + 8 $ as a product of factors.\n\n$  p \\(x \\)=   $",
           "extensions": {
-            "latexSource": "Express \\(p(x)=x^{3}-2 x^{2}-4 x+8\\) as a product of factors.\n\n\\[ p(x)= \\]"
+            "latexSource": "Express \\(p(x)=x^{3}-2 x^{2}-4 x+8\\) as a product of factors.\n\n\\[ p(x)= \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} p(2)  =2^{3}-2(2)^{2}-4(2)+8 \\\\  =8-8-8+8 \\\\  =0 \\end{aligned} \\]\n\n1 mark for identifying one\n\npossible value of \\(x\\)\n\n\\begin{tabular}[t]{|l|l|l|l|l|} \\hline 2  1  -2  -4  8 \\\\ \\hline  ↓  2  0  -8 \\\\ \\hline  1  0  -4  0 \\\\ \\hline \\end{tabular}\n\n\\(p(x)=(x-2)\\left(x^{2}-4\\right)\\)\n\nor\n\n\\[ p(x)=(x-2)(x-2)(x+2) \\]\n\nor\n\n\\[ p(x)=(x-2)^{2}(x+2) \\]\n\n1 mark for synthetic division\n\n(or any equivalent strategy)\n\n1 mark for product of factors\n\n3 marks",
+          "text": "$   p \\(2 \\) & = 2 ^(3 )- 2 \\(2 \\)^(2 )- 4 \\(2 \\)+ 8  \\  & = 8 - 8 - 8 + 8  \\  & = 0    $\n\n1 mark for identifying one\n\npossible value of $x $\n\n#table(stroke: none,\ncolumns: 5,\nalign: (left, left, left, left, left, ),\ntable.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), \ntable.hline(stroke: .5pt),\n[2 ], [1 ], [-2 ], [-4 ], [8 ],\ntable.hline(stroke: .5pt),\n[], [↓ ], [2 ], [0 ], [-8 ],\ntable.hline(stroke: .5pt),\n[], [1 ], [0 ], [-4 ], [0 ],\ntable.hline(stroke: .5pt),\n[],\n);\n\n$p \\(x \\)= \\(x - 2 \\)lr(\\( x ^(2 )- 4 \\) )$\n\nor\n\n$  p \\(x \\)= \\(x - 2 \\)\\(x - 2 \\)\\(x + 2 \\)  $\n\nor\n\n$  p \\(x \\)= \\(x - 2 \\)^(2 )\\(x + 2 \\)  $\n\n1 mark for synthetic division\n\n\\(or any equivalent strategy\\)\n\n1 mark for product of factors\n\n3 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} p(2) & =2^{3}-2(2)^{2}-4(2)+8 \\\\ & =8-8-8+8 \\\\ & =0 \\end{aligned} \\]\n\n1 mark for identifying one\n\npossible value of \\(x\\)\n\n\\begin{tabular}[t]{|l|l|l|l|l|} \\hline 2 & 1 & -2 & -4 & 8 \\\\ \\hline & ↓ & 2 & 0 & -8 \\\\ \\hline & 1 & 0 & -4 & 0 \\\\ \\hline \\end{tabular}\n\n\\(p(x)=(x-2)\\left(x^{2}-4\\right)\\)\n\nor\n\n\\[ p(x)=(x-2)(x-2)(x+2) \\]\n\nor\n\n\\[ p(x)=(x-2)^{2}(x+2) \\]\n\n1 mark for synthetic division\n\n(or any equivalent strategy)\n\n1 mark for product of factors\n\n3 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -2971,17 +3064,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "a) 3 marks\n\nb) 1 mark\n\nGiven the graph of \\(f(x)=(x+3)(x-1)\\), \\includegraphics[width=0.356\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_753_757_425_696.jpg}\n\na) sketch the graph of \\(g(x)=\\frac{1}{f(x)}\\).\n\n\\includegraphics[width=0.355\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_755_755_1327_700.jpg}\n\nb) describe how to sketch the graph of \\(h(x)=|f(x)|\\).",
+          "text": "a\\) 3 marks\n\nb\\) 1 mark\n\nGiven the graph of $f \\(x \\)= \\(x + 3 \\)\\(x - 1 \\)$\\,\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_753_757_425_696.jpg\", width: 35.6%)\n\na\\) sketch the graph of $g \\(x \\)= frac(1 ,f \\(x \\))$.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_755_755_1327_700.jpg\", width: 35.5%)\n\nb\\) describe how to sketch the graph of $h \\(x \\)= | f \\(x \\)| $.",
           "extensions": {
-            "latexSource": "a) 3 marks\n\nb) 1 mark\n\nGiven the graph of \\(f(x)=(x+3)(x-1)\\),\n\n\\includegraphics[width=0.356\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_753_757_425_696.jpg}\n\na) sketch the graph of \\(g(x)=\\frac{1}{f(x)}\\).\n\n\\includegraphics[width=0.355\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_755_755_1327_700.jpg}\n\nb) describe how to sketch the graph of \\(h(x)=|f(x)|\\)."
+            "latexSource": "a) 3 marks\n\nb) 1 mark\n\nGiven the graph of \\(f(x)=(x+3)(x-1)\\),\n\n\\includegraphics[width=0.356\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_753_757_425_696.jpg}\n\na) sketch the graph of \\(g(x)=\\frac{1}{f(x)}\\).\n\n\\includegraphics[width=0.355\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-08_755_755_1327_700.jpg}\n\nb) describe how to sketch the graph of \\(h(x)=|f(x)|\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "a)\n\n\\includegraphics[width=0.373\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-25_791_793_1461_312.jpg}\n\nb) Change all negative \\(y\\)-values to positive values. The positive \\(y\\)-values do not change.\n\n1 mark\n\nNote(s):\n\n- Award 1 mark if only vertical asymptotes at \\(x=1\\) and \\(x=-3\\) are drawn.",
+          "text": "a\\)\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-25_791_793_1461_312.jpg\", width: 37.3%)\n\nb\\) Change all negative $y $-values to positive values. The positive $y $-values do not change.\n\n1 mark\n\nNote\\(s\\):\n\n- Award 1 mark if only vertical asymptotes at $x = 1 $ and $x = - 3 $ are drawn.",
           "extensions": {
             "latexSource": "a)\n\n\\includegraphics[width=0.373\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-25_791_793_1461_312.jpg}\n\nb) Change all negative \\(y\\)-values to positive values. The positive \\(y\\)-values do not change.\n\n1 mark\n\nNote(s):\n\n- Award 1 mark if only vertical asymptotes at \\(x=1\\) and \\(x=-3\\) are drawn.",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3058,17 +3153,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Describe how the value of \\(m\\) in the equation \\(y=\\log _{3}(x-m), m \\in \\mathbb{R}\\), affects the asymptote on the\n\ngraph of \\(y=\\log _{3} x\\).",
+          "text": "Describe how the value of $m $ in the equation $y = log  _(3 )\\(x - m \\)\\, m  in  bb(R )$\\, affects the asymptote on the\n\ngraph of $y = log  _(3 ) x $.",
           "extensions": {
-            "latexSource": "Describe how the value of \\(m\\) in the equation \\(y=\\log _{3}(x-m), m \\in \\mathbb{R}\\), affects the asymptote on the\n\ngraph of \\(y=\\log _{3} x\\)."
+            "latexSource": "Describe how the value of \\(m\\) in the equation \\(y=\\log _{3}(x-m), m \\in \\mathbb{R}\\), affects the asymptote on the\n\ngraph of \\(y=\\log _{3} x\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "The vertical asymptote is translated horizontally left or right \\(m\\) units from the \\(y\\)-axis.\n\n1 mark",
+          "text": "The vertical asymptote is translated horizontally left or right $m $ units from the $y $-axis.\n\n1 mark",
           "extensions": {
             "latexSource": "The vertical asymptote is translated horizontally left or right \\(m\\) units from the \\(y\\)-axis.\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3141,17 +3238,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve algebraically.\n\n\\[ 25^{x}=\\left(\\frac{1}{5}\\right)^{-3 x+1} \\]",
+          "text": "Solve algebraically.\n\n$  25 ^(x )= lr(\\( frac(1 ,5 )\\) )^(- 3  x + 1 )  $",
           "extensions": {
-            "latexSource": "Solve algebraically.\n\n\\[ 25^{x}=\\left(\\frac{1}{5}\\right)^{-3 x+1} \\]"
+            "latexSource": "Solve algebraically.\n\n\\[ 25^{x}=\\left(\\frac{1}{5}\\right)^{-3 x+1} \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\left(5^{2}\\right)^{x}  =\\left(5^{-1}\\right)^{-3 x+1} \\\\ 5^{2 x}  =5^{3 x-1} \\\\ 2 x  =3 x-1 \\\\ x  =1 \\end{aligned} \\]\n\n1 mark for changing to a common base\n\n\\(\\frac{1}{2}\\) mark for exponent law\n\n\\(\\frac{1}{2}\\) mark for equating exponents\n\n2 marks",
+          "text": "$   lr(\\( 5 ^(2 )\\) )^(x ) & = lr(\\( 5 ^(- 1 )\\) )^(- 3  x + 1 ) \\  5 ^(2  x ) & = 5 ^(3  x - 1 ) \\  2  x  & = 3  x - 1  \\  x  & = 1    $\n\n1 mark for changing to a common base\n\n$frac(1 ,2 )$ mark for exponent law\n\n$frac(1 ,2 )$ mark for equating exponents\n\n2 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\left(5^{2}\\right)^{x} & =\\left(5^{-1}\\right)^{-3 x+1} \\\\ 5^{2 x} & =5^{3 x-1} \\\\ 2 x & =3 x-1 \\\\ x & =1 \\end{aligned} \\]\n\n1 mark for changing to a common base\n\n\\(\\frac{1}{2}\\) mark for exponent law\n\n\\(\\frac{1}{2}\\) mark for equating exponents\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3224,17 +3323,20 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve \\(\\cos 2 \\theta=0\\), where \\(\\theta \\in \\mathbb{R}\\).",
+          "text": "Solve $cos  2  theta = 0 $\\, where $theta  in  bb(R )$.",
           "extensions": {
-            "latexSource": "Solve \\(\\cos 2 \\theta=0\\), where \\(\\theta \\in \\mathbb{R}\\)."
+            "latexSource": "Solve \\(\\cos 2 \\theta=0\\), where \\(\\theta \\in \\mathbb{R}\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Method 1\n\n\\[ \\left.\\begin{array}{lll}  1-2 \\sin ^{2} \\theta=0  1 \\text { mark for double-angle identity } \\\\ \\sin \\theta=\\frac{\\sqrt{2}}{2}  \\sin \\theta=\\frac{-\\sqrt{2}}{2}  1 \\text { mark for solving for } \\sin \\theta \\\\ \\theta=\\frac{\\pi}{4}, \\frac{3 \\pi}{4}  \\theta=\\frac{5 \\pi}{4}, \\frac{7 \\pi}{4}  \\begin{array}{l} 1 \\text { mark for values of } \\theta \\\\ (1 / 2 \\text { mark for each branch }) \\end{array} \\\\ \\theta=\\frac{\\pi}{4}+\\pi k \\\\ =\\frac{3 \\pi}{4}+\\pi k \\end{array}\\right\\} \\begin{array}{ll} \\text { where } k \\in \\mathbb{Z} \\text { or } \\theta=\\frac{\\pi}{4}+\\frac{\\pi k}{2}, \\text { where } k \\in \\mathbb{Z}  1 \\text { mark for general solution } \\\\  4 \\text { marks } \\end{array} \\]\n\nMethod 2\n\n\\[ \\left.\\begin{array}{lll}  2 \\cos ^{2} \\theta-1=0  \\\\ \\cos ^{2} \\theta=\\frac{1}{2}   1 \\text { mark for double-angle identity } \\\\ \\cos \\theta  =\\frac{\\sqrt{2}}{2}  \\cos \\theta=\\frac{-\\sqrt{2}}{2} \\\\  \\theta=\\frac{\\pi}{4}, \\frac{7 \\pi}{4}, 1 \\text { mark for solving for } \\cos \\theta \\\\  \\theta=\\frac{\\pi}{4}+\\pi k \\\\  =\\frac{3 \\pi}{4}+\\pi k \\end{array}\\right\\} \\begin{aligned}  1 \\text { mark for values of } \\theta \\\\  \\left(\\frac{1}{2} \\text { mark for each branch }\\right) \\end{aligned} \\]\n\nNote(s):\n\n- Deduct a maximum of 1 mark if student omits second branch when taking the square root.",
+          "text": "*Method 1: Use the sine double-angle identity.*\n\n$ 1-2sin^2 theta &= 0 \\\n  sin theta &= plus.minus frac(sqrt(2),2) $\n\nIn one full revolution, $theta=pi/4, 3pi/4, 5pi/4, 7pi/4$. Thus the general solution is\n\n$ theta=pi/4+frac(k pi,2), quad k in ZZ. $\n\nEquivalently, $theta=pi/4+k pi$ or $theta=3pi/4+k pi$, where $k in ZZ$.\n\n*Method 2: Use the cosine double-angle identity.*\n\n$ 2cos^2 theta-1 &= 0 \\\n  cos theta &= plus.minus frac(sqrt(2),2) $\n\nThis gives the same four values in one revolution and the same general solution.\n\nScoring: 1 mark for the double-angle identity; 1 mark for solving for the trigonometric ratio; 1 mark for angle values; 1 mark for the general solution. Retain both branches when taking the square root.",
           "extensions": {
             "latexSource": "Method 1\n\n\\[ \\left.\\begin{array}{lll} & 1-2 \\sin ^{2} \\theta=0 & 1 \\text { mark for double-angle identity } \\\\ \\sin \\theta=\\frac{\\sqrt{2}}{2} & \\sin \\theta=\\frac{-\\sqrt{2}}{2} & 1 \\text { mark for solving for } \\sin \\theta \\\\ \\theta=\\frac{\\pi}{4}, \\frac{3 \\pi}{4} & \\theta=\\frac{5 \\pi}{4}, \\frac{7 \\pi}{4} & \\begin{array}{l} 1 \\text { mark for values of } \\theta \\\\ (1 / 2 \\text { mark for each branch }) \\end{array} \\\\ \\theta=\\frac{\\pi}{4}+\\pi k \\\\ =\\frac{3 \\pi}{4}+\\pi k \\end{array}\\right\\} \\begin{array}{ll} \\text { where } k \\in \\mathbb{Z} \\text { or } \\theta=\\frac{\\pi}{4}+\\frac{\\pi k}{2}, \\text { where } k \\in \\mathbb{Z} & 1 \\text { mark for general solution } \\\\ & 4 \\text { marks } \\end{array} \\]\n\nMethod 2\n\n\\[ \\left.\\begin{array}{lll} & 2 \\cos ^{2} \\theta-1=0 & \\\\ \\cos ^{2} \\theta=\\frac{1}{2} & & 1 \\text { mark for double-angle identity } \\\\ \\cos \\theta & =\\frac{\\sqrt{2}}{2} & \\cos \\theta=\\frac{-\\sqrt{2}}{2} \\\\ & \\theta=\\frac{\\pi}{4}, \\frac{7 \\pi}{4}, & 1 \\text { mark for solving for } \\cos \\theta \\\\ & \\theta=\\frac{\\pi}{4}+\\pi k \\\\ & =\\frac{3 \\pi}{4}+\\pi k \\end{array}\\right\\} \\begin{aligned} & 1 \\text { mark for values of } \\theta \\\\ & \\left(\\frac{1}{2} \\text { mark for each branch }\\right) \\end{aligned} \\]\n\nNote(s):\n\n- Deduct a maximum of 1 mark if student omits second branch when taking the square root.",
-            "source": "mathpix"
+            "source": "editorial-repair",
+            "typstConversion": "mitex-wasm-native-2026-09",
+            "editorialRepair": "Reflowed the guide’s double-angle methods and general solution; verified algebraically."
           }
         }
       },
@@ -3320,17 +3422,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Describe a difference between the graphs of \\(y=f(x)\\) and \\(y=g(x)\\).\n\n\\[ \\begin{aligned}  f(x)=-2(x+1)^{2}(x+3) \\\\  g(x)=2(x+1)^{2}(x+3) \\end{aligned} \\]",
+          "text": "Describe a difference between the graphs of $y = f \\(x \\)$ and $y = g \\(x \\)$.\n\n$   & f \\(x \\)= - 2 \\(x + 1 \\)^(2 )\\(x + 3 \\) \\  & g \\(x \\)= 2 \\(x + 1 \\)^(2 )\\(x + 3 \\)   $",
           "extensions": {
-            "latexSource": "Describe a difference between the graphs of \\(y=f(x)\\) and \\(y=g(x)\\).\n\n\\[ \\begin{aligned} & f(x)=-2(x+1)^{2}(x+3) \\\\ & g(x)=2(x+1)^{2}(x+3) \\end{aligned} \\]"
+            "latexSource": "Describe a difference between the graphs of \\(y=f(x)\\) and \\(y=g(x)\\).\n\n\\[ \\begin{aligned} & f(x)=-2(x+1)^{2}(x+3) \\\\ & g(x)=2(x+1)^{2}(x+3) \\end{aligned} \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "The end behaviour is different, because the graph of \\(f(x)\\) falls to the right and the graph of\n\n\\(g(x)\\) rises to the right.\n\nor\n\nThe \\(y\\)-intercept of \\(f(x)\\) is negative while the \\(y\\)-intercept of \\(g(x)\\) is positive.\n\nor\n\nOne graph is a reflection over the \\(x\\)-axis of the other graph.\n\n1 mark",
+          "text": "The end behaviour is different\\, because the graph of $f \\(x \\)$ falls to the right and the graph of\n\n$g \\(x \\)$ rises to the right.\n\nor\n\nThe $y $-intercept of $f \\(x \\)$ is negative while the $y $-intercept of $g \\(x \\)$ is positive.\n\nor\n\nOne graph is a reflection over the $x $-axis of the other graph.\n\n1 mark",
           "extensions": {
             "latexSource": "The end behaviour is different, because the graph of \\(f(x)\\) falls to the right and the graph of\n\n\\(g(x)\\) rises to the right.\n\nor\n\nThe \\(y\\)-intercept of \\(f(x)\\) is negative while the \\(y\\)-intercept of \\(g(x)\\) is positive.\n\nor\n\nOne graph is a reflection over the \\(x\\)-axis of the other graph.\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3403,17 +3507,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(\\sqrt{f(x)}\\).\n\n\\includegraphics[width=0.405\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_734_861_498_577.jpg}\n\n\\includegraphics[width=0.402\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_742_854_1465_586.jpg}\n\nThe graph of\n\n\\(f(x)\\) has\n\nalready been\n\ndrawn for your\n\nreference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\).",
+          "text": "Given the graph of $y = f \\(x \\)$\\, sketch the graph of $sqrt(f \\(x \\))$.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_734_861_498_577.jpg\", width: 40.5%)\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_742_854_1465_586.jpg\", width: 40.2%)\n\nThe graph of\n\n$f \\(x \\)$ has\n\nalready been\n\ndrawn for your\n\nreference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n$f \\(x \\)$.",
           "extensions": {
-            "latexSource": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(\\sqrt{f(x)}\\).\n\n\\includegraphics[width=0.405\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_734_861_498_577.jpg}\n\n\\includegraphics[width=0.402\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_742_854_1465_586.jpg}\n\nThe graph of\n\n\\(f(x)\\) has\n\nalready been\n\ndrawn for your\n\nreference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\)."
+            "latexSource": "Given the graph of \\(y=f(x)\\), sketch the graph of \\(\\sqrt{f(x)}\\).\n\n\\includegraphics[width=0.405\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_734_861_498_577.jpg}\n\n\\includegraphics[width=0.402\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-12_742_854_1465_586.jpg}\n\nThe graph of\n\n\\(f(x)\\) has\n\nalready been\n\ndrawn for your\n\nreference.\n\nNo marks will\n\nbe awarded for\n\nthe graph of\n\n\\(f(x)\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Solution\n\n\\includegraphics[width=0.394\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-31_722_838_1470_206.jpg}\n\n1 mark for restricted domain\n\n\\(\\frac{1}{2}\\) mark for shape between both invariant points, \\(\\{0 \\leq y \\leq 1\\}\\)\n\n\\(\\frac{1}{2}\\) mark for shape above invariant points, \\(\\{1 \\leq y \\leq 2\\}\\)\n\n2 marks",
+          "text": "Solution\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-31_722_838_1470_206.jpg\", width: 39.4%)\n\n1 mark for restricted domain\n\n$frac(1 ,2 )$ mark for shape between both invariant points\\,\n\n$\\{ 0  <=  y  <=  1 \\} $\n\n$frac(1 ,2 )$ mark for shape above invariant points\\, $\\{ 1  <=  y  <=  2 \\} $\n\n2 marks",
           "extensions": {
             "latexSource": "Solution\n\n\\includegraphics[width=0.394\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-31_722_838_1470_206.jpg}\n\n1 mark for restricted domain\n\n\\(\\frac{1}{2}\\) mark for shape between both invariant points,\n\n\\(\\{0 \\leq y \\leq 1\\}\\)\n\n\\(\\frac{1}{2}\\) mark for shape above invariant points, \\(\\{1 \\leq y \\leq 2\\}\\)\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3490,17 +3596,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Describe the relationship between the zeros of the function \\(f(x)=(2 x-1)(x+3)^{2}\\), the roots of the\n\nequation \\((2 x-1)(x+3)^{2}=0\\), and the \\(x\\)-intercepts of the graph of \\(y=f(x)\\).",
+          "text": "Describe the relationship between the zeros of the function $f \\(x \\)= \\(2  x - 1 \\)\\(x + 3 \\)^(2 )$\\, the roots of the\n\nequation $\\(2  x - 1 \\)\\(x + 3 \\)^(2 )= 0 $\\, and the $x $-intercepts of the graph of $y = f \\(x \\)$.",
           "extensions": {
-            "latexSource": "Describe the relationship between the zeros of the function \\(f(x)=(2 x-1)(x+3)^{2}\\), the roots of the\n\nequation \\((2 x-1)(x+3)^{2}=0\\), and the \\(x\\)-intercepts of the graph of \\(y=f(x)\\)."
+            "latexSource": "Describe the relationship between the zeros of the function \\(f(x)=(2 x-1)(x+3)^{2}\\), the roots of the\n\nequation \\((2 x-1)(x+3)^{2}=0\\), and the \\(x\\)-intercepts of the graph of \\(y=f(x)\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "The zeros, roots, and \\(x\\)-intercepts all have the same values.\n\n1 mark",
+          "text": "The zeros\\, roots\\, and $x $-intercepts all have the same values.\n\n1 mark",
           "extensions": {
             "latexSource": "The zeros, roots, and \\(x\\)-intercepts all have the same values.\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3573,17 +3681,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Sketch a graph of at least one period of the function \\(f(x)=\\cos \\left[\\frac{1}{2}\\left(x+\\frac{\\pi}{2}\\right)\\right]-3\\).\n\n\\includegraphics[width=0.727\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-13_1090_1544_1452_253.jpg}",
+          "text": "Sketch a graph of at least one period of the function $f \\(x \\)= cos  lr(\\[ frac(1 ,2 )lr(\\( x + frac(pi ,2 )\\) )\\] )- 3 $.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-13_1090_1544_1452_253.jpg\", width: 72.7%)",
           "extensions": {
-            "latexSource": "Sketch a graph of at least one period of the function \\(f(x)=\\cos \\left[\\frac{1}{2}\\left(x+\\frac{\\pi}{2}\\right)\\right]-3\\).\n\n\\includegraphics[width=0.727\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-13_1090_1544_1452_253.jpg}"
+            "latexSource": "Sketch a graph of at least one period of the function \\(f(x)=\\cos \\left[\\frac{1}{2}\\left(x+\\frac{\\pi}{2}\\right)\\right]-3\\).\n\n\\includegraphics[width=0.727\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-13_1090_1544_1452_253.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\includegraphics[width=0.491\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-33_651_1044_632_215.jpg}\n\n1 mark for period\n\n1 mark for horizontal translation\n\n1 mark for vertical translation\n\n3 marks",
+          "text": "#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-33_651_1044_632_215.jpg\", width: 49.1%)\n\n1 mark for period\n\n1 mark for horizontal translation\n\n1 mark for vertical translation\n\n3 marks",
           "extensions": {
             "latexSource": "\\includegraphics[width=0.491\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-33_651_1044_632_215.jpg}\n\n1 mark for period\n\n1 mark for horizontal translation\n\n1 mark for vertical translation\n\n3 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3659,17 +3769,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Verify that \\(\\theta=\\frac{4 \\pi}{3}\\) is a solution of the equation \\(4 \\cos ^{2} \\theta-1=0\\).",
+          "text": "Verify that $theta = frac(4  pi ,3 )$ is a solution of the equation $4  cos  ^(2 ) theta - 1 = 0 $.",
           "extensions": {
-            "latexSource": "Verify that \\(\\theta=\\frac{4 \\pi}{3}\\) is a solution of the equation \\(4 \\cos ^{2} \\theta-1=0\\)."
+            "latexSource": "Verify that \\(\\theta=\\frac{4 \\pi}{3}\\) is a solution of the equation \\(4 \\cos ^{2} \\theta-1=0\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{array}{rlr} \\text { Left-hand side }  =4 \\cos ^{2}\\left(\\frac{4 \\pi}{3}\\right)-1  \\\\  =4\\left(\\frac{-1}{2}\\right)^{2}-1  \\\\  =4\\left(\\frac{1}{4}\\right)-1  \\\\  =0  1 / 2 \\text { mark for value of } \\cos \\left(\\frac{4 \\pi}{3}\\right) \\\\  =\\text { Right-hand side }  1 / 2 \\text { mark for verification } \\\\ \\mathbf{1} \\text { mark } \\end{array} \\]",
+          "text": "$  mat(delim: #none,  \" Left-hand side \" \"\" , = 4  cos  ^(2 )lr(\\( frac(4  pi ,3 )\\) )- 1  \"\" , \"\" ; \"\" , = 4 lr(\\( frac(- 1 ,2 )\\) )^(2 )- 1  \"\" , \"\" ; \"\" , = 4 lr(\\( frac(1 ,4 )\\) )- 1  \"\" , \"\" ; \"\" , = 0  \"\" , 1  \\/ 2  \" mark for value of \" cos  lr(\\( frac(4  pi ,3 )\\) ) \"\" ; \"\" , = \" Right-hand side \" \"\" , 1  \\/ 2  \" mark for verification \" \"\" ; bold(1 ) \" mark \" )  $",
           "extensions": {
             "latexSource": "\\[ \\begin{array}{rlr} \\text { Left-hand side } & =4 \\cos ^{2}\\left(\\frac{4 \\pi}{3}\\right)-1 & \\\\ & =4\\left(\\frac{-1}{2}\\right)^{2}-1 & \\\\ & =4\\left(\\frac{1}{4}\\right)-1 & \\\\ & =0 & 1 / 2 \\text { mark for value of } \\cos \\left(\\frac{4 \\pi}{3}\\right) \\\\ & =\\text { Right-hand side } & 1 / 2 \\text { mark for verification } \\\\ \\mathbf{1} \\text { mark } \\end{array} \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3744,15 +3856,17 @@
           "format": "typst",
           "text": "Describe how to determine the equation of the horizontal asymptote of a rational function when the\n\ndegree of the polynomial in the numerator and the degree of the polynomial in the denominator are\n\nequal.",
           "extensions": {
-            "latexSource": "Describe how to determine the equation of the horizontal asymptote of a rational function when the\n\ndegree of the polynomial in the numerator and the degree of the polynomial in the denominator are\n\nequal."
+            "latexSource": "Describe how to determine the equation of the horizontal asymptote of a rational function when the\n\ndegree of the polynomial in the numerator and the degree of the polynomial in the denominator are\n\nequal.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "The horizontal asymptote is \\(y=\\frac{a}{b}\\) where \\(a\\) is the leading coefficient in the numerator and \\(b\\)\n\nis the leading coefficient in the denominator.\n\nor\n\nUse polynomial division to divide the numerator by the denominator. The equation of the\n\nhorizontal asymptote will have the same value as the quotient.\n\n1 mark",
+          "text": "The horizontal asymptote is $y = frac(a ,b )$ where $a $ is the leading coefficient in the numerator and $b $\n\nis the leading coefficient in the denominator.\n\nor\n\nUse polynomial division to divide the numerator by the denominator. The equation of the\n\nhorizontal asymptote will have the same value as the quotient.\n\n1 mark",
           "extensions": {
             "latexSource": "The horizontal asymptote is \\(y=\\frac{a}{b}\\) where \\(a\\) is the leading coefficient in the numerator and \\(b\\)\n\nis the leading coefficient in the denominator.\n\nor\n\nUse polynomial division to divide the numerator by the denominator. The equation of the\n\nhorizontal asymptote will have the same value as the quotient.\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3825,17 +3939,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Evaluate.\n\n\\[ \\frac{\\cot \\left(-\\frac{5 \\pi}{6}\\right)}{\\sin \\left(\\frac{17 \\pi}{3}\\right)} \\]",
+          "text": "Evaluate.\n\n$  frac(cot  lr(\\( - frac(5  pi ,6 )\\) ),sin  lr(\\( frac(17  pi ,3 )\\) ))  $",
           "extensions": {
-            "latexSource": "Evaluate.\n\n\\[ \\frac{\\cot \\left(-\\frac{5 \\pi}{6}\\right)}{\\sin \\left(\\frac{17 \\pi}{3}\\right)} \\]"
+            "latexSource": "Evaluate.\n\n\\[ \\frac{\\cot \\left(-\\frac{5 \\pi}{6}\\right)}{\\sin \\left(\\frac{17 \\pi}{3}\\right)} \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\(\\frac{\\sqrt{3}}{-\\frac{\\sqrt{3}}{2}}\\)\n\n\\((\\sqrt{3})\\left(-\\frac{2}{\\sqrt{3}}\\right)\\)\n\n-2\n\n1 mark for \\(\\cot \\left(-\\frac{5 \\pi}{6}\\right)\\left(\\frac{1}{2}\\right.\\) mark for value, \\(\\frac{1}{2}\\) mark for quadrant \\()\\)\n\n1 mark for \\(\\sin \\left(\\frac{17 \\pi}{3}\\right)\\left(\\frac{1}{2}\\right.\\) mark for value, \\(\\frac{1}{2}\\) mark for quadrant \\()\\)\n\n2 marks",
+          "text": "$frac(sqrt(3 ),- frac(sqrt(3 ),2 ))$\n\n$\\(sqrt(3 )\\)lr(\\( - frac(2 ,sqrt(3 ))\\) )$\n\n-2\n\n1 mark for $cot  lr(\\( - frac(5  pi ,6 )\\) )lr(\\( frac(1 ,2 ) )$ mark for value\\, $frac(1 ,2 )$ mark for quadrant $\\)$\n\n1 mark for $sin  lr(\\( frac(17  pi ,3 )\\) )lr(\\( frac(1 ,2 ) )$ mark for value\\, $frac(1 ,2 )$ mark for quadrant $\\)$\n\n2 marks",
           "extensions": {
             "latexSource": "\\(\\frac{\\sqrt{3}}{-\\frac{\\sqrt{3}}{2}}\\)\n\n\\((\\sqrt{3})\\left(-\\frac{2}{\\sqrt{3}}\\right)\\)\n\n-2\n\n1 mark for \\(\\cot \\left(-\\frac{5 \\pi}{6}\\right)\\left(\\frac{1}{2}\\right.\\) mark for value, \\(\\frac{1}{2}\\) mark for quadrant \\()\\)\n\n1 mark for \\(\\sin \\left(\\frac{17 \\pi}{3}\\right)\\left(\\frac{1}{2}\\right.\\) mark for value, \\(\\frac{1}{2}\\) mark for quadrant \\()\\)\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3908,17 +4024,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Sketch the graph of the function \\(f(x)=\\frac{-1}{(x-1)^{2}}\\) and determine the range.\n\n\\includegraphics[width=0.446\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-16_876_947_519_302.jpg}\n\nRange:\n\n\\(\\_\\_\\_\\_\\)",
+          "text": "Sketch the graph of the function $f \\(x \\)= frac(- 1 ,\\(x - 1 \\)^(2 ))$ and determine the range.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-16_876_947_519_302.jpg\", width: 44.6%)\n\nRange:\n\n$\\_ \\_ \\_ \\_ $",
           "extensions": {
-            "latexSource": "Sketch the graph of the function \\(f(x)=\\frac{-1}{(x-1)^{2}}\\) and determine the range.\n\n\\includegraphics[width=0.446\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-16_876_947_519_302.jpg}\n\nRange:\n\n\\(\\_\\_\\_\\_\\)"
+            "latexSource": "Sketch the graph of the function \\(f(x)=\\frac{-1}{(x-1)^{2}}\\) and determine the range.\n\n\\includegraphics[width=0.446\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-16_876_947_519_302.jpg}\n\nRange:\n\n\\(\\_\\_\\_\\_\\)",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\includegraphics[width=0.451\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-37_859_958_634_245.jpg}\n\n1 mark for asymptotic behaviour at \\(x=1\\)\n\n1 mark for asymptotic behaviour at \\(y=0\\)\n\n\\(\\frac{1}{2}\\) mark for graph left of \\(x=1\\)\n\n\\(\\frac{1}{2}\\) mark for graph right of \\(x=1\\)\n\nRange: \\(\\{y \\in \\mathbb{R} \\mid y<0\\}\\)\n\nor\n\nRange: \\((-\\infty, 0)\\)\n\n1 mark for range (consistent with graph)\n\n4 marks",
+          "text": "#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-37_859_958_634_245.jpg\", width: 45.1%)\n\n1 mark for asymptotic behaviour at $x = 1 $\n\n1 mark for asymptotic behaviour at $y = 0 $\n\n$frac(1 ,2 )$ mark for graph left of $x = 1 $\n\n$frac(1 ,2 )$ mark for graph right of $x = 1 $\n\nRange: $\\{ y  in  bb(R ) divides  y < 0 \\} $\n\nor\n\nRange: $\\(- oo \\, 0 \\)$\n\n1 mark for range \\(consistent with graph\\)\n\n4 marks",
           "extensions": {
             "latexSource": "\\includegraphics[width=0.451\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-37_859_958_634_245.jpg}\n\n1 mark for asymptotic behaviour at \\(x=1\\)\n\n1 mark for asymptotic behaviour at \\(y=0\\)\n\n\\(\\frac{1}{2}\\) mark for graph left of \\(x=1\\)\n\n\\(\\frac{1}{2}\\) mark for graph right of \\(x=1\\)\n\nRange: \\(\\{y \\in \\mathbb{R} \\mid y<0\\}\\)\n\nor\n\nRange: \\((-\\infty, 0)\\)\n\n1 mark for range (consistent with graph)\n\n4 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -3994,17 +4112,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Given \\(f(x)=\\sqrt{x-2}\\) and \\(g(x)=x^{2}+1\\), a) determine \\(g(f(x))\\).\n\n\\[ g(f(x))= \\]\n\nb) explain why the domain of \\(g(f(x))\\) is restricted.",
+          "text": "Given $f \\(x \\)= sqrt(x - 2 )$ and $g \\(x \\)= x ^(2 )+ 1 $\\,\n\na\\) determine $g \\(f \\(x \\)\\)$.\n\n$  g \\(f \\(x \\)\\)=   $\n\nb\\) explain why the domain of $g \\(f \\(x \\)\\)$ is restricted.",
           "extensions": {
-            "latexSource": "Given \\(f(x)=\\sqrt{x-2}\\) and \\(g(x)=x^{2}+1\\),\n\na) determine \\(g(f(x))\\).\n\n\\[ g(f(x))= \\]\n\nb) explain why the domain of \\(g(f(x))\\) is restricted."
+            "latexSource": "Given \\(f(x)=\\sqrt{x-2}\\) and \\(g(x)=x^{2}+1\\),\n\na) determine \\(g(f(x))\\).\n\n\\[ g(f(x))= \\]\n\nb) explain why the domain of \\(g(f(x))\\) is restricted.",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "a)\n\n\\[ \\begin{aligned} g(f(x))  =(\\sqrt{x-2})^{2}+1   1 \\text { mark for composition } \\\\  =x-2+1, x \\geq 2   \\mathbf{1} \\text { mark } \\\\  =x-1, x \\geq 2   \\end{aligned} \\]\n\nb) The domain of \\(g(f(x))\\) must be restricted because the domain of \\(f(x)\\) is restricted.\n\nor\n\nThe value of the radicand must be positive.\n\n1 mark",
+          "text": "a\\)\n\n$   g \\(f \\(x \\)\\) & = \\(sqrt(x - 2 )\\)^(2 )+ 1  & & 1  \" mark for composition \" \\  & = x - 2 + 1 \\, x  >=  2  & & bold(1 ) \" mark \" \\  & = x - 1 \\, x  >=  2  & &   $\n\nb\\) The domain of $g \\(f \\(x \\)\\)$ must be restricted because the domain of $f \\(x \\)$ is restricted.\n\nor\n\nThe value of the radicand must be positive.\n\n1 mark",
           "extensions": {
             "latexSource": "a)\n\n\\[ \\begin{aligned} g(f(x)) & =(\\sqrt{x-2})^{2}+1 & & 1 \\text { mark for composition } \\\\ & =x-2+1, x \\geq 2 & & \\mathbf{1} \\text { mark } \\\\ & =x-1, x \\geq 2 & & \\end{aligned} \\]\n\nb) The domain of \\(g(f(x))\\) must be restricted because the domain of \\(f(x)\\) is restricted.\n\nor\n\nThe value of the radicand must be positive.\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4077,17 +4197,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve algebraically.\n\n\\[ 2 \\log _{a} 3+\\log _{a} 4=2, \\text { where } a>0 \\]",
+          "text": "Solve algebraically.\n\n$  2  log  _(a ) 3 + log  _(a ) 4 = 2 \\, \" where \" a > 0   $",
           "extensions": {
-            "latexSource": "Solve algebraically.\n\n\\[ 2 \\log _{a} 3+\\log _{a} 4=2, \\text { where } a>0 \\]"
+            "latexSource": "Solve algebraically.\n\n\\[ 2 \\log _{a} 3+\\log _{a} 4=2, \\text { where } a>0 \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\log _{a}\\left(3^{2} \\cdot 4\\right)  =2 \\\\ \\log _{a} 36  =2 \\\\ a^{2}  =36 \\\\ a  =6 \\end{aligned} \\]\n\n1 mark for power law\n\n1 mark for product law\n\n1 mark for exponential form\n\n3 marks",
+          "text": "$   log  _(a )lr(\\( 3 ^(2 ) dot.c  4 \\) ) & = 2  \\  log  _(a ) 36  & = 2  \\  a ^(2 ) & = 36  \\  a  & = 6    $\n\n1 mark for power law\n\n1 mark for product law\n\n1 mark for exponential form\n\n3 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\log _{a}\\left(3^{2} \\cdot 4\\right) & =2 \\\\ \\log _{a} 36 & =2 \\\\ a^{2} & =36 \\\\ a & =6 \\end{aligned} \\]\n\n1 mark for power law\n\n1 mark for product law\n\n1 mark for exponential form\n\n3 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4172,17 +4294,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Solve \\(\\sec \\theta+2=0\\) over the interval \\([0,2 \\pi]\\).",
+          "text": "Solve $sec  theta + 2 = 0 $ over the interval $\\[0 \\,2  pi \\]$.",
           "extensions": {
-            "latexSource": "Solve \\(\\sec \\theta+2=0\\) over the interval \\([0,2 \\pi]\\)."
+            "latexSource": "Solve \\(\\sec \\theta+2=0\\) over the interval \\([0,2 \\pi]\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\sec \\theta+2  =0 \\\\ \\sec \\theta  =-2 \\\\ \\cos \\theta  =-\\frac{1}{2} \\\\ \\theta  =\\frac{2 \\pi}{3}, \\frac{4 \\pi}{3} \\end{aligned} \\]\n\n1 mark for reciprocal\n\n1 mark for values of \\(\\theta\\) ( \\(\\frac{1}{2}\\) mark for each value)\n\n2 marks",
+          "text": "$   sec  theta + 2  & = 0  \\  sec  theta  & = - 2  \\  cos  theta  & = - frac(1 ,2 ) \\  theta  & = frac(2  pi ,3 )\\, frac(4  pi ,3 )   $\n\n1 mark for reciprocal\n\n1 mark for values of $theta $ \\( $frac(1 ,2 )$ mark for each value\\)\n\n2 marks",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\sec \\theta+2 & =0 \\\\ \\sec \\theta & =-2 \\\\ \\cos \\theta & =-\\frac{1}{2} \\\\ \\theta & =\\frac{2 \\pi}{3}, \\frac{4 \\pi}{3} \\end{aligned} \\]\n\n1 mark for reciprocal\n\n1 mark for values of \\(\\theta\\) ( \\(\\frac{1}{2}\\) mark for each value)\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4255,17 +4379,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Determine the \\(x\\)-intercept of the graph of \\(f(x)=e^{x}-1\\).",
+          "text": "Determine the $x $-intercept of the graph of $f \\(x \\)= e ^(x )- 1 $.",
           "extensions": {
-            "latexSource": "Determine the \\(x\\)-intercept of the graph of \\(f(x)=e^{x}-1\\)."
+            "latexSource": "Determine the \\(x\\)-intercept of the graph of \\(f(x)=e^{x}-1\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "Method 1\n\n\\[ \\begin{array}{ll} 0=e^{x}-1  1 / 2 \\text { mark for substitution } \\\\ 1=e^{x}  1 / 2 \\text { mark for solving for } x \\\\ x=0  1 \\text { mark } \\end{array} \\]\n\nMethod 2\n\n\\includegraphics[width=0.413\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-41_812_877_1336_337.jpg}\n\n\\[ \\therefore x=0 \\quad 1 \\text { mark } \\]",
+          "text": "Method 1\n\n$  mat(delim: #none,  0 = e ^(x )- 1  \"\" , 1  \\/ 2  \" mark for substitution \" \"\" ; 1 = e ^(x ) \"\" , 1  \\/ 2  \" mark for solving for \" x  \"\" ; x = 0  \"\" , 1  \" mark \" )  $\n\nMethod 2\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-41_812_877_1336_337.jpg\", width: 41.3%)\n\n$  therefore  x = 0  quad  1  \" mark \"  $",
           "extensions": {
             "latexSource": "Method 1\n\n\\[ \\begin{array}{ll} 0=e^{x}-1 & 1 / 2 \\text { mark for substitution } \\\\ 1=e^{x} & 1 / 2 \\text { mark for solving for } x \\\\ x=0 & 1 \\text { mark } \\end{array} \\]\n\nMethod 2\n\n\\includegraphics[width=0.413\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-41_812_877_1336_337.jpg}\n\n\\[ \\therefore x=0 \\quad 1 \\text { mark } \\]",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4340,9 +4466,10 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Given the \\(5^{\\text {th }}\\) row of Pascal's triangle, determine the values of the next row.\n\n\\[ \\begin{array}{lllll} 1  4  6  4  1 \\end{array} \\]",
+          "text": "Given the $5 ^(\"th \")$ row of Pascal's triangle\\, determine the values of the next row.\n\n$  mat(delim: #none,  1  \"\" , 4  \"\" , 6  \"\" , 4  \"\" , 1  )  $",
           "extensions": {
-            "latexSource": "Given the \\(5^{\\text {th }}\\) row of Pascal's triangle, determine the values of the next row.\n\n\\[ \\begin{array}{lllll} 1 & 4 & 6 & 4 & 1 \\end{array} \\]"
+            "latexSource": "Given the \\(5^{\\text {th }}\\) row of Pascal's triangle, determine the values of the next row.\n\n\\[ \\begin{array}{lllll} 1 & 4 & 6 & 4 & 1 \\end{array} \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
@@ -4350,7 +4477,8 @@
           "text": "15101051\n\n1 mark",
           "extensions": {
             "latexSource": "15101051\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4423,17 +4551,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Evaluate.\n\n\\[ \\log _{2} 80-\\log _{2} 10 \\]",
+          "text": "Evaluate.\n\n$  log  _(2 ) 80 - log  _(2 ) 10   $",
           "extensions": {
-            "latexSource": "Evaluate.\n\n\\[ \\log _{2} 80-\\log _{2} 10 \\]"
+            "latexSource": "Evaluate.\n\n\\[ \\log _{2} 80-\\log _{2} 10 \\]",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\(\\log _{2}\\left(\\frac{80}{10}\\right)\\)\n\n\\(\\log _{2} 8\\)\n\n3\n\n1 mark for quotient law\n\n1 mark for evaluating the logarithm\n\n2 marks",
+          "text": "$log  _(2 )lr(\\( frac(80 ,10 )\\) )$\n\n$log  _(2 ) 8 $\n\n3\n\n1 mark for quotient law\n\n1 mark for evaluating the logarithm\n\n2 marks",
           "extensions": {
             "latexSource": "\\(\\log _{2}\\left(\\frac{80}{10}\\right)\\)\n\n\\(\\log _{2} 8\\)\n\n3\n\n1 mark for quotient law\n\n1 mark for evaluating the logarithm\n\n2 marks",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4518,9 +4648,10 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "State the amplitude of \\(f(x)=-2 \\sin (x-\\pi)-1\\).",
+          "text": "State the amplitude of $f \\(x \\)= - 2  sin  \\(x - pi \\)- 1 $.",
           "extensions": {
-            "latexSource": "State the amplitude of \\(f(x)=-2 \\sin (x-\\pi)-1\\)."
+            "latexSource": "State the amplitude of \\(f(x)=-2 \\sin (x-\\pi)-1\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
@@ -4528,7 +4659,8 @@
           "text": "2\n\n1 mark",
           "extensions": {
             "latexSource": "2\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4601,17 +4733,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "Determine the exact value of \\(\\cos 15^{\\circ}\\).",
+          "text": "Determine the exact value of $cos  15 ^(degree )$.",
           "extensions": {
-            "latexSource": "Determine the exact value of \\(\\cos 15^{\\circ}\\)."
+            "latexSource": "Determine the exact value of \\(\\cos 15^{\\circ}\\).",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "\\[ \\begin{aligned} \\cos \\left(15^{\\circ}\\right)  =\\cos \\left(60^{\\circ}-45^{\\circ}\\right) \\\\  =\\cos 60^{\\circ} \\cos 45^{\\circ}+\\sin 60^{\\circ} \\sin 45^{\\circ} \\\\  =\\left(\\frac{1}{2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right)+\\left(\\frac{\\sqrt{3}}{2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right) \\\\  =\\frac{\\sqrt{2}}{4}+\\frac{\\sqrt{6}}{4} \\\\  =\\frac{\\sqrt{2}+\\sqrt{6}}{4} \\end{aligned} \\]\n\n1 mark for substitution into correct identity\n\n2 marks for values ( \\(\\frac{1}{2}\\) mark for each exact value)\n\n3 marks\n\n- Other combinations are possible.",
+          "text": "$   cos  lr(\\( 15 ^(degree )\\) ) & = cos  lr(\\( 60 ^(degree )- 45 ^(degree )\\) ) \\  & = cos  60 ^(degree ) cos  45 ^(degree )+ sin  60 ^(degree ) sin  45 ^(degree ) \\  & = lr(\\( frac(1 ,2 )\\) )lr(\\( frac(sqrt(2 ),2 )\\) )+ lr(\\( frac(sqrt(3 ),2 )\\) )lr(\\( frac(sqrt(2 ),2 )\\) ) \\  & = frac(sqrt(2 ),4 )+ frac(sqrt(6 ),4 ) \\  & = frac(sqrt(2 )+ sqrt(6 ),4 )   $\n\n1 mark for substitution into correct identity\n\n2 marks for values \\( $frac(1 ,2 )$ mark for each exact value\\)\n\n3 marks\n\n- Other combinations are possible.",
           "extensions": {
             "latexSource": "\\[ \\begin{aligned} \\cos \\left(15^{\\circ}\\right) & =\\cos \\left(60^{\\circ}-45^{\\circ}\\right) \\\\ & =\\cos 60^{\\circ} \\cos 45^{\\circ}+\\sin 60^{\\circ} \\sin 45^{\\circ} \\\\ & =\\left(\\frac{1}{2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right)+\\left(\\frac{\\sqrt{3}}{2}\\right)\\left(\\frac{\\sqrt{2}}{2}\\right) \\\\ & =\\frac{\\sqrt{2}}{4}+\\frac{\\sqrt{6}}{4} \\\\ & =\\frac{\\sqrt{2}+\\sqrt{6}}{4} \\end{aligned} \\]\n\n1 mark for substitution into correct identity\n\n2 marks for values ( \\(\\frac{1}{2}\\) mark for each exact value)\n\n3 marks\n\n- Other combinations are possible.",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -4696,17 +4830,19 @@
       "content": {
         "stem": {
           "format": "typst",
-          "text": "a) 1 mark\n\nb) 1 mark\n\nGiven \\(f(x)=x^{2}+5 x+6, g(x)=x+3\\), and \\(h(x)=f(x)-g(x)\\), a) determine \\(h(x)\\).\n\n\\[ h(x)= \\]\n\n\\(\\_\\_\\_\\_\\)\n\nb) sketch the graph of \\(y=h(x)\\).\n\n\\includegraphics[width=0.412\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-22_852_876_1428_562.jpg}",
+          "text": "a\\) 1 mark\n\nb\\) 1 mark\n\nGiven $f \\(x \\)= x ^(2 )+ 5  x + 6 \\, g \\(x \\)= x + 3 $\\, and $h \\(x \\)= f \\(x \\)- g \\(x \\)$\\,\n\na\\) determine $h \\(x \\)$.\n\n$  h \\(x \\)=   $\n\n$\\_ \\_ \\_ \\_ $\n\nb\\) sketch the graph of $y = h \\(x \\)$.\n\n#image(\"assets/a84b64e1-b0a1-4267-ad69-22835614e850-22_852_876_1428_562.jpg\", width: 41.2%)",
           "extensions": {
-            "latexSource": "a) 1 mark\n\nb) 1 mark\n\nGiven \\(f(x)=x^{2}+5 x+6, g(x)=x+3\\), and \\(h(x)=f(x)-g(x)\\),\n\na) determine \\(h(x)\\).\n\n\\[ h(x)= \\]\n\n\\(\\_\\_\\_\\_\\)\n\nb) sketch the graph of \\(y=h(x)\\).\n\n\\includegraphics[width=0.412\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-22_852_876_1428_562.jpg}"
+            "latexSource": "a) 1 mark\n\nb) 1 mark\n\nGiven \\(f(x)=x^{2}+5 x+6, g(x)=x+3\\), and \\(h(x)=f(x)-g(x)\\),\n\na) determine \\(h(x)\\).\n\n\\[ h(x)= \\]\n\n\\(\\_\\_\\_\\_\\)\n\nb) sketch the graph of \\(y=h(x)\\).\n\n\\includegraphics[width=0.412\\textwidth]{assets/a84b64e1-b0a1-4267-ad69-22835614e850-22_852_876_1428_562.jpg}",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         },
         "solution": {
           "format": "typst",
-          "text": "a)\n\n\\[ \\begin{aligned} f(x)-g(x)  =x^{2}+5 x+6-(x+3) \\\\  =x^{2}+4 x+3 \\end{aligned} \\]\n\nb)\n\n\\end{itemize}\n\n\\includegraphics[width=0.367\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-46_748_780_1109_329.jpg}\n\n1 mark for graph consistent with a)\n\n1 mark",
+          "text": "a\\)\n\n$   f \\(x \\)- g \\(x \\) & = x ^(2 )+ 5  x + 6 - \\(x + 3 \\) \\  & = x ^(2 )+ 4  x + 3    $\n\nb\\)\n\n\n\n#image(\"assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-46_748_780_1109_329.jpg\", width: 36.7%)\n\n1 mark for graph consistent with a\\)\n\n1 mark",
           "extensions": {
             "latexSource": "a)\n\n\\[ \\begin{aligned} f(x)-g(x) & =x^{2}+5 x+6-(x+3) \\\\ & =x^{2}+4 x+3 \\end{aligned} \\]\n\nb)\n\n\\end{itemize}\n\n\\includegraphics[width=0.367\\textwidth]{assets/301f36a4-2602-41cf-b1a7-c4519ebdf295-46_748_780_1109_329.jpg}\n\n1 mark for graph consistent with a)\n\n1 mark",
-            "source": "mathpix"
+            "source": "mathpix",
+            "typstConversion": "mitex-wasm-native-2026-09"
           }
         }
       },
@@ -5305,6 +5441,11 @@
       "Generated from Mathpix API lines.json and tex.zip artifacts.",
       "Primary content is best-effort Typst generated with mitex.",
       "Mathpix LaTeX is preserved in content.*.extensions.latexSource."
-    ]
+    ],
+    "typstValidation": {
+      "fieldsCompiled": true,
+      "examPdfCompiled": true,
+      "mathematicalReview": "partial; see typst-review/report.json"
+    }
   }
 }

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "mb-pc40s-2013-jan-q32",
+    "field": "solution",
+    "reason": "Restored the previously missing graphical answer; checked the marking guide, physical page 41.",
+    "source": "pc_13_jan_mg.pdf:41",
+    "text": "Reflect the graph of $f(x)$ across the $x$-axis. Every point $(x, y)$ becomes $(x, -y)$.\n\nThe reflected vertices are $(-2, -1)$, $(-1, -1)$, and $(2, 1)$. Join them in that order with straight line segments and include the endpoints."
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q45",
+    "field": "body",
+    "reason": "Corrected OCR column ordering against student booklet, physical page 28.",
+    "source": "pc_15_jan_sb2.pdf:28",
+    "text": "Determine the number of possible sandwiches from the following menu.\n\n*MENU*\n\nSelect one item from each column:\n\n#table(columns: 4, stroke: none,\n  [*Bread*], [*Sauce*], [*Meat*], [*Vegetable*],\n  [White], [Mayo], [Turkey], [Tomato],\n  [Rye], [Mustard], [Ham], [Onion],\n  [Brown], [], [Roast Beef], [Lettuce],\n  [], [], [Chicken], [],\n)"
+  },
+  {
+    "id": "mb-pc40s-2017-jun-q12",
+    "field": "solution",
+    "reason": "Reconstructed the two methods from the guide OCR; separated overlapping composition equations and scoring notes.",
+    "text": "*Method 1: Find the inverse.*\n\n$ y &= frac(1, x+5) \\\n  x &= frac(1, y+5) \\\n  y+5 &= frac(1, x) \\\n  y &= frac(1, x)-5 $\n\nTherefore $f^(-1)(x)=frac(1,x)-5$, which is not $g(x)=frac(1,x-5)$. The functions are not inverses.\n\n*Method 2: Check composition.*\n\n$ f(g(x)) &= frac(1, frac(1,x-5)+5) \\\n         &= frac(x-5, 5x-24) $\n\nSimilarly,\n\n$ g(f(x)) &= frac(1, frac(1,x+5)-5) \\\n         &= frac(x+5, -5x-24) $\n\nNeither composition is identically $x$, confirming that the functions are not inverses.\n\nScoring: 1 mark for setting up the inverse or a composition; $frac(1,2)$ mark for simplification; $frac(1,2)$ mark for justification."
+  },
+  {
+    "id": "mb-pc40s-2017-jun-q32",
+    "field": "solution",
+    "reason": "Reflowed the guide’s double-angle methods and general solution; verified algebraically.",
+    "text": "*Method 1: Use the sine double-angle identity.*\n\n$ 1-2sin^2 theta &= 0 \\\n  sin theta &= plus.minus frac(sqrt(2),2) $\n\nIn one full revolution, $theta=pi/4, 3pi/4, 5pi/4, 7pi/4$. Thus the general solution is\n\n$ theta=pi/4+frac(k pi,2), quad k in ZZ. $\n\nEquivalently, $theta=pi/4+k pi$ or $theta=3pi/4+k pi$, where $k in ZZ$.\n\n*Method 2: Use the cosine double-angle identity.*\n\n$ 2cos^2 theta-1 &= 0 \\\n  cos theta &= plus.minus frac(sqrt(2),2) $\n\nThis gives the same four values in one revolution and the same general solution.\n\nScoring: 1 mark for the double-angle identity; 1 mark for solving for the trigonometric ratio; 1 mark for angle values; 1 mark for the general solution. Retain both branches when taking the square root."
+  },
+  {
+    "id": "mb-pc40s-2019-jun-q02",
+    "field": "solution",
+    "reason": "Separated the factored equation, two branches, and scoring notes to eliminate overflow.",
+    "text": "Use $sin^2 theta=1-cos^2 theta$:\n\n$ 5cos^2 theta-cos theta-(1-cos^2 theta) &= 0 \\\n  6cos^2 theta-cos theta-1 &= 0 \\\n  (3cos theta+1)(2cos theta-1) &= 0 $\n\nHence $cos theta=-frac(1,3)$ or $cos theta=frac(1,2)$.\n\nFor $cos theta=-frac(1,3)$, the solutions on $[0,2pi]$ are\n\n$ theta=arccos(-frac(1,3)) approx 1.911, quad theta=2pi-arccos(-frac(1,3)) approx 4.373. $\n\nFor $cos theta=frac(1,2)$, $theta=pi/3$ or $theta=5pi/3$.\n\nThus $theta approx 1.047, 1.911, 4.373, 5.236$ radians.\n\nScoring: 1 mark for the identity substitution; 1 mark for solving for $cos theta$; 2 marks for the four angle values."
+  },
+  {
+    "id": "mb-pc40s-2020-jan-q12",
+    "field": "solution",
+    "reason": "Separated factorial expansion and rejection of the extraneous root from the guide’s scoring column.",
+    "text": "Using the permutation formula,\n\n$ frac((n+1)!, (n-1)!) &= 6 \\\n  frac((n+1)n(n-1)!, (n-1)!) &= 6 \\\n  n(n+1) &= 6 \\\n  n^2+n-6 &= 0 \\\n  (n+3)(n-2) &= 0 $\n\nThe algebraic roots are $n=-3$ and $n=2$. Reject $n=-3$: the number of objects must allow a selection of two, so $n+1>=2$.\n\nTherefore $n=2$. Check: $3 times 2=6$.\n\nScoring: $frac(1,2)$ mark for substitution; 1 mark for factorial expansion; $frac(1,2)$ mark for simplification; $frac(1,2)$ mark for the permissible value; $frac(1,2)$ mark for rejecting the extraneous root."
+  }
+]
