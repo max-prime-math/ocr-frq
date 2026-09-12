@@ -1,5 +1,246 @@
 [
   {
+    "id": "mb-pc40s-2020-jan-q08",
+    "field": "solution",
+    "text": "Domain: $[8, infinity)$\n\n1 mark for domain\n\nRange: $(-infinity, 1]$\n\n1 mark for range\n\n2 marks",
+    "reason": "Astra-approved routine repair: Restores the source guide's omitted domain, [8, infinity), while retaining the existing range and scoring criteria.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_20_jan_mg.pdf:24"
+  },
+  {
+    "id": "mb-pc40s-2020-jan-q10",
+    "field": "solution",
+    "text": "Method 1\n\n#table(\n  stroke: none,\n  columns: 2,\n  align: (left, left),\n  table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2),\n  table.hline(stroke: .5pt),\n  [Left-Hand Side], [Right-Hand Side],\n  table.hline(stroke: .5pt),\n  [\n    $frac(frac(1, cos theta) - frac(sin^2 theta, cos theta), lr(frac(sin theta, cos theta)) (sin theta))$\n\n    $frac(frac(1 - sin^2 theta, cos theta), frac(sin^2 theta, cos theta))$\n\n    $frac(cos^2 theta, sin^2 theta)$\n\n    $cot^2 theta$\n\n    $csc^2 theta - 1$\n  ], [$csc^2 theta - 1$],\n  table.hline(stroke: .5pt),\n)\n\n1 mark for correct substitution of appropriate identities\n\n1 mark for algebraic strategies\n\n1 mark for logical process to prove the identity\n\n3 marks",
+    "reason": "Astra-approved routine repair: Restores Method 1's single grouped left-hand fraction before the guide's subsequent simplification steps.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_20_jan_mg.pdf:28"
+  },
+  {
+    "id": "mb-pc40s-2020-jan-q41",
+    "field": "solution",
+    "text": "a) $3(-3)^3 + 5(-3)^2 - 13(-3) - 3$ #h(1em) 1 mark for remainder theorem\n\n$3(-27) + 5(9) - 13(-3) - 3$\n\n$0$\n\nor\n\n#table(\n  stroke: none,\n  columns: 5,\n  align: left,\n  table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5),\n  table.hline(stroke: .5pt),\n  [-3], [3], [5], [-13], [-3],\n  table.hline(stroke: .5pt),\n  [], [], [-9], [12], [3],\n  table.hline(stroke: .5pt),\n  [], [3], [-4], [-1], [0],\n  table.hline(stroke: .5pt),\n)\n\n1 mark for synthetic division (or any equivalent strategy)\n\nThe remainder is $0$.\n\n1 mark\n\nb) Yes, because the remainder is $0$.\n\n1 mark for explanation\n\n1 mark",
+    "reason": "Astra-approved routine repair: Restores part (b)'s required conclusion and explanation that x + 3 is a factor because the remainder is 0, with the guide's two part-(a) methods retained.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_20_jan_mg.pdf:112"
+  },
+  {
+    "id": "mb-pc40s-2024-jan-q02",
+    "field": "solution",
+    "text": "$2 cos^2 theta = 1 - cos^2 theta - 2 cos theta$\n\n1 mark for substitution of appropriate identity\n\n$3 cos^2 theta + 2 cos theta - 1 = 0$\n\n$(cos theta + 1)(3 cos theta - 1) = 0$\n\n$cos theta = -1$ #h(2em) $cos theta = 1/3$\n\n$theta = pi$ #h(2em) $theta_r = 1.230959...$\n\n$theta = 1.231, 5.052$\n\n1 mark for solving for $cos theta$\n\n2 marks for solving for $theta$ (1 mark for each branch)\n\n4 marks",
+    "reason": "Astra-approved routine repair: Restores the reference-angle decimal as the single source value 1.230959... instead of splitting it across two math runs.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jan_mg.pdf:12"
+  },
+  {
+    "id": "mb-pc40s-2024-jan-q21",
+    "field": "body",
+    "text": "Identify the equivalent form of $log_a (1 / x^2)$.",
+    "reason": "Astra-approved routine repair: Removes the source-absent selected-response scoring label `1 mark` from the stem.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jan_mg.pdf:55"
+  },
+  {
+    "id": "mb-pc40s-2024-jan-q30",
+    "field": "solution",
+    "text": "Method 1\n\n$log_3 [x (x + 8)] = 2$\n\n1 mark for product law\n\n$x^2 + 8x = 3^2$\n\n1 mark for exponential form\n\n$x^2 + 8x - 9 = 0$\n\n$(x + 9)(x - 1) = 0$\n\n#strike[$x = -9$] #h(2em) $x = 1$\n\n$1/2$ mark for the permissible value of $x$\n\n$1/2$ mark for showing the rejection of the extraneous root\n\n3 marks\n\nMethod 2\n\n$log_3 x + log_3 (x + 8) = log_3 3^2$\n\n1 mark for logarithmic form\n\n$log_3 [x (x + 8)] = log_3 9$\n\n1 mark for product law\n\n$x^2 + 8x = 9$\n\n$x^2 + 8x - 9 = 0$\n\n$(x + 9)(x - 1) = 0$\n\n#strike[$x = -9$] #h(2em) $x = 1$\n\n$1/2$ mark for the permissible value of $x$\n\n$1/2$ mark for showing the rejection of the extraneous root\n\n3 marks",
+    "reason": "Astra-approved routine repair: Restores the guide's crossed-out extraneous root x = -9 in both methods while retaining the permissible root x = 1.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jan_mg.pdf:74"
+  },
+  {
+    "id": "mb-pc40s-2024-jun-q18",
+    "field": "choice:A",
+    "text": "$p(x) = -3 x (x - 1)(x - 2)$",
+    "reason": "Astra-approved routine repair: Restores the source guide's factor (x - 1) in distractor A.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jun_mg.pdf:57"
+  },
+  {
+    "id": "mb-pc40s-2024-jun-q26",
+    "field": "solution",
+    "text": "#table(\n  columns: 2,\n  align: (left, center),\n  [$f(x) = frac(1, x - 2)$], [C],\n  [$g(x) = frac(-x, x - 2)$], [D],\n  [$h(x) = frac(2x, x - 1)$], [A],\n  [$k(x) = frac(2x, x + 1)$], [B],\n)\n\n$frac(1, 2)$ mark for each answer\n\n2 marks\n\nA.\n\n#image(\"/imgs/27bd5b29-4766-4b04-aea7-cdcc5a120315-20_632_666_1246_359.jpg\", width: 31.3%)\n\n#image(\"/imgs/27bd5b29-4766-4b04-aea7-cdcc5a120315-20_645_651_1250_1149.jpg\", width: 30.6%)\n\n#image(\"/imgs/27bd5b29-4766-4b04-aea7-cdcc5a120315-20_634_690_1951_322.jpg\", width: 32.5%)\n\n#image(\"/imgs/27bd5b29-4766-4b04-aea7-cdcc5a120315-20_634_662_1951_1147.jpg\", width: 31.2%)",
+    "reason": "Astra-approved routine repair: Restores the missing f(x) to C match; the guide's complete order is C, D, A, B.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jun_mg.pdf:60"
+  },
+  {
+    "id": "mb-pc40s-2024-jun-q30",
+    "field": "solution",
+    "text": "$mat(\n  delim: #none,\n  (2^(-2))^(3x) &= (2^(3))^(x - 3);\n  2^(-6x) &= 2^(3x - 9);\n  -6x &= 3x - 9;\n  -9x &= -9;\n  x &= 1,\n)$\n\n1 mark for changing to a common base ($frac(1, 2)$ mark for each side)\n\n$frac(1, 2)$ mark for exponent law\n\n$frac(1, 2)$ mark for equating exponents\n\n2 marks",
+    "reason": "Astra-approved routine repair: Restores the missing 3 in the common-base exponent (x - 3).",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jun_mg.pdf:72"
+  },
+  {
+    "id": "mb-pc40s-2024-jun-q33",
+    "field": "solution",
+    "text": "$mat(\n  delim: #none,\n  p(x) &= a(x + 5)^(2)(x - 1)^(2);\n  75 &= a(5)^(2)(-1)^(2);\n  75 &= 25a;\n  a &= 3,\n)$\n\n1 mark for multiplicity of 2 at $x = -5$ and $x = 1$\n\n1 mark for consistent value of $a$\n\n$p(x) = 3(x + 5)^(2)(x - 1)^(2)$\n\n2 marks",
+    "reason": "Astra-approved routine repair: Restores the guide's final equation after solving a = 3.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jun_mg.pdf:80"
+  },
+  {
+    "id": "mb-pc40s-2024-jun-q38",
+    "field": "solution",
+    "text": "$mat(\n  delim: #none,\n  48 frac(n!, (n - 4)! 4!) &= frac((n + 1)!, ((n + 1) - 4)!);\n  48 frac(n!, (n - 4)! 4!) &= frac((n + 1)!, (n - 3)!);\n  frac(48, 4!) &= frac((n - 4)! (n + 1)!, (n - 3)! n!);\n  frac(48, 24) &= frac((n - 4)! (n + 1)(n)!, (n - 3)(n - 4)!(n)!);\n  2 &= frac(n + 1, n - 3);\n  2n - 6 &= n + 1;\n  n &= 7,\n)$\n\n1 mark for substitution into equation ($frac(1, 2)$ mark for each side)\n\n1 mark for factorial expansion\n\n$frac(1, 2)$ mark for simplification of factorials\n\n$frac(1, 2)$ mark for solving for $n$\n\n3 marks",
+    "reason": "Astra-approved routine repair: Restores the factorial-expansion and factorial-simplification scoring allocations from the guide.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_24_jun_mg.pdf:94"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q01",
+    "field": "body",
+    "text": "Manitoba postal codes consist of three letters and three digits. Determine the total number of\n\npossible postal codes in Manitoba if the following characteristics must be met:\n\n- The postal code must begin with the letter R.\n\n- Only 18 letters of the alphabet can be used.\n\n- The letters and digits must alternate.\n\n- The letters and digits can be repeated.",
+    "reason": "Astra-approved routine repair: Remove the source-absent OCR token `sill` before the stem.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:10"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q09",
+    "field": "solution",
+    "text": "$mat(delim: #none, 1, 6, 15, 20, 15, 6, 1)$",
+    "reason": "Astra-approved routine repair: The guide gives seven separated next-row values.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:28"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q22",
+    "field": "body",
+    "text": "Identify the period of the graph of the sinusoidal function.\n\n#image(\"/imgs/3785f99c-2a31-4e73-9fe9-12b1cd6f6620-03_541_596_476_1231.jpg\", width: 28.0%)",
+    "reason": "Astra-approved routine repair: Move the existing sinusoidal graph from choice D to the prompt, as in the guide.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:53"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q22",
+    "field": "choice:D",
+    "text": "20",
+    "reason": "Astra-approved routine repair: Restore choice D to its source text; the graph belongs in the prompt.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:53"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q23",
+    "field": "body",
+    "text": "Identify an equivalent expression for $log_(3) 9 + log_(3) 5$.",
+    "reason": "Astra-approved routine repair: Remove the scoring-label bleed; no `1 mark` label appears in the selected-response stem.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:53"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q39",
+    "field": "solution",
+    "text": "Method 1\n\nWhen using $\"\"_n P_r$, $n >= r$.\n\nMethod 2\n\n$\"\"_3 P_4 = 3! / (3 - 4)!$\n\n$\"\"_3 P_4 = 3! / (-1)!$\n\n$(-1)!$ does not exist, therefore $\"\"_3 P_4$ does not exist.\n\n1 mark",
+    "reason": "Astra-approved routine repair: Restore the final right subscript 4 in the permutation notation.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:92"
+  },
+  {
+    "id": "mb-pc40s-2025-jun-q41",
+    "field": "solution",
+    "text": "$frac(n!, 2! (n - 2)!) = 15$\n\n$frac(n (n - 1) (n - 2)!, 2! (n - 2)!) = 15$\n\n$n (n - 1) = 30$\n\n$n^2 - n - 30 = 0$\n\n$(n - 6) (n + 5) = 0$\n\n$n = 6 #h(1em) n != -5$\n\n$frac(1, 2)$ mark for substitution\n\n1 mark for factorial expansion\n\n$frac(1, 2)$ mark for simplification of factorials\n\n$frac(1, 2)$ mark for the permissible value of $n$\n\n$frac(1, 2)$ mark for showing the rejection of the extraneous root\n\n3 marks",
+    "reason": "Astra-approved routine repair: The guide rejects the extraneous root with `n != -5`, not `n >= -5`.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_25_jun_mg.pdf:96"
+  },
+  {
+    "id": "mb-pc40s-2026-jan-q17",
+    "field": "solution",
+    "text": "$ p(x) = 3x^3 + x^2 - 20x + 12 $\n\n$ p(2) = 3(2)^3 + (2)^2 - 20(2) + 12 $\n\n$ p(2) = 0 $\n\ntherefore, $(x - 2)$ is a factor\n\n1 mark for identifying one zero of $p(x) = 3x^3 + x^2 - 20x + 12$\n\n#table(\n  stroke: none,\n  columns: 5,\n  align: left,\n  table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1),\n  table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3),\n  table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5),\n  table.hline(stroke: .5pt),\n  [2], [3], [1], [-20], [12],\n  table.hline(stroke: .5pt),\n  [], [], [6], [14], [-12],\n  table.hline(stroke: .5pt),\n  [], [3], [7], [-6], [0],\n  table.hline(stroke: .5pt),\n)\n\n1 mark for synthetic division (or equivalent strategy)\n\n$ p(x) = (x - 2)(3x^2 + 7x - 6) $\n\n$ 0 = (x - 2)(3x - 2)(x + 3) $\n\n$ x = 2, quad x = 2/3, quad x = -3 $\n\n$1/2$ mark for consistent factors\n\n$1/2$ mark for consistent zeros\n\n3 marks",
+    "reason": "Astra-approved routine repair: Restores the omitted 1-mark criterion for identifying a zero/factor.",
+    "source": "pc_26_jan_mg.pdf:58"
+  },
+  {
+    "id": "mb-pc40s-2026-jan-q26",
+    "field": "solution",
+    "text": "B\n\nD\n\nC\n\nA\n\n$1/2$ mark for each correct answer\n\n2 marks\n\nA)\n\n#image(\"/imgs/178076f7-0138-4ae9-baaf-5759b1afa911-23_627_627_1130_367.jpg\", width: 29.5%)\n\nB)\n\n#image(\"/imgs/178076f7-0138-4ae9-baaf-5759b1afa911-23_632_627_1126_1253.jpg\", width: 29.5%)\n\nC)\n\n#image(\"/imgs/178076f7-0138-4ae9-baaf-5759b1afa911-23_629_629_1803_367.jpg\", width: 29.6%)\n\nD)\n\n#image(\"/imgs/178076f7-0138-4ae9-baaf-5759b1afa911-23_629_629_1790_1253.jpg\", width: 29.6%)",
+    "reason": "Astra-approved routine repair: Restores all four answer-column letters while retaining the existing graph assets.",
+    "source": "pc_26_jan_mg.pdf:66"
+  },
+  {
+    "id": "mb-pc40s-2026-jan-q38",
+    "field": "solution",
+    "text": "$ underline(10) dot.c underline(10) dot.c underline(10) = 1000 $\n\n1 mark",
+    "reason": "Astra-approved routine repair: Restores the omitted underline on the first of the three factors.",
+    "source": "pc_26_jan_mg.pdf:100"
+  },
+  {
+    "id": "mb-pc40s-2026-jun-q10",
+    "field": "solution",
+    "text": "$ mat(\n  delim: #none,\n  log [(x - 1)(x + 2)] &= 1 \"\" \"1 mark for product law\";\n  (x - 1)(x + 2) &= 10^(1) \"\" \"1 mark for exponential form\";\n  x^(2) + x - 2 &= 10;\n  x^(2) + x - 12 &= 0;\n  (x + 4)(x - 3) &= 0,\n) $\n\n#strike[$x = -4$]  $x = 3$\n\n$frac(1, 2)$ mark for the permissible value of $x$\n\n$frac(1, 2)$ mark for showing the rejection of the extraneous root\n\n3 marks",
+    "reason": "Astra-approved routine repair: Adds the displayed roots and marks x = -4 as the rejected extraneous root.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_26_jun_mg.pdf:34"
+  },
+  {
+    "id": "mb-pc40s-2026-jun-q40",
+    "field": "solution",
+    "text": "Method 1\n\n$underline(6) dot.c underline(3) dot.c underline(2) dot.c underline(2) dot.c underline(1) dot.c underline(1) = 72$\n\n1 mark for beginning with any letter\n\n1 mark for alternating consonants and vowels\n\n2 marks\n\nMethod 2\n\ncase 1: $frac(3, v) dot.c frac(3, c) dot.c frac(2, v) dot.c frac(2, c) dot.c frac(1, v) dot.c frac(1, c) = 36$\n\ncase 2: $frac(3, c) dot.c frac(3, v) dot.c frac(2, c) dot.c frac(2, v) dot.c frac(1, c) dot.c frac(1, v) = 36$\n\n$36 + 36 = 72$\n\n1 mark for alternating consonants and vowels\n\n$frac(1, 2)$ mark for second case\n\n$frac(1, 2)$ mark for addition of cases\n\n2 marks",
+    "reason": "Astra-approved routine repair: Adds Method 2's displayed addition of the two 36-case counts.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_26_jun_mg.pdf:104"
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q09",
+    "field": "solution",
+    "reason": "Source-checked reconstruction of missing graph with native Typst vectors; independently reviewed mathematical coordinates, domain and range.",
+    "source": "pc_14_jun_mg.pdf:36",
+    "sourceSha256": "8182e62c35e40670779802ca25468b785d824ec6b691ffe90dfbee9866d56b81",
+    "text": "Apply $(x,y) mapsto (x,2y-3)$: stretch vertically by a factor of 2, then translate 3 units down.\n\nThe key points become $(-2,-1)$, $(0,-7)$ and $(3,1)$. Join them with straight segments. From $(-2,-1)$, draw a horizontal ray to the left at $y=-1$. The right endpoint $(3,1)$ is included.\n\n#box(width: 360pt, height: 340pt)[\n#place(top + left)[#line(start: (60.000pt, 310.000pt), end: (60.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (90.000pt, 310.000pt), end: (90.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (120.000pt, 310.000pt), end: (120.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (150.000pt, 310.000pt), end: (150.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (180.000pt, 310.000pt), end: (180.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (210.000pt, 310.000pt), end: (210.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (240.000pt, 310.000pt), end: (240.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (270.000pt, 310.000pt), end: (270.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (300.000pt, 310.000pt), end: (300.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (330.000pt, 310.000pt), end: (330.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 310.000pt), end: (330.000pt, 310.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 284.545pt), end: (330.000pt, 284.545pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 259.091pt), end: (330.000pt, 259.091pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 233.636pt), end: (330.000pt, 233.636pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 208.182pt), end: (330.000pt, 208.182pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 182.727pt), end: (330.000pt, 182.727pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 157.273pt), end: (330.000pt, 157.273pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 131.818pt), end: (330.000pt, 131.818pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 106.364pt), end: (330.000pt, 106.364pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 80.909pt), end: (330.000pt, 80.909pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 55.455pt), end: (330.000pt, 55.455pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 30.000pt), end: (330.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 106.364pt), end: (330.000pt, 106.364pt), stroke: .8pt + black)]\n#place(top + left)[#line(start: (210.000pt, 310.000pt), end: (210.000pt, 30.000pt), stroke: .8pt + black)]\n#place(top + left, dx: 335.000pt, dy: 100.364pt)[#text(size: 9pt)[$ x $]]\n#place(top + left, dx: 207.000pt, dy: 13.000pt)[#text(size: 9pt)[$ y $]]\n#place(top + left)[#line(start: (60.0pt,103.36363636363636pt),end:(60.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 53.000pt, dy: 113.364pt)[#text(size: 9pt)[$ -5 $]]\n#place(top + left)[#line(start: (90.0pt,103.36363636363636pt),end:(90.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 83.000pt, dy: 113.364pt)[#text(size: 9pt)[$ -4 $]]\n#place(top + left)[#line(start: (120.0pt,103.36363636363636pt),end:(120.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 113.000pt, dy: 113.364pt)[#text(size: 9pt)[$ -3 $]]\n#place(top + left)[#line(start: (150.0pt,103.36363636363636pt),end:(150.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 143.000pt, dy: 113.364pt)[#text(size: 9pt)[$ -2 $]]\n#place(top + left)[#line(start: (180.0pt,103.36363636363636pt),end:(180.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 173.000pt, dy: 113.364pt)[#text(size: 9pt)[$ -1 $]]\n#place(top + left)[#line(start: (210.0pt,103.36363636363636pt),end:(210.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left)[#line(start: (240.0pt,103.36363636363636pt),end:(240.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 233.000pt, dy: 113.364pt)[#text(size: 9pt)[$ 1 $]]\n#place(top + left)[#line(start: (270.0pt,103.36363636363636pt),end:(270.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 263.000pt, dy: 113.364pt)[#text(size: 9pt)[$ 2 $]]\n#place(top + left)[#line(start: (300.0pt,103.36363636363636pt),end:(300.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 293.000pt, dy: 113.364pt)[#text(size: 9pt)[$ 3 $]]\n#place(top + left)[#line(start: (330.0pt,103.36363636363636pt),end:(330.0pt,109.36363636363636pt),stroke:.7pt)]\n#place(top + left, dx: 323.000pt, dy: 113.364pt)[#text(size: 9pt)[$ 4 $]]\n#place(top + left)[#line(start: (207.0pt,310.0pt),end:(213.0pt,310.0pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 305.000pt)[#text(size: 9pt)[$ -8 $]]\n#place(top + left)[#line(start: (207.0pt,284.5454545454545pt),end:(213.0pt,284.5454545454545pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 279.545pt)[#text(size: 9pt)[$ -7 $]]\n#place(top + left)[#line(start: (207.0pt,259.0909090909091pt),end:(213.0pt,259.0909090909091pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 254.091pt)[#text(size: 9pt)[$ -6 $]]\n#place(top + left)[#line(start: (207.0pt,233.63636363636365pt),end:(213.0pt,233.63636363636365pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 228.636pt)[#text(size: 9pt)[$ -5 $]]\n#place(top + left)[#line(start: (207.0pt,208.1818181818182pt),end:(213.0pt,208.1818181818182pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 203.182pt)[#text(size: 9pt)[$ -4 $]]\n#place(top + left)[#line(start: (207.0pt,182.72727272727272pt),end:(213.0pt,182.72727272727272pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 177.727pt)[#text(size: 9pt)[$ -3 $]]\n#place(top + left)[#line(start: (207.0pt,157.27272727272725pt),end:(213.0pt,157.27272727272725pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 152.273pt)[#text(size: 9pt)[$ -2 $]]\n#place(top + left)[#line(start: (207.0pt,131.8181818181818pt),end:(213.0pt,131.8181818181818pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 126.818pt)[#text(size: 9pt)[$ -1 $]]\n#place(top + left)[#line(start: (207.0pt,106.36363636363636pt),end:(213.0pt,106.36363636363636pt),stroke:.7pt)]\n#place(top + left)[#line(start: (207.0pt,80.9090909090909pt),end:(213.0pt,80.9090909090909pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 75.909pt)[#text(size: 9pt)[$ 1 $]]\n#place(top + left)[#line(start: (207.0pt,55.45454545454545pt),end:(213.0pt,55.45454545454545pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 50.455pt)[#text(size: 9pt)[$ 2 $]]\n#place(top + left)[#line(start: (207.0pt,30.0pt),end:(213.0pt,30.0pt),stroke:.7pt)]\n#place(top + left, dx: 188.000pt, dy: 25.000pt)[#text(size: 9pt)[$ 3 $]]\n#place(top + left, dx: 215.000pt, dy: 111.364pt)[#text(size: 9pt)[$ 0 $]]\n#place(top + left)[#curve(stroke: 1.5pt + black,\n  curve.move((39.000pt, 131.818pt)),\n  curve.line((150.000pt, 131.818pt)),\n  curve.line((210.000pt, 284.545pt)),\n  curve.line((300.000pt, 80.909pt)),\n)]\n#place(top + left,dx:147.500pt,dy:129.318pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:207.500pt,dy:282.045pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:297.500pt,dy:78.409pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left)[#line(start:(39.000pt,131.818pt),end:(46.000pt,128.318pt),stroke:1.2pt)]\n#place(top + left)[#line(start:(39.000pt,131.818pt),end:(46.000pt,135.318pt),stroke:1.2pt)]\n]\n\nDomain: $x <= 3$. Range: $-7 <= y <= 1$."
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q29",
+    "field": "solution",
+    "reason": "Source-checked reconstruction of missing graph with native Typst vectors; independently reviewed mathematical coordinates, domain and range.",
+    "source": "pc_15_jan_mg.pdf:72",
+    "sourceSha256": "f5a3ff44d9b611ad7e9d59da29504c353eae12e1ff3f347c152f4076471af375",
+    "text": "For $y=-2 sin(4x)$, the amplitude is 2 and the period is $(2pi)/4=pi/2$. Reflect the sine curve in the $x$-axis.\n\nOne complete period passes smoothly through $(0,0)$, $(pi/8,-2)$, $(pi/4,0)$, $(3pi/8,2)$ and $(pi/2,0)$. Continue the pattern periodically in both directions; these are not domain endpoints.\n\n#box(width: 370pt, height: 290pt)[\n#place(top + left)[#line(start: (41.780pt, 260.000pt), end: (41.780pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (113.390pt, 260.000pt), end: (113.390pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (256.610pt, 260.000pt), end: (256.610pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (328.220pt, 260.000pt), end: (328.220pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 233.462pt), end: (340.000pt, 233.462pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 189.231pt), end: (340.000pt, 189.231pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 100.769pt), end: (340.000pt, 100.769pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 56.538pt), end: (340.000pt, 56.538pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 145.000pt), end: (340.000pt, 145.000pt), stroke: .8pt + black)]\n#place(top + left)[#line(start: (185.000pt, 260.000pt), end: (185.000pt, 30.000pt), stroke: .8pt + black)]\n#place(top + left, dx: 345.000pt, dy: 139.000pt)[#text(size: 9pt)[$ x $]]\n#place(top + left, dx: 182.000pt, dy: 13.000pt)[#text(size: 9pt)[$ y $]]\n#place(top + left)[#line(start: (41.78033490987708pt,142.0pt),end:(41.78033490987708pt,148.0pt),stroke:.7pt)]\n#place(top + left, dx: 34.780pt, dy: 152.000pt)[#text(size: 9pt)[$ -pi/2 $]]\n#place(top + left)[#line(start: (113.39016745493853pt,142.0pt),end:(113.39016745493853pt,148.0pt),stroke:.7pt)]\n#place(top + left, dx: 106.390pt, dy: 152.000pt)[#text(size: 9pt)[$ -pi/4 $]]\n#place(top + left)[#line(start: (256.6098325450615pt,142.0pt),end:(256.6098325450615pt,148.0pt),stroke:.7pt)]\n#place(top + left, dx: 249.610pt, dy: 152.000pt)[#text(size: 9pt)[$ pi/4 $]]\n#place(top + left)[#line(start: (328.21966509012293pt,142.0pt),end:(328.21966509012293pt,148.0pt),stroke:.7pt)]\n#place(top + left, dx: 321.220pt, dy: 152.000pt)[#text(size: 9pt)[$ pi/2 $]]\n#place(top + left)[#line(start: (182.0pt,233.46153846153842pt),end:(188.0pt,233.46153846153842pt),stroke:.7pt)]\n#place(top + left, dx: 163.000pt, dy: 228.462pt)[#text(size: 9pt)[$ -2 $]]\n#place(top + left)[#line(start: (182.0pt,189.23076923076923pt),end:(188.0pt,189.23076923076923pt),stroke:.7pt)]\n#place(top + left, dx: 163.000pt, dy: 184.231pt)[#text(size: 9pt)[$ -1 $]]\n#place(top + left)[#line(start: (182.0pt,100.76923076923077pt),end:(188.0pt,100.76923076923077pt),stroke:.7pt)]\n#place(top + left, dx: 163.000pt, dy: 95.769pt)[#text(size: 9pt)[$ 1 $]]\n#place(top + left)[#line(start: (182.0pt,56.53846153846154pt),end:(188.0pt,56.53846153846154pt),stroke:.7pt)]\n#place(top + left, dx: 163.000pt, dy: 51.538pt)[#text(size: 9pt)[$ 2 $]]\n#place(top + left, dx: 190.000pt, dy: 150.000pt)[#text(size: 9pt)[$ 0 $]]\n#place(top + left)[#curve(stroke: 1.5pt + black,\n  curve.move((41.780pt, 145.000pt)),\n  curve.line((44.645pt, 156.087pt)),\n  curve.line((47.509pt, 166.999pt)),\n  curve.line((50.374pt, 177.565pt)),\n  curve.line((53.238pt, 187.617pt)),\n  curve.line((56.102pt, 196.996pt)),\n  curve.line((58.967pt, 205.556pt)),\n  curve.line((61.831pt, 213.161pt)),\n  curve.line((64.695pt, 219.691pt)),\n  curve.line((67.560pt, 225.042pt)),\n  curve.line((70.424pt, 229.132pt)),\n  curve.line((73.289pt, 231.895pt)),\n  curve.line((76.153pt, 233.287pt)),\n  curve.line((79.017pt, 233.287pt)),\n  curve.line((81.882pt, 231.895pt)),\n  curve.line((84.746pt, 229.132pt)),\n  curve.line((87.611pt, 225.042pt)),\n  curve.line((90.475pt, 219.691pt)),\n  curve.line((93.339pt, 213.161pt)),\n  curve.line((96.204pt, 205.556pt)),\n  curve.line((99.068pt, 196.996pt)),\n  curve.line((101.933pt, 187.617pt)),\n  curve.line((104.797pt, 177.565pt)),\n  curve.line((107.661pt, 166.999pt)),\n  curve.line((110.526pt, 156.087pt)),\n  curve.line((113.390pt, 145.000pt)),\n  curve.line((116.255pt, 133.913pt)),\n  curve.line((119.119pt, 123.001pt)),\n  curve.line((121.983pt, 112.435pt)),\n  curve.line((124.848pt, 102.383pt)),\n  curve.line((127.712pt, 93.004pt)),\n  curve.line((130.577pt, 84.444pt)),\n  curve.line((133.441pt, 76.839pt)),\n  curve.line((136.305pt, 70.309pt)),\n  curve.line((139.170pt, 64.958pt)),\n  curve.line((142.034pt, 60.868pt)),\n  curve.line((144.898pt, 58.105pt)),\n  curve.line((147.763pt, 56.713pt)),\n  curve.line((150.627pt, 56.713pt)),\n  curve.line((153.492pt, 58.105pt)),\n  curve.line((156.356pt, 60.868pt)),\n  curve.line((159.220pt, 64.958pt)),\n  curve.line((162.085pt, 70.309pt)),\n  curve.line((164.949pt, 76.839pt)),\n  curve.line((167.814pt, 84.444pt)),\n  curve.line((170.678pt, 93.004pt)),\n  curve.line((173.542pt, 102.383pt)),\n  curve.line((176.407pt, 112.435pt)),\n  curve.line((179.271pt, 123.001pt)),\n  curve.line((182.136pt, 133.913pt)),\n  curve.line((185.000pt, 145.000pt)),\n  curve.line((187.864pt, 156.087pt)),\n  curve.line((190.729pt, 166.999pt)),\n  curve.line((193.593pt, 177.565pt)),\n  curve.line((196.458pt, 187.617pt)),\n  curve.line((199.322pt, 196.996pt)),\n  curve.line((202.186pt, 205.556pt)),\n  curve.line((205.051pt, 213.161pt)),\n  curve.line((207.915pt, 219.691pt)),\n  curve.line((210.780pt, 225.042pt)),\n  curve.line((213.644pt, 229.132pt)),\n  curve.line((216.508pt, 231.895pt)),\n  curve.line((219.373pt, 233.287pt)),\n  curve.line((222.237pt, 233.287pt)),\n  curve.line((225.102pt, 231.895pt)),\n  curve.line((227.966pt, 229.132pt)),\n  curve.line((230.830pt, 225.042pt)),\n  curve.line((233.695pt, 219.691pt)),\n  curve.line((236.559pt, 213.161pt)),\n  curve.line((239.423pt, 205.556pt)),\n  curve.line((242.288pt, 196.996pt)),\n  curve.line((245.152pt, 187.617pt)),\n  curve.line((248.017pt, 177.565pt)),\n  curve.line((250.881pt, 166.999pt)),\n  curve.line((253.745pt, 156.087pt)),\n  curve.line((256.610pt, 145.000pt)),\n  curve.line((259.474pt, 133.913pt)),\n  curve.line((262.339pt, 123.001pt)),\n  curve.line((265.203pt, 112.435pt)),\n  curve.line((268.067pt, 102.383pt)),\n  curve.line((270.932pt, 93.004pt)),\n  curve.line((273.796pt, 84.444pt)),\n  curve.line((276.661pt, 76.839pt)),\n  curve.line((279.525pt, 70.309pt)),\n  curve.line((282.389pt, 64.958pt)),\n  curve.line((285.254pt, 60.868pt)),\n  curve.line((288.118pt, 58.105pt)),\n  curve.line((290.983pt, 56.713pt)),\n  curve.line((293.847pt, 56.713pt)),\n  curve.line((296.711pt, 58.105pt)),\n  curve.line((299.576pt, 60.868pt)),\n  curve.line((302.440pt, 64.958pt)),\n  curve.line((305.305pt, 70.309pt)),\n  curve.line((308.169pt, 76.839pt)),\n  curve.line((311.033pt, 84.444pt)),\n  curve.line((313.898pt, 93.004pt)),\n  curve.line((316.762pt, 102.383pt)),\n  curve.line((319.626pt, 112.435pt)),\n  curve.line((322.491pt, 123.001pt)),\n  curve.line((325.355pt, 133.913pt)),\n  curve.line((328.220pt, 145.000pt)),\n)]\n#place(top + left,dx:39.280pt,dy:142.500pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:75.085pt,dy:230.962pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:110.890pt,dy:142.500pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:146.695pt,dy:54.038pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:182.500pt,dy:142.500pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:218.305pt,dy:230.962pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:254.110pt,dy:142.500pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:289.915pt,dy:54.038pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:325.720pt,dy:142.500pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left)[#line(start:(41.780pt,145.000pt),end:(46.920pt,150.902pt),stroke:1.2pt)]\n#place(top + left)[#line(start:(41.780pt,145.000pt),end:(40.143pt,152.653pt),stroke:1.2pt)]\n#place(top + left)[#line(start:(328.220pt,145.000pt),end:(323.080pt,139.098pt),stroke:1.2pt)]\n#place(top + left)[#line(start:(328.220pt,145.000pt),end:(329.857pt,137.347pt),stroke:1.2pt)]\n]\n\nDomain: $x in RR$. Range: $-2 <= y <= 2$."
+  },
+  {
+    "id": "mb-pc40s-2016-jan-q43",
+    "field": "solution",
+    "reason": "Source-checked reconstruction of missing graph with native Typst vectors; independently reviewed mathematical coordinates, domain and range.",
+    "source": "pc_16_jan_mg.pdf:110",
+    "sourceSha256": "bf5422410f83f135ffa5d2285740d7e79f12a4dc651da4a4b1d6a12ae06129e9",
+    "text": "For $y=abs(f(2x))+1$, map each point by $(x,y) mapsto (x/2,abs(y)+1)$. Compress horizontally by a factor of $1/2$, reflect any negative output above the $x$-axis, then translate 1 unit up.\n\nThe points $(-2,0)$, $(-1,-2)$ and $(0,0)$ become $(-1,1)$, $(-1/2,3)$ and $(0,1)$. Join these three points with straight segments. From $(0,1)$, continue along the ray $y=4x+1$ for $x>=0$. Include the left endpoint $(-1,1)$.\n\n#box(width: 320pt, height: 360pt)[\n#place(top + left)[#line(start: (73.333pt, 330.000pt), end: (73.333pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (109.444pt, 330.000pt), end: (109.444pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (181.667pt, 330.000pt), end: (181.667pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (217.778pt, 330.000pt), end: (217.778pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (253.889pt, 330.000pt), end: (253.889pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (290.000pt, 330.000pt), end: (290.000pt, 30.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 277.826pt), end: (290.000pt, 277.826pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 245.217pt), end: (290.000pt, 245.217pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 212.609pt), end: (290.000pt, 212.609pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 180.000pt), end: (290.000pt, 180.000pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 147.391pt), end: (290.000pt, 147.391pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 114.783pt), end: (290.000pt, 114.783pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 82.174pt), end: (290.000pt, 82.174pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 49.565pt), end: (290.000pt, 49.565pt), stroke: .35pt + luma(225))]\n#place(top + left)[#line(start: (30.000pt, 310.435pt), end: (290.000pt, 310.435pt), stroke: .8pt + black)]\n#place(top + left)[#line(start: (145.556pt, 330.000pt), end: (145.556pt, 30.000pt), stroke: .8pt + black)]\n#place(top + left, dx: 295.000pt, dy: 304.435pt)[#text(size: 9pt)[$ x $]]\n#place(top + left, dx: 142.556pt, dy: 13.000pt)[#text(size: 9pt)[$ y $]]\n#place(top + left)[#line(start: (73.33333333333334pt,307.4347826086957pt),end:(73.33333333333334pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 66.333pt, dy: 317.435pt)[#text(size: 9pt)[$ -1 $]]\n#place(top + left)[#line(start: (109.44444444444446pt,307.4347826086957pt),end:(109.44444444444446pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 102.444pt, dy: 317.435pt)[#text(size: 9pt)[$ -1/2 $]]\n#place(top + left)[#line(start: (181.66666666666669pt,307.4347826086957pt),end:(181.66666666666669pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 174.667pt, dy: 317.435pt)[#text(size: 9pt)[$ 1/2 $]]\n#place(top + left)[#line(start: (217.77777777777777pt,307.4347826086957pt),end:(217.77777777777777pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 210.778pt, dy: 317.435pt)[#text(size: 9pt)[$ 1 $]]\n#place(top + left)[#line(start: (253.8888888888889pt,307.4347826086957pt),end:(253.8888888888889pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 246.889pt, dy: 317.435pt)[#text(size: 9pt)[$ 3/2 $]]\n#place(top + left)[#line(start: (290.0pt,307.4347826086957pt),end:(290.0pt,313.4347826086957pt),stroke:.7pt)]\n#place(top + left, dx: 283.000pt, dy: 317.435pt)[#text(size: 9pt)[$ 2 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,277.82608695652175pt),end:(148.55555555555554pt,277.82608695652175pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 272.826pt)[#text(size: 9pt)[$ 1 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,245.2173913043478pt),end:(148.55555555555554pt,245.2173913043478pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 240.217pt)[#text(size: 9pt)[$ 2 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,212.60869565217394pt),end:(148.55555555555554pt,212.60869565217394pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 207.609pt)[#text(size: 9pt)[$ 3 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,180.0pt),end:(148.55555555555554pt,180.0pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 175.000pt)[#text(size: 9pt)[$ 4 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,147.3913043478261pt),end:(148.55555555555554pt,147.3913043478261pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 142.391pt)[#text(size: 9pt)[$ 5 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,114.78260869565217pt),end:(148.55555555555554pt,114.78260869565217pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 109.783pt)[#text(size: 9pt)[$ 6 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,82.17391304347825pt),end:(148.55555555555554pt,82.17391304347825pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 77.174pt)[#text(size: 9pt)[$ 7 $]]\n#place(top + left)[#line(start: (142.55555555555554pt,49.565217391304344pt),end:(148.55555555555554pt,49.565217391304344pt),stroke:.7pt)]\n#place(top + left, dx: 123.556pt, dy: 44.565pt)[#text(size: 9pt)[$ 8 $]]\n#place(top + left, dx: 150.556pt, dy: 315.435pt)[#text(size: 9pt)[$ 0 $]]\n#place(top + left)[#curve(stroke: 1.5pt + black,\n  curve.move((73.333pt, 277.826pt)),\n  curve.line((109.444pt, 212.609pt)),\n  curve.line((145.556pt, 277.826pt)),\n  curve.line((268.333pt, 56.087pt)),\n)]\n#place(top + left,dx:70.833pt,dy:275.326pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:106.944pt,dy:210.109pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left,dx:143.056pt,dy:275.326pt)[#circle(radius:2.5pt,fill:black,stroke:none)]\n#place(top + left)[#line(start:(268.333pt,56.087pt),end:(268.004pt,63.906pt),stroke:1.2pt)]\n#place(top + left)[#line(start:(268.333pt,56.087pt),end:(261.881pt,60.515pt),stroke:1.2pt)]\n]\n\nDomain: $x>=-1$. Range: $y>=1$."
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q03",
+    "field": "body",
+    "reason": "Restored annuity formula brackets from the original guide; both Mathpix sources omitted them. Manual audit OCR trace, 2026-09-11.",
+    "source": "pc_14_jun_mg.pdf:18",
+    "text": "Determine how many monthly investments of $dollar 50$ would have to be deposited into a savings account that pays 3% annual interest, compounded monthly, for the account's future value to be $dollar 50000$.\n\nUse the formula:\n\n$ upright(F V) = frac(R ((1+i)^n-1), i) $\n\nwhere $upright(F V)$ is the future value, $R$ is the investment amount, $i$ is the annual interest rate divided by the number of compounding periods per year, and $n$ is the number of investments.\n\nExpress your answer as a whole number."
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q03",
+    "field": "solution",
+    "reason": "Reconstructed the complete annuity calculation, including steps lost in the table and required round-up. Source and mathematics checked in manual audit.",
+    "source": "pc_14_jun_mg.pdf:18",
+    "text": "The monthly interest rate is $i=0.03/12=0.0025$.\n\n$ 50000 = frac(50 ((1.0025)^n-1), 0.0025) $\n\nThus $2.5=(1.0025)^n-1$, so $(1.0025)^n=3.5$.\n\n$ n = frac(log(3.5), log(1.0025)) approx 501.73 $\n\nRound up because 501 deposits do not reach the target. Therefore 502 monthly investments are required."
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q05",
+    "field": "body",
+    "reason": "Restored missing outer parentheses and powers 8 and n from source; removed stray rubric/header material.",
+    "source": "pc_14_jun_mg.pdf:24",
+    "text": "a) In the binomial expansion of $(frac(3,x^2)-4x^5)^8$, determine the 3rd term.\n\nb) In the binomial expansion of $(frac(3,x^2)-4x^5)^n$, the 6th term contains $x^25$. Solve for $n$."
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q05",
+    "field": "solution",
+    "reason": "Restored exponent grouping and separated coefficient calculation from exponent matching; verified both binomial results against the original.",
+    "source": "pc_14_jun_mg.pdf:24",
+    "text": "a) The third term uses two factors of $-4x^5$:\n\n$ t_3 = binom(8,2) (frac(3,x^2))^6 (-4x^5)^2 = 28 times 729 times 16 times x^(-2) = frac(326592,x^2). $\n\nb) The sixth term is $binom(n,5) (3x^(-2))^(n-5) (-4x^5)^5$. Its power of $x$ is\n\n$ -2(n-5)+25 = -2n+35. $\n\nEquating this to 25 gives $-2n+35=25$, hence $n=5$. This allows a sixth term, as required."
+  },
+  {
+    "id": "mb-pc40s-2014-jun-q43",
+    "field": "solution",
+    "reason": "Restored angle-sum grouping and the lost negative sign in the final exact value. Checked against original and quadrant IV sign.",
+    "source": "pc_14_jun_mg.pdf:106",
+    "text": "Since $19pi/12=5pi/6+3pi/4$, use the sine addition identity:\n\n$ sin(19pi/12) = sin(5pi/6)cos(3pi/4)+cos(5pi/6)sin(3pi/4). $\n\nSubstitute the exact values:\n\n$ sin(19pi/12) = frac(1,2)(-frac(sqrt(2),2))+(-frac(sqrt(3),2))frac(sqrt(2),2) = -frac(sqrt(2)+sqrt(6),4). $\n\nThe result is negative, consistent with an angle in quadrant IV."
+  },
+  {
+    "id": "mb-pc40s-2014-jan-q28",
+    "field": "solution",
+    "reason": "Replaced corrupt alternate-method denominators and crossed-out roots with a complete domain-aware derivation. Source methods checked in manual audit.",
+    "source": "pc_14_jan_mg.pdf:63-64",
+    "text": "The selection of three requires an integer $n>=3$. Using the permutation and combination formulas gives\n\n$ n(n-1)=frac(n(n-1)(n-2),6). $\n\nSince $n>=3$, the factor $n(n-1)$ is nonzero and may be cancelled. Therefore $6=n-2$, so $n=8$.\n\nCheck: $8 times 7=56$ and $binom(8,3)=56$. If polynomial expansion also produces 0 or 1, reject them because neither satisfies $n>=3$."
+  },
+  {
+    "id": "mb-pc40s-2014-jan-q32",
+    "field": "solution",
+    "reason": "Restored explicit rejection of the negative root, whose source cross-out was lost by OCR; independently checked the logarithmic domain.",
+    "source": "pc_14_jan_mg.pdf:74",
+    "text": "The logarithms require $x>0$ and $x+3>0$, so the domain is $x>0$.\n\n$ log_4(frac(x^2,x+3))=1 $\n\nThus $x^2=4(x+3)$, giving $x^2-4x-12=0$ and $(x-6)(x+2)=0$.\n\nThe candidates are $x=6$ and $x=-2$. Reject $-2$ because it is outside the logarithmic domain. Therefore $x=6$. Substitution gives $2log_4(6)-log_4(9)=log_4(4)=1$."
+  },
+  {
+    "id": "mb-pc40s-2014-jan-q38",
+    "field": "solution",
+    "reason": "Replaced the OCR-damaged Pascal triangle with the intact binomial-coefficient method; verified coefficient and term index.",
+    "source": "pc_14_jan_mg.pdf:86",
+    "text": "By the binomial theorem, the term containing $x^3$ is\n\n$ t_4=binom(7,3)1^4 x^3. $\n\nIts coefficient is $binom(7,3)=frac(7!,3!4!)=frac(7 times 6 times 5,3 times 2 times 1)=35$."
+  },
+  {
     "id": "mb-pc40s-2013-jan-q32",
     "field": "solution",
     "reason": "Restored the previously missing graphical answer; checked the marking guide, physical page 41.",

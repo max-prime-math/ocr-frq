@@ -12,6 +12,7 @@ const app=importRepoEntriesToAppData(entries).appData;
 const baseline=Object.fromEntries(entries.map(e=>[e.path,hashRepoDataContent(e.content)]));
 const byId=new Map(app.questions.map(q=>[q.id,q]));
 const jobs=JSON.parse(fs.readFileSync(jobsFile,'utf8'));
+const repairCount=jobs.filter(job=>job.repairNote).length;
 for(const job of jobs) {
   if(typeof job.typst!=='string')throw Error('Missing conversion: '+job.id+' '+job.field);
   if(/\\[A-Za-z]{2,}/.test(job.typst))throw Error('LaTeX remains: '+job.id+' '+job.field);
@@ -27,7 +28,7 @@ for(const q of app.questions) {
 }
 const generated=exportAppDataToRepoEntries(app);
 const readme=generated.find(e=>e.path==='README.md');
-readme.content='# Manitoba Pre-Calculus 40S Provincial Exams\n\n967 questions from 21 exam sittings, with native Typst question bodies, choices, and solutions.\n\nSource: Manitoba Education student booklets and marking guides, available at https://www.edu.gov.mb.ca/k12/assess/archives/ . Original wording and diagrams belong to their publisher.\n\nAll converted fields have been compile-checked. This is an OCR-derived bank: mathematical accuracy and complex layouts still need editorial review. Six targeted editorial repairs are documented in the OCR project.\n\nUse this folder in TestGen Local folder storage, or the private GitHub repository. OCR files, conversion scripts, and review PDFs live in the separate ocr-frq project.\n';
+readme.content='# Manitoba Pre-Calculus 40S Provincial Exams\n\n967 questions from 21 exam sittings, with native Typst question bodies, choices, and solutions.\n\nSource: Manitoba Education student booklets and marking guides, available at https://www.edu.gov.mb.ca/k12/assess/archives/ . Original wording and diagrams belong to their publisher.\n\nAll converted fields have been compile-checked. This is an OCR-derived bank: mathematical accuracy and complex layouts still need editorial review. '+repairCount+' targeted editorial field repairs are documented in the OCR project. Missing solutions and pending manual-review findings must be resolved before classroom use.\n\nUse this folder in TestGen Local folder storage, or the private GitHub repository. OCR files, conversion scripts, and review PDFs live in the separate ocr-frq project.\n';
 const m=generated.find(e=>e.path==='manifest.json'); const data=JSON.parse(m.content);
 const rm=data.files.find(e=>e.path==='README.md');rm.size=Buffer.byteLength(readme.content);rm.hash=hashRepoDataContent(readme.content);
 m.content=JSON.stringify(data,null,2);

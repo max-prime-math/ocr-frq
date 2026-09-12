@@ -42,6 +42,7 @@ OUTCOME_LINE_RE = re.compile(r"^(?:[TRP]\d+(?:\s*,\s*)?)+$", re.I)
 MARKING_GUIDE_HEADER_RE = re.compile(r"Pre-Calculus Mathematics:\s*Marking Guide", re.I)
 
 PDF_PAGE_LINES_CACHE: dict[Path, list[list[str]]] = {}
+PDF_QUESTION_BOUNDS_CACHE: dict[tuple[Path, int], list[tuple[int, float]]] = {}
 
 COURSE_ID = "pre-calculus-40s"
 COURSE_NAME = "Pre-Calculus 40S"
@@ -266,14 +267,78 @@ def page_items_for_question(page: dict[str, Any], question_number: int) -> list[
         if not line.get("conversion_output"):
             continue
         if started:
-            items.extend(text_line_items(text, page))
+            if re.fullmatch(r"\d+\s+marks?", text, re.I):
+                continue
+            extracted = text_line_items(text, page)
+            region = line.get("region") or {}
+            for item in extracted:
+                if item["kind"] == "text" and "top_left_y" in region:
+                    item["sourceY"] = float(region["top_left_y"])
+                    item["sourceHeight"] = float(region.get("height", 0))
+            items.extend(extracted)
 
     return items if saw_marker else page_items(page)
 
 
+def bound_guide_page(
+    page: dict[str, Any], question_number: int, source_pdf: Path, source_page: int,
+    continuing: bool,
+) -> dict[str, Any]:
+    """Use reliable PDF *heading positions*, never its flattened mathematical text.
+
+    Mathpix can omit an entire heading on a shared page. Source and Mathpix
+    pages use the same full-page frame; normalized y coordinates delimit each
+    question without reordering columns within its solution.
+    """
+    key = (source_pdf, source_page)
+    if key not in PDF_QUESTION_BOUNDS_CACHE:
+        with fitz.open(source_pdf) as doc:
+            pdf_page = doc[source_page - 1]
+            headings = []
+            for block in pdf_page.get_text("dict")["blocks"]:
+                for line in block.get("lines", []):
+                    text = "".join(span["text"] for span in line["spans"])
+                    marker = QUESTION_MARKER_RE.match(text)
+                    if marker:
+                        headings.append((int(marker.group("num")), line["bbox"][1] / pdf_page.rect.height))
+            PDF_QUESTION_BOUNDS_CACHE[key] = sorted(set(headings), key=lambda value: value[1])
+    headings = PDF_QUESTION_BOUNDS_CACHE[key]
+    height = float(page.get("page_height") or 0)
+    if not headings or not height:
+        return page
+    target = next((i for i, (number, _) in enumerate(headings) if number == question_number), None)
+    if target is not None:
+        lower = headings[target][1]
+        upper = headings[target + 1][1] if target + 1 < len(headings) else 1.0
+    elif continuing:
+        lower, upper = 0.0, headings[0][1]
+    else:
+        return {**page, "lines": []}
+    selected = []
+    for line in page.get("lines", []):
+        region = line.get("region") or {}
+        if "top_left_y" not in region:
+            if line.get("conversion_output"):
+                raise ValueError("Cannot safely segment marking guide: content line has no position")
+            continue
+        y = (float(region["top_left_y"]) + float(region.get("height", 0)) / 2) / height
+        if lower <= y < upper:
+            selected.append(line)
+    if target is not None:
+        selected.insert(0, {"text": f"Question {question_number}", "conversion_output": False})
+    # Explicit next boundary prevents a completed question continuing on a later page.
+    if upper < 1.0:
+        next_number = headings[target + 1][0] if target is not None else headings[0][0]
+        selected.append({"text": f"Question {next_number}", "conversion_output": False})
+    return {**page, "lines": selected}
+
+
 def guide_solution_items_for_question(
-    page: dict[str, Any], question_number: int, continuing: bool
+    page: dict[str, Any], question_number: int, continuing: bool,
+    source_pdf: Path | None = None, source_page: int | None = None,
 ) -> tuple[list[dict[str, str | float]], bool, bool]:
+    if source_pdf is not None and source_page is not None:
+        page = bound_guide_page(page, question_number, source_pdf, source_page, continuing)
     items: list[dict[str, str | float]] = []
     in_target = continuing
     in_solution = continuing
@@ -378,10 +443,30 @@ def split_choice_items(
     stem_items: list[dict[str, str | float]] = []
     choices_by_id: dict[str, list[dict[str, str | float]]] = {}
     current_choice: str | None = None
+    # A shared stem diagram can be emitted after A-D by OCR column ordering.
+    # Move it only with positive geometric evidence: one image spans multiple
+    # textual choices. Four separate image choices and single-choice diagrams
+    # must keep their existing ownership.
+    images = [item for item in items if item["kind"] == "image"]
+    choice_lines = [item for item in items if item["kind"] == "text"
+                    and CHOICE_LABEL_RE.match(str(item["text"]))]
+    shared_image = None
+    if len(images) == 1 and len(choice_lines) == 4:
+        candidate = images[0]
+        match = re.search(r"_(\d+)_(\d+)_(\d+)_(\d+)\.jpg$", str(candidate["text"]))
+        if match and "sourceY" in candidate:
+            top = float(candidate["sourceY"])
+            bottom = top + int(match.group(1))
+            covered = sum(top <= float(item["sourceY"]) + float(item.get("sourceHeight", 0)) / 2 <= bottom
+                          for item in choice_lines if "sourceY" in item)
+            if covered >= 2:
+                shared_image = candidate
 
     for item in items:
         if item["kind"] != "text":
-            if current_choice:
+            if item is shared_image:
+                stem_items.append(item)
+            elif current_choice:
                 choices_by_id.setdefault(current_choice, []).append(item)
             else:
                 stem_items.append(item)
@@ -618,12 +703,12 @@ def pdf_question_segment(lines: list[str], question_number: int, continuing: boo
         start = target_indexes[0] + 1
         following = [index for index, _ in markers if index > target_indexes[0]]
         end = following[0] if following else len(lines)
-        return lines[start:end], True, True
+        return lines[start:end], True, not following
 
     if continuing:
         following = [index for index, _ in markers]
         end = following[0] if following else len(lines)
-        return lines[:end], False, True
+        return lines[:end], False, not following
 
     return [], False, False
 
@@ -657,6 +742,9 @@ def pdf_fallback_solution_items(row: dict[str, Any]) -> list[dict[str, str | flo
     text = "\n".join(captured).strip()
     if not text or looks_like_appendix_outcome_table(text):
         return []
+    # PDF text extraction loses fractions, powers, symbol fonts, and diagrams.
+    # Even apparently readable text is not a verified mathematical solution.
+    # Retain this helper for diagnostics, but never promote it to usable content.
     return [{"kind": "text", "text": text}]
 
 
@@ -1295,7 +1383,7 @@ def export_session(year: int, term: str) -> Path:
                 )
                 continue
             page_items_for_source, _, guide_continuing = guide_solution_items_for_question(
-                page, qnum, guide_continuing
+                page, qnum, guide_continuing, marking_guide_pdf_path(year, term), int(page_number)
             )
             _, image_files = items_to_text_and_images(page_items_for_source)
             solution_items.extend(page_items_for_source)
@@ -1320,18 +1408,20 @@ def export_session(year: int, term: str) -> Path:
             fallback_items = pdf_fallback_solution_items(row)
             fallback_latex_solution, fallback_solution_asset_files = items_to_text_and_images(fallback_items)
             if fallback_latex_solution.strip():
-                latex_solution = fallback_latex_solution
-                solution_asset_files = fallback_solution_asset_files
-                solution_source = "source-pdf-text"
+                latex_solution = ""
+                solution_asset_files = []
+                solution_source = "unmatched"
                 diagnostics.append(
                     {
                         "level": "warning",
-                        "code": "solution-mathpix-rejected-source-pdf-fallback",
+                        "code": "solution-source-pdf-text-requires-review",
                         "message": (
                             f"Rejected Mathpix marking-guide solution as {rejection_reason}; "
-                            "used source PDF text fallback."
+                            "Raw PDF text is unverified and was NOT used as a solution. "
+                            "Re-OCR or manually reconstruct from the source page."
                         ),
                         "questionId": question_id,
+                        "extensions": {"rejectedPdfText": fallback_latex_solution},
                     }
                 )
             else:
@@ -1468,10 +1558,14 @@ def export_session(year: int, term: str) -> Path:
 
 
 def main() -> None:
+    global OUT_DIR
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--year", type=int)
     parser.add_argument("--term", choices=["jan", "jun"])
+    parser.add_argument("--out", type=Path, default=OUT_DIR,
+                        help="Output PQP root; use a fresh staging directory for review.")
     args = parser.parse_args()
+    OUT_DIR = args.out.resolve()
 
     sessions = available_sessions()
     if args.year is not None:

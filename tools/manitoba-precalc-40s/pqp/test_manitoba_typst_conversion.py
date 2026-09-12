@@ -40,6 +40,10 @@ class ConversionTests(unittest.TestCase):
     def test_table_hint_removed(self):
         self.assertNotIn('[t]', prepare(r'\begin{tabular}[t]{cc}a&b\\\end{tabular}'))
 
+    def test_composition_is_not_a_degree(self):
+        self.assertEqual(clean('$f compose g$'), '$f compose g$')
+        self.assertEqual(clean('$30 ^(compose )$'), '$30 ^(degree)$')
+
     def test_editorial_override_keeps_original(self):
         doc = {'text': '', 'extensions': {'latexSource': 'original'}}
         package = {'questions': [{'id': 'mb-pc40s-2013-jan-q32', 'content': {'solution': doc}}]}

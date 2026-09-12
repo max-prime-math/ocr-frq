@@ -61,7 +61,9 @@ def clean(text):
     # MiTeX emits escaped delimiters and spaces between decimal digits.
     def math(m):
         s=m[1]
-        s=s.replace('compose','degree')
+        # LaTeX uses \\circ for both composition and a superscript degree.
+        # Only the superscript form denotes degrees; f \\circ g must survive.
+        s=re.sub(r'\^\(\s*compose\s*\)', '^(degree)', s)
         s=compact_spaced_numbers(s)
         return '$'+s+'$'
     text=re.sub(r'(?<!\\)\$(.*?)(?<!\\)\$',math,text,flags=re.S)

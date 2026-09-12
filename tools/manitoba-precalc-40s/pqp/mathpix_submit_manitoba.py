@@ -9,6 +9,8 @@ from typing import Any
 
 import requests
 
+from manitoba_pdf_font_preflight import inspect_pdf
+
 from manitoba_mathpix_common import (
     MATHPIX_API_BASE,
     ROOT,
@@ -93,6 +95,27 @@ def main() -> None:
     if args.limit is not None:
         documents = documents[: args.limit]
 
+    # Check the entire batch before credentials or any paid request. Dry runs
+    # report the same blockers; --force must never bypass source integrity.
+    chosen_uploads = {}
+    blocked = []
+    for doc in documents:
+        upload_path, input_set = choose_upload_path(doc, args.input_set)
+        chosen_uploads[doc.id] = (upload_path, input_set)
+        preflight = inspect_pdf(upload_path)
+        if preflight["missing_mt_extra"]:
+            blocked.append({
+                "id": doc.id,
+                "uploadPath": str(upload_path),
+                "reason": "unembedded-MT-Extra",
+                "affectedPages": preflight["affected_pages"],
+                "unknownCodes": preflight["unknown_codes"],
+                "action": "Normalize a NEW PDF with manitoba_pdf_font_preflight.py SOURCE.pdf --output NEW.pdf --font /path/to/NotoSansMath-Regular.ttf, visually review it, then use separately reviewed, isolated new-input preparation. Do not overwrite the canonical input, manifest, or old Mathpix IDs for a pilot. Unknown codes require manual font review first.",
+            })
+    if blocked:
+        print(json.dumps({"submitted": [], "blocked": blocked, "dryRun": args.dry_run}, indent=2))
+        raise SystemExit(2)
+
     manifest = load_manifest()
     manifest.setdefault("documents", {})
     headers = None if args.dry_run else mathpix_headers()
@@ -101,7 +124,7 @@ def main() -> None:
     skipped = []
     for doc in documents:
         current = manifest_entry_for(doc)
-        upload_path, input_set = choose_upload_path(doc, args.input_set)
+        upload_path, input_set = chosen_uploads[doc.id]
         current.update(
             {
                 "uploadInputSet": input_set,
