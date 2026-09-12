@@ -1,5 +1,68 @@
 [
   {
+    "id": "mb-pc40s-2015-jan-q07",
+    "field": "solution",
+    "text": "For $0 <= x <= 2pi$:\n\n$2(1 - sin^2 x) = -3 sin x$\n\n$2 - 2 sin^2 x = -3 sin x$\n\n$0 = 2 sin^2 x - 3 sin x - 2$\n\n$0 = (2 sin x + 1)(sin x - 2)$\n\n$sin x = -1/2$ or $sin x = 2$\n\n$sin x = 2$ has no solution.\n\n$sin x = -1/2$ gives $x = 7pi/6, 11pi/6$.",
+    "reason": "Astra-approved routine repair: undefined",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_15_jan_mg.pdf:30"
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q12",
+    "field": "solution",
+    "text": "For $sin theta != 0$:\n\nMethod 1\n\n$csc^2 theta - frac(cot theta, sin theta)$\n\n$= frac(1, sin^2 theta) - frac(cos theta, sin^2 theta)$\n\n$= frac(1 - cos theta, sin^2 theta)$\n\n$= frac(1 - cos theta, (1 - cos theta)(1 + cos theta))$\n\n$= frac(1, 1 + cos theta)$\n\nMethod 2\n\n$frac(1, 1 + cos theta) dot frac(1 - cos theta, 1 - cos theta)$\n\n$= frac(1 - cos theta, 1 - cos^2 theta)$\n\n$= frac(1 - cos theta, sin^2 theta)$\n\n$= frac(1, sin^2 theta) - frac(cos theta, sin^2 theta)$\n\n$= csc^2 theta - frac(cos theta / sin theta, sin theta)$\n\n$= csc^2 theta - frac(cot theta, sin theta)$",
+    "reason": "Astra-approved routine repair: undefined",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_15_jan_mg.pdf:43"
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q34",
+    "field": "solution",
+    "text": "a)\n\n$frac(1 - sin^2(pi/3), cos(pi/3))$\n\n$= frac(1 - (sqrt(3)/2)^2, 1/2)$\n\n$= frac(1/4, 1/2)$\n\n$= 1/2$\n\n$frac(sin(2pi/3), 2 sin(pi/3))$\n\n$= frac(sqrt(3)/2, 2(sqrt(3)/2))$\n\n$= frac(sqrt(3)/2, sqrt(3))$\n\n$= 1/2$\n\nTherefore, LHS = RHS.\n\nb) Proving that the equation is true for one value does not show that it is true for all permissible values.",
+    "reason": "Astra-approved routine repair: undefined",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_15_jan_mg.pdf:88"
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q35",
+    "field": "solution",
+    "text": "$frac(P(7, 2), P(7, 5))$\n\n$= frac(frac(7!, (7 - 2)!), frac(7!, (7 - 5)!))$\n\n$= frac(frac(7!, 5!), frac(7!, 2!))$\n\n$= frac(2!, 5!)$\n\n$= frac(2 times 1, 5 times 4 times 3 times 2 times 1)$\n\n$= 1/60$",
+    "reason": "Astra-approved routine repair: undefined",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_15_jan_mg.pdf:92"
+  },
+  {
+    "id": "mb-pc40s-2015-jan-q37",
+    "field": "solution",
+    "text": "The permissible domain is $x > 0$.\n\nMethod 1\n\n$log_4(x + 2) + log_4 3 = log_4 x$\n\n$log_4(3(x + 2)) = log_4 x$\n\n$3(x + 2) = x$\n\n$x = -3$\n\n$x = -3$ is extraneous because $x > 0$ is required. Therefore, there is no real solution.\n\nMethod 2\n\n$log_4(x + 2) + log_4 3 - log_4 x = 0$\n\n$log_4(frac(3(x + 2), x)) = 0$\n\n$frac(3x + 6, x) = 4^0$\n\n$x = -3$\n\n$x = -3$ is extraneous because $x > 0$ is required. Therefore, there is no real solution.",
+    "reason": "Astra-approved routine repair: undefined",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_15_jan_mg.pdf:98"
+  },
+  {
+    "id": "mb-pc40s-2016-jan-q01",
+    "field": "body",
+    "text": "A pizza with a diameter of 15 inches is cut into equal slices, each with a central angle of $36 degree$.\n\nDetermine the length of the crust on the outer edge of one slice of pizza.",
+    "reason": "Astra-approved routine repair: Removes the source-absent OCR token `mili` and otherwise preserves the prompt wording.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jan_mg.pdf:12"
+  },
+  {
+    "id": "mb-pc40s-2016-jan-q02",
+    "field": "body",
+    "text": "There are 9 girls and 7 boys in a math class from which a committee of 5 is to be chosen.\n\na) How many different committees of 5 can be formed if one of the boys, William, must be on the committee?\n\nb) How many different committees of 5 can be formed if there must be 2 girls and 3 boys on the committee?",
+    "reason": "Astra-approved routine repair: Removes the source-absent OCR token `m` and preserves the two-part committee prompt.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jan_mg.pdf:14"
+  },
+  {
+    "id": "mb-pc40s-2016-jan-q03",
+    "field": "solution",
+    "text": "$sin^2 theta + 6 sin theta - 2 = 0$\n\n$(sin theta)^2 + 6 sin theta - 2 = 0$\n\n$sin theta = -3 plus.minus sqrt(11)$\n\n$sin theta = -3 + sqrt(11) approx 0.316624$\n\n$sin theta = -3 - sqrt(11) approx -6.316624$ is not in $[-1, 1]$, so it gives no real angle.\n\nFor $0 <= theta <= 2 pi$,\n\n$theta approx 0.322$ or $theta approx 2.819$.",
+    "reason": "Astra-approved routine repair: Restores the source’s two valid angle branches and keeps the impossible sine value explicit; scoring rubric is omitted.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jan_mg.pdf:18"
+  },
+  {
+    "id": "mb-pc40s-2016-jan-q05",
+    "field": "solution",
+    "text": "$2 sin theta - 1 = 0$ or $sin theta + 1 = 0$\n\n$sin theta = 1/2$ or $sin theta = -1$\n\n$theta = pi/6 + 2 k pi$, $k in ZZ$\n\n$theta = 5 pi/6 + 2 k pi$, $k in ZZ$\n\n$theta = 3 pi/2 + 2 k pi$, $k in ZZ$.",
+    "reason": "Astra-approved routine repair: Restores the omitted radian family $3 pi/2 + 2 k pi$ from the source; scoring rubric and duplicate degree alternatives are omitted.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jan_mg.pdf:26"
+  },
+  {
     "id": "mb-pc40s-2020-jan-q08",
     "field": "solution",
     "text": "Domain: $[8, infinity)$\n\n1 mark for domain\n\nRange: $(-infinity, 1]$\n\n1 mark for range\n\n2 marks",
