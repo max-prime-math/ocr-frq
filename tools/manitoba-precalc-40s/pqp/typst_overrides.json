@@ -1,5 +1,75 @@
 [
   {
+    "id": "mb-pc40s-2017-jan-q03",
+    "field": "solution",
+    "text": "$500000 = frac(560 ((1 + frac(0.042, 12))^n - 1), frac(0.042, 12))$\n\n$500000 = frac(560 (1.0035^n - 1), 0.0035)$\n\n$500000 = 160000 (1.0035^n - 1)$\n\n$3.125 = 1.0035^n - 1$\n\n$4.125 = 1.0035^n$\n\n$log 4.125 = log(1.0035^n)$\n\n$log 4.125 = n log 1.0035$\n\n$n = frac(log 4.125, log 1.0035) approx 405.584$\n\nTherefore, 406 monthly investments are needed.",
+    "reason": "Astra-approved routine repair: Restores the source's separate annuity-equation steps; the extracted solution joins $3.125 = 1.0035^n - 1$ to the next line as a false $-14.125$ expression.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_17_jan_mg.pdf:18"
+  },
+  {
+    "id": "mb-pc40s-2017-jan-q04",
+    "field": "solution",
+    "text": "There are $3!$ ways to arrange the three animal groups. Within the groups, there are $4!$, $5!$, and $3!$ arrangements.\n\n$3! dot 4! dot 5! dot 3! = 103680$\n\nTherefore, there are 103680 arrangements.",
+    "reason": "Astra-approved routine repair: Replaces OCR-minus signs in the grouped-animal product with the source's multiplication dots.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_17_jan_mg.pdf:22"
+  },
+  {
+    "id": "mb-pc40s-2017-jan-q15",
+    "field": "solution",
+    "text": "$frac(n!, (n - 2)! 2!) = 3n + 4$\n\n$frac(n(n - 1)(n - 2)!, (n - 2)! 2!) = 3n + 4$\n\n$n(n - 1) = 2(3n + 4)$\n\n$n^2 - n = 6n + 8$\n\n$n^2 - 7n - 8 = 0$\n\n$(n - 8)(n + 1) = 0$\n\n$n = 8$ or $n = -1$.\n\nSince $n >= 2$ is required for choosing 2 items, $n = -1$ is extraneous. Therefore, $n = 8$.",
+    "reason": "Astra-approved routine repair: Restores ordinary factorial cancellation and makes the source-indicated rejection of the invalid root explicit; the extracted display creates a nested denominator and presents $n = -1$ as an answer.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_17_jan_mg.pdf:54"
+  },
+  {
+    "id": "mb-pc40s-2017-jan-q44",
+    "field": "solution",
+    "text": "$x^2 + y^2 = r^2$\n\n$(-2)^2 + 7^2 = r^2$\n\n$53 = r^2$\n\n$r = sqrt(53)$\n\n$P(theta) = (-frac(2, sqrt(53)), frac(7, sqrt(53)))$",
+    "reason": "Astra-approved routine repair: Restores the omitted unit-circle coordinates after the radius calculation.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_17_jan_mg.pdf:126"
+  },
+  {
+    "id": "mb-pc40s-2017-jan-q46",
+    "field": "solution",
+    "text": "The first digit has 3 choices: $4$, $5$, or $6$. The remaining digits have $4$, $3$, and $2$ choices.\n\n$3 dot 4 dot 3 dot 2 = 72$\n\nTherefore, 72 such numbers can be made.",
+    "reason": "Astra-approved routine repair: Replaces OCR-generated fractions with the four source counting factors, including the missing final factor of 2.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_17_jan_mg.pdf:134"
+  },
+  {
+    "id": "mb-pc40s-2016-jun-q04",
+    "field": "solution",
+    "text": "$mat(\n  delim: #none,\n  50 000 &= frac(800 (1 - (1 + frac(0.06, 12))^(-n)), frac(0.06, 12));\n  250 &= 800 (1 - 1.005^(-n));\n  0.3125 &= 1 - 1.005^(-n);\n  -0.6875 &= -1.005^(-n);\n  0.6875 &= 1.005^(-n);\n  log 0.6875 &= -n log 1.005;\n  n &= frac(log 0.6875, -(log 1.005));\n  n &approx 75.12588088,\n)$\n\nBecause the last payment is partial, $floor(75.12588088) = 75$. Therefore, 75 full monthly payments are required.",
+    "reason": "Astra-approved routine repair: Restores the missing `log` tokens and the negative denominator from the guide, then makes the partial-final-payment rounding explicit.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jun_mg.pdf:22"
+  },
+  {
+    "id": "mb-pc40s-2016-jun-q05",
+    "field": "body",
+    "text": "An employee asked 10 people in an ice cream shop to wait in line.\n\nDetermine the number of different arrangements possible if two of the people, Jamie and John, refused to stand next to each other in the line.",
+    "reason": "Astra-approved routine repair: Removes the source-absent leading OCR fragment `(3007` while preserving the guide's stem.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jun_mg.pdf:26"
+  },
+  {
+    "id": "mb-pc40s-2016-jun-q09",
+    "field": "solution",
+    "text": "Method 1\n\n$mat(\n  delim: #none,\n  2 (2 cos^2 theta - 1) &= 1;\n  4 cos^2 theta - 2 &= 1;\n  cos^2 theta &= frac(3, 4);\n  cos theta &= plus.minus frac(sqrt(3), 2),\n)$\n\n$theta = frac(pi, 6), frac(11 pi, 6)$ when $cos theta = frac(sqrt(3), 2)$.\n\n$theta = frac(5 pi, 6), frac(7 pi, 6)$ when $cos theta = -frac(sqrt(3), 2)$.\n\nMethod 2\n\n$mat(\n  delim: #none,\n  2 (1 - 2 sin^2 theta) &= 1;\n  2 - 4 sin^2 theta &= 1;\n  sin^2 theta &= frac(1, 4);\n  sin theta &= plus.minus frac(1, 2),\n)$\n\n$theta = frac(pi, 6), frac(5 pi, 6)$ when $sin theta = frac(1, 2)$.\n\n$theta = frac(7 pi, 6), frac(11 pi, 6)$ when $sin theta = -frac(1, 2)$.",
+    "reason": "Astra-approved routine repair: Restores all four angle values in each source method and removes the OCR-created orphan angle.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jun_mg.pdf:34"
+  },
+  {
+    "id": "mb-pc40s-2016-jun-q23",
+    "field": "solution",
+    "text": "The domain is $x > 5$.\n\n$mat(\n  delim: #none,\n  log_3((x + 3)(x - 5)) &= 2;\n  (x + 3)(x - 5) &= 3^2;\n  x^2 - 2x - 15 &= 9;\n  x^2 - 2x - 24 &= 0;\n  (x - 6)(x + 4) &= 0,\n)$\n\n$x = 6$ or $x = -4$. Since $-4$ is outside $x > 5$, it is extraneous. Therefore, $x = 6$.",
+    "reason": "Astra-approved routine repair: Replaces the OCR corruption `x > < 4` with an explicit rejection of the extraneous root shown crossed out in the guide.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jun_mg.pdf:58"
+  },
+  {
+    "id": "mb-pc40s-2016-jun-q29",
+    "field": "solution",
+    "text": "$mat(\n  delim: #none,\n  12^2 - 7^2 &= y^2;\n  95 &= y^2;\n  sin alpha &= -frac(sqrt(95), 12);\n  5^2 - 3^2 &= x^2;\n  16 &= x^2;\n  cos beta &= frac(4, 5),\n)$\n\nThe signs follow from $alpha$ in quadrant IV and $beta$ in quadrant I.\n\n$mat(\n  delim: #none,\n  sin(alpha - beta) &= sin alpha cos beta - cos alpha sin beta;\n  &= (-frac(sqrt(95), 12))(frac(4, 5)) - (frac(7, 12))(frac(3, 5));\n  &= frac(-4 sqrt(95) - 21, 60),\n)$\n\n$ csc(alpha - beta) = frac(60, -4 sqrt(95) - 21) $.",
+    "reason": "Astra-approved routine repair: Restores the omitted triangle calculations, signed trig values, and sine-difference identity as native Typst without requiring the source diagram crop.",
+    "source": "/home/max/testgen-suite/testgen-ingest/tools/ocr-frq/data/manitoba-precalc-40s/workspace/source-pdfs/marking-guides/pc_16_jun_mg.pdf:74"
+  },
+  {
     "id": "mb-pc40s-2015-jan-q07",
     "field": "solution",
     "text": "For $0 <= x <= 2pi$:\n\n$2(1 - sin^2 x) = -3 sin x$\n\n$2 - 2 sin^2 x = -3 sin x$\n\n$0 = 2 sin^2 x - 3 sin x - 2$\n\n$0 = (2 sin x + 1)(sin x - 2)$\n\n$sin x = -1/2$ or $sin x = 2$\n\n$sin x = 2$ has no solution.\n\n$sin x = -1/2$ gives $x = 7pi/6, 11pi/6$.",
