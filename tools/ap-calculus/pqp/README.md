@@ -77,3 +77,20 @@ The next implementation step is an extractor that writes a per-question
 intermediate record from either a retained BC Mathpix ZIP or a pilot Mathpix
 result.  It must target this manifest rather than the old combined LaTeX
 output.
+
+## First scaled tranche
+
+`tranche_01_manifest.json` selects six BC questions from each of 1999 and
+2000. Both releases already have paired prompt/scoring Mathpix ZIPs, so its
+catalog and blocked staging require no new Mathpix request:
+
+```bash
+python3 tools/ap-calculus/pqp/build_tranche_catalog.py
+python3 tools/ap-calculus/pqp/build_tranche_legacy_intermediate.py
+python3 tools/ap-calculus/pqp/build_tranche_typst_candidates.py
+# Writes 12 page-limited scoring-guide PDFs, but does not submit them.
+python3 tools/ap-calculus/pqp/prepare_tranche_scoring_recovery_inputs.py --write
+```
+
+The resulting records remain blocked. They must pass source-boundary, figure,
+solution, Typst, and TestGen review before any question is emitted.
