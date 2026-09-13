@@ -28,8 +28,8 @@ Never publish an item whose `publishState` is `blocked`.
 - 34 AB prompt releases; 33 have paired scoring guides. AB 2024 is prompt-only
   and excluded. AB releases have no retained Mathpix ZIPs.
 - Working first-pass scope: **66 paired releases / 396 FRQs**.
-- Published: **24 FRQs**. Staged but unreviewed: **24 FRQs**. Remaining to
-  source-lock/stage: **348 FRQs**.
+- Published: **24 FRQs**. Staged but unreviewed: **36 FRQs**. Remaining to
+  source-lock/stage: **336 FRQs**.
 
 ## Published bank
 
@@ -57,6 +57,7 @@ Repository: `/home/max/testgen-suite/testgen-ingest/tools/ocr-frq`
 | 01 | BC 1999 + BC 2000 (12) | Manually reviewed and published. |
 | 02 | BC 2001 + BC 2002 (12) | Source-locked; page-limited Mathpix guide recovery complete; 12/12 bodies and guides compile; **blocked pending audit**. |
 | 03 | BC 2003 standard + Form B (12) | Source-locked; recovery complete; 12/12 bodies and guides compile; **blocked pending audit**. |
+| 04 | BC 2004 standard + Form B (12) | Source-locked; 12/12 prompt bodies compile; **blocked pending guide recovery and audit**. |
 
 ### Latest repair
 
@@ -102,6 +103,8 @@ artifacts locally; they never publish a question.
 
 1. Commit/push `tranche_03_manifest.json`, its deterministic catalog, the
    preprocessor fix, and this ledger update. Exclude generated artifacts.
-2. Continue cache-first BC releases in 12-question tranches. Once BC cache
+2. Prepare/submit page-limited scoring-guide recovery for tranche 04, attach it,
+   and require 12/12 compile before advancing its state.
+3. Continue cache-first BC releases in 12-question tranches. Once BC cache
    sources are source-locked/staged, prepare AB/BC-2021 page-limited source
    OCR batches; do not publish them before the systematic audit.
