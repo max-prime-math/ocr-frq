@@ -90,6 +90,10 @@ python3 tools/ap-calculus/pqp/build_tranche_legacy_intermediate.py
 python3 tools/ap-calculus/pqp/build_tranche_typst_candidates.py
 # Writes 12 page-limited scoring-guide PDFs, but does not submit them.
 python3 tools/ap-calculus/pqp/prepare_tranche_scoring_recovery_inputs.py --write
+# Explicitly submit and retain recovery OCR; no TestGen emission occurs.
+python3 tools/ap-calculus/pqp/submit_tranche_scoring_recovery.py
+python3 tools/ap-calculus/pqp/fetch_tranche_scoring_recovery.py --poll
+python3 tools/ap-calculus/pqp/attach_tranche_scoring_recovery.py
 ```
 
 The resulting records remain blocked. They must pass source-boundary, figure,

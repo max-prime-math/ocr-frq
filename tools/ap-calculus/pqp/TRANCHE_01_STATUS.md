@@ -16,16 +16,17 @@ No Mathpix API request and no TestGen publication has occurred.
 - Retained prompt OCR records: **12/12 staged**.
 - Prompt image assets retained for review: **7**.
 - Prompt Typst candidates: **12/12 compiled**.
-- Scoring-guide Typst candidates: **0/12 eligible** by design.
+- Page-limited Mathpix scoring-guide recovery: **12/12 completed**.
+- Scoring-guide Typst candidates: **12/12 compiled**.
 
 ## Deliberate block
 
 The old BC scoring-guide ZIP parser is not safe for this tranche. It returns
 empty segments for some questions and a nonempty but wrong-question segment
 for at least BC 2000 Q1. Therefore retained scoring-guide text is preserved
-only as comparison evidence and cannot enter a solution candidate.
+only as comparison evidence. Each candidate instead uses its completed,
+page-limited Mathpix recovery artifact.
 
-Twelve page-limited scoring-guide recovery inputs can be prepared from the
-source-locked pages. A separate, explicit decision is required before any
-Mathpix submission. After recovery, each question still needs manual boundary,
-figure, solution, Typst, and TestGen review before publication.
+The twelve recovery documents were submitted and completed, but their artifacts
+remain local and ignored. Each question still needs manual boundary, figure,
+solution, Typst, and TestGen review before publication.
