@@ -27,25 +27,31 @@ def build_queue(write: bool) -> list[dict]:
         if question["course"] != "AB":
             continue
         source = question["source"]
-        output = INPUT_DIR / f"{question['id']}.pdf"
-        record = {
-            "id": question["id"],
-            "sourcePdf": source["prompt"]["path"],
-            "sourceSha256": source["prompt"]["sha256"],
-            "sourcePages": source["promptPages"],
-            "output": str(output.relative_to(ROOT)),
-            "submissionState": "prepared" if output.exists() else "not-written",
-        }
-        if write:
-            original = fitz.open(ROOT / source["prompt"]["path"])
-            clipped = fitz.open()
-            for page in source["promptPages"]:
-                clipped.insert_pdf(original, from_page=page - 1, to_page=page - 1)
-            output.parent.mkdir(parents=True, exist_ok=True)
-            clipped.save(output)
-            clipped.close()
-            original.close()
-            record["submissionState"] = "prepared"
+        record = {"id": question["id"], "artifacts": []}
+        inputs = [("prompt", source["prompt"], source["promptPages"])]
+        if source.get("scoringGuidePages"):
+            inputs.append(("scoring-guide", source["scoringGuide"], source["scoringGuidePages"]))
+        for kind, document, pages in inputs:
+            output = INPUT_DIR / f"{question['id']}-{kind}.pdf"
+            artifact = {
+                "kind": kind,
+                "sourcePdf": document["path"],
+                "sourceSha256": document["sha256"],
+                "sourcePages": pages,
+                "output": str(output.relative_to(ROOT)),
+                "submissionState": "prepared" if output.exists() else "not-written",
+            }
+            if write:
+                original = fitz.open(ROOT / document["path"])
+                clipped = fitz.open()
+                for page in pages:
+                    clipped.insert_pdf(original, from_page=page - 1, to_page=page - 1)
+                output.parent.mkdir(parents=True, exist_ok=True)
+                clipped.save(output)
+                clipped.close()
+                original.close()
+                artifact["submissionState"] = "prepared"
+            record["artifacts"].append(artifact)
         queue.append(record)
     if write:
         QUEUE.write_text(json.dumps({"schemaVersion": 1, "submission": "not-submitted", "questions": queue}, indent=2) + "\n", encoding="utf-8")
@@ -54,10 +60,10 @@ def build_queue(write: bool) -> list[dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--write", action="store_true", help="Write the six reviewable input PDFs; no API request is made")
+    parser.add_argument("--write", action="store_true", help="Write the twelve reviewable input PDFs; no API request is made")
     args = parser.parse_args()
     queue = build_queue(args.write)
-    print(json.dumps({"abPilotInputs": len(queue), "wrote": args.write, "submitted": False}))
+    print(json.dumps({"abPilotQuestions": len(queue), "mathpixDocuments": sum(len(row["artifacts"]) for row in queue), "wrote": args.write, "submitted": False}))
     return 0
 
 

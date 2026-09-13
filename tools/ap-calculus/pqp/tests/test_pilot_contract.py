@@ -31,6 +31,7 @@ class PilotContractTests(unittest.TestCase):
                 self.assertEqual(row["status"], "legacy-artifacts-available")
             else:
                 self.assertEqual(row["status"], "ready-for-pilot-mathpix")
+                self.assertTrue(row["source"]["scoringGuidePages"])
 
 
 if __name__ == "__main__":

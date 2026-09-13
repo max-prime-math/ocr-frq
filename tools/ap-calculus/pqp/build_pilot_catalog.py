@@ -72,6 +72,12 @@ def validate_manifest(data: dict[str, Any]) -> list[dict[str, Any]]:
             raise ValueError(f"{identifier}: promptPages is required")
         if any(not isinstance(page, int) or page < 1 or page > prompt["pages"] for page in prompt_pages):
             raise ValueError(f"{identifier}: promptPages falls outside the prompt PDF")
+        scoring_pages = row.get("scoringGuidePages")
+        if scoring_pages is not None:
+            if not isinstance(scoring_pages, list) or not scoring_pages:
+                raise ValueError(f"{identifier}: scoringGuidePages must be a non-empty list when supplied")
+            if any(not isinstance(page, int) or page < 1 or page > scoring["pages"] for page in scoring_pages):
+                raise ValueError(f"{identifier}: scoringGuidePages falls outside the scoring guide")
         legacy: dict[str, Any] | None = None
         if "legacyMathpix" in row:
             legacy = {key: {"path": value, "sha256": sha256(resolve(value))}
@@ -82,7 +88,7 @@ def validate_manifest(data: dict[str, Any]) -> list[dict[str, Any]]:
             "year": row["year"],
             "form": row["form"],
             "question": row["question"],
-            "source": {"prompt": prompt, "scoringGuide": scoring, "promptPages": prompt_pages},
+            "source": {"prompt": prompt, "scoringGuide": scoring, "promptPages": prompt_pages, "scoringGuidePages": scoring_pages},
             "legacyMathpix": legacy,
             "focus": row.get("focus", []),
             "status": "legacy-artifacts-available" if legacy else "ready-for-pilot-mathpix",

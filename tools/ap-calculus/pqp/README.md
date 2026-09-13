@@ -27,9 +27,19 @@ python3 tools/ap-calculus/pqp/build_pilot_catalog.py
 # Verify without changing a generated catalog.
 python3 tools/ap-calculus/pqp/build_pilot_catalog.py --check
 
-# Make six page-limited AB prompt PDFs for the pilot only. This does not call
-# Mathpix; inspect these files before any API submission.
+# Make twelve page-limited AB prompt/scoring-guide PDFs for the pilot only.
+# This does not call Mathpix; inspect these files before any API submission.
 python3 tools/ap-calculus/pqp/prepare_pilot_mathpix_inputs.py --write
+
+# Inspect the exact twelve documents. This is the last no-cost API gate.
+python3 tools/ap-calculus/pqp/submit_pilot_mathpix.py --dry-run
+
+# Submit only the calibration queue, then retain the returned Mathpix IDs and
+# source hashes locally. This does not generate or publish PQPs.
+python3 tools/ap-calculus/pqp/submit_pilot_mathpix.py
+
+# Poll the twelve jobs and fetch Mathpix artifacts once each is complete.
+python3 tools/ap-calculus/pqp/fetch_pilot_mathpix.py --poll
 
 # Run the skeleton's contract tests.
 python3 -m unittest discover -s tools/ap-calculus/pqp/tests -v
