@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-09-13",
+  "questions": [
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-01",
+      "points": 8,
+      "tags": ["ap-calculus", "bc", "frq", "2010", "form-b", "area", "volume", "source-figure"],
+      "images": ["ap-calc-bc-2010-form-b-frq-01-bc-2010-form-b_fig1.jpg"],
+      "body": "#image(\"/imgs/ap-calc-bc-2010-form-b-frq-01-bc-2010-form-b_fig1.jpg\", width: 60%)\n\nIn the figure, $R$ is bounded by $y = 4 ln(3 - x)$, $y = 6$, and $x = 2$.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about $y = 8$.\n\n(c) $R$ is the base of a solid with square cross sections perpendicular to the $x$-axis. Find its volume.",
+      "solution": "(a)\n$ A = integral_0^2 (6 - 4 ln(3 - x)) dif x approx 6.817. $\n\n(b) The outer radius is $8 - 4 ln(3 - x)$ and the inner radius is $2$. Thus\n$ V = pi integral_0^2 ((8 - 4 ln(3 - x))^2 - 2^2) dif x approx 168.180. $\n\n(c) A square cross section has side length $6 - 4 ln(3 - x)$, so\n$ V = integral_0^2 (6 - 4 ln(3 - x))^2 dif x approx 26.267. $"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-01",
+      "points": 8,
+      "tags": ["ap-calculus", "ab", "frq", "2005", "form-b", "area", "volume", "source-figure"],
+      "images": ["ap-calc-ab-2005-form-b-frq-01-prompt-3b7074e5-0f19-4e0a-9019-2192b2fbcc27-1_548_443_662_842.jpg"],
+      "body": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-01-prompt-3b7074e5-0f19-4e0a-9019-2192b2fbcc27-1_548_443_662_842.jpg\", width: 55%)\n\nLet $f(x) = 1 + sin(2x)$ and $g(x) = e^(x / 2)$. The shaded first-quadrant region $R$ is enclosed by their graphs.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about the $x$-axis.\n\n(c) $R$ is the base of a solid whose cross sections perpendicular to the $x$-axis are semicircles with diameters from $f(x)$ to $g(x)$. Find the volume.",
+      "solution": "Let $(S, T) approx (1.13569, 1.76446)$ be the first-quadrant intersection.\n\n(a)\n$ integral_0^S (f(x) - g(x)) dif x approx 0.429. $\n\n(b)\n$ pi integral_0^S (f(x)^2 - g(x)^2) dif x approx 4.266. $\n\n(c) A semicircle with diameter $f(x) - g(x)$ has area $pi/2 ((f(x)-g(x))/2)^2$. Therefore\n$ integral_0^S pi/2 ((f(x) - g(x))/2)^2 dif x approx 0.077. $"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-04",
+      "points": 9,
+      "tags": ["ap-calculus", "ab", "frq", "2005", "form-b", "fundamental-theorem-of-calculus", "graphs", "source-figure"],
+      "images": ["ap-calc-ab-2005-form-b-frq-04-prompt-58b57b8a-c4d4-42bb-983f-39c27fde2df0-1_516_660_685_748.jpg"],
+      "body": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-04-prompt-58b57b8a-c4d4-42bb-983f-39c27fde2df0-1_516_660_685_748.jpg\", width: 65%)\n\nThe graph of $f$ consists of three line segments.\n\n(a) Let $g(x) = integral_-4^x f(t) dif t$. Find $g(-1)$, $g'(-1)$, and $g''(-1)$, or state that a value does not exist.\n\n(b) Find each $x$-coordinate of an inflection point of $g$ on $(-4, 3)$ and justify.\n\n(c) Let $h(x) = integral_x^3 f(t) dif t$. Find every $x$ in $[-4, 3]$ for which $h(x) = 0$.\n\n(d) Find all intervals on which $h$ is decreasing and justify.",
+      "solution": "(a) The signed area from $-4$ to $-1$ is $-frac(1, 2)(3)(5) = -frac(15, 2)$. By the Fundamental Theorem of Calculus, $g'(-1) = f(-1) = -2$. Since $f$ has a corner at $x=-1$, $g''(-1)$ does not exist.\n\n(b) Since $g' = f$, $g$ changes from concave up to concave down where $f$ changes from increasing to decreasing: $x = 1$.\n\n(c) Evaluating the signed areas gives $h(x)=0$ at $x=-1$, $x=1$, and $x=3$.\n\n(d) $h'(x) = -f(x)$. Thus $h$ is decreasing where $f(x) > 0$, namely on $(0, 2)$."
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-06",
+      "points": 9,
+      "tags": ["ap-calculus", "ab", "frq", "2005", "form-b", "differential-equations", "slope-fields", "source-figure"],
+      "images": ["ap-calc-ab-2005-form-b-frq-06-prompt-b6553edd-3e90-4eeb-8d43-7d799208e18b-1_595_808_1169_660.jpg"],
+      "body": "Consider $dif y / dif x = -x y^2 / 2$. Let $y=f(x)$ satisfy $f(-1)=2$.\n\n(a) On the provided axes, sketch the slope field at the twelve indicated points.\n\n#image(\"/imgs/ap-calc-ab-2005-form-b-frq-06-prompt-b6553edd-3e90-4eeb-8d43-7d799208e18b-1_595_808_1169_660.jpg\", width: 70%)\n\n(b) Write the equation of the line tangent to $f$ at $x=-1$.\n\n(c) Find $f(x)$.",
+      "solution": "(a) Horizontal segments occur where $x=0$ or $y=0$. At the remaining marked points, use slope $-x y^2/2$.\n\n(b) At $(-1,2)$,\n$ f'(-1) = -(-1)(2)^2 / 2 = 2. $\nThus the tangent line is $y - 2 = 2(x + 1)$.\n\n(c) Separate variables:\n$ 1/y^2 dif y = -x/2 dif x. $\nIntegrating gives $-1/y = -x^2/4 + C$. Using $f(-1)=2$ gives $C=-1/4$, so\n$ f(x) = frac(4, x^2 + 1). $"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-03",
+      "points": 10,
+      "tags": ["ap-calculus", "ab", "frq", "2019", "standard-form", "integrals", "absolute-extrema", "source-figure"],
+      "images": ["ap-calc-ab-2019-frq-03-prompt-df0969b9-3806-48a4-83cb-d5dd9bc4502b-1_441_676_717_719.jpg"],
+      "body": "#image(\"/imgs/ap-calc-ab-2019-frq-03-prompt-df0969b9-3806-48a4-83cb-d5dd9bc4502b-1_441_676_717_719.jpg\", width: 75%)\n\nThe continuous function $f$ is defined on $[-6,5]$. The graph consists of two line segments and a quarter-circle centered at $(5,3)$, and $(3, 3-sqrt(5))$ lies on the graph.\n\n(a) Given $integral_-6^5 f(x) dif x = 7$, find $integral_-6^-2 f(x) dif x$.\n\n(b) Evaluate $integral_3^5 (2f'(x)+4) dif x$.\n\n(c) Let $g(x)=integral_-2^x f(t) dif t$. Find the absolute maximum value of $g$ on $[-2,5]$ and justify.\n\n(d) Find $lim_(x -> 1) frac(10^x - 3f'(x), f(x)-arctan(x))$.",
+      "solution": "(a) From the graph,\n$ integral_-2^5 f(x) dif x = 2 + (9 - 9pi/4). $\nTherefore\n$ integral_-6^-2 f(x) dif x = 7 - (11 - 9pi/4) = 9pi/4 - 4. $\n\n(b)\n$ integral_3^5 (2f'(x)+4) dif x = 2(f(5)-f(3)) + 4(5-3) = 2 + 2sqrt(5). $\n\n(c) Because $g'=f$, candidates are the endpoints and zeros of $f$: $-2$, $-1$, $1/2$, and $5$. The corresponding values are $0$, $1/2$, $-1/4$, and $11 - 9pi/4$. The absolute maximum is\n$ 11 - 9pi/4. $\n\n(d) From the graph, $f(1)=1$ and $f'(1)=2$. Thus\n$ frac(10 - 3(2), 1 - arctan(1)) = frac(4, 1 - pi/4). $"
+    }
+  ]
+}
