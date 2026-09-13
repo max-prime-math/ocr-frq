@@ -18,6 +18,8 @@ No Mathpix API request and no TestGen publication has occurred.
 - Prompt Typst candidates: **12/12 compiled**.
 - Page-limited Mathpix scoring-guide recovery: **12/12 completed**.
 - Scoring-guide Typst candidates: **12/12 compiled**.
+- BC 1999 manual source/solution review: **6/6 passed and published**.
+- BC 2000 manual source/solution review: **0/6 completed; remains blocked**.
 
 ## Deliberate block
 

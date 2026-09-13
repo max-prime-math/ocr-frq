@@ -11,12 +11,15 @@ if (fs.existsSync(output)) throw new Error(`Candidate output already exists: ${o
 const require = createRequire(import.meta.url);
 const model = require('/home/max/testgen-suite/test-generator/src/git/repoDataModel.ts');
 const here = path.dirname(fileURLToPath(import.meta.url));
+const defaultAssetRoot = 'data/ap-calculus/pilot/staging/intermediate/assets';
 const approvals = {
-  questions: ['pilot_approved_questions.json', 'pilot_diagram_approved_questions.json']
-    .flatMap(file => JSON.parse(fs.readFileSync(path.join(here, file), 'utf8')).questions),
+  questions: ['pilot_approved_questions.json', 'pilot_diagram_approved_questions.json', 'tranche_01_approved_questions.json']
+    .flatMap(file => {
+      const approval = JSON.parse(fs.readFileSync(path.join(here, file), 'utf8'));
+      return approval.questions.map(question => ({...question, assetRoot: approval.assetRoot ?? defaultAssetRoot}));
+    }),
 };
 const ROOT = '/home/max/testgen-suite/testgen-ingest/tools/ocr-frq';
-const assetRoot = path.join(ROOT, 'data/ap-calculus/pilot/staging/intermediate/assets');
 const manifest = JSON.parse(fs.readFileSync(path.join(bank, 'manifest.json'), 'utf8'));
 const entries = [...manifest.files.map(file => ({path: file.path, kind: 'file', content: file.path.startsWith('images/') ? new Uint8Array(fs.readFileSync(path.join(bank, file.path))) : fs.readFileSync(path.join(bank, file.path), 'utf8')})), {path: 'manifest.json', kind: 'file', content: fs.readFileSync(path.join(bank, 'manifest.json'), 'utf8')}];
 const imported = model.importRepoEntriesToAppData(entries);
@@ -29,7 +32,7 @@ for (const item of approvals.questions) {
   for (const filename of imageNames) {
     const ext = path.extname(filename).slice(1).toLowerCase();
     const name = path.basename(filename, `.${ext}`);
-    const imagePath = path.join(assetRoot, filename);
+    const imagePath = path.join(ROOT, item.assetRoot, filename);
     if (!fs.existsSync(imagePath)) throw new Error(`Approved image missing: ${imagePath}`);
     if ((imported.appData.images ?? []).some(image => image.name === name && image.ext === ext)) continue;
     const bytes = new Uint8Array(fs.readFileSync(imagePath));
@@ -42,7 +45,7 @@ for (const item of approvals.questions) {
 const generated = model.exportAppDataToRepoEntries(imported.appData);
 const existingReadme = fs.readFileSync(path.join(bank, 'README.md'), 'utf8');
 const readme = generated.find(entry => entry.path === 'README.md');
-readme.content = existingReadme.replace(/^Current status:.*$/m, 'Current status: 12 manually reviewed AP Calculus FRQ pilot questions published. The pilot has passed source-traceability, native Typst, TestGen import/round-trip, and independent mathematical-review gates.');
+readme.content = existingReadme.replace(/^Current status:.*$/m, `Current status: ${imported.appData.questions.length} manually reviewed AP Calculus FRQs published. Published material has passed source-traceability, native Typst, TestGen import/round-trip, and independent mathematical-review gates.`);
 const generatedManifest = generated.find(entry => entry.path === 'manifest.json');
 const parsedManifest = JSON.parse(generatedManifest.content);
 const readmeRecord = parsedManifest.files.find(file => file.path === 'README.md');
