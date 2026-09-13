@@ -42,7 +42,7 @@ for (const item of approvals.questions) {
 const generated = model.exportAppDataToRepoEntries(imported.appData);
 const existingReadme = fs.readFileSync(path.join(bank, 'README.md'), 'utf8');
 const readme = generated.find(entry => entry.path === 'README.md');
-readme.content = existingReadme.replace('Current status: 6 manually reviewed, figure-free FRQ pilot questions published. Six diagram-dependent pilot questions remain in review.', 'Current status: 11 manually reviewed FRQ pilot questions published. One diagram-dependent question remains in review because its required table was not captured.');
+readme.content = existingReadme.replace(/^Current status:.*$/m, 'Current status: 12 manually reviewed AP Calculus FRQ pilot questions published. The pilot has passed source-traceability, native Typst, TestGen import/round-trip, and independent mathematical-review gates.');
 const generatedManifest = generated.find(entry => entry.path === 'manifest.json');
 const parsedManifest = JSON.parse(generatedManifest.content);
 const readmeRecord = parsedManifest.files.find(file => file.path === 'README.md');

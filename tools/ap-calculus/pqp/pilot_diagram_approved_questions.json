@@ -35,6 +35,14 @@
       "solution": "(a) Horizontal segments occur where $x=0$ or $y=0$. At the remaining marked points, use slope $-x y^2/2$.\n\n(b) At $(-1,2)$,\n$ f'(-1) = -(-1)(2)^2 / 2 = 2. $\nThus the tangent line is $y - 2 = 2(x + 1)$.\n\n(c) Separate variables:\n$ 1/y^2 dif y = -x/2 dif x. $\nIntegrating gives $-1/y = -x^2/4 + C$. Using $f(-1)=2$ gives $C=-1/4$, so\n$ f(x) = frac(4, x^2 + 1). $"
     },
     {
+      "id": "ap-calc-bc-2010-form-b-frq-03",
+      "points": 9,
+      "tags": ["ap-calculus", "bc", "frq", "2010", "form-b", "riemann-sums", "related-rates", "source-figure"],
+      "images": ["ap-calc-bc-2010-form-b-frq-03-source-table.png", "ap-calc-bc-2010-form-b-frq-03-bc-2010-form-b_fig2.jpg"],
+      "body": "#image(\"/imgs/ap-calc-bc-2010-form-b-frq-03-source-table.png\", width: 45%)\n\n#image(\"/imgs/ap-calc-bc-2010-form-b-frq-03-bc-2010-form-b_fig2.jpg\", width: 70%)\n\nThe figure shows an aboveground cylindrical pool with radius $12$ ft and height $4$ ft. It contains $1000$ ft³ of water at $t=0$. For $0 <= t <= 12$, water is pumped in at rate $P(t)$ (ft³/hr), with values shown in the table. Water leaks out at rate $R(t)=25e^(-0.05t)$ ft³/hr. Recall $V=pi r^2h$.\n\n(a) Use a midpoint Riemann sum with three equal subintervals to approximate the total pumped-in water from $0$ to $12$ hours.\n\n(b) Find the total leaked water from $0$ to $12$ hours.\n\n(c) Approximate the volume at $t=12$, nearest cubic foot.\n\n(d) Find $V'(8)$ and the rate at which the water level is rising at $t=8$. Include units.",
+      "solution": "(a) With subinterval width $4$, use the midpoint values $P(2)=46$, $P(6)=57$, and $P(10)=62$:\n$ integral_0^12 P(t) dif t approx 4(46+57+62)=660 $ ft³.\n\n(b)\n$ integral_0^12 25e^(-0.05t) dif t = 500(1-e^(-0.6)) approx 225.594 $ ft³.\n\n(c) The volume is approximately\n$1000 + 660 - 225.594 = 1434.406$ ft³, so $1434$ ft³.\n\n(d) $V'(t)=P(t)-R(t)$, so\n$V'(8)=60-25e^(-0.4) approx 43.242$ ft³/hr.\nSince $V=pi(12)^2h=144pi h$,\n$dif h/dif t = frac(1,144pi) dif V/dif t$.\nAt $t=8$, $dif h/dif t approx 0.096$ ft/hr."
+    },
+    {
       "id": "ap-calc-ab-2019-frq-03",
       "points": 10,
       "tags": ["ap-calculus", "ab", "frq", "2019", "standard-form", "integrals", "absolute-extrema", "source-figure"],

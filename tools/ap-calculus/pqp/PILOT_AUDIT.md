@@ -13,7 +13,7 @@ classroom-facing solution and its rubric is separately retained.
 | BC 1998 Q2 | Correct | `z` → `x` repaired; solution rewritten | None | Published |
 | BC 1998 Q6 | Correct | Guide order repaired in solution | None | Published |
 | BC 2010 Form B Q1 | Correct | Solution rewritten | Source region graph attached to body | Published |
-| BC 2010 Form B Q3 | Correct | Correct work, but prompt crop omits the essential $P(t)$ table | **Blocked: recover complete table and attach it** | Held |
+| BC 2010 Form B Q3 | Correct | Solution rewritten | Original $P(t)$ table and pool diagram attached to body | Published |
 | BC 2010 Form B Q6 | Correct | Solution rewritten | None | Published |
 | AB 2005 Form B Q1 | Correct | Solution rewritten | Source region graph attached to body | Published |
 | AB 2005 Form B Q4 | Correct | Solution rewritten | Source piecewise graph attached to body | Published |
@@ -28,12 +28,10 @@ classroom-facing solution and its rubric is separately retained.
 - Typst body and scoring-guide compilation: **12/12 passed**.
 - Substantive OCR repair identified: **BC 1998 Q2 `z` → `x`** in two scoring-guide expressions.
 - Figure-free questions finalized: **6**.
-- Diagram questions finalized with source crops: **5**.
-- Held for incomplete source capture: **BC 2010 Form B Q3**.
-- Published to the working bank: **11/12**. Each passed independent Typst plus TestGen import/round-trip validation.
+- Diagram questions finalized with source crops: **6**.
+- Published to the working bank: **12/12**. Each passed independent Typst plus TestGen import/round-trip validation.
 
 ## Next editorial tranche
 
-Recover the missing $P(t)$ table for BC 2010 Form B Q3 from its original
-source page, attach it together with the pool diagram, and then run the same
-visual, solution, Typst, and TestGen gates.
+Run a short pilot retrospective, then scale the same source-boundary,
+manual-solution, Typst, and TestGen gates to the next AP Calculus FRQ tranche.
