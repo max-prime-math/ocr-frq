@@ -41,6 +41,10 @@ python3 tools/ap-calculus/pqp/submit_pilot_mathpix.py
 # Poll the twelve jobs and fetch Mathpix artifacts once each is complete.
 python3 tools/ap-calculus/pqp/fetch_pilot_mathpix.py --poll
 
+# Create source-locked intermediate records. These remain blocked from
+# publication and keep raw OCR separate from scoring material.
+python3 tools/ap-calculus/pqp/build_pilot_intermediate.py
+
 # Run the skeleton's contract tests.
 python3 -m unittest discover -s tools/ap-calculus/pqp/tests -v
 ```
