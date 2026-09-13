@@ -45,6 +45,10 @@ python3 tools/ap-calculus/pqp/fetch_pilot_mathpix.py --poll
 # publication and keep raw OCR separate from scoring material.
 python3 tools/ap-calculus/pqp/build_pilot_intermediate.py
 
+# Create compile-checked Typst candidates. They are not PQPs and cannot be
+# emitted until the scoring guide is split and each candidate is reviewed.
+python3 tools/ap-calculus/pqp/build_pilot_typst_candidates.py
+
 # Run the skeleton's contract tests.
 python3 -m unittest discover -s tools/ap-calculus/pqp/tests -v
 ```
