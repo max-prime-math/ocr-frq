@@ -22,10 +22,12 @@ def main() -> int:
     parser.add_argument("--poll", action="store_true")
     parser.add_argument("--sleep", type=int, default=10)
     parser.add_argument("--timeout", type=int, default=900)
+    parser.add_argument("--cache", type=Path, default=CACHE)
     args = parser.parse_args()
+    cache = args.cache if args.cache.is_absolute() else ROOT / args.cache
     headers, started = load_credentials(), time.monotonic()
     while True:
-        state = json.loads(CACHE.read_text(encoding="utf-8"))
+        state = json.loads(cache.read_text(encoding="utf-8"))
         rows = []
         for identifier, entry in sorted(state["documents"].items()):
             response = requests.get(f"{API}/{entry['pdfId']}", headers=headers, timeout=120)
@@ -36,7 +38,7 @@ def main() -> int:
             entry["status"] = status
             row = {"id": identifier, "status": status, "downloads": {}}
             if status in DONE or float(payload.get("percent_done") or payload.get("percentDone") or 0) >= 100:
-                out = CACHE.parent / "artifacts" / identifier
+                out = cache.parent / "artifacts" / identifier
                 out.mkdir(parents=True, exist_ok=True)
                 for extension in OUTPUTS:
                     artifact = requests.get(f"{API}/{entry['pdfId']}.{extension}", headers=headers, timeout=120)
@@ -54,7 +56,7 @@ def main() -> int:
             elif status in FAILED:
                 entry["error"] = payload
             rows.append(row)
-        CACHE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        cache.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(json.dumps({"documents": rows}, indent=2))
         pending = [row for row in rows if row["status"] not in DONE | FAILED]
         if not args.poll or not pending:

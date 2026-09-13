@@ -48,13 +48,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--id", action="append", help="Question ID; repeat to narrow the queue")
+    parser.add_argument("--queue", type=Path, default=QUEUE)
+    parser.add_argument("--cache", type=Path, default=CACHE)
     args = parser.parse_args()
-    queue = json.loads(QUEUE.read_text(encoding="utf-8"))
+    queue = json.loads(args.queue.read_text(encoding="utf-8"))
     wanted = set(args.id) if args.id else None
     rows = [row for row in queue["artifacts"] if wanted is None or row["id"] in wanted]
     if not rows:
         raise SystemExit("No selected recovery documents")
-    state = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.is_file() else {"schemaVersion": 1, "documents": {}}
+    state = json.loads(args.cache.read_text(encoding="utf-8")) if args.cache.is_file() else {"schemaVersion": 1, "documents": {}}
     documents = state["documents"]
     headers = None if args.dry_run else load_credentials()
     result = {"submitted": [], "skipped": []}
@@ -79,8 +81,8 @@ def main() -> int:
         if response.status_code >= 400 or not (pdf_id := payload.get("pdf_id") or payload.get("pdfId")):
             raise RuntimeError(f"Mathpix upload failed for {row['id']}: HTTP {response.status_code}: {payload}")
         documents[row["id"]] = {**row, "uploadSha256": upload_hash, "pdfId": pdf_id, "submittedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"), "response": payload}
-        CACHE.parent.mkdir(parents=True, exist_ok=True)
-        CACHE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        args.cache.parent.mkdir(parents=True, exist_ok=True)
+        args.cache.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         result["submitted"].append({"id": row["id"], "pdfId": pdf_id})
     print(json.dumps(result, indent=2))
     return 0
