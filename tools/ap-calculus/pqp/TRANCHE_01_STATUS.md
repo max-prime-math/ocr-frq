@@ -19,7 +19,7 @@ No Mathpix API request and no TestGen publication has occurred.
 - Page-limited Mathpix scoring-guide recovery: **12/12 completed**.
 - Scoring-guide Typst candidates: **12/12 compiled**.
 - BC 1999 manual source/solution review: **6/6 passed and published**.
-- BC 2000 manual source/solution review: **0/6 completed; remains blocked**.
+- BC 2000 manual source/solution review: **6/6 passed and published**.
 
 ## Deliberate block
 
@@ -30,5 +30,5 @@ only as comparison evidence. Each candidate instead uses its completed,
 page-limited Mathpix recovery artifact.
 
 The twelve recovery documents were submitted and completed, but their artifacts
-remain local and ignored. Each question still needs manual boundary, figure,
-solution, Typst, and TestGen review before publication.
+remain local and ignored. All twelve tranche questions subsequently passed
+manual boundary, figure, solution, Typst, and TestGen review and are published.
