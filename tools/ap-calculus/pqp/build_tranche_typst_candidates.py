@@ -24,6 +24,9 @@ from manitoba_typst_conversion import convert_many  # noqa: E402
 def prepare_latex(raw: str) -> str:
     raw = raw.replace(r"\(", "$").replace(r"\)", "$").replace(r"\[", "$$").replace(r"\]", "$$")
     raw = raw.replace(r"\langle-1\rangle", "(minus 1)")
+    # Page-limited guides sometimes OCR a coordinate vector as `<a,b>`. This
+    # is not Typst math syntax, unlike a rubric deduction such as `<-1>`.
+    raw = re.sub(r"<([^<>]*,[^<>]*)>", r"(\1)", raw)
     raw = re.sub(r"\\begin\{figure\}.*?\\end\{figure\}", "\n[Source figure retained for review.]\n", raw, flags=re.S)
     raw = re.sub(r"!\[\]\(https://cdn\.mathpix\.com/cropped/[^)]*\)", "\n[Source figure retained for review.]\n", raw)
     raw = re.sub(r"\\includegraphics(?:\[[^]]*\])?\{[^}]+\}", "\n[Source figure retained for review.]\n", raw)
