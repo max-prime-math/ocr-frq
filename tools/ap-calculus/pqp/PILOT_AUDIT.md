@@ -27,13 +27,12 @@ classroom-facing solution and its rubric is separately retained.
 - Source boundary review: **12/12 passed**.
 - Typst body and scoring-guide compilation: **12/12 passed**.
 - Substantive OCR repair identified: **BC 1998 Q2 `z` → `x`** in two scoring-guide expressions.
-- Questions that can be finalized without a source figure: **BC 1998 Q1/Q2/Q6, BC 2010 Form B Q6, AB 2019 Q1/Q6** (six total).
+- Questions finalized without a source figure: **BC 1998 Q1/Q2/Q6, BC 2010 Form B Q6, AB 2019 Q1/Q6** (six total).
 - Questions requiring a body-figure ownership/attachment decision first: **six total**.
-- Published to the working bank: **0/12**. This is deliberate: no pilot question yet has an editorially separated solution and rubric.
+- Published to the working bank: **6/12**. Each has a manually rewritten classroom solution and passed independent Typst plus TestGen import/round-trip validation.
 
 ## Next editorial tranche
 
-Rewrite and independently review the six figure-free classroom solutions first,
-then emit only those approved packages. The diagram tranche follows with source
-crop attachment and a visual audit; recreate a diagram natively only when the
-crop is unreadable or semantically inadequate.
+The diagram tranche follows with source-crop attachment and a visual audit;
+recreate a diagram natively only when the crop is unreadable or semantically
+inadequate.

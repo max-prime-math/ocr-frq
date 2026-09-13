@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-09-12",
+  "questions": [
+    {
+      "id": "ap-calc-bc-1998-frq-01",
+      "points": 9,
+      "tags": ["ap-calculus", "bc", "frq", "1998", "standard-form", "area", "volume"],
+      "body": "Let $R$ be the region in the first quadrant bounded by $y = 8 - x^(3/2)$, the $x$-axis, and the $y$-axis.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about the $x$-axis.\n\n(c) The line $x = k$ divides $R$ into two regions. When each is revolved about the $x$-axis, the resulting solids have equal volume. Find $k$.",
+      "solution": "The curve meets the $x$-axis when $8 - x^(3/2) = 0$, so $x = 4$.\n\n(a)\n$ integral_0^4 (8 - x^(3/2)) dif x = [8x - frac(2, 5)x^(5/2)]_0^4 = frac(96, 5) = 19.2 $\n\n(b)\n$ V = pi integral_0^4 (8 - x^(3/2))^2 dif x = frac(576 pi, 5) approx 361.911 $\n\n(c) Equal volumes require\n$ pi integral_0^k (8 - x^(3/2))^2 dif x = frac(1, 2) dot frac(576 pi, 5). $\nThus\n$ 64k - frac(32, 5)k^(5/2) + frac(k^4, 4) = 57.6. $\nSolving numerically gives $k approx 0.995$."
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-02",
+      "points": 9,
+      "tags": ["ap-calculus", "bc", "frq", "1998", "standard-form", "absolute-extrema", "exponential"],
+      "body": "Let $f(x) = 2x e^(2x)$.\n\n(a) Find $lim_(x -> -infinity) f(x)$ and $lim_(x -> infinity) f(x)$.\n\n(b) Find the absolute minimum value of $f$. Justify that it is absolute.\n\n(c) State the range of $f$.\n\n(d) For nonzero $b$, consider $y = b x e^(b x)$. Show that its absolute minimum value is the same for every $b$.",
+      "solution": "(a) Exponential decay dominates the linear factor as $x -> -infinity$, so\n$ lim_(x -> -infinity) 2x e^(2x) = 0. $\nAlso, $lim_(x -> infinity) 2x e^(2x) = infinity$.\n\n(b)\n$ f'(x) = 2e^(2x) + 4x e^(2x) = 2e^(2x)(1 + 2x). $\nThe only critical point is $x = -frac(1, 2)$. Since $e^(2x) > 0$, $f'(x) < 0$ for $x < -frac(1, 2)$ and $f'(x) > 0$ for $x > -frac(1, 2)$. Therefore this point is an absolute minimum.\n$ f(-frac(1, 2)) = -frac(1, e). $\n\n(c) The range is $[-frac(1, e), infinity)$.\n\n(d)\n$ y' = b e^(b x) + b^2 x e^(b x) = b e^(b x)(1 + b x). $\nBecause $b != 0$, the critical point is $x = -frac(1, b)$. At that point,\n$ y = b(-frac(1, b))e^(-1) = -frac(1, e). $\nThus the absolute minimum is $-frac(1, e)$ for every nonzero $b$."
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-06",
+      "points": 9,
+      "tags": ["ap-calculus", "bc", "frq", "1998", "standard-form", "parametric-motion", "related-rates"],
+      "body": "A particle moves on the curve $y = x^3 - 3x$. Its $x$-coordinate satisfies $dif x / dif t = 1 / sqrt(2t + 1)$ for $t >= 0$, with $x(0) = -4$.\n\n(a) Find $x(t)$.\n\n(b) Find $dif y / dif t$ in terms of $t$.\n\n(c) Find the location and speed of the particle at $t = 4$.",
+      "solution": "(a)\n$ x(t) = integral 1 / sqrt(2t + 1) dif t = sqrt(2t + 1) + C. $\nUsing $x(0) = -4$ gives $C = -5$, so\n$ x(t) = sqrt(2t + 1) - 5. $\n\n(b) Since $y = x^3 - 3x$,\n$ dif y / dif t = (3x^2 - 3) dif x / dif t. $\nTherefore\n$ dif y / dif t = (3(sqrt(2t + 1) - 5)^2 - 3) / sqrt(2t + 1). $\n\n(c) $x(4) = 3 - 5 = -2$ and $y(4) = (-2)^3 - 3(-2) = -2$, so the location is $(-2, -2)$.\n\n$ (dif x / dif t)|_(t=4) = frac(1, 3) $ and $ (dif y / dif t)|_(t=4) = 3$. Hence the speed is\n$ sqrt((frac(1, 3))^2 + 3^2) = sqrt(frac(82, 9)) = frac(sqrt(82), 3) approx 3.018. $"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-06",
+      "points": 9,
+      "tags": ["ap-calculus", "bc", "frq", "2010", "form-b", "series", "differential-equations"],
+      "body": "The Maclaurin series for $f$ is\n$ f(x) = sum_(n=2)^infinity frac((-1)^n (2x)^n, n - 1). $\n\n(a) Find its interval of convergence and justify your answer.\n\n(b) Show that $y = f(x)$ satisfies\n$ x y' - y = frac(4x^2, 1 + 2x) $\nfor $abs(x) < R$, where $R$ is the radius of convergence from part (a).",
+      "solution": "(a) The ratio test gives\n$ lim_(n -> infinity) abs(frac((2x)^(n+1) / n, (2x)^n / (n-1))) = abs(2x). $\nThus $abs(2x) < 1$, so $R = frac(1, 2)$.\n\nAt $x = -frac(1, 2)$, the series becomes the harmonic series and diverges. At $x = frac(1, 2)$, it becomes an alternating harmonic series and converges. Therefore the interval is\n$ (-frac(1, 2), frac(1, 2)]. $\n\n(b) Write\n$ y = 4x^2 - 4x^3 + frac(16, 3)x^4 - dots. $\nThen\n$ y' = 8x - 12x^2 + frac(64, 3)x^3 - dots $\nand\n$ x y' - y = 4x^2 - 8x^3 + 16x^4 - dots. $\nFactor:\n$ x y' - y = 4x^2(1 - 2x + 4x^2 - dots). $\nThe expression in parentheses is the geometric series $sum_(n=0)^infinity (-2x)^n = 1 / (1 + 2x)$ for $abs(x) < frac(1, 2)$. Hence\n$ x y' - y = frac(4x^2, 1 + 2x). $"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-01",
+      "points": 9,
+      "tags": ["ap-calculus", "ab", "frq", "2019", "standard-form", "rates", "accumulation"],
+      "body": "Fish enter a lake at rate $E(t) = 20 + 15 sin(pi t / 6)$ and leave at rate $L(t) = 4 + 2^(0.1t^2)$, in fish per hour. Here $t$ is hours after midnight.\n\n(a) How many fish enter from $t = 0$ to $t = 5$? Give the nearest whole number.\n\n(b) Find the average number of fish leaving per hour from $t = 0$ to $t = 5$.\n\n(c) For $0 <= t <= 8$, when is the number of fish in the lake greatest? Justify.\n\n(d) Is the rate of change in the number of fish increasing or decreasing at $t = 5$? Explain.",
+      "solution": "(a)\n$ integral_0^5 E(t) dif t = 153.457690. $\nAbout $153$ fish enter.\n\n(b)\n$ frac(1, 5) integral_0^5 L(t) dif t = 6.059038. $\nThe average leaving rate is about $6.059$ fish per hour.\n\n(c) Let $N(t)$ be the number of fish. Then $N'(t) = E(t) - L(t)$. Solving $E(t) - L(t) = 0$ on $[0, 8]$ gives $t approx 6.20356$. Since $E(t) - L(t)$ is positive before this time and negative afterward, $N$ is greatest at\n$ t approx 6.204 $ hours after midnight.\n\n(d)\n$ N''(5) = E'(5) - L'(5) approx -10.7228 < 0. $\nTherefore the rate of change in the number of fish is decreasing at $t = 5$."
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-06",
+      "points": 9,
+      "tags": ["ap-calculus", "ab", "frq", "2019", "standard-form", "derivatives", "lhopitals-rule", "squeeze-theorem"],
+      "body": "Functions $f$, $g$, and $h$ are twice differentiable, with $g(2) = h(2) = 4$. The line $y = 4 + frac(2, 3)(x - 2)$ is tangent to both $g$ and $h$ at $x = 2$.\n\n(a) Find $h'(2)$.\n\n(b) Let $a(x) = 3x^3h(x)$. Find $a'(x)$ and $a'(2)$.\n\n(c) For $x != 2$, $h(x) = frac(x^2 - 4, 1 - (f(x))^3)$. The limit of $h(x)$ as $x -> 2$ can be evaluated with L'Hospital's Rule. Find $f(2)$ and $f'(2)$.\n\n(d) Suppose $g(x) <= k(x) <= h(x)$ for $1 < x < 3$. Is $k$ continuous at $x = 2$? Justify.",
+      "solution": "(a) The tangent-line slope is\n$ h'(2) = frac(2, 3). $\n\n(b) By the product rule,\n$ a'(x) = 9x^2h(x) + 3x^3h'(x). $\nThus\n$ a'(2) = 9(2)^2(4) + 3(2)^3(frac(2, 3)) = 160. $\n\n(c) Continuity of $h$ gives\n$ lim_(x -> 2) h(x) = h(2) = 4. $\nThe denominator must approach $0$, so $lim_(x -> 2) f(x) = 1$ and therefore $f(2) = 1$. Applying L'Hospital's Rule gives\n$ 4 = frac(4, -3(1)^2 f'(2)), $\nso $f'(2) = -frac(1, 3)$.\n\n(d) Since $g$ and $h$ are continuous and both equal $4$ at $x = 2$, the squeeze theorem gives $lim_(x -> 2) k(x) = 4$. Also $4 = g(2) <= k(2) <= h(2) = 4$, so $k(2) = 4$. Therefore $k$ is continuous at $x = 2$."
+    }
+  ]
+}

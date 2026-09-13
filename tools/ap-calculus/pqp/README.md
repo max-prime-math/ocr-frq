@@ -49,6 +49,11 @@ python3 tools/ap-calculus/pqp/build_pilot_intermediate.py
 # emitted until the scoring guide is split and each candidate is reviewed.
 python3 tools/ap-calculus/pqp/build_pilot_typst_candidates.py
 
+# Emit only manually approved pilot questions into a separate candidate copy
+# of the private TestGen working bank. Validate and promote that candidate
+# before committing it.
+node --experimental-strip-types tools/ap-calculus/pqp/emit_approved_pilot_questions.mjs /home/max/dev/ap-calculus-exam-banks /tmp/ap-calculus-working-stage
+
 # Run the skeleton's contract tests.
 python3 -m unittest discover -s tools/ap-calculus/pqp/tests -v
 ```
