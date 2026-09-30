@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-03",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2009-form-b-frq-03-diagram-01.png}\n\nA continuous function $f$ is defined on the closed interval $-4 \\leq x \\leq 6$. The graph of $f$ consists of a line segment and a curve that is tangent to the $x$-axis at $x=3$, as shown in the figure above. On the interval $0<x<6$, the function $f$ is twice differentiable, with $f^{\\prime \\prime}(x)>0$.\\\\\n(a) Is $f$ differentiable at $x=0$ ? Use the definition of the derivative with one-sided limits to justify your answer.\\\\\n(b) For how many values of $a,-4 \\leq a<6$, is the average rate of change of $f$ on the interval $[a, 6]$ equal to 0 ? Give a reason for your answer.\\\\\n(c) Is there a value of $a,-4 \\leq a<6$, for which the Mean Value Theorem, applied to the interval $[a, 6]$, guarantees a value $c, a<c<6$, at which $f^{\\prime}(c)=\\frac{1}{3}$ ? Justify your answer.\\\\\n(d) The function $g$ is defined by $g(x)=\\int_{0}^{x} f(t) d t$ for $-4 \\leq x \\leq 6$. On what intervals contained in $[-4,6]$ is the graph of $g$ concave up? Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        170.0,
+        68.0,
+        442.0,
+        197.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/bf65f69c-ff64-4bbf-b2da-7cafb9964822-1.jpg?height=290&width=756&top_left_y=397&top_left_x=670}\n\\captionsetup{labelformat=empty}\n\\caption{Graph of \\(f\\)}\n\\end{figure}\nA continuous function \\(f\\) is defined on the closed interval \\(-4 \\leq x \\leq 6\\). The graph of \\(f\\) consists of a line segment and a curve that is tangent to the \\(x\\)-axis at \\(x=3\\), as shown in the figure above. On the interval \\(0<x<6\\), the function \\(f\\) is twice differentiable, with \\(f^{\\prime \\prime}(x)>0\\).\n\\begin{itemize}\n\\item[(a)] Is \\(f\\) differentiable at \\(x=0\\) ? Use the definition of the derivative with one-sided limits to justify your answer.\n\\item[(b)] For how many values of \\(a,-4 \\leq a<6\\), is the average rate of change of \\(f\\) on the interval \\([a, 6]\\) equal to 0 ? Give a reason for your answer.\n\\item[(c)] Is there a value of \\(a,-4 \\leq a<6\\), for which the Mean Value Theorem, applied to the interval \\([a, 6]\\), guarantees a value \\(c, a<c<6\\), at which \\(f^{\\prime}(c)=\\frac{1}{3}\\) ? Justify your answer.\n\\item[(d)] The function \\(g\\) is defined by \\(g(x)=\\int_{0}^{x} f(t) d t\\) for \\(-4 \\leq x \\leq 6\\). On what intervals contained in \\([-4,6]\\) is the graph of \\(g\\) concave up? Explain your reasoning.\n\\item[(a)] \\(\\lim _{h \\rightarrow 0^{-}} \\frac{f(h)-f(0)}{h}=\\frac{2}{3}\\)\n\\(\\lim _{h \\rightarrow 0^{+}} \\frac{f(h)-f(0)}{h}<0\\)\nSince the one-sided limits do not agree, \\(f\\) is not differentiable at \\(x=0\\).\n\\item[(b)] \\(\\frac{f(6)-f(a)}{6-a}=0\\) when \\(f(a)=f(6)\\). There are two values of \\(a\\) for which this is true.\n\\item[(c)] Yes, \\(a=3\\). The function \\(f\\) is differentiable on the interval \\(3<x<6\\) and continuous on \\(3 \\leq x \\leq 6\\).\nAlso, \\(\\frac{f(6)-f(3)}{6-3}=\\frac{1-0}{6-3}=\\frac{1}{3}\\).\nBy the Mean Value Theorem, there is a value \\(c\\), \\(3<c<6\\), such that \\(f^{\\prime}(c)=\\frac{1}{3}\\).\n\\item[(d)] \\(g^{\\prime}(x)=f(x), g^{\\prime \\prime}(x)=f^{\\prime}(x)\\)\n\\(g^{\\prime \\prime}(x)>0\\) when \\(f^{\\prime}(x)>0\\)\nThis is true for \\(-4<x<0\\) and \\(3<x<6\\).\n\\end{itemize}\n\n2 : \\(\\left\\{\\begin{array}{l}1 \\text { : sets up difference quotient at } x=0 \\\\ 1 \\text { : answer with justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : expression for average rate of change } \\\\ 1 \\text { : answer with reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answers \"yes\" and identifies } a=3 \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: g^{\\prime}(x)=f(x) \\\\ 1: \\text { considers } g^{\\prime \\prime}(x)>0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          466
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        170.0,
+        68.0,
+        442.0,
+        197.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2009-form-b-frq-02"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

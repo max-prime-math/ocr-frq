@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-form-b-frq-02",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "rawPrompt": "A water tank at Camp Newton holds 1200 gallons of water at time $t=0$. During the time interval $0 \\leq t \\leq 18$ hours, water is pumped into the tank at the rate\n$$\nW(t)=95 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{6}\\right) \\text { gallons per hour. }\n$$\n\nDuring the same time interval, water is removed from the tank at the rate\n\n$$\nR(t)=275 \\sin ^{2}\\left(\\frac{t}{3}\\right) \\text { gallons per hour. }\n$$\n\n(a) Is the amount of water in the tank increasing at time $t=15$ ? Why or why not?\\\\\n(b) To the nearest whole number, how many gallons of water are in the tank at time $t=18$ ?\\\\\n(c) At what time $t$, for $0 \\leq t \\leq 18$, is the amount of water in the tank at an absolute minimum? Show the work that leads to your conclusion.\\\\\n(d) For $t>18$, no water is pumped into the tank, but water continues to be removed at the rate $R(t)$ until the tank becomes empty. Let $k$ be the time at which the tank becomes empty. Write, but do not solve, an equation involving an integral expression that can be used to find the value of $k$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nA water tank at Camp Newton holds 1200 gallons of water at time \\(t=0\\). During the time interval \\(0 \\leq t \\leq 18\\) hours, water is pumped into the tank at the rate\n\\[\nW(t)=95 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{6}\\right) \\text { gallons per hour. }\n\\]\nDuring the same time interval, water is removed from the tank at the rate\n\\[\nR(t)=275 \\sin ^{2}\\left(\\frac{t}{3}\\right) \\text { gallons per hour. }\n\\]\n\\begin{itemize}\n\\item[(a)] Is the amount of water in the tank increasing at time \\(t=15\\) ? Why or why not?\n\\item[(b)] To the nearest whole number, how many gallons of water are in the tank at time \\(t=18\\) ?\n\\item[(c)] At what time \\(t\\), for \\(0 \\leq t \\leq 18\\), is the amount of water in the tank at an absolute minimum? Show the work that leads to your conclusion.\n\\item[(d)] For \\(t>18\\), no water is pumped into the tank, but water continues to be removed at the rate \\(R(t)\\) until the tank becomes empty. Let \\(k\\) be the time at which the tank becomes empty. Write, but do not solve, an equation involving an integral expression that can be used to find the value of \\(k\\).\n\\item[(a)] No; the amount of water is not increasing at \\(t=15\\) since \\(W(15)-R(15)=-121.09<0\\).\n\\item[(b)] \\(1200+\\int_{0}^{18}(W(t)-R(t)) d t=1309.788\\) 1310 gallons\n\\item[(c)] \\(W(t)-R(t)=0\\) \\(t=0,6.4948,12.9748\\)\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (hours) & gallons of water \\\\\n\\hline 0 & 1200 \\\\\n\\hline 6.495 & 525 \\\\\n\\hline 12.975 & 1697 \\\\\n\\hline 18 & 1310 \\\\\n\\hline\n\\end{tabular}\nThe values at the endpoints and the critical points show that the absolute minimum occurs when \\(t=6.494\\) or 6.495.\n\\item[(d)] \\(\\int_{18}^{k} R(t) d t=1310\\)\n\\end{itemize}\n\n1 : answer with reason\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { interior critical points } \\\\ 1: \\text { amount of water is least at } \\\\ t=6.494 \\text { or } 6.495 \\\\ 1: \\text { analysis for absolute minimum }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { equation }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          53,
+          572,
+          368
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

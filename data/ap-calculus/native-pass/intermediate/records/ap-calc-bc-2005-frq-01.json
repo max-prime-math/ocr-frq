@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-frq-01",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2005-frq-01-diagram-01.jpg}\n\\end{center}\nLet $f$ and $g$ be the functions given by $f(x)=\\frac{1}{4}+\\sin (\\pi x)$ and $g(x)=4^{-x}$. Let $R$ be the shaded region in the first quadrant enclosed by the $y$-axis and the graphs of $f$ and $g$, and let $S$ be the shaded region in the first quadrant enclosed by the graphs of $f$ and $g$, as shown in the figure above.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the area of $S$.\\\\\n(c) Find the volume of the solid generated when $S$ is revolved about the horizontal line $y=-1$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\\begin{itemize}\n\\item[] Let \\(f\\) and \\(g\\) be the functions given by \\(f(x)=\\frac{1}{4}+\\sin (\\pi x)\\) and \\(g(x)=4^{-x}\\). Let \\(R\\) be the shaded region in the first quadrant enclosed by the \\(y\\)-axis and the graphs of \\(f\\) and \\(g\\), and let \\(S\\) be the shaded region in the first quadrant enclosed by the graphs of \\(f\\) and \\(g\\), as shown in the figure above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the area of \\(S\\).\n(c) Find the volume of the solid generated when \\(S\\) is revolved about the horizontal line \\(y=-1\\).\n![](https://cdn.mathpix.com/cropped/d24a162e-c026-440d-a8a9-8e5502b971fe-1.jpg?height=460&width=460&top_left_y=352&top_left_x=1487)\n\\item[] \\(f(x)=g(x)\\) when \\(\\frac{1}{4}+\\sin (\\pi x)=4^{-x}\\).\n\\(f\\) and \\(g\\) intersect when \\(x=0.178218\\) and when \\(x=1\\).\nLet \\(a=0.178218\\).\n\\item[(a)] \\(\\int_{0}^{a}(g(x)-f(x)) d x=0.064\\) or 0.065\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(b)] \\(\\int_{a}^{1}(f(x)-g(x)) d x=0.410\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] \\(\\pi \\int_{a}^{1}\\left((f(x)+1)^{2}-(g(x)+1)^{2}\\right) d x=4.558\\) or 4.559\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { limits, constant, and answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          545
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

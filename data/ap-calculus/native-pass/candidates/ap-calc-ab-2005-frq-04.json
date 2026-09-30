@@ -1,0 +1,243 @@
+{
+  "id": "ap-calc-ab-2005-frq-04",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 9, align: (left, left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.vline(stroke: .5pt, x: 9), table.hline(stroke: .5pt), [$x$], [0], [$0 < x < 1$], [1], [$1 < x < 2$], [2], [$2 < x < 3$], [3], [$3 < x < 4$], table.hline(stroke: .5pt), [$f(x)$], [-1], [Negative], [0], [Positive], [2], [Positive], [0], [Negative], table.hline(stroke: .5pt), [$f'(x)$], [4], [Positive], [0], [Positive], [DNE], [Negative], [-3], [Negative], table.hline(stroke: .5pt), [$f''(x)$], [-2], [Negative], [0], [Positive], [DNE], [Negative], [0], [Positive], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is continuous on the interval $\\[0 \\,4 \\)$. The function $f$ is twice differentiable except at $x = 2$. The function $f$ and its derivatives have the properties indicated in the table above, where DNE indicates that the derivatives of $f$ do not exist at $x = 2$.\n\n(a) For $0 < x < 4$, find all values of $x$ at which $f$ has a relative extremum. Determine whether $f$ has a relative maximum or a relative minimum at each of these values. Justify your answer.\n\n(b) On the axes provided, sketch the graph of a function that has all the characteristics of $f$.\n\n#image(\"/imgs/ap-calc-ab-2005-frq-04-diagram-01.png\", width: 65%)\n\n(c) Let $g$ be the function defined by $g(x)= integral_(1)^(x) f(t) d t$ on the open interval (0, 4). For $0 < x < 4$, find all values of $x$ at which $g$ has a relative extremum. Determine whether $g$ has a relative maximum or a relative minimum at each of these values. Justify your answer.\n\n(d) For the function $g$ defined in part (c), find all values of $x$, for $0 < x < 4$, at which the graph of $g$ has a point of inflection. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        220.48800659179688,
+        386.0880126953125,
+        391.2239990234375,
+        549.0479736328125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          54,
+          572,
+          668
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "table",
+        "rect": [
+          93.312,
+          186.33599999999998,
+          518.688,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 58,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          271.008,
+          540.8639999999999,
+          283.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 59,
+        "type": "text",
+        "rect": [
+          65.952,
+          285.984,
+          559.2959999999999,
+          298.368
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 60,
+        "type": "text",
+        "rect": [
+          64.512,
+          298.94399999999996,
+          267.84,
+          311.328
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 62,
+        "type": "text",
+        "rect": [
+          65.088,
+          317.952,
+          560.16,
+          330.912
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 63,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          332.352,
+          425.95199999999994,
+          344.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 65,
+        "type": "text",
+        "rect": [
+          65.088,
+          350.496,
+          469.72799999999995,
+          362.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 66,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          368.928,
+          338.688,
+          381.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 67,
+        "type": "chart",
+        "rect": [
+          223.48799999999997,
+          389.08799999999997,
+          388.224,
+          546.048
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 69,
+        "type": "text",
+        "rect": [
+          65.088,
+          560.448,
+          544.608,
+          582.6239999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 70,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          585.216,
+          561.5999999999999,
+          597.5999999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 71,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          597.5999999999999,
+          323.712,
+          609.9839999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 73,
+        "type": "text",
+        "rect": [
+          65.088,
+          615.168,
+          545.184,
+          628.1279999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 74,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          629.568,
+          258.62399999999997,
+          642.5279999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "75d612d2b17da3a214abef458542810b24c325824012ae438e37459ae77fc1a4",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

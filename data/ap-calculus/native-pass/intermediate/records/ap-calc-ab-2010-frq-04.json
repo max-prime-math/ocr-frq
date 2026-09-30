@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-frq-04",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2010-frq-04-diagram-01.png}\nLet \\(R\\) be the region in the first quadrant bounded by the graph of \\(y=2 \\sqrt{x}\\), the horizontal line \\(y=6\\), and\nthe \\(y\\)-axis, as shown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when \\(R\\) is\nrotated about the horizontal line \\(y=7\\).\n(c) Region \\(R\\) is the base of a solid. For each \\(y\\), where \\(0 \\leq y \\leq 6\\), the cross section of the solid taken\nperpendicular to the \\(y\\)-axis is a rectangle whose height is 3 times the length of its base in region \\(R\\). Write,\nbut do not evaluate, an integral expression that gives the volume of the solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        216.74400329589844,
+        170.37600708007812,
+        391.79998779296875,
+        300.7919921875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "Question 4\n![](https://cdn.mathpix.com/cropped/3439a263-75a3-4fcb-b202-79ed8d88187e-1.jpg?height=432&width=589&top_left_y=408&top_left_x=754)\nLet \\(R\\) be the region in the first quadrant bounded by the graph of \\(y=2 \\sqrt{x}\\), the horizontal line \\(y=6\\), and the \\(y\\)-axis, as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Write, but do not evaluate, an integral expression that gives the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=7\\).\n\\item[(c)] Region \\(R\\) is the base of a solid. For each \\(y\\), where \\(0 \\leq y \\leq 6\\), the cross section of the solid taken perpendicular to the \\(y\\)-axis is a rectangle whose height is 3 times the length of its base in region \\(R\\). Write, but do not evaluate, an integral expression that gives the volume of the solid.\n\\item[(a)] Area \\(=\\int_{0}^{9}(6-2 \\sqrt{x}) d x=\\left.\\left(6 x-\\frac{4}{3} x^{3 / 2}\\right)\\right|_{x=0} ^{x=9}=18\\)\n\\item[(b)] Volume \\(=\\pi \\int_{0}^{9}\\left((7-2 \\sqrt{x})^{2}-(7-6)^{2}\\right) d x\\)\n\\item[(c)] Solving \\(y=2 \\sqrt{x}\\) for \\(x\\) yields \\(x=\\frac{y^{2}}{4}\\).\nEach rectangular cross section has area \\(\\left(3 \\frac{y^{2}}{4}\\right)\\left(\\frac{y^{2}}{4}\\right)=\\frac{3}{16} y^{4}\\).\n\\[\n\\text { Volume }=\\int_{0}^{6} \\frac{3}{16} y^{4} d y\n\\]\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { limits and constant }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          499
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          219.74399999999997,
+          173.37599999999998,
+          388.79999999999995,
+          297.792
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          310.75199999999995,
+          537.12,
+          325.72799999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          327.45599999999996,
+          242.49599999999998,
+          340.416
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          345.31199999999995,
+          168.48,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          363.74399999999997,
+          546.336,
+          376.70399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          376.70399999999995,
+          258.048,
+          389.08799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.664,
+          397.152,
+          514.944,
+          410.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          412.128,
+          549.5039999999999,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          424.51199999999994,
+          423.35999999999996,
+          436.89599999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

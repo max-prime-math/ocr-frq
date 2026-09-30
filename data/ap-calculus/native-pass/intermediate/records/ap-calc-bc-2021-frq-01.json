@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2021-frq-01",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(r\\) (centimeters) & 0 & 1 & 2 & 2.5 & 4 \\\\\n\\hline \\(f(r)\\) (milligrams per square centimeter) & 1 & 2 & 6 & 10 & 18 \\\\\n\\hline\n\\end{tabular}\nThe density of a bacteria population in a circular petri dish at a distance \\(r\\) centimeters from the center of the\ndish is given by an increasing, differentiable function \\(f\\), where \\(f(r)\\) is measured in milligrams per square\ncentimeter. Values of \\(f(r)\\) for selected values of \\(r\\) are given in the table above.\n(a) Use the data in the table to estimate \\(f^{\\prime}(2.25)\\). Using correct units, interpret the meaning of your answer\nin the context of this problem.\n(b) The total mass, in milligrams, of bacteria in the petri dish is given by the integral expression\n\\(2 \\pi \\int_{0}^{4} r f(r) d r\\). Approximate the value of \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) using a right Riemann sum with the four\nsubintervals indicated by the data in the table.\n(c) Is the approximation found in part (b) an overestimate or underestimate of the total mass of bacteria in the\npetri dish? Explain your reasoning.\n(d) The density of bacteria in the petri dish, for \\(1 \\leq r \\leq 4\\), is modeled by the function \\(g\\) defined by\n\\(g(r)=2-16(\\cos (1.57 \\sqrt{r}))^{3}\\). For what value of \\(k, 1<k<4\\), is \\(g(k)\\) equal to the average value of \\(g(r)\\)\non the interval \\(1 \\leq r \\leq 4\\) ?\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "Part A (AB or BC): Graphing calculator required\nQuestion 1 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline r (centimeters) & 0 & 1 & 2 & 2.5 & 4 \\\\\n\\hline \\(f(r)\\) (milligrams per square centimeter) & 1 & 2 & 6 & 10 & 18 \\\\\n\\hline\n\\end{tabular}\nThe density of a bacteria population in a circular petri dish at a distance \\(r\\) centimeters from the center of the dish is given by an increasing, differentiable function \\(f\\), where \\(f(r)\\) is measured in milligrams per square centimeter. Values of \\(f(r)\\) for selected values of \\(r\\) are given in the table above.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & Scoring & \\\\\n\\hline \\multicolumn{3}{|c|}{Use the data in the table to estimate \\(f^{\\prime}(2.25)\\). Using correct units, interpret the meaning of your answer in the context of this problem.} \\\\\n\\hline \\(f^{\\prime}(2.25) \\approx \\frac{f(2.5)-f(2)}{2.5-2}=\\frac{10-6}{0.5}=8\\) & Estimate & 1 point \\\\\n\\hline At a distance of \\(r=2.25\\) centimeters from the center of the petri dish, the density of the bacteria population is increasing at a rate of 8 milligrams per square centimeter per centimeter. & Interpretation with units & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] To earn the first point the response must provide both a difference and a quotient and must explicitly use values of \\(f\\) from the table.\n\\item[-] Simplification of the numerical value is not required to earn the first point. If the numerical value is simplified, it must be correct.\n\\item[-] The interpretation requires all of the following: distance \\(r=2.25\\), density of bacteria (population) is increasing or changing, at a rate of 8, and units of milligrams per square centimeter per centimeter.\n\\item[-] The second point (interpretation) cannot be earned without a nonzero presented value for \\(f^{\\prime}(2.25)\\).\n\\item[-] To earn the second point the interpretation must be consistent with the presented nonzero value for \\(f^{\\prime}(2.25)\\). In particular, if the presented value for \\(f^{\\prime}(2.25)\\) is negative, the interpretation must include \"decreasing at a rate of \\(\\left|f^{\\prime}(2.25)\\right|\\) \" or \"changing at a rate of \\(f^{\\prime}(2.25)\\).\" The second point cannot be earned for an incorrect statement such as \"the bacteria density is decreasing at a rate of \\(-8 \\ldots\\) \" even for a presented \\(f^{\\prime}(2.25)=-8\\).\n\\item[-] The units \\(\\left(\\mathrm{mg} / \\mathrm{cm}^{2} / \\mathrm{cm}\\right)\\) may be attached to the estimate of \\(f^{\\prime}(2.25)\\) and, if so, do not need to be repeated in the interpretation.\n\\item[-] If units attached to the estimate do not agree with units in the interpretation, read the units in the interpretation.\n\\end{itemize}\n\nTotal for part (a) 2 points\n\\begin{itemize}\n\\item[(b)] The total mass, in milligrams, of bacteria in the petri dish is given by the integral expression \\(2 \\pi \\int_{0}^{4} r f(r) d r\\). Approximate the value of \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) using a right Riemann sum with the four subintervals indicated by the data in the table.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\[\n\\begin{aligned}\n2 \\pi \\int_{0}^{4} r f(r) d r \\approx & 2 \\pi(1 \\cdot f(1) \\cdot(1-0)+2 \\cdot f(2) \\cdot(2-1) \\\\\n& +2.5 \\cdot f(2.5) \\cdot(2.5-2)+4 \\cdot f(4) \\cdot(4-2.5))\n\\end{aligned}\n\\] & Right Riemann sum setup & 1 point \\\\\n\\hline \\[\n\\begin{aligned}\n& =2 \\pi(1 \\cdot 2 \\cdot 1+2 \\cdot 6 \\cdot 1+2.5 \\cdot 10 \\cdot 0.5+4 \\cdot 18 \\cdot 1.5) \\\\\n& =269 \\pi=845.088\n\\end{aligned}\n\\] & Approximation & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The presence or absence of \\(2 \\pi\\) has no bearing on earning the first point.\n\\item[-] The first point is earned for a sum of four products with at most one error in any single value among the four products. Multiplication by 1 in any term does not need to be shown, but all other products must be explicitly shown.\n\\item[-] A response of \\(1 \\cdot f(1) \\cdot(1-0)+2 \\cdot f(2) \\cdot(2-1)+2.5 \\cdot f(2.5) \\cdot(2.5-2)+4 \\cdot f(4) \\cdot(4-2.5)\\) earns the first point but not the second.\n\\item[-] A response with any error in the Riemann sum is not eligible for the second point.\n\\item[-] A response that provides a completely correct left Riemann sum for \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) and approximation \\((91 \\pi)\\) earns one of the two points. A response that has any error in a left Riemann sum or evaluation for \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) earns no points.\n\\item[-] A response that provides a completely correct right Riemann sum for \\(2 \\pi \\int_{0}^{4} f(r) d r\\) and approximation ( \\(80 \\pi\\) ) earns one of the two points. A response that has any error in a right Riemann sum or evaluation for \\(2 \\pi \\int_{0}^{4} f(r) d r\\) earns no points.\n\\item[-] Simplification of the numerical value is not required to earn the second point. If a numerical value is given, it must be correct to three decimal places.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (b) 2 points\n\\begin{itemize}\n\\item[(c)] Is the approximation found in part (b) an overestimate or underestimate of the total mass of bacteria in the petri dish? Explain your reasoning.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(\\frac{d}{d r}(r f(r))=f(r)+r f^{\\prime}(r)\\) & Product rule expression for \\(\\frac{d}{d r}(r f(r))\\) & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\nBecause \\(f\\) is nonnegative and increasing, \\(\\frac{d}{d r}(r f(r))>0\\) on the interval \\(0 \\leq r \\leq 4\\). Thus, the integrand \\(r f(r)\\) is strictly increasing. \\\\\nTherefore, the right Riemann sum approximation of \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) is an overestimate.\n\\end{tabular} & Answer with explanation & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] To earn the second point a response must explain that \\(r f(r)\\) is increasing and, therefore, the right Riemann sum is an overestimate. The second point can be earned without having earned the first point.\n\\item[-] A response that attempts to explain based on a left Riemann sum for \\(2 \\pi \\int_{0}^{4} r f(r) d r\\) from part (b) earns no points.\n\\item[-] A response that attempts to explain based on a right Riemann sum for \\(2 \\pi \\int_{0}^{4} f(r) d r\\) from part (b) earns no points.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (c) 2 points\n\\begin{itemize}\n\\item[(d)] The density of bacteria in the petri dish, for \\(1 \\leq r \\leq 4\\), is modeled by the function \\(g\\) defined by \\(g(r)=2-16(\\cos (1.57 \\sqrt{r}))^{3}\\). For what value of \\(k, 1<k<4\\), is \\(g(k)\\) equal to the average value of \\(g(r)\\) on the interval \\(1 \\leq r \\leq 4\\) ?\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Average value \\(=g_{\\text {avg }}=\\frac{1}{4-1} \\int_{1}^{4} g(r) d r\\) & Definite integral & 1 point \\\\\n\\hline \\(\\frac{1}{4-1} \\int_{1}^{4} g(r) d r=9.875795\\) & Average value & 1 point \\\\\n\\hline \\(g(k)=g_{\\text {avg }} \\Rightarrow k=2.497\\) & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for a definite integral, with or without \\(\\frac{1}{4-1}\\) or \\(\\frac{1}{3}\\).\n\\item[-] A response that presents a definite integral with incorrect limits but a correct integrand earns the first point.\n\\item[-] Presentation of the numerical value 9.875795 is not required to earn the second point. This point can be earned by the average value setup: \\(\\frac{1}{3} \\int_{1}^{4} g(r) d r\\).\n\\item[-] Once earned for the average value setup, the second point cannot be lost. Subsequent errors will result in not earning the third point.\n\\item[-] The third point is earned only for the value \\(k=2.497\\).\n\\item[-] The third point cannot be earned without the second.\n\\item[-] Special case: A response that does not provide the average value setup but presents an average value of -13.955 is using degree mode on their calculator. This response would not earn the second point but could earn the third point for an answer of \\(k=2.5\\) (or 2.499).\n\\end{itemize}\n\\end{itemize}\n\n\\begin{tabular}[t]{|l|l|}\n\\hline Total for part (d) & 3 points \\\\\n\\hline Total for question 1 & 9 points \\\\\n\\hline\n\\end{tabular}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          31,
+          66,
+          541,
+          516
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          131.29617062530298,
+          71.41071428571428,
+          469.9020843431896,
+          141.95758928571428
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          35.70334464372274,
+          157.21875,
+          527.7760542898692,
+          169.3125
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          172.4799107142857,
+          517.1226369365003,
+          185.72544642857142
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          188.6049107142857,
+          400.510906446922,
+          201.27455357142856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          215.95982142857142,
+          526.0484730974309,
+          229.2053571428571
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          68.81531749878818,
+          231.79687499999997,
+          202.41492971400874,
+          244.46651785714283
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          265.4866071428571,
+          476.23654871546296,
+          278.73214285714283
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          68.81531749878818,
+          284.77901785714283,
+          507.6209403780902,
+          310.11830357142856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          69.96703829374698,
+          318.46875,
+          272.38196800775575,
+          331.13839285714283
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          354.1741071428571,
+          536.1260300533205,
+          366.2678571428571
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          68.23945710130879,
+          366.84374999999994,
+          224.2976248182259,
+          379.51339285714283
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          396.21428571428567,
+          489.76926805622884,
+          408.88392857142856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          68.81531749878818,
+          411.4754464285714,
+          534.9743092583617,
+          427.31249999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          69.39117789626758,
+          431.6316964285714,
+          188.59428017450318,
+          443.14955357142856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          66.79980610761028,
+          478.27901785714283,
+          522.0174503150752,
+          490.94866071428567
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          114.5962190984004,
+          497.2834821428571,
+          473.6451769268057,
+          509.95312499999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-01",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

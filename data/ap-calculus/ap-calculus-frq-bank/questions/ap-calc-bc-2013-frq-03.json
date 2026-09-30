@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 8, align: (center, center, center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [1], [2], [3], [4], [5], [6], table.hline(stroke: .5pt), [$C(t)$ (ounces)], [0], [5.3], [8.8], [11.2], [12.8], [13.8], [14.5], table.hline(stroke: .5pt));\n\nHot water is dripping through a coffeemaker, filling a large cup with coffee. The amount of coffee in the cup at time $t \\, 0 <= t <= 6$, is given by a differentiable function $C$, where $t$ is measured in minutes. Selected values of $C(t)$, measured in ounces, are given in the table above.\n\n(a) Use the data in the table to approximate $C'(3.5)$. Show the computations that lead to your answer, and indicate units of measure.\n\n(b) Is there a time $t \\, 2 <= t <= 4$, at which $C'(t)= 2$ ? Justify your answer.\n\n(c) Use a midpoint sum with three subintervals of equal length indicated by the data in the table to approximate the value of $frac(1,6) integral_(0)^(6) C(t) d t$. Using correct units, explain the meaning of $frac(1,6) integral_(0)^(6) C(t) d t$ in the context of the problem.\n\n(d) The amount of coffee in the cup, in ounces, is modeled by $B(t)= 16 - 16 e^(- 0.4 t)$. Using this model, find the rate at which the amount of coffee in the cup is changing when $t = 5$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2013-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-1",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2013",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

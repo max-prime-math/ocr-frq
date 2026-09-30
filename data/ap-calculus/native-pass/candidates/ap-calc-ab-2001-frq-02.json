@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2001-frq-02",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (days)], [$W(t)$ ( $\"\"^(degree) upright(C)$ )], table.hline(stroke: .5pt), [0], [20], table.hline(stroke: .5pt), [3], [31], table.hline(stroke: .5pt), [6], [28], table.hline(stroke: .5pt), [9], [24], table.hline(stroke: .5pt), [12], [22], table.hline(stroke: .5pt), [15], [21], table.hline(stroke: .5pt));\n\nThe temperature, in degrees Celsius ( $\"\"^(degree) upright(C)$ ), of the water in a pond is a differentiable function $W$ of time $t$. The table above shows the water temperature as recorded every 3 days over a 15-day period.\n\n(a) Use data from the table to find an approximation for $W'(12)$. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) Approximate the average temperature, in degrees Celsius, of the water over the time interval $0 <= t <= 15$ days by using a trapezoidal approximation with subintervals of length $Delta t = 3$ days.\n\n(c) A student proposes the function $P$, given by $P(t)= 20 + 10 t e^((- t \\/ 3))$, as a model for the temperature of the water in the pond at time $t$, where $t$ is measured in days and $P(t)$ is measured in degrees Celsius. Find $P'(12)$. Using appropriate units, explain the meaning of your answer in terms of water temperature.\n\n(d) Use the function $P$ defined in part (c) to find the average value, in degrees Celsius, of $P(t)$ over the time interval $0 <= t <= 15$ days.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          68,
+          572,
+          392
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          247.67999999999998,
+          73.728,
+          364.32,
+          177.408
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          190.944,
+          526.4639999999999,
+          203.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          203.32799999999997,
+          473.18399999999997,
+          216.28799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          65.952,
+          221.47199999999998,
+          533.664,
+          234.432
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          234.432,
+          235.00799999999998,
+          245.37599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          65.088,
+          252.86399999999998,
+          546.048,
+          265.248
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          265.248,
+          453.31199999999995,
+          277.632
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          65.088,
+          283.96799999999996,
+          543.4559999999999,
+          300.38399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          302.4,
+          534.8159999999999,
+          315.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          317.376,
+          548.64,
+          330.33599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          65.088,
+          338.688,
+          552.384,
+          351.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          353.08799999999997,
+          198.72,
+          366.04799999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e24dcd4e8029e3f385a55dcbde4ee7aa07c24a4af4488fad1ebbcc0576ec36a6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

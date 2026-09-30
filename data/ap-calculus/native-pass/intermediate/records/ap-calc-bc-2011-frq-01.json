@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-frq-01",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "rawPrompt": "At time $t$, a particle moving in the $x y$-plane is at position $(x(t), y(t))$, where $x(t)$ and $y(t)$ are not explicitly given. For $t \\geq 0, \\frac{d x}{d t}=4 t+1$ and $\\frac{d y}{d t}=\\sin \\left(t^{2}\\right)$. At time $t=0, x(0)=0$ and $y(0)=-4$.\\\\\n(a) Find the speed of the particle at time $t=3$, and find the acceleration vector of the particle at time $t=3$.\\\\\n(b) Find the slope of the line tangent to the path of the particle at time $t=3$.\\\\\n(c) Find the position of the particle at time $t=3$.\\\\\n(d) Find the total distance traveled by the particle over the time interval $0 \\leq t \\leq 3$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\nAt time \\(t\\), a particle moving in the \\(x y\\)-plane is at position \\((x(t), y(t))\\), where \\(x(t)\\) and \\(y(t)\\) are not explicitly given. For \\(t \\geq 0, \\frac{d x}{d t}=4 t+1\\) and \\(\\frac{d y}{d t}=\\sin \\left(t^{2}\\right)\\). At time \\(t=0, x(0)=0\\) and \\(y(0)=-4\\).\n\\begin{itemize}\n\\item[(a)] Find the speed of the particle at time \\(t=3\\), and find the acceleration vector of the particle at time \\(t=3\\).\n\\item[(b)] Find the slope of the line tangent to the path of the particle at time \\(t=3\\).\n\\item[(c)] Find the position of the particle at time \\(t=3\\).\n\\item[(d)] Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 3\\).\n\\item[(a)] Speed \\(=\\sqrt{\\left(x^{\\prime}(3)\\right)^{2}+\\left(y^{\\prime}(3)\\right)^{2}}=13.006\\) or 13.007\n\\[\n\\begin{aligned}\n\\text { Acceleration } & =\\left\\langle x^{\\prime \\prime}(3), y^{\\prime \\prime}(3)\\right\\rangle \\\\\n& =\\langle 4,-5.466\\rangle \\text { or }\\langle 4,-5.467\\rangle\n\\end{aligned}\n\\]\n\\item[(b)] Slope \\(=\\frac{y^{\\prime}(3)}{x^{\\prime}(3)}=0.031\\) or 0.032\n\\item[(c)] \\(x(3)=0+\\int_{0}^{3} \\frac{d x}{d t} d t=21\\)\n\\[\ny(3)=-4+\\int_{0}^{3} \\frac{d y}{d t} d t=-3.226\n\\]\nAt time \\(t=3\\), the particle is at position (21, -3.226).\n\\item[(d)] Distance \\(=\\int_{0}^{3} \\sqrt{\\left(\\frac{d x}{d t}\\right)^{2}+\\left(\\frac{d y}{d t}\\right)^{2}} d t=21.091\\)\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { speed } \\\\ 1: \\text { acceleration }\\end{array}\\right.\\)\n\n1 : answer\n\\(4:\\left\\{\\begin{array}{c}2: x \\text {-coordinate } \\\\ 1: \\text { integral } \\\\ 1: \\text { answer } \\\\ 2: y \\text {-coordinate } \\\\ 1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          343
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

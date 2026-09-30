@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2016-frq-04",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{y^{2}}{x-1}\\).\n(a) On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\n\\includegraphics{ap-calc-ab-2016-frq-04-diagram-01.png}\n(b) Let \\(y=f(x)\\) be the particular solution to the given differential equation with the initial\ncondition \\(f(2)=3\\). Write an equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=2\\).\nUse your equation to approximate \\(f(2.1)\\).\n(c) Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(2)=3\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2016-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2016-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        246.4080047607422,
+        109.60800170898438,
+        365.5920104980469,
+        269.11199951171875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{y^{2}}{x-1}\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\n\\item[(b)] Let \\(y=f(x)\\) be the particular solution to the given differential equation with the initial condition \\(f(2)=3\\). Write an equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=2\\). Use your equation to approximate \\(f(2.1)\\).\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(2)=3\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/5c5fe09e-fe6f-4f19-86f7-7e1750e3f6f8-1.jpg?height=520&width=385&top_left_y=885&top_left_x=249)\n\\item[(b)] \\(\\left.\\frac{d y}{d x}\\right|_{(x, y)=(2,3)}=\\frac{3^{2}}{2-1}=9\\)\nAn equation for the tangent line is \\(y=9(x-2)+3\\).\n\\[\nf(2.1) \\approx 9(2.1-2)+3=3.9\n\\]\n\\item[(c)] \\(\\frac{1}{y^{2}} d y=\\frac{1}{x-1} d x\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{1}{y^{2}} d y=\\int \\frac{1}{x-1} d x \\\\\n& -\\frac{1}{y}=\\ln |x-1|+C \\\\\n& -\\frac{1}{3}=\\ln |2-1|+C \\Rightarrow C=-\\frac{1}{3} \\\\\n& -\\frac{1}{y}=\\ln |x-1|-\\frac{1}{3} \\\\\n& y=\\frac{1}{\\frac{1}{3}-\\ln (x-1)}\n\\end{aligned}\n\\]\nNote: This solution is valid for \\(1<x<1+e^{1 / 3}\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { nonzero slopes }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { tangent line equation } \\\\ 1: \\text { approximation }\\end{array}\\right.\\)\n\\item[] \\(5:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 2: \\text { antiderivatives } \\\\ 1: \\text { constant of integration and } \\\\ \\quad \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\\item[] Note: \\(\\max 3 / 5\\) [1-2-0-0] if no constant of integration\n\\item[] Note: 0/5 if no separation of variables\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          35.0,
+          568,
+          375
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          55.007999999999996,
+          274.75199999999995,
+          83.52
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          90.43199999999999,
+          538.2719999999999,
+          103.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "chart",
+        "rect": [
+          249.408,
+          112.60799999999999,
+          362.592,
+          266.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          275.328,
+          474.04799999999994,
+          288.864
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          290.88,
+          501.69599999999997,
+          304.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          307.008,
+          270.43199999999996,
+          321.11999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          329.18399999999997,
+          558.144,
+          342.71999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2006-frq-03",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2006-frq-03-diagram-01.png\", width: 65%)\n\nThe graph of the function $f$ shown above consists of six line segments. Let $g$ be the function given by $g(x)= integral_(0)^(x) f(t) d t$.\n\n(a) Find $g(4)\\, g'(4)$, and $g''(4)$.\n\n(b) Does $g$ have a relative minimum, a relative maximum, or neither at $x = 1$ ? Justify your answer.\n\n(c) Suppose that $f$ is defined for all real numbers $x$ and is periodic with a period of length 5. The graph above shows two periods of $f$. Given that $g(5)= 2$, find $g(10)$ and write an equation for the line tangent to the graph of $g$ at $x = 108$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        168.93600463867188,
+        64.39199829101562,
+        442.20001220703125,
+        222.74400329589844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          63,
+          572,
+          462
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          171.93599999999998,
+          67.392,
+          439.2,
+          219.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          229.53599999999997,
+          504.864,
+          241.92
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          244.51199999999997,
+          162.14399999999998,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          275.904,
+          220.896,
+          290.01599999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          298.368,
+          512.928,
+          310.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          319.392,
+          555.8399999999999,
+          331.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          334.08,
+          552.096,
+          347.616
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          350.20799999999997,
+          186.91199999999998,
+          362.592
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "43793dd87975f7edce658cd9e518338ff506cbb8fd8a891111cb8ad6cde1867d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

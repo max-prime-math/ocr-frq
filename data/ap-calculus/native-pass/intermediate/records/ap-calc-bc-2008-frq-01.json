@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-frq-01",
+  "course": "BC",
+  "year": 2008,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008.pdf",
+      "sha256": "03b33eb234707fece3d699c865ffd6219b3c515a3220cc9a4c364faba8bfc7c5",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008.pdf",
+      "sha256": "9f6e880bb45af770174406b5eb2500957dd71e9e2e1506e0c19d4dabe0a88ef3"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2008-frq-01-diagram-01.jpg}\n\\end{center}\nLet $R$ be the region bounded by the graphs of $y=\\sin (\\pi x)$ and $y=x^{3}-4 x$, as shown in the figure above.\\\\\n(a) Find the area of $R$.\\\\\n(b) The horizontal line $y=-2$ splits the region $R$ into two parts. Write, but do not evaluate, an integral expression for the area of the part of $R$ that is below this horizontal line.\\\\\n(c) The region $R$ is the base of a solid. For this solid, each cross section perpendicular to the $x$-axis is a square. Find the volume of this solid.\\\\\n(d) The region $R$ models the surface of a small pond. At all points in $R$ at a distance $x$ from the $y$-axis, the depth of the water is given by $h(x)=3-x$. Find the volume of water in the pond.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2008-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2008-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2008_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "Question 1\n![](https://cdn.mathpix.com/cropped/217fbece-2beb-4942-ad7d-7bd813364e0a-1.jpg?height=507&width=688&top_left_y=389&top_left_x=718)\nLet \\(R\\) be the region bounded by the graphs of \\(y=\\sin (\\pi x)\\) and \\(y=x^{3}-4 x\\), as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] The horizontal line \\(y=-2\\) splits the region \\(R\\) into two parts. Write, but do not evaluate, an integral expression for the area of the part of \\(R\\) that is below this horizontal line.\n\\item[(c)] The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is a square. Find the volume of this solid.\n\\item[(d)] The region \\(R\\) models the surface of a small pond. At all points in \\(R\\) at a distance \\(x\\) from the \\(y\\)-axis, the depth of the water is given by \\(h(x)=3-x\\). Find the volume of water in the pond.\n\\item[(a)] \\(\\sin (\\pi x)=x^{3}-4 x\\) at \\(x=0\\) and \\(x=2\\)\nArea \\(=\\int_{0}^{2}\\left(\\sin (\\pi x)-\\left(x^{3}-4 x\\right)\\right) d x=4\\)\n\\item[(b)] \\(x^{3}-4 x=-2\\) at \\(r=0.5391889\\) and \\(s=1.6751309\\)\n\\end{itemize}\nThe area of the stated region is \\(\\int_{r}^{s}\\left(-2-\\left(x^{3}-4 x\\right)\\right) d x\\)\n\\begin{itemize}\n\\item[(c)] Volume \\(=\\int_{0}^{2}\\left(\\sin (\\pi x)-\\left(x^{3}-4 x\\right)\\right)^{2} d x=9.978\\)\n\\item[(d)] Volume \\(=\\int_{0}^{2}(3-x)\\left(\\sin (\\pi x)-\\left(x^{3}-4 x\\right)\\right) d x=8.369\\) or 8.370\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : limits } \\\\ 1 \\text { : integrand }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          490
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

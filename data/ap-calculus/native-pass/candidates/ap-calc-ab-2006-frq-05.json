@@ -1,0 +1,151 @@
+{
+  "id": "ap-calc-ab-2006-frq-05",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(1 + y,x)$, where $x!= 0$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the eight points indicated.\n\n#image(\"/imgs/ap-calc-ab-2006-frq-05-diagram-01.png\", width: 65%)\n\n(b) Find the particular solution $y = f(x)$ to the differential equation with the initial condition $f(- 1)= 1$ and state its domain.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        211.84800720214844,
+        145.60800170898438,
+        400.44000244140625,
+        264.7919921875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          67,
+          559,
+          304
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          71.136,
+          338.4,
+          97.056
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          103.96799999999999,
+          547.1999999999999,
+          117.50399999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          122.39999999999999,
+          344.736,
+          135.93599999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "chart",
+        "rect": [
+          214.84799999999998,
+          148.60799999999998,
+          397.44,
+          261.792
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.088,
+          272.736,
+          554.4,
+          286.272
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          288.28799999999995,
+          156.672,
+          299.52
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "93a66a79d25487b1dab4e374fe622c2891cef9b295982ef3945aaf7db422bf2c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

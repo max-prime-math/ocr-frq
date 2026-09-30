@@ -1,0 +1,127 @@
+{
+  "id": "ap-calc-ab-2013-frq-06",
+  "course": "AB",
+  "year": 2013,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2013.pdf",
+      "sha256": "fa845fe83537972b9762e1e8c43f00f2f94bf617e8020428c7ce1f6b5ef46cd7",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2013.pdf",
+      "sha256": "652f933eef8103933042e3c9e05eaca17964e238256939989060a613225d753d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= e^(y)lr((3 x^(2)- 6 x))$. Let $y = f(x)$ be the particular solution to the differential equation that passes through $(1 \\,0)$.\n\n(a) Write an equation for the line tangent to the graph of $f$ at the point $(1 \\,0)$. Use the tangent line to approximate $f(1.2)$.\n\n(b) Find $y = f(x)$, the particular solution to the differential equation that passes through $(1 \\,0)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          54,
+          563,
+          311
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          58.751999999999995,
+          514.656,
+          82.94399999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          85.24799999999999,
+          272.736,
+          98.78399999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.664,
+          107.71199999999999,
+          512.928,
+          121.24799999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          123.264,
+          175.67999999999998,
+          137.37599999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          145.44,
+          490.75199999999995,
+          159.552
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "4e20476d214a7a73e6e27a633301f3c69ab23ea2d2fc19ad5054a58e9cdb85cf",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2013-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2013-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

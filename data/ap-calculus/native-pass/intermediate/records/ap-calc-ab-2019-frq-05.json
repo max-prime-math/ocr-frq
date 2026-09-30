@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2019-frq-05",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2019-frq-05-diagram-01.png}\nLet \\(R\\) be the region enclosed by the graphs of \\(g(x)=-2+3 \\cos \\left(\\frac{\\pi}{2} x\\right)\\) and \\(h(x)=6-2(x-1)^{2}\\), the\n\\(y\\)-axis, and the vertical line \\(x=2\\), as shown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Region \\(R\\) is the base of a solid. For the solid, at each \\(x\\) the cross section perpendicular to the \\(x\\)-axis has\narea \\(A(x)=\\frac{1}{x+3}\\). Find the volume of the solid.\n(c) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when \\(R\\) is\nrotated about the horizontal line \\(y=6\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2019-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2019-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        228.83999633789062,
+        94.05599975585938,
+        380.8559875488281,
+        254.4239959716797
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\\begin{itemize}\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\int_{0}^{2}(h(x)-g(x)) d x & =\\int_{0}^{2}\\left(\\left(6-2(x-1)^{2}\\right)-\\left(-2+3 \\cos \\left(\\frac{\\pi}{2} x\\right)\\right)\\right) d x \\\\\n& =\\left[\\left(6 x-\\frac{2}{3}(x-1)^{3}\\right)-\\left(-2 x+\\frac{6}{\\pi} \\sin \\left(\\frac{\\pi}{2} x\\right)\\right)\\right]_{x=0}^{x=2} \\\\\n& =\\left(\\left(12-\\frac{2}{3}\\right)-(-4+0)\\right)-\\left(\\left(0+\\frac{2}{3}\\right)-(0+0)\\right) \\\\\n& =12-\\frac{2}{3}+4-\\frac{2}{3}=\\frac{44}{3}\n\\end{aligned}\n\\]\nThe area of \\(R\\) is \\(\\frac{44}{3}\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{0}^{2} A(x) d x & =\\int_{0}^{2} \\frac{1}{x+3} d x \\\\\n& =[\\ln (x+3)]_{x=0}^{x=2}=\\ln 5-\\ln 3\n\\end{aligned}\n\\]\nThe volume of the solid is \\(\\ln 5-\\ln 3\\).\n\\item[(c)] \\(\\pi \\int_{0}^{2}\\left((6-g(x))^{2}-(6-h(x))^{2}\\right) d x\\)\n\\end{itemize}\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { antiderivative of } 3 \\cos \\left(\\frac{\\pi}{2} x\\right) \\\\ 1: \\text { antiderivative of } \\\\ \\text { remaining terms } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 1: \\text { form of integrand } \\\\ 1: \\text { integrand }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          35,
+          92,
+          571,
+          494
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          231.83999999999997,
+          97.056,
+          377.856,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          39.168,
+          266.4,
+          510.33599999999996,
+          293.76
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          54.144,
+          300.96,
+          338.11199999999997,
+          314.784
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          332.352,
+          157.536,
+          345.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          362.88,
+          531.072,
+          376.70399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          73.728,
+          383.03999999999996,
+          292.032,
+          409.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          427.392,
+          532.2239999999999,
+          440.352
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          441.792,
+          246.81599999999997,
+          454.75199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,151 @@
+{
+  "id": "ap-calc-ab-2003-frq-06",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function defined by $ f(x)= cases(sqrt(x + 1) & \" for \" 0 <= x <= 3, 5 - x & \" for \" 3 < x <= 5 .) $\n\n(a) Is $f$ continuous at $x = 3$ ? Explain why or why not.\n\n(b) Find the average value of $f(x)$ on the closed interval $0 <= x <= 5$.\n\n(c) Suppose the function $g$ is defined by $ g(x)= cases(k sqrt(x + 1) & \" for \" 0 <= x <= 3, m x + 2 & \" for \" 3 < x <= 5 \\,) $ where $k$ and $m$ are constants. If $g$ is differentiable at $x = 3$, what are the values of $k$ and $m$ ?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          428,
+          572,
+          643
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          447.84,
+          208.51199999999997,
+          460.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "math",
+        "rect": [
+          228.95999999999998,
+          466.55999999999995,
+          382.464,
+          498.816
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          506.01599999999996,
+          316.79999999999995,
+          519.5519999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          527.04,
+          375.84,
+          540.0
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          548.352,
+          249.408,
+          561.8879999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 18,
+        "type": "math",
+        "rect": [
+          226.944,
+          566.208,
+          383.616,
+          597.8879999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          603.9359999999999,
+          508.60799999999995,
+          617.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e9342efc7bfdb157d998f483072eac9c0a65418dabbd3f6ec618417a51067abd",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

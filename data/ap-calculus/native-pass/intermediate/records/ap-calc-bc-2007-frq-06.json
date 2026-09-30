@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-frq-06",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function given by $f(x)=e^{-x^{2}}$.\\\\\n(a) Write the first four nonzero terms and the general term of the Taylor series for $f$ about $x=0$.\\\\\n(b) Use your answer to part (a) to find $\\lim _{x \\rightarrow 0} \\frac{1-x^{2}-f(x)}{x^{4}}$.\\\\\n(c) Write the first four nonzero terms of the Taylor series for $\\int_{0}^{x} e^{-t^{2}} d t$ about $x=0$. Use the first two terms of your answer to estimate $\\int_{0}^{1 / 2} e^{-t^{2}} d t$.\\\\\n(d) Explain why the estimate found in part (c) differs from the actual value of $\\int_{0}^{1 / 2} e^{-t^{2}} d t$ by less than $\\frac{1}{200}$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nLet \\(f\\) be the function given by \\(f(x)=e^{-x^{2}}\\).\n\\begin{itemize}\n\\item[(a)] Write the first four nonzero terms and the general term of the Taylor series for \\(f\\) about \\(x=0\\).\n\\item[(b)] Use your answer to part (a) to find \\(\\lim _{x \\rightarrow 0} \\frac{1-x^{2}-f(x)}{x^{4}}\\).\n\\item[(c)] Write the first four nonzero terms of the Taylor series for \\(\\int_{0}^{x} e^{-t^{2}} d t\\) about \\(x=0\\). Use the first two terms of your answer to estimate \\(\\int_{0}^{1 / 2} e^{-t^{2}} d t\\).\n\\item[(d)] Explain why the estimate found in part (c) differs from the actual value of \\(\\int_{0}^{1 / 2} e^{-t^{2}} d t\\) by less than \\(\\frac{1}{200}\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\ne^{-x^{2}} & =1+\\frac{\\left(-x^{2}\\right)}{1!}+\\frac{\\left(-x^{2}\\right)^{2}}{2!}+\\frac{\\left(-x^{2}\\right)^{3}}{3!}+\\cdots+\\frac{\\left(-x^{2}\\right)^{n}}{n!}+\\cdots \\\\\n& =1-x^{2}+\\frac{x^{4}}{2}-\\frac{x^{6}}{6}+\\cdots+\\frac{(-1)^{n} x^{2 n}}{n!}+\\cdots\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{1-x^{2}-f(x)}{x^{4}}=-\\frac{1}{2}+\\frac{x^{2}}{6}+\\sum_{n=4}^{\\infty} \\frac{(-1)^{n+1} x^{2 n-4}}{n!}\\)\nThus, \\(\\lim _{x \\rightarrow 0}\\left(\\frac{1-x^{2}-f(x)}{x^{4}}\\right)=-\\frac{1}{2}\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\int_{0}^{x} e^{-t^{2}} d t & =\\int_{0}^{x}\\left(1-t^{2}+\\frac{t^{4}}{2}-\\frac{t^{6}}{6}+\\cdots+\\frac{(-1)^{n} t^{2 n}}{n!}+\\cdots\\right) d t \\\\\n& =x-\\frac{x^{3}}{3}+\\frac{x^{5}}{10}-\\frac{x^{7}}{42}+\\cdots\n\\end{aligned}\n\\]\nUsing the first two terms of this series, we estimate that\n\\[\n\\int_{0}^{1 / 2} e^{-t^{2}} d t \\approx \\frac{1}{2}-\\left(\\frac{1}{3}\\right)\\left(\\frac{1}{8}\\right)=\\frac{11}{24}\n\\]\n\\item[(d)] \\(\\left|\\int_{0}^{1 / 2} e^{-t^{2}} d t-\\frac{11}{24}\\right|<\\left(\\frac{1}{2}\\right)^{5} \\cdot \\frac{1}{10}=\\frac{1}{320}<\\frac{1}{200}\\), since\n\\(\\int_{0}^{1 / 2} e^{-t^{2}} d t=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}\\left(\\frac{1}{2}\\right)^{2 n+1}}{n!(2 n+1)}\\), which is an alternating series with individual terms that decrease in absolute value to 0 .\n\\end{itemize}\n\n3 : \\(\\left\\{\\begin{array}{l}1: \\text { two of } 1,-x^{2}, \\frac{x^{4}}{2},-\\frac{x^{6}}{6} \\\\ 1: \\text { remaining terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { two terms } \\\\ 1: \\text { remaining terms } \\\\ 1: \\text { estimate }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { uses the third term as } \\\\ \\text { the error bound } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          65,
+          572,
+          420
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

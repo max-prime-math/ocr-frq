@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2008-form-b-frq-06",
+  "course": "BC",
+  "year": 2008,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008-FORM-B.pdf",
+      "sha256": "a3f39100ad858b1e39f4ef65a5adbba5a1c4bb9b1b12fcc1af8fc1feb51865e5",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008-FORM-B.pdf",
+      "sha256": "1b7f39b2981738aadc9e2599c44ae1c8495d7cdb1c9a6584e35ba197e41fbd10"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= frac(2 x,1 + x^(2))$.\n\n(a) Write the first four nonzero terms and the general term of the Taylor series for $f$ about $x = 0$.\n\n(b) Does the series found in part (a), when evaluated at $x = 1$, converge to $f(1)$ ? Explain why or why not.\n\n(c) The derivative of $ln lr((1 + x^(2)))$ is $frac(2 x,1 + x^(2))$. Write the first four nonzero terms of the Taylor series for $ln lr((1 + x^(2)))$ about $x = 0$.\n\n(d) Use the series found in part (c) to find a rational number $A$ such that $lr(| A - ln lr((frac(5,4)))|)< frac(1,100)$. Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          66,
+          572,
+          379
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6955cc111e5b9ab4f7b8667a19d3ff9ecce7cfff3116bea84a0ef1be9f5db419",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008-FORM-B.zip"
+    }
+  ]
+}

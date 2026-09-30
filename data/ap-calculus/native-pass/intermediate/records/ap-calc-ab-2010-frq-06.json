@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-frq-06",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "rawPrompt": "Solutions to the differential equation \\(\\frac{d y}{d x}=x y^{3}\\) also satisfy \\(\\frac{d^{2} y}{d x^{2}}=y^{3}\\left(1+3 x^{2} y^{2}\\right)\\). Let \\(y=f(x)\\) be a particular\nsolution to the differential equation \\(\\frac{d y}{d x}=x y^{3}\\) with \\(f(1)=2\\).\n(a) Write an equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=1\\).\n(b) Use the tangent line equation from part (a) to approximate \\(f(1.1)\\). Given that \\(f(x)>0\\) for \\(1<x<1.1\\), is\nthe approximation for \\(f(1.1)\\) greater than or less than \\(f(1.1)\\) ? Explain your reasoning.\n(c) Find the particular solution \\(y=f(x)\\) with initial condition \\(f(1)=2\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nSolutions to the differential equation \\(\\frac{d y}{d x}=x y^{3}\\) also satisfy \\(\\frac{d^{2} y}{d x^{2}}=y^{3}\\left(1+3 x^{2} y^{2}\\right)\\). Let \\(y=f(x)\\) be a particular solution to the differential equation \\(\\frac{d y}{d x}=x y^{3}\\) with \\(f(1)=2\\).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=1\\).\n\\item[(b)] Use the tangent line equation from part (a) to approximate \\(f(1.1)\\). Given that \\(f(x)>0\\) for \\(1<x<1.1\\), is the approximation for \\(f(1.1)\\) greater than or less than \\(f(1.1)\\) ? Explain your reasoning.\n\\item[(c)] Find the particular solution \\(y=f(x)\\) with initial condition \\(f(1)=2\\).\n\\item[(a)] \\(f^{\\prime}(1)=\\left.\\frac{d y}{d x}\\right|_{(1,2)}=8\\)\nAn equation of the tangent line is \\(y=2+8(x-1)\\).\n\\item[(b)] \\(f(1.1) \\approx 2.8\\)\nSince \\(y=f(x)>0\\) on the interval \\(1 \\leq x<1.1\\),\n\\[\n\\frac{d^{2} y}{d x^{2}}=y^{3}\\left(1+3 x^{2} y^{2}\\right)>0 \\text { on this interval. }\n\\]\nTherefore on the interval \\(1<x<1.1\\), the line tangent to the graph of \\(y=f(x)\\) at \\(x=1\\) lies below the curve and the approximation 2.8 is less than \\(f(1.1)\\).\n\\item[(c)] \\(\\frac{d y}{d x}=x y^{3}\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{1}{y^{3}} d y=\\int x d x \\\\\n& -\\frac{1}{2 y^{2}}=\\frac{x^{2}}{2}+C \\\\\n& -\\frac{1}{2 \\cdot 2^{2}}=\\frac{1^{2}}{2}+C \\Rightarrow C=-\\frac{5}{8} \\\\\n& y^{2}=\\frac{1}{\\frac{5}{4}-x^{2}} \\\\\n& f(x)=\\frac{2}{\\sqrt{5-4 x^{2}}}, \\quad \\frac{-\\sqrt{5}}{2}<x<\\frac{\\sqrt{5}}{2}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(1) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : approximation } \\\\ 1 \\text { : conclusion with explanation }\\end{array}\\right.\\)\n\\item[] \\(5:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\nNote: 0/5 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          393,
+          572,
+          583
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          415.87199999999996,
+          563.04,
+          446.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          449.28,
+          336.38399999999996,
+          473.472
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 17,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          481.248,
+          406.08,
+          494.78399999999993
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.088,
+          503.712,
+          557.568,
+          517.824
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.368,
+          519.8399999999999,
+          471.45599999999996,
+          533.376
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 21,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          541.4399999999999,
+          391.104,
+          555.5519999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

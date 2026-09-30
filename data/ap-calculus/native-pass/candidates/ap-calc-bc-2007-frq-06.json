@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2007-frq-06",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= e^(- x^(2))$.\n\n(a) Write the first four nonzero terms and the general term of the Taylor series for $f$ about $x = 0$.\n\n(b) Use your answer to part (a) to find $lim_(x -> 0) frac(1 - x^(2)- f(x),x^(4))$.\n\n(c) Write the first four nonzero terms of the Taylor series for $integral_(0)^(x) e^(- t^(2)) d t$ about $x = 0$. Use the first two terms of your answer to estimate $integral_(0)^(1 \\/ 2) e^(- t^(2)) d t$.\n\n(d) Explain why the estimate found in part (c) differs from the actual value of $integral_(0)^(1 \\/ 2) e^(- t^(2)) d t$ by less than $frac(1,200)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          65,
+          572,
+          420
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "68399ed080c0cfb32f3eb2b16da11f2edb946cada46f12329f0bce42f3b50467",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ]
+}

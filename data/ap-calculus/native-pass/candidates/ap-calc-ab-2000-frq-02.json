@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2000-frq-02",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2000-frq-02-diagram-01.png\", width: 65%)\n\nTwo runners, $A$ and $B$, run on a straight racetrack for $0 <= t <= 10$ seconds. The graph above, which consists of two line segments, shows the velocity, in meters per second, of Runner $A$. The velocity, in meters per second, of Runner $B$ is given by the function $v$ defined by $v(t)= frac(24 t,2 t + 3)$.\n\n(a) Find the velocity of Runner $A$ and the velocity of Runner $B$ at time $t = 2$ seconds. Indicate units of measure.\n\n(b) Find the acceleration of Runner $A$ and the acceleration of Runner $B$ at time $t = 2$ seconds. Indicate units of measure.\n\n(c) Find the total distance run by Runner $A$ and the total distance run by Runner $B$ over the time interval $0 <= t <= 10$ seconds. Indicate units of measure.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2000-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2000-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        120.83999633789062,
+        57.47999954223633,
+        494.3280029296875,
+        299.9280090332031
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          55,
+          572,
+          478
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          123.83999999999999,
+          60.48,
+          491.328,
+          296.928
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          309.59999999999997,
+          558.4319999999999,
+          321.984
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          322.56,
+          563.04,
+          334.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          334.94399999999996,
+          350.496,
+          358.272
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.512,
+          364.89599999999996,
+          530.496,
+          377.28
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.08,
+          378.43199999999996,
+          123.264,
+          388.224
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.512,
+          395.424,
+          553.2479999999999,
+          407.808
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.08,
+          409.248,
+          135.648,
+          419.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          64.512,
+          427.392,
+          533.664,
+          439.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          439.77599999999995,
+          292.608,
+          450.71999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a571955edad03703fba37c1dc22f8eb568ce2189019a3a46574922bfb5c85894",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

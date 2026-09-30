@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2021-frq-02",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle, $P$, is moving along the $x$-axis. The velocity of particle $P$ at time $t$ is given by $v_(P)(t)= sin lr((t^(1.5)))$ for $0 <= t <= pi$. At time $t = 0$, particle $P$ is at position $x = 5$. A second particle, $Q$, also moves along the $x$-axis. The velocity of particle $Q$ at time $t$ is given by $v_(Q)(t)= (t - 1.8) dot.c 1.25^(t)$ for $0 <= t <= pi$. At time $t = 0$, particle $Q$ is at position $x = 10$.\n\n(a) Find the positions of particles $P$ and $Q$ at time $t = 1$.\n\n(b) Are particles $P$ and $Q$ moving toward each other or away from each other at time $t = 1$ ? Explain your reasoning.\n\n(c) Find the acceleration of particle $Q$ at time $t = 1$. Is the speed of particle $Q$ increasing or decreasing at time $t = 1$ ? Explain your reasoning.\n\n(d) Find the total distance traveled by particle $P$ over the time interval $0 <= t <= pi$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          25,
+          69,
+          527,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          29.36888027144935,
+          74.00223214285714,
+          517.1226369365003,
+          98.18973214285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          104.52455357142857,
+          312.11633543383425,
+          117.77008928571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          132.45535714285714,
+          479.97964129907905,
+          145.125
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          148.2924107142857,
+          428.44013572467287,
+          164.70535714285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          46.35676199709162,
+          177.08705357142856,
+          299.1594764905478,
+          190.33258928571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          207.03348214285714,
+          521.4415899175958,
+          220.27901785714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          221.71874999999997,
+          112.0048473097431,
+          234.38839285714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          249.0736607142857,
+          514.2433349491033,
+          262.3191964285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          263.75892857142856,
+          229.1924381968008,
+          276.4285714285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          295.43303571428567,
+          407.99709161415416,
+          308.10267857142856
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          347.5513392857143,
+          522.0174503150752,
+          360.2209821428571
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          365.40401785714283,
+          473.6451769268057,
+          379.51339285714283
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e101eca540438a15a74c8c2c15e1fe538fa3d2438b7fd8ee345734ab77506c6d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-02",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

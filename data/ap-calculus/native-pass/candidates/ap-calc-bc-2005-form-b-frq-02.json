@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2005-form-b-frq-02",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A water tank at Camp Newton holds 1200 gallons of water at time $t = 0$. During the time interval $0 <= t <= 18$ hours, water is pumped into the tank at the rate $ W(t)= 95 sqrt(t) sin^(2)lr((frac(t,6))) \" gallons per hour. \" $\n\nDuring the same time interval, water is removed from the tank at the rate\n\n$ R(t)= 275 sin^(2)lr((frac(t,3))) \" gallons per hour. \" $\n\n(a) Is the amount of water in the tank increasing at time $t = 15$ ? Why or why not?\n\n(b) To the nearest whole number, how many gallons of water are in the tank at time $t = 18$ ?\n\n(c) At what time $t$, for $0 <= t <= 18$, is the amount of water in the tank at an absolute minimum? Show the work that leads to your conclusion.\n\n(d) For $t > 18$, no water is pumped into the tank, but water continues to be removed at the rate $R(t)$ until the tank becomes empty. Let $k$ be the time at which the tank becomes empty. Write, but do not solve, an equation involving an integral expression that can be used to find the value of $k$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          53,
+          572,
+          368
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6e5dbd41ef01b2cb21183fcff259f685cf8869d78b5b99d2c4ca28f5bd8a2cfb",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ]
+}

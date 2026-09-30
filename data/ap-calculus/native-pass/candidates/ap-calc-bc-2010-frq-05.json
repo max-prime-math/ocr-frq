@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2010-frq-05",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= 1 - y$. Let $y = f(x)$ be the particular solution to this differential equation with the initial condition $f(1)= 0$. For this particular solution, $f(x)< 1$ for all values of $x$.\n\n(a) Use Euler's method, starting at $x = 1$ with two steps of equal size, to approximate $f(0)$. Show the work that leads to your answer.\n\n(b) Find $lim_(x -> 1) frac(f(x),x^(3)- 1)$. Show the work that leads to your answer.\n\n(c) Find the particular solution $y = f(x)$ to the differential equation $frac(d y,d x)= 1 - y$ with the initial condition $f(1)= 0$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          553,
+          237
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ec73d071659cada56540fa5443cae968c0c592496af69a5e74bc5cb56c4b5599",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ]
+}

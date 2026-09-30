@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2004-frq-06",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function given by $f(x)=\\sin \\left(5 x+\\frac{\\pi}{4}\\right)$, and let $P(x)$ be the third-degree Taylor polynomial for $f$ about $x=0$.\\\\\n(a) Find $P(x)$.\\\\\n(b) Find the coefficient of $x^{22}$ in the Taylor series for $f$ about $x=0$.\\\\\n(c) Use the Lagrange error bound to show that $\\left|f\\left(\\frac{1}{10}\\right)-P\\left(\\frac{1}{10}\\right)\\right|<\\frac{1}{100}$.\\\\\n(d) Let $G$ be the function given by $G(x)=\\int_{0}^{x} f(t) d t$. Write the third-degree Taylor polynomial for $G$ about $x=0$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nLet \\(f\\) be the function given by \\(f(x)=\\sin \\left(5 x+\\frac{\\pi}{4}\\right)\\), and let \\(P(x)\\) be the third-degree Taylor polynomial for \\(f\\) about \\(x=0\\).\n\\begin{itemize}\n\\item[(a)] Find \\(P(x)\\).\n\\item[(b)] Find the coefficient of \\(x^{22}\\) in the Taylor series for \\(f\\) about \\(x=0\\).\n\\item[(c)] Use the Lagrange error bound to show that \\(\\left|f\\left(\\frac{1}{10}\\right)-P\\left(\\frac{1}{10}\\right)\\right|<\\frac{1}{100}\\).\n\\item[(d)] Let \\(G\\) be the function given by \\(G(x)=\\int_{0}^{x} f(t) d t\\). Write the third-degree Taylor polynomial for \\(G\\) about \\(x=0\\).\n\\item[(a)] \\(f(0)=\\sin \\left(\\frac{\\pi}{4}\\right)=\\frac{\\sqrt{2}}{2}\\)\n\\[\n\\begin{aligned}\n& f^{\\prime}(0)=5 \\cos \\left(\\frac{\\pi}{4}\\right)=\\frac{5 \\sqrt{2}}{2} \\\\\n& f^{\\prime \\prime}(0)=-25 \\sin \\left(\\frac{\\pi}{4}\\right)=-\\frac{25 \\sqrt{2}}{2} \\\\\n& f^{\\prime \\prime \\prime}(0)=-125 \\cos \\left(\\frac{\\pi}{4}\\right)=-\\frac{125 \\sqrt{2}}{2} \\\\\n& P(x)=\\frac{\\sqrt{2}}{2}+\\frac{5 \\sqrt{2}}{2} x-\\frac{25 \\sqrt{2}}{2(2!)} x^{2}-\\frac{125 \\sqrt{2}}{2(3!)} x^{3}\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{-5^{22} \\sqrt{2}}{2(22!)}\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\left|f\\left(\\frac{1}{10}\\right)-P\\left(\\frac{1}{10}\\right)\\right| & \\leq \\max _{0 \\leq c \\leq \\frac{1}{10}}\\left|f^{(4)}(c)\\right|\\left(\\frac{1}{4!}\\right)\\left(\\frac{1}{10}\\right)^{4} \\\\\n& \\leq \\frac{625}{4!}\\left(\\frac{1}{10}\\right)^{4}=\\frac{1}{384}<\\frac{1}{100}\n\\end{aligned}\n\\]\n\\item[(d)] The third-degree Taylor polynomial for \\(G\\) about\n\\[\n\\begin{gathered}\nx=0 \\text { is } \\int_{0}^{x}\\left(\\frac{\\sqrt{2}}{2}+\\frac{5 \\sqrt{2}}{2} t-\\frac{25 \\sqrt{2}}{4} t^{2}\\right) d t \\\\\n=\\frac{\\sqrt{2}}{2} x+\\frac{5 \\sqrt{2}}{4} x^{2}-\\frac{25 \\sqrt{2}}{12} x^{3}\n\\end{gathered}\n\\]\n\\item[4] : \\(P(x)\\)\n\\(\\langle-1\\rangle\\) each error or missing term deduct only once for \\(\\sin \\left(\\frac{\\pi}{4}\\right)\\) evaluation error\ndeduct only once for \\(\\cos \\left(\\frac{\\pi}{4}\\right)\\) evaluation error\n\\(\\langle-1\\rangle\\) max for all extra terms, \\(+\\cdots\\), misuse of equality\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { magnitude } \\\\ 1: \\text { sign }\\end{array}\\right.\\)\n\\item[1] : error bound in an appropriate inequality\n\\item[2] : third-degree Taylor polynomial for \\(G\\) about \\(x=0\\)\n\\(\\langle-1\\rangle\\) each incorrect or missing term\n\\(\\langle-1\\rangle\\) max for all extra terms, \\(+\\cdots\\), misuse of equality\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          389
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

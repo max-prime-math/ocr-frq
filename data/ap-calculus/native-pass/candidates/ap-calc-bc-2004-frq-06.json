@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2004-frq-06",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= sin lr((5 x + frac(pi,4)))$, and let $P(x)$ be the third-degree Taylor polynomial for $f$ about $x = 0$.\n\n(a) Find $P(x)$.\n\n(b) Find the coefficient of $x^(22)$ in the Taylor series for $f$ about $x = 0$.\n\n(c) Use the Lagrange error bound to show that $lr(| f lr((frac(1,10)))- P lr((frac(1,10)))|)< frac(1,100)$.\n\n(d) Let $G$ be the function given by $G(x)= integral_(0)^(x) f(t) d t$. Write the third-degree Taylor polynomial for $G$ about $x = 0$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          389
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0232ad821a5719d7a84a936b3301e6c90bf4025e9acf0ff139beb7147a7c181e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ]
+}

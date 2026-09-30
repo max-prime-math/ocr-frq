@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2018-frq-02",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "rawPrompt": "Researchers on a boat are investigating plankton cells in a sea. At a depth of $h$ meters, the density of plankton cells, in millions of cells per cubic meter, is modeled by $p(h)=0.2 h^{2} e^{-0.0025 h^{2}}$ for $0 \\leq h \\leq 30$ and is modeled by $f(h)$ for $h \\geq 30$. The continuous function $f$ is not explicitly given.\\\\\n(a) Find $p^{\\prime}(25)$. Using correct units, interpret the meaning of $p^{\\prime}(25)$ in the context of the problem.\\\\\n(b) Consider a vertical column of water in this sea with horizontal cross sections of constant area 3 square meters. To the nearest million, how many plankton cells are in this column of water between $h=0$ and $h=30$ meters?\\\\\n(c) There is a function $u$ such that $0 \\leq f(h) \\leq u(h)$ for all $h \\geq 30$ and $\\int_{30}^{\\infty} u(h) d h=105$. The column of water in part (b) is $K$ meters deep, where $K>30$. Write an expression involving one or more integrals that gives the number of plankton cells, in millions, in the entire column. Explain why the number of plankton cells in the column is less than or equal to 2000 million.\\\\\n(d) The boat is moving on the surface of the sea. At time $t \\geq 0$, the position of the boat is $(x(t), y(t))$, where $x^{\\prime}(t)=662 \\sin (5 t)$ and $y^{\\prime}(t)=880 \\cos (6 t)$. Time $t$ is measured in hours, and $x(t)$ and $y(t)$ are measured in meters. Find the total distance traveled by the boat over the time interval $0 \\leq t \\leq 1$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(p^{\\prime}(25)=-1.179\\)\nAt a depth of 25 meters, the density of plankton cells is changing at a rate of -1.179 million cells per cubic meter per meter.\n\\item[(b)] \\(\\int_{0}^{30} 3 p(h) d h=1675.414936\\)\nThere are 1675 million plankton cells in the column of water between \\(h=0\\) and \\(h=30\\) meters.\n\\item[(c)] \\(\\int_{30}^{K} 3 f(h) d h\\) represents the number of plankton cells, in millions, in the column of water from a depth of 30 meters to a depth of \\(K\\) meters.\nThe number of plankton cells, in millions, in the entire column of water is given by \\(\\int_{0}^{30} 3 p(h) d h+\\int_{30}^{K} 3 f(h) d h\\).\nBecause \\(0 \\leq f(h) \\leq u(h)\\) for all \\(h \\geq 30\\),\n\\[\n3 \\int_{30}^{K} f(h) d h \\leq 3 \\int_{30}^{K} u(h) d h \\leq 3 \\int_{30}^{\\infty} u(h) d h=3 \\cdot 105=315 .\n\\]\nThe total number of plankton cells in the column of water is bounded by \\(1675.415+315=1990.415 \\leq 2000\\) million.\n\\item[(d)] \\(\\int_{0}^{1} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}} d t=757.455862\\)\nThe total distance traveled by the boat over the time interval \\(0 \\leq t \\leq 1\\) is 757.456 (or 757.455) meters.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { meaning with units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integral expression } \\\\ 1: \\text { compares improper integral } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\n2 : \\(\\left\\{\\begin{array}{l}1 \\text { : integrand } \\\\ 1 \\text { : total distance }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          39,
+          101,
+          570,
+          502
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

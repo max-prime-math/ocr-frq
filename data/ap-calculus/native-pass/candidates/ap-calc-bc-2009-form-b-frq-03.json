@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2009-form-b-frq-03",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2009-form-b-frq-03-diagram-01.png\", width: 65%)\n\nA continuous function $f$ is defined on the closed interval $- 4 <= x <= 6$. The graph of $f$ consists of a line segment and a curve that is tangent to the $x$-axis at $x = 3$, as shown in the figure above. On the interval $0 < x < 6$, the function $f$ is twice differentiable, with $f''(x)> 0$.\n\n(a) Is $f$ differentiable at $x = 0$ ? Use the definition of the derivative with one-sided limits to justify your answer.\n\n(b) For how many values of $a \\,- 4 <= a < 6$, is the average rate of change of $f$ on the interval $\\[a \\, 6 \\]$ equal to 0 ? Give a reason for your answer.\n\n(c) Is there a value of $a \\,- 4 <= a < 6$, for which the Mean Value Theorem, applied to the interval $\\[a \\, 6 \\]$, guarantees a value $c \\, a < c < 6$, at which $f'(c)= frac(1,3)$ ? Justify your answer.\n\n(d) The function $g$ is defined by $g(x)= integral_(0)^(x) f(t) d t$ for $- 4 <= x <= 6$. On what intervals contained in $\\[- 4 \\,6 \\]$ is the graph of $g$ concave up? Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        170.0,
+        68.0,
+        442.0,
+        197.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          466
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "bf5e2ee7070b1cc9c58358a68b61df5814803c7c8cec0b8168c67d6557a4a912",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        170.0,
+        68.0,
+        442.0,
+        197.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2009-form-b-frq-02"
+    }
+  ]
+}

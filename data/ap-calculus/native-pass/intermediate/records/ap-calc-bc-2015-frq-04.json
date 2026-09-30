@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-04",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=2 x-y$.\\\\\n(a) On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2015-frq-04-diagram-01.jpg}\n\\end{center}\n(b) Find $\\frac{d^{2} y}{d x^{2}}$ in terms of $x$ and $y$. Determine the concavity of all solution curves for the given differential equation in Quadrant II. Give a reason for your answer.\\\\\n(c) Let $y=f(x)$ be the particular solution to the differential equation with the initial condition $f(2)=3$. Does $f$ have a relative minimum, a relative maximum, or neither at $x=2$ ? Justify your answer.\\\\\n(d) Find the values of the constants $m$ and $b$ for which $y=m x+b$ is a solution to the differential equation.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2015-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2015-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2015_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALUCLUS AB/CALCULUS BC \\\\ 2015 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nConsider the differential equation \\(\\frac{d y}{d x}=2 x-y\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\n\\item[(b)] Find \\(\\frac{d^{2} y}{d x^{2}}\\) in terms of \\(x\\) and \\(y\\). Determine the concavity of all solution curves for the given differential equation in Quadrant II. Give a reason for your answer.\n\\item[(c)] Let \\(y=f(x)\\) be the particular solution to the differential equation with the initial condition \\(f(2)=3\\). Does \\(f\\) have a relative minimum, a relative maximum, or neither at \\(x=2\\) ? Justify your answer.\n\\item[(d)] Find the values of the constants \\(m\\) and \\(b\\) for which \\(y=m x+b\\) is a solution to the differential equation.\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/802d3927-c56d-47f4-9a8e-783b9b970003-1.jpg?height=526&width=266&top_left_y=990&top_left_x=258)\n\\item[(b)] \\(\\frac{d^{2} y}{d x^{2}}=2-\\frac{d y}{d x}=2-(2 x-y)=2-2 x+y\\)\nIn Quadrant II, \\(x<0\\) and \\(y>0\\), so \\(2-2 x+y>0\\).\nTherefore, all solution curves are concave up in Quadrant II.\n\\item[(c)] \\(\\left.\\frac{d y}{d x}\\right|_{(x, y)=(2,3)}=2(2)-3=1 \\neq 0\\)\nTherefore, \\(f\\) has neither a relative minimum nor a relative maximum at \\(x=2\\).\n\\item[(d)] \\(y=m x+b \\Rightarrow \\frac{d y}{d x}=\\frac{d}{d x}(m x+b)=m\\)\n\\[\n\\begin{aligned}\n& 2 x-y=m \\\\\n& 2 x-(m x+b)=m \\\\\n& (2-m) x-(m+b)=0 \\\\\n& 2-m=0 \\Rightarrow m=2 \\\\\n& b=-m \\Rightarrow b=-2\n\\end{aligned}\n\\]\nTherefore, \\(m=2\\) and \\(b=-2\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { slopes where } x=0 \\\\ 1: \\text { slopes where } x=1\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\frac{d^{2} y}{d x^{2}} \\\\ 1: \\text { concave up with reason }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers }\\left.\\frac{d y}{d x}\\right|_{(x, y)=(2,3)} \\\\ 1: \\text { conclusion with justification }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d}{d x}(m x+b)=m \\\\ 1: 2 x-y=m \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          568,
+          450
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

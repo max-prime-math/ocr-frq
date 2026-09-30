@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-06",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for a function $f$ is given by $\\sum_{n=1}^{\\infty} \\frac{(-3)^{n-1}}{n} x^{n}=x-\\frac{3}{2} x^{2}+3 x^{3}-\\cdots+\\frac{(-3)^{n-1}}{n} x^{n}+\\cdots$ and converges to $f(x)$ for $|x|<R$, where $R$ is the radius of convergence of the Maclaurin series.\\\\\n(a) Use the ratio test to find $R$.\\\\\n(b) Write the first four nonzero terms of the Maclaurin series for $f^{\\prime}$, the derivative of $f$. Express $f^{\\prime}$ as a rational function for $|x|<R$.\\\\\n(c) Write the first four nonzero terms of the Maclaurin series for $e^{x}$. Use the Maclaurin series for $e^{x}$ to write the third-degree Taylor polynomial for $g(x)=e^{x} f(x)$ about $x=0$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2015 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nThe Maclaurin series for a function \\(f\\) is given by \\(\\sum_{n=1}^{\\infty} \\frac{(-3)^{n-1}}{n} x^{n}=x-\\frac{3}{2} x^{2}+3 x^{3}-\\cdots+\\frac{(-3)^{n-1}}{n} x^{n}+\\cdots\\) and converges to \\(f(x)\\) for \\(|x|<R\\), where \\(R\\) is the radius of convergence of the Maclaurin series.\n\\begin{itemize}\n\\item[(a)] Use the ratio test to find \\(R\\).\n\\item[(b)] Write the first four nonzero terms of the Maclaurin series for \\(f^{\\prime}\\), the derivative of \\(f\\). Express \\(f^{\\prime}\\) as a rational function for \\(|x|<R\\).\n\\item[(c)] Write the first four nonzero terms of the Maclaurin series for \\(e^{x}\\). Use the Maclaurin series for \\(e^{x}\\) to write the third-degree Taylor polynomial for \\(g(x)=e^{x} f(x)\\) about \\(x=0\\).\n\\item[(a)] Let \\(a_{n}\\) be the \\(n\\)th term of the Maclaurin series.\n\\[\n\\begin{aligned}\n& \\frac{a_{n+1}}{a_{n}}=\\frac{(-3)^{n} x^{n+1}}{n+1} \\cdot \\frac{n}{(-3)^{n-1} x^{n}}=\\frac{-3 n}{n+1} \\cdot x \\\\\n& \\lim _{n \\rightarrow \\infty}\\left|\\frac{-3 n}{n+1} \\cdot x\\right|=3|x| \\\\\n& 3|x|<1 \\Rightarrow|x|<\\frac{1}{3}\n\\end{aligned}\n\\]\nThe radius of convergence is \\(R=\\frac{1}{3}\\).\n\\item[(b)] The first four nonzero terms of the Maclaurin series for \\(f^{\\prime}\\) are\n\\[\n\\begin{aligned}\n& 1-3 x+9 x^{2}-27 x^{3} \\\\\n& f^{\\prime}(x)=\\frac{1}{1-(-3 x)}=\\frac{1}{1+3 x}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { sets up ratio } \\\\ 1: \\text { computes limit of ratio } \\\\ 1: \\text { determines radius of convergence }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: \\text { first four nonzero terms } \\\\ 1: \\text { rational function }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { first four nonzero terms } \\\\ \\quad \\text { of the Maclaurin series for } e^{x} \\\\ 2: \\text { Taylor polynomial }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(c)] The first four nonzero terms of the Maclaurin series for \\(e^{x}\\) are\n\\[\n1+x+\\frac{x^{2}}{2!}+\\frac{x^{3}}{3!} .\n\\]\nThe product of the Maclaurin series for \\(e^{x}\\) and the Maclaurin series for \\(f\\) is\n\\[\n\\begin{aligned}\n& \\left(1+x+\\frac{x^{2}}{2!}+\\frac{x^{3}}{3!}+\\cdots\\right)\\left(x-\\frac{3}{2} x^{2}+3 x^{3}-\\cdots\\right) \\\\\n& \\quad=x-\\frac{1}{2} x^{2}+2 x^{3}+\\cdots\n\\end{aligned}\n\\]\nThe third-degree Taylor polynomial for \\(g(x)=e^{x} f(x)\\) about \\(x=0\\) is \\(T_{3}(x)=x-\\frac{1}{2} x^{2}+2 x^{3}\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          66,
+          569,
+          448
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

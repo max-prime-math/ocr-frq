@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-frq-01",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2009-frq-01-diagram-01.jpg}\n\\end{center}\nCaren rides her bicycle along a straight road from home to school, starting at home at time $t=0$ minutes and arriving at school at time $t=12$ minutes. During the time interval $0 \\leq t \\leq 12$ minutes, her velocity $v(t)$, in miles per minute, is modeled by the piecewise-linear function whose graph is shown above.\\\\\n(a) Find the acceleration of Caren's bicycle at time $t=7.5$ minutes. Indicate units of measure.\\\\\n(b) Using correct units, explain the meaning of $\\int_{0}^{12}|v(t)| d t$ in terms of Caren's trip. Find the value of $\\int_{0}^{12}|v(t)| d t$.\\\\\n(c) Shortly after leaving home, Caren realizes she left her calculus homework at home, and she returns to get it. At what time does she turn around to go back home? Give a reason for your answer.\\\\\n(d) Larry also rides his bicycle along a straight road from home to school in 12 minutes. His velocity is modeled by the function $w$ given by $w(t)=\\frac{\\pi}{15} \\sin \\left(\\frac{\\pi}{12} t\\right)$, where $w(t)$ is in miles per minute for $0 \\leq t \\leq 12$ minutes. Who lives closer to school: Caren or Larry? Show the work that leads to your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES}\n\n\\section*{Question 1}\n![](https://cdn.mathpix.com/cropped/e95588ee-93eb-4061-be0e-0150a1ba24b8-1.jpg?height=481&width=930&top_left_y=370&top_left_x=591)\nCaren rides her bicycle along a straight road from home to school, starting at home at time \\(t=0\\) minutes and arriving at school at time \\(t=12\\) minutes. During the time interval \\(0 \\leq t \\leq 12\\) minutes, her velocity \\(v(t)\\), in miles per minute, is modeled by the piecewise-linear function whose graph is shown above.\n\\begin{itemize}\n\\item[(a)] Find the acceleration of Caren's bicycle at time \\(t=7.5\\) minutes. Indicate units of measure.\n\\item[(b)] Using correct units, explain the meaning of \\(\\int_{0}^{12}|v(t)| d t\\) in terms of Caren's trip. Find the value of \\(\\int_{0}^{12}|v(t)| d t\\).\n\\item[(c)] Shortly after leaving home, Caren realizes she left her calculus homework at home, and she returns to get it. At what time does she turn around to go back home? Give a reason for your answer.\n\\item[(d)] Larry also rides his bicycle along a straight road from home to school in 12 minutes. His velocity is modeled by the function \\(w\\) given by \\(w(t)=\\frac{\\pi}{15} \\sin \\left(\\frac{\\pi}{12} t\\right)\\), where \\(w(t)\\) is in miles per minute for \\(0 \\leq t \\leq 12\\) minutes. Who lives closer to school: Caren or Larry? Show the work that leads to your answer.\n\\item[(a)] \\(a(7.5)=v^{\\prime}(7.5)=\\frac{v(8)-v(7)}{8-7}=-0.1\\) miles \\(/\\) minute \\(^{2}\\)\n\\item[(b)] \\(\\int_{0}^{12}|v(t)| d t\\) is the total distance, in miles, that Caren rode during the 12 minutes from \\(t=0\\) to \\(t=12\\).\n\\[\n\\begin{aligned}\n\\int_{0}^{12}|v(t)| d t & =\\int_{0}^{2} v(t) d t-\\int_{2}^{4} v(t) d t+\\int_{4}^{12} v(t) d t \\\\\n& =0.2+0.2+1.4=1.8 \\text { miles }\n\\end{aligned}\n\\]\n\\item[(c)] Caren turns around to go back home at time \\(t=2\\) minutes. This is the time at which her velocity changes from positive to negative.\n\\item[(d)] \\(\\int_{0}^{12} w(t) d t=1.6\\); Larry lives 1.6 miles from school. \\(\\int_{0}^{12} v(t) d t=1.4\\); Caren lives 1.4 miles from school. Therefore, Caren lives closer to school.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { meaning of integral } \\\\ 1: \\text { value of integral }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{c}2: \\text { Larry's distance from school } \\\\ 1: \\text { integral } \\\\ 1: \\text { value } \\\\ 1: \\text { Caren's distance from school } \\\\ \\text { and conclusion }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          587
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

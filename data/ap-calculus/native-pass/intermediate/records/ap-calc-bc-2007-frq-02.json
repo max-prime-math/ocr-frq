@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-frq-02",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2007-frq-02-diagram-01.jpg}\n\\end{center}\nThe amount of water in a storage tank, in gallons, is modeled by a continuous function on the time interval $0 \\leq t \\leq 7$, where $t$ is measured in hours. In this model, rates are given as follows:\\\\\n(i) The rate at which water enters the tank is $f(t)=100 t^{2} \\sin (\\sqrt{t})$ gallons per hour for $0 \\leq t \\leq 7$.\\\\\n(ii) The rate at which water leaves the tank is\n$$\ng(t)=\\left\\{\\begin{array}{r}\n250 \\text { for } 0 \\leq t<3 \\\\\n2000 \\text { for } 3<t \\leq 7\n\\end{array}\\right. \\text { gallons per hour. }\n$$\n\nThe graphs of $f$ and $g$, which intersect at $t=1.617$ and $t=5.076$, are shown in the figure above. At time $t=0$, the amount of water in the tank is 5000 gallons.\\\\\n(a) How many gallons of water enter the tank during the time interval $0 \\leq t \\leq 7$ ? Round your answer to the nearest gallon.\\\\\n(b) For $0 \\leq t \\leq 7$, find the time intervals during which the amount of water in the tank is decreasing. Give a reason for each answer.\\\\\n(c) For $0 \\leq t \\leq 7$, at what time $t$ is the amount of water in the tank greatest? To the nearest gallon, compute the amount of water at this time. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2007-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2007-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2007_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nThe amount of water in a storage tank, in gallons, is modeled by a continuous function on the time interval \\(0 \\leq t \\leq 7\\), where \\(t\\) is measured in hours. In this model, rates are given as follows:\n\\begin{itemize}\n\\item[(i)] The rate at which water enters the tank is \\(f(t)=100 t^{2} \\sin (\\sqrt{t})\\) gallons per hour for \\(0 \\leq t \\leq 7\\).\n\\item[(ii)] The rate at which water leaves the tank is \\(g(t)=\\left\\{\\begin{array}{r}250 \\text { for } 0 \\leq t<3 \\\\ 2000 \\text { for } 3<t \\leq 7\\end{array}\\right.\\) gallons per hour.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/4ff36bbc-0e5c-4a7e-aa8f-a00d82d03863-1.jpg?height=455&width=662&top_left_y=378&top_left_x=1220)\nThe graphs of \\(f\\) and \\(g\\), which intersect at \\(t=1.617\\) and \\(t=5.076\\), are shown in the figure above. At time \\(t=0\\), the amount of water in the tank is 5000 gallons.\n\\begin{itemize}\n\\item[(a)] How many gallons of water enter the tank during the time interval \\(0 \\leq t \\leq 7\\) ? Round your answer to the nearest gallon.\n\\item[(b)] For \\(0 \\leq t \\leq 7\\), find the time intervals during which the amount of water in the tank is decreasing. Give a reason for each answer.\n\\item[(c)] For \\(0 \\leq t \\leq 7\\), at what time \\(t\\) is the amount of water in the tank greatest? To the nearest gallon, compute the amount of water at this time. Justify your answer.\n\\item[(a)] \\(\\int_{0}^{7} f(t) d t \\approx 8264\\) gallons\n\\item[(b)] The amount of water in the tank is decreasing on the intervals \\(0 \\leq t \\leq 1.617\\) and \\(3 \\leq t \\leq 5.076\\) because \\(f(t)<g(t)\\) for \\(0 \\leq t<1.617\\) and \\(3<t<5.076\\).\n\\item[(c)] Since \\(f(t)-g(t)\\) changes sign from positive to negative only at \\(t=3\\), the candidates for the absolute maximum are at \\(t=0,3\\), and 7 .\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (hours) & gallons of water \\\\\n\\hline 0 & 5000 \\\\\n\\hline 3 & \\(5000+\\int_{0}^{3} f(t) d t-250(3)=5126.591\\) \\\\\n\\hline 7 & \\(5126.591+\\int_{3}^{7} f(t) d t-2000(4)=4513.807\\) \\\\\n\\hline\n\\end{tabular}\nThe amount of water in the tank is greatest at 3 hours. At that time, the amount of water in the tank, rounded to the nearest gallon, is 5127 gallons.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          62,
+          572,
+          573
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

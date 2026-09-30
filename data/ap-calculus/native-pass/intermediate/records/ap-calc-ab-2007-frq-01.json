@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-frq-01",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "rawPrompt": "Let \\(R\\) be the region in the first and second quadrants bounded above by the graph of \\(y=\\frac{20}{1+x^{2}}\\) and below\nby the horizontal line \\(y=2\\).\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is rotated about the \\(x\\)-axis.\n(c) The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(x\\)-axis are\nsemicircles. Find the volume of this solid.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(R\\) be the region in the first and second quadrants bounded above by the graph of \\(y=\\frac{20}{1+x^{2}}\\) and below by the horizontal line \\(y=2\\).\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the \\(x\\)-axis.\n\\item[(c)] The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(x\\)-axis are semicircles. Find the volume of this solid.\n\\end{itemize}\n\\[\n\\frac{20}{1+x^{2}}=2 \\text { when } x= \\pm 3\n\\]\n\\begin{itemize}\n\\item[(a)] Area \\(=\\int_{-3}^{3}\\left(\\frac{20}{1+x^{2}}-2\\right) d x=37.961\\) or 37.962\n\\item[(b)] Volume \\(=\\pi \\int_{-3}^{3}\\left(\\left(\\frac{20}{1+x^{2}}\\right)^{2}-2^{2}\\right) d x=1871.190\\)\n\\item[(c)] Volume \\(=\\frac{\\pi}{2} \\int_{-3}^{3}\\left(\\frac{1}{2}\\left(\\frac{20}{1+x^{2}}-2\\right)\\right)^{2} d x\\)\n\\[\n=\\frac{\\pi}{8} \\int_{-3}^{3}\\left(\\frac{20}{1+x^{2}}-2\\right)^{2} d x=174.268\n\\]\n\\end{itemize}\n\n1 : correct limits in an integral in\n\\begin{itemize}\n\\item[(a)] , (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          410
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          200.44799999999998,
+          543.168,
+          227.808
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          228.95999999999998,
+          191.808,
+          241.344
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          249.98399999999998,
+          168.48,
+          262.368
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          267.84,
+          413.28,
+          280.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          286.56,
+          520.992,
+          298.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          298.94399999999996,
+          269.28,
+          310.176
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

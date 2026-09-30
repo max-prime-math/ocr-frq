@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2004-form-b-frq-02",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "rawPrompt": "For \\(0 \\leq t \\leq 31\\), the rate of change of the number of mosquitoes on Tropical Island at time \\(t\\) days is modeled\nby \\(R(t)=5 \\sqrt{t} \\cos \\left(\\frac{t}{5}\\right)\\) mosquitoes per day. There are 1000 mosquitoes on Tropical Island at time \\(t=0\\).\n(a) Show that the number of mosquitoes is increasing at time \\(t=6\\).\n(b) At time \\(t=6\\), is the number of mosquitoes increasing at an increasing rate, or is the number of mosquitoes\nincreasing at a decreasing rate? Give a reason for your answer.\n(c) According to the model, how many mosquitoes will be on the island at time \\(t=31\\) ? Round your answer\nto the nearest whole number.\n(d) To the nearest whole number, what is the maximum number of mosquitoes for \\(0 \\leq t \\leq 31\\) ? Show the\nanalysis that leads to your conclusion.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nFor \\(0 \\leq t \\leq 31\\), the rate of change of the number of mosquitoes on Tropical Island at time \\(t\\) days is modeled by \\(R(t)=5 \\sqrt{t} \\cos \\left(\\frac{t}{5}\\right)\\) mosquitoes per day. There are 1000 mosquitoes on Tropical Island at time \\(t=0\\).\n\\begin{itemize}\n\\item[(a)] Show that the number of mosquitoes is increasing at time \\(t=6\\).\n\\item[(b)] At time \\(t=6\\), is the number of mosquitoes increasing at an increasing rate, or is the number of mosquitoes increasing at a decreasing rate? Give a reason for your answer.\n\\item[(c)] According to the model, how many mosquitoes will be on the island at time \\(t=31\\) ? Round your answer to the nearest whole number.\n\\item[(d)] To the nearest whole number, what is the maximum number of mosquitoes for \\(0 \\leq t \\leq 31\\) ? Show the analysis that leads to your conclusion.\n\\item[(a)] Since \\(R(6)=4.438>0\\), the number of mosquitoes is increasing at \\(t=6\\).\n\\item[(b)] \\(R^{\\prime}(6)=-1.913\\)\nSince \\(R^{\\prime}(6)<0\\), the number of mosquitoes is increasing at a decreasing rate at \\(t=6\\).\n\\item[(c)] \\(1000+\\int_{0}^{31} R(t) d t=964.335\\)\nTo the nearest whole number, there are 964 mosquitoes.\n\\item[(d)] \\(R(t)=0\\) when \\(t=0, t=2.5 \\pi\\), or \\(t=7.5 \\pi\\)\n\\(R(t)>0\\) on \\(0<t<2.5 \\pi\\)\n\\(R(t)<0\\) on \\(2.5 \\pi<t<7.5 \\pi\\)\n\\(R(t)>0\\) on \\(7.5 \\pi<t<31\\)\nThe absolute maximum number of mosquitoes occurs at \\(t=2.5 \\pi\\) or at \\(t=31\\).\n\\(1000+\\int_{0}^{2.5 \\pi} R(t) d t=1039.357\\),\nThere are 964 mosquitoes at \\(t=31\\), so the maximum number of mosquitoes is 1039 , to the nearest whole number.\n\\item[1] : shows that \\(R(6)>0\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } R^{\\prime}(6) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{c}2: \\text { absolute maximum value } \\\\ 1: \\text { integral } \\\\ 1: \\text { answer } \\\\ 2: \\text { analysis } \\\\ 1: \\text { computes interior } \\\\ \\text { critical points } \\\\ 1: \\text { completes analysis }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          287,
+          572,
+          483
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          307.584,
+          548.064,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          320.544,
+          528.192,
+          344.736
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          351.35999999999996,
+          367.77599999999995,
+          364.32
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.664,
+          370.08,
+          558.7199999999999,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          383.03999999999996,
+          360.864,
+          395.99999999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.664,
+          401.472,
+          549.5039999999999,
+          414.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          413.856,
+          212.25599999999997,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          65.664,
+          431.99999999999994,
+          537.12,
+          444.38399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          444.38399999999996,
+          252.576,
+          456.768
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ap-calc-ab-2011-frq-05",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "At the beginning of 2010, a landfill contained 1400 tons of solid waste. The increasing function $W$ models the total amount of solid waste stored at the landfill. Planners estimate that $W$ will satisfy the differential equation $frac(d W,d t)= frac(1,25)(W - 300)$ for the next 20 years. $W$ is measured in tons, and $t$ is measured in years from the start of 2010.\n\n(a) Use the line tangent to the graph of $W$ at $t = 0$ to approximate the amount of solid waste that the landfill contains at the end of the first 3 months of 2010 (time $t = frac(1,4)$ ).\n\n(b) Find $frac(d^(2) W,d t^(2))$ in terms of $W$. Use $frac(d^(2) W,d t^(2))$ to determine whether your answer in part (a) is an underestimate or an overestimate of the amount of solid waste that the landfill contains at time $t = frac(1,4)$.\n\n(c) Find the particular solution $W = W(t)$ to the differential equation $frac(d W,d t)= frac(1,25)(W - 300)$ with initial condition $W(0)= 1400$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          64,
+          556,
+          295
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [
+    {
+      "kind": "prompt-recovered-from-scoring-guide",
+      "reviewRequired": true
+    }
+  ],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b1efbf26f7fb7db5d44ef0dedbea7d2be0551bfe4b23501e307c385bef7402e5",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "scoring-guide-repeated-prompt",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-05--scoring-guide/mmd",
+      "reason": "original-prompt-cache-source-pages-mislabeled"
+    }
+  ]
+}

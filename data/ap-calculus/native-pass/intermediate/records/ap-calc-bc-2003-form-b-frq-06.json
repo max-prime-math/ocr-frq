@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-form-b-frq-06",
+  "course": "BC",
+  "year": 2003,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003-FORM-B.pdf",
+      "sha256": "a713639f10f24728383e4c9c11b467168128b498a4c07d63f9d69bb258cd39b6",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003-FORM-B.pdf",
+      "sha256": "bd493081be43f5d7853d52cbbd70fe5484ac2c0d212c498663e5bdf240f8f130"
+    }
+  },
+  "rawPrompt": "The function $f$ has a Taylor series about $x=2$ that converges to $f(x)$ for all $x$ in the interval of convergence.\n\nThe $n$th derivative of $f$ at $x=2$ is given by $f^{(n)}(2)=\\frac{(n+1)!}{3^{n}}$ for $n \\geq 1$, and $f(2)=1$.\\\\\n(a) Write the first four terms and the general term of the Taylor series for $f$ about $x=2$.\\\\\n(b) Find the radius of convergence for the Taylor series for $f$ about $x=2$. Show the work that leads to your answer.\\\\\n(c) Let $g$ be a function satisfying $g(2)=3$ and $g^{\\prime}(x)=f(x)$ for all $x$. Write the first four terms and the general term of the Taylor series for $g$ about $x=2$.\\\\\n(d) Does the Taylor series for $g$ as defined in part (c) converge at $x=-2$ ? Give a reason for your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2003 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nThe function \\(f\\) has a Taylor series about \\(x=2\\) that converges to \\(f(x)\\) for all \\(x\\) in the interval of convergence. The \\(n\\)th derivative of \\(f\\) at \\(x=2\\) is given by \\(f^{(n)}(2)=\\frac{(n+1)!}{3^{n}}\\) for \\(n \\geq 1\\), and \\(f(2)=1\\).\n\\begin{itemize}\n\\item[(a)] Write the first four terms and the general term of the Taylor series for \\(f\\) about \\(x=2\\).\n\\item[(b)] Find the radius of convergence for the Taylor series for \\(f\\) about \\(x=2\\). Show the work that leads to your answer.\n\\item[(c)] Let \\(g\\) be a function satisfying \\(g(2)=3\\) and \\(g^{\\prime}(x)=f(x)\\) for all \\(x\\). Write the first four terms and the general term of the Taylor series for \\(g\\) about \\(x=2\\).\n\\item[(d)] Does the Taylor series for \\(g\\) as defined in part (c) converge at \\(x=-2\\) ? Give a reason for your answer.\n\\item[(a)] \\(f(2)=1 ; f^{\\prime}(2)=\\frac{2!}{3} ; f^{\\prime \\prime}(2)=\\frac{3!}{3^{2}} ; f^{\\prime \\prime \\prime}(2)=\\frac{4!}{3^{3}}\\)\n\\[\n\\begin{gathered}\nf(x)=1+\\frac{2}{3}(x-2)+\\frac{3!}{2!3^{2}}(x-2)^{2}+\\frac{4!}{3!3^{3}}(x-2)^{3}+ \\\\\n+\\cdots+\\frac{(n+1)!}{n!3^{n}}(x-2)^{n}+\\cdots \\\\\n=1+\\frac{2}{3}(x-2)+\\frac{3}{3^{2}}(x-2)^{2}+\\frac{4}{3^{3}}(x-2)^{3}+ \\\\\n+\\cdots+\\frac{n+1}{3^{n}}(x-2)^{n}+\\cdots\n\\end{gathered}\n\\]\n\\item[(b)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{n+2}{3^{n+1}}(x-2)^{n+1}}{\\frac{n+1}{3^{n}}(x-2)^{n}}\\right|=\\lim _{n \\rightarrow \\infty} \\frac{n+2}{n+1} \\cdot \\frac{1}{3}|x-2|\\)\n\\[\n=\\frac{1}{3}|x-2|<1 \\text { when }|x-2|<3\n\\]\nThe radius of convergence is 3 .\n\\item[(c)] \\(\\quad g(2)=3 ; g^{\\prime}(2)=f(2) ; g^{\\prime \\prime}(2)=f^{\\prime}(2) ; g^{\\prime \\prime \\prime}(2)=f^{\\prime \\prime}(2)\\)\n\\[\n\\begin{aligned}\ng(x)=3+(x-2) & +\\frac{1}{3}(x-2)^{2}+\\frac{1}{3^{2}}(x-2)^{3}+ \\\\\n+ & \\cdots+\\frac{1}{3^{n}}(x-2)^{n+1}+\\cdots\n\\end{aligned}\n\\]\n\\end{itemize}\n[ 1 : coefficients \\(\\frac{f^{(n)}(2)}{n!}\\) in first four terms 1 : powers of \\((x-2)\\) in first four terms 1 : general term\n\\(3:\\left\\{\\begin{aligned} 1 & : \\text { sets up ratio } \\\\ 1 & : \\text { limit } \\\\ 1 & : \\text { applies ratio test to } \\\\ & \\text { conclude radius of } \\\\ & \\text { convergence is } 3\\end{aligned}\\right.\\)\n\n2 : \\(\\left\\{\\begin{array}{l}1: \\text { first four terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\n1 : answer with reason\n\\begin{itemize}\n\\item[(d)] No, the Taylor series does not converge at \\(x=-2\\) because the geometric series only converges on the interval \\(|x-2|<3\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          55,
+          572,
+          287
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

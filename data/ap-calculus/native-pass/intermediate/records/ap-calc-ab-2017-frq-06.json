@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2017-frq-06",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(x\\) & \\(g(x)\\) & \\(g^{\\prime}(x)\\) \\\\\n\\hline -5 & 10 & -3 \\\\\n\\hline -4 & 5 & -1 \\\\\n\\hline -3 & 2 & 4 \\\\\n\\hline -2 & 3 & 1 \\\\\n\\hline -1 & 1 & -2 \\\\\n\\hline 0 & 0 & -3 \\\\\n\\hline\n\\end{tabular}\n\\includegraphics{ap-calc-ab-2017-frq-06-diagram-01.png}\nLet \\(f\\) be the function defined by \\(f(x)=\\cos (2 x)+e^{\\sin x}\\).\nLet \\(g\\) be a differentiable function. The table above gives values of \\(g\\) and its derivative \\(g^{\\prime}\\) at selected values\nof \\(x\\).\nLet \\(h\\) be the function whose graph, consisting of five line segments, is shown in the figure above.\n(a) Find the slope of the line tangent to the graph of \\(f\\) at \\(x=\\pi\\).\n(b) Let \\(k\\) be the function defined by \\(k(x)=h(f(x))\\). Find \\(k^{\\prime}(\\pi)\\).\n(c) Let \\(m\\) be the function defined by \\(m(x)=g(-2 x) \\cdot h(x)\\). Find \\(m^{\\prime}(2)\\).\n(d) Is there a number \\(c\\) in the closed interval [-5, -3] such that \\(g^{\\prime}(c)=-4\\) ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2017-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2017-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        262.8240051269531,
+        94.63200378417969,
+        486.552001953125,
+        245.20799255371094
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)] \\(f^{\\prime}(x)=-2 \\sin (2 x)+\\cos x e^{\\sin x}\\)\n\\[\nf^{\\prime}(\\pi)=-2 \\sin (2 \\pi)+\\cos \\pi e^{\\sin \\pi}=-1\n\\]\n\\item[(b)] \\(k^{\\prime}(x)=h^{\\prime}(f(x)) \\cdot f^{\\prime}(x)\\)\n\\[\n\\begin{aligned}\nk^{\\prime}(\\pi) & =h^{\\prime}(f(\\pi)) \\cdot f^{\\prime}(\\pi)=h^{\\prime}(2) \\cdot(-1) \\\\\n& =\\left(-\\frac{1}{3}\\right)(-1)=\\frac{1}{3}\n\\end{aligned}\n\\]\n\\item[(c)] \\(m^{\\prime}(x)=-2 g^{\\prime}(-2 x) \\cdot h(x)+g(-2 x) \\cdot h^{\\prime}(x)\\)\n\\[\n\\begin{aligned}\nm^{\\prime}(2) & =-2 g^{\\prime}(-4) \\cdot h(2)+g(-4) \\cdot h^{\\prime}(2) \\\\\n& =-2(-1)\\left(-\\frac{2}{3}\\right)+5\\left(-\\frac{1}{3}\\right)=-3\n\\end{aligned}\n\\]\n\\item[(d)] \\(g\\) is differentiable. \\(\\Rightarrow g\\) is continuous on the interval \\([-5,-3]\\).\n\\[\n\\frac{g(-3)-g(-5)}{-3-(-5)}=\\frac{2-10}{2}=-4\n\\]\nTherefore, by the Mean Value Theorem, there is at least one value \\(c\\), \\(-5<c<-3\\), such that \\(g^{\\prime}(c)=-4\\).\n\\end{itemize}\n\\(2: f^{\\prime}(\\pi)\\)\n\\(2:\\left\\{\\begin{array}{l}1: k^{\\prime}(x) \\\\ 1: k^{\\prime}(\\pi)\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: m^{\\prime}(x) \\\\ 1: m^{\\prime}(2)\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{aligned} 1: & \\frac{g(-3)-g(-5)}{-3-(-5)} \\\\ 1: \\text { justification }, & \\\\ & \\text { using Mean Value Theorem }\\end{aligned}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          93,
+          570,
+          555.69
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          127.008,
+          115.19999999999999,
+          236.44799999999998,
+          238.46399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 34,
+        "type": "chart",
+        "rect": [
+          265.82399999999996,
+          97.63199999999999,
+          483.55199999999996,
+          242.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          44.928,
+          276.192,
+          313.344,
+          293.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          307.008,
+          534.5279999999999,
+          319.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          322.56,
+          83.52,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          346.75199999999995,
+          490.176,
+          359.712
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 40,
+        "type": "list_item",
+        "rect": [
+          60.48,
+          371.52,
+          342.71999999999997,
+          384.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 41,
+        "type": "list_item",
+        "rect": [
+          60.48,
+          398.88,
+          351.64799999999997,
+          413.28
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 42,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          427.96799999999996,
+          385.91999999999996,
+          441.792
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 43,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          454.176,
+          508.31999999999994,
+          467.99999999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

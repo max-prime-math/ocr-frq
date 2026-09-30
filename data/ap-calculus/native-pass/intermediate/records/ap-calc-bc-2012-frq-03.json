@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2012-frq-03",
+  "course": "BC",
+  "year": 2012,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2012.pdf",
+      "sha256": "79c15419c0fab55ddc4447f853b5476bc79428ee91a1b51a1a4d93224d0a08f8",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2012.pdf",
+      "sha256": "5b10738ec7ca6ffae5b052b280bac5cfd809610f3192fddeeab34d167ecc1139"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2012-frq-03-diagram-01.jpg}\n\\end{center}\nLet $f$ be the continuous function defined on $[-4,3]$ whose graph, consisting of three line segments and a semicircle centered at the origin, is given above. Let $g$ be the function given by $g(x)=\\int_{1}^{x} f(t) d t$.\\\\\n(a) Find the values of $g(2)$ and $g(-2)$.\\\\\n(b) For each of $g^{\\prime}(-3)$ and $g^{\\prime \\prime}(-3)$, find the value or state that it does not exist.\\\\\n(c) Find the $x$-coordinate of each point at which the graph of $g$ has a horizontal tangent line. For each of these points, determine whether $g$ has a relative minimum, relative maximum, or neither a minimum nor a maximum at the point. Justify your answers.\\\\\n(d) For $-4<x<3$, find all values of $x$ for which the graph of $g$ has a point of inflection. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2012-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2012-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2012_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2012 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nLet \\(f\\) be the continuous function defined on [-4, 3] whose graph, consisting of three line segments and a semicircle centered at the origin, is given above. Let \\(g\\) be the function given by \\(g(x)=\\int_{1}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find the values of \\(g(2)\\) and \\(g(-2)\\).\n\\item[(b)] For each of \\(g^{\\prime}(-3)\\) and \\(g^{\\prime \\prime}(-3)\\), find the value or state that it does not exist.\n\\item[(c)] Find the \\(x\\)-coordinate of each point at which the graph of \\(g\\) has a horizontal tangent line. For each of these points, determine whether \\(g\\) has a relative minimum, relative maximum, or neither a minimum nor a maximum at the point. Justify your answers.\n\\item[(d)] For \\(-4<x<3\\), find all values of \\(x\\) for which the graph of \\(g\\) has a point of inflection. Explain your reasoning.\n\\item[(a)] \\(g(2)=\\int_{1}^{2} f(t) d t=-\\frac{1}{2}(1)\\left(\\frac{1}{2}\\right)=-\\frac{1}{4}\\)\n\\[\n\\begin{aligned}\ng(-2) & =\\int_{1}^{-2} f(t) d t=-\\int_{-2}^{1} f(t) d t \\\\\n& =-\\left(\\frac{3}{2}-\\frac{\\pi}{2}\\right)=\\frac{\\pi}{2}-\\frac{3}{2}\n\\end{aligned}\n\\]\n\\item[(b)] \\(g^{\\prime}(x)=f(x) \\Rightarrow g^{\\prime}(-3)=f(-3)=2\\)\n\\[\ng^{\\prime \\prime}(x)=f^{\\prime}(x) \\Rightarrow g^{\\prime \\prime}(-3)=f^{\\prime}(-3)=1\n\\]\n\\item[(c)] The graph of \\(g\\) has a horizontal tangent line where \\(g^{\\prime}(x)=f(x)=0\\). This occurs at \\(x=-1\\) and \\(x=1\\). \\(g^{\\prime}(x)\\) changes sign from positive to negative at \\(x=-1\\). Therefore, \\(g\\) has a relative maximum at \\(x=-1\\). \\(g^{\\prime}(x)\\) does not change sign at \\(x=1\\). Therefore, \\(g\\) has neither a relative maximum nor a relative minimum at \\(x=1\\).\n\\item[(d)] The graph of \\(g\\) has a point of inflection at each of \\(x=-2, x=0\\), and \\(x=1\\) because \\(g^{\\prime \\prime}(x)=f^{\\prime}(x)\\) changes sign at each of these values.\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: g(2) \\\\ 1: g(-2)\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: g^{\\prime}(-3) \\\\ 1: g^{\\prime \\prime}(-3)\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\operatorname{considers} g^{\\prime}(x)=0 \\\\ 1: x=-1 \\text { and } x=1 \\\\ 1: \\text { answers with justifications }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          43,
+          66,
+          565,
+          572
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2012.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

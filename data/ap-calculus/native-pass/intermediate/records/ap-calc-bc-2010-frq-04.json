@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-frq-04",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2010-frq-04-diagram-01.jpg}\n\\end{center}\nLet $R$ be the region in the first quadrant bounded by the graph of $y=2 \\sqrt{x}$, the horizontal line $y=6$, and the $y$-axis, as shown in the figure above.\\\\\n(a) Find the area of $R$.\\\\\n(b) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when $R$ is rotated about the horizontal line $y=7$.\\\\\n(c) Region $R$ is the base of a solid. For each $y$, where $0 \\leq y \\leq 6$, the cross section of the solid taken perpendicular to the $y$-axis is a rectangle whose height is 3 times the length of its base in region $R$. Write, but do not evaluate, an integral expression that gives the volume of the solid.\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2010-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2010-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2010_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "Question 4\n![](https://cdn.mathpix.com/cropped/042224e1-c294-4257-92a1-840c90d6b98f-1.jpg?height=432&width=587&top_left_y=408&top_left_x=756)\nLet \\(R\\) be the region in the first quadrant bounded by the graph of \\(y=2 \\sqrt{x}\\), the horizontal line \\(y=6\\), and the \\(y\\)-axis, as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Write, but do not evaluate, an integral expression that gives the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=7\\).\n\\item[(c)] Region \\(R\\) is the base of a solid. For each \\(y\\), where \\(0 \\leq y \\leq 6\\), the cross section of the solid taken perpendicular to the \\(y\\)-axis is a rectangle whose height is 3 times the length of its base in region \\(R\\). Write, but do not evaluate, an integral expression that gives the volume of the solid.\n\\item[(a)] Area \\(=\\int_{0}^{9}(6-2 \\sqrt{x}) d x=\\left.\\left(6 x-\\frac{4}{3} x^{3 / 2}\\right)\\right|_{x=0} ^{x=9}=18\\)\n\\item[(b)] Volume \\(=\\pi \\int_{0}^{9}\\left((7-2 \\sqrt{x})^{2}-(7-6)^{2}\\right) d x\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { limits and constant }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] Solving \\(y=2 \\sqrt{x}\\) for \\(x\\) yields \\(x=\\frac{y^{2}}{4}\\).\nEach rectangular cross section has area \\(\\left(3 \\frac{y^{2}}{4}\\right)\\left(\\frac{y^{2}}{4}\\right)=\\frac{3}{16} y^{4}\\).\n\\[\n\\text { Volume }=\\int_{0}^{6} \\frac{3}{16} y^{4} d y\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          499
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

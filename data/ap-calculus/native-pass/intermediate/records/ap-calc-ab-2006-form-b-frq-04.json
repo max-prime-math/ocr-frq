@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-04",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-form-b-frq-04-diagram-01.png}\nThe rate, in calories per minute, at which a person using an exercise machine burns calories is modeled by the\nfunction \\(f\\). In the figure above, \\(f(t)=-\\frac{1}{4} t^{3}+\\frac{3}{2} t^{2}+1\\) for \\(0 \\leq t \\leq 4\\) and \\(f\\) is piecewise linear for \\(4 \\leq t \\leq 24\\).\n(a) Find \\(f^{\\prime}(22)\\). Indicate units of measure.\n(b) For the time interval \\(0 \\leq t \\leq 24\\), at what time \\(t\\) is \\(f\\) increasing at its greatest rate? Show the reasoning that\nsupports your answer.\n(c) Find the total number of calories burned over the time interval \\(6 \\leq t \\leq 18\\) minutes.\n(d) The setting on the machine is now changed so that the person burns \\(f(t)+c\\) calories per minute. For this\nsetting, find \\(c\\) so that an average of 15 calories per minute is burned during the time interval \\(6 \\leq t \\leq 18\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        184.48800659179688,
+        193.70399475097656,
+        428.0880126953125,
+        360.6960144042969
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe rate, in calories per minute, at which a person using an exercise machine burns calories is modeled by the function \\(f\\). In the figure above, \\(f(t)=-\\frac{1}{4} t^{3}+\\frac{3}{2} t^{2}+1\\) for \\(0 \\leq t \\leq 4\\) and \\(f\\) is piecewise linear for \\(4 \\leq t \\leq 24\\).\n\\begin{itemize}\n\\item[(a)] Find \\(f^{\\prime}(22)\\). Indicate units of measure.\n\\item[(b)] For the time interval \\(0 \\leq t \\leq 24\\), at what time \\(t\\) is \\(f\\) increasing at its greatest rate? Show the reasoning that supports your answer.\n\\item[(c)] Find the total number of calories burned over the time interval \\(6 \\leq t \\leq 18\\) minutes.\n\\item[(d)] The setting on the machine is now changed so that the person burns \\(f(t)+c\\) calories per minute. For this setting, find \\(c\\) so that an average of 15 calories per minute is burned during the time interval \\(6 \\leq t \\leq 18\\).\n\\item[(a)] \\(f^{\\prime}(22)=\\frac{15-3}{20-24}=-3\\) calories \\(/ \\mathrm{min} / \\mathrm{min}\\)\n\\item[(b)] \\(f\\) is increasing on [0, 4] and on [12, 16].\nOn \\((12,16), f^{\\prime}(t)=\\frac{15-9}{16-12}=\\frac{3}{2}\\) since \\(f\\) has constant slope on this interval.\nOn \\((0,4), f^{\\prime}(t)=-\\frac{3}{4} t^{2}+3 t\\) and\n\\(f^{\\prime \\prime}(t)=-\\frac{3}{2} t+3=0\\) when \\(t=2\\). This is where \\(f^{\\prime}\\) has a maximum on \\([0,4]\\) since \\(f^{\\prime \\prime}>0\\) on \\((0,2)\\) and \\(f^{\\prime \\prime}<0\\) on (2, 4).\nOn [0, 24], \\(f\\) is increasing at its greatest rate when \\(t=2\\) because \\(f^{\\prime}(2)=3>\\frac{3}{2}\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\int_{6}^{18} f(t) d t & =6(9)+\\frac{1}{2}(4)(9+15)+2(15) \\\\\n& =132 \\text { calories }\n\\end{aligned}\n\\]\n\\item[(d)] We want \\(\\frac{1}{12} \\int_{6}^{18}(f(t)+c) d t=15\\).\nThis means \\(132+12 c=15(12)\\). So, \\(c=4\\).\nOR\nCurrently, the average is \\(\\frac{132}{12}=11\\) calories \\(/ \\mathrm{min}\\).\nAdding \\(c\\) to \\(f(t)\\) will shift the average by \\(c\\).\nSo \\(c=4\\) to get an average of 15 calories/min.\n\\item[] \\(1: f^{\\prime}(22)\\) and units\n4 : \\(\\left\\{\\begin{array}{l}1: f^{\\prime} \\text { on }(0,4) \\\\ 1: \\text { shows } f^{\\prime} \\text { has a max at } t=2 \\text { on }(0,4) \\\\ 1: \\text { shows for } 12<t<16, f^{\\prime}(t)<f^{\\prime}(2) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { method } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { setup } \\\\ 1: \\text { value of } c\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          542
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          187.488,
+          196.70399999999998,
+          425.08799999999997,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          369.50399999999996,
+          550.0799999999999,
+          382.464
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          382.464,
+          561.5999999999999,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          415.296,
+          261.216,
+          428.832
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          436.89599999999996,
+          560.736,
+          449.85599999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          451.58399999999995,
+          182.016,
+          463.39199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          469.152,
+          452.448,
+          481.53599999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          488.736,
+          552.096,
+          502.27199999999993
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          503.712,
+          546.9119999999999,
+          517.2479999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

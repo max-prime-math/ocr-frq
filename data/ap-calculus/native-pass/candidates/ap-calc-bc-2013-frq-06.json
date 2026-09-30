@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2013-frq-06",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A function $f$ has derivatives of all orders at $x = 0$. Let $P_(n)(x)$ denote the $n$ th-degree Taylor polynomial for $f$ about $x = 0$.\n\n(a) It is known that $f(0)= - 4$ and that $P_(1)lr((frac(1,2)))= - 3$. Show that $f'(0)= 2$.\n\n(b) It is known that $f''(0)= - frac(2,3)$ and $f'''(0)= frac(1,3)$. Find $P_(3)(x)$.\n\n(c) The function $h$ has first derivative given by $h'(x)= f(2 x)$. It is known that $h(0)= 7$. Find the third-degree Taylor polynomial for $h$ about $x = 0$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          65,
+          577,
+          420
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "681cee17ccf7cf320a29e319005554b81f6d5504c97f4cbca4ed48970d49272c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-frq-06",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function given by \\(f(x)=\\frac{\\ln x}{x}\\) for all \\(x>0\\). The derivative of \\(f\\) is given by \\(f^{\\prime}(x)=\\frac{1-\\ln x}{x^{2}}\\).\n(a) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=e^{2}\\).\n(b) Find the \\(x\\)-coordinate of the critical point of \\(f\\). Determine whether this point is a relative minimum, a relative\nmaximum, or neither for the function \\(f\\). Justify your answer.\n(c) The graph of the function \\(f\\) has exactly one point of inflection. Find the \\(x\\)-coordinate of this point.\n(d) Find \\(\\lim _{x \\rightarrow 0^{+}} f(x)\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nLet \\(f\\) be the function given by \\(f(x)=\\frac{\\ln x}{x}\\) for all \\(x>0\\). The derivative of \\(f\\) is given by \\(f^{\\prime}(x)=\\frac{1-\\ln x}{x^{2}}\\).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=e^{2}\\).\n\\item[(b)] Find the \\(x\\)-coordinate of the critical point of \\(f\\). Determine whether this point is a relative minimum, a relative maximum, or neither for the function \\(f\\). Justify your answer.\n\\item[(c)] The graph of the function \\(f\\) has exactly one point of inflection. Find the \\(x\\)-coordinate of this point.\n\\item[(d)] Find \\(\\lim _{x \\rightarrow 0^{+}} f(x)\\).\n\\item[(a)] \\(f\\left(e^{2}\\right)=\\frac{\\ln e^{2}}{e^{2}}=\\frac{2}{e^{2}}, f^{\\prime}\\left(e^{2}\\right)=\\frac{1-\\ln e^{2}}{\\left(e^{2}\\right)^{2}}=-\\frac{1}{e^{4}}\\) An equation for the tangent line is \\(y=\\frac{2}{e^{2}}-\\frac{1}{e^{4}}\\left(x-e^{2}\\right)\\).\n\\item[(b)] \\(f^{\\prime}(x)=0\\) when \\(x=e\\). The function \\(f\\) has a relative maximum at \\(x=e\\) because \\(f^{\\prime}(x)\\) changes from positive to negative at \\(x=e\\).\n\\item[(c)] \\(f^{\\prime \\prime}(x)=\\frac{-\\frac{1}{x} x^{2}-(1-\\ln x) 2 x}{x^{4}}=\\frac{-3+2 \\ln x}{x^{3}}\\) for all \\(x>0\\) \\(f^{\\prime \\prime}(x)=0\\) when \\(-3+2 \\ln x=0\\) \\(x=e^{3 / 2}\\)\nThe graph of \\(f\\) has a point of inflection at \\(x=e^{3 / 2}\\) because \\(f^{\\prime \\prime}(x)\\) changes sign at \\(x=e^{3 / 2}\\).\n\\item[(d)] \\(\\lim _{x \\rightarrow 0^{+}} \\frac{\\ln x}{x}=-\\infty\\) or Does Not Exist\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f\\left(e^{2}\\right) \\text { and } f^{\\prime}\\left(e^{2}\\right) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: x=e \\\\ 1: \\text { relative maximum } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: f^{\\prime \\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[1] : answer\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          346,
+          572,
+          524
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          368.64,
+          544.608,
+          396.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          405.21599999999995,
+          374.4,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          426.816,
+          565.0559999999999,
+          439.2
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          439.2,
+          350.20799999999997,
+          451.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          457.91999999999996,
+          517.536,
+          470.304
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          475.77599999999995,
+          156.672,
+          497.376
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

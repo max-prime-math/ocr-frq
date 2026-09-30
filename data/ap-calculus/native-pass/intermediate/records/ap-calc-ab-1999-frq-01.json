@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1999-frq-01",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "rawPrompt": "The College Board\nAdvanced Placement Examination\nA particle moves along the \\(y\\)-axis with velocity given by \\(v(t)=t \\sin \\left(t^{2}\\right)\\) for \\(t \\geq 0\\).\n(a) In which direction (up or down) is the particle moving at time \\(t=1.5\\) ? Why?\n(b) Find the acceleration of the particle at time \\(t=1.5\\). Is the velocity of the particle increasing at \\(t=1.5\\) ?\nWhy or why not?\n(c) Given that \\(y(t)\\) is the position of the particle at time \\(t\\) and that \\(y(0)=3\\), find \\(y(2)\\).\n(d) Find the total distance traveled by the particle from \\(t=0\\) to \\(t=2\\).",
+  "assets": [],
+  "rawScoringGuide": "1. A particle moves along the \\(y\\)-axis with velocity given by \\(v(t)=t \\sin \\left(t^{2}\\right)\\) for \\(t \\geq 0\\).\n\\begin{itemize}\n\\item[(a)] In which direction (up or down) is the particle moving at time \\(t=1.5\\) ? Why?\n\\item[(b)] Find the acceleration of the particle at time \\(t=1.5\\). Is the velocity of the particle increasing at \\(t=1.5\\) ? Why or why not?\n\\item[(c)] Given that \\(y(t)\\) is the position of the particle at time \\(t\\) and that \\(y(0)=3\\), find \\(y(2)\\).\n\\item[(d)] Find the total distance traveled by the particle from \\(t=0\\) to \\(t=2\\).\n\\item[(a)] \\(\\quad v(1.5)=1.5 \\sin \\left(1.5^{2}\\right)=1.167\\)\nUp, because \\(v(1.5)>0\\)\n\\item[(b)] \\(a(t)=v^{\\prime}(t)=\\sin t^{2}+2 t^{2} \\cos t^{2}\\)\n\\(a(1.5)=v^{\\prime}(1.5)=-2.048\\) or -2.049\nNo; \\(v\\) is decreasing at 1.5 because \\(v^{\\prime}(1.5)<0\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\ny(t) & =\\int v(t) d t \\\\\n& =\\int t \\sin t^{2} d t=-\\frac{\\cos t^{2}}{2}+C \\\\\ny(0) & =3=-\\frac{1}{2}+C \\Longrightarrow C=\\frac{7}{2} \\\\\ny(t) & =-\\frac{1}{2} \\cos t^{2}+\\frac{7}{2} \\\\\ny(2) & =-\\frac{1}{2} \\cos 4+\\frac{7}{2}=3.826 \\text { or } 3.827\n\\end{aligned}\n\\]\n\\item[(d)] distance \\(=\\int_{0}^{2}|v(t)| d t=1.173\\)\nor\n\\[\n\\begin{aligned}\n& v(t)=t \\sin t^{2}=0 \\\\\n& t=0 \\text { or } t=\\sqrt{\\pi} \\approx 1.772 \\\\\n& y(0)=3 ; \\quad y(\\sqrt{\\pi})=4 ; \\quad y(2)=3.826 \\text { or } 3.827 \\\\\n& {[y(\\sqrt{\\pi})-y(0)]+[y(\\sqrt{\\pi})-y(2)]} \\\\\n& \\quad=1.173 \\text { or } 1.174\n\\end{aligned}\n\\]\n\\end{itemize}\n\n1: answer and reason\n\\(2\\left\\{\\begin{array}{l}1: a(1.5) \\\\ 1: \\text { conclusion and reason }\\end{array}\\right.\\)\n\\(3\\left\\{\\begin{array}{l}1: y(t)=\\int v(t) d t \\\\ 1: y(t)=-\\frac{1}{2} \\cos t^{2}+C \\\\ 1: y(2)\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[3] \\(\\left\\{\\begin{array}{l}\\text { 1: limits of } 0 \\text { and } 2 \\text { on an integral of } \\\\ v(t) \\text { or }|v(t)| \\\\ \\text { or } \\\\ \\text { uses } y(0) \\text { and } y(2) \\text { to compute distance } \\\\ \\text { 1: handles change of direction at student's } \\\\ \\text { turning point } \\\\ \\text { 1: answer } \\\\ 0 / 1 \\text { if incorrect turning point }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          40,
+          572,
+          696
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          262.656,
+          65.088,
+          349.344,
+          78.04799999999999
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          228.67199999999997,
+          84.09599999999999,
+          383.03999999999996,
+          95.904
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          260.64,
+          435.16799999999995,
+          276.192
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          288.0,
+          429.984,
+          301.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          64.512,
+          314.20799999999997,
+          542.88,
+          327.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          84.672,
+          327.16799999999995,
+          164.16,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          351.936,
+          456.19199999999995,
+          364.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          377.856,
+          383.904,
+          391.67999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

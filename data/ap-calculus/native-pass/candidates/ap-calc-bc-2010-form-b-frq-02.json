@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2010-form-b-frq-02",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The velocity vector of a particle moving in the $x y$-plane has components given by\n\n$ frac(d x,d t)= 14 cos lr((t^(2))) sin lr((e^(t))) \" and \" frac(d y,d t)= 1 + 2 sin lr((t^(2)))\\, \" for \" 0 <= t <= 1.5 . $\n\nAt time $t = 0$, the position of the particle is $(- 2 \\,3)$.\n\n(a) For $0 < t < 1.5$, find all values of $t$ at which the line tangent to the path of the particle is vertical.\n\n(b) Write an equation for the line tangent to the path of the particle at $t = 1$.\n\n(c) Find the speed of the particle at $t = 1$.\n\n(d) Find the acceleration vector of the particle at $t = 1$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          64,
+          521,
+          220
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a707bd1afbfe17d0fc1842fb572ec2de495ce87f828869b15f2fc94cba39b618",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    },
+    {
+      "type": "reviewed-source-text-correction",
+      "replaced": "\n\n\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|c|c|}\n\\hline\n$t$ & 0 & 2 & 4 & 6 & 8 & 10 & 12 \\\\\n\\hline\n$P(t)$ & 0 & 46 & 53 & 57 & 60 & 62 & 63 \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+      "with": ""
+    }
+  ]
+}

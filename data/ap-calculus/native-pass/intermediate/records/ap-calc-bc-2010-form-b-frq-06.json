@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-form-b-frq-06",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for the function $f$ is given by $f(x)=\\sum_{n=2}^{\\infty} \\frac{(-1)^{n}(2 x)^{n}}{n-1}$ on its interval of convergence.\\\\\n(a) Find the interval of convergence for the Maclaurin series of $f$. Justify your answer.\\\\\n(b) Show that $y=f(x)$ is a solution to the differential equation $x y^{\\prime}-y=\\frac{4 x^{2}}{1+2 x}$ for $|x|<R$, where $R$ is the radius of convergence from part (a).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nThe Maclaurin series for the function \\(f\\) is given by \\(f(x)=\\sum_{n=2}^{\\infty} \\frac{(-1)^{n}(2 x)^{n}}{n-1}\\) on its interval of convergence.\n\\begin{itemize}\n\\item[(a)] Find the interval of convergence for the Maclaurin series of \\(f\\). Justify your answer.\n\\item[(b)] Show that \\(y=f(x)\\) is a solution to the differential equation \\(x y^{\\prime}-y=\\frac{4 x^{2}}{1+2 x}\\) for \\(|x|<R\\), where \\(R\\) is the radius of convergence from part (a).\n\\item[(a)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(2 x)^{n+1}}{(n+1)-1}}{\\frac{(2 x)^{n}}{n-1}}\\right|=\\lim _{n \\rightarrow \\infty}\\left|2 x \\cdot \\frac{n-1}{n}\\right|=\\lim _{n \\rightarrow \\infty}\\left|2 x \\cdot \\frac{n-1}{n}\\right|=|2 x|\\)\n\\(|2 x|<1\\) for \\(|x|<\\frac{1}{2}\\)\nTherefore the radius of convergence is \\(\\frac{1}{2}\\).\nWhen \\(x=-\\frac{1}{2}\\), the series is \\(\\sum_{n=2}^{\\infty} \\frac{(-1)^{n}(-1)^{n}}{n-1}=\\sum_{n=2}^{\\infty} \\frac{1}{n-1}\\).\nThis is the harmonic series, which diverges.\nWhen \\(x=\\frac{1}{2}\\), the series is \\(\\sum_{n=2}^{\\infty} \\frac{(-1)^{n} 1^{n}}{n-1}=\\sum_{n=2}^{\\infty} \\frac{(-1)^{n}}{n-1}\\).\nThis is the alternating harmonic series, which converges.\nThe interval of convergence for the Maclaurin series of \\(f\\) is \\(\\left(-\\frac{1}{2}, \\frac{1}{2}\\right]\\).\n\\item[(b)] \\(y=\\frac{(2 x)^{2}}{1}-\\frac{(2 x)^{3}}{2}+\\frac{(2 x)^{4}}{3}-\\cdots+\\frac{(-1)^{n}(2 x)^{n}}{n-1}+\\cdots\\)\n\\[\n\\begin{aligned}\n& \\quad=4 x^{2}-4 x^{3}+\\frac{16}{3} x^{4}-\\cdots+\\frac{(-1)^{n}(2 x)^{n}}{n-1}+\\cdots \\\\\n& y^{\\prime}=8 x-12 x^{2}+\\frac{64}{3} x^{3}-\\cdots+\\frac{(-1)^{n} n(2 x)^{n-1} \\cdot 2}{n-1}+\\cdots \\\\\n& x y^{\\prime}=8 x^{2}-12 x^{3}+\\frac{64}{3} x^{4}-\\cdots+\\frac{(-1)^{n} n(2 x)^{n}}{n-1}+\\cdots \\\\\n& x y^{\\prime}-y=4 x^{2}-8 x^{3}+16 x^{4}-\\cdots+(-1)^{n}(2 x)^{n}+\\cdots \\\\\n& \\quad=4 x^{2}\\left(1-2 x+4 x^{2}-\\cdots+(-1)^{n}(2 x)^{n-2}+\\cdots\\right)\n\\end{aligned}\n\\]\nThe series \\(1-2 x+4 x^{2}-\\cdots+(-1)^{n}(2 x)^{n-2}+\\cdots=\\sum_{n=0}^{\\infty}(-2 x)^{n}\\) is a geometric series that converges to \\(\\frac{1}{1+2 x}\\) for \\(|x|<\\frac{1}{2}\\). Therefore \\(x y^{\\prime}-y=4 x^{2} \\cdot \\frac{1}{1+2 x}\\) for \\(|x|<\\frac{1}{2}\\).\n\\item[] \\(5:\\left\\{\\begin{array}{l}1: \\text { sets up ratio } \\\\ 1: \\text { limit evaluation } \\\\ 1: \\text { radius of convergence } \\\\ 1: \\text { considers both endpoints } \\\\ 1: \\text { analysis and interval of } \\\\ \\quad \\text { convergence }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { series for } y^{\\prime} \\\\ 1: \\text { series for } x y^{\\prime} \\\\ 1: \\text { series for } x y^{\\prime}-y \\\\ 1: \\text { analysis with geometric series }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          187,
+          572,
+          389
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2018-frq-06",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{1}{3} x(y-2)^{2}\\).\n(a) A slope field for the given differential equation is shown below. Sketch the solution curve that passes\nthrough the point (0, 2), and sketch the solution curve that passes through the point (1, 0).\n\\includegraphics{ap-calc-ab-2018-frq-06-diagram-01.png}\n(b) Let \\(y=f(x)\\) be the particular solution to the given differential equation with initial condition \\(f(1)=0\\).\nWrite an equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=1\\). Use your equation to\napproximate \\(f(0.7)\\).\n(c) Find the particular solution \\(y=f(x)\\) to the given differential equation with initial condition \\(f(1)=0\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2018-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2018-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        214.72799682617188,
+        163.46400451660156,
+        429.8160095214844,
+        378.552001953125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/7f8bae0a-c35d-41ec-8eef-b6a0481c6432-1.jpg?height=726&width=738&top_left_y=495&top_left_x=283)\n\\item[(b)] \\(\\left.\\frac{d y}{d x}\\right|_{(x, y)=(1,0)}=\\frac{4}{3}\\)\nAn equation for the line tangent to the graph of \\(y=f(x)\\) at \\(x=1\\) is \\(y=\\frac{4}{3}(x-1)\\).\n\\[\nf(0.7) \\approx \\frac{4}{3}(0.7-1)=-0.4\n\\]\n\\item[(c)] \\(\\frac{d y}{d x}=\\frac{1}{3} x(y-2)^{2}\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{d y}{(y-2)^{2}}=\\int \\frac{1}{3} x d x \\\\\n& \\frac{-1}{y-2}=\\frac{1}{6} x^{2}+C \\\\\n& \\frac{1}{2}=\\frac{1}{6}+C \\Rightarrow C=\\frac{1}{3} \\\\\n& \\frac{-1}{y-2}=\\frac{1}{6} x^{2}+\\frac{1}{3}=\\frac{x^{2}+2}{6} \\\\\n& y=2-\\frac{6}{x^{2}+2}\n\\end{aligned}\n\\]\nNote: this solution is valid for \\(-\\infty<x<\\infty\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { solution curve through }(0,2) \\\\ 1: \\text { solution curve through }(1,0)\\end{array}\\right.\\)\nCurves must go through the indicated points, follow the given slope lines, and extend to the boundary of the slope field.\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { equation of tangent line } \\\\ 1: \\text { approximation }\\end{array}\\right.\\)\n\\item[5] : \\(\\left\\{\\begin{array}{l}1 \\text { : separation of variables } \\\\ 2 \\text { : antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ \\text { and uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: \\(0 / 5\\) if no separation of variables\n\nNote: max \\(3 / 5[1-2-0-0]\\) if no constant of integration",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          79,
+          570,
+          568.69
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          44.63999999999999,
+          82.94399999999999,
+          299.52,
+          110.30399999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          123.83999999999999,
+          525.312,
+          137.37599999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          79.19999999999999,
+          139.968,
+          476.352,
+          153.504
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "chart",
+        "rect": [
+          217.72799999999998,
+          166.464,
+          426.816,
+          375.55199999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          407.808,
+          537.12,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          79.776,
+          423.35999999999996,
+          491.328,
+          436.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          79.776,
+          439.2,
+          170.784,
+          452.736
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          466.55999999999995,
+          528.4799999999999,
+          480.09599999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

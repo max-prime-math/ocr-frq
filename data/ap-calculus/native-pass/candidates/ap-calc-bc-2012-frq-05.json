@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2012-frq-05",
+  "course": "BC",
+  "year": 2012,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2012.pdf",
+      "sha256": "79c15419c0fab55ddc4447f853b5476bc79428ee91a1b51a1a4d93224d0a08f8",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2012.pdf",
+      "sha256": "5b10738ec7ca6ffae5b052b280bac5cfd809610f3192fddeeab34d167ecc1139"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The rate at which a baby bird gains weight is proportional to the difference between its adult weight and its current weight. At time $t = 0$, when the bird is first weighed, its weight is 20 grams. If $B(t)$ is the weight of the bird, in grams, at time $t$ days after it is first weighed, then $ frac(d B,d t)= frac(1,5)(100 - B) . $\n\nLet $y = B(t)$ be the solution to the differential equation above with initial condition $B(0)= 20$.\n\n(a) Is the bird gaining weight faster when it weighs 40 grams or when it weighs 70 grams? Explain your reasoning.\n\n(b) Find $frac(d^(2) B,d t^(2))$ in terms of $B$. Use $frac(d^(2) B,d t^(2))$ to explain why the graph of $B$ cannot resemble the following graph.\n\n#image(\"/imgs/ap-calc-bc-2012-frq-05-diagram-01.jpg\", width: 65%)\n\n(c) Use separation of variables to find $y = B(t)$, the particular solution to the differential equation with initial condition $B(0)= 20$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2012-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2012-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2012_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          43,
+          64,
+          566,
+          503
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "878ceca62c4365938ebc5607793104c70c00631b668f2cb210e57c87f6206d7e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2012.zip"
+    }
+  ]
+}

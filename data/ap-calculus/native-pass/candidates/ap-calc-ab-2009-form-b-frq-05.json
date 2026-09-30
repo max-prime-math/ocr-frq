@@ -1,0 +1,188 @@
+{
+  "id": "ap-calc-ab-2009-form-b-frq-05",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2009-form-b-frq-05-diagram-01.png\", width: 65%)\n\nLet $f$ be a twice-differentiable function defined on the interval $- 1.2 < x < 3.2$ with $f(1)= 2$. The graph of $f'$, the derivative of $f$, is shown above. The graph of $f'$ crosses the $x$-axis at $x = - 1$ and $x = 3$ and has a horizontal tangent at $x = 2$. Let $g$ be the function given by $g(x)= e^(f(x))$.\n\n(a) Write an equation for the line tangent to the graph of $g$ at $x = 1$.\n\n(b) For $- 1.2 < x < 3.2$, find all values of $x$ at which $g$ has a local maximum. Justify your answer.\n\n(c) The second derivative of $g$ is $g''(x)= e^(f(x))lr(\\[lr((f'(x)))^(2)+ f''(x)\\])$. Is $g''(- 1)$ positive, negative, or zero? Justify your answer.\n\n(d) Find the average rate of change of $g'$, the derivative of $g$, over the interval \\[1, 3\\].",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.67999267578125,
+        67.55999755859375,
+        402.7439880371094,
+        185.01600646972656
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          415
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          211.67999999999998,
+          70.55999999999999,
+          399.74399999999997,
+          182.016
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          211.67999999999998,
+          561.8879999999999,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          228.384,
+          512.928,
+          241.344
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          243.64799999999997,
+          399.74399999999997,
+          260.928
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          268.416,
+          371.23199999999997,
+          281.376
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          287.13599999999997,
+          507.45599999999996,
+          300.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          307.008,
+          542.016,
+          328.032
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.368,
+          330.33599999999996,
+          173.37599999999998,
+          343.296
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          349.056,
+          444.38399999999996,
+          364.032
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "dfba6ffa592ab4b14e004ad1336db9db0a1cf7c51447f892eae711fec24b9e4f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-form-b-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

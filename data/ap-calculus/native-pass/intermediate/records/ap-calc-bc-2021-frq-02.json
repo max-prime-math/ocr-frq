@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2021-frq-02",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "rawPrompt": "For time \\(t \\geq 0\\), a particle moves in the \\(x y\\)-plane with position \\((x(t), y(t))\\) and velocity vector\n\\(\\left\\langle(t-1) e^{t^{2}}, \\sin \\left(t^{1.25}\\right)\\right\\rangle\\). At time \\(t=0\\), the position of the particle is (-2, 5).\n(a) Find the speed of the particle at time \\(t=1.2\\). Find the acceleration vector of the particle at time \\(t=1.2\\).\n(b) Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 1.2\\).\n(c) Find the coordinates of the point at which the particle is farthest to the left for \\(t \\geq 0\\). Explain why there is\nno point at which the particle is farthest to the right for \\(t \\geq 0\\).\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "Part A (BC): Graphing calculator required\nQuestion 2 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\nFor time \\(t \\geq 0\\), a particle moves in the \\(x y\\)-plane with position \\((x(t), y(t))\\) and velocity vector \\(\\left\\langle(t-1) e^{t^{2}}, \\sin \\left(t^{1.25}\\right)\\right\\rangle\\). At time \\(t=0\\), the position of the particle is \\((-2,5)\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline Model Solution & Scoring \\\\\n\\hline \\multicolumn{2}{|c|}{Find the speed of the particle at time \\(t=1.2\\). Find the acceleration vector of the particle at time \\(t=1.2\\).} \\\\\n\\hline \\begin{tabular}[t]{l}\n\\[\n\\sqrt{\\left(x^{\\prime}(1.2)\\right)^{2}+\\left(y^{\\prime}(1.2)\\right)^{2}}=1.271488\n\\] \\\\\nAt time \\(t=1.2\\), the speed of the particle is 1.271.\n\\end{tabular} & Speed 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\[\n\\left\\langle x^{\\prime \\prime}(1.2), y^{\\prime \\prime}(1.2)\\right\\rangle=\\langle 6.246630,0.405125\\rangle\n\\] \\\\\nAt time \\(t=1.2\\), the acceleration vector of the particle is \\(\\langle 6.247\\) (or 6.246), 0.405〉.\n\\end{tabular} & Acceleration vector 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] Unsupported answers do not earn any points in this part.\n\\item[-] The acceleration vector may be presented with other symbols, for example ( , ) or [ , ], or the coordinates may be listed separately, as long as they are labeled.\n\\item[-] Degree mode: A response that presents answers obtained by using a calculator in degree mode does not earn the first point it would have otherwise earned. The response is generally eligible for all subsequent points (unless no answer is possible in degree mode or the question is made simpler by using degree mode). In degree mode, speed \\(=0.844\\) and \\(y^{\\prime \\prime}(1.2)=0.023\\) (or 0.022 ).\n\\end{itemize}\n\nTotal for part (a) 2 points\n\\begin{itemize}\n\\item[(b)] Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 1.2\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(\\int_{0}^{1.2} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}} d t=1.009817\\) & Integrand & 1 point \\\\\n\\hline The total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 1.2\\) is 1.010 (or 1.009). & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned by presenting the integrand \\(\\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}}\\) in a definite integral with any limits. A definite integral with incorrect limits is not eligible for the second point.\n\\item[-] Once earned, the first point cannot be lost. Even in the presence of subsequent copy errors, the correct answer will earn the second point.\n\\item[-] If the first point is not earned because of a copy error, the second point is still earned for a correct answer.\n\\item[-] Unsupported answers will not earn either point.\n\\item[-] Degree mode: distance = 0.677 (or 0.676). (See degree mode statement in part (a).)\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (b) 2 points\n\\begin{itemize}\n\\item[(c)] Find the coordinates of the point at which the particle is farthest to the left for \\(t \\geq 0\\). Explain why there is no point at which the particle is farthest to the right for \\(t \\geq 0\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(x^{\\prime}(t)=(t-1) e^{t^{2}}=0 \\Rightarrow t=1\\) & Sets \\(x^{\\prime}(t)=0\\) & 1 point \\\\\n\\hline Because \\(x^{\\prime}(t)<0\\) for \\(0<t<1\\) and \\(x^{\\prime}(t)>0\\) for \\(t>1\\), the particle is farthest to the left at time \\(t=1\\). & Explains leftmost position at \\(t=1\\) & 1 point \\\\\n\\hline \\[\n\\begin{aligned}\n& x(1)=-2+\\int_{0}^{1} x^{\\prime}(t) d t=-2.603511 \\\\\n& y(1)=5+\\int_{0}^{1} y^{\\prime}(t) d t=5.410486\n\\end{aligned}\n\\] & One coordinate of leftmost position & 1 point \\\\\n\\hline The particle is farthest to the left at point (-2.604 (or -2.603), 5.410). & Leftmost position & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\nBecause \\(x^{\\prime}(t)>0\\) for \\(t>1\\), the particle moves to the right for \\(t>1\\). \\\\\nAlso, \\(x(2)=-2+\\int_{0}^{2} x^{\\prime}(t) d t>-2=x(0)\\), so the particle's motion extends to the right of its initial position after time \\(t=1\\). Therefore, there is no point at which the particle is farthest to the right.\n\\end{tabular} & Explanation & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The second point is earned for presenting a valid reason why the particle is at its leftmost position at time \\(t=1\\). For example, a response could present the argument shown in the model solution, or it could indicate that the only critical point of \\(x(t)\\) occurs at \\(t=1\\) and \\(x^{\\prime}(t)\\) changes from negative to positive at this time.\n\\begin{itemize}\n\\item[-] Unsupported positions \\(x(1)\\) and/or \\(y(1)\\) do not earn the third (or fourth) point(s).\n\\item[-] Writing \\(x(1)=\\int_{0}^{1} x^{\\prime}(t)-2=-2.603511\\) does not earn the third (or fourth) point, because the missing \\(d t\\) makes this statement unclear or false. However, \\(x(1)=-2+\\int_{0}^{1} x^{\\prime}(t)=-2.603511\\) does earn the third point, because it is not ambiguous. Similarly, for \\(y(1)\\).\n\\item[-] For the fourth point the coordinates of the leftmost point do not have to be written as an ordered pair as long as they are labeled as the \\(x\\) - and \\(y\\)-coordinates.\n\\item[-] To earn the last point a response must verify that the particle moves to the right of its initial position (as well as moves to the right for all \\(t>1\\) ). Note that there are several ways to demonstrate this.\n\\item[-] Degree mode: \\(y\\)-coordinate \\(=5.008\\) (or 5.007). (See degree mode statement in part (a).)\n\\end{itemize}\n\\end{itemize}\n\n\\begin{tabular}[t]{|l|l|}\n\\hline Total for part (c) & 5 points \\\\\n\\hline Total for question 2 & 9 points \\\\\n\\hline\n\\end{tabular}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          45,
+          82,
+          554,
+          304
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          48.948133785748915,
+          86.67187499999999,
+          475.66068831798356,
+          99.91741071428571
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          107.69196428571428,
+          408.8608822103733,
+          135.046875
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.64808531265149,
+          146.56473214285714,
+          541.3087736306351,
+          159.81026785714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.64808531265149,
+          173.34374999999997,
+          439.3814832767814,
+          186.01339285714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.64808531265149,
+          199.83482142857142,
+          548.7949587978673,
+          212.50446428571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          83.49975763451285,
+          213.94419642857142,
+          354.15414444983037,
+          226.61383928571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          266.9263392857143,
+          522.0174503150752,
+          280.171875
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          285.93080357142856,
+          473.6451769268057,
+          298.6004464285714
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-02",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

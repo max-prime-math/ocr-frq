@@ -1,0 +1,24 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-2010-form-b-frq-01-bc-2010-form-b_fig1.jpg\", width: 60%)\n\nIn the figure, $R$ is bounded by $y = 4 ln(3 - x)$, $y = 6$, and $x = 2$.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about $y = 8$.\n\n(c) $R$ is the base of a solid with square cross sections perpendicular to the $x$-axis. Find its volume.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2010-form-b-frq-01",
+    "images": [
+      "ap-calc-bc-2010-form-b-frq-01-bc-2010-form-b_fig1.jpg"
+    ],
+    "points": 8,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-12",
+    "solution": "(a)\n$ A = integral_0^2 (6 - 4 ln(3 - x)) dif x approx 6.817. $\n\n(b) The outer radius is $8 - 4 ln(3 - x)$ and the inner radius is $2$. Thus\n$ V = pi integral_0^2 ((8 - 4 ln(3 - x))^2 - 2^2) dif x approx 168.180. $\n\n(c) A square cross section has side length $6 - 4 ln(3 - x)$, so\n$ V = integral_0^2 (6 - 4 ln(3 - x))^2 dif x approx 26.267. $",
+    "tags": [
+      "2010",
+      "Form B",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

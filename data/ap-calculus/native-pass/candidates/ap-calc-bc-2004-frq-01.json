@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2004-frq-01",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Traffic flow is defined as the rate at which cars pass through an intersection, measured in cars per minute. The traffic flow at a particular intersection is modeled by the function $F$ defined by $ F(t)= 82 + 4 sin lr((frac(t,2))) \" for \" 0 <= t <= 30 $\n\nwhere $F(t)$ is measured in cars per minute and $t$ is measured in minutes.\n\n(a) To the nearest whole number, how many cars pass through the intersection over the 30 -minute period?\n\n(b) Is the traffic flow increasing or decreasing at $t = 7$ ? Give a reason for your answer.\n\n(c) What is the average value of the traffic flow over the time interval $10 <= t <= 15$ ? Indicate units of measure.\n\n(d) What is the average rate of change of the traffic flow over the time interval $10 <= t <= 15$ ? Indicate units of measure.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          402
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7e384c3d4c64b631017fb90d6c9fe87b8fe45809f1f54e1668726f61432cc147",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-ab-2003-frq-03-diagram-01.png\", width: 65%)\n\n#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (minutes)], [$R(t)$ (gallons per minute)], table.hline(stroke: .5pt), [0], [20], table.hline(stroke: .5pt), [30], [30], table.hline(stroke: .5pt), [40], [40], table.hline(stroke: .5pt), [50], [55], table.hline(stroke: .5pt), [70], [65], table.hline(stroke: .5pt), [90], [70], table.hline(stroke: .5pt));\n\nThe rate of fuel consumption, in gallons per minute, recorded during an airplane flight is given by a twice- differentiable and strictly increasing function $R$ of time $t$. The graph of $R$ and a table of selected values of $R(t)$, for the time interval $0 <= t <= 90$ minutes, are shown above.\n\n(a) Use data from the table to find an approximation for $R'(45)$. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) The rate of fuel consumption is increasing fastest at time $t = 45$ minutes. What is the value of $R''(45)$ ? Explain your reasoning.\n\n(c) Approximate the value of $integral_(0)^(90) R(t) d t$ using a left Riemann sum with the five subintervals indicated by the data in the table. Is this numerical approximation less than the value of $integral_(0)^(90) R(t) d t$ ? Explain your reasoning.\n\n(d) For $0 < b <= 90$ minutes, explain the meaning of $integral_(0)^(b) R(t) d t$ in terms of fuel consumption for the plane. Explain the meaning of $frac(1,b) integral_(0)^(b) R(t) d t$ in terms of fuel consumption for the plane. Indicate units of measure in both answers.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2003-frq-03",
+    "images": [
+      "ap-calc-ab-2003-frq-03-diagram-01.png"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-3",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2003",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

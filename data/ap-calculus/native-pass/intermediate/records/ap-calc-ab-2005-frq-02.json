@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-frq-02",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "rawPrompt": "The tide removes sand from Sandy Point Beach at a rate modeled by the function \\(R\\), given by\n\\[\nR(t)=2+5 \\sin \\left(\\frac{4 \\pi t}{25}\\right)\n\\]\nA pumping station adds sand to the beach at a rate modeled by the function \\(S\\), given by\n\\[\nS(t)=\\frac{15 t}{1+3 t} .\n\\]\nBoth \\(R(t)\\) and \\(S(t)\\) have units of cubic yards per hour and \\(t\\) is measured in hours for \\(0 \\leq t \\leq 6\\). At time \\(t=0\\),\nthe beach contains 2500 cubic yards of sand.\n(a) How much sand will the tide remove from the beach during this 6-hour period? Indicate units of measure.\n(b) Write an expression for \\(Y(t)\\), the total number of cubic yards of sand on the beach at time \\(t\\).\n(c) Find the rate at which the total amount of sand on the beach is changing at time \\(t=4\\).\n(d) For \\(0 \\leq t \\leq 6\\), at what time \\(t\\) is the amount of sand on the beach a minimum? What is the minimum value?\nJustify your answers.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe tide removes sand from Sandy Point Beach at a rate modeled by the function \\(R\\), given by\n\\[\nR(t)=2+5 \\sin \\left(\\frac{4 \\pi t}{25}\\right)\n\\]\nA pumping station adds sand to the beach at a rate modeled by the function \\(S\\), given by\n\\[\nS(t)=\\frac{15 t}{1+3 t} .\n\\]\nBoth \\(R(t)\\) and \\(S(t)\\) have units of cubic yards per hour and \\(t\\) is measured in hours for \\(0 \\leq t \\leq 6\\). At time \\(t=0\\), the beach contains 2500 cubic yards of sand.\n\\begin{itemize}\n\\item[(a)] How much sand will the tide remove from the beach during this 6-hour period? Indicate units of measure.\n\\item[(b)] Write an expression for \\(Y(t)\\), the total number of cubic yards of sand on the beach at time \\(t\\).\n\\item[(c)] Find the rate at which the total amount of sand on the beach is changing at time \\(t=4\\).\n\\item[(d)] For \\(0 \\leq t \\leq 6\\), at what time \\(t\\) is the amount of sand on the beach a minimum? What is the minimum value? Justify your answers.\n\\item[(a)] \\(\\int_{0}^{6} R(t) d t=31.815\\) or \\(31.816 \\mathrm{yd}^{3}\\)\n\\item[(b)] \\(Y(t)=2500+\\int_{0}^{t}(S(x)-R(x)) d x\\)\n\\item[(c)] \\(Y^{\\prime}(t)=S(t)-R(t)\\)\n\\[\nY^{\\prime}(4)=S(4)-R(4)=-1.908 \\text { or }-1.909 \\mathrm{yd}^{3} / \\mathrm{hr}\n\\]\n\\item[(d)] \\(Y^{\\prime}(t)=0\\) when \\(S(t)-R(t)=0\\).\nThe only value in \\([0,6]\\) to satisfy \\(S(t)=R(t)\\) is \\(a=5.117865\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & \\(Y(t)\\) \\\\\n\\hline 0 & 2500 \\\\\n\\hline \\(a\\) & 2492.3694 \\\\\n\\hline 6 & 2493.2766 \\\\\n\\hline\n\\end{tabular}\nThe amount of sand is a minimum when \\(t=5.117\\) or 5.118 hours. The minimum value is 2492.369 cubic yards.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { sets } Y^{\\prime}(t)=0 \\\\ 1: \\text { critical } t \\text {-value } \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          53,
+          572,
+          393
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          58.175999999999995,
+          480.09599999999995,
+          71.136
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "math",
+        "rect": [
+          253.72799999999998,
+          75.45599999999999,
+          357.69599999999997,
+          103.392
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          110.01599999999999,
+          452.15999999999997,
+          123.55199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "math",
+        "rect": [
+          272.736,
+          129.31199999999998,
+          338.976,
+          154.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          162.14399999999998,
+          562.4639999999999,
+          175.67999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          176.832,
+          262.94399999999996,
+          190.368
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          195.552,
+          550.944,
+          209.088
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          214.84799999999998,
+          492.768,
+          228.384
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          236.44799999999998,
+          465.40799999999996,
+          249.408
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          254.87999999999997,
+          560.736,
+          267.84
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          269.28,
+          178.272,
+          282.23999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

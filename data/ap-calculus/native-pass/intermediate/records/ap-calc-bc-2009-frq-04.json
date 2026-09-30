@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-frq-04",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=6 x^{2}-x^{2} y$. Let $y=f(x)$ be a particular solution to this differential equation with the initial condition $f(-1)=2$.\\\\\n(a) Use Euler's method with two steps of equal size, starting at $x=-1$, to approximate $f(0)$. Show the work that leads to your answer.\\\\\n(b) At the point $(-1,2)$, the value of $\\frac{d^{2} y}{d x^{2}}$ is -12 . Find the second-degree Taylor polynomial for $f$ about $x=-1$.\\\\\n(c) Find the particular solution $y=f(x)$ to the given differential equation with the initial condition $f(-1)=2$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES}\n\nQuestion 4\n\nConsider the differential equation \\(\\frac{d y}{d x}=6 x^{2}-x^{2} y\\). Let \\(y=f(x)\\) be a particular solution to this differential equation with the initial condition \\(f(-1)=2\\).\n\\begin{itemize}\n\\item[(a)] Use Euler's method with two steps of equal size, starting at \\(x=-1\\), to approximate \\(f(0)\\). Show the work that leads to your answer.\n\\item[(b)] At the point \\((-1,2)\\), the value of \\(\\frac{d^{2} y}{d x^{2}}\\) is -12. Find the second-degree Taylor polynomial for \\(f\\) about \\(x=-1\\).\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(-1)=2\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\nf\\left(-\\frac{1}{2}\\right) & \\approx f(-1)+\\left(\\left.\\frac{d y}{d x}\\right|_{(-1,2)}\\right) \\cdot \\Delta x \\\\\n& =2+4 \\cdot \\frac{1}{2}=4\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nf(0) & \\approx f\\left(-\\frac{1}{2}\\right)+\\left(\\left.\\frac{d y}{d x}\\right|_{\\left(-\\frac{1}{2}, 4\\right)}\\right) \\cdot \\Delta x \\\\\n& \\approx 4+\\frac{1}{2} \\cdot \\frac{1}{2}=\\frac{17}{4}\n\\end{aligned}\n\\]\n\\item[(b)] \\(P_{2}(x)=2+4(x+1)-6(x+1)^{2}\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{d y}{d x}=x^{2}(6-y) \\\\\n& \\int \\frac{1}{6-y} d y=\\int x^{2} d x \\\\\n& -\\ln |6-y|=\\frac{1}{3} x^{3}+C \\\\\n& -\\ln 4=-\\frac{1}{3}+C \\\\\n& C=\\frac{1}{3}-\\ln 4 \\\\\n& \\ln |6-y|=-\\frac{1}{3} x^{3}-\\left(\\frac{1}{3}-\\ln 4\\right) \\\\\n& |6-y|=4 e^{-\\frac{1}{3}\\left(x^{3}+1\\right)} \\\\\n& y=6-4 e^{-\\frac{1}{3}\\left(x^{3}+1\\right)}\n\\end{aligned}\n\\]\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : Euler's method with two steps } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(6:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 2: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: max 3/6 [1-2-0-0-0] if no constant of integration\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-form-b-frq-02",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "rawPrompt": "An object moving along a curve in the $x y$-plane is at position $(x(t), y(t))$ at time $t$, where\n$$\n\\frac{d x}{d t}=\\tan \\left(e^{-t}\\right) \\text { and } \\frac{d y}{d t}=\\sec \\left(e^{-t}\\right)\n$$\n\nfor $t \\geq 0$. At time $t=1$, the object is at position $(2,-3)$.\\\\\n(a) Write an equation for the line tangent to the curve at position $(2,-3)$.\\\\\n(b) Find the acceleration vector and the speed of the object at time $t=1$.\\\\\n(c) Find the total distance traveled by the object over the time interval $1 \\leq t \\leq 2$.\\\\\n(d) Is there a time $t \\geq 0$ at which the object is on the $y$-axis? Explain why or why not.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nAn object moving along a curve in the \\(x y\\)-plane is at position \\((x(t), y(t))\\) at time \\(t\\), where\n\\[\n\\frac{d x}{d t}=\\tan \\left(e^{-t}\\right) \\text { and } \\frac{d y}{d t}=\\sec \\left(e^{-t}\\right)\n\\]\nfor \\(t \\geq 0\\). At time \\(t=1\\), the object is at position (2, -3).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the curve at position \\((2,-3)\\).\n\\item[(b)] Find the acceleration vector and the speed of the object at time \\(t=1\\).\n\\item[(c)] Find the total distance traveled by the object over the time interval \\(1 \\leq t \\leq 2\\).\n\\item[(d)] Is there a time \\(t \\geq 0\\) at which the object is on the \\(y\\)-axis? Explain why or why not.\n\\item[(a)] \\(\\frac{d y}{d x}=\\frac{\\frac{d y}{d t}}{\\frac{d x}{d t}}=\\frac{\\sec \\left(e^{-t}\\right)}{\\tan \\left(e^{-t}\\right)}=\\frac{1}{\\sin \\left(e^{-t}\\right)}\\)\n\\[\n\\begin{aligned}\n& \\left.\\frac{d y}{d x}\\right|_{(2,-3)}=\\frac{1}{\\sin \\left(e^{-1}\\right)}=2.780 \\text { or } 2.781 \\\\\n& y+3=\\frac{1}{\\sin \\left(e^{-1}\\right)}(x-2)\n\\end{aligned}\n\\]\n\\item[(b)] \\(x^{\\prime \\prime}(1)=-0.42253, y^{\\prime \\prime}(1)=-0.15196\\)\n\\[\n\\begin{aligned}\n& a(1)=\\langle-0.423,-0.152\\rangle \\text { or }\\langle-0.422,-0.151\\rangle . \\\\\n& \\text { speed }=\\sqrt{\\left(\\sec \\left(e^{-1}\\right)\\right)^{2}+\\left(\\tan \\left(e^{-1}\\right)\\right)^{2}}=1.138 \\text { or } 1.139\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{1}^{2} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}} d t=1.059\\)\n\\item[(d)] \\(x(0)=x(1)-\\int_{0}^{1} x^{\\prime}(t) d t=2-0.775553>0\\)\nThe particle starts to the right of the \\(y\\)-axis.\nSince \\(x^{\\prime}(t)>0\\) for all \\(t \\geq 0\\), the object is always moving to the right and thus is never on the \\(y\\)-axis.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1:\\left.\\frac{d y}{d x}\\right|_{(2,-3)} \\\\ 1: \\text { equation of tangent line }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { acceleration vector } \\\\ 1: \\text { speed }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: x(0) \\text { expression } \\\\ 1: x^{\\prime}(t)>0 \\\\ 1: \\text { conclusion and reason }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          66,
+          572,
+          326
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

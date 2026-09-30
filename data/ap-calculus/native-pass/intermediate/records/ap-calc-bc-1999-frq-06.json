@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1999-frq-06",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function whose graph goes through the point $(3,6)$ and whose derivative is given by $f^{\\prime}(x)=\\frac{1+e^{x}}{x^{2}}$.\\\\\n(a) Write an equation of the line tangent to the graph of $f$ at $x=3$ and use it to approximate $f$ (3.1).\\\\\n(b) Use Euler's method, starting at $x=3$ with a step size of 0.05 , to approximate $f(3.1)$. Use $f^{\\prime \\prime}$ to explain why this approximation is less than $f(3.1)$.\\\\\n(c) Use $\\int_{3}^{3.1} f^{\\prime}(x) d x$ to evaluate $f(3.1)$.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[6.] Let \\(f\\) be the function whose graph goes through the point \\((3,6)\\) and whose derivative is given by \\(f^{\\prime}(x)=\\frac{1+e^{x}}{x^{2}}\\).\n\\begin{itemize}\n\\item[(a)] Write an equation of the line tangent to the graph of \\(f\\) at \\(x=3\\) and use it to approximate \\(f(3.1)\\).\n\\item[(b)] Use Euler's method, starting at \\(x=3\\) with a step size of 0.05 , to approximate \\(f(3.1)\\). Use \\(f^{\\prime \\prime}\\) to explain why this approximation is less than \\(f(3.1)\\).\n\\item[(c)] Use \\(\\int_{3}^{3.1} f^{\\prime}(x) d x\\) to evaluate \\(f(3.1)\\).\n\\end{itemize}\n\\item[(a)] \\(f^{\\prime}(3)=\\frac{1+e^{3}}{9}=2.342\\) or 2.343\n\\[\n\\begin{aligned}\n& y-6=\\frac{1+e^{3}}{9}(x-3) \\\\\n& y=6+\\frac{1+e^{3}}{9}(x-3) \\\\\n& f(3.1) \\approx 6+\\frac{1+e^{3}}{9}(0.1)=6.234\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\nf(3.05) & \\approx f(3)+f^{\\prime}(3)(0.05) \\\\\n& =6+0.11714=6.11714 \\\\\nf(3.1) & \\approx 6.11714+f^{\\prime}(3.05)(0.05) \\\\\n& =6.11714+(2.37735)(0.05)=6.236\n\\end{aligned}\n\\]\n\\[\nf^{\\prime \\prime}(x)=\\frac{x^{2} e^{x}-2 x\\left(1+e^{x}\\right)}{x^{4}}=\\frac{(x-2) e^{x}-2}{x^{3}}\n\\]\nFor \\(x \\geq 3, \\quad f^{\\prime \\prime}(x)>\\frac{e^{x}-2}{x^{3}}>0\\) and the graph of \\(f\\) is concave upward on (3, 3.1). Therefore, the Euler approximation lines at 3 and 3.05 lie below the graph.\n\\item[(c)] \\(f(3.1)-f(3)=\\int_{3}^{3.1} \\frac{1+e^{x}}{x^{2}} d x\\)\n\\[\nf(3.1)=6+0.2378=6.237 \\text { or } 6.238\n\\]\n\\end{itemize}\n\\[\n\\mathbf{3}\\left\\{\\begin{array}{l}\n1: f^{\\prime}(3) \\\\\n1: \\text { equation } \\\\\n1: \\text { approximation of } f(3.1)\n\\end{array}\\right.\n\\]\n\\[\n4\\left\\{\\begin{array}{l}\n\\text { 1: Euler's method equations or } \\\\\n\\quad \\text { equivalent table } \\\\\n1: \\text { Euler approximation to } f(3.1) \\\\\n\\quad(\\text { not eligible without first point }) \\\\\n1: f^{\\prime \\prime}(x) \\\\\n1: \\text { reason }\n\\end{array}\\right.\n\\]\n\\[\n\\mathbf{2}\\left\\{\\begin{array}{l}\n1: \\int_{3}^{3.1} \\frac{1+e^{x}}{x^{2}} d x=f(3.1)-f(3) \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          39,
+          572,
+          470
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

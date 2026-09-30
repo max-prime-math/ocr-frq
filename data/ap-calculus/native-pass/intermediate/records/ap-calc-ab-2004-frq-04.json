@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2004-frq-04",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "rawPrompt": "Consider the curve given by \\(x^{2}+4 y^{2}=7+3 x y\\).\n(a) Show that \\(\\frac{d y}{d x}=\\frac{3 y-2 x}{8 y-3 x}\\).\n(b) Show that there is a point \\(P\\) with \\(x\\)-coordinate 3 at which the line tangent to the curve at \\(P\\) is horizontal.\nFind the \\(y\\)-coordinate of \\(P\\).\n(c) Find the value of \\(\\frac{d^{2} y}{d x^{2}}\\) at the point \\(P\\) found in part (b). Does the curve have a local maximum, a local\nminimum, or neither at the point \\(P\\) ? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nConsider the curve given by \\(x^{2}+4 y^{2}=7+3 x y\\).\n\\begin{itemize}\n\\item[(a)] Show that \\(\\frac{d y}{d x}=\\frac{3 y-2 x}{8 y-3 x}\\).\n\\item[(b)] Show that there is a point \\(P\\) with \\(x\\)-coordinate 3 at which the line tangent to the curve at \\(P\\) is horizontal. Find the \\(y\\)-coordinate of \\(P\\).\n\\item[(c)] Find the value of \\(\\frac{d^{2} y}{d x^{2}}\\) at the point \\(P\\) found in part (b). Does the curve have a local maximum, a local minimum, or neither at the point \\(P\\) ? Justify your answer.\n\\item[(a)] \\(2 x+8 y y^{\\prime}=3 y+3 x y^{\\prime}\\)\n\\[\n\\begin{aligned}\n(8 y-3 x) y^{\\prime} & =3 y-2 x \\\\\ny^{\\prime} & =\\frac{3 y-2 x}{8 y-3 x}\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{3 y-2 x}{8 y-3 x}=0 ; 3 y-2 x=0\\)\nWhen \\(x=3,3 y=6\\)\n\\[\ny=2\n\\]\n\\(3^{2}+4 \\cdot 2^{2}=25\\) and \\(7+3 \\cdot 3 \\cdot 2=25\\)\nTherefore, \\(P=(3,2)\\) is on the curve and the slope is 0 at this point.\n\\item[(c)] \\(\\frac{d^{2} y}{d x^{2}}=\\frac{(8 y-3 x)\\left(3 y^{\\prime}-2\\right)-(3 y-2 x)\\left(8 y^{\\prime}-3\\right)}{(8 y-3 x)^{2}}\\)\nAt \\(P=(3,2), \\frac{d^{2} y}{d x^{2}}=\\frac{(16-9)(-2)}{(16-9)^{2}}=-\\frac{2}{7}\\).\nSince \\(y^{\\prime}=0\\) and \\(y^{\\prime \\prime}<0\\) at \\(P\\), the curve has a local maximum at \\(P\\).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { implicit differentiation } \\\\ 1: \\text { solves for } y^{\\prime}\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\frac{d y}{d x}=0 \\\\ 1: \\text { shows slope is } 0 \\text { at }(3,2) \\\\ 1: \\text { shows }(3,2) \\text { lies on curve }\\end{array}\\right.\\)\n\n4 : \\(\\left\\{\\begin{array}{l}2: \\frac{d^{2} y}{d x^{2}} \\\\ 1: \\text { value of } \\frac{d^{2} y}{d x^{2}} \\text { at }(3,2) \\\\ 1: \\text { conclusion with justification }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          70,
+          572,
+          346
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          205.92,
+          287.13599999999997,
+          222.04799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          231.552,
+          201.6,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          265.536,
+          549.5039999999999,
+          278.496
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          278.496,
+          206.784,
+          290.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          296.928,
+          536.544,
+          326.592
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          328.032,
+          338.4,
+          340.99199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

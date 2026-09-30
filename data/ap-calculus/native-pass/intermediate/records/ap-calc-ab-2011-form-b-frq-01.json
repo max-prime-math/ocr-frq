@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2011-form-b-frq-01",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "rawPrompt": "A cylindrical can of radius 10 millimeters is used to measure rainfall in Stormville. The can is initially empty,\nand rain enters the can during a 60-day period. The height of water in the can is modeled by the function \\(S\\),\nwhere \\(S(t)\\) is measured in millimeters and \\(t\\) is measured in days for \\(0 \\leq t \\leq 60\\). The rate at which the height\nof the water is rising in the can is given by \\(S^{\\prime}(t)=2 \\sin (0.03 t)+1.5\\).\n(a) According to the model, what is the height of the water in the can at the end of the 60-day period?\n(b) According to the model, what is the average rate of change in the height of water in the can over the\n60-day period? Show the computations that lead to your answer. Indicate units of measure.\n(c) Assuming no evaporation occurs, at what rate is the volume of water in the can changing at time \\(t=7\\) ?\nIndicate units of measure.\n(d) During the same 60-day period, rain on Monsoon Mountain accumulates in a can identical to the one in\nStormville. The height of the water in the can on Monsoon Mountain is modeled by the function \\(M\\), where\n\\(M(t)=\\frac{1}{400}\\left(3 t^{3}-30 t^{2}+330 t\\right)\\). The height \\(M(t)\\) is measured in millimeters, and \\(t\\) is measured in days\nfor \\(0 \\leq t \\leq 60\\). Let \\(D(t)=M^{\\prime}(t)-S^{\\prime}(t)\\). Apply the Intermediate Value Theorem to the function \\(D\\) on\nthe interval \\(0 \\leq t \\leq 60\\) to justify that there exists a time \\(t, 0<t<60\\), at which the heights of water in the\ntwo cans are changing at the same rate.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nA cylindrical can of radius 10 millimeters is used to measure rainfall in Stormville. The can is initially empty, and rain enters the can during a 60-day period. The height of water in the can is modeled by the function \\(S\\), where \\(S(t)\\) is measured in millimeters and \\(t\\) is measured in days for \\(0 \\leq t \\leq 60\\). The rate at which the height of the water is rising in the can is given by \\(S^{\\prime}(t)=2 \\sin (0.03 t)+1.5\\).\n\\begin{itemize}\n\\item[(a)] According to the model, what is the height of the water in the can at the end of the 60-day period?\n\\item[(b)] According to the model, what is the average rate of change in the height of water in the can over the 60-day period? Show the computations that lead to your answer. Indicate units of measure.\n\\item[(c)] Assuming no evaporation occurs, at what rate is the volume of water in the can changing at time \\(t=7\\) ? Indicate units of measure.\n\\item[(d)] During the same 60-day period, rain on Monsoon Mountain accumulates in a can identical to the one in Stormville. The height of the water in the can on Monsoon Mountain is modeled by the function \\(M\\), where \\(M(t)=\\frac{1}{400}\\left(3 t^{3}-30 t^{2}+330 t\\right)\\). The height \\(M(t)\\) is measured in millimeters, and \\(t\\) is measured in days for \\(0 \\leq t \\leq 60\\). Let \\(D(t)=M^{\\prime}(t)-S^{\\prime}(t)\\). Apply the Intermediate Value Theorem to the function \\(D\\) on the interval \\(0 \\leq t \\leq 60\\) to justify that there exists a time \\(t, 0<t<60\\), at which the heights of water in the two cans are changing at the same rate.\n\\item[(a)] \\(S(60)=\\int_{0}^{60} S^{\\prime}(t) d t=171.813 \\mathrm{~mm}\\)\n\\item[(b)] \\(\\frac{S(60)-S(0)}{60}=2.863\\) or \\(2.864 \\mathrm{~mm} /\\) day\n\\item[(c)] \\(V(t)=100 \\pi S(t)\\)\n\\(V^{\\prime}(7)=100 \\pi S^{\\prime}(7)=602.218\\)\nThe volume of water in the can is increasing at a rate of \\(602.218 \\mathrm{~mm}^{3} /\\) day .\n\\item[(d)] \\(D(0)=-0.675<0\\) and \\(D(60)=69.37730>0\\)\nBecause \\(D\\) is continuous, the Intermediate Value Theorem implies that there is a time \\(t, 0<t<60\\), at which \\(D(t)=0\\).\nAt this time, the heights of water in the two cans are changing at the same rate.\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : relationship between } V \\text { and } S \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } D(0) \\text { and } D(60) \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[1] : units in (b) or (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          46,
+          65,
+          562,
+          416
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          171.93599999999998,
+          549.5039999999999,
+          184.32
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          184.32,
+          538.848,
+          196.70399999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          197.27999999999997,
+          551.808,
+          210.23999999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          212.832,
+          371.23199999999997,
+          226.368
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          234.432,
+          516.096,
+          247.39199999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          253.152,
+          525.312,
+          265.536
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          264.96,
+          484.99199999999996,
+          277.91999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          283.392,
+          544.608,
+          296.352
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          298.368,
+          198.14399999999998,
+          309.59999999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.088,
+          316.224,
+          540.8639999999999,
+          329.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          329.18399999999997,
+          556.992,
+          341.568
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          342.71999999999997,
+          553.2479999999999,
+          365.472
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          368.06399999999996,
+          545.76,
+          382.176
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          383.616,
+          556.992,
+          397.152
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          398.592,
+          256.89599999999996,
+          410.97599999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

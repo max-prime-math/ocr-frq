@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2010-frq-04",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2010-frq-04-diagram-01.jpg\", width: 65%)\n\nLet $R$ be the region in the first quadrant bounded by the graph of $y = 2 sqrt(x)$, the horizontal line $y = 6$, and the $y$-axis, as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when $R$ is rotated about the horizontal line $y = 7$.\n\n(c) Region $R$ is the base of a solid. For each $y$, where $0 <= y <= 6$, the cross section of the solid taken perpendicular to the $y$-axis is a rectangle whose height is 3 times the length of its base in region $R$. Write, but do not evaluate, an integral expression that gives the volume of the solid.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2010-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2010-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2010_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          499
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "071d3836423c0ad20b30fc107bb281fd3633be52b8b4ff16f3b7d2fea8dc3417",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ]
+}

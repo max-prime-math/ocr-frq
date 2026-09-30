@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2014-frq-03",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2014-frq-03-diagram-01.png\", width: 65%)\n\nThe function $f$ is defined on the closed interval $\\[- 5 \\,4 \\]$. The graph of $f$ consists of three line segments and is shown in the figure above. Let $g$ be the function defined by $g(x)= integral_(- 3)^(x) f(t) d t$.\n\n(a) Find $g(3)$.\n\n(b) On what open intervals contained in $- 5 < x < 4$ is the graph of $g$ both increasing and concave down? Give a reason for your answer.\n\n(c) The function $h$ is defined by $h(x)= frac(g(x),5 x)$. Find $h'(3)$.\n\n(d) The function $p$ is defined by $p(x)= f lr((x^(2)- x))$. Find the slope of the line tangent to the graph of $p$ at the point where $x = - 1$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2014-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2014-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        207.0,
+        166.0,
+        404.0,
+        346.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          66,
+          568,
+          557
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9634709c6407bf01711b361e6610d0da33aa08fcdec1d615ccd76484d6e336de",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        207.0,
+        166.0,
+        404.0,
+        346.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2014-frq-02"
+    }
+  ]
+}

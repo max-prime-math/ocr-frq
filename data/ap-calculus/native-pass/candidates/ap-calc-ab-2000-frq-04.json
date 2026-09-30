@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2000-frq-04",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Water is pumped into an underground tank at a constant rate of 8 gallons per minute. Water leaks out of the tank at the rate of $sqrt(t + 1)$ gallons per minute, for $0 <= t <= 120$ minutes. At time $t = 0$, the tank contains 30 gallons of water.\n\n(a) How many gallons of water leak out of the tank from time $t = 0$ to $t = 3$ minutes?\n\n(b) How many gallons of water are in the tank at time $t = 3$ minutes?\n\n(c) Write an expression for $A(t)$, the total number of gallons of water in the tank at time $t$.\n\n(d) At what time $t$, for $0 <= t <= 120$, is the amount of water in the tank a maximum? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          56,
+          572,
+          309
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          190.944,
+          561.5999999999999,
+          203.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.512,
+          203.32799999999997,
+          564.192,
+          216.28799999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.512,
+          217.72799999999998,
+          93.312,
+          226.944
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          234.432,
+          452.15999999999997,
+          246.81599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          252.86399999999998,
+          376.70399999999995,
+          265.248
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          271.584,
+          467.712,
+          283.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          290.592,
+          531.6479999999999,
+          303.55199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "636728a9bedc2477af1369a27d9bf12ab3797ece36c06d6f9c8a3d027d5fcef1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

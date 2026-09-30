@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2010-frq-05",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2010-frq-05-diagram-01.png\", width: 65%)\n\nThe function $g$ is defined and differentiable on the closed interval \\[-7, 5\\] and satisfies $g(0)= 5$. The graph of $y = g'(x)$, the derivative of $g$, consists of a semicircle and three line segments, as shown in the figure above.\n\n(a) Find $g(3)$ and $g(- 2)$.\n\n(b) Find the $x$-coordinate of each point of inflection of the graph of $y = g(x)$ on the interval $- 7 < x < 5$. Explain your reasoning.\n\n(c) The function $h$ is defined by $h(x)= g(x)- frac(1,2) x^(2)$. Find the $x$-coordinate of each critical point of $h$, where $- 7 < x < 5$, and classify each critical point as the location of a relative minimum, relative maximum, or neither a minimum nor a maximum. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        140.4239959716797,
+        67.55999755859375,
+        471.864013671875,
+        227.63999938964844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          564,
+          388
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          143.42399999999998,
+          70.55999999999999,
+          468.864,
+          224.64
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          236.44799999999998,
+          559.2959999999999,
+          249.98399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.664,
+          251.712,
+          549.5039999999999,
+          265.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          273.59999999999997,
+          182.59199999999998,
+          288.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.088,
+          296.352,
+          533.376,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          311.328,
+          190.07999999999998,
+          324.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          330.912,
+          553.2479999999999,
+          353.664
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          355.67999999999995,
+          545.76,
+          368.64
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          370.08,
+          351.35999999999996,
+          383.03999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7c4f2a7673b4d3f91f5bdda924f936b92fcf15d21ed99c7d1e282d1d7df69d72",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

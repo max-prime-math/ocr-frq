@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2017-frq-02",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2017-frq-02-diagram-01.jpg}\n\\end{center}\nThe figure above shows the polar curves $r=f(\\theta)=1+\\sin \\theta \\cos (2 \\theta)$ and $r=g(\\theta)=2 \\cos \\theta$ for $0 \\leq \\theta \\leq \\frac{\\pi}{2}$. Let $R$ be the region in the first quadrant bounded by the curve $r=f(\\theta)$ and the $x$-axis. Let $S$ be the region in the first quadrant bounded by the curve $r=f(\\theta)$, the curve $r=g(\\theta)$, and the $x$-axis.\\\\\n(a) Find the area of $R$.\\\\\n(b) The ray $\\theta=k$, where $0<k<\\frac{\\pi}{2}$, divides $S$ into two regions of equal area. Write, but do not solve, an equation involving one or more integrals whose solution gives the value of $k$.\\\\\n(c) For each $\\theta, 0 \\leq \\theta \\leq \\frac{\\pi}{2}$, let $w(\\theta)$ be the distance between the points with polar coordinates $(f(\\theta), \\theta)$ and $(g(\\theta), \\theta)$. Write an expression for $w(\\theta)$. Find $w_{A}$, the average value of $w(\\theta)$ over the interval $0 \\leq \\theta \\leq \\frac{\\pi}{2}$.\\\\\n(d) Using the information from part (c), find the value of $\\boldsymbol{\\theta}$ for which $w(\\boldsymbol{\\theta})=w_{A}$. Is the function $w(\\boldsymbol{\\theta})$ increasing or decreasing at that value of $\\theta$ ? Give a reason for your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2017-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2017-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2017_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(\\frac{1}{2} \\int_{0}^{\\pi / 2}(f(\\theta))^{2} d \\theta=0.648414\\)\nThe area of \\(R\\) is 0.648.\n\\item[(b)] \\(\\int_{0}^{k}\\left((g(\\theta))^{2}-(f(\\theta))^{2}\\right) d \\theta=\\frac{1}{2} \\int_{0}^{\\pi / 2}\\left((g(\\theta))^{2}-(f(\\theta))^{2}\\right) d \\theta\\)\n\\[\n\\begin{aligned}\n& \\text { OR- } \\\\\n& \\int_{0}^{k}\\left((g(\\theta))^{2}-(f(\\theta))^{2}\\right) d \\theta=\\int_{k}^{\\pi / 2}\\left((g(\\theta))^{2}-(f(\\theta))^{2}\\right) d \\theta\n\\end{aligned}\n\\]\n\\item[(c)] \\(w(\\theta)=g(\\theta)-f(\\theta)\\)\n\\[\nw_{A}=\\frac{\\int_{0}^{\\pi / 2} w(\\theta) d \\theta}{\\frac{\\pi}{2}-0}=0.485446\n\\]\nThe average value of \\(w(\\theta)\\) on the interval \\(\\left[0, \\frac{\\pi}{2}\\right]\\) is 0.485 .\n\\item[(d)] \\(w(\\theta)=w_{A}\\) for \\(0 \\leq \\theta \\leq \\frac{\\pi}{2} \\Rightarrow \\theta=0.517688\\)\n\\[\n\\begin{aligned}\n& w(\\theta)=w_{A} \\text { at } \\theta=0.518 \\text { (or } 0.517 \\text { ). } \\\\\n& w^{\\prime}(0.518)<0 \\Rightarrow w(\\theta) \\text { is decreasing at } \\theta=0.518 .\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{c}1: \\text { integral expression } \\\\ \\quad \\text { for one region } \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: w(\\theta) \\\\ 1: \\text { integral } \\\\ 1: \\text { average value }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : solves } w(\\theta)=w_{A} \\\\ 1 \\text { : answer with reason }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          39,
+          92,
+          570,
+          546
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "ap-calc-ab-1998-frq-02",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= 2 x e^(2 x)$.\n\n(a) Find $lim_(x -> - oo) f(x)$ and $lim_(x -> oo) f(x)$.\n\n(b) Find the absolute minimum value of $f$. Justify that your answer is an absolute minimum.\n\n(c) What is the range of $f$ ?\n\n(d) Consider the family of functions defined by $y = b x e^(b x)$, where $b$ is a nonzero constant. Show that the absolute minimum value of $b x e^(b x)$ is the same for all nonzero values of $b$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          74.30375545726103,
+          73.72772159090908,
+          305.566994341682,
+          88.70366503906249
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          91.29565525124289,
+          262.655135569853,
+          109.43958673650567
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          112.03157694868607,
+          540.862219956342,
+          125.85552474698152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          92.44769574333641,
+          129.02351278409088,
+          226.65525404986215,
+          141.98346384499288
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          143.9994562322443,
+          540.862219956342,
+          158.97539968039771
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          157.82340403053976,
+          497.95036118451293,
+          170.78335509144173
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f99e0556d284b24aa3ed12ecf4f43828a4b2f1f64e0e97157d680fe2add6ec1d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

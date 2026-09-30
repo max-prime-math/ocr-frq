@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2011-frq-01",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "For $0 <= t <= 6$, a particle is moving along the $x$-axis. The particle's position, $x(t)$, is not explicitly given. The velocity of the particle is given by $v(t)= 2 sin lr((e^(t \\/ 4)))+ 1$. The acceleration of the particle is given by $a(t)= frac(1,2) e^(t \\/ 4) cos lr((e^(t \\/ 4)))$ and $x(0)= 2$.\n\n(a) Is the speed of the particle increasing or decreasing at time $t = 5.5$ ? Give a reason for your answer.\n\n(b) Find the average velocity of the particle for the time period $0 <= t <= 6$.\n\n(c) Find the total distance traveled by the particle from time $t = 0$ to $t = 6$.\n\n(d) For $0 <= t <= 6$, the particle changes direction exactly once. Find the position of the particle at that time.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          362
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          169.63199999999998,
+          529.632,
+          183.16799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          185.76,
+          530.784,
+          205.05599999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          207.93599999999998,
+          237.02399999999997,
+          231.552
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          238.75199999999998,
+          526.1759999999999,
+          251.712
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          259.77599999999995,
+          394.272,
+          272.736
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          279.072,
+          403.48799999999994,
+          292.032
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          298.368,
+          539.712,
+          310.75199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "dc2070f2088a24a5bbc9e914721690e462778d5f7274d3d4152862abf1c33a92",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-frq-06",
+  "course": "BC",
+  "year": 2008,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008.pdf",
+      "sha256": "03b33eb234707fece3d699c865ffd6219b3c515a3220cc9a4c364faba8bfc7c5",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008.pdf",
+      "sha256": "9f6e880bb45af770174406b5eb2500957dd71e9e2e1506e0c19d4dabe0a88ef3"
+    }
+  },
+  "rawPrompt": "Consider the logistic differential equation $\\frac{d y}{d t}=\\frac{y}{8}(6-y)$. Let $y=f(t)$ be the particular solution to the differential equation with $f(0)=8$.\\\\\n(a) A slope field for this differential equation is given below. Sketch possible solution curves through the points $(3,2)$ and $(0,8)$.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2008-frq-06-diagram-01.jpg}\n\\end{center}\n(b) Use Euler's method, starting at $t=0$ with two steps of equal size, to approximate $f(1)$.\\\\\n(c) Write the second-degree Taylor polynomial for $f$ about $t=0$, and use it to approximate $f(1)$.\\\\\n(d) What is the range of $f$ for $t \\geq 0$ ?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2008-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2008-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2008_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\nConsider the logistic differential equation \\(\\frac{d y}{d t}=\\frac{y}{8}(6-y)\\). Let \\(y=f(t)\\) be the particular solution to the differential equation with \\(f(0)=8\\).\n\\begin{itemize}\n\\item[(a)] A slope field for this differential equation is given below. Sketch possible solution curves through the points \\((3,2)\\) and (0, 8).\n(Note: Use the axes provided in the exam booklet.)\n\\item[(b)] Use Euler's method, starting at \\(t=0\\) with two steps of equal size, to approximate \\(f(1)\\).\n\\item[(c)] Write the second-degree Taylor polynomial for \\(f\\) about \\(t=0\\), and use it to approximate \\(f(1)\\).\n\\item[(d)] What is the range of \\(f\\) for \\(t \\geq 0\\) ?\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/d8515188-c315-45ee-879e-0067fe711342-1.jpg?height=447&width=406&top_left_y=505&top_left_x=1476)\n(a)\n![](https://cdn.mathpix.com/cropped/d8515188-c315-45ee-879e-0067fe711342-1.jpg?height=602&width=546&top_left_y=1005&top_left_x=462)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { solution curve through }(0,8) \\\\ 1: \\text { solution curve through }(3,2)\\end{array}\\right.\\)\n2 : \\(\\left\\{\\begin{array}{l}1 \\text { : Euler's method with two steps } \\\\ 1 \\text { : approximation of } f(1)\\end{array}\\right.\\)\n4 : \\(\\left\\{\\begin{array}{l}2: \\frac{d^{2} y}{d t^{2}} \\\\ 1: \\text { second-degree Taylor polynomial } \\\\ 1: \\text { approximation of } f(1)\\end{array}\\right.\\)\n\\(f^{\\prime \\prime}(0)=\\left.\\frac{d^{2} y}{d t^{2}}\\right|_{t=0}=\\frac{1}{8}(-2)(-2)+\\frac{8}{8}(2)=\\frac{5}{2}\\)\nThe second-degree Taylor polynomial for \\(f\\) about \\(t=0\\) is \\(P_{2}(t)=8-2 t+\\frac{5}{4} t^{2}\\).\n\\[\nf(1) \\approx P_{2}(1)=\\frac{29}{4}\n\\]\n(d) The range of \\(f\\) for \\(t \\geq 0\\) is \\(6<y \\leq 8\\).\n1 : answer",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          66,
+          572,
+          522
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

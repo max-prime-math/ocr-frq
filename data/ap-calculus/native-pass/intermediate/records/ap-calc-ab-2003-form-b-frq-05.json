@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-form-b-frq-05",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2003-form-b-frq-05-diagram-01.png}\nLet \\(f\\) be a function defined on the closed interval \\([0,7]\\). The graph of \\(f\\), consisting of four line segments,\nis shown above. Let \\(g\\) be the function given by \\(g(x)=\\int_{2}^{x} f(t) d t\\).\n(a) Find \\(g(3), g^{\\prime}(3)\\), and \\(g^{\\prime \\prime}(3)\\).\n(b) Find the average rate of change of \\(g\\) on the interval \\(0 \\leq x \\leq 3\\).\n(c) For how many values \\(c\\), where \\(0<c<3\\), is \\(g^{\\prime}(c)\\) equal to the average rate found in part (b) ? Explain\nyour reasoning.\n(d) Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(g\\) on the interval \\(0<x<7\\). Justify your\nanswer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-form-b-frq-05-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        206.08799743652344,
+        334.24798583984375,
+        405.0480041503906,
+        496.9200134277344
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\nLet \\(f\\) be a function defined on the closed interval [0,7]. The graph of \\(f\\), consisting of four line segments, is shown above. Let \\(g\\) be the function given by \\(g(x)=\\int_{2}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(3), g^{\\prime}(3)\\), and \\(g^{\\prime \\prime}(3)\\).\n\\item[(b)] Find the average rate of change of \\(g\\) on the interval \\(0 \\leq x \\leq 3\\).\n\\item[(c)] For how many values \\(c\\), where \\(0<c<3\\), is \\(g^{\\prime}(c)\\) equal to the average rate found in part (b)? Explain your reasoning.\n\\item[(d)] Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(g\\) on the interval \\(0<x<7\\). Justify your answer.\n\\item[(a)] \\(g(3)=\\int_{2}^{3} f(t) d t=\\frac{1}{2}(4+2)=3\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(3)=f(3)=2 \\\\\n& g^{\\prime \\prime}(3)=f^{\\prime}(3)=\\frac{0-4}{4-2}=-2\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\frac{g(3)-g(0)}{3} & =\\frac{1}{3} \\int_{0}^{3} f(t) d t \\\\\n& =\\frac{1}{3}\\left(\\frac{1}{2}(2)(4)+\\frac{1}{2}(4+2)\\right)=\\frac{7}{3}\n\\end{aligned}\n\\]\n\\item[(c)] There are two values of \\(c\\). We need \\(\\frac{7}{3}=g^{\\prime}(c)=f(c)\\) The graph of \\(f\\) intersects the line \\(y=\\frac{7}{3}\\) at two places between 0 and 3.\n\\item[(d)] \\(x=2\\) and \\(x=5\\) because \\(g^{\\prime}=f\\) changes from increasing to decreasing at \\(x=2\\), and from decreasing to increasing at \\(x=5\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: g(3) \\\\ 1: g^{\\prime}(3) \\\\ 1: g^{\\prime \\prime}(3)\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: g(3)-g(0)=\\int_{0}^{3} f(t) d t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer of } 2 \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: 1/2 if answer is 1 by MVT\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{aligned} 1: x=2 \\text { and } x=5 \\text { only } & \\\\ 1: \\text { justification } & \\\\ & (\\text { ignore discussion at } x=4)\\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          306,
+          572,
+          670
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "chart",
+        "rect": [
+          209.088,
+          337.248,
+          402.04799999999994,
+          493.91999999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          503.712,
+          530.784,
+          517.2479999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          519.8399999999999,
+          358.84799999999996,
+          542.016
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          548.352,
+          206.784,
+          561.8879999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          567.9359999999999,
+          366.33599999999996,
+          581.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.664,
+          587.232,
+          542.016,
+          600.192
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.368,
+          601.3439999999999,
+          153.504,
+          613.728
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          65.088,
+          618.6239999999999,
+          552.6719999999999,
+          631.584
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          633.024,
+          118.94399999999999,
+          642.2399999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

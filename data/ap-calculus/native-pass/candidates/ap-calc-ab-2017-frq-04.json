@@ -1,0 +1,217 @@
+{
+  "id": "ap-calc-ab-2017-frq-04",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "At time $t = 0$, a boiled potato is taken from a pot on a stove and left to cool in a kitchen. The internal temperature of the potato is 91 degrees Celsius ( $\"\"^(degree) upright(C)$ ) at time $t = 0$, and the internal temperature of the potato is greater than $27^(degree) upright(C)$ for all times $t > 0$. The internal temperature of the potato at time $t$ minutes can be modeled by the function $H$ that satisfies the differential equation $frac(d H,d t)= - frac(1,4)(H - 27)$, where $H(t)$ is measured in degrees Celsius and $H(0)= 91$.\n\n(a) Write an equation for the line tangent to the graph of $H$ at $t = 0$. Use this equation to approximate the internal temperature of the potato at time $t = 3$.\n\n(b) Use $frac(d^(2) H,d t^(2))$ to determine whether your answer in part (a) is an underestimate or an overestimate of the internal temperature of the potato at time $t = 3$.\n\n(c) For $t < 10$, an alternate model for the internal temperature of the potato at time $t$ minutes is the function $G$ that satisfies the differential equation $frac(d G,d t)= - (G - 27)^(2 \\/ 3)$, where $G(t)$ is measured in degrees Celsius and $G(0)= 91$. Find an expression for $G(t)$. Based on this model, what is the internal temperature of the potato at time $t = 3$ ?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          39,
+          91,
+          570,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          44.928,
+          95.03999999999999,
+          506.87999999999994,
+          107.99999999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          122.39999999999999,
+          539.712,
+          136.224
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          149.76,
+          519.5519999999999,
+          162.72
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          169.344,
+          510.912,
+          196.128
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          203.904,
+          260.64,
+          217.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.071999999999996,
+          235.87199999999999,
+          532.8,
+          248.832
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          80.928,
+          250.272,
+          291.45599999999996,
+          263.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          63.071999999999996,
+          275.616,
+          525.5999999999999,
+          307.584
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.08,
+          318.52799999999996,
+          292.032,
+          332.352
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          62.495999999999995,
+          349.344,
+          540.8639999999999,
+          362.304
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          80.928,
+          368.928,
+          551.232,
+          395.712
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          80.928,
+          402.62399999999997,
+          547.4879999999999,
+          417.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          80.928,
+          430.55999999999995,
+          177.408,
+          443.52
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "cf4c5c014b7c201d3e54547b721c4838bfac2bc19fba487e13fdd59878082f36",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

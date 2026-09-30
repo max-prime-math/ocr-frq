@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2014-frq-04",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(minutes) \\\\\n\\end{tabular} & 0 & 2 & 5 & 8 & 12 \\\\\n\\hline\n\\begin{tabular}{c}\n$v_{A}(t)$ \\\\\n(meters/minute) \\\\\n\\end{tabular} & 0 & 100 & 40 & -120 & -150 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nTrain $A$ runs back and forth on an east-west section of railroad track. Train A's velocity, measured in meters per minute, is given by a differentiable function $v_{A}(t)$, where time $t$ is measured in minutes. Selected values for $v_{A}(t)$ are given in the table above.\\\\\n(a) Find the average acceleration of $\\operatorname{train} A$ over the interval $2 \\leq t \\leq 8$.\\\\\n(b) Do the data in the table support the conclusion that train $A$ 's velocity is -100 meters per minute at some time $t$ with $5<t<8$ ? Give a reason for your answer.\\\\\n(c) At time $t=2$, train $A$ 's position is 300 meters east of the Origin Station, and the train is moving to the east. Write an expression involving an integral that gives the position of train $A$, in meters from the Origin Station, at time $t=12$. Use a trapezoidal sum with three subintervals indicated by the table to approximate the position of the train at time $t=12$.\\\\\n(d) A second train, train $B$, travels north from the Origin Station. At time $t$ the velocity of train $B$ is given by $v_{B}(t)=-5 t^{2}+60 t+25$, and at time $t=2$ the train is 400 meters north of the station. Find the rate, in meters per minute, at which the distance between train $A$ and train $B$ is changing at time $t=2$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC \\\\ 2014 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nTrain \\(A\\) runs back and forth on an east-west section of railroad track. Train \\(A\\) 's velocity, measured in meters per minute, is given by a differentiable function \\(v_{A}(t)\\), where time \\(t\\) is measured in minutes. Selected values for \\(v_{A}(t)\\)\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 2 & 5 & 8 & 12 \\\\\n\\hline \\(v_{A}(t)\\) (meters/minute) & 0 & 100 & 40 & -120 & -150 \\\\\n\\hline\n\\end{tabular}\nare given in the table above.\n\\begin{itemize}\n\\item[(a)] Find the average acceleration of train \\(A\\) over the interval \\(2 \\leq t \\leq 8\\).\n\\item[(b)] Do the data in the table support the conclusion that train \\(A\\) 's velocity is -100 meters per minute at some time \\(t\\) with \\(5<t<8\\) ? Give a reason for your answer.\n\\item[(c)] At time \\(t=2\\), train \\(A\\) 's position is 300 meters east of the Origin Station, and the train is moving to the east. Write an expression involving an integral that gives the position of train \\(A\\), in meters from the Origin Station, at time \\(t=12\\). Use a trapezoidal sum with three subintervals indicated by the table to approximate the position of the train at time \\(t=12\\).\n\\item[(d)] A second train, train \\(B\\), travels north from the Origin Station. At time \\(t\\) the velocity of train \\(B\\) is given by \\(v_{B}(t)=-5 t^{2}+60 t+25\\), and at time \\(t=2\\) the train is 400 meters north of the station. Find the rate, in meters per minute, at which the distance between train \\(A\\) and train \\(B\\) is changing at time \\(t=2\\).\n\\item[(a)] average accel \\(=\\frac{v_{A}(8)-v_{A}(2)}{8-2}=\\frac{-120-100}{6}=-\\frac{110}{3} \\mathrm{~m} / \\mathrm{min}^{2}\\)\n\\item[(b)] \\(v_{A}\\) is differentiable \\(\\Rightarrow v_{A}\\) is continuous\n\\[\nv_{A}(8)=-120<-100<40=v_{A}(5)\n\\]\nTherefore, by the Intermediate Value Theorem, there is a time \\(t\\), \\(5<t<8\\), such that \\(v_{A}(t)=-100\\).\n\\item[(c)] \\(s_{A}(12)=s_{A}(2)+\\int_{2}^{12} v_{A}(t) d t=300+\\int_{2}^{12} v_{A}(t) d t\\)\n\\[\n\\begin{aligned}\n\\int_{2}^{12} v_{A}(t) d t & \\approx 3 \\cdot \\frac{100+40}{2}+3 \\cdot \\frac{40-120}{2}+4 \\cdot \\frac{-120-150}{2} \\\\\n& =-450 \\\\\ns_{A}(12) \\approx 300 & -450=-150\n\\end{aligned}\n\\]\nThe position of Train \\(A\\) at time \\(t=12\\) minutes is approximately 150 meters west of Origin Station.\n\\item[(d)] Let \\(x\\) be train \\(A\\) 's position, \\(y\\) train \\(B\\) 's position, and \\(z\\) the distance between \\(\\operatorname{train} A\\) and \\(\\operatorname{train} B\\).\n\\[\n\\begin{aligned}\n& z^{2}=x^{2}+y^{2} \\Rightarrow 2 z \\frac{d z}{d t}=2 x \\frac{d x}{d t}+2 y \\frac{d y}{d t} \\\\\n& x=300, y=400 \\Rightarrow z=500 \\\\\n& v_{B}(2)=-20+120+25=125 \\\\\n& 500 \\frac{d z}{d t}=(300)(100)+(400)(125) \\\\\n& \\frac{d z}{d t}=\\frac{80000}{500}=160 \\text { meters per minute }\n\\end{aligned}\n\\]\n\\item[1] : average acceleration\n\\[\n2:\\left\\{\\begin{array}{l}\n1: v_{A}(8)<-100<v_{A}(5) \\\\\n1: \\text { conclusion, using IVT }\n\\end{array}\\right.\n\\]\n\\item[3] : \\(\\left\\{\\begin{array}{l}1: \\text { position expression } \\\\ 1: \\text { trapezoidal sum } \\\\ 1: \\text { position at time } t=12\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{c}2: \\text { implicit differentiation of } \\\\ \\text { distance relationship } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          74,
+          569,
+          414
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

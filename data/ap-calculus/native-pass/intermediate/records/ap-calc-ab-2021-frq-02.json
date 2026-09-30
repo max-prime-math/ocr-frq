@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2021-frq-02",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "rawPrompt": "A particle, \\(P\\), is moving along the \\(x\\)-axis. The velocity of particle \\(P\\) at time \\(t\\) is given by \\(v_{P}(t)=\\sin \\left(t^{1.5}\\right)\\)\nfor \\(0 \\leq t \\leq \\pi\\). At time \\(t=0\\), particle \\(P\\) is at position \\(x=5\\).\nA second particle, \\(Q\\), also moves along the \\(x\\)-axis. The velocity of particle \\(Q\\) at time \\(t\\) is given by\n\\(v_{Q}(t)=(t-1.8) \\cdot 1.25^{t}\\) for \\(0 \\leq t \\leq \\pi\\). At time \\(t=0\\), particle \\(Q\\) is at position \\(x=10\\).\n(a) Find the positions of particles \\(P\\) and \\(Q\\) at time \\(t=1\\).\n(b) Are particles \\(P\\) and \\(Q\\) moving toward each other or away from each other at time \\(t=1\\) ? Explain your\nreasoning.\n(c) Find the acceleration of particle \\(Q\\) at time \\(t=1\\). Is the speed of particle \\(Q\\) increasing or decreasing at\ntime \\(t=1\\) ? Explain your reasoning.\n(d) Find the total distance traveled by particle \\(P\\) over the time interval \\(0 \\leq t \\leq \\pi\\).\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "Part A (AB): Graphing calculator required\nQuestion 2 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\nA particle, \\(P\\), is moving along the \\(x\\)-axis. The velocity of particle \\(P\\) at time \\(t\\) is given by \\(v_{P}(t)=\\sin \\left(t^{1.5}\\right)\\) for \\(0 \\leq t \\leq \\pi\\). At time \\(t=0\\), particle \\(P\\) is at position \\(x=5\\).\n\nA second particle, \\(Q\\), also moves along the \\(x\\)-axis. The velocity of particle \\(Q\\) at time \\(t\\) is given by \\(v_{Q}(t)=(t-1.8) \\cdot 1.25^{t}\\) for \\(0 \\leq t \\leq \\pi\\). At time \\(t=0\\), particle \\(Q\\) is at position \\(x=10\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & Scoring & \\\\\n\\hline \\multicolumn{3}{|l|}{Find the positions of particles \\(P\\) and \\(Q\\) at time \\(t=1\\).} \\\\\n\\hline \\(x_{P}(1)=5+\\int_{0}^{1} v_{P}(t) d t=5.370660\\) & One definite integral & 1 point \\\\\n\\hline At time \\(t=1\\), the position of particle \\(P\\) is & One position & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\(x=5.371\\) (or 5.370). \\\\\n\\(x_{Q}(1)=10+\\int_{0}^{1} v_{Q}(t) d t=8.564355\\) \\\\\nAt time \\(t=1\\), the position of particle \\(Q\\) is \\(x=8.564\\).\n\\end{tabular} & The other position & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point is earned for the explicit presentation of at least one definite integral, either \\(\\int_{0}^{1} v_{P}(t) d t\\) or \\(\\int_{0}^{1} v_{Q}(t) d t\\).\n\\item[-] The first point must be earned to be eligible for the second and third points.\n\\item[-] The second point is earned for adding the initial condition to at least one of the definite integrals and finding the correct position.\n\\item[-] Writing \\(\\int_{0}^{1} v_{P}(t)+5=5.370660\\) does not earn a position point, because the missing \\(d t\\) makes this statement unclear or false. However, \\(5+\\int_{0}^{1} v_{P}(t)=5.370660\\) does earn the position point because it is not ambiguous. Similarly, for the position of \\(Q\\).\n\\item[-] Read unlabeled answers presented left to right, or top to bottom, as \\(x_{P}(1)\\) and \\(x_{Q}(1)\\), respectively.\n\\item[-] Special case 1: A response of \\(x_{P}(1)=5+\\int_{0}^{a} v_{P}(t) d t=5.370660\\) AND \\(x_{Q}(1)=10+\\int_{0}^{a} v_{Q}(t) d t=8.564355\\) for \\(a \\neq 1\\) earns one point.\n\\item[-] Special case 2: A response of \\(x_{P}(1)=5+\\int v_{P}(t) d t=5.370660\\) AND \\(x_{Q}(1)=10+\\int v_{Q}(t) d t=8.564355\\) or the equivalent, never providing the definite integrals, earns one point.\n\\item[-] Degree mode: A response that presents answers obtained by using a calculator in degree mode does not earn the first point it would have otherwise earned. The response is generally eligible for all subsequent points (unless no answer is possible in degree mode or the question is made simpler by using degree mode). In degree mode, \\(x_{P}(1)\\) is 5.007 (or 5.006).\n\\end{itemize}\n\nTotal for part (a) 3 points\n\\begin{itemize}\n\\item[(b)] Are particles \\(P\\) and \\(Q\\) moving toward each other or away from each other at time \\(t=1\\) ? Explain your reasoning.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\begin{tabular}[t]{l}\n\\[\nv_{P}(1)=\\sin \\left(1^{1.5}\\right)=0.841471>0\n\\] \\\\\nAt time \\(t=1\\), particle \\(P\\) is moving to the right.\n\\end{tabular} & Direction of motion for one particle & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\[\nv_{Q}(1)=(1-1.8) \\cdot 1.25^{1}=-1<0\n\\] \\\\\nAt time \\(t=1\\), particle \\(Q\\) is moving to the left. \\\\\nAt time \\(t=1, x_{P}(1)<x_{Q}(1)\\), so particle \\(P\\) is to the left of particle \\(Q\\). \\\\\nThus, at time \\(t=1\\), particles \\(P\\) and \\(Q\\) are moving toward each other.\n\\end{tabular} & Answer with explanation & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for using the sign of \\(v_{P}(1)\\) or \\(v_{Q}(1)\\) to determine the direction of motion for one of the particles. This point cannot be earned without reference to the sign of \\(v_{P}(1)\\) or \\(v_{Q}(1)\\).\n\\item[-] It is not necessary to present an explicit value for \\(v_{P}(1)\\), or \\(v_{Q}(1)\\), but if a value is presented, it must be correct as far as reported, up to three places after the decimal.\n\\item[-] Read with imported incorrect position values from part (a).\n\\item[-] If one or both position values were not found in part (a), but are found in part (b), the points for part (a) are not earned retroactively.\n\\item[-] To earn the second point the explanation must be based on the signs of \\(v_{P}(1)\\) and \\(v_{Q}(1)\\) and the relative positions of particle \\(P\\) and particle \\(Q\\) at \\(t=1\\). References to other values of time, such as \\(t=0\\), are not sufficient.\n\\item[-] Degree mode: \\(v_{P}(1)=0.017\\). (See degree mode statement in part (a).)\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (b) 2 points\n\\begin{itemize}\n\\item[(c)] Find the acceleration of particle \\(Q\\) at time \\(t=1\\). Is the speed of particle \\(Q\\) increasing or decreasing at time \\(t=1\\) ? Explain your reasoning.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\begin{tabular}[t]{l}\n\\(a_{Q}(1)=v_{Q}^{\\prime}(1)=1.026856\\) \\\\\nThe acceleration of particle \\(Q\\) is 1.027 (or 1.026) at time \\(t=1\\).\n\\end{tabular} & Setup and acceleration & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\(v_{Q}(1)=-1<0\\) and \\(a_{Q}(1)>0\\) \\\\\nThe speed of particle \\(Q\\) is decreasing at time \\(t=1\\) because the velocity and acceleration have opposite signs.\n\\end{tabular} & Speed decreasing with reason & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] To earn the first point the acceleration must be explicitly connected to \\(v_{Q}^{\\prime}\\) (e.g., \\(v_{Q}^{\\prime}(1)=1.026856\\) ).\n\\item[-] The first point is not earned for an unsupported value of 1.027 (or 1.026). The setup, \\(v_{Q}^{\\prime}(1)\\), must be shown. Presenting only \\(a_{Q}(1)=1.027\\) (or 1.026 ) without indication that \\(v_{Q}^{\\prime}=a_{Q}\\) is not enough to earn the first point.\n\\item[-] A response does not need to present a value for \\(v_{Q}(1)\\); the sign is sufficient.\n\\item[-] To earn the second point a response must compare the signs of \\(a_{Q}\\) and \\(v_{Q}\\) at \\(t=1\\). Considering only one sign is not sufficient.\n\\item[-] After the first point has been earned, a response declaring only \"velocity and acceleration are of opposite signs at \\(t=1\\) so the particle is slowing down\" (or equivalent) earns the second point.\n\\item[-] The second point may be earned without the first, as long as the response does not present an incorrect value or sign for \\(v_{Q}(1)\\) and concludes the particle is slowing down because velocity and acceleration have opposite signs at \\(t=1\\).\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (c) 2 points\n\\begin{itemize}\n\\item[(d)] Find the total distance traveled by particle \\(P\\) over the time interval \\(0 \\leq t \\leq \\pi\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\multirow{2}{*}{\\begin{tabular}[t]{l}\n\\(\\int_{0}^{\\pi}\\left|v_{P}(t)\\right| d t=1.93148\\) \\\\\nOver the time interval \\(0 \\leq t \\leq \\pi\\), the total distance traveled by particle \\(P\\) is 1.931.\n\\end{tabular}} & Definite integral & 1 point \\\\\n\\hline & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for \\(\\int_{0}^{\\pi}\\left|v_{P}(t)\\right| d t\\).\n\\item[-] The first point can also be earned for a sum (or difference) of definite integrals, such as \\(\\int_{0}^{2.145029} v_{P}(t) d t-\\int_{2.145029}^{\\pi} v_{P}(t) d t\\), provided the response has indicated \\(v_{P}(2.145029)=0\\).\n\\item[-] The second point can only be earned for the correct answer.\n\\item[-] The unsupported value 1.931 earns no points.\n\\item[-] A response reporting the distance traveled by particle \\(Q\\) as \\(\\int_{0}^{\\pi}\\left|v_{Q}(t)\\right| d t=3.506\\) earns the first point and is not eligible for the second point.\n\\item[-] In degree mode, the total distance traveled is 0.122. (See degree mode statement in part (a).) In the degree mode case, the response must present \\(\\int_{0}^{\\pi}\\left|v_{P}(t)\\right| d t\\) in order to earn the first point because \\(\\int_{0}^{\\pi}\\left|v_{P}(t)\\right| d t=\\int_{0}^{\\pi} v_{P}(t) d t\\).\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (d) 2 points\nTotal for question 29 points",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          25,
+          69,
+          527,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          29.36888027144935,
+          74.00223214285714,
+          517.1226369365003,
+          98.18973214285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          104.52455357142857,
+          312.11633543383425,
+          117.77008928571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          132.45535714285714,
+          479.97964129907905,
+          145.125
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          148.2924107142857,
+          428.44013572467287,
+          164.70535714285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          46.35676199709162,
+          177.08705357142856,
+          299.1594764905478,
+          190.33258928571428
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          207.03348214285714,
+          521.4415899175958,
+          220.27901785714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          221.71874999999997,
+          112.0048473097431,
+          234.38839285714283
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          249.0736607142857,
+          514.2433349491033,
+          262.3191964285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          263.75892857142856,
+          229.1924381968008,
+          276.4285714285714
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          295.43303571428567,
+          407.99709161415416,
+          308.10267857142856
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          347.5513392857143,
+          522.0174503150752,
+          360.2209821428571
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          365.40401785714283,
+          473.6451769268057,
+          379.51339285714283
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-02",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

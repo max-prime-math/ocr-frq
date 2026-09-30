@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2011-frq-04",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2011-frq-04-diagram-01.png}\nThe continuous function \\(f\\) is defined on the interval \\(-4 \\leq x \\leq 3\\). The graph of \\(f\\) consists of two quarter circles\nand one line segment, as shown in the figure above. Let \\(g(x)=2 x+\\int_{0}^{x} f(t) d t\\).\n(a) Find \\(g(-3)\\). Find \\(g^{\\prime}(x)\\) and evaluate \\(g^{\\prime}(-3)\\).\n(b) Determine the \\(x\\)-coordinate of the point at which \\(g\\) has an absolute maximum on the interval \\(-4 \\leq x \\leq 3\\).\nJustify your answer.\n(c) Find all values of \\(x\\) on the interval \\(-4<x<3\\) for which the graph of \\(g\\) has a point of inflection. Give a\nreason for your answer.\n(d) Find the average rate of change of \\(f\\) on the interval \\(-4 \\leq x \\leq 3\\). There is no point \\(c,-4<c<3\\), for\nwhich \\(f^{\\prime}(c)\\) is equal to that average rate of change. Explain why this statement does not contradict the\nMean Value Theorem.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        180.74400329589844,
+        63.816001892089844,
+        430.3919982910156,
+        288.9840087890625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2011 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nThe continuous function \\(f\\) is defined on the interval \\(-4 \\leq x \\leq 3\\). The graph of \\(f\\) consists of two quarter circles and one line segment, as shown in the figure above.\nLet \\(g(x)=2 x+\\int_{0}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(-3)\\). Find \\(g^{\\prime}(x)\\) and evaluate \\(g^{\\prime}(-3)\\).\n\\item[(b)] Determine the \\(x\\)-coordinate of the point at which \\(g\\) has an absolute maximum on the interval \\(-4 \\leq x \\leq 3\\). Justify your answer.\n\\item[(c)] Find all values of \\(x\\) on the interval \\(-4<x<3\\) for which the graph of \\(g\\) has a point of inflection. Give a reason for your answer.\n\\item[(d)] Find the average rate of change of \\(f\\) on the interval \\(-4 \\leq x \\leq 3\\). There is no point \\(c,-4<c<3\\), for which \\(f^{\\prime}(c)\\) is equal to that average rate of change. Explain why this statement does not contradict the Mean Value Theorem.\n\\item[(a)] \\(g(-3)=2(-3)+\\int_{0}^{-3} f(t) d t=-6-\\frac{9 \\pi}{4}\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)=2+f(x) \\\\\n& g^{\\prime}(-3)=2+f(-3)=2\n\\end{aligned}\n\\]\n\\item[(b)] \\(g^{\\prime}(x)=0\\) when \\(f(x)=-2\\). This occurs at \\(x=\\frac{5}{2}\\).\n\\[\ng^{\\prime}(x)>0 \\text { for }-4<x<\\frac{5}{2} \\text { and } g^{\\prime}(x)<0 \\text { for } \\frac{5}{2}<x<3 .\n\\]\nTherefore \\(g\\) has an absolute maximum at \\(x=\\frac{5}{2}\\).\n\\item[(c)] \\(g^{\\prime \\prime}(x)=f^{\\prime}(x)\\) changes sign only at \\(x=0\\). Thus the graph of \\(g\\) has a point of inflection at \\(x=0\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: g(-3) \\\\ 1: g^{\\prime}(x) \\\\ 1: g^{\\prime}(-3)\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers } g^{\\prime}(x)=0 \\\\ 1: \\text { identifies interior candidate } \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)\n\n1 : answer with reason\n\\(2:\\left\\{\\begin{array}{l}1: \\text { average rate of change } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] The average rate of change of \\(f\\) on the interval \\(-4 \\leq x \\leq 3\\) is \\(\\frac{f(3)-f(-4)}{3-(-4)}=-\\frac{2}{7}\\).\nTo apply the Mean Value Theorem, \\(f\\) must be differentiable at each point in the interval \\(-4<x<3\\). However, \\(f\\) is not differentiable at \\(x=-3\\) and \\(x=0\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          62,
+          572,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          183.744,
+          66.81599999999999,
+          427.392,
+          285.984
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          316.79999999999995,
+          559.2959999999999,
+          329.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          334.08,
+          418.75199999999995,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          365.18399999999997,
+          287.13599999999997,
+          380.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          387.35999999999996,
+          553.2479999999999,
+          400.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.368,
+          402.04799999999994,
+          173.37599999999998,
+          415.008
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          420.768,
+          552.096,
+          434.304
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          435.45599999999996,
+          188.928,
+          448.41599999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          454.176,
+          536.544,
+          467.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          469.152,
+          538.2719999999999,
+          483.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          484.99199999999996,
+          183.744,
+          496.224
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

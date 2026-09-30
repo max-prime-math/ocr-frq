@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-02",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "A storm washed away sand from a beach, causing the edge of the water to get closer to a nearby road. The rate at which the distance between the road and the edge of the water was changing during the storm is modeled by $f(t)=\\sqrt{t}+\\cos t-3$ meters per hour, $t$ hours after the storm began. The edge of the water was 35 meters from the road when the storm began, and the storm lasted 5 hours. The derivative of $f(t)$ is $f^{\\prime}(t)=\\frac{1}{2 \\sqrt{t}}-\\sin t$.\\\\\n(a) What was the distance between the road and the edge of the water at the end of the storm?\\\\\n(b) Using correct units, interpret the value $f^{\\prime}(4)=1.007$ in terms of the distance between the road and the edge of the water.\\\\\n(c) At what time during the 5 hours of the storm was the distance between the road and the edge of the water decreasing most rapidly? Justify your answer.\\\\\n(d) After the storm, a machine pumped sand back onto the beach so that the distance between the road and the edge of the water was growing at a rate of $g(p)$ meters per day, where $p$ is the number of days since pumping began. Write an equation involving an integral expression whose solution would give the number of days that sand must be pumped to restore the original distance between the road and the edge of the water.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nA storm washed away sand from a beach, causing the edge of the water to get closer to a nearby road. The rate at which the distance between the road and the edge of the water was changing during the storm is modeled by \\(f(t)=\\sqrt{t}+\\cos t-3\\) meters per hour, \\(t\\) hours after the storm began. The edge of the water was 35 meters from the road when the storm began, and the storm lasted 5 hours. The derivative of \\(f(t)\\) is \\(f^{\\prime}(t)=\\frac{1}{2 \\sqrt{t}}-\\sin t\\).\n\\begin{itemize}\n\\item[(a)] What was the distance between the road and the edge of the water at the end of the storm?\n\\item[(b)] Using correct units, interpret the value \\(f^{\\prime}(4)=1.007\\) in terms of the distance between the road and the edge of the water.\n\\item[(c)] At what time during the 5 hours of the storm was the distance between the road and the edge of the water decreasing most rapidly? Justify your answer.\n\\item[(d)] After the storm, a machine pumped sand back onto the beach so that the distance between the road and the edge of the water was growing at a rate of \\(g(p)\\) meters per day, where \\(p\\) is the number of days since pumping began. Write an equation involving an integral expression whose solution would give the number of days that sand must be pumped to restore the original distance between the road and the edge of the water.\n\\item[(a)] \\(35+\\int_{0}^{5} f(t) d t=26.494\\) or 26.495 meters\n\\item[(b)] Four hours after the storm began, the rate of change of the distance between the road and the edge of the water is increasing at a rate of 1.007 meters/hours \\({ }^{2}\\).\n\\item[(c)] \\(\\quad f^{\\prime}(t)=0\\) when \\(t=0.66187\\) and \\(t=2.84038\\) The minimum of \\(f\\) for \\(0 \\leq t \\leq 5\\) may occur at 0, 0.66187, 2.84038, or 5.\n\\[\n\\begin{aligned}\n& f(0)=-2 \\\\\n& f(0.66187)=-1.39760 \\\\\n& f(2.84038)=-2.26963 \\\\\n& f(5)=-0.48027\n\\end{aligned}\n\\]\nThe distance between the road and the edge of the water was decreasing most rapidly at time \\(t=2.840\\) hours after the storm began.\n\\item[(d)] \\(-\\int_{0}^{5} f(t) d t=\\int_{0}^{x} g(p) d p\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { interpretation of } f^{\\prime}(4) \\\\ 1: \\text { units }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { considers } f^{\\prime}(t)=0 \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral of } g \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          331
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2009-form-b-frq-02-diagram-01.jpg",
+      "belongsToQuestion": "ap-calc-bc-2009-form-b-frq-03"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

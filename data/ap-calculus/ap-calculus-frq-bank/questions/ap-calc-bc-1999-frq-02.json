@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-1999-frq-02-bc-1999_fig2.jpg\", width: 48%)\n\nThe shaded region $R$ is bounded by $y=x^2$ and $y=4$.\n\n(a) Find the area of $R$.\n\n(b) Find the volume when $R$ is revolved about the $x$-axis.\n\n(c) For some $k>4$, revolving $R$ about $y=k$ produces the same volume as in part (b). Write, but do not solve, an integral equation for $k$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1999-frq-02",
+    "images": [
+      "ap-calc-bc-1999-frq-02-bc-1999_fig2.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-12",
+    "solution": "(a) The curves meet at $x=-2$ and $x=2$.\n$A = integral_-2^2 (4-x^2) dif x = 32/3$.\n\n(b) Using washers,\n$V = pi integral_-2^2 (4^2-(x^2)^2) dif x = 256pi/5$.\n\n(c) The outer radius is $k-x^2$ and the inner radius is $k-4$, so an appropriate equation is\n$pi integral_-2^2 ((k-x^2)^2-(k-4)^2) dif x = 256pi/5$.",
+    "tags": [
+      "1999",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

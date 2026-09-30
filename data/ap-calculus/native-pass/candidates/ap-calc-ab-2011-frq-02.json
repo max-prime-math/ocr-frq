@@ -1,0 +1,230 @@
+{
+  "id": "ap-calc-ab-2011-frq-02",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [2], [5], [9], [10], table.hline(stroke: .5pt), [$H(t)$ (degrees Celsius)], [66], [60], [52], [44], [43], table.hline(stroke: .5pt));\n\nAs a pot of tea cools, the temperature of the tea is modeled by a differentiable function $H$ for $0 <= t <= 10$, where time $t$ is measured in minutes and temperature $H(t)$ is measured in degrees Celsius. Values of $H(t)$ at selected values of time $t$ are shown in the table above.\n\n(a) Use the data in the table to approximate the rate at which the temperature of the tea is changing at time $t = 3.5$. Show the computations that lead to your answer.\n\n(b) Using correct units, explain the meaning of $frac(1,10) integral_(0)^(10) H(t) d t$ in the context of this problem. Use a trapezoidal sum with the four subintervals indicated by the table to estimate $frac(1,10) integral_(0)^(10) H(t) d t$.\n\n(c) Evaluate $integral_(0)^(10) H'(t) d t$. Using correct units, explain the meaning of the expression in the context of this problem.\n\n(d) At time $t = 0$, biscuits with temperature $100^(degree) upright(C)$ were removed from an oven. The temperature of the biscuits at time $t$ is modeled by a differentiable function $B$ for which it is known that $B'(t)= - 13.84 e^(- 0.173 t)$. Using the given models, at time $t = 10$, how much cooler are the biscuits than the tea?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          63,
+          572,
+          438
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          200.736,
+          68.544,
+          411.26399999999995,
+          130.464
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          141.98399999999998,
+          563.04,
+          154.944
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          156.384,
+          561.8879999999999,
+          170.784
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          64.512,
+          171.93599999999998,
+          268.416,
+          183.744
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          65.088,
+          190.944,
+          536.832,
+          203.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          203.32799999999997,
+          340.128,
+          215.712
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          65.088,
+          222.91199999999998,
+          558.4319999999999,
+          247.67999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          251.42399999999998,
+          435.16799999999995,
+          275.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          65.088,
+          285.40799999999996,
+          535.3919999999999,
+          309.59999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          311.328,
+          123.83999999999999,
+          324.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          65.088,
+          329.76,
+          530.208,
+          342.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          344.15999999999997,
+          463.96799999999996,
+          356.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          84.672,
+          357.69599999999997,
+          539.424,
+          374.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          375.26399999999995,
+          118.368,
+          386.20799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e95684a0f8ee5cd959823bf5fec79c992c6f6d554aa0f3d93369cb1176e56c2d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2004-frq-03",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves along the $y$-axis so that its velocity $v$ at time $t >= 0$ is given by $v(t)= 1 - tan^(- 1)lr((e^(t)))$. At time $t = 0$, the particle is at $y = - 1$. (Note: $tan^(- 1) x = arctan x$ )\n\n(a) Find the acceleration of the particle at time $t = 2$.\n\n(b) Is the speed of the particle increasing or decreasing at time $t = 2$ ? Give a reason for your answer.\n\n(c) Find the time $t >= 0$ at which the particle reaches its highest point. Justify your answer.\n\n(d) Find the position of the particle at time $t = 2$. Is the particle moving toward the origin or away from the origin at time $t = 2$ ? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          71,
+          572,
+          320
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          75.45599999999999,
+          556.992,
+          93.88799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          97.63199999999999,
+          328.032,
+          113.75999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          121.24799999999999,
+          304.416,
+          134.784
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          140.54399999999998,
+          518.688,
+          153.504
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          161.56799999999998,
+          469.152,
+          174.528
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          180.576,
+          544.608,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          193.53599999999997,
+          273.024,
+          206.49599999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0f8e7612a102d37eaad18eca19c9c5de6b68d33547a538334581c1fb14a0a8a1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

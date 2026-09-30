@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2018-frq-02",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Researchers on a boat are investigating plankton cells in a sea. At a depth of $h$ meters, the density of plankton cells, in millions of cells per cubic meter, is modeled by $p(h)= 0.2 h^(2) e^(- 0.0025 h^(2))$ for $0 <= h <= 30$ and is modeled by $f(h)$ for $h >= 30$. The continuous function $f$ is not explicitly given.\n\n(a) Find $p'(25)$. Using correct units, interpret the meaning of $p'(25)$ in the context of the problem.\n\n(b) Consider a vertical column of water in this sea with horizontal cross sections of constant area 3 square meters. To the nearest million, how many plankton cells are in this column of water between $h = 0$ and $h = 30$ meters?\n\n(c) There is a function $u$ such that $0 <= f(h) <= u(h)$ for all $h >= 30$ and $integral_(30)^(oo) u(h) d h = 105$. The column of water in part (b) is $K$ meters deep, where $K > 30$. Write an expression involving one or more integrals that gives the number of plankton cells, in millions, in the entire column. Explain why the number of plankton cells in the column is less than or equal to 2000 million.\n\n(d) The boat is moving on the surface of the sea. At time $t >= 0$, the position of the boat is $(x(t)\\, y(t))$, where $x'(t)= 662 sin(5 t)$ and $y'(t)= 880 cos(6 t)$. Time $t$ is measured in hours, and $x(t)$ and $y(t)$ are measured in meters. Find the total distance traveled by the boat over the time interval $0 <= t <= 1$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          39,
+          101,
+          570,
+          502
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "bd0309f7dac48ff3e83951a4b3837c1b49753064611b292ff4096038207eca78",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ]
+}

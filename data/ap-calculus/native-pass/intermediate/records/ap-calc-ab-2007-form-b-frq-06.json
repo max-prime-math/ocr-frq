@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-form-b-frq-06",
+  "course": "AB",
+  "year": 2007,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007-FORM-B.pdf",
+      "sha256": "9c053de89559fdff9dc3d2c68d4d0e6a291eb32bae83bc301793b6656c9a0256",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007-FORM-B.pdf",
+      "sha256": "262d617d708fc64aa571d2998feeb3ee8ba3af03c369c8fccd0f7a9f72c33290"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be a twice-differentiable function such that \\(f(2)=5\\) and \\(f(5)=2\\). Let \\(g\\) be the function given by\n\\(g(x)=f(f(x))\\).\n(a) Explain why there must be a value \\(c\\) for \\(2<c<5\\) such that \\(f^{\\prime}(c)=-1\\).\n(b) Show that \\(g^{\\prime}(2)=g^{\\prime}(5)\\). Use this result to explain why there must be a value \\(k\\) for \\(2<k<5\\) such that\n\\(g^{\\prime \\prime}(k)=0\\).\n(c) Show that if \\(f^{\\prime \\prime}(x)=0\\) for all \\(x\\), then the graph of \\(g\\) does not have a point of inflection.\n(d) Let \\(h(x)=f(x)-x\\). Explain why there must be a value \\(r\\) for \\(2<r<5\\) such that \\(h(r)=0\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nLet \\(f\\) be a twice-differentiable function such that \\(f(2)=5\\) and \\(f(5)=2\\). Let \\(g\\) be the function given by \\(g(x)=f(f(x))\\).\n\\begin{itemize}\n\\item[(a)] Explain why there must be a value \\(c\\) for \\(2<c<5\\) such that \\(f^{\\prime}(c)=-1\\).\n\\item[(b)] Show that \\(g^{\\prime}(2)=g^{\\prime}(5)\\). Use this result to explain why there must be a value \\(k\\) for \\(2<k<5\\) such that \\(g^{\\prime \\prime}(k)=0\\).\n\\item[(c)] Show that if \\(f^{\\prime \\prime}(x)=0\\) for all \\(x\\), then the graph of \\(g\\) does not have a point of inflection.\n\\item[(d)] Let \\(h(x)=f(x)-x\\). Explain why there must be a value \\(r\\) for \\(2<r<5\\) such that \\(h(r)=0\\).\n\\item[(a)] The Mean Value Theorem guarantees that there is a value \\(c\\), with \\(2<c<5\\), so that\n\\[\nf^{\\prime}(c)=\\frac{f(5)-f(2)}{5-2}=\\frac{2-5}{5-2}=-1 .\n\\]\n\\item[(b)] \\(\\quad g^{\\prime}(x)=f^{\\prime}(f(x)) \\cdot f^{\\prime}(x)\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(2)=f^{\\prime}(f(2)) \\cdot f^{\\prime}(2)=f^{\\prime}(5) \\cdot f^{\\prime}(2) \\\\\n& g^{\\prime}(5)=f^{\\prime}(f(5)) \\cdot f^{\\prime}(5)=f^{\\prime}(2) \\cdot f^{\\prime}(5)\n\\end{aligned}\n\\]\nThus, \\(g^{\\prime}(2)=g^{\\prime}(5)\\).\nSince \\(f\\) is twice-differentiable, \\(g^{\\prime}\\) is differentiable\neverywhere, so the Mean Value Theorem applied to \\(g^{\\prime}\\) on [2, 5] guarantees there is a value \\(k\\), with \\(2<k<5\\), such that \\(g^{\\prime \\prime}(k)=\\frac{g^{\\prime}(5)-g^{\\prime}(2)}{5-2}=0\\).\n\\item[(c)] \\(g^{\\prime \\prime}(x)=f^{\\prime \\prime}(f(x)) \\cdot f^{\\prime}(x) \\cdot f^{\\prime}(x)+f^{\\prime}(f(x)) \\cdot f^{\\prime \\prime}(x)\\)\nIf \\(f^{\\prime \\prime}(x)=0\\) for all \\(x\\), then\n\\(g^{\\prime \\prime}(x)=0 \\cdot f^{\\prime}(x) \\cdot f^{\\prime}(x)+f^{\\prime}(f(x)) \\cdot 0=0\\) for all \\(x\\).\nThus, there is no \\(x\\)-value at which \\(g^{\\prime \\prime}(x)\\) changes sign, so the graph of \\(g\\) has no inflection points.\nOR\nIf \\(f^{\\prime \\prime}(x)=0\\) for all \\(x\\), then \\(f\\) is linear, so \\(g=f \\circ f\\) is linear and the graph of \\(g\\) has no inflection points.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{f(5)-f(2)}{5-2} \\\\ 1: \\text { conclusion, using MVT }\\end{array}\\right.\\)\n\\[\n3:\\left\\{\\begin{array}{l}\n1: g^{\\prime}(x) \\\\\n1: g^{\\prime}(2)=f^{\\prime}(5) \\cdot f^{\\prime}(2)=g^{\\prime}(5) \\\\\n1: \\text { uses MVT with } g^{\\prime}\n\\end{array}\\right.\n\\]\n\\(2:\\left\\{\\begin{array}{l}1: \\text { considers } g^{\\prime \\prime} \\\\ 1: g^{\\prime \\prime}(x)=0 \\text { for all } x\\end{array}\\right.\\)\nOR\n\\(2:\\left\\{\\begin{array}{l}1: f \\text { is linear } \\\\ 1: g \\text { is linear }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: h(2) \\text { and } h(5) \\\\ 1: \\text { conclusion, using IVT }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] Let \\(h(x)=f(x)-x\\).\n\\[\n\\begin{aligned}\n& h(2)=f(2)-2=5-2=3 \\\\\n& h(5)=f(5)-5=2-5=-3\n\\end{aligned}\n\\]\nSince \\(h(2)>0>h(5)\\), the Intermediate Value Theorem guarantees that there is a value \\(r\\), with \\(2<r<5\\), such that \\(h(r)=0\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          391,
+          572,
+          574
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          412.128,
+          534.5279999999999,
+          425.664
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.664,
+          428.256,
+          140.54399999999998,
+          443.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          450.43199999999996,
+          412.128,
+          463.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.088,
+          472.032,
+          548.352,
+          486.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          488.15999999999997,
+          134.208,
+          502.27199999999993
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 20,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          510.33599999999996,
+          478.94399999999996,
+          523.2959999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 21,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          532.2239999999999,
+          498.816,
+          545.76
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-form-b-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-form-b-frq-04",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2011-form-b-frq-04-diagram-01.png}\n\nThe graph of the differentiable function $y=f(x)$ with domain $0 \\leq x \\leq 10$ is shown in the figure above. The area of the region enclosed between the graph of $f$ and the $x$-axis for $0 \\leq x \\leq 5$ is 10 , and the area of the region enclosed between the graph of $f$ and the $x$-axis for $5 \\leq x \\leq 10$ is 27 . The arc length for the portion of the graph of $f$ between $x=0$ and $x=5$ is 11, and the arc length for the portion of the graph of $f$ between $x=5$ and $x=10$ is 18 . The function $f$ has exactly two critical points that are located at $x=3$ and $x=8$.\\\\\n(a) Find the average value of $f$ on the interval $0 \\leq x \\leq 5$.\\\\\n(b) Evaluate $\\int_{0}^{10}(3 f(x)+2) d x$. Show the computations that lead to your answer.\\\\\n(c) Let $g(x)=\\int_{5}^{x} f(t) d t$. On what intervals, if any, is the graph of $g$ both concave up and decreasing? Explain your reasoning.\\\\\n(d) The function $h$ is defined by $h(x)=2 f\\left(\\frac{x}{2}\\right)$. The derivative of $h$ is $h^{\\prime}(x)=f^{\\prime}\\left(\\frac{x}{2}\\right)$. Find the arc length of the graph of $y=h(x)$ from $x=0$ to $x=20$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-form-b-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        211.0,
+        68.0,
+        401.0,
+        257.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 4}\n\nThe graph of the differentiable function \\(y=f(x)\\) with domain \\(0 \\leq x \\leq 10\\) is shown in the figure above. The area of the region enclosed between the graph of \\(f\\) and the \\(x\\)-axis for \\(0 \\leq x \\leq 5\\) is 10, and the area of the region enclosed between the graph of \\(f\\) and the \\(x\\)-axis for \\(5 \\leq x \\leq 10\\) is 27. The arc length for the portion of the graph of \\(f\\) between \\(x=0\\) and \\(x=5\\) is 11, and the arc length for the portion of the graph of \\(f\\) between \\(x=5\\) and \\(x=10\\) is 18. The function \\(f\\) has exactly two critical points that are located at \\(x=3\\) and \\(x=8\\).\n\\begin{itemize}\n\\item[(a)] Find the average value of \\(f\\) on the interval \\(0 \\leq x \\leq 5\\).\n\\item[(b)] Evaluate \\(\\int_{0}^{10}(3 f(x)+2) d x\\). Show the computations that lead to your answer.\n\\item[(c)] Let \\(g(x)=\\int_{5}^{x} f(t) d t\\). On what intervals, if any, is the graph of \\(g\\) both concave up and decreasing? Explain your reasoning.\n\\item[(d)] The function \\(h\\) is defined by \\(h(x)=2 f\\left(\\frac{x}{2}\\right)\\). The derivative of \\(h\\) is \\(h^{\\prime}(x)=f^{\\prime}\\left(\\frac{x}{2}\\right)\\). Find the arc length of the graph of \\(y=h(x)\\) from \\(x=0\\) to \\(x=20\\).\n\\item[(a)] Average value \\(=\\frac{1}{5} \\int_{0}^{5} f(x) d x=\\frac{-10}{5}=-2\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{0}^{10}(3 f(x)+2) d x & =3\\left(\\int_{0}^{5} f(x) d x+\\int_{5}^{10} f(x) d x\\right)+20 \\\\\n& =3(-10+27)+20=71\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)=f(x) \\\\\n& g^{\\prime}(x)<0 \\text { on } 0<x<5 \\\\\n& g^{\\prime}(x) \\text { is increasing on } 3<x<8 .\n\\end{aligned}\n\\]\nThe graph of \\(g\\) is concave up and decreasing on \\(3<x<5\\).\n\\item[(d)] Arc length \\(=\\int_{0}^{20} \\sqrt{1+\\left(h^{\\prime}(x)\\right)^{2}} d x=\\int_{0}^{20} \\sqrt{1+\\left(f^{\\prime}\\left(\\frac{x}{2}\\right)\\right)^{2}} d x\\)\nLet \\(u=\\frac{x}{2}\\). Then \\(d u=\\frac{1}{2} d x\\) and\n\\[\n\\int_{0}^{20} \\sqrt{1+\\left(f^{\\prime}\\left(\\frac{x}{2}\\right)\\right)^{2}} d x=2 \\int_{0}^{10} \\sqrt{1+\\left(f^{\\prime}(u)\\right)^{2}} d u=2(11+18)=58\n\\]\n\\end{itemize}\n\n1 : answer\n\n2 : answer\n\\(3:\\left\\{\\begin{array}{l}1: g^{\\prime}(x)=f(x) \\\\ 1: \\text { analysis } \\\\ 1: \\text { answer and reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { substitution } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          509
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        211.0,
+        68.0,
+        401.0,
+        257.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2011-form-b-frq-03"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

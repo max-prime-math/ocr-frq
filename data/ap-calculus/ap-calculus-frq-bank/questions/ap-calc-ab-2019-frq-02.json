@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (hours)], [0], [0.3], [1.7], [2.8], [4], table.hline(stroke: .5pt), [$v_(P)(t)$ (meters per hour)], [0], [55], [-29], [55], [48], table.hline(stroke: .5pt));\n\nThe velocity of a particle, $P$, moving along the $x$-axis is given by the differentiable function $v_(P)$, where $v_(P)(t)$ is measured in meters per hour and $t$ is measured in hours. Selected values of $v_(P)(t)$ are shown in the table above. Particle $P$ is at the origin at time $t = 0$.\n\n(a) Justify why there must be at least one time $t$, for $0.3 <= t <= 2.8$, at which $v_(P) \"\"^(prime)(t)$, the acceleration of particle $P$, equals 0 meters per hour per hour.\n\n(b) Use a trapezoidal sum with the three subintervals \\[0, 0.3\\], \\[0.3, 1.7\\], and \\[1.7, 2.8\\] to approximate the value of $integral_(0)^(2.8) v_(P)(t) d t$.\n\n(c) A second particle, $Q$, also moves along the $x$-axis so that its velocity for $0 <= t <= 4$ is given by $v_(Q)(t)= 45 sqrt(t) cos lr((0.063 t^(2)))$ meters per hour. Find the time interval during which the velocity of particle $Q$ is at least 60 meters per hour. Find the distance traveled by particle $Q$ during the interval when the velocity of particle $Q$ is at least 60 meters per hour.\n\n(d) At time $t = 0$, particle $Q$ is at position $x = - 90$. Using the result from part (b) and the function $v_(Q)$ from part (c), approximate the distance between particles $P$ and $Q$ at time $t = 2.8$.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2019-frq-02",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-2",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2019",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

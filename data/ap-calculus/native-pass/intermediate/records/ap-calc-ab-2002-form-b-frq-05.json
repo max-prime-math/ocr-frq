@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2002-form-b-frq-05",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{3-x}{y}\\).\n(a) Let \\(y=f(x)\\) be the particular solution to the given differential equation for \\(1<x<5\\) such that the line\n\\(y=-2\\) is tangent to the graph of \\(f\\). Find the \\(x\\)-coordinate of the point of tangency, and determine whether\n\\(f\\) has a local maximum, local minimum, or neither at this point. Justify your answer.\n(b) Let \\(y=g(x)\\) be the particular solution to the given differential equation for \\(-2<x<8\\), with the initial\ncondition \\(g(6)=-4\\). Find \\(y=g(x)\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{3-x}{y}\\).\n\\begin{itemize}\n\\item[(a)] Let \\(y=f(x)\\) be the particular solution to the given differential equation for \\(1<x<5\\) such that the line \\(y=-2\\) is tangent to the graph of \\(f\\). Find the \\(x\\)-coordinate of the point of tangency, and determine whether \\(f\\) has a local maximum, local minimum, or neither at this point. Justify your answer.\n\\item[(b)] Let \\(y=g(x)\\) be the particular solution to the given differential equation for \\(-2<x<8\\), with the initial condition \\(g(6)=-4\\). Find \\(y=g(x)\\).\n\\item[(a)] \\(\\frac{d y}{d x}=0\\) when \\(x=3\\)\n\\[\n\\left.\\frac{d^{2} y}{d x^{2}}\\right|_{(3,-2)}=\\left.\\frac{-y-y^{\\prime}(3-x)}{y^{2}}\\right|_{(3,-2)}=\\frac{1}{2},\n\\]\nso \\(f\\) has a local minimum at this point. or\nBecause \\(f\\) is continuous for \\(1<x<5\\), there is an interval containing \\(x=3\\) on which \\(y<0\\). On this interval, \\(\\frac{d y}{d x}\\) is negative to the left of \\(x=3\\) and \\(\\frac{d y}{d x}\\) is positive to the right of \\(x=3\\). Therefore \\(f\\) has a local minimum at \\(x=3\\).\n\\item[(b)] \\(y d y=(3-x) d x\\)\n\\[\n\\begin{aligned}\n& \\frac{1}{2} y^{2}=3 x-\\frac{1}{2} x^{2}+C \\\\\n& 8=18-18+C ; C=8 \\\\\n& y^{2}=6 x-x^{2}+16 \\\\\n& y=-\\sqrt{6 x-x^{2}+16}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3\\left\\{\\begin{array}{l}1: x=3 \\\\ 1: \\text { local minimum } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(6\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivative of } d y \\text { term } \\\\ 1: \\text { antiderivative of } d x \\text { term } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } g(6)=-4 \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 3 / 6\\) [1-1-1-0-0-0] if no constant of integration\n\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          531,
+          572,
+          692
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          553.2479999999999,
+          279.64799999999997,
+          580.608
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          589.536,
+          551.232,
+          603.072
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          605.664,
+          553.824,
+          618.6239999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          80.35199999999999,
+          619.4879999999999,
+          454.75199999999995,
+          632.448
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          638.496,
+          548.064,
+          652.0319999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          81.79199999999999,
+          655.776,
+          251.42399999999998,
+          669.3119999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

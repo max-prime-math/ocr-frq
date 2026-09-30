@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-form-b-frq-02",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "rawPrompt": "The polar curve $r$ is given by $r(\\theta)=3 \\theta+\\sin \\theta$, where $0 \\leq \\theta \\leq 2 \\pi$.\\\\\n(a) Find the area in the second quadrant enclosed by the coordinate axes and the graph of $r$.\\\\\n(b) For $\\frac{\\pi}{2} \\leq \\theta \\leq \\pi$, there is one point $P$ on the polar curve $r$ with $x$-coordinate -3 . Find the angle $\\theta$ that corresponds to point $P$. Find the $y$-coordinate of point $P$. Show the work that leads to your answers.\\\\\n(c) A particle is traveling along the polar curve $r$ so that its position at time $t$ is $(x(t), y(t))$ and such that $\\frac{d \\theta}{d t}=2$. Find $\\frac{d y}{d t}$ at the instant that $\\theta=\\frac{2 \\pi}{3}$, and interpret the meaning of your answer in the context of the problem.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nThe polar curve \\(r\\) is given by \\(r(\\theta)=3 \\theta+\\sin \\theta\\), where \\(0 \\leq \\theta \\leq 2 \\pi\\).\n\\begin{itemize}\n\\item[(a)] Find the area in the second quadrant enclosed by the coordinate axes and the graph of \\(r\\).\n\\item[(b)] For \\(\\frac{\\pi}{2} \\leq \\theta \\leq \\pi\\), there is one point \\(P\\) on the polar curve \\(r\\) with \\(x\\)-coordinate -3. Find the angle \\(\\theta\\) that corresponds to point \\(P\\). Find the \\(y\\)-coordinate of point \\(P\\). Show the work that leads to your answers.\n\\item[(c)] A particle is traveling along the polar curve \\(r\\) so that its position at time \\(t\\) is \\((x(t), y(t))\\) and such that \\(\\frac{d \\theta}{d t}=2\\). Find \\(\\frac{d y}{d t}\\) at the instant that \\(\\theta=\\frac{2 \\pi}{3}\\), and interpret the meaning of your answer in the context of the problem.\n\\item[(a)] Area \\(=\\frac{1}{2} \\int_{\\pi / 2}^{\\pi}(r(\\theta))^{2} d \\theta=47.513\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n& -3=r(\\theta) \\cos \\theta=(3 \\theta+\\sin \\theta) \\cos \\theta \\\\\n& \\theta=2.01692 \\\\\n& y=r(\\theta) \\sin (\\theta)=6.272\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& y=r(\\theta) \\sin \\theta=(3 \\theta+\\sin \\theta) \\sin \\theta \\\\\n& \\left.\\frac{d y}{d t}\\right|_{\\theta=2 \\pi / 3}=\\left[\\frac{d y}{d \\theta} \\cdot \\frac{d \\theta}{d t}\\right]_{\\theta=2 \\pi / 3}=-2.819\n\\end{aligned}\n\\]\nThe \\(y\\)-coordinate of the particle is decreasing at a rate of 2.819 .\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          421,
+          572,
+          609
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "ap-calc-ab-2002-form-b-frq-04",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2002-form-b-frq-04-diagram-01.png\", width: 65%)\n\nThe graph of a differentiable function $f$ on the closed interval \\[-3, 15\\] is shown in the figure above. The graph of $f$ has a horizontal tangent line at $x = 6$. Let $g(x)= 5 + integral_(6)^(x) f(t) d t$ for $- 3 <= x <= 15$.\n\n(a) Find $g(6)\\, g'(6)$, and $g''(6)$.\n\n(b) On what intervals is $g$ decreasing? Justify your answer.\n\n(c) On what intervals is the graph of $g$ concave down? Justify your answer.\n\n(d) Find a trapezoidal approximation of $integral_(- 3)^(15) f(t) d t$ using six subintervals of length $Delta t = 3$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2002-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2002-form-b-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        157.1280059814453,
+        210.4080047607422,
+        454.5840148925781,
+        357.52801513671875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          75,
+          572,
+          521
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          160.128,
+          213.408,
+          451.58399999999995,
+          354.52799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          384.19199999999995,
+          556.4159999999999,
+          397.152
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          400.89599999999996,
+          457.91999999999996,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          432.57599999999996,
+          213.98399999999998,
+          446.688
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          454.75199999999995,
+          330.33599999999996,
+          467.712
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          472.60799999999995,
+          402.62399999999997,
+          486.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          492.47999999999996,
+          472.60799999999995,
+          516.6719999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "22f083dfc1610ffa74cdc804d751fd1dc5b51213ae2fa75edc863d80d000d4c8",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

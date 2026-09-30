@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2014-frq-06",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The Taylor series for a function $f$ about $x = 1$ is given by $sum_(n = 1)^(oo)(- 1)^(n + 1) frac(2^(n),n)(x - 1)^(n)$ and converges to $f(x)$ for $| x - 1 | < R$, where $R$ is the radius of convergence of the Taylor series.\n\n(a) Find the value of $R$.\n\n(b) Find the first three nonzero terms and the general term of the Taylor series for $f'$, the derivative of $f$, about $x = 1$.\n\n(c) The Taylor series for $f'$ about $x = 1$, found in part (b), is a geometric series. Find the function $f'$ to which the series converges for $| x - 1 | < R$. Use this function to determine $f$ for $| x - 1 | < R$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          68,
+          577,
+          430
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "eb5b9aba46a0818f8446a2207a1998e908290e8203a14442256db08ba11c4910",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ]
+}

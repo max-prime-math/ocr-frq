@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-2000-frq-01-bc-2000_fig1.jpg\", width: 52%)\n\nIn the first quadrant, $R$ is enclosed by $y=e^(-x^2)$, $y=1-cos x$, and the $y$-axis.\n\n(a) Find the area of $R$.\n\n(b) Find the volume when $R$ is revolved about the $x$-axis.\n\n(c) $R$ is the base of a solid with square cross sections perpendicular to the $x$-axis. Find its volume.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2000-frq-01",
+    "images": [
+      "ap-calc-bc-2000-frq-01-bc-2000_fig1.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-11",
+    "solution": "Let $A approx 0.941944$ be the positive intersection satisfying $e^(-A^2)=1-cos A$.\n\n(a) $integral_0^A (e^(-x^2)-(1-cos x)) dif x approx 0.590$.\n\n(b) $pi integral_0^A ((e^(-x^2))^2-(1-cos x)^2) dif x approx 1.746$.\n\n(c) $integral_0^A (e^(-x^2)-(1-cos x))^2 dif x approx 0.461$.",
+    "tags": [
+      "2000",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2018-frq-06",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The Maclaurin series for $ln(1 + x)$ is given by $ x - frac(x^(2),2)+ frac(x^(3),3)- frac(x^(4),4)+ dots.h.c + (- 1)^(n + 1) frac(x^(n),n)+ dots.h.c $\n\nOn its interval of convergence, this series converges to $ln(1 + x)$. Let $f$ be the function defined by\n\n$ f(x)= x ln lr((1 + frac(x,3))) $\n\n(a) Write the first four nonzero terms and the general term of the Maclaurin series for $f$.\n\n(b) Determine the interval of convergence of the Maclaurin series for $f$. Show the work that leads to your answer.\n\n(c) Let $P_(4)(x)$ be the fourth-degree Taylor polynomial for $f$ about $x = 0$. Use the alternating series error bound to find an upper bound for $lr(| P_(4)(2)- f(2)|)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          80,
+          570,
+          461
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fbe988c7d4b4ed1d91ab64c3da63fe3bbc2b0256a991d853ce2d764f7ffa9e96",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ]
+}

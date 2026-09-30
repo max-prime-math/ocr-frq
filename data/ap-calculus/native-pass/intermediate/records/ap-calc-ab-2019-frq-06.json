@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2019-frq-06",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "rawPrompt": "Functions \\(f, g\\), and \\(h\\) are twice-differentiable functions with \\(g(2)=h(2)=4\\). The line \\(y=4+\\frac{2}{3}(x-2)\\) is\ntangent to both the graph of \\(g\\) at \\(x=2\\) and the graph of \\(h\\) at \\(x=2\\).\n(a) Find \\(h^{\\prime}(2)\\).\n(b) Let \\(a\\) be the function given by \\(a(x)=3 x^{3} h(x)\\). Write an expression for \\(a^{\\prime}(x)\\). Find \\(a^{\\prime}(2)\\).\n(c) The function \\(h\\) satisfies \\(h(x)=\\frac{x^{2}-4}{1-(f(x))^{3}}\\) for \\(x \\neq 2\\). It is known that \\(\\lim _{x \\rightarrow 2} h(x)\\) can be evaluated using\nL'Hospital's Rule. Use \\(\\lim _{x \\rightarrow 2} h(x)\\) to find \\(f(2)\\) and \\(f^{\\prime}(2)\\). Show the work that leads to your answers.\n(d) It is known that \\(g(x) \\leq h(x)\\) for \\(1<x<3\\). Let \\(k\\) be a function satisfying \\(g(x) \\leq k(x) \\leq h(x)\\) for\n\\(1<x<3\\). Is \\(k\\) continuous at \\(x=2\\) ? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)] \\(h^{\\prime}(2)=\\frac{2}{3}\\)\n\\item[(b)] \\(a^{\\prime}(x)=9 x^{2} h(x)+3 x^{3} h^{\\prime}(x)\\)\n\\[\na^{\\prime}(2)=9 \\cdot 2^{2} h(2)+3 \\cdot 2^{3} h^{\\prime}(2)=36 \\cdot 4+24 \\cdot \\frac{2}{3}=160\n\\]\n\\item[(c)] Because \\(h\\) is differentiable, \\(h\\) is continuous, so \\(\\lim _{x \\rightarrow 2} h(x)=h(2)=4\\).\nAlso, \\(\\lim _{x \\rightarrow 2} h(x)=\\lim _{x \\rightarrow 2} \\frac{x^{2}-4}{1-(f(x))^{3}}\\), so \\(\\lim _{x \\rightarrow 2} \\frac{x^{2}-4}{1-(f(x))^{3}}=4\\).\nBecause \\(\\lim _{x \\rightarrow 2}\\left(x^{2}-4\\right)=0\\), we must also have \\(\\lim _{x \\rightarrow 2}\\left(1-(f(x))^{3}\\right)=0\\).\nThus \\(\\lim _{x \\rightarrow 2} f(x)=1\\).\nBecause \\(f\\) is differentiable, \\(f\\) is continuous, so \\(f(2)=\\lim _{x \\rightarrow 2} f(x)=1\\).\nAlso, because \\(f\\) is twice differentiable, \\(f^{\\prime}\\) is continuous, so\n\\(\\lim _{x \\rightarrow 2} f^{\\prime}(x)=f^{\\prime}(2)\\) exists.\nUsing L'Hospital's Rule,\n\\[\n\\lim _{x \\rightarrow 2} \\frac{x^{2}-4}{1-(f(x))^{3}}=\\lim _{x \\rightarrow 2} \\frac{2 x}{-3(f(x))^{2} f^{\\prime}(x)}=\\frac{4}{-3(1)^{2} \\cdot f^{\\prime}(2)}=4 .\n\\]\nThus \\(f^{\\prime}(2)=-\\frac{1}{3}\\).\n\\item[(d)] Because \\(g\\) and \\(h\\) are differentiable, \\(g\\) and \\(h\\) are continuous, so \\(\\lim _{x \\rightarrow 2} g(x)=g(2)=4\\) and \\(\\lim _{x \\rightarrow 2} h(x)=h(2)=4\\).\nBecause \\(g(x) \\leq k(x) \\leq h(x)\\) for \\(1<x<3\\), it follows from the squeeze theorem that \\(\\lim _{x \\rightarrow 2} k(x)=4\\).\nAlso, \\(4=g(2) \\leq k(2) \\leq h(2)=4\\), so \\(k(2)=4\\).\nThus \\(k\\) is continuous at \\(x=2\\).\n\\end{itemize}\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { form of product rule } \\\\ 1: a^{\\prime}(x) \\\\ 1: a^{\\prime}(2)\\end{array}\\right.\\)\n4: \\(\\left\\{\\begin{array}{l}1: \\lim _{x \\rightarrow 2} \\frac{x^{2}-4}{1-(f(x))^{3}}=4 \\\\ 1: f(2) \\\\ 1: \\mathrm{L}^{\\prime} \\text { Hospital's Rule } \\\\ 1: f^{\\prime}(2)\\end{array}\\right.\\)\n\n1 : continuous with justification",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          35,
+          93,
+          570,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          39.168,
+          97.63199999999999,
+          533.088,
+          124.416
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          54.72,
+          132.19199999999998,
+          355.104,
+          145.152
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          164.16,
+          123.83999999999999,
+          178.55999999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          190.944,
+          469.72799999999995,
+          207.93599999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          216.86399999999998,
+          539.424,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          262.656,
+          513.216,
+          283.392
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          307.584,
+          502.84799999999996,
+          321.984
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          73.728,
+          323.712,
+          333.792,
+          337.536
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

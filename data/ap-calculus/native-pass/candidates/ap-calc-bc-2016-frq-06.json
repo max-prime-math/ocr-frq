@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2016-frq-06",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $f$ has a Taylor series about $x = 1$ that converges to $f(x)$ for all $x$ in the interval of convergence. It is known that $f(1)= 1 \\, f'(1)= - frac(1,2)$, and the $n$th derivative of $f$ at $x = 1$ is given by $f^((n))(1)= (- 1)^(n) frac((n - 1)!,2^(n))$ for $n >= 2$.\n\n(a) Write the first four nonzero terms and the general term of the Taylor series for $f$ about $x = 1$.\n\n(b) The Taylor series for $f$ about $x = 1$ has a radius of convergence of 2. Find the interval of convergence. Show the work that leads to your answer.\n\n(c) The Taylor series for $f$ about $x = 1$ can be used to represent $f(1.2)$ as an alternating series. Use the first three nonzero terms of the alternating series to approximate $f(1.2)$.\n\n(d) Show that the approximation found in part (c) is within 0.001 of the exact value of $f(1.2)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          35.0,
+          569,
+          469
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "238b27581d97c4565aea196e856a6e3d11568db9871ac6bb96c79d3ce0221e74",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ]
+}

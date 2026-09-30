@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-1999-frq-06",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function whose graph goes through the point $(3 \\,6)$ and whose derivative is given by $f'(x)= frac(1 + e^(x),x^(2))$.\n\n(a) Write an equation of the line tangent to the graph of $f$ at $x = 3$ and use it to approximate $f$ (3.1).\n\n(b) Use Euler's method, starting at $x = 3$ with a step size of 0.05, to approximate $f(3.1)$. Use $f''$ to explain why this approximation is less than $f(3.1)$.\n\n(c) Use $integral_(3)^(3.1) f'(x) d x$ to evaluate $f(3.1)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          39,
+          572,
+          470
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3bdf64717523e14b15b8890a9c31c20aac0be504b6cbb11e326f22e4a775984f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ]
+}

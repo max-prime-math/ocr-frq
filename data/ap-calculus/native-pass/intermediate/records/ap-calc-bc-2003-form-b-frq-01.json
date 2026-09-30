@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-form-b-frq-01",
+  "course": "BC",
+  "year": 2003,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003-FORM-B.pdf",
+      "sha256": "a713639f10f24728383e4c9c11b467168128b498a4c07d63f9d69bb258cd39b6",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003-FORM-B.pdf",
+      "sha256": "bd493081be43f5d7853d52cbbd70fe5484ac2c0d212c498663e5bdf240f8f130"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2003-form-b-frq-01-diagram-01.jpg}\n\\end{center}\nLet $f$ be the function given by $f(x)=4 x^{2}-x^{3}$, and let $\\ell$ be the line $y=18-3 x$, where $\\ell$ is tangent to the graph of $f$. Let $R$ be the region bounded by the graph of $f$ and the $x$-axis, and let $S$ be the region bounded by the graph of $f$, the line $\\ell$, and the $x$-axis, as shown above.\\\\\n(a) Show that $\\ell$ is tangent to the graph of $y=f(x)$ at the point $x=3$.\\\\\n(b) Find the area of $S$.\\\\\n(c) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(f\\) be the function given by \\(f(x)=4 x^{2}-x^{3}\\), and let \\(\\ell\\) be the line \\(y=18-3 x\\), where \\(\\ell\\) is tangent to the graph of \\(f\\). Let \\(R\\) be the region bounded by the graph of \\(f\\) and the \\(x\\)-axis, and let \\(S\\) be the region bounded by the graph of \\(f\\), the line \\(\\ell\\), and the \\(x\\)-axis, as shown above.\n\\begin{itemize}\n\\item[(a)] Show that \\(\\ell\\) is tangent to the graph of \\(y=f(x)\\) at the point \\(x=3\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/e7c37e7f-78a2-4114-8be6-26ff3be6095e-1.jpg?height=380&width=795&top_left_y=359&top_left_x=1164)\n\\begin{itemize}\n\\item[(b)] Find the area of \\(S\\).\n\\item[(c)] Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n\\item[(a)]\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=8 x-3 x^{2} ; f^{\\prime}(3)=24-27=-3 \\\\\n& f(3)=36-27=9\n\\end{aligned}\n\\]\nTangent line at \\(x=3\\) is\n\\[\ny=-3(x-3)+9=-3 x+18,\n\\]\nwhich is the equation of line \\(\\ell\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n& f(x)=0 \\text { at } x=4 \\\\\n& \\text { The line intersects the } x \\text {-axis at } x= \\\\\n& \\begin{aligned}\n\\text { Area } & =\\frac{1}{2}(3)(9)-\\int_{3}^{4}\\left(4 x^{2}-x^{3}\\right) d x \\\\\n& =7.916 \\text { or } 7.917\n\\end{aligned}\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n\\text { Area }= & \\int_{3}^{4}\\left((18-3 x)-\\left(4 x^{2}-x^{3}\\right)\\right) d x \\\\\n& +\\frac{1}{2}(2)(18-12) \\\\\n= & 7.916 \\text { or } 7.917\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{c}1: \\text { finds } f^{\\prime}(3) \\text { and } f(3) \\\\ 1:\\left\\{\\begin{array}{c}\\text { finds equation of tangent line } \\\\ \\text { or } \\\\ \\text { shows }(3,9) \\text { is on both the } \\\\ \\text { graph of } f \\text { and line } \\ell\\end{array}\\right.\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{aligned} 2 & : \\text { integral for non-triangular region } \\\\ & 1: \\text { limits } \\\\ & 1: \\text { integrand } \\\\ & 1: \\text { area of triangular region } \\\\ & 1: \\text { answer }\\end{aligned}\\right.\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{0}^{4}\\left(4 x^{2}-x^{3}\\right)^{2} d x \\\\\n& =156.038 \\pi \\text { or } 490.208\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { limits and constant } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          55,
+          572,
+          494
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

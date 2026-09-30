@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1999-frq-06",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-1999-frq-06-diagram-01.png}\nIn the figure above, line \\(\\ell\\) is tangent to the graph of \\(y=\\frac{1}{x^{2}}\\) at point \\(P\\), with coordinates \\(\\left(w, \\frac{1}{w^{2}}\\right)\\), where\n\\(w>0\\). Point \\(Q\\) has coordinates \\((w, 0)\\). Line \\(\\ell\\) crosses the \\(x\\)-axis at point \\(R\\), with coordinates \\((k, 0)\\).\n(a) Find the value of \\(k\\) when \\(w=3\\).\n(b) For all \\(w>0\\), find \\(k\\) in terms of \\(w\\).\n(c) Suppose that \\(w\\) is increasing at the constant rate of 7 units per second. When \\(w=5\\), what is the rate of\nchange of \\(k\\) with respect to time?\n(d) Suppose that \\(w\\) is increasing at the constant rate of 7 units per second. When \\(w=5\\), what is the rate of\nchange of the area of \\(\\triangle P Q R\\) with respect to time? Determine whether the area is increasing or decreasing\nat this instant.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1999-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1999-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        179.3040008544922,
+        76.48799896240234,
+        432.9840087890625,
+        218.13600158691406
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[6.] In the figure above, line \\(\\ell\\) is tangent to the graph of \\(y=\\frac{1}{x^{2}}\\) at point \\(P\\), with coordinates \\(\\left(w, \\frac{1}{w^{2}}\\right)\\), where \\(w>0\\). Point \\(Q\\) has coordinates \\((w, 0)\\). Line \\(\\ell\\) crosses the \\(x\\)-axis at the point \\(R\\), with coordinates \\((k, 0)\\).\n\\begin{itemize}\n\\item[(a)] Find the value of \\(k\\) when \\(w=3\\).\n\\item[(b)] For all \\(w>0\\), find \\(k\\) in terms of \\(w\\).\n\\item[(c)] Suppose that \\(w\\) is increasing at the constant rate of 7 units per second. When \\(w=5\\), what is the rate of change of \\(k\\) with respect to time?\n\\item[(d)] Suppose that \\(w\\) is increasing at the constant rate of 7 units per second. When \\(w=5\\), what is the rate of change of the area of \\(\\triangle P Q R\\) with respect to time? Determine whether the area is increasing or decreasing at this instant.\n\\end{itemize}\n\\item[(a)] \\(\\frac{d y}{d x}=-\\frac{2}{x^{3}} ;\\left.\\quad \\frac{d y}{d x}\\right|_{x=3}=-\\frac{2}{27}\\)\nLine \\(\\ell\\) through \\(\\left(3, \\frac{1}{9}\\right)\\) and \\((k, 0)\\) has slope \\(-\\frac{2}{27}\\).\nTherefore, \\(\\frac{0-\\frac{1}{9}}{k-3}=-\\frac{2}{27} \\quad\\) or \\(\\quad 0-\\frac{1}{9}=-\\frac{2}{27}(k-3)\\)\n\\[\nk=\\frac{9}{2}\n\\]\n\\item[(b)] Line \\(\\ell\\) through \\(\\left(w, \\frac{1}{w^{2}}\\right)\\) and \\((k, 0)\\) has slope \\(-\\frac{2}{w^{3}}\\).\nTherefore, \\(\\frac{0-\\frac{1}{w^{2}}}{k-w}=-\\frac{2}{w^{3}} \\quad\\) or \\(\\quad 0-\\frac{1}{w^{2}}=-\\frac{2}{w^{3}}(k-w)\\)\n\\[\nk=\\frac{3}{2} w\n\\]\n\\item[(c)] \\(\\frac{d k}{d t}=\\frac{3}{2} \\frac{d w}{d t}=\\frac{3}{2} \\cdot 7=\\frac{21}{2} ;\\left.\\quad \\frac{d k}{d t}\\right|_{w=5}=\\frac{21}{2}\\)\n\\item[(d)]\n![](https://cdn.mathpix.com/cropped/17164bf2-bbcc-4901-8537-9e1a3bda2a85-1.jpg?height=584&width=670&top_left_y=1950&top_left_x=344)\nTherefore, area is decreasing.\n\\end{itemize}\n\\[\n\\underbrace{O}_{Q} \\underbrace{y}_{R}\n\\]\n\n1: answer using \\(\\frac{d w}{d t}=7\\)\n\\[\n\\left\\{\\begin{array}{l}\n\\text { 1: area in terms of } w \\text { and/or } k \\\\\n\\text { 1: } \\frac{d A}{d t} \\text { implicitly } \\\\\n1:\\left.\\frac{d A}{d t}\\right|_{w=5} \\text { using } \\frac{d w}{d t}=7 \\\\\n1: \\text { conclusion }\n\\end{array}\\right.\n\\]\nNote: 0/4 if \\(A\\) constant",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          39,
+          572,
+          444
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          182.30399999999997,
+          79.488,
+          429.984,
+          215.136
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          238.46399999999997,
+          540.8639999999999,
+          266.4
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.088,
+          267.26399999999995,
+          517.824,
+          280.224
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          293.18399999999997,
+          234.14399999999998,
+          306.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          318.52799999999996,
+          248.832,
+          331.488
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.512,
+          344.736,
+          546.048,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          84.672,
+          357.69599999999997,
+          237.02399999999997,
+          370.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          64.512,
+          383.03999999999996,
+          546.048,
+          395.99999999999994
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          84.672,
+          396.28799999999995,
+          548.064,
+          409.248
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          84.672,
+          410.4,
+          147.16799999999998,
+          422.20799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    },
+    {
+      "type": "reviewed-source-text-correction",
+      "replaced": "\\(\\mathrm{n} P Q R\\)",
+      "with": "\\(\\triangle P Q R\\)"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

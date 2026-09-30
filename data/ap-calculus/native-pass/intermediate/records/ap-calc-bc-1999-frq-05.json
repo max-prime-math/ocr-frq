@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1999-frq-05",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-1999-frq-05-diagram-01.jpg}\n\\end{center}\nThe graph of the function $f$, consisting of three line segments, is given above. Let $g(x)=\\int_{1}^{x} f(t) d t$.\\\\\n(a) Compute $g(4)$ and $g(-2)$.\\\\\n(b) Find the instantaneous rate of change of $g$, with respect to $x$, at $x=1$.\\\\\n(c) Find the absolute minimum value of $g$ on the closed interval $[-2,4]$. Justify your answer.\\\\\n(d) The second derivative of $g$ is not defined at $x=1$ and $x=2$. How many of these values are $x$-coordinates of points of inflection of the graph of $g$ ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-1999-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-1999-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-1999_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[5.] The graph of the function \\(f\\), consisting of three line segments, is given above. Let \\(g(x)=\\int_{1}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Compute \\(g(4)\\) and \\(g(-2)\\).\n\\item[(b)] Find the instantaneous rate of change of \\(g\\), with respect to \\(x\\), at \\(x=1\\).\n\\item[(c)] Find the absolute minimum value of \\(g\\) on the closed interval [-2, 4]. Justify your answer.\n\\item[(d)] The second derivative of \\(g\\) is not defined at \\(x=1\\) and \\(x=2\\). How many of these values are \\(x\\)-coordinates of points of inflection of the graph of \\(g\\) ? Justify your answer.\n\\end{itemize}\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/492a8140-4a97-40a2-a9ee-3fede4100bfc-1.jpg?height=419&width=425&top_left_y=287&top_left_x=1407)\n(a) \\(g(4)=\\int_{1}^{4} f(t) d t=\\frac{3}{2}+1+\\frac{1}{2}-\\frac{1}{2}=\\frac{5}{2}\\)\n\\(g(-2)=\\int_{1}^{-2} f(t) d t=-\\frac{1}{2}(12)=-6\\)\n(b) \\(g^{\\prime}(1)=f(1)=4\\)\n(c) \\(g\\) is increasing on [-2, 3] and decreasing on [3, 4]. Therefore, \\(g\\) has absolute minimum at an endpoint of [-2, 4].\nSince \\(g(-2)=-6\\) and \\(g(4)=\\frac{5}{2}\\),\nthe absolute minimum value is -6 .\n(d) One; \\(x=1\\)\nOn \\((-2,1), g^{\\prime \\prime}(x)=f^{\\prime}(x)>0\\)\nOn \\((1,2), g^{\\prime \\prime}(x)=f^{\\prime}(x)<0\\)\nOn \\((2,4), g^{\\prime \\prime}(x)=f^{\\prime}(x)<0\\)\nTherefore \\((1, g(1))\\) is a point of inflection and \\((2, g(2))\\) is not.\n\\(2\\left\\{\\begin{array}{l}1: g(4) \\\\ 1: g(-2)\\end{array}\\right.\\)\n1: answer\n\\(3\\left\\{\\begin{array}{l}\\text { 1: interior analysis } \\\\ \\text { 1: endpoint analysis } \\\\ \\text { 1: answer }\\end{array}\\right.\\)\n\\(3\\left\\{\\begin{array}{l}1: \\text { choice of } x=1 \\text { only } \\\\ 1: \\text { show }(1, g(1)) \\text { is a point of inflection } \\\\ 1: \\text { show }(2, g(2)) \\text { is not a point of inflection }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          39,
+          572,
+          669
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

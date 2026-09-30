@@ -1,0 +1,221 @@
+{
+  "id": "ap-calc-ab-2009-frq-01",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2009-frq-01-diagram-01.png\", width: 65%)\n\nCaren rides her bicycle along a straight road from home to school, starting at home at time $t = 0$ minutes and arriving at school at time $t = 12$ minutes. During the time interval $0 <= t <= 12$ minutes, her velocity $v(t)$, in miles per minute, is modeled by the piecewise-linear function whose graph is shown above.\n\n(a) Find the acceleration of Caren's bicycle at time $t = 7.5$ minutes. Indicate units of measure.\n\n(b) Using correct units, explain the meaning of $integral_(0)^(12)| v(t)| d t$ in terms of Caren's trip. Find the value of $integral_(0)^(12)| v(t)| d t$.\n\n(c) Shortly after leaving home, Caren realizes she left her calculus homework at home, and she returns to get it. At what time does she turn around to go back home? Give a reason for your answer.\n\n(d) Larry also rides his bicycle along a straight road from home to school in 12 minutes. His velocity is modeled by the function $w$ given by $w(t)= frac(pi,15) sin lr((frac(pi,12) t))$, where $w(t)$ is in miles per minute for $0 <= t <= 12$ minutes. Who lives closer to school: Caren or Larry? Show the work that leads to your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        139.27200317382812,
+        167.78399658203125,
+        471.864013671875,
+        342.8399963378906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          587
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          142.272,
+          170.784,
+          468.864,
+          339.84
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          350.20799999999997,
+          550.656,
+          363.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          363.74399999999997,
+          547.4879999999999,
+          377.28
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          379.296,
+          469.43999999999994,
+          392.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          397.152,
+          487.58399999999995,
+          410.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          418.176,
+          518.112,
+          442.36799999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          445.53599999999994,
+          138.528,
+          470.304
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          478.94399999999996,
+          560.16,
+          491.328
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          491.328,
+          455.328,
+          503.712
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.088,
+          508.60799999999995,
+          563.904,
+          522.144
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          522.144,
+          564.192,
+          546.9119999999999
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          548.928,
+          465.40799999999996,
+          561.8879999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0cfe994d979467428f91ae0cebf54c9220150fed2a54a92b95834a2801036540",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

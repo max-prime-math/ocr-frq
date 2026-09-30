@@ -1,0 +1,2539 @@
+{
+  "generatedAt": "2026-09-30T23:35:43.102Z",
+  "product": "/home/max/dev/apps/ocr-frq/data/ap-calculus/native-pass/product",
+  "inventoryPath": "/home/max/dev/apps/ocr-frq/data/ap-calculus/draft/source-inventory.json",
+  "testgen": "/home/max/dev/apps/test-generator",
+  "status": "passed",
+  "checks": {
+    "coverage": {
+      "passed": true,
+      "expected": 408,
+      "pqp": 408,
+      "native": 408
+    },
+    "actualPqpParser": {
+      "passed": true,
+      "parsed": 408
+    },
+    "reviewedContentPreserved": {
+      "passed": true,
+      "count": 24,
+      "compatibilityException": "BC 1999 Q3 table whitespace only"
+    },
+    "assets": {
+      "passed": true,
+      "count": 183,
+      "referenced": 183,
+      "bytes": 3953159
+    },
+    "actualRepoRoundtrip": {
+      "passed": true,
+      "questions": 408,
+      "images": 183,
+      "entries": 597,
+      "bytes": 4743757
+    },
+    "actualTestGenRendering": {
+      "passed": true,
+      "bodiesAndSolutions": 408,
+      "total": 408,
+      "sampleExams": 2
+    }
+  },
+  "compile": [
+    {
+      "id": "ap-calc-ab-1998-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1998-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1998-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1998-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1998-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1998-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1998-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-1999-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-1999-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2000-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2000-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2001-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2001-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2002-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2002-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2003-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2003-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2004-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2004-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2005-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2005-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2006-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2006-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2007-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2007-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2008-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2008-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2009-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2009-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2010-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2010-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2011-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2011-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2012-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2012-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2013-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2013-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2014-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2014-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2015-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2015-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2016-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2016-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2017-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2017-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2018-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2018-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2019-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2019-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2021-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2021-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-ab-2024-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-ab-2024-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1998-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1998-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-1999-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-1999-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2000-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2000-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2001-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2001-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2002-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2002-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2003-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2003-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2004-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2004-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2005-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2005-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2006-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2006-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2007-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2007-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2008-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2008-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2009-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2009-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2010-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2010-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-form-b-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-form-b-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2011-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2011-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2012-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2012-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2013-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2013-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2014-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2014-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2015-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2015-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2016-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2016-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2017-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2017-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2018-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2018-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2019-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2019-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2021-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2021-frq-06.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-01",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-01.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-02",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-02.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-03",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-03.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-04",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-04.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-05",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-05.pdf"
+    },
+    {
+      "id": "ap-calc-bc-2024-frq-06",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/ap-calc-bc-2024-frq-06.pdf"
+    }
+  ],
+  "samples": [
+    {
+      "id": "sample-AB-exam",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/sample-AB-exam.pdf",
+      "questions": [
+        "ap-calc-ab-1998-frq-03",
+        "ap-calc-ab-2005-form-b-frq-01",
+        "ap-calc-ab-2024-frq-01",
+        "ap-calc-ab-1998-frq-01",
+        "ap-calc-ab-1998-frq-02",
+        "ap-calc-ab-1998-frq-04"
+      ],
+      "multiImageQuestions": []
+    },
+    {
+      "id": "sample-BC-exam",
+      "passed": true,
+      "cached": true,
+      "pdf": "validation/sample-BC-exam.pdf",
+      "questions": [
+        "ap-calc-bc-2000-frq-06",
+        "ap-calc-bc-1998-frq-04",
+        "ap-calc-bc-1998-frq-01",
+        "ap-calc-bc-2024-frq-01",
+        "ap-calc-bc-1998-frq-02",
+        "ap-calc-bc-1998-frq-03"
+      ],
+      "multiImageQuestions": [
+        "ap-calc-bc-2000-frq-06"
+      ]
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Local Typst and the actual TestGen template are exercised; this is not a browser interaction test.",
+    "PQP JSON parsing normalizes question IDs away and does not install images. Use testgen-question-bank.json for the native one-file import with embedded images.",
+    "Compilation and source inventory coverage cannot establish mathematical correctness or prove a source crop is visually complete. See the second-pass review queue."
+  ],
+  "inputs": {
+    "pqpSha256": "7aa7f5c4c1009d660a8c8daa9103acf2cfc69bfdef29e0685e2ab8fed2c6ea81",
+    "nativeSha256": "ca93cd8a6871ac5029c8f72191b6dfa4bbab48d25bc1e3824ecd9a9c7fe6f48b",
+    "inventorySha256": "35af0318183ecb9dd4d81d824867018b06aff107faa5c2c17660b9734d577c94"
+  },
+  "typstVersion": "typst 0.15.1 (9dfd3a08)"
+}

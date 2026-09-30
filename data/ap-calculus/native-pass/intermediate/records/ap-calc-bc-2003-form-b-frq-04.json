@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-form-b-frq-04",
+  "course": "BC",
+  "year": 2003,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003-FORM-B.pdf",
+      "sha256": "a713639f10f24728383e4c9c11b467168128b498a4c07d63f9d69bb258cd39b6",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003-FORM-B.pdf",
+      "sha256": "bd493081be43f5d7853d52cbbd70fe5484ac2c0d212c498663e5bdf240f8f130"
+    }
+  },
+  "rawPrompt": "A particle moves in the $x y$-plane so that the position of the particle at any time $t$ is given by\n\n$$\nx(t)=2 e^{3 t}+e^{-7 t} \\text { and } y(t)=3 e^{3 t}-e^{-2 t} .\n$$\n\n(a) Find the velocity vector for the particle in terms of $t$, and find the speed of the particle at time $t=0$.\\\\\n(b) Find $\\frac{d y}{d x}$ in terms of $t$, and find $\\lim _{t \\rightarrow \\infty} \\frac{d y}{d x}$.\\\\\n(c) Find each value $t$ at which the line tangent to the path of the particle is horizontal, or explain why none exists.\\\\\n(d) Find each value $t$ at which the line tangent to the path of the particle is vertical, or explain why none exists.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nA particle moves in the \\(x y\\)-plane so that the position of the particle at any time \\(t\\) is given by\n\\[\nx(t)=2 e^{3 t}+e^{-7 t} \\text { and } y(t)=3 e^{3 t}-e^{-2 t} .\n\\]\n\\begin{itemize}\n\\item[(a)] Find the velocity vector for the particle in terms of \\(t\\), and find the speed of the particle at time \\(t=0\\).\n\\item[(b)] Find \\(\\frac{d y}{d x}\\) in terms of \\(t\\), and find \\(\\lim _{t \\rightarrow \\infty} \\frac{d y}{d x}\\).\n\\item[(c)] Find each value \\(t\\) at which the line tangent to the path of the particle is horizontal, or explain why none exists.\n\\item[(d)] Find each value \\(t\\) at which the line tangent to the path of the particle is vertical, or explain why none exists.\n\\item[(a)]\n\\[\n\\begin{aligned}\n& x^{\\prime}(t)=6 e^{3 t}-7 e^{-7 t} \\\\\n& y^{\\prime}(t)=9 e^{3 t}+2 e^{-2 t} \\\\\n& \\text { Velocity vector is }<6 e^{3 t}-7 e^{-7 t}, 9 e^{3 t}+2 e^{-2 t}>\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n\\text { Speed } & =\\sqrt{x^{\\prime}(0)^{2}+y^{\\prime}(0)^{2}}=\\sqrt{(-1)^{2}+11^{2}} \\\\\n& =\\sqrt{122}\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{d y}{d x}=\\frac{\\frac{d y}{d t}}{\\frac{d x}{d t}}=\\frac{9 e^{3 t}+2 e^{-2 t}}{6 e^{3 t}-7 e^{-7 t}}\\)\n\\[\n\\lim _{t \\rightarrow \\infty} \\frac{d y}{d x}=\\lim _{t \\rightarrow \\infty} \\frac{9 e^{3 t}+2 e^{-2 t}}{6 e^{3 t}-7 e^{-7 t}}=\\frac{9}{6}=\\frac{3}{2}\n\\]\n\\item[(c)] Need \\(y^{\\prime}(t)=0\\), but \\(9 e^{3 t}+2 e^{-2 t}>0\\) for all \\(t\\), so none exists.\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: x^{\\prime}(t) \\\\\n1: y^{\\prime}(t) \\\\\n1: \\text { speed }\n\\end{array}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\frac{d y}{d x} \\text { in terms of } t \\\\\n1: \\text { limit }\n\\end{array}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { considers } y^{\\prime}(t)=0 \\\\\n1: \\text { explains why none exists }\n\\end{array}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { considers } x^{\\prime}(t)=0 \\\\\n1: \\text { solution }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(d)] Need \\(x^{\\prime}(t)=0\\) and \\(y^{\\prime}(t) \\neq 0\\).\n\\[\n\\begin{aligned}\n& 6 e^{3 t}=7 e^{-7 t} \\\\\n& e^{10 t}=\\frac{7}{6} \\\\\n& t=\\frac{1}{10} \\ln \\left(\\frac{7}{6}\\right)\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          55,
+          572,
+          316
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-form-b-frq-02",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "rawPrompt": "The function \\(g\\) is defined for \\(x>0\\) with \\(g(1)=2, g^{\\prime}(x)=\\sin \\left(x+\\frac{1}{x}\\right)\\), and \\(g^{\\prime \\prime}(x)=\\left(1-\\frac{1}{x^{2}}\\right) \\cos \\left(x+\\frac{1}{x}\\right)\\).\n(a) Find all values of \\(x\\) in the interval \\(0.12 \\leq x \\leq 1\\) at which the graph of \\(g\\) has a horizontal tangent line.\n(b) On what subintervals of \\((0.12,1)\\), if any, is the graph of \\(g\\) concave down? Justify your answer.\n(c) Write an equation for the line tangent to the graph of \\(g\\) at \\(x=0.3\\).\n(d) Does the line tangent to the graph of \\(g\\) at \\(x=0.3\\) lie above or below the graph of \\(g\\) for \\(0.3<x<1\\) ?\nWhy?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nThe function \\(g\\) is defined for \\(x>0\\) with \\(g(1)=2, g^{\\prime}(x)=\\sin \\left(x+\\frac{1}{x}\\right)\\), and \\(g^{\\prime \\prime}(x)=\\left(1-\\frac{1}{x^{2}}\\right) \\cos \\left(x+\\frac{1}{x}\\right)\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\) in the interval \\(0.12 \\leq x \\leq 1\\) at which the graph of \\(g\\) has a horizontal tangent line.\n\\item[(b)] On what subintervals of \\((0.12,1)\\), if any, is the graph of \\(g\\) concave down? Justify your answer.\n\\item[(c)] Write an equation for the line tangent to the graph of \\(g\\) at \\(x=0.3\\).\n\\item[(d)] Does the line tangent to the graph of \\(g\\) at \\(x=0.3\\) lie above or below the graph of \\(g\\) for \\(0.3<x<1\\) ? Why?\n\\item[(a)] The graph of \\(g\\) has a horizontal tangent line when \\(g^{\\prime}(x)=0\\). This occurs at \\(x=0.163\\) and \\(x=0.359\\).\n\\item[(b)] \\(g^{\\prime \\prime}(x)=0\\) at \\(x=0.129458\\) and \\(x=0.222734\\)\nThe graph of \\(g\\) is concave down on (0.1295, 0.2227) because \\(g^{\\prime \\prime}(x)<0\\) on this interval.\n\\item[(c)] \\(g^{\\prime}(0.3)=-0.472161\\)\n\\(g(0.3)=2+\\int_{1}^{0.3} g^{\\prime}(x) d x=1.546007\\)\nAn equation for the line tangent to the graph of \\(g\\) is \\(y=1.546-0.472(x-0.3)\\).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { sets } g^{\\prime}(x)=0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : justification }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: g^{\\prime}(0.3) \\\\ 1: \\text { integral expression } \\\\ 1: g(0.3) \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n1 : answer with reason\n\\begin{itemize}\n\\item[(d)] \\(g^{\\prime \\prime}(x)>0\\) for \\(0.3<x<1\\)\nTherefore the line tangent to the graph of \\(g\\) at \\(x=0.3\\) lies below the graph of \\(g\\) for \\(0.3<x<1\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          65,
+          552,
+          198
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          69.408,
+          548.352,
+          98.496
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          105.11999999999999,
+          537.12,
+          118.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          124.99199999999999,
+          507.45599999999996,
+          138.528
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          146.016,
+          380.15999999999997,
+          159.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          165.88799999999998,
+          538.2719999999999,
+          178.272
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          180.0,
+          111.45599999999999,
+          192.95999999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-frq-06",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for $e^{x}$ is $e^{x}=1+x+\\frac{x^{2}}{2}+\\frac{x^{3}}{6}+\\cdots+\\frac{x^{n}}{n!}+\\cdots$. The continuous function $f$ is defined by $f(x)=\\frac{e^{(x-1)^{2}}-1}{(x-1)^{2}}$ for $x \\neq 1$ and $f(1)=1$. The function $f$ has derivatives of all orders at $x=1$.\\\\\n(a) Write the first four nonzero terms and the general term of the Taylor series for $e^{(x-1)^{2}}$ about $x=1$.\\\\\n(b) Use the Taylor series found in part (a) to write the first four nonzero terms and the general term of the Taylor series for $f$ about $x=1$.\\\\\n(c) Use the ratio test to find the interval of convergence for the Taylor series found in part (b).\\\\\n(d) Use the Taylor series for $f$ about $x=1$ to determine whether the graph of $f$ has any points of inflection.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nThe Maclaurin series for \\(e^{x}\\) is \\(e^{x}=1+x+\\frac{x^{2}}{2}+\\frac{x^{3}}{6}+\\cdots+\\frac{x^{n}}{n!}+\\cdots\\). The continuous function \\(f\\) is defined by \\(f(x)=\\frac{e^{(x-1)^{2}}-1}{(x-1)^{2}}\\) for \\(x \\neq 1\\) and \\(f(1)=1\\). The function \\(f\\) has derivatives of all orders at \\(x=1\\).\n\\begin{itemize}\n\\item[(a)] Write the first four nonzero terms and the general term of the Taylor series for \\(e^{(x-1)^{2}}\\) about \\(x=1\\).\n\\item[(b)] Use the Taylor series found in part (a) to write the first four nonzero terms and the general term of the Taylor series for \\(f\\) about \\(x=1\\).\n\\item[(c)] Use the ratio test to find the interval of convergence for the Taylor series found in part (b).\n\\item[(d)] Use the Taylor series for \\(f\\) about \\(x=1\\) to determine whether the graph of \\(f\\) has any points of inflection.\n\\item[(a)] \\(1+(x-1)^{2}+\\frac{(x-1)^{4}}{2}+\\frac{(x-1)^{6}}{6}+\\cdots+\\frac{(x-1)^{2 n}}{n!}+\\cdots\\)\n\\item[(b)] \\(1+\\frac{(x-1)^{2}}{2}+\\frac{(x-1)^{4}}{6}+\\frac{(x-1)^{6}}{24}+\\cdots+\\frac{(x-1)^{2 n}}{(n+1)!}+\\cdots\\)\n\\item[(c)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(x-1)^{2 n+2}}{(n+2)!}}{\\frac{(x-1)^{2 n}}{(n+1)!}}\\right|=\\lim _{n \\rightarrow \\infty} \\frac{(n+1)!}{(n+2)!}(x-1)^{2}=\\lim _{n \\rightarrow \\infty} \\frac{(x-1)^{2}}{n+2}=0\\)\n\\end{itemize}\nTherefore, the interval of convergence is \\((-\\infty, \\infty)\\).\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { first four terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { first four terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1 \\text { : sets up ratio } \\\\ 1 \\text { : computes limit of ratio } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[(d)]\n\\[\n\\begin{gathered}\nf^{\\prime \\prime}(x)=1+\\frac{4 \\cdot 3}{6}(x-1)^{2}+\\frac{6 \\cdot 5}{24}(x-1)^{4}+\\cdots \\\\\n+\\frac{2 n(2 n-1)}{(n+1)!}(x-1)^{2 n-2}+\\cdots\n\\end{gathered}\n\\]\nSince every term of this series is nonnegative, \\(f^{\\prime \\prime}(x) \\geq 0\\) for all \\(x\\). Therefore, the graph of \\(f\\) has no points of inflection.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          333,
+          572,
+          544
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

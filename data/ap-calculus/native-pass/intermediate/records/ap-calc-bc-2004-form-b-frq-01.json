@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2004-form-b-frq-01",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "rawPrompt": "A particle moving along a curve in the plane has position $(x(t), y(t))$ at time $t$, where\n$$\n\\frac{d x}{d t}=\\sqrt{t^{4}+9} \\text { and } \\frac{d y}{d t}=2 e^{t}+5 e^{-t}\n$$\n\nfor all real values of $t$. At time $t=0$, the particle is at the point $(4,1)$.\\\\\n(a) Find the speed of the particle and its acceleration vector at time $t=0$.\\\\\n(b) Find an equation of the line tangent to the path of the particle at time $t=0$.\\\\\n(c) Find the total distance traveled by the particle over the time interval $0 \\leq t \\leq 3$.\\\\\n(d) Find the $x$-coordinate of the position of the particle at time $t=3$.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 1}\n\nA particle moving along a curve in the plane has position \\((x(t), y(t))\\) at time \\(t\\), where\n\\[\n\\frac{d x}{d t}=\\sqrt{t^{4}+9} \\text { and } \\frac{d y}{d t}=2 e^{t}+5 e^{-t}\n\\]\nfor all real values of \\(t\\). At time \\(t=0\\), the particle is at the point ( 4,1 ).\n\\begin{itemize}\n\\item[(a)] Find the speed of the particle and its acceleration vector at time \\(t=0\\).\n\\item[(b)] Find an equation of the line tangent to the path of the particle at time \\(t=0\\).\n\\item[(c)] Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 3\\).\n\\item[(d)] Find the \\(x\\)-coordinate of the position of the particle at time \\(t=3\\).\n\\item[(a)] At time \\(t=0\\) :\n\\[\n\\begin{aligned}\n& \\text { Speed }=\\sqrt{x^{\\prime}(0)^{2}+y^{\\prime}(0)^{2}}=\\sqrt{3^{2}+7^{2}}=\\sqrt{58} \\\\\n& \\text { Acceleration vector }=\\left\\langle x^{\\prime \\prime}(0), y^{\\prime \\prime}(0)\\right\\rangle=\\langle 0,-3\\rangle\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{d y}{d x}=\\frac{y^{\\prime}(0)}{x^{\\prime}(0)}=\\frac{7}{3}\\)\nTangent line is \\(y=\\frac{7}{3}(x-4)+1\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Distance } & =\\int_{0}^{3} \\sqrt{\\left(\\sqrt{t^{4}+9}\\right)^{2}+\\left(2 e^{t}+5 e^{-t}\\right)^{2}} d t \\\\\n& =45.226 \\text { or } 45.227\n\\end{aligned}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\nx(3) & =4+\\int_{0}^{3} \\sqrt{t^{4}+9} d t \\\\\n& =17.930 \\text { or } 17.931\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { speed } \\\\ 1: \\text { acceleration vector }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { slope } \\\\ 1: \\text { tangent line }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{aligned} 2: & \\text { distance integral } \\\\ & \\langle-1\\rangle \\text { each integrand error } \\\\ & \\langle-1\\rangle \\text { error in limits } \\\\ & 1: \\text { answer }\\end{aligned}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          56,
+          572,
+          333
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

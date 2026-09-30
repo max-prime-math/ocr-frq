@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-02",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "At time $t \\geq 0$, a particle moving along a curve in the $x y$-plane has position $(x(t), y(t))$ with velocity vector $v(t)=\\left(\\cos \\left(t^{2}\\right), e^{0.5 t}\\right)$. At $t=1$, the particle is at the point $(3,5)$.\\\\\n(a) Find the $x$-coordinate of the position of the particle at time $t=2$.\\\\\n(b) For $0<t<1$, there is a point on the curve at which the line tangent to the curve has a slope of 2 . At what time is the object at that point?\\\\\n(c) Find the time at which the speed of the particle is 3 .\\\\\n(d) Find the total distance traveled by the particle from time $t=0$ to time $t=1$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2015 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nAt time \\(t \\geq 0\\), a particle moving along a curve in the \\(x y\\)-plane has position \\((x(t), y(t))\\) with velocity vector \\(v(t)=\\left(\\cos \\left(t^{2}\\right), e^{0.5 t}\\right)\\). At \\(t=1\\), the particle is at the point \\((3,5)\\).\n\\begin{itemize}\n\\item[(a)] Find the \\(x\\)-coordinate of the position of the particle at time \\(t=2\\).\n\\item[(b)] For \\(0<t<1\\), there is a point on the curve at which the line tangent to the curve has a slope of 2 . At what time is the object at that point?\n\\item[(c)] Find the time at which the speed of the particle is 3.\n\\item[(d)] Find the total distance traveled by the particle from time \\(t=0\\) to time \\(t=1\\).\n\\item[(a)] \\(x(2)=3+\\int_{1}^{2} \\cos \\left(t^{2}\\right) d t=2.557(\\) or 2.556 \\()\\)\n\\item[(b)] \\(\\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=\\frac{e^{0.5 t}}{\\cos \\left(t^{2}\\right)}\\)\n\\[\n\\begin{aligned}\n& \\frac{e^{0.5 t}}{\\cos \\left(t^{2}\\right)}=2 \\\\\n& t=0.840\n\\end{aligned}\n\\]\n\\item[(c)] Speed \\(=\\sqrt{\\cos ^{2}\\left(t^{2}\\right)+e^{t}}\\)\n\\[\n\\begin{aligned}\n& \\sqrt{\\cos ^{2}\\left(t^{2}\\right)+e^{t}}=3 \\\\\n& t=2.196(\\text { or } 2.195)\n\\end{aligned}\n\\]\n\\item[(d)] Distance \\(=\\int_{0}^{1} \\sqrt{\\cos ^{2}\\left(t^{2}\\right)+e^{t}} d t=1.595\\) (or 1.594)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { slope in terms of } t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { speed in terms of } t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          65,
+          568,
+          354
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

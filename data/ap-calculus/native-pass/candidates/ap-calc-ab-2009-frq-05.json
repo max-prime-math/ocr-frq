@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2009-frq-05",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$x$], [2], [3], [5], [8], [13], table.hline(stroke: .5pt), [$f(x)$], [1], [4], [-2], [3], [6], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is twice differentiable for all real numbers. The table above gives values of $f$ for selected points in the closed interval $2 <= x <= 13$.\n\n(a) Estimate $f'(4)$. Show the work that leads to your answer.\n\n(b) Evaluate $integral_(2)^(13)lr((3 - 5 f'(x))) d x$. Show the work that leads to your answer.\n\n(c) Use a left Riemann sum with subintervals indicated by the data in the table to approximate $integral_(2)^(13) f(x) d x$. Show the work that leads to your answer.\n\n(d) Suppose $f'(5)= 3$ and $f''(x)< 0$ for all $x$ in the closed interval $5 <= x <= 8$. Use the line tangent to the graph of $f$ at $x = 5$ to show that $f(7) <= 4$. Use the secant line for the graph of $f$ on $5 <= x <= 8$ to show that $f(7) >= frac(4,3)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          384
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          195.552,
+          71.136,
+          415.87199999999996,
+          117.50399999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          129.024,
+          527.616,
+          141.98399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          64.512,
+          141.98399999999998,
+          282.23999999999995,
+          154.368
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          161.56799999999998,
+          340.70399999999995,
+          174.528
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          183.744,
+          400.032,
+          208.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          65.088,
+          217.72799999999998,
+          539.424,
+          242.49599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          245.088,
+          266.4,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          65.088,
+          263.23199999999997,
+          547.1999999999999,
+          277.632
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          279.64799999999997,
+          546.048,
+          293.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          296.352,
+          150.33599999999998,
+          319.67999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "d0cd3886fff8171188a6fd916da5de301452769fbbba2c9e59c73aa5c4595e7c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-05",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

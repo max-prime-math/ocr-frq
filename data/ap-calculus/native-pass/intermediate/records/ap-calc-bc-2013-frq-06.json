@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-06",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "A function $f$ has derivatives of all orders at $x=0$. Let $P_{n}(x)$ denote the $n$ th-degree Taylor polynomial for $f$ about $x=0$.\\\\\n(a) It is known that $f(0)=-4$ and that $P_{1}\\left(\\frac{1}{2}\\right)=-3$. Show that $f^{\\prime}(0)=2$.\\\\\n(b) It is known that $f^{\\prime \\prime}(0)=-\\frac{2}{3}$ and $f^{\\prime \\prime \\prime}(0)=\\frac{1}{3}$. Find $P_{3}(x)$.\\\\\n(c) The function $h$ has first derivative given by $h^{\\prime}(x)=f(2 x)$. It is known that $h(0)=7$. Find the third-degree Taylor polynomial for $h$ about $x=0$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nA function \\(f\\) has derivatives of all orders at \\(x=0\\). Let \\(P_{n}(x)\\) denote the \\(n\\) th-degree Taylor polynomial for \\(f\\) about \\(x=0\\).\n\\begin{itemize}\n\\item[(a)] It is known that \\(f(0)=-4\\) and that \\(P_{1}\\left(\\frac{1}{2}\\right)=-3\\). Show that \\(f^{\\prime}(0)=2\\).\n\\item[(b)] It is known that \\(f^{\\prime \\prime}(0)=-\\frac{2}{3}\\) and \\(f^{\\prime \\prime \\prime}(0)=\\frac{1}{3}\\). Find \\(P_{3}(x)\\).\n\\item[(c)] The function \\(h\\) has first derivative given by \\(h^{\\prime}(x)=f(2 x)\\). It is known that \\(h(0)=7\\). Find the third-degree Taylor polynomial for \\(h\\) about \\(x=0\\).\n\\item[(a)] \\(P_{1}(x)=f(0)+f^{\\prime}(0) x=-4+f^{\\prime}(0) x\\)\n\\[\n\\begin{aligned}\n& P_{1}\\left(\\frac{1}{2}\\right)=-4+f^{\\prime}(0) \\cdot \\frac{1}{2}=-3 \\\\\n& f^{\\prime}(0) \\cdot \\frac{1}{2}=1 \\\\\n& f^{\\prime}(0)=2\n\\end{aligned}\n\\]\n\\item[(b)] \\(P_{3}(x)=-4+2 x+\\left(-\\frac{2}{3}\\right) \\cdot \\frac{x^{2}}{2!}+\\frac{1}{3} \\cdot \\frac{x^{3}}{3!}\\)\n\\[\n=-4+2 x-\\frac{1}{3} x^{2}+\\frac{1}{18} x^{3}\n\\]\n\\item[(c)] Let \\(Q_{n}(x)\\) denote the Taylor polynomial of degree \\(n\\) for \\(h\\) about \\(x=0\\).\n\\[\n\\begin{aligned}\n& h^{\\prime}(x)=f(2 x) \\Rightarrow Q_{3}^{\\prime}(x)=-4+2(2 x)-\\frac{1}{3}(2 x)^{2} \\\\\n& Q_{3}(x)=-4 x+4 \\cdot \\frac{x^{2}}{2}-\\frac{4}{3} \\cdot \\frac{x^{3}}{3}+C ; C=Q_{3}(0)=h(0)=7 \\\\\n& Q_{3}(x)=7-4 x+2 x^{2}-\\frac{4}{9} x^{3}\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n& h^{\\prime}(x)=f(2 x), h^{\\prime \\prime}(x)=2 f^{\\prime}(2 x), h^{\\prime \\prime \\prime}(x)=4 f^{\\prime \\prime}(2 x) \\\\\n& h^{\\prime}(0)=f(0)=-4, h^{\\prime \\prime}(0)=2 f^{\\prime}(0)=4, h^{\\prime \\prime \\prime}(0)=4 f^{\\prime \\prime}(0)=-\\frac{8}{3} \\\\\n& Q_{3}(x)=7-4 x+4 \\cdot \\frac{x^{2}}{2!}-\\frac{8}{3} \\cdot \\frac{x^{3}}{3!}=7-4 x+2 x^{2}-\\frac{4}{9} x^{3}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { uses } P_{1}(x) \\\\ 1: \\text { verifies } f^{\\prime}(0)=2\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { first two terms } \\\\ 1: \\text { third term } \\\\ 1: \\text { fourth term }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}2: \\text { applies } h^{\\prime}(x)=f(2 x) \\\\ 1: \\text { constant term } \\\\ 1: \\text { remaining terms }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          65,
+          577,
+          420
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

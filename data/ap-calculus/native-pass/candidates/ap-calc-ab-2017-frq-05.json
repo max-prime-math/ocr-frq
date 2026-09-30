@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2017-frq-05",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Two particles move along the $x$-axis. For $0 <= t <= 8$, the position of particle $P$ at time $t$ is given by $x_(P)(t)= ln lr((t^(2)- 2 t + 10))$, while the velocity of particle $Q$ at time $t$ is given by $v_(Q)(t)= t^(2)- 8 t + 15$. Particle $Q$ is at position $x = 5$ at time $t = 0$.\n\n(a) For $0 <= t <= 8$, when is particle $P$ moving to the left?\n\n(b) For $0 <= t <= 8$, find all times $t$ during which the two particles travel in the same direction.\n\n(c) Find the acceleration of particle $Q$ at time $t = 2$. Is the speed of particle $Q$ increasing, decreasing, or neither at time $t = 2$ ? Explain your reasoning.\n\n(d) Find the position of particle $Q$ the first time it changes direction.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          39,
+          91,
+          571,
+          324
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          44.928,
+          95.03999999999999,
+          495.936,
+          108.86399999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          60.48,
+          114.624,
+          506.87999999999994,
+          137.952
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          145.44,
+          258.048,
+          158.39999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          175.968,
+          314.20799999999997,
+          189.79199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          204.48,
+          473.76,
+          217.44
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          233.27999999999997,
+          527.328,
+          247.10399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          78.91199999999999,
+          247.67999999999998,
+          289.44,
+          261.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          276.192,
+          366.33599999999996,
+          289.152
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f61f415141e9322e642e64c422f53755d8403e0687c26ac3e849ae65fd430690",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

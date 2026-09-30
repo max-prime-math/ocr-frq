@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2007-form-b-frq-01",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg\", width: 65%)\n\nLet $R$ be the region bounded by the graph of $y = e^(2 x - x^(2))$ and the horizontal line $y = 2$, and let $S$ be the region bounded by the graph of $y = e^(2 x - x^(2))$ and the horizontal lines $y = 1$ and $y = 2$, as shown above.\n\n(a) Find the area of $R$.\n\n(b) Find the area of $S$.\n\n(c) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when $R$ is rotated about the horizontal line $y = 1$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2007-form-b_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          492
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "21528ed3f3d372935b02a1081626fce081579b26bac22a41189fc37b38cc0de2",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ]
+}

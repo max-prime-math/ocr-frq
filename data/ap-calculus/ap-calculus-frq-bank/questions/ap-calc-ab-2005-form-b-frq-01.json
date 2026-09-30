@@ -1,0 +1,24 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-01-prompt-3b7074e5-0f19-4e0a-9019-2192b2fbcc27-1_548_443_662_842.jpg\", width: 55%)\n\nLet $f(x) = 1 + sin(2x)$ and $g(x) = e^(x / 2)$. The shaded first-quadrant region $R$ is enclosed by their graphs.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about the $x$-axis.\n\n(c) $R$ is the base of a solid whose cross sections perpendicular to the $x$-axis are semicircles with diameters from $f(x)$ to $g(x)$. Find the volume.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-ab-2005-form-b-frq-01",
+    "images": [
+      "ap-calc-ab-2005-form-b-frq-01-prompt-3b7074e5-0f19-4e0a-9019-2192b2fbcc27-1_548_443_662_842.jpg"
+    ],
+    "points": 8,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-11",
+    "solution": "Let $(S, T) approx (1.13569, 1.76446)$ be the first-quadrant intersection.\n\n(a)\n$ integral_0^S (f(x) - g(x)) dif x approx 0.429. $\n\n(b)\n$ pi integral_0^S (f(x)^2 - g(x)^2) dif x approx 4.266. $\n\n(c) A semicircle with diameter $f(x) - g(x)$ has area $pi/2 ((f(x)-g(x))/2)^2$. Therefore\n$ integral_0^S pi/2 ((f(x) - g(x))/2)^2 dif x approx 0.077. $",
+    "tags": [
+      "2005",
+      "Form B",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

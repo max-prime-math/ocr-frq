@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-04",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2002-form-b-frq-04-diagram-01.jpg}\n\\end{center}\nThe graph of a differentiable function $f$ on the closed interval $[-3,15]$ is shown in the figure above. The graph of $f$ has a horizontal tangent line at $x=6$. Let $g(x)=5+\\int_{6}^{x} f(t) d t$ for $-3 \\leq x \\leq 15$.\\\\\n(a) Find $g(6), g^{\\prime}(6)$, and $g^{\\prime \\prime}(6)$.\\\\\n(b) On what intervals is $g$ decreasing? Justify your answer.\\\\\n(c) On what intervals is the graph of $g$ concave down? Justify your answer.\\\\\n(d) Find a trapezoidal approximation of $\\int_{-3}^{15} f(t) d t$ using six subintervals of length $\\Delta t=3$.\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2002-form-b-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2002-form-b-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2002-form-b_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe graph of a differentiable function \\(f\\) on the closed interval [-3,15] is shown in the figure above. The graph of \\(f\\) has a horizontal tangent line at \\(x=6\\). Let \\(g(x)=5+\\int_{6}^{x} f(t) d t\\) for \\(-3 \\leq x \\leq 15\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(6), g^{\\prime}(6)\\), and \\(g^{\\prime \\prime}(6)\\).\n\\item[(b)] On what intervals is \\(g\\) decreasing? Justify your answer.\n\\item[(c)] On what intervals is the graph of \\(g\\) concave down? Justify your answer.\n\\item[(d)] Find a trapezoidal approximation of \\(\\int_{-3}^{15} f(t) d t\\) using six subintervals of length \\(\\Delta t=3\\).\n\\item[(a)] \\(\\quad g(6)=5+\\int_{6}^{6} f(t) d t=5\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(6)=f(6)=3 \\\\\n& g^{\\prime \\prime}(6)=f^{\\prime}(6)=0\n\\end{aligned}\n\\]\n\\item[(b)] \\(g\\) is decreasing on [-3, 0] and [12, 15] since \\(g^{\\prime}(x)=f(x)<0\\) for \\(x<0\\) and \\(x>12\\).\n\\item[(c)] The graph of \\(g\\) is concave down on \\((6,15)\\) since \\(g^{\\prime}=f\\) is decreasing on this interval.\n\\end{itemize}\n\\[\n\\begin{array}{r|r|r|r|r|}\n\\hline & 3 \\\\\n\\hline & 2 & & & \\\\\n\\hline & 0 & & & \\\\\n\\hline & & & & \\\\\n\\hline & 3 & & & \\\\\n\\hline\n\\end{array}\n\\]\n\\[\n3\\left\\{\\begin{array}{l}\n1: g(6) \\\\\n1: g^{\\prime}(6) \\\\\n1: g^{\\prime \\prime}(6)\n\\end{array}\\right.\n\\]\n\n1 : trapezoidal method\n\\begin{itemize}\n\\item[(d)]\n\\[\n\\begin{aligned}\n& \\frac{3}{2}(-1+2(0+1+3+1+0)-1) \\\\\n& =12\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          75,
+          572,
+          521
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

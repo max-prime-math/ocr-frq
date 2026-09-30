@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-frq-03",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "rawPrompt": "A particle is moving along a curve so that its position at time $t$ is $(x(t), y(t))$, where $x(t)=t^{2}-4 t+8$ and $y(t)$ is not explicitly given. Both $x$ and $y$ are measured in meters, and $t$ is measured in seconds. It is known that $\\frac{d y}{d t}=t e^{t-3}-1$.\\\\\n(a) Find the speed of the particle at time $t=3$ seconds.\\\\\n(b) Find the total distance traveled by the particle for $0 \\leq t \\leq 4$ seconds.\\\\\n(c) Find the time $t, 0 \\leq t \\leq 4$, when the line tangent to the path of the particle is horizontal. Is the direction of motion of the particle toward the left or toward the right at that time? Give a reason for your answer.\\\\\n(d) There is a point with $x$-coordinate 5 through which the particle passes twice. Find each of the following.\\\\\n(i) The two values of $t$ when that occurs\\\\\n(ii) The slopes of the lines tangent to the particle's path at that point\\\\\n(iii) The $y$-coordinate of that point, given $y(2)=3+\\frac{1}{e}$",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nA particle is moving along a curve so that its position at time \\(t\\) is \\((x(t), y(t))\\), where \\(x(t)=t^{2}-4 t+8\\) and \\(y(t)\\) is not explicitly given. Both \\(x\\) and \\(y\\) are measured in meters, and \\(t\\) is measured in seconds. It is known that \\(\\frac{d y}{d t}=t e^{t-3}-1\\).\n\\begin{itemize}\n\\item[(a)] Find the speed of the particle at time \\(t=3\\) seconds.\n\\item[(b)] Find the total distance traveled by the particle for \\(0 \\leq t \\leq 4\\) seconds.\n\\item[(c)] Find the time \\(t, 0 \\leq t \\leq 4\\), when the line tangent to the path of the particle is horizontal. Is the direction of motion of the particle toward the left or toward the right at that time? Give a reason for your answer.\n\\item[(d)] There is a point with \\(x\\)-coordinate 5 through which the particle passes twice. Find each of the following.\n\\begin{itemize}\n\\item[(i)] The two values of \\(t\\) when that occurs\n\\item[(ii)] The slopes of the lines tangent to the particle's path at that point\n\\item[(iii)] The \\(y\\)-coordinate of that point, given \\(y(2)=3+\\frac{1}{e}\\)\n\\end{itemize}\n\\item[(a)] Speed \\(=\\sqrt{\\left(x^{\\prime}(3)\\right)^{2}+\\left(y^{\\prime}(3)\\right)^{2}}=2.828\\) meters per second\n\\item[(b)] \\(x^{\\prime}(t)=2 t-4\\)\nDistance \\(=\\int_{0}^{4} \\sqrt{(2 t-4)^{2}+\\left(t e^{t-3}-1\\right)^{2}} d t=11.587\\) or 11.588 meters\n\\item[(c)] \\(\\frac{d y}{d x}=\\frac{d y / d t}{d x / d t}=0\\) when \\(t e^{t-3}-1=0\\) and \\(2 t-4 \\neq 0\\)\nThis occurs at \\(t=2.20794\\).\nSince \\(x^{\\prime}(2.20794)>0\\), the particle is moving toward the right at time \\(t=2.207\\) or 2.208.\n\\item[(d)] \\(x(t)=5\\) at \\(t=1\\) and \\(t=3\\)\nAt time \\(t=1\\), the slope is \\(\\left.\\frac{d y}{d x}\\right|_{t=1}=\\left.\\frac{d y / d t}{d x / d t}\\right|_{t=1}=0.432\\).\nAt time \\(t=3\\), the slope is \\(\\left.\\frac{d y}{d x}\\right|_{t=3}=\\left.\\frac{d y / d t}{d x / d t}\\right|_{t=3}=1\\).\n\\[\ny(1)=y(3)=3+\\frac{1}{e}+\\int_{2}^{3} \\frac{d y}{d t} d t=4\n\\]\n\\end{itemize}\n\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers } \\frac{d y}{d x}=0 \\\\ 1: t=2.207 \\text { or } 2.208 \\\\ 1: \\text { direction of motion with } \\\\ \\quad \\text { reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: t=1 \\text { and } t=3 \\\\ 1: \\text { slopes } \\\\ 1: y \\text {-coordinate }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          415
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

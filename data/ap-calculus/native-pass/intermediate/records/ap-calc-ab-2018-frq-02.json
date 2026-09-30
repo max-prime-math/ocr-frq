@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2018-frq-02",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis with velocity given by \\(v(t)=\\frac{10 \\sin \\left(0.4 t^{2}\\right)}{t^{2}-t+3}\\) for time \\(0 \\leq t \\leq 3.5\\).\nThe particle is at position \\(x=-5\\) at time \\(t=0\\).\n(a) Find the acceleration of the particle at time \\(t=3\\).\n(b) Find the position of the particle at time \\(t=3\\).\n(c) Evaluate \\(\\int_{0}^{3.5} v(t) d t\\), and evaluate \\(\\int_{0}^{3.5}|v(t)| d t\\). Interpret the meaning of each integral in the context of\nthe problem.\n(d) A second particle moves along the \\(x\\)-axis with position given by \\(x_{2}(t)=t^{2}-t\\) for \\(0 \\leq t \\leq 3.5\\). At what\ntime \\(t\\) are the two particles moving with the same velocity?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(v^{\\prime}(3)=-2.118\\)\nThe acceleration of the particle at time \\(t=3\\) is -2.118.\n\\item[(b)] \\(x(3)=x(0)+\\int_{0}^{3} v(t) d t=-5+\\int_{0}^{3} v(t) d t=-1.760213\\)\nThe position of the particle at time \\(t=3\\) is -1.760.\n\\item[(c)] \\(\\int_{0}^{3.5} v(t) d t=2.844\\) (or 2.843)\n\\(\\int_{0}^{3.5}|v(t)| d t=3.737\\)\nThe integral \\(\\int_{0}^{3.5} v(t) d t\\) is the displacement of the particle over the time interval \\(0 \\leq t \\leq 3.5\\).\nThe integral \\(\\int_{0}^{3.5}|v(t)| d t\\) is the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 3.5\\).\n\\item[(d)] \\(v(t)=x_{2}{ }^{\\prime}(t)\\)\n\\(v(t)=2 t-1 \\Rightarrow t=1.57054\\)\nThe two particles are moving with the same velocity at time \\(t=1.571\\) (or 1.570).\n\\end{itemize}\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\int_{0}^{3} v(t) d t \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { answers } \\\\ 2: \\text { interpretations of } \\int_{0}^{3.5} v(t) d t \\\\ \\quad \\text { and } \\int_{0}^{3.5}|v(t)| d t\\end{array}\\right.\\)\n\n2: \\(\\left\\{\\begin{array}{l}1: \\text { sets } v(t)=x_{2}^{\\prime}(t) \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          39,
+          74,
+          571,
+          356
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          53.855999999999995,
+          78.624,
+          513.5039999999999,
+          119.52
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          69.984,
+          129.88799999999998,
+          283.96799999999996,
+          143.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          70.55999999999999,
+          156.672,
+          307.584,
+          170.208
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          71.136,
+          183.16799999999998,
+          290.88,
+          196.70399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          70.55999999999999,
+          209.664,
+          549.5039999999999,
+          235.00799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          88.416,
+          243.07199999999997,
+          146.016,
+          256.608
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          70.55999999999999,
+          275.328,
+          551.808,
+          291.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          88.99199999999999,
+          295.77599999999995,
+          352.512,
+          309.31199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

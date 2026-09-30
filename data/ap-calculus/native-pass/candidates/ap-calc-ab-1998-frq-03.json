@@ -1,0 +1,221 @@
+{
+  "id": "ap-calc-ab-1998-frq-03",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-1998-frq-03-diagram-01.png\", width: 65%)\n\n#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (seconds)], [$v(t)$ (feet per second)], table.hline(stroke: .5pt), [0], [0], table.hline(stroke: .5pt), [5], [12], table.hline(stroke: .5pt), [10], [20], table.hline(stroke: .5pt), [15], [30], table.hline(stroke: .5pt), [20], [55], table.hline(stroke: .5pt), [25], [70], table.hline(stroke: .5pt), [30], [78], table.hline(stroke: .5pt), [35], [81], table.hline(stroke: .5pt), [40], [75], table.hline(stroke: .5pt), [45], [60], table.hline(stroke: .5pt), [50], [72], table.hline(stroke: .5pt));\n\nThe graph of the velocity $v(t)$, in ft/sec, of a car traveling on a straight road, for $0 <= t <= 50$, is shown above. A table of values for $v(t)$, at 5 second intervals of time $t$, is shown to the right of the graph.\n\n(a) During what intervals of time is the acceleration of the car positive? Give a reason for your answer.\n\n(b) Find the average acceleration of the car, in $upright(f t) \\/ upright(s e c)^(2)$, over the interval $0 <= t <= 50$.\n\n(c) Find one approximation for the acceleration of the car, in $upright(f t) \\/ upright(s e c)^(2)$, at $t = 40$. Show the computations you used to arrive at your answer.\n\n(d) Approximate $integral_(0)^(50) v(t) d t$ with a Riemann sum, using the midpoints of five subintervals of equal length. Using correct units, explain the meaning of this integral.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1998-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1998-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        92.9036865234375,
+        91.4636459350586,
+        315.7669677734375,
+        304.53485107421875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          66,
+          91,
+          547,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          95.90368436925553,
+          94.46364328835226,
+          312.76697064568015,
+          301.5348613503196
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "table",
+        "rect": [
+          353.0868379480699,
+          104.83160413707385,
+          513.5023100011489,
+          291.742898326527
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          74.87975356158088,
+          310.7508265491832,
+          540.862219956342,
+          323.7107776100852
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          88.70370806525736,
+          324.57477434747864,
+          540.862219956342,
+          337.53472540838067
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          89.27970616957721,
+          338.6867210582386,
+          151.77550048828127,
+          351.07067429421164
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          354.5266612437855,
+          540.862219956342,
+          367.48661230468747
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          110.01563792509192,
+          370.0786025168679,
+          172.51143224379598,
+          381.02256119051845
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 52,
+        "type": "list_item",
+        "rect": [
+          91.2956995346967,
+          384.4785481400923,
+          493.91837445427393,
+          397.4384992009943
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 54,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          400.6064872381037,
+          540.862219956342,
+          414.4304350363991
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 55,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          415.58243068625706,
+          344.15886733111216,
+          427.3903860973011
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 57,
+        "type": "text",
+        "rect": [
+          91.2956995346967,
+          428.83038065962353,
+          542.3022152171416,
+          455.614279518821
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 58,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          454.1742849564985,
+          449.56652042164524,
+          466.55823819247155
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "317f25b48323f2842bf0b3fe5426440376c49ec4d123c2fb3c32c0b329e3d5f5",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2019-frq-06",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Functions $f \\, g$, and $h$ are twice-differentiable functions with $g(2)= h(2)= 4$. The line $y = 4 + frac(2,3)(x - 2)$ is tangent to both the graph of $g$ at $x = 2$ and the graph of $h$ at $x = 2$.\n\n(a) Find $h'(2)$.\n\n(b) Let $a$ be the function given by $a(x)= 3 x^(3) h(x)$. Write an expression for $a'(x)$. Find $a'(2)$.\n\n(c) The function $h$ satisfies $h(x)= frac(x^(2)- 4,1 - (f(x))^(3))$ for $x!= 2$. It is known that $lim_(x -> 2) h(x)$ can be evaluated using L'Hospital's Rule. Use $lim_(x -> 2) h(x)$ to find $f(2)$ and $f'(2)$. Show the work that leads to your answers.\n\n(d) It is known that $g(x) <= h(x)$ for $1 < x < 3$. Let $k$ be a function satisfying $g(x) <= k(x) <= h(x)$ for $1 < x < 3$. Is $k$ continuous at $x = 2$ ? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          35,
+          93,
+          570,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          39.168,
+          97.63199999999999,
+          533.088,
+          124.416
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          54.72,
+          132.19199999999998,
+          355.104,
+          145.152
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          164.16,
+          123.83999999999999,
+          178.55999999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          190.944,
+          469.72799999999995,
+          207.93599999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          216.86399999999998,
+          539.424,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          262.656,
+          513.216,
+          283.392
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          307.584,
+          502.84799999999996,
+          321.984
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          73.728,
+          323.712,
+          333.792,
+          337.536
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6e1c2a4123b1cf4af591f7b24e24de850e17a279451cc042f2d27233184a3dca",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

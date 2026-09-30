@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2004-frq-05",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2004-frq-05-diagram-01.png\", width: 65%)\n\nThe graph of the function $f$ shown above consists of a semicircle and three line segments. Let $g$ be the function given by $g(x)= integral_(- 3)^(x) f(t) d t$.\n\n(a) Find $g(0)$ and $g'(0)$.\n\n(b) Find all values of $x$ in the open interval \\(-5, 4) at which $g$ attains a relative maximum. Justify your answer.\n\n(c) Find the absolute minimum value of $g$ on the closed interval \\[-5, 4\\]. Justify your answer.\n\n(d) Find all values of $x$ in the open interval $(- 5 \\,4)$ at which the graph of $g$ has a point of inflection.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-frq-05-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        196.8719940185547,
+        379.4639892578125,
+        408.21600341796875,
+        517.3679809570312
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          353,
+          572,
+          703
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "chart",
+        "rect": [
+          199.87199999999999,
+          382.464,
+          405.21599999999995,
+          514.3679999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          535.968,
+          561.312,
+          548.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          551.232,
+          189.79199999999997,
+          573.9839999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          582.9119999999999,
+          182.016,
+          597.024
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          65.664,
+          605.088,
+          531.072,
+          618.6239999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          621.7919999999999,
+          118.94399999999999,
+          631.0079999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 23,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          639.6479999999999,
+          483.84,
+          652.608
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 24,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          661.536,
+          515.52,
+          674.496
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b448ee4a4a48f42ae85aebe11c31740b4f73d14d4fdc6d0df734f82b57d8f5d0",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

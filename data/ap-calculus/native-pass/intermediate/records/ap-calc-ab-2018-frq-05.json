@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2018-frq-05",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function defined by \\(f(x)=e^{x} \\cos x\\).\n(a) Find the average rate of change of \\(f\\) on the interval \\(0 \\leq x \\leq \\pi\\).\n(b) What is the slope of the line tangent to the graph of \\(f\\) at \\(x=\\frac{3 \\pi}{2}\\) ?\n(c) Find the absolute minimum value of \\(f\\) on the interval \\(0 \\leq x \\leq 2 \\pi\\). Justify your answer.\n(d) Let \\(g\\) be a differentiable function such that \\(g\\left(\\frac{\\pi}{2}\\right)=0\\). The graph of \\(g^{\\prime}\\), the derivative of \\(g\\), is shown\nbelow. Find the value of \\(\\lim _{x \\rightarrow \\pi / 2} \\frac{f(x)}{g(x)}\\) or state that it does not exist. Justify your answer.\n\\includegraphics{ap-calc-ab-2018-frq-05-diagram-01.png}",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2018-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2018-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        223.3679962158203,
+        276.64801025390625,
+        408.7919921875,
+        390.3599853515625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\\begin{itemize}\n\\item[(a)] The average rate of change of \\(f\\) on the interval \\(0 \\leq x \\leq \\pi\\) is \\(\\frac{f(\\pi)-f(0)}{\\pi-0}=\\frac{-e^{\\pi}-1}{\\pi}\\).\n\\item[(b)] \\(f^{\\prime}(x)=e^{x} \\cos x-e^{x} \\sin x\\)\n\\(f^{\\prime}\\left(\\frac{3 \\pi}{2}\\right)=e^{3 \\pi / 2} \\cos \\left(\\frac{3 \\pi}{2}\\right)-e^{3 \\pi / 2} \\sin \\left(\\frac{3 \\pi}{2}\\right)=e^{3 \\pi / 2}\\)\nThe slope of the line tangent to the graph of \\(f\\) at \\(x=\\frac{3 \\pi}{2}\\) is \\(e^{3 \\pi / 2}\\).\n\\item[(c)] \\(f^{\\prime}(x)=0 \\Rightarrow \\cos x-\\sin x=0 \\Rightarrow x=\\frac{\\pi}{4}, x=\\frac{5 \\pi}{4}\\)\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(x\\) & \\(f(x)\\) \\\\\n\\hline 0 & 1 \\\\\n\\hline \\(\\frac{\\pi}{4}\\) & \\(\\frac{1}{\\sqrt{2}} e^{\\pi / 4}\\) \\\\\n\\hline \\(\\frac{5 \\pi}{4}\\) & \\(-\\frac{1}{\\sqrt{2}} e^{5 \\pi / 4}\\) \\\\\n\\hline \\(2 \\pi\\) & \\(e^{2 \\pi}\\) \\\\\n\\hline\n\\end{tabular}\nThe absolute minimum value of \\(f\\) on \\(0 \\leq x \\leq 2 \\pi\\) is \\(-\\frac{1}{\\sqrt{2}} e^{5 \\pi / 4}\\).\n\\item[(d)] \\(\\lim _{x \\rightarrow \\pi / 2} f(x)=0\\)\nBecause \\(g\\) is differentiable, \\(g\\) is continuous.\n\\(\\lim _{x \\rightarrow \\pi / 2} g(x)=g\\left(\\frac{\\pi}{2}\\right)=0\\)\nBy L'Hospital's Rule,\n\\(\\lim _{x \\rightarrow \\pi / 2} \\frac{f(x)}{g(x)}=\\lim _{x \\rightarrow \\pi / 2} \\frac{f^{\\prime}(x)}{g^{\\prime}(x)}=\\frac{-e^{\\pi / 2}}{2}\\).\n\\end{itemize}\n\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(x) \\\\ 1: \\text { slope }\\end{array}\\right.\\)\n\n3 : \\(\\left\\{\\begin{array}{l}1: \\text { sets } f^{\\prime}(x)=0 \\\\ 1: \\text { identifies } x=\\frac{\\pi}{4}, x=\\frac{5 \\pi}{4} \\\\ \\text { as candidates } \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)\n\n3 : \\(\\left\\{\\begin{array}{c}1: g \\text { is continuous at } x=\\frac{\\pi}{2} \\\\ \\quad \\text { and limits equal } 0 \\\\ 1: \\text { applies L'Hospital's Rule } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\nNote: max 1/3 [1-0-0] if no limit notation attached to a ratio of derivatives",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          39,
+          79,
+          570,
+          446
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          45.215999999999994,
+          83.52,
+          275.904,
+          97.63199999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          110.88,
+          355.392,
+          123.83999999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          137.952,
+          371.23199999999997,
+          164.44799999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          175.67999999999998,
+          461.664,
+          189.21599999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          205.344,
+          525.8879999999999,
+          231.26399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          79.19999999999999,
+          235.87199999999999,
+          469.152,
+          267.55199999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "chart",
+        "rect": [
+          226.368,
+          279.64799999999997,
+          405.792,
+          387.35999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

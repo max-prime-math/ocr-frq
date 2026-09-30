@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2018-frq-01",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "rawPrompt": "People enter a line for an escalator at a rate modeled by the function $r$ given by\n$$\nr(t)= \\begin{cases}44\\left(\\frac{t}{100}\\right)^{3}\\left(1-\\frac{t}{300}\\right)^{7} & \\text { for } 0 \\leq t \\leq 300 \\\\ 0 & \\text { for } t>300\\end{cases}\n$$\n\nwhere $r(t)$ is measured in people per second and $t$ is measured in seconds. As people get on the escalator, they exit the line at a constant rate of 0.7 person per second. There are 20 people in line at time $t=0$.\\\\\n(a) How many people enter the line for the escalator during the time interval $0 \\leq t \\leq 300$ ?\\\\\n(b) During the time interval $0 \\leq t \\leq 300$, there are always people in line for the escalator. How many people are in line at time $t=300$ ?\\\\\n(c) For $t>300$, what is the first time $t$ that there are no people in line for the escalator?\\\\\n(d) For $0 \\leq t \\leq 300$, at what time $t$ is the number of people in line a minimum? To the nearest whole number, find the number of people in line at this time. Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2018 SCORING GUIDELINES}\n\nQuestion 1\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{300} r(t) d t=270\\)\nAccording to the model, 270 people enter the line for the escalator during the time interval \\(0 \\leq t \\leq 300\\).\n\\item[(b)] \\(20+\\int_{0}^{300}(r(t)-0.7) d t=20+\\int_{0}^{300} r(t) d t-0.7 \\cdot 300=80\\)\nAccording to the model, 80 people are in line at time \\(t=300\\).\n\\item[(c)] Based on part (b), the number of people in line at time \\(t=300\\) is 80.\nThe first time \\(t\\) that there are no people in line is\n\\[\n300+\\frac{80}{0.7}=414.286 \\text { (or 414.285) seconds. }\n\\]\n\\item[(d)] The total number of people in line at time \\(t, 0 \\leq t \\leq 300\\), is modeled by\n\\[\n\\begin{aligned}\n& 20+\\int_{0}^{t} r(x) d x-0.7 t \\\\\n& r(t)-0.7=0 \\Rightarrow t_{1}=33.013298, t_{2}=166.574719\n\\end{aligned}\n\\]\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & People in line for escalator \\\\\n\\hline 0 & 20 \\\\\n\\hline \\(t_{1}\\) & 3.803 \\\\\n\\hline \\(t_{2}\\) & 158.070 \\\\\n\\hline 300 & 80 \\\\\n\\hline\n\\end{tabular}\nThe number of people in line is a minimum at time \\(t=33.013\\) seconds, when there are 4 people in line.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { considers rate out } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : answer\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { considers } r(t)-0.7=0 \\\\ 1: \\text { identifies } t=33.013 \\\\ 1: \\text { answers } \\\\ 1: \\text { justification }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          51,
+          85,
+          568,
+          525
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

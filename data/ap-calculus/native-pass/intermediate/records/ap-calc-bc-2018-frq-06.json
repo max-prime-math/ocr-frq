@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2018-frq-06",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for $\\ln (1+x)$ is given by\n$$\nx-\\frac{x^{2}}{2}+\\frac{x^{3}}{3}-\\frac{x^{4}}{4}+\\cdots+(-1)^{n+1} \\frac{x^{n}}{n}+\\cdots\n$$\n\nOn its interval of convergence, this series converges to $\\ln (1+x)$. Let $f$ be the function defined by\n\n$$\nf(x)=x \\ln \\left(1+\\frac{x}{3}\\right)\n$$\n\n(a) Write the first four nonzero terms and the general term of the Maclaurin series for $f$.\\\\\n(b) Determine the interval of convergence of the Maclaurin series for $f$. Show the work that leads to your answer.\\\\\n(c) Let $P_{4}(x)$ be the fourth-degree Taylor polynomial for $f$ about $x=0$. Use the alternating series error bound to find an upper bound for $\\left|P_{4}(2)-f(2)\\right|$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)] The first four nonzero terms are \\(\\frac{x^{2}}{3}-\\frac{x^{3}}{2 \\cdot 3^{2}}+\\frac{x^{4}}{3 \\cdot 3^{3}}-\\frac{x^{5}}{4 \\cdot 3^{4}}\\). The general term is \\((-1)^{n+1} \\frac{x^{n+1}}{n \\cdot 3^{n}}\\).\n\\item[(b)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(-1)^{n+2} x^{n+2}}{(n+1)\\left(3^{n+1}\\right)}}{\\frac{(-1)^{n+1} x^{n+1}}{n \\cdot 3^{n}}}\\right|=\\lim _{n \\rightarrow \\infty}\\left|\\frac{-x}{3} \\cdot \\frac{n}{(n+1)}\\right|=\\left|\\frac{x}{3}\\right|\\) \\(\\left|\\frac{x}{3}\\right|<1\\) for \\(|x|<3\\)\nTherefore, the radius of convergence of the Maclaurin series for \\(f\\) is 3 . - OR -\n\\end{itemize}\nThe radius of convergence of the Maclaurin series for \\(\\ln (1+x)\\) is 1 , so the series for \\(f(x)=x \\ln \\left(1+\\frac{x}{3}\\right)\\) converges absolutely for \\(\\left|\\frac{x}{3}\\right|<1\\). \\(\\left|\\frac{x}{3}\\right|<1 \\Rightarrow|x|<3\\)\nTherefore, the radius of convergence of the Maclaurin series for \\(f\\) is 3 .\nWhen \\(x=-3\\), the series is \\(\\sum_{n=1}^{\\infty}(-1)^{n+1} \\frac{(-3)^{n+1}}{n \\cdot 3^{n}}=\\sum_{n=1}^{\\infty} \\frac{3}{n}\\), which diverges by comparison to the harmonic series.\nWhen \\(x=3\\), the series is \\(\\sum_{n=1}^{\\infty}(-1)^{n+1} \\frac{3^{n+1}}{n \\cdot 3^{n}}=\\sum_{n=1}^{\\infty}(-1)^{n+1} \\frac{3}{n}\\), which converges by the alternating series test.\nThe interval of convergence of the Maclaurin series for \\(f\\) is \\(-3<x \\leq 3\\).\n\\begin{itemize}\n\\item[(c)] By the alternating series error bound, an upper bound for \\(\\left|P_{4}(2)-f(2)\\right|\\) is the magnitude of the next term of the alternating series.\n\\[\n\\left|P_{4}(2)-f(2)\\right|<\\left|-\\frac{2^{5}}{4 \\cdot 3^{4}}\\right|=\\frac{8}{81}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { first four terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\n5 : \\(\\left\\{\\begin{array}{l}1: \\text { sets up ratio } \\\\ 1: \\text { computes limit of ratio } \\\\ 1: \\text { radius of convergence } \\\\ 1: \\text { considers both endpoints } \\\\ 1: \\text { analysis and interval of } \\\\ \\quad \\text { convergence }\\end{array}\\right.\\)\n- OR -\n\n5 : \\(\\left\\{\\begin{array}{l}1 \\text { : radius for } \\ln (1+x) \\text { series } \\\\ 1: \\text { substitutes } \\frac{x}{3} \\\\ 1: \\text { radius of convergence } \\\\ 1: \\text { considers both endpoints } \\\\ 1: \\text { analysis and interval of } \\\\ \\quad \\text { convergence }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { uses fifth-degree term } \\\\ \\quad \\text { as error bound } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          80,
+          570,
+          461
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

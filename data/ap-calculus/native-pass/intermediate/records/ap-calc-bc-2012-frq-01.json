@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2012-frq-01",
+  "course": "BC",
+  "year": 2012,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2012.pdf",
+      "sha256": "79c15419c0fab55ddc4447f853b5476bc79428ee91a1b51a1a4d93224d0a08f8",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2012.pdf",
+      "sha256": "5b10738ec7ca6ffae5b052b280bac5cfd809610f3192fddeeab34d167ecc1139"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|}\n\\hline\n$t$ (minutes) & 0 & 4 & 9 & 15 & 20 \\\\\n\\hline\n$W(t)$ (degrees Fahrenheit) & 55.0 & 57.1 & 61.8 & 67.9 & 71.0 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nThe temperature of water in a tub at time $t$ is modeled by a strictly increasing, twice-differentiable function $W$, where $W(t)$ is measured in degrees Fahrenheit and $t$ is measured in minutes. At time $t=0$, the temperature of the water is $55^{\\circ} \\mathrm{F}$. The water is heated for 30 minutes, beginning at time $t=0$. Values of $W(t)$ at selected times $t$ for the first 20 minutes are given in the table above.\\\\\n(a) Use the data in the table to estimate $W^{\\prime}(12)$. Show the computations that lead to your answer. Using correct units, interpret the meaning of your answer in the context of this problem.\\\\\n(b) Use the data in the table to evaluate $\\int_{0}^{20} W^{\\prime}(t) d t$. Using correct units, interpret the meaning of $\\int_{0}^{20} W^{\\prime}(t) d t$ in the context of this problem.\\\\\n(c) For $0 \\leq t \\leq 20$, the average temperature of the water in the tub is $\\frac{1}{20} \\int_{0}^{20} W(t) d t$. Use a left Riemann sum with the four subintervals indicated by the data in the table to approximate $\\frac{1}{20} \\int_{0}^{20} W(t) d t$. Does this approximation overestimate or underestimate the average temperature of the water over these 20 minutes? Explain your reasoning.\\\\\n(d) For $20 \\leq t \\leq 25$, the function $W$ that models the water temperature has first derivative given by $W^{\\prime}(t)=0.4 \\sqrt{t} \\cos (0.06 t)$. Based on the model, what is the temperature of the water at time $t=25$ ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2012 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 4 & 9 & 15 & 20 \\\\\n\\hline \\(W(t)\\) (degrees Fahrenheit) & 55.0 & 57.1 & 61.8 & 67.9 & 71.0 \\\\\n\\hline\n\\end{tabular}\nThe temperature of water in a tub at time \\(t\\) is modeled by a strictly increasing, twice-differentiable function \\(W\\), where \\(W(t)\\) is measured in degrees Fahrenheit and \\(t\\) is measured in minutes. At time \\(t=0\\), the temperature of the water is \\(55^{\\circ} \\mathrm{F}\\). The water is heated for 30 minutes, beginning at time \\(t=0\\). Values of \\(W(t)\\) at selected times \\(t\\) for the first 20 minutes are given in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to estimate \\(W^{\\prime}(12)\\). Show the computations that lead to your answer. Using correct units, interpret the meaning of your answer in the context of this problem.\n\\item[(b)] Use the data in the table to evaluate \\(\\int_{0}^{20} W^{\\prime}(t) d t\\). Using correct units, interpret the meaning of \\(\\int_{0}^{20} W^{\\prime}(t) d t\\) in the context of this problem.\n\\item[(c)] For \\(0 \\leq t \\leq 20\\), the average temperature of the water in the tub is \\(\\frac{1}{20} \\int_{0}^{20} W(t) d t\\). Use a left Riemann sum with the four subintervals indicated by the data in the table to approximate \\(\\frac{1}{20} \\int_{0}^{20} W(t) d t\\). Does this approximation overestimate or underestimate the average temperature of the water over these 20 minutes? Explain your reasoning.\n\\item[(d)] For \\(20 \\leq t \\leq 25\\), the function \\(W\\) that models the water temperature has first derivative given by \\(W^{\\prime}(t)=0.4 \\sqrt{t} \\cos (0.06 t)\\). Based on the model, what is the temperature of the water at time \\(t=25\\) ?\n\\item[(a)]\n\\[\n\\begin{aligned}\nW^{\\prime}(12) & \\approx \\frac{W(15)-W(9)}{15-9}=\\frac{67.9-61.8}{6} \\\\\n& =1.017(\\text { or } 1.016)\n\\end{aligned}\n\\]\nThe water temperature is increasing at a rate of approximately 1.017 °F per minute at time \\(t=12\\) minutes.\n\\item[(b)] \\(\\int_{0}^{20} W^{\\prime}(t) d t=W(20)-W(0)=71.0-55.0=16\\)\nThe water has warmed by 16 °F over the interval from \\(t=0\\) to \\(t=20\\) minutes.\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\frac{1}{20} \\int_{0}^{20} W(t) d t & \\approx \\frac{1}{20}(4 \\cdot W(0)+5 \\cdot W(4)+6 \\cdot W(9)+5 \\cdot W(15)) \\\\\n& =\\frac{1}{20}(4 \\cdot 55.0+5 \\cdot 57.1+6 \\cdot 61.8+5 \\cdot 67.9) \\\\\n& =\\frac{1}{20} \\cdot 1215.8=60.79\n\\end{aligned}\n\\]\nThis approximation is an underestimate, because a left Riemann sum is used and the function \\(W\\) is strictly increasing.\n\\item[(d)]\n\\[\n\\begin{aligned}\nW(25) & =71.0+\\int_{20}^{25} W^{\\prime}(t) d t \\\\\n& =71.0+2.043155=73.043\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { estimate } \\\\\n1: \\text { interpretation with units }\n\\end{array}\\right.\n\\]\n\\(2:\\left\\{\\begin{array}{l}1: \\text { value } \\\\ 1: \\text { interpretation with units }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { left Riemann sum } \\\\ 1: \\text { approximation } \\\\ 1: \\text { underestimate with reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          43,
+          52,
+          567,
+          526
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2012.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

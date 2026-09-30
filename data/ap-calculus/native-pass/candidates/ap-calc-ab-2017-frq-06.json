@@ -1,0 +1,199 @@
+{
+  "id": "ap-calc-ab-2017-frq-06",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 3, align: (left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.hline(stroke: .5pt), [$x$], [$g(x)$], [$g'(x)$], table.hline(stroke: .5pt), [-5], [10], [-3], table.hline(stroke: .5pt), [-4], [5], [-1], table.hline(stroke: .5pt), [-3], [2], [4], table.hline(stroke: .5pt), [-2], [3], [1], table.hline(stroke: .5pt), [-1], [1], [-2], table.hline(stroke: .5pt), [0], [0], [-3], table.hline(stroke: .5pt));\n\n#image(\"/imgs/ap-calc-ab-2017-frq-06-diagram-01.png\", width: 65%)\n\nLet $f$ be the function defined by $f(x)= cos(2 x)+ e^(sin x)$. Let $g$ be a differentiable function. The table above gives values of $g$ and its derivative $g'$ at selected values of $x$. Let $h$ be the function whose graph, consisting of five line segments, is shown in the figure above.\n\n(a) Find the slope of the line tangent to the graph of $f$ at $x = pi$.\n\n(b) Let $k$ be the function defined by $k(x)= h(f(x))$. Find $k'(pi)$.\n\n(c) Let $m$ be the function defined by $m(x)= g(- 2 x) dot.c h(x)$. Find $m'(2)$.\n\n(d) Is there a number $c$ in the closed interval \\[-5, -3\\] such that $g'(c)= - 4$ ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2017-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2017-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        262.8240051269531,
+        94.63200378417969,
+        486.552001953125,
+        245.20799255371094
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          93,
+          570,
+          555.69
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          127.008,
+          115.19999999999999,
+          236.44799999999998,
+          238.46399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 34,
+        "type": "chart",
+        "rect": [
+          265.82399999999996,
+          97.63199999999999,
+          483.55199999999996,
+          242.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          44.928,
+          276.192,
+          313.344,
+          293.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          307.008,
+          534.5279999999999,
+          319.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          322.56,
+          83.52,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          346.75199999999995,
+          490.176,
+          359.712
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 40,
+        "type": "list_item",
+        "rect": [
+          60.48,
+          371.52,
+          342.71999999999997,
+          384.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 41,
+        "type": "list_item",
+        "rect": [
+          60.48,
+          398.88,
+          351.64799999999997,
+          413.28
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 42,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          427.96799999999996,
+          385.91999999999996,
+          441.792
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 43,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          454.176,
+          508.31999999999994,
+          467.99999999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "50f37700444e35829047b1868f0992022d828cdb80021f3e45ad2175aa0dfe0c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

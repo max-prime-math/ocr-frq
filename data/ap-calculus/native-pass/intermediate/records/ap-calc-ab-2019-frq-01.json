@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2019-frq-01",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "rawPrompt": "Fish enter a lake at a rate modeled by the function \\(E\\) given by \\(E(t)=20+15 \\sin \\left(\\frac{\\pi t}{6}\\right)\\). Fish leave the lake at\na rate modeled by the function \\(L\\) given by \\(L(t)=4+2^{0.1 t^{2}}\\). Both \\(E(t)\\) and \\(L(t)\\) are measured in fish per\nhour, and \\(t\\) is measured in hours since midnight \\((t=0)\\).\n(a) How many fish enter the lake over the 5-hour period from midnight \\((t=0)\\) to 5 a.m. \\((t=5)\\) ? Give your\nanswer to the nearest whole number.\n(b) What is the average number of fish that leave the lake per hour over the 5-hour period from\nmidnight \\((t=0)\\) to 5 a.m. \\((t=5)\\) ?\n(c) At what time \\(t\\), for \\(0 \\leq t \\leq 8\\), is the greatest number of fish in the lake? Justify your answer.\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at 5 a.m. \\((t=5)\\) ? Explain\nyour reasoning.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2019 SCORING GUIDELINES}\n\nQuestion 1\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{5} E(t) d t=153.457690\\)\nTo the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\n\\item[(b)] \\(\\frac{1}{5-0} \\int_{0}^{5} L(t) d t=6.059038\\)\nThe average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\n\\item[(c)] The rate of change in the number of fish in the lake at time \\(t\\) is given by \\(E(t)-L(t)\\).\n\\[\nE(t)-L(t)=0 \\Rightarrow t=6.20356\n\\]\n\\(E(t)-L(t)>0\\) for \\(0 \\leq t<6.20356\\), and \\(E(t)-L(t)<0\\) for \\(6.20356<t \\leq 8\\). Therefore the greatest number of fish in the lake is at time \\(t=6.204\\) (or 6.203).\n\\end{itemize}\n- OR -\n\nLet \\(A(t)\\) be the change in the number of fish in the lake from midnight to \\(t\\) hours after midnight.\n\\[\n\\begin{aligned}\n& A(t)=\\int_{0}^{t}(E(s)-L(s)) d s \\\\\n& A^{\\prime}(t)=E(t)-L(t)=0 \\Rightarrow t=C=6.20356\n\\end{aligned}\n\\]\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & \\(A(t)\\) \\\\\n\\hline 0 & 0 \\\\\n\\hline \\(C\\) & 135.01492 \\\\\n\\hline 8 & 80.91998 \\\\\n\\hline\n\\end{tabular}\nTherefore the greatest number of fish in the lake is at time \\(t=6.204\\) (or 6.203).\n\\begin{itemize}\n\\item[(d)] \\(E^{\\prime}(5)-L^{\\prime}(5)=-10.7228<0\\)\nBecause \\(E^{\\prime}(5)-L^{\\prime}(5)<0\\), the rate of change in the number of fish is decreasing at time \\(t=5\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1: \\text { sets } E(t)-L(t)=0 \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          36,
+          89,
+          568,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          39.744,
+          238.46399999999997,
+          538.2719999999999,
+          265.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          54.72,
+          267.84,
+          519.8399999999999,
+          288.0
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          301.82399999999996,
+          300.96,
+          314.784
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          334.94399999999996,
+          534.24,
+          347.904
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          73.728,
+          349.344,
+          235.87199999999999,
+          360.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          376.70399999999995,
+          476.92799999999994,
+          389.664
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          73.728,
+          390.816,
+          228.67199999999997,
+          403.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          421.056,
+          479.52,
+          433.43999999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          451.008,
+          536.832,
+          463.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          73.728,
+          465.11999999999995,
+          144.0,
+          478.08
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

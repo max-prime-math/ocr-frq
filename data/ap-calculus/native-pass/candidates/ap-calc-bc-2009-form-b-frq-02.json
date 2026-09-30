@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2009-form-b-frq-02",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A storm washed away sand from a beach, causing the edge of the water to get closer to a nearby road. The rate at which the distance between the road and the edge of the water was changing during the storm is modeled by $f(t)= sqrt(t)+ cos t - 3$ meters per hour, $t$ hours after the storm began. The edge of the water was 35 meters from the road when the storm began, and the storm lasted 5 hours. The derivative of $f(t)$ is $f'(t)= frac(1,2 sqrt(t))- sin t$.\n\n(a) What was the distance between the road and the edge of the water at the end of the storm?\n\n(b) Using correct units, interpret the value $f'(4)= 1.007$ in terms of the distance between the road and the edge of the water.\n\n(c) At what time during the 5 hours of the storm was the distance between the road and the edge of the water decreasing most rapidly? Justify your answer.\n\n(d) After the storm, a machine pumped sand back onto the beach so that the distance between the road and the edge of the water was growing at a rate of $g(p)$ meters per day, where $p$ is the number of days since pumping began. Write an equation involving an integral expression whose solution would give the number of days that sand must be pumped to restore the original distance between the road and the edge of the water.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          331
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "701cebba62e8607d980a875af57996db213b16d03031ce4a12c36d4faeabbead",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2009-form-b-frq-02-diagram-01.jpg",
+      "belongsToQuestion": "ap-calc-bc-2009-form-b-frq-03"
+    }
+  ]
+}

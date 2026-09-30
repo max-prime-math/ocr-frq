@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2012-frq-05",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The rate at which a baby bird gains weight is proportional to the difference between its adult weight and its current weight. At time $t = 0$, when the bird is first weighed, its weight is 20 grams. If $B(t)$ is the weight of the bird, in grams, at time $t$ days after it is first weighed, then $ frac(d B,d t)= frac(1,5)(100 - B) . $ Let $y = B(t)$ be the solution to the differential equation above with initial condition $B(0)= 20$.\n\n(a) Is the bird gaining weight faster when it weighs 40 grams or when it weighs 70 grams? Explain your reasoning.\n\n(b) Find $frac(d^(2) B,d t^(2))$ in terms of $B$. Use $frac(d^(2) B,d t^(2))$ to explain why the graph of $B$ cannot resemble the following graph.\n\n#image(\"/imgs/ap-calc-ab-2012-frq-05-diagram-01.png\", width: 65%)\n\n(c) Use separation of variables to find $y = B(t)$, the particular solution to the differential equation with initial condition $B(0)= 20$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2012-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2012-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        209.83200073242188,
+        234.0240020751953,
+        420.02398681640625,
+        415.12799072265625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          65,
+          572,
+          492
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          69.408,
+          538.2719999999999,
+          82.368
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          82.368,
+          561.5999999999999,
+          95.904
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          97.63199999999999,
+          322.84799999999996,
+          110.59199999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "math",
+        "rect": [
+          262.368,
+          116.35199999999999,
+          349.056,
+          141.11999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          149.184,
+          489.888,
+          163.296
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          170.784,
+          528.4799999999999,
+          184.32
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          183.744,
+          130.464,
+          196.128
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          202.464,
+          547.1999999999999,
+          232.70399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "chart",
+        "rect": [
+          212.832,
+          237.02399999999997,
+          417.02399999999994,
+          412.128
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          417.02399999999994,
+          554.4,
+          430.55999999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          432.57599999999996,
+          179.42399999999998,
+          446.688
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9d9dcdd88129cc69aabe901feec7278661141795d44eb0cf18a7855d3647c423",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

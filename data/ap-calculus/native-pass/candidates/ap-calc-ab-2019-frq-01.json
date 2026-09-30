@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2019-frq-01",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Fish enter a lake at a rate modeled by the function $E$ given by $E(t)= 20 + 15 sin lr((frac(pi t,6)))$. Fish leave the lake at a rate modeled by the function $L$ given by $L(t)= 4 + 2^(0.1 t^(2))$. Both $E(t)$ and $L(t)$ are measured in fish per hour, and $t$ is measured in hours since midnight $(t = 0)$.\n\n(a) How many fish enter the lake over the 5-hour period from midnight $(t = 0)$ to 5 a.m. $(t = 5)$ ? Give your answer to the nearest whole number.\n\n(b) What is the average number of fish that leave the lake per hour over the 5-hour period from midnight $(t = 0)$ to 5 a.m. $(t = 5)$ ?\n\n(c) At what time $t$, for $0 <= t <= 8$, is the greatest number of fish in the lake? Justify your answer.\n\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at 5 a.m. $(t = 5)$ ? Explain your reasoning.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          36,
+          89,
+          568,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          39.744,
+          238.46399999999997,
+          538.2719999999999,
+          265.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          54.72,
+          267.84,
+          519.8399999999999,
+          288.0
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          301.82399999999996,
+          300.96,
+          314.784
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          334.94399999999996,
+          534.24,
+          347.904
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          73.728,
+          349.344,
+          235.87199999999999,
+          360.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          376.70399999999995,
+          476.92799999999994,
+          389.664
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          73.728,
+          390.816,
+          228.67199999999997,
+          403.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          421.056,
+          479.52,
+          433.43999999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          451.008,
+          536.832,
+          463.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          73.728,
+          465.11999999999995,
+          144.0,
+          478.08
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6f75dcd3affb76b3fffe1045a9b63c00297c4efb21b758296d93bceba8dd8738",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

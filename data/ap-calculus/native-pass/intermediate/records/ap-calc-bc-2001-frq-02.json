@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-02",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(days) \\\\\n\\end{tabular} & \\begin{tabular}{c}\n$W(t)$ \\\\\n$\\left({ }^{\\circ} \\mathrm{C}\\right)$ \\\\\n\\end{tabular} \\\\\n\\hline\\hline\n0 & 20 \\\\\n3 & 31 \\\\\n6 & 28 \\\\\n9 & 24 \\\\\n12 & 22 \\\\\n15 & 21 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nThe temperature, in degrees Celsius ( ${ }^{\\circ} \\mathrm{C}$ ), of the water in a pond is a differentiable function $W$ of time $t$. The table above shows the water temperature as recorded every 3 days over a 15-day period.\\\\\n(a) Use data from the table to find an approximation for $W^{\\prime}(12)$. Show the computations that lead to your answer. Indicate units of measure.\\\\\n(b) Approximate the average temperature, in degrees Celsius, of the water over the time interval $0 \\leq t \\leq 15$ days by using a trapezoidal approximation with subintervals of length $\\Delta t=3$ days.\\\\\n(c) A student proposes the function $P$, given by $P(t)=20+10 t e^{(-t / 3)}$, as a model for the temperature of the water in the pond at time $t$, where $t$ is measured in days and $P(t)$ is measured in degrees Celsius. Find $P^{\\prime}(12)$. Using appropriate units, explain the meaning of your answer in terms of water temperature.\\\\\n(d) Use the function $P$ defined in part (c) to find the average value, in degrees Celsius, of $P(t)$ over the time interval $0 \\leq t \\leq 15$ days.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe temperature, in degrees Celsius ( \\({ }^{\\circ} \\mathrm{C}\\) ), of the water in a pond is a differentiable function \\(W\\) of time \\(t\\). The table above shows the water temperature as recorded every 3 days over a 15-day period.\n\\begin{itemize}\n\\item[(a)] Use data from the table to find an approximation for \\(W^{\\prime}(12)\\). Show the computations that lead to your answer. Indicate units of measure.\n\\item[(b)] Approximate the average temperature, in degrees Celsius, of the water over the time interval \\(0 \\leq t \\leq 15\\) days by using a trapezoidal approximation with subintervals of length \\(\\Delta t=3\\) days.\n\\item[(c)] A student proposes the function \\(P\\), given by \\(P(t)=20+10 t e^{(-t / 3)}\\), as a model for the temperature of the water in the pond at time \\(t\\), where \\(t\\) is measured in days and \\(P(t)\\) is measured in degrees Celsius. Find \\(P^{\\prime}(12)\\). Using appropriate units, explain the meaning of your answer in terms of water temperature.\n\\item[(d)] Use the function \\(P\\) defined in part (c) to find the average value, in degrees Celsius, of \\(P(t)\\) over the time interval \\(0 \\leq t \\leq 15\\) days.\n\\item[(a)] Difference quotient; e.g.\n\\[\n\\begin{aligned}\n& W^{\\prime}(12) \\approx \\frac{W(15)-W(12)}{15-12}=-\\frac{1}{3}{ }^{\\circ} \\mathrm{C} / \\text { day or } \\\\\n& W^{\\prime}(12) \\approx \\frac{W(12)-W(9)}{12-9}=-\\frac{2}{3}{ }^{\\circ} \\mathrm{C} / \\text { day or } \\\\\n& W^{\\prime}(12) \\approx \\frac{W(15)-W(9)}{15-9}=-\\frac{1}{2}{ }^{\\circ} \\mathrm{C} / \\text { day }\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{3}{2}(20+2(31)+2(28)+2(24)+2(22)+21)=376.5\\) Average temperature \\(\\approx \\frac{1}{15}(376.5)=25.1^{\\circ} \\mathrm{C}\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\nP^{\\prime}(12) & =10 e^{-t / 3}-\\left.\\frac{10}{3} t e^{-t / 3}\\right|_{t=12} \\\\\n& =-30 e^{-4}=-0.549^{\\circ} \\mathrm{C} / \\text { day }\n\\end{aligned}\n\\]\nThis means that the temperature is decreasing at the rate of 0.549 °C/day when \\(t=12\\) days.\n\\item[(d)] \\(\\frac{1}{15} \\int_{0}^{15}\\left(20+10 t e^{-t / 3}\\right) d t=25.757^{\\circ} \\mathrm{C}\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { difference quotient } \\\\ 1: \\text { answer (with units) }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { trapezoidal method } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: P^{\\prime}(12) \\text { (with or without units) } \\\\ 1: \\text { interpretation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{aligned} & 1: \\text { integrand } \\\\ & 1: \\text { limits and } \\\\ & \\text { average value constant } \\\\ & 1: \\text { answer }\\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          66,
+          572,
+          390
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

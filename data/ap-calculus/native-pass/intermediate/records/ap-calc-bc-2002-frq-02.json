@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-frq-02",
+  "course": "BC",
+  "year": 2002,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002.pdf",
+      "sha256": "64edbf0cc21bb02abac3daedd8843f19db31224976c1904c0a369c0dcf31e9bc",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002.pdf",
+      "sha256": "676da803295fea05f51302345025fb577c149c93c1387bedabbcc52ea0834896"
+    }
+  },
+  "rawPrompt": "The rate at which people enter an amusement park on a given day is modeled by the function $E$ defined by\n$$\nE(t)=\\frac{15600}{\\left(t^{2}-24 t+160\\right)}\n$$\n\nThe rate at which people leave the same amusement park on the same day is modeled by the function $L$ defined by\n\n$$\nL(t)=\\frac{9890}{\\left(t^{2}-38 t+370\\right)}\n$$\n\nBoth $E(t)$ and $L(t)$ are measured in people per hour and time $t$ is measured in hours after midnight. These functions are valid for $9 \\leq t \\leq 23$, the hours during which the park is open. At time $t=9$, there are no people in the park.\\\\\n(a) How many people have entered the park by 5:00 P.M. ( $t=17$ )? Round your answer to the nearest whole number.\\\\\n(b) The price of admission to the park is $\\$ 15$ until 5:00 P.M. ( $t=17$ ). After 5:00 P.M., the price of admission to the park is $\\$ 11$. How many dollars are collected from admissions to the park on the given day? Round your answer to the nearest whole number.\\\\\n(c) Let $H(t)=\\int_{9}^{t}(E(x)-L(x)) d x$ for $9 \\leq t \\leq 23$. The value of $H(17)$ to the nearest whole number is 3725 . Find the value of $H^{\\prime}(17)$, and explain the meaning of $H(17)$ and $H^{\\prime}(17)$ in the context of the amusement park.\\\\\n(d) At what time $t$, for $9 \\leq t \\leq 23$, does the model predict that the number of people in the park is a maximum?\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC 2002 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nThe rate at which people enter an amusement park on a given day is modeled by the function \\(E\\) defined by\n\\[\nE(t)=\\frac{15600}{\\left(t^{2}-24 t+160\\right)} .\n\\]\nThe rate at which people leave the same amusement park on the same day is modeled by the function \\(L\\) defined by\n\\[\nL(t)=\\frac{9890}{\\left(t^{2}-38 t+370\\right)} .\n\\]\nBoth \\(E(t)\\) and \\(L(t)\\) are measured in people per hour and time \\(t\\) is measured in hours after midnight. These functions are valid for \\(9 \\leq t \\leq 23\\), the hours during which the park is open. At time \\(t=9\\), there are no people in the park.\n\\begin{itemize}\n\\item[(a)] How many people have entered the park by 5:00 P.M. \\((t=17)\\) ? Round answer to the nearest whole number.\n\\item[(b)] The price of admission to the park is \\$15 until 5:00 P.M. ( \\(t=17\\) ). After 5:00 P.M., the price of admission to the park is \\$11. How many dollars are collected from admissions to the park on the given day? Round your answer to the nearest whole number.\n\\item[(c)] Let \\(H(t)=\\int_{9}^{t}(E(x)-L(x)) d x\\) for \\(9 \\leq t \\leq 23\\). The value of \\(H\\) (17) to the nearest whole number is 3725. Find the value of \\(H^{\\prime}(17)\\) and explain the meaning of \\(H\\) (17) and \\(H^{\\prime}(17)\\) in the context of the park.\n\\item[(d)] At what time \\(t\\), for \\(9 \\leq t \\leq 23\\), does the model predict that the number of people in the park is a maximum?\n\\item[(a)] \\(\\int_{9}^{17} E(t) d t=6004.270\\)\n6004 people entered the park by 5 pm.\n\\end{itemize}\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { limits } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[1] : setup\n\\item[(b)] \\(15 \\int_{9}^{17} E(t) d t+11 \\int_{17}^{23} E(t) d t=104048.165\\)\nThe amount collected was \\$104,048.\nor\n\\[\n\\int_{17}^{23} E(t) d t=1271.283\n\\]\n1271 people entered the park between 5 pm and\n11 pm, so the amount collected was\n\\[\n\\$ 15 \\cdot(6004)+\\$ 11 \\cdot(1271)=\\$ 104,041 .\n\\]\n\\item[(c)] \\(H^{\\prime}(17)=E(17)-L(17)=-380.281\\)\nThere were 3725 people in the park at \\(t=17\\).\nThe number of people in the park was decreasing at the rate of approximately 380 people/hr at time \\(t=17\\).\n\\end{itemize}\n\\[\n3\\left\\{\\begin{aligned}\n1: & \\text { value of } H^{\\prime}(17) \\\\\n2: & \\text { meanings } \\\\\n& 1: \\text { meaning of } H(17) \\\\\n& 1: \\text { meaning of } H^{\\prime}(17) \\\\\n& <-1>\\text { if no reference to } t=17\n\\end{aligned}\\right.\n\\]\n\\begin{itemize}\n\\item[(d)]\n\\[\n\\begin{aligned}\n& H^{\\prime}(t)=E(t)-L(t)=0 \\\\\n& t=15.794 \\text { or } 15.795\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n2 \\begin{cases}1: & E(t)-L(t)=0 \\\\ 1: & \\text { answer }\\end{cases}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          65,
+          572,
+          418
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-frq-03",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2003-frq-03-diagram-01.png}\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (minutes) & \\(R(t)\\) (gallons per minute) \\\\\n\\hline 0 & 20 \\\\\n\\hline 30 & 30 \\\\\n\\hline 40 & 40 \\\\\n\\hline 50 & 55 \\\\\n\\hline 70 & 65 \\\\\n\\hline 90 & 70 \\\\\n\\hline\n\\end{tabular}\nThe rate of fuel consumption, in gallons per minute, recorded during an airplane flight is given by a twice-\ndifferentiable and strictly increasing function \\(R\\) of time \\(t\\). The graph of \\(R\\) and a table of selected values of\n\\(R(t)\\), for the time interval \\(0 \\leq t \\leq 90\\) minutes, are shown above.\n(a) Use data from the table to find an approximation for \\(R^{\\prime}(45)\\). Show the computations that lead to your\nanswer. Indicate units of measure.\n(b) The rate of fuel consumption is increasing fastest at time \\(t=45\\) minutes. What is the value of \\(R^{\\prime \\prime}(45)\\) ?\nExplain your reasoning.\n(c) Approximate the value of \\(\\int_{0}^{90} R(t) d t\\) using a left Riemann sum with the five subintervals indicated by the\ndata in the table. Is this numerical approximation less than the value of \\(\\int_{0}^{90} R(t) d t\\) ? Explain your reasoning.\n(d) For \\(0<b \\leq 90\\) minutes, explain the meaning of \\(\\int_{0}^{b} R(t) d t\\) in terms of fuel consumption for the plane.\nExplain the meaning of \\(\\frac{1}{b} \\int_{0}^{b} R(t) d t\\) in terms of fuel consumption for the plane. Indicate units of measure in\nboth answers.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        98.9520034790039,
+        70.72799682617188,
+        320.9519958496094,
+        264.7919921875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nThe rate of fuel consumption, in gallons per minute, recorded during an airplane flight is given by a twice-differentiable and strictly increasing function \\(R\\) of time \\(t\\). The graph of \\(R\\) and a table of selected values of \\(R(t)\\), for the time interval \\(0 \\leq t \\leq 90\\) minutes, are shown above.\n\\begin{itemize}\n\\item[(a)] Use data from the table to find an approximation for \\(R^{\\prime}(45)\\). Show the computations that lead to your answer. Indicate units of measure.\n\\item[(b)] The rate of fuel consumption is increasing fastest at time \\(t=45\\) minutes. What is the value of \\(R^{\\prime \\prime}(45)\\) ? Explain your reasoning.\n\\item[(c)] Approximate the value of \\(\\int_{0}^{90} R(t) d t\\) using a left Riemann sum with the five subintervals indicated by the data in the table. Is this numerical approximation less than the value of \\(\\int_{0}^{90} R(t) d t\\) ? Explain your reasoning.\n\\item[(d)] For \\(0<b \\leq 90\\) minutes, explain the meaning of \\(\\int_{0}^{b} R(t) d t\\) in terms of fuel consumption for the plane. Explain the meaning of \\(\\frac{1}{b} \\int_{0}^{b} R(t) d t\\) in terms of fuel consumption for the plane. Indicate units of measure in both answers.\n\\item[(a)]\n\\[\n\\begin{aligned}\nR^{\\prime}(45) & \\approx \\frac{R(50)-R(40)}{50-40}=\\frac{55-40}{10} \\\\\n& =1.5 \\mathrm{gal} / \\mathrm{min}^{2}\n\\end{aligned}\n\\]\n\\item[(b)] \\(R^{\\prime \\prime}(45)=0\\) since \\(R^{\\prime}(t)\\) has a maximum at \\(t=45\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\int_{0}^{90} R(t) d t & \\approx(30)(20)+(10)(30)+(10)(40) \\\\\n& +(20)(55)+(20)(65)=3700\n\\end{aligned}\n\\]\nYes, this approximation is less because the graph of \\(R\\) is increasing on the interval.\n\\item[] \\(2:\\left\\{\\begin{array}{c}1: \\text { a difference quotient using } \\\\ \\text { numbers from table and } \\\\ \\text { interval that contains } 45 \\\\ 1: 1.5 \\mathrm{gal} / \\mathrm{min}^{2}\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: R^{\\prime \\prime}(45)=0 \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n2 : \\(\\left\\{\\begin{array}{l}1: \\text { value of left Riemann sum } \\\\ 1: \\text { \"less\" with reason }\\end{array}\\right.\\)\n\\item[(d)] \\(\\int_{0}^{b} R(t) d t\\) is the total amount of fuel in gallons consumed for the first \\(b\\) minutes. \\(\\frac{1}{b} \\int_{0}^{b} R(t) d t\\) is the average value of the rate of fuel consumption in gallons/min during the first \\(b\\) minutes.\n\\item[] \\(3:\\left\\{\\begin{aligned} 2 & : \\text { meanings } \\\\ & 1: \\text { meaning of } \\int_{0}^{b} R(t) d t \\\\ & 1: \\text { meaning of } \\frac{1}{b} \\int_{0}^{b} R(t) d t \\\\ & <-1>\\text { if no reference to time } b \\\\ 1 & : \\text { units in both answers }\\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          70,
+          572,
+          537
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          101.952,
+          73.728,
+          317.952,
+          261.792
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "table",
+        "rect": [
+          360.0,
+          88.99199999999999,
+          509.75999999999993,
+          231.83999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          274.176,
+          534.5279999999999,
+          287.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          286.56,
+          540.0,
+          299.52
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          66.24,
+          299.52,
+          357.69599999999997,
+          313.056
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          65.664,
+          322.84799999999996,
+          533.952,
+          335.808
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          338.976,
+          235.296,
+          350.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          65.664,
+          358.84799999999996,
+          546.9119999999999,
+          371.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          374.4,
+          190.07999999999998,
+          387.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          65.088,
+          392.256,
+          550.944,
+          415.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          82.368,
+          417.02399999999994,
+          561.8879999999999,
+          441.21599999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          65.088,
+          447.84,
+          540.8639999999999,
+          472.032
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          82.368,
+          473.472,
+          561.8879999999999,
+          497.08799999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          498.816,
+          144.86399999999998,
+          509.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

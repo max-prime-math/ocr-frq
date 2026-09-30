@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-1998-frq-04",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be a function with $f(1)= 4$ such that for all points $(x \\, y)$ on the graph of $f$ the slope is given by $frac(3 x^(2)+ 1,2 y)$.\n\n(a) Find the slope of the graph of $f$ at the point where $x = 1$.\n\n(b) Write an equation for the line tangent to the graph of $f$ at $x = 1$ and use it to approximate $f(1.2)$.\n\n(c) Find $f(x)$ by solving the separable differential equation $frac(d y,d x)= frac(3 x^(2)+ 1,2 y)$ with the initial condition $f(1)= 4$.\n\n(d) Use your solution from part (c) to find $f(1.2)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          74.30375545726103,
+          74.87971724076704,
+          540.862219956342,
+          88.70366503906249
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          88.70370806525736,
+          87.26367047674005,
+          175.39142276539525,
+          116.06356172318891
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          117.21555737304686,
+          390.81471378102026,
+          130.17550843394886
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          133.63149538352272,
+          541.4382180606618,
+          147.45544318181817
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          147.16744426935367,
+          144.86352323644303,
+          160.99139206764914
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          162.1433877175071,
+          541.4382180606618,
+          190.94327896395595
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          188.92728657670452,
+          204.19132798138787,
+          202.75123437499997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          205.91922241210935,
+          332.926904296875,
+          219.7431702104048
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3649521b39f93ac3e58e5a2119faff82e260f263dc9c79e14368bb0925b2baba",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

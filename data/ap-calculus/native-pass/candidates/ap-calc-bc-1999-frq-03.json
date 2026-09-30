@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-1999-frq-03",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 2, align: (center, center, ), table.vline(stroke: .5pt, x: 1), [$t$ (hours)], [$R(t)$ (gallons per hour)], table.hline(stroke: .5pt), [0], [9.6], [3], [10.4], [6], [10.8], [9], [11.2], [12], [11.4], [15], [11.3], [18], [10.7], [21], [10.2], [24], [9.6]);\n\nThe rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function $R$ of time $t$. The table above shows the rate as measured every 3 hours for a 24 -hour period.\n\n(a) Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate $integral_(0)^(24) R(t) d t$. Using correct units, explain the meaning of your answer in terms of water flow.\n\n(b) Is there some time $t \\, 0 < t < 24$, such that $R'(t)= 0$ ? Justify your answer.\n\n(c) The rate of water flow $R(t)$ can be approximated by $Q(t)= frac(1,79)lr((768 + 23 t - t^(2)))$. Use $Q(t)$ to approximate the average rate of water flow during the 24 -hour time period. Indicate units of measure.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          39,
+          572,
+          674
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3a01b0ad07dbddf4f7f71b49a38ba0426f1d4085bb4256cbd645245b0500e64f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ]
+}

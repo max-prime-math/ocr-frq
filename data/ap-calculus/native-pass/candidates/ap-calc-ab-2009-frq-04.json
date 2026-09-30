@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2009-frq-04",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2009-frq-04-diagram-01.png\", width: 65%)\n\nLet $R$ be the region in the first quadrant enclosed by the graphs of $y = 2 x$ and $y = x^(2)$, as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) The region $R$ is the base of a solid. For this solid, at each $x$ the cross section perpendicular to the $x$-axis has area $A(x)= sin lr((frac(pi,2) x))$. Find the volume of the solid.\n\n(c) Another solid has the same base $R$. For this solid, the cross sections perpendicular to the $y$-axis are squares. Write, but do not evaluate, an integral expression for the volume of the solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        282.9840087890625,
+        169.51199340820312,
+        402.7439880371094,
+        370.4880065917969
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          544
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          285.984,
+          172.512,
+          399.74399999999997,
+          367.488
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          393.40799999999996,
+          525.8879999999999,
+          408.96
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          410.97599999999994,
+          123.55199999999999,
+          423.936
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          429.40799999999996,
+          168.48,
+          441.792
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          447.84,
+          544.608,
+          460.224
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          460.224,
+          332.928,
+          486.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.088,
+          493.63199999999995,
+          558.144,
+          506.592
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          506.01599999999996,
+          423.936,
+          518.4
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3dee4f0dc8e239ed57b25e1b9dc1d57e39a393546f0c5174ba165a39ef706cdf",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

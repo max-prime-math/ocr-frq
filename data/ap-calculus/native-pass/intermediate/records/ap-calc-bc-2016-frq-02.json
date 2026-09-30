@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2016-frq-02",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2016-frq-02-diagram-01.jpg}\n\\end{center}\nAt time $t$, the position of a particle moving in the $x y$-plane is given by the parametric functions $(x(t), y(t))$, where $\\frac{d x}{d t}=t^{2}+\\sin \\left(3 t^{2}\\right)$. The graph of $y$, consisting of three line segments, is shown in the figure above. At $t=0$, the particle is at position $(5,1)$.\\\\\n(a) Find the position of the particle at $t=3$.\\\\\n(b) Find the slope of the line tangent to the path of the particle at $t=3$.\\\\\n(c) Find the speed of the particle at $t=3$.\\\\\n(d) Find the total distance traveled by the particle from $t=0$ to $t=2$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2016-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2016-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2016_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n![](https://cdn.mathpix.com/cropped/11d3be4b-9004-4f4d-8076-efdeacf28472-1.jpg?height=619&width=595&top_left_y=378&top_left_x=765)\nAt time \\(t\\), the position of a particle moving in the \\(x y\\)-plane is given by the parametric functions \\((x(t), y(t))\\), where \\(\\frac{d x}{d t}=t^{2}+\\sin \\left(3 t^{2}\\right)\\). The graph of \\(y\\), consisting of three line segments, is shown in the figure above. At \\(t=0\\), the particle is at position \\((5,1)\\).\n\\begin{itemize}\n\\item[(a)] Find the position of the particle at \\(t=3\\).\n\\item[(b)] Find the slope of the line tangent to the path of the particle at \\(t=3\\).\n\\item[(c)] Find the speed of the particle at \\(t=3\\).\n\\item[(d)] Find the total distance traveled by the particle from \\(t=0\\) to \\(t=2\\).\n\\item[(a)] \\(x(3)=x(0)+\\int_{0}^{3} x^{\\prime}(t) d t=5+9.377035=14.377\\)\n\\[\ny(3)=-\\frac{1}{2}\n\\]\nThe position of the particle at \\(t=3\\) is (14.377, -0.5).\n\\item[(b)] Slope \\(=\\frac{y^{\\prime}(3)}{x^{\\prime}(3)}=\\frac{0.5}{9.956376}=0.05\\)\n\\item[(c)] Speed \\(=\\sqrt{\\left(x^{\\prime}(3)\\right)^{2}+\\left(y^{\\prime}(3)\\right)^{2}}=9.969\\) (or 9.968)\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\text { Distance } & =\\int_{0}^{2} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}} d t \\\\\n& =\\int_{0}^{1} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+(-2)^{2}} d t+\\int_{1}^{2} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+0^{2}} d t \\\\\n& =2.237871+2.112003=4.350(\\text { or 4.349 })\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : slope\n\\(2:\\left\\{\\begin{array}{l}1: \\text { expression for speed } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { expression for distance } \\\\ 1: \\text { integrals } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          35.0,
+          568,
+          411
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

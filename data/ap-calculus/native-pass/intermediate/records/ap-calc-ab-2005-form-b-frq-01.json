@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-form-b-frq-01",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2005-form-b-frq-01-diagram-01.png}\nLet \\(f\\) and \\(g\\) be the functions given by \\(f(x)=1+\\sin (2 x)\\) and \\(g(x)=e^{x / 2}\\). Let \\(R\\) be the shaded region in the\nfirst quadrant enclosed by the graphs of \\(f\\) and \\(g\\) as shown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n(c) The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(x\\)-axis are\nsemicircles with diameters extending from \\(y=f(x)\\) to \\(y=g(x)\\). Find the volume of this solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        239.49600219726562,
+        187.656005859375,
+        373.0799865722656,
+        351.4800109863281
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\\begin{itemize}\n\\item[] Let \\(f\\) and \\(g\\) be the functions given by \\(f(x)=1+\\sin (2 x)\\) and \\(g(x)=e^{x / 2}\\). Let \\(R\\) be the shaded region in the first quadrant enclosed by the graphs of \\(f\\) and \\(g\\) as shown in the figure above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n(c) The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(x\\)-axis are semicircles with diameters extending from \\(y=f(x)\\) to \\(y=g(x)\\). Find the volume of this solid.\n![](https://cdn.mathpix.com/cropped/68363adc-2532-430c-97d8-218cc42a6dc7-1.jpg?height=550&width=443&top_left_y=361&top_left_x=1444)\n\\item[] The graphs of \\(f\\) and \\(g\\) intersect in the first quadrant at \\((S, T)=(1.13569,1.76446)\\).\n\\item[(a)] Area \\(=\\int_{0}^{S}(f(x)-g(x)) d x\\)\n\\[\n\\begin{aligned}\n& =\\int_{0}^{S}\\left(1+\\sin (2 x)-e^{x / 2}\\right) d x \\\\\n& =0.429\n\\end{aligned}\n\\]\n\\item[(b)] Volume \\(=\\pi \\int_{0}^{S}\\left((f(x))^{2}-(g(x))^{2}\\right) d x\\)\n\\[\n\\begin{aligned}\n& =\\pi \\int_{0}^{S}\\left((1+\\sin (2 x))^{2}-\\left(e^{x / 2}\\right)^{2}\\right) d x \\\\\n& =4.266 \\text { or } 4.267\n\\end{aligned}\n\\]\n\\item[(c)] Volume \\(=\\int_{0}^{S} \\frac{\\pi}{2}\\left(\\frac{f(x)-g(x)}{2}\\right)^{2} d x\\)\n\\[\n\\begin{aligned}\n& =\\int_{0}^{S} \\frac{\\pi}{2}\\left(\\frac{1+\\sin (2 x)-e^{x / 2}}{2}\\right)^{2} d x \\\\\n& =0.077 \\text { or } 0.078\n\\end{aligned}\n\\]\n\\item[1] : correct limits in an integral in (a), (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ \\langle-1\\rangle \\text { each error } \\\\ \\quad \\text { Note: } 0 / 2 \\text { if integral not of form } \\\\ \\quad c \\int_{a}^{b}\\left(R^{2}(x)-r^{2}(x)\\right) d x \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          488
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          242.49599999999998,
+          190.65599999999998,
+          370.08,
+          348.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          360.0,
+          558.7199999999999,
+          376.128
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          378.14399999999995,
+          411.84,
+          391.104
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          395.99999999999994,
+          168.48,
+          408.96
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          414.43199999999996,
+          422.784,
+          427.392
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          433.152,
+          522.432,
+          445.53599999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          445.53599999999994,
+          516.096,
+          459.64799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

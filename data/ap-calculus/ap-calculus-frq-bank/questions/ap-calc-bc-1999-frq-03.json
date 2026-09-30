@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table( columns: 2, stroke: 0.5pt, [$t$ (hours)], [$R(t)$ (gallons per hour)], [$0$], [$9.6$], [$3$], [$10.4$], [$6$], [$10.8$], [$9$], [$11.2$], [$12$], [$11.4$], [$15$], [$11.3$], [$18$], [$10.7$], [$21$], [$10.2$], [$24$], [$9.6$], )\n\nWater flows from a pipe at differentiable rate $R(t)$, measured every three hours as shown.\n\n(a) Use a midpoint Riemann sum with four equal subintervals to approximate $integral_0^24 R(t) dif t$. Explain its meaning with units.\n\n(b) Is there a $t$ with $0<t<24$ for which $R'(t)=0$? Justify.\n\n(c) $R(t)$ is approximated by $Q(t)=(768+23t-t^2)/79$. Approximate the average flow rate over the 24-hour period, with units.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1999-frq-03",
+    "images": [],
+    "points": 8,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-1",
+    "solution": "(a) The subinterval width is $6$, with midpoints $3$, $9$, $15$, and $21$. Thus\n$integral_0^24 R(t) dif t approx 6(10.4+11.2+11.3+10.2)=258.6$ gallons.\nThis estimates the total water that flowed from the pipe during the 24 hours.\n\n(b) Yes. Since $R(0)=R(24)=9.6$, Rolle's Theorem guarantees some $t$ in $(0,24)$ with $R'(t)=0$.\n\n(c) The average rate is the average value of $Q$:\n$1/24 integral_0^24 (768+23t-t^2)/79 dif t approx 10.785$ gallons per hour.",
+    "tags": [
+      "1999",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

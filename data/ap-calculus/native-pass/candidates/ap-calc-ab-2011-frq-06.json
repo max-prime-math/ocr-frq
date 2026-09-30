@@ -1,0 +1,76 @@
+{
+  "id": "ap-calc-ab-2011-frq-06",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be a function defined by $f(x)= lr(\\{ mat(delim: #none, 1 - 2 sin x \"\", \" for \" x <= 0 \"\"; e^(- 4 x) \"\", \" for \" x > 0))$.\n\n(a) Show that $f$ is continuous at $x = 0$.\n\n(b) For $x!= 0$, express $f'(x)$ as a piecewise-defined function. Find the value of $x$ for which $f'(x)= - 3$.\n\n(c) Find the average value of $f$ on the interval \\[-1, 1\\].",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          302,
+          572,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [
+    {
+      "kind": "prompt-recovered-from-scoring-guide",
+      "reviewRequired": true
+    }
+  ],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b73d8910399d6c10b6a8cbeba3c33805350958307371af51657372396e33f824",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "scoring-guide-repeated-prompt",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-06--scoring-guide/mmd",
+      "reason": "original-prompt-cache-source-pages-mislabeled"
+    }
+  ]
+}

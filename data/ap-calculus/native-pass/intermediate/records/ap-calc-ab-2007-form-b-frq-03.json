@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-form-b-frq-03",
+  "course": "AB",
+  "year": 2007,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007-FORM-B.pdf",
+      "sha256": "9c053de89559fdff9dc3d2c68d4d0e6a291eb32bae83bc301793b6656c9a0256",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007-FORM-B.pdf",
+      "sha256": "262d617d708fc64aa571d2998feeb3ee8ba3af03c369c8fccd0f7a9f72c33290"
+    }
+  },
+  "rawPrompt": "The wind chill is the temperature, in degrees Fahrenheit (°F), a human feels based on the air temperature, in\ndegrees Fahrenheit, and the wind velocity \\(v\\), in miles per hour (mph). If the air temperature is 32°F, then the\nwind chill is given by \\(W(v)=55.6-22.1 v^{0.16}\\) and is valid for \\(5 \\leq v \\leq 60\\).\n(a) Find \\(W^{\\prime}(20)\\). Using correct units, explain the meaning of \\(W^{\\prime}(20)\\) in terms of the wind chill.\n(b) Find the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\). Find the value of \\(v\\) at which the\ninstantaneous rate of change of \\(W\\) is equal to the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\).\n(c) Over the time interval \\(0 \\leq t \\leq 4\\) hours, the air temperature is a constant 32°F. At time \\(t=0\\), the wind\nvelocity is \\(v=20 \\mathrm{mph}\\). If the wind velocity increases at a constant rate of 5 mph per hour, what is the rate\nof change of the wind chill with respect to time at \\(t=3\\) hours? Indicate units of measure.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\nThe wind chill is the temperature, in degrees Fahrenheit (°F), a human feels based on the air temperature, in degrees Fahrenheit, and the wind velocity \\(v\\), in miles per hour (mph). If the air temperature is 32°F, then the wind chill is given by \\(W(v)=55.6-22.1 v^{0.16}\\) and is valid for \\(5 \\leq v \\leq 60\\).\n\\begin{itemize}\n\\item[(a)] Find \\(W^{\\prime}(20)\\). Using correct units, explain the meaning of \\(W^{\\prime}(20)\\) in terms of the wind chill.\n\\item[(b)] Find the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\). Find the value of \\(v\\) at which the instantaneous rate of change of \\(W\\) is equal to the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\).\n\\item[(c)] Over the time interval \\(0 \\leq t \\leq 4\\) hours, the air temperature is a constant 32°F. At time \\(t=0\\), the wind velocity is \\(v=20 \\mathrm{mph}\\). If the wind velocity increases at a constant rate of 5 mph per hour, what is the rate of change of the wind chill with respect to time at \\(t=3\\) hours? Indicate units of measure.\n\\item[(a)] \\(W^{\\prime}(20)=-22.1 \\cdot 0.16 \\cdot 20^{-0.84}=-0.285\\) or -0.286\nWhen \\(v=20 \\mathrm{mph}\\), the wind chill is decreasing at 0.286 °F/mph.\n\\item[(b)] The average rate of change of \\(W\\) over the interval\n\\[\n\\begin{aligned}\n& 5 \\leq v \\leq 60 \\text { is } \\frac{W(60)-W(5)}{60-5}=-0.253 \\text { or }-0.254 . \\\\\n& W^{\\prime}(v)=\\frac{W(60)-W(5)}{60-5} \\text { when } v=23.011 .\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\left.\\frac{d W}{d t}\\right|_{t=3}=\\left.\\left(\\frac{d W}{d v} \\cdot \\frac{d v}{d t}\\right)\\right|_{t=3}=W^{\\prime}(35) \\cdot 5=-0.892{ }^{\\circ} \\mathrm{F} / \\mathrm{hr}\\)\n\\[\n\\begin{aligned}\n& \\text { OR } \\\\\n& \\frac{W=55.6-22.1(20+5 t)^{0.16}}{\\left.\\frac{d W}{d t}\\right|_{t=3}=-0.892^{\\circ} \\mathrm{F} / \\mathrm{hr}}\n\\end{aligned}\n\\]\n\\end{itemize}\nUnits of °F/mph in (a) and °F/hr in (c)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { value } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { average rate of change } \\\\ 1: W^{\\prime}(v)=\\text { average rate of change } \\\\ 1: \\text { value of } v\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d v}{d t}=5 \\\\ 1: \\text { uses } v(3)=35, \\\\ \\quad \\text { or } \\\\ \\quad \\text { uses } v(t)=20+5 t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[1] : units in (a) and (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          396
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          69.984,
+          545.76,
+          82.94399999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          85.24799999999999,
+          554.4,
+          98.78399999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          102.81599999999999,
+          400.32,
+          118.368
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          126.71999999999998,
+          495.07199999999995,
+          140.256
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          148.60799999999998,
+          529.632,
+          161.56799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          161.56799999999998,
+          561.8879999999999,
+          174.528
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          180.0,
+          543.4559999999999,
+          192.95999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          194.39999999999998,
+          556.992,
+          207.35999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          207.35999999999999,
+          483.84,
+          220.32
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

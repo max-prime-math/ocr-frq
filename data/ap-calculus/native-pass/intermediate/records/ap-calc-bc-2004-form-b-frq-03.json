@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2004-form-b-frq-03",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(minutes) \\\\\n\\end{tabular} & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 \\\\\n\\hline\n\\begin{tabular}{c}\n$v(t)$ \\\\\n(miles per minute) \\\\\n\\end{tabular} & 7.0 & 9.2 & 9.5 & 7.0 & 4.5 & 2.4 & 2.4 & 4.3 & 7.3 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nA test plane flies in a straight line with positive velocity $v(t)$, in miles per minute at time $t$ minutes, where $v$ is a differentiable function of $t$. Selected values of $v(t)$ for $0 \\leq t \\leq 40$ are shown in the table above.\\\\\n(a) Use a midpoint Riemann sum with four subintervals of equal length and values from the table to approximate $\\int_{0}^{40} v(t) d t$. Show the computations that lead to your answer. Using correct units, explain the meaning of $\\int_{0}^{40} v(t) d t$ in terms of the plane's flight.\\\\\n(b) Based on the values in the table, what is the smallest number of instances at which the acceleration of the plane could equal zero on the open interval $0<t<40$ ? Justify your answer.\\\\\n(c) The function $f$, defined by $f(t)=6+\\cos \\left(\\frac{t}{10}\\right)+3 \\sin \\left(\\frac{7 t}{40}\\right)$, is used to model the velocity of the plane, in miles per minute, for $0 \\leq t \\leq 40$. According to this model, what is the acceleration of the plane at $t=23$ ? Indicate units of measure.\\\\\n(d) According to the model $f$, given in part (c), what is the average velocity of the plane, in miles per minute, over the time interval $0 \\leq t \\leq 40$ ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA test plane flies in a straight line with positive velocity \\(v(t)\\), in miles per minute at time \\(t\\) minutes, where \\(v\\) is a differentiable function of \\(t\\). Selected values of \\(v(t)\\) for \\(0 \\leq t \\leq 40\\) are shown in the table above.\n\\begin{itemize}\n\\item[(a)] Midpoint Riemann sum is\n\\[\n\\begin{aligned}\n& 10 \\cdot[v(5)+v(15)+v(25)+v(35)] \\\\\n& =10 \\cdot[9.2+7.0+2.4+4.3]=229\n\\end{aligned}\n\\]\nThe integral gives the total distance in miles that the plane flies during the 40 minutes.\n\\item[(b)] By the Mean Value Theorem, \\(v^{\\prime}(t)=0\\) somewhere in the interval \\((0,15)\\) and somewhere in the interval (25, 30). Therefore the acceleration will equal 0 for at least two values of \\(t\\).\n\\item[(c)] \\(f^{\\prime}(23)=-0.407\\) or -0.408 miles per minute \\({ }^{2}\\)\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\text { Average velocity } & =\\frac{1}{40} \\int_{0}^{40} f(t) d t \\\\\n& =5.916 \\text { miles per minute }\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n\\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\n\\hline t(\\mathrm{~min}) & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 \\\\\n\\hline v(t)(\\mathrm{mpm}) & 7.0 & 9.2 & 9.5 & 7.0 & 4.5 & 2.4 & 2.4 & 4.3 & 7.3 \\\\\n\\hline\n\\end{array}\n\\]\n\\begin{itemize}\n\\item[(a)] Use a midpoint Riemann sum with four subintervals of equal length and values from the table to approximate \\(\\int_{0}^{40} v(t) d t\\). Show the computations that lead to your answer. Using correct units, explain the meaning of \\(\\int_{0}^{40} v(t) d t\\) in terms of the plane's flight.\n\\item[(b)] Based on the values in the table, what is the smallest number of instances at which the acceleration of the plane could equal zero on the open interval \\(0<t<40\\) ? Justify your answer.\n\\item[(c)] The function \\(f\\), defined by \\(f(t)=6+\\cos \\left(\\frac{t}{10}\\right)+3 \\sin \\left(\\frac{7 t}{40}\\right)\\), is used to model the velocity of the plane, in miles per minute, for \\(0 \\leq t \\leq 40\\). According to this model, what is the acceleration of the plane at \\(t=23\\) ? Indicates units of measure.\n\\item[(d)] According to the model \\(f\\), given in part (c), what is the average velocity of the plane, in miles per minute, over the time interval \\(0 \\leq t \\leq 40\\) ?\n\\end{itemize}\n\\[\n1 \\text { : answer with units }\n\\]\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { limits } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          54,
+          572,
+          482
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

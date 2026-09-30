@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2000-frq-04",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "rawPrompt": "Water is pumped into an underground tank at a constant rate of 8 gallons per minute. Water leaks out of the tank\nat the rate of \\(\\sqrt{t+1}\\) gallons per minute, for \\(0 \\leq t \\leq 120\\) minutes. At time \\(t=0\\), the tank contains 30 gallons of\nwater.\n(a) How many gallons of water leak out of the tank from time \\(t=0\\) to \\(t=3\\) minutes?\n(b) How many gallons of water are in the tank at time \\(t=3\\) minutes?\n(c) Write an expression for \\(A(t)\\), the total number of gallons of water in the tank at time \\(t\\).\n(d) At what time \\(t\\), for \\(0 \\leq t \\leq 120\\), is the amount of water in the tank a maximum? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "Water is pumped into an underground tank at a constant rate of 8 gallons per minute. Water leaks out of the tank at the rate of \\(\\sqrt{t+1}\\) gallons per minute, for \\(0 \\leq t \\leq 120\\) minutes. At time \\(t=0\\), the tank contains 30 gallons of water.\n\\begin{itemize}\n\\item[(a)] How many gallons of water leak out of the tank from time \\(t=0\\) to \\(t=3\\) minutes?\n\\item[(b)] How many gallons of water are in the tank at time \\(t=3\\) minutes?\n\\item[(c)] Write an expression for \\(A(t)\\), the total number of gallons of water in the tank at time \\(t\\).\n\\item[(d)] At what time \\(t\\), for \\(0 \\leq t \\leq 120\\), is the amount of water in the tank a maximum? Justify your answer.\n\\item[(a)] Method 1: \\(\\int_{0}^{3} \\sqrt{t+1} d t=\\left.\\frac{2}{3}(t+1)^{3 / 2}\\right|_{0} ^{3}=\\frac{14}{3}\\)\n- or -\nMethod 2: \\(L(t)=\\) gallons leaked in first \\(t\\) minutes\n\\[\n\\begin{aligned}\n\\frac{d L}{d t} & =\\sqrt{t+1} ; \\quad L(t)=\\frac{2}{3}(t+1)^{3 / 2}+C \\\\\nL(0) & =0 ; \\quad C=-\\frac{2}{3} \\\\\nL(t) & =\\frac{2}{3}(t+1)^{3 / 2}-\\frac{2}{3} ; \\quad L(3)=\\frac{14}{3}\n\\end{aligned}\n\\]\n\\item[(b)] \\(30+8 \\cdot 3-\\frac{14}{3}=\\frac{148}{3}\\)\n\\item[(c)] Method 1:\n\\[\n\\begin{aligned}\nA(t) & =30+\\int_{0}^{t}(8-\\sqrt{x+1}) d x \\\\\n& =30+8 t-\\int_{0}^{t} \\sqrt{x+1} d x\n\\end{aligned}\n\\]\nMethod 2:\n\\[\n\\begin{aligned}\n\\frac{d A}{d t} & =8-\\sqrt{t+1} \\\\\nA(t) & =8 t-\\frac{2}{3}(t+1)^{3 / 2}+C \\\\\n30 & =8(0)-\\frac{2}{3}(0+1)^{3 / 2}+C ; \\quad C=\\frac{92}{3} \\\\\nA(t) & =8 t-\\frac{2}{3}(t+1)^{3 / 2}+\\frac{92}{3}\n\\end{aligned}\n\\]\n\\item[(d)] \\(A^{\\prime}(t)=8-\\sqrt{t+1}=0\\) when \\(t=63\\)\n\\(A^{\\prime}(t)\\) is positive for \\(0<t<63\\) and negative for \\(63<t<120\\). Therefore there is a maximum at \\(t=63\\).\n\\end{itemize}\n\nMethod 1:\n\\[\n\\begin{aligned}\n& 3\\left\\{\\begin{aligned}\n2 & : \\text { definite integral } \\\\\n1 & : \\text { limits } \\\\\n1 & : \\text { integrand } \\\\\n1 & : \\text { answer }\n\\end{aligned}\\right. \\\\\n& - \\text { or }-\n\\end{aligned}\n\\]\nMethod 2:\n\\[\n3 \\begin{cases}1 & : \\text { antiderivative with } C \\\\ 1 & : \\text { solves for } C \\text { using } L(0)=0 \\\\ 1 & : \\text { answer }\\end{cases}\n\\]\n1 : answer\n\nMethod 1:\n\\[\n\\begin{aligned}\n& 2\\left\\{\\begin{array}{l}\n1: 30+8 t \\\\\n1:-\\int_{0}^{t} \\sqrt{x+1} d x\n\\end{array}\\right. \\\\\n& - \\text { or }-\n\\end{aligned}\n\\]\nMethod 2:\n\\[\n2\\left\\{\\begin{array}{l}\n1: \\text { antiderivative with } C \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\[\n3 \\begin{cases}1: & \\text { sets } A^{\\prime}(t)=0 \\\\ 1: & \\text { solves for } t \\\\ 1: & \\text { justification }\\end{cases}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          56,
+          572,
+          309
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          190.944,
+          561.5999999999999,
+          203.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.512,
+          203.32799999999997,
+          564.192,
+          216.28799999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.512,
+          217.72799999999998,
+          93.312,
+          226.944
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          234.432,
+          452.15999999999997,
+          246.81599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          252.86399999999998,
+          376.70399999999995,
+          265.248
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          271.584,
+          467.712,
+          283.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          290.592,
+          531.6479999999999,
+          303.55199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

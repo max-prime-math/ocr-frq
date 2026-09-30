@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-1999-frq-05-bc-1999_fig3.jpg\", width: 55%)\n\nThe graph of $f$ consists of three line segments. Let $g(x)=integral_1^x f(t) dif t$.\n\n(a) Compute $g(4)$ and $g(-2)$.\n\n(b) Find $g'(1)$.\n\n(c) Find the absolute minimum of $g$ on $[-2,4]$ and justify.\n\n(d) $g''$ is undefined at $x=1$ and $x=2$. Which of these are inflection points of $g$? Justify.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1999-frq-05",
+    "images": [
+      "ap-calc-bc-1999-frq-05-bc-1999_fig3.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-6-5",
+    "solution": "(a) From signed areas,\n$g(4)=3/2+1+1/2-1/2=5/2$, and\n$g(-2)=-1/2(12)=-6$.\n\n(b) By the Fundamental Theorem of Calculus, $g'(1)=f(1)=4$.\n\n(c) Since $g'=f$, $g$ increases on $[-2,3]$ and decreases on $[3,4]$. The minimum is therefore at an endpoint. Since $g(-2)=-6<5/2=g(4)$, the absolute minimum is $-6$.\n\n(d) Only $x=1$. Because $g''=f'$, its sign changes from positive on $(-2,1)$ to negative on $(1,2)$, but remains negative on both sides of $x=2$.",
+    "tags": [
+      "1999",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-6",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

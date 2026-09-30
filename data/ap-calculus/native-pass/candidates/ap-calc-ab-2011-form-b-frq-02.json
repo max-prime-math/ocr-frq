@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2011-form-b-frq-02",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A 12,000-liter tank of water is filled to capacity. At time $t = 0$, water begins to drain out of the tank at a rate modeled by $r(t)$, measured in liters per hour, where $r$ is given by the piecewise-defined function $ r(t)= cases(frac(600 t,t + 3) & \" for \" 0 <= t <= 5, 1000 e^(- 0.2 t) & \" for \" t > 5) $\n\n(a) Is $r$ continuous at $t = 5$ ? Show the work that leads to your answer.\n\n(b) Find the average rate at which water is draining from the tank between time $t = 0$ and time $t = 8$ hours.\n\n(c) Find $r'(3)$. Using correct units, explain the meaning of that value in the context of this problem.\n\n(d) Write, but do not solve, an equation involving an integral to find the time $A$ when the amount of water in the tank is 9000 liters.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          422,
+          572,
+          647
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          442.94399999999996,
+          546.336,
+          455.90399999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          457.91999999999996,
+          496.79999999999995,
+          471.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 29,
+        "type": "math",
+        "rect": [
+          228.384,
+          478.94399999999996,
+          382.464,
+          522.144
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 30,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          535.968,
+          386.20799999999997,
+          548.352
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 31,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          556.992,
+          548.352,
+          569.376
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 32,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          576.0,
+          510.04799999999994,
+          588.9599999999999
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          65.088,
+          597.5999999999999,
+          549.5039999999999,
+          609.9839999999999
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          609.9839999999999,
+          182.016,
+          621.216
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "729e0c701d57aaea156698deca32b38d666674350884dcdd192b04fe0d0bc3fa",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

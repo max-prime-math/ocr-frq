@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2011-form-b-frq-06",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2011-form-b-frq-06-diagram-01.png}\nLet \\(g\\) be the piecewise-linear function defined on \\([-2 \\pi, 4 \\pi]\\) whose graph is given above, and\nlet \\(f(x)=g(x)-\\cos \\left(\\frac{x}{2}\\right)\\).\n(a) Find \\(\\int_{-2 \\pi}^{4 \\pi} f(x) d x\\). Show the computations that lead to your answer.\n(b) Find all \\(x\\)-values in the open interval \\((-2 \\pi, 4 \\pi)\\) for which \\(f\\) has a critical point.\n(c) Let \\(h(x)=\\int_{0}^{3 x} g(t) d t\\). Find \\(h^{\\prime}\\left(-\\frac{\\pi}{3}\\right)\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-form-b-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-form-b-frq-06-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        202.343994140625,
+        67.55999755859375,
+        408.7919921875,
+        176.95199584960938
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nLet \\(g\\) be the piecewise-linear function defined on \\([-2 \\pi, 4 \\pi]\\) whose graph is given above, and let \\(f(x)=g(x)-\\cos \\left(\\frac{x}{2}\\right)\\).\n\\begin{itemize}\n\\item[(a)] Find \\(\\int_{-2 \\pi}^{4 \\pi} f(x) d x\\). Show the computations that lead to your answer.\n\\item[(b)] Find all \\(x\\)-values in the open interval \\((-2 \\pi, 4 \\pi)\\) for which \\(f\\) has a critical point.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/140370d1-b2e2-4ab3-b364-03f3550df8a1-1.jpg?height=436&width=698&top_left_y=402&top_left_x=1233)\n\\begin{itemize}\n\\item[(c)] Let \\(h(x)=\\int_{0}^{3 x} g(t) d t\\). Find \\(h^{\\prime}\\left(-\\frac{\\pi}{3}\\right)\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\int_{-2 \\pi}^{4 \\pi} f(x) d x & =\\int_{-2 \\pi}^{4 \\pi}\\left(g(x)-\\cos \\left(\\frac{x}{2}\\right)\\right) d x \\\\\n& =6 \\pi^{2}-\\left[2 \\sin \\left(\\frac{x}{2}\\right)\\right]_{x=-2 \\pi}^{x=4 \\pi} \\\\\n& =6 \\pi^{2}\n\\end{aligned}\n\\]\n\\item[(b)] \\(f^{\\prime}(x)=g^{\\prime}(x)+\\frac{1}{2} \\sin \\left(\\frac{x}{2}\\right)= \\begin{cases}1+\\frac{1}{2} \\sin \\left(\\frac{x}{2}\\right) & \\text { for }-2 \\pi<x<0 \\\\ -\\frac{1}{2}+\\frac{1}{2} \\sin \\left(\\frac{x}{2}\\right) & \\text { for } 0<x<4 \\pi\\end{cases}\\)\n\\(f^{\\prime}(x)\\) does not exist at \\(x=0\\).\nFor \\(-2 \\pi<x<0, f^{\\prime}(x) \\neq 0\\).\nFor \\(0<x<4 \\pi, f^{\\prime}(x)=0\\) when \\(x=\\pi\\).\n\\(f\\) has critical points at \\(x=0\\) and \\(x=\\pi\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n& h^{\\prime}(x)=g(3 x) \\cdot 3 \\\\\n& h^{\\prime}\\left(-\\frac{\\pi}{3}\\right)=3 g(-\\pi)=3 \\pi\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\frac{d}{d x}\\left(\\cos \\left(\\frac{x}{2}\\right)\\right) \\\\ 1: g^{\\prime}(x) \\\\ 1: x=0 \\\\ 1: x=\\pi\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: h^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          492
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          205.344,
+          70.55999999999999,
+          405.792,
+          173.952
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          206.784,
+          482.688,
+          220.32
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          222.04799999999997,
+          183.16799999999998,
+          248.54399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          257.472,
+          384.768,
+          282.23999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          290.304,
+          438.33599999999996,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          313.056,
+          251.42399999999998,
+          338.976
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-06",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

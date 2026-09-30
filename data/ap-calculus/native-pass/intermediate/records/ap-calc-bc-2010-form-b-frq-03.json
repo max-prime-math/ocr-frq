@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-form-b-frq-03",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg}\n\\end{center}\nThe figure above shows an aboveground swimming pool in the shape of a cylinder with a radius of 12 feet and a height of 4 feet. The pool contains 1000 cubic feet of water at time $t=0$. During the time interval $0 \\leq t \\leq 12$ hours, water is pumped into the pool at the rate $P(t)$ cubic feet per hour. The table above gives values of $P(t)$ for selected values of $t$. During the same time interval, water is leaking from the pool at the rate $R(t)$ cubic feet per hour, where $R(t)=25 e^{-0.05 t}$. (Note: The volume $V$ of a cylinder with radius $r$ and height $h$ is given by $V=\\pi r^{2} h$.)\\\\\n(a) Use a midpoint Riemann sum with three subintervals of equal length to approximate the total amount of water that was pumped into the pool during the time interval $0 \\leq t \\leq 12$ hours. Show the computations that lead to your answer.\\\\\n(b) Calculate the total amount of water that leaked out of the pool during the time interval $0 \\leq t \\leq 12$ hours.\\\\\n(c) Use the results from parts (a) and (b) to approximate the volume of water in the pool at time $t=12$ hours. Round your answer to the nearest cubic foot.\\\\\n(d) Find the rate at which the volume of water in the pool is increasing at time $t=8$ hours. How fast is the water level in the pool rising at $t=8$ hours? Indicate units of measure in both answers.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2010-form-b_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) & 0 & 2 & 4 & 6 & 8 & 10 & 12 \\\\\n\\hline \\(P(t)\\) & 0 & 46 & 53 & 57 & 60 & 62 & 63 \\\\\n\\hline\n\\end{tabular}\n![](https://cdn.mathpix.com/cropped/ada29b90-65e0-4111-9846-fb99523454ec-1.jpg?height=241&width=752&top_left_y=385&top_left_x=999)\nThe figure above shows an aboveground swimming pool in the shape of a cylinder with a radius of 12 feet and a height of 4 feet. The pool contains 1000 cubic feet of water at time \\(t=0\\). During the time interval \\(0 \\leq t \\leq 12\\) hours, water is pumped into the pool at the rate \\(P(t)\\) cubic feet per hour. The table above gives values of \\(P(t)\\) for selected values of \\(t\\). During the same time interval, water is leaking from the pool at the rate \\(R(t)\\) cubic feet per hour, where \\(R(t)=25 e^{-0.05 t}\\). (Note: The volume \\(V\\) of a cylinder with radius \\(r\\) and height \\(h\\) is given by \\(V=\\pi r^{2} h\\).)\n\\begin{itemize}\n\\item[(a)] Use a midpoint Riemann sum with three subintervals of equal length to approximate the total amount of water that was pumped into the pool during the time interval \\(0 \\leq t \\leq 12\\) hours. Show the computations that lead to your answer.\n\\item[(b)] Calculate the total amount of water that leaked out of the pool during the time interval \\(0 \\leq t \\leq 12\\) hours.\n\\item[(c)] Use the results from parts (a) and (b) to approximate the volume of water in the pool at time \\(t=12\\) hours. Round your answer to the nearest cubic foot.\n\\item[(d)] Find the rate at which the volume of water in the pool is increasing at time \\(t=8\\) hours. How fast is the water level in the pool rising at \\(t=8\\) hours? Indicate units of measure in both answers.\n\\item[(a)] \\(\\int_{0}^{12} P(t) d t \\approx 46 \\cdot 4+57 \\cdot 4+62 \\cdot 4=660 \\mathrm{ft}^{3}\\)\n\\item[(b)] \\(\\int_{0}^{12} R(t) d t=225.594 \\mathrm{ft}^{3}\\)\n\\item[(c)] \\(1000+\\int_{0}^{12} P(t) d t-\\int_{0}^{12} R(t) d t=1434.406\\)\n\\end{itemize}\n\nAt time \\(t=12\\) hours, the volume of water in the pool is approximately \\(1434 \\mathrm{ft}^{3}\\).\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { midpoint sum } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n1 : answer\n\\item[(d)] \\(V^{\\prime}(t)=P(t)-R(t)\\)\n\\(V^{\\prime}(8)=P(8)-R(8)=60-25 e^{-0.4}=43.241\\) or \\(43.242 \\mathrm{ft}^{3} / \\mathrm{hr}\\)\n\\(V=\\pi(12)^{2} h\\)\n\\(\\frac{d V}{d t}=144 \\pi \\frac{d h}{d t}\\)\n\\(\\left.\\frac{d h}{d t}\\right|_{t=8}=\\left.\\frac{1}{144 \\pi} \\cdot \\frac{d V}{d t}\\right|_{t=8}=0.095\\) or \\(0.096 \\mathrm{ft} / \\mathrm{hr}\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          227,
+          572,
+          603
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

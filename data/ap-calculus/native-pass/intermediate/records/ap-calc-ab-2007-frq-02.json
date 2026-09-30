@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-frq-02",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2007-frq-02-diagram-01.png}\nThe amount of water in a storage tank, in gallons, is modeled by a continuous function on the time interval\n\\(0 \\leq t \\leq 7\\), where \\(t\\) is measured in hours. In this model, rates are given as follows:\n(i) The rate at which water enters the tank is \\(f(t)=100 t^{2} \\sin (\\sqrt{t})\\) gallons per hour for \\(0 \\leq t \\leq 7\\).\n(ii) The rate at which water leaves the tank is\n\\[\ng(t)=\\left\\{\\begin{array}{r}\n250 \\text { for } 0 \\leq t<3 \\\\\n2000 \\text { for } 3<t \\leq 7\n\\end{array}\\right. \\text { gallons per hour. }\n\\]\nThe graphs of \\(f\\) and \\(g\\), which intersect at \\(t=1.617\\) and \\(t=5.076\\), are shown in the figure above. At time\n\\(t=0\\), the amount of water in the tank is 5000 gallons.\n(a) How many gallons of water enter the tank during the time interval \\(0 \\leq t \\leq 7\\) ? Round your answer to the\nnearest gallon.\n(b) For \\(0 \\leq t \\leq 7\\), find the time intervals during which the amount of water in the tank is decreasing. Give a\nreason for each answer.\n(c) For \\(0 \\leq t \\leq 7\\), at what time \\(t\\) is the amount of water in the tank greatest? To the nearest gallon, compute the\namount of water at this time. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2007-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2007-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        147.33599853515625,
+        63.2400016784668,
+        466.9679870605469,
+        285.8160095214844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe amount of water in a storage tank, in gallons, is modeled by a continuous function on the time interval \\(0 \\leq t \\leq 7\\), where \\(t\\) is measured in hours. In this model, rates are given as follows:\n\\begin{itemize}\n\\item[(i)] The rate at which water enters the tank is \\(f(t)=100 t^{2} \\sin (\\sqrt{t})\\) gallons per hour for \\(0 \\leq t \\leq 7\\).\n\\item[(ii)] The rate at which water leaves the tank is \\(g(t)=\\left\\{\\begin{array}{r}250 \\text { for } 0 \\leq t<3 \\\\ 2000 \\text { for } 3<t \\leq 7\\end{array}\\right.\\) gallons per hour.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/b3c0dd10-350a-4728-adfe-1a351813fe91-1.jpg?height=455&width=660&top_left_y=378&top_left_x=1220)\nThe graphs of \\(f\\) and \\(g\\), which intersect at \\(t=1.617\\) and \\(t=5.076\\), are shown in the figure above. At time \\(t=0\\), the amount of water in the tank is 5000 gallons.\n\\begin{itemize}\n\\item[(a)] How many gallons of water enter the tank during the time interval \\(0 \\leq t \\leq 7\\) ? Round your answer to the nearest gallon.\n\\item[(b)] For \\(0 \\leq t \\leq 7\\), find the time intervals during which the amount of water in the tank is decreasing. Give a reason for each answer.\n\\item[(c)] For \\(0 \\leq t \\leq 7\\), at what time \\(t\\) is the amount of water in the tank greatest? To the nearest gallon, compute the amount of water at this time. Justify your answer.\n\\item[(a)] \\(\\int_{0}^{7} f(t) d t \\approx 8264\\) gallons\n\\item[(b)] The amount of water in the tank is decreasing on the intervals \\(0 \\leq t \\leq 1.617\\) and \\(3 \\leq t \\leq 5.076\\) because \\(f(t)<g(t)\\) for \\(0 \\leq t<1.617\\) and \\(3<t<5.076\\).\n\\item[(c)] Since \\(f(t)-g(t)\\) changes sign from positive to negative only at \\(t=3\\), the candidates for the absolute maximum are at \\(t=0,3\\), and 7 .\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (hours) & gallons of water \\\\\n\\hline 0 & 5000 \\\\\n\\hline 3 & \\(5000+\\int_{0}^{3} f(t) d t-250(3)=5126.591\\) \\\\\n\\hline 7 & \\(5126.591+\\int_{3}^{7} f(t) d t-2000(4)=4513.807\\) \\\\\n\\hline\n\\end{tabular}\nThe amount of water in the tank is greatest at 3 hours. At that time, the amount of water in the tank, rounded to the nearest gallon, is 5127 gallons.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          62,
+          572,
+          573
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          150.33599999999998,
+          66.24,
+          463.96799999999996,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          307.584,
+          536.544,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.664,
+          319.96799999999996,
+          430.84799999999996,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          90.43199999999999,
+          340.99199999999996,
+          527.328,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          87.83999999999999,
+          365.18399999999997,
+          291.45599999999996,
+          378.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "math",
+        "rect": [
+          204.19199999999998,
+          383.616,
+          408.38399999999996,
+          414.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          421.344,
+          538.848,
+          434.304
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          435.45599999999996,
+          307.584,
+          448.41599999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          455.328,
+          548.928,
+          468.864
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          470.87999999999994,
+          149.184,
+          483.84
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.088,
+          488.736,
+          547.1999999999999,
+          502.27199999999993
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.368,
+          503.712,
+          188.928,
+          514.944
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.088,
+          520.992,
+          565.0559999999999,
+          534.5279999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          535.1039999999999,
+          303.26399999999995,
+          548.064
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

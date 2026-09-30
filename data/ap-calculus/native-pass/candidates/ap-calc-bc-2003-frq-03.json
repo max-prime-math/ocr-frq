@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2003-frq-03",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2003-frq-03-diagram-01.jpg\", width: 65%)\n\nThe figure above shows the graphs of the line $x = frac(5,3) y$ and the curve $C$ given by $x = sqrt(1 + y^(2))$. Let $S$ be the shaded region bounded by the two graphs and the $x$-axis. The line and the curve intersect at point $P$.\n\n(a) Find the coordinates of point $P$ and the value of $frac(d x,d y)$ for curve $C$ at point $P$.\n\n(b) Set up and evaluate an integral expression with respect to $y$ that gives the area of $S$.\n\n(c) Curve $C$ is a part of the curve $x^(2)- y^(2)= 1$. Show that $x^(2)- y^(2)= 1$ can be written as the polar equation $r^(2)= frac(1,cos^(2) theta - sin^(2) theta)$.\n\n(d) Use the polar equation given in part (c) to set up an integral expression with respect to the polar angle $theta$ that represents the area of $S$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig3.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          69,
+          572,
+          445
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a0699464fb0a718abdc576fc7ede349fc23a3b72fb87b3beb23e2f65bac91710",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ]
+}

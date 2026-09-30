@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2004-form-b-frq-05",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= x^(4)(y - 2)$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated. -\n\n#image(\"/imgs/ap-calc-ab-2004-form-b-frq-05-diagram-01.png\", width: 65%)\n\n(b) While the slope field in part (a) is drawn at only twelve points, it is defined at every point in the $x y$-plane. Describe all points in the $x y$-plane for which the slopes are negative.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(0)= 0$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-form-b-frq-05-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        284.135986328125,
+        138.6959991455078,
+        407.6400146484375,
+        363.864013671875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          71,
+          572,
+          449
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          76.032,
+          293.18399999999997,
+          101.37599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          108.86399999999999,
+          554.4,
+          121.82399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          121.24799999999999,
+          315.072,
+          134.208
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          241.92,
+          167.04,
+          248.832,
+          173.952
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "chart",
+        "rect": [
+          287.13599999999997,
+          141.696,
+          404.64,
+          360.864
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          376.128,
+          550.656,
+          388.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          388.51199999999994,
+          387.35999999999996,
+          400.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          407.23199999999997,
+          559.584,
+          420.768
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a92bb8d4a3f74669746b91e53589b6768f829f22308da21d0f18bc4593e72fc3",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-05",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

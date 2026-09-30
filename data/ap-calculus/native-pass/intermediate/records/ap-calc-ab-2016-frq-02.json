@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2016-frq-02",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "rawPrompt": "For \\(t \\geq 0\\), a particle moves along the \\(x\\)-axis. The velocity of the particle at time \\(t\\) is given by\n\\(v(t)=1+2 \\sin \\left(\\frac{t^{2}}{2}\\right)\\). The particle is at position \\(x=2\\) at time \\(t=4\\).\n(a) At time \\(t=4\\), is the particle speeding up or slowing down?\n(b) Find all times \\(t\\) in the interval \\(0<t<3\\) when the particle changes direction. Justify your answer.\n(c) Find the position of the particle at time \\(t=0\\).\n(d) Find the total distance the particle travels from time \\(t=0\\) to time \\(t=3\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nFor \\(t \\geq 0\\), a particle moves along the \\(x\\)-axis. The velocity of the particle at time \\(t\\) is given by \\(v(t)=1+2 \\sin \\left(\\frac{t^{2}}{2}\\right)\\). The particle is at position \\(x=2\\) at time \\(t=4\\).\n\\begin{itemize}\n\\item[(a)] At time \\(t=4\\), is the particle speeding up or slowing down?\n\\item[(b)] Find all times \\(t\\) in the interval \\(0<t<3\\) when the particle changes direction. Justify your answer.\n\\item[(c)] Find the position of the particle at time \\(t=0\\).\n\\item[(d)] Find the total distance the particle travels from time \\(t=0\\) to time \\(t=3\\).\n\\item[(a)] \\(v(4)=2.978716>0\\)\n\\(v^{\\prime}(4)=-1.164000<0\\)\nThe particle is slowing down since the velocity and acceleration have different signs.\n\\item[(b)] \\(v(t)=0 \\Rightarrow t=2.707468\\)\n\\(v(t)\\) changes from positive to negative at \\(t=2.707\\).\nTherefore, the particle changes direction at this time.\n\\item[(c)]\n\\[\n\\begin{aligned}\nx(0) & =x(4)+\\int_{4}^{0} v(t) d t \\\\\n& =2+(-5.815027)=-3.815\n\\end{aligned}\n\\]\n\\item[(d)] Distance \\(=\\int_{0}^{3}|v(t)| d t=5.301\\)\n\\end{itemize}\n\n2 : conclusion with reason\n\\(2:\\left\\{\\begin{array}{l}1: t=2.707 \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          35.0,
+          559,
+          399
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          58.751999999999995,
+          478.94399999999996,
+          71.71199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.952,
+          73.728,
+          373.53599999999994,
+          105.11999999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          112.032,
+          350.496,
+          125.856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          132.19199999999998,
+          520.1279999999999,
+          145.152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          151.77599999999998,
+          287.424,
+          164.16
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          170.784,
+          406.65599999999995,
+          183.16799999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

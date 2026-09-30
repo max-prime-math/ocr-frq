@@ -1,0 +1,105 @@
+{
+  "id": "ap-calc-ab-2000-frq-06",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(3 x^(2),e^(2 y))$.\n\n(a) Find a solution $y = f(x)$ to the differential equation satisfying $f(0)= frac(1,2)$.\n\n(b) Find the domain and range of the function $f$ found in part (a).",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          452,
+          572,
+          574
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 21,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          471.74399999999997,
+          273.024,
+          499.67999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          505.72799999999995,
+          415.58399999999995,
+          527.904
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 23,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          534.8159999999999,
+          355.67999999999995,
+          547.776
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "1772207fd90c9a8b366f5ea2a6314a3ea7a5a80b7997a467afcf0c40f8e12f39",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

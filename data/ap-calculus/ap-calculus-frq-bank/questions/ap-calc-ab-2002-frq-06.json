@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 8, align: (left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [$x$], [-1.5], [-1.0], [-0.5], [0], [0.5], [1.0], [1.5], table.hline(stroke: .5pt), [$f(x)$], [-1], [-4], [-6], [-7], [-6], [-4], [-1], table.hline(stroke: .5pt), [$f'(x)$], [-7], [-5], [-3], [0], [3], [5], [7], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is differentiable for all real numbers. The table above gives the values of $f$ and its derivative $f'$ for selected points $x$ in the closed interval $- 1.5 <= x <= 1.5$. The second derivative of $f$ has the property that $f''(x)> 0$ for $- 1.5 <= x <= 1.5$.\n\n(a) Evaluate $integral_(0)^(1.5)lr((3 f'(x)+ 4)) d x$. Show the work that leads to your answer.\n\n(b) Write an equation of the line tangent to the graph of $f$ at the point where $x = 1$. Use this line to approximate the value of $f(1.2)$. Is this approximation greater than or less than the actual value of $f(1.2)$ ? Give a reason for your answer.\n\n(c) Find a positive real number $r$ having the property that there must exist a value $c$ with $0 < c < 0.5$ and $f''(c)= r$. Give a reason for your answer.\n\n(d) Let $g$ be the function given by $g(x)= lr(\\{ mat(delim: #none, 2 x^(2)- x - 7 \"\", \" for \" x < 0 \"\"; 2 x^(2)+ x - 7 \"\", \" for \" x >= 0))$. The graph of $g$ passes through each of the points $(x \\, f(x))$ given in the table above. Is it possible that $f$ and $g$ are the same function? Give a reason for your answer.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2002-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-6-7",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2002",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-6",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

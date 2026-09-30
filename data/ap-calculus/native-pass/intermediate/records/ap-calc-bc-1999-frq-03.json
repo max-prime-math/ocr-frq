@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1999-frq-03",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{c|c}\n\\begin{tabular}{c}\n$t$ \\\\\n(hours) \\\\\n\\end{tabular} & \\begin{tabular}{c}\n$R(t)$ \\\\\n(gallons per hour) \\\\\n\\end{tabular} \\\\\n\\hline\n0 & 9.6 \\\\\n3 & 10.4 \\\\\n6 & 10.8 \\\\\n9 & 11.2 \\\\\n12 & 11.4 \\\\\n15 & 11.3 \\\\\n18 & 10.7 \\\\\n21 & 10.2 \\\\\n24 & 9.6 \\\\\n\\end{tabular}\n\\end{center}\nThe rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function $R$ of time $t$. The table above shows the rate as measured every 3 hours for a 24 -hour period.\\\\\n(a) Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate $\\int_{0}^{24} R(t) d t$. Using correct units, explain the meaning of your answer in terms of water flow.\\\\\n(b) Is there some time $t, 0<t<24$, such that $R^{\\prime}(t)=0$ ? Justify your answer.\\\\\n(c) The rate of water flow $R(t)$ can be approximated by $Q(t)=\\frac{1}{79}\\left(768+23 t-t^{2}\\right)$. Use $Q(t)$ to approximate the average rate of water flow during the 24 -hour time period. Indicate units of measure.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[3.] The rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function \\(R\\) of time \\(t\\). The table above shows the rate as measured every 3 hours for a 24-hour period.\n\\begin{itemize}\n\\item[(a)] Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate \\(\\int_{0}^{24} R(t) d t\\). Using correct units, explain the meaning of your answer in terms of water flow.\n\\item[(b)] Is there some time \\(t, 0<t<24\\), such that \\(R^{\\prime}(t)=0\\) ? Justify your answer.\n\\item[(c)] The rate of water flow \\(R(t)\\) can be approximated by \\(Q(t)=\\frac{1}{79}\\left(768+23 t-t^{2}\\right)\\). Use \\(Q(t)\\) to approximate the average rate of water flow during the 24-hour time period. Indicate units of measure.\n\\end{itemize}\n\\end{itemize}\n\\[\n\\begin{array}{c|c}\n\\begin{array}{c}\nt \\\\\n\\text { (hours) }\n\\end{array} & \\begin{array}{c}\nR(t) \\\\\n\\text { (gallons per hour) }\n\\end{array} \\\\\n\\hline 0 & 9.6 \\\\\n3 & 10.4 \\\\\n6 & 10.8 \\\\\n9 & 11.2 \\\\\n12 & 11.4 \\\\\n15 & 11.3 \\\\\n18 & 10.7 \\\\\n21 & 10.2 \\\\\n24 & 9.6\n\\end{array}\n\\]\n\\begin{itemize}\n\\item[(a)]\n(a)\n\\[\n\\begin{aligned}\n\\int_{0}^{24} R(t) d t \\approx & 6[R(3)+R(9)+R(15)+R(21)] \\\\\n& =6[10.4+11.2+11.3+10.2] \\\\\n& =258.6 \\text { gallons }\n\\end{aligned}\n\\]\nThis is an approximation to the total flow in gallons of water from the pipe in the 24-hour period.\n\\end{itemize}\n\\[\n\\mathbf{3}\\left\\{\\begin{array}{l}\n1: R(3)+R(9)+R(15)+R(21) \\\\\n1: \\text { answer } \\\\\n1: \\text { explanation }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] Yes;\nSince \\(R(0)=R(24)=9.6\\), the Mean Value Theorem guarantees that there is a \\(t, 0<t<24\\), such that \\(R^{\\prime}(t)=0\\).\n\\end{itemize}\n\\[\n\\mathbf{2}\\left\\{\\begin{array}{l}\n1: \\text { answer } \\\\\n1: \\text { MVT or equivalent }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)] Average rate of flow\n\\[\n\\begin{aligned}\n& \\approx \\text { average value of } Q(t) \\\\\n& \\quad=\\frac{1}{24} \\int_{0}^{24} \\frac{1}{79}\\left(768+23 t-t^{2}\\right) d t \\\\\n& \\quad=10.785 \\mathrm{gal} / \\mathrm{hr} \\text { or } 10.784 \\mathrm{gal} / \\mathrm{hr}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n\\mathbf{3}\\left\\{\\begin{array}{l}\n\\text { 1: limits and average value constant } \\\\\n\\text { 1: } Q(t) \\text { as integrand } \\\\\n\\text { 1: answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[1:] units\n\\item[] (units) Gallons in part (a) and gallons/hr in part (c), or equivalent.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          39,
+          572,
+          674
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

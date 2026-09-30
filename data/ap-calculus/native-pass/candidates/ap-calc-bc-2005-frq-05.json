@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2005-frq-05",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2005-frq-05-diagram-01.jpg\", width: 65%)\n\nA car is traveling on a straight road. For $0 <= t <= 24$ seconds, the car's velocity $v(t)$, in meters per second, is modeled by the piecewise-linear function defined by the graph above.\n\n(a) Find $integral_(0)^(24) v(t) d t$. Using correct units, explain the meaning of $integral_(0)^(24) v(t) d t$.\n\n(b) For each of $v'(4)$ and $v'(20)$, find the value or explain why it does not exist. Indicate units of measure.\n\n(c) Let $a(t)$ be the car's acceleration at time $t$, in meters per second per second. For $0 < t < 24$, write a piecewise-defined function for $a(t)$.\n\n(d) Find the average rate of change of $v$ over the interval $8 <= t <= 20$. Does the Mean Value Theorem guarantee a value of $c$, for $8 < c < 20$, such that $v'(c)$ is equal to this average rate of change? Why or why not?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005_fig4.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          72,
+          568,
+          382
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6a5e71764a92ff0a1f2f269ec03ebe68efe291322252632c5f2f1c13f00ed794",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ]
+}

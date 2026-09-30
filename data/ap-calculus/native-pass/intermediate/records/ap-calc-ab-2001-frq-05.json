@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2001-frq-05",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "rawPrompt": "A cubic polynomial function \\(f\\) is defined by\n\\[\nf(x)=4 x^{3}+a x^{2}+b x+k\n\\]\nwhere \\(a\\), \\(b\\), and \\(k\\) are constants. The function \\(f\\) has a local minimum at \\(x=-1\\), and the graph of \\(f\\) has a point\nof inflection at \\(x=-2\\).\n(a) Find the values of \\(a\\) and \\(b\\).\n(b) If \\(\\int_{0}^{1} f(x) d x=32\\), what is the value of \\(k\\) ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nA cubic polynomial function \\(f\\) is defined by\n\\[\nf(x)=4 x^{3}+a x^{2}+b x+k\n\\]\nwhere \\(a, b\\), and \\(k\\) are constants. The function \\(f\\) has a local minimum at \\(x=-1\\), and the graph of \\(f\\) has a point of inflection at \\(x=-2\\).\n\\begin{itemize}\n\\item[(a)] Find the values of \\(a\\) and \\(b\\).\n\\item[(b)] If \\(\\int_{0}^{1} f(x) d x=32\\), what is the value of \\(k\\) ?\n\\item[(a)]\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=12 x^{2}+2 a x+b \\\\\n& f^{\\prime \\prime}(x)=24 x+2 a \\\\\n& f^{\\prime}(-1)=12-2 a+b=0 \\\\\n& f^{\\prime \\prime}(-2)=-48+2 a=0\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& a=24 \\\\\n& b=-12+2 a=36\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\int_{0}^{1}\\left(4 x^{3}+24 x^{2}+36 x+k\\right) d x \\\\\n& =x^{4}+8 x^{3}+18 x^{2}+\\left.k x\\right|_{x=0} ^{x=1}=27+k \\\\\n& 27+k=32 \\\\\n& k=5\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          332,
+          572,
+          470
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          352.79999999999995,
+          262.368,
+          365.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "math",
+        "rect": [
+          238.75199999999998,
+          370.08,
+          371.808,
+          386.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          391.104,
+          560.448,
+          404.64
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          404.64,
+          171.35999999999999,
+          415.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 21,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          421.91999999999996,
+          207.35999999999999,
+          434.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          440.64,
+          277.344,
+          464.83199999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

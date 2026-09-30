@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2004-form-b-frq-04",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2004-form-b-frq-04-diagram-01.png\", width: 65%)\n\nThe figure above shows the graph of $f'$, the derivative of the function $f$, on the closed interval $- 1 <= x <= 5$. The graph of $f'$ has horizontal tangent lines at $x = 1$ and $x = 3$. The function $f$ is twice differentiable with $f(2)= 6$.\n\n(a) Find the $x$-coordinate of each of the points of inflection of the graph of $f$. Give a reason for your answer.\n\n(b) At what value of $x$ does $f$ attain its absolute minimum value on the closed interval $- 1 <= x <= 5$ ? At what value of $x$ does $f$ attain its absolute maximum value on the closed interval $- 1 <= x <= 5$ ? Show the analysis that leads to your answers.\n\n(c) Let $g$ be the function defined by $g(x)= x f(x)$. Find an equation for the line tangent to the graph of $g$ at $x = 2$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-form-b-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        191.9759979248047,
+        202.9199981689453,
+        421.4639892578125,
+        414.8399963378906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          70,
+          572,
+          583
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          194.976,
+          205.92,
+          418.46399999999994,
+          411.84
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          422.496,
+          545.76,
+          435.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          436.32,
+          543.168,
+          449.28
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          449.28,
+          110.30399999999999,
+          462.816
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          469.152,
+          547.1999999999999,
+          482.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          487.58399999999995,
+          556.992,
+          499.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          499.96799999999996,
+          562.4639999999999,
+          512.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          512.928,
+          201.6,
+          525.312
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.088,
+          530.784,
+          539.712,
+          544.3199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          545.184,
+          125.56799999999998,
+          555.8399999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "c5b56d4782941f5a58fdf54e12836c297087449e3a7f5a4159fad26bb6992d08",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

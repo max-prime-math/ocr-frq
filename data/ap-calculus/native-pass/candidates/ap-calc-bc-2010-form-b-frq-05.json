@@ -1,0 +1,68 @@
+{
+  "id": "ap-calc-bc-2010-form-b-frq-05",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ and $g$ be the functions defined by $f(x)= frac(1,x)$ and $g(x)= frac(4 x,1 + 4 x^(2))$, for all $x > 0$.\n\n(a) Find the absolute maximum value of $g$ on the open interval $(0 \\, oo)$ if the maximum exists. Find the absolute minimum value of $g$ on the open interval $(0 \\, oo)$ if the minimum exists. Justify your answers.\n\n(b) Find the area of the unbounded region in the first quadrant to the right of the vertical line $x = 1$, below the graph of $f$, and above the graph of $g$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          544,
+          174
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "da0073f24c37312d71c25e9b703e7008184d723446db6f9129fc9d42a82eca13",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ]
+}

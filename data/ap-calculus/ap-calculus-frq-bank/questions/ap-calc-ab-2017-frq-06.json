@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 3, align: (left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.hline(stroke: .5pt), [$x$], [$g(x)$], [$g'(x)$], table.hline(stroke: .5pt), [-5], [10], [-3], table.hline(stroke: .5pt), [-4], [5], [-1], table.hline(stroke: .5pt), [-3], [2], [4], table.hline(stroke: .5pt), [-2], [3], [1], table.hline(stroke: .5pt), [-1], [1], [-2], table.hline(stroke: .5pt), [0], [0], [-3], table.hline(stroke: .5pt));\n\n#image(\"/imgs/ap-calc-ab-2017-frq-06-diagram-01.png\", width: 65%)\n\nLet $f$ be the function defined by $f(x)= cos(2 x)+ e^(sin x)$. Let $g$ be a differentiable function. The table above gives values of $g$ and its derivative $g'$ at selected values of $x$. Let $h$ be the function whose graph, consisting of five line segments, is shown in the figure above.\n\n(a) Find the slope of the line tangent to the graph of $f$ at $x = pi$.\n\n(b) Let $k$ be the function defined by $k(x)= h(f(x))$. Find $k'(pi)$.\n\n(c) Let $m$ be the function defined by $m(x)= g(- 2 x) dot.c h(x)$. Find $m'(2)$.\n\n(d) Is there a number $c$ in the closed interval \\[-5, -3\\] such that $g'(c)= - 4$ ? Justify your answer.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2017-frq-06",
+    "images": [
+      "ap-calc-ab-2017-frq-06-diagram-01.png"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-5-1",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2017",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-5",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

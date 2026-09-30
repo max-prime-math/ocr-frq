@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2013-frq-04",
+  "course": "AB",
+  "year": 2013,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2013.pdf",
+      "sha256": "fa845fe83537972b9762e1e8c43f00f2f94bf617e8020428c7ce1f6b5ef46cd7",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2013.pdf",
+      "sha256": "652f933eef8103933042e3c9e05eaca17964e238256939989060a613225d753d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2013-frq-04-diagram-01.png}\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of a twice-differentiable function \\(f\\), on the closed\ninterval \\(0 \\leq x \\leq 8\\). The graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=1, x=3\\), and \\(x=5\\). The areas of the\nregions between the graph of \\(f^{\\prime}\\) and the \\(x\\)-axis are labeled in the figure. The function \\(f\\) is defined for all real\nnumbers and satisfies \\(f(8)=4\\).\n(a) Find all values of \\(x\\) on the open interval \\(0<x<8\\) for which the function \\(f\\) has a local minimum. Justify\nyour answer.\n(b) Determine the absolute minimum value of \\(f\\) on the closed interval \\(0 \\leq x \\leq 8\\). Justify your answer.\n(c) On what open intervals contained in \\(0<x<8\\) is the graph of \\(f\\) both concave down and increasing?\nExplain your reasoning.\n(d) The function \\(g\\) is defined by \\(g(x)=(f(x))^{3}\\). If \\(f(3)=-\\frac{5}{2}\\), find the slope of the line tangent to the graph\nof \\(g\\) at \\(x=3\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2013-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2013-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        136.10400390625,
+        54.02399826049805,
+        476.1839904785156,
+        269.68798828125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of a twice-differentiable function \\(f\\), on the closed interval \\(0 \\leq x \\leq 8\\). The graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=1, x=3\\), and \\(x=5\\). The areas of the regions between the graph of \\(f^{\\prime}\\) and the \\(x\\)-axis are labeled in the figure. The function \\(f\\) is defined for all real numbers and satisfies \\(f(8)=4\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\) on the open interval \\(0<x<8\\) for which the function \\(f\\) has a local minimum. Justify your answer.\n\\item[(b)] Determine the absolute minimum value of \\(f\\) on the closed interval \\(0 \\leq x \\leq 8\\). Justify your answer.\n\\item[(c)] On what open intervals contained in \\(0<x<8\\) is the graph of \\(f\\) both concave down and increasing? Explain your reasoning.\n\\item[(d)] The function \\(g\\) is defined by \\(g(x)=(f(x))^{3}\\). If \\(f(3)=-\\frac{5}{2}\\), find the slope of the line tangent to the graph of \\(g\\) at \\(x=3\\).\n\\item[(a)] \\(x=6\\) is the only critical point at which \\(f^{\\prime}\\) changes sign from negative to positive. Therefore, \\(f\\) has a local minimum at \\(x=6\\).\n\\item[(b)] From part (a), the absolute minimum occurs either at \\(x=6\\) or at an endpoint.\n\\[\n\\begin{aligned}\nf(0) & =f(8)+\\int_{8}^{0} f^{\\prime}(x) d x \\\\\n& =f(8)-\\int_{0}^{8} f^{\\prime}(x) d x=4-12=-8 \\\\\nf(6) & =f(8)+\\int_{8}^{6} f^{\\prime}(x) d x \\\\\n& =f(8)-\\int_{6}^{8} f^{\\prime}(x) d x=4-7=-3 \\\\\nf(8) & =4\n\\end{aligned}\n\\]\nThe absolute minimum value of \\(f\\) on the closed interval [0,8] is -8.\n\\item[(c)] The graph of \\(f\\) is concave down and increasing on \\(0<x<1\\) and \\(3<x<4\\), because \\(f^{\\prime}\\) is decreasing and positive on these intervals.\n\\item[(d)] \\(g^{\\prime}(x)=3[f(x)]^{2} \\cdot f^{\\prime}(x)\\)\n\\[\ng^{\\prime}(3)=3[f(3)]^{2} \\cdot f^{\\prime}(3)=3\\left(-\\frac{5}{2}\\right)^{2} \\cdot 4=75\n\\]\n\\item[1] : answer with justification\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { considers } x=0 \\text { and } x=6 \\\\\n1: \\text { answer } \\\\\n1: \\text { justification }\n\\end{array}\\right.\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: g^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          54,
+          568,
+          511
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          139.10399999999998,
+          57.023999999999994,
+          473.18399999999997,
+          266.688
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          298.94399999999996,
+          530.784,
+          311.904
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          315.072,
+          556.704,
+          328.032
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          330.33599999999996,
+          548.064,
+          343.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          346.464,
+          207.648,
+          360.0
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          368.06399999999996,
+          554.4,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          382.464,
+          141.696,
+          394.272
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          399.74399999999997,
+          522.432,
+          412.128
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          418.176,
+          531.072,
+          431.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          431.99999999999994,
+          190.65599999999998,
+          444.38399999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.664,
+          445.53599999999994,
+          559.2959999999999,
+          467.712
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          470.304,
+          149.184,
+          482.688
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2013-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2013-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

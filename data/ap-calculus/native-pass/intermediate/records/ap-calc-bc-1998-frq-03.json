@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1998-frq-03",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "rawPrompt": "Let $f$ be a function that has derivatives of all orders for all real numbers. Assume $f(0)=5$, $f^{\\prime}(0)=-3, f^{\\prime \\prime}(0)=1$, and $f^{\\prime \\prime \\prime}(0)=4$.\\\\\n(a) Write the third-degree Taylor polynomial for $f$ about $x=0$ and use it to approximate $f(0.2)$.\\\\\n(b) Write the fourth-degree Taylor polynomial for $g$, where $g(x)=f\\left(x^{2}\\right)$, about $x=0$.\\\\\n(c) Write the third-degree Taylor polynomial for $h$, where $h(x)=\\int_{0}^{x} f(t) d t$, about $x=0$.\\\\\n(d) Let $h$ be defined as in part (c). Given that $f(1)=3$, either find the exact value of $h(1)$ or explain why it cannot be determined.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[3.] Let \\(f\\) be a function that has derivatives of all orders for all real numbers. Assume \\(f(0)=5\\), \\(f^{\\prime}(0)=-3, f^{\\prime \\prime}(0)=1\\), and \\(f^{\\prime \\prime \\prime}(0)=4\\).\n\\begin{itemize}\n\\item[(a)] Write the third-degree Taylor polynomial for \\(f\\) about \\(x=0\\) and use it to approximate \\(f(0.2)\\).\n\\item[(b)] Write the fourth-degree Taylor polynomial for \\(g\\), where \\(g(x)=f\\left(x^{2}\\right)\\), about \\(x=0\\).\n\\item[(c)] Write the third-degree Taylor polynomial for \\(h\\), where \\(h(x)=\\int_{0}^{x} f(t) d t\\), about \\(x=0\\).\n\\item[(d)] Let \\(h\\) be defined as in part (c). Given that \\(f(1)=3\\), either find the exact value of \\(h(1)\\) or explain why it cannot be determined.\n\\end{itemize}\n\\item[(a)] \\(P_{3}(f)(x)=5-3 x+\\frac{1}{2} x^{2}+\\frac{2}{3} x^{3}\\)\n\\(f(0.2) \\approx P_{3}(f)(0.2)=\\)\n\\(5-3(0.2)+\\frac{0.04}{2}+\\frac{2(0.008)}{3}=\\)\n4.425\n\\item[(b)] \\(P_{4}(g)(x)=P_{2}(f)\\left(x^{2}\\right)=5-3 x^{2}+\\frac{1}{2} x^{4}\\)\n\\item[(c)] \\(P_{3}(h)(x)=\\int_{0}^{x}\\left(5-3 t+\\frac{1}{2} t^{2}\\right) d t\\)\n~\n\\[\n\\begin{aligned}\n& =\\left[5 t-\\frac{3}{2} t^{2}+\\frac{1}{6} t^{3}\\right]_{0}^{2} \\\\\n& =5 x-\\frac{3}{2} x^{2}+\\frac{1}{6} x^{3}\n\\end{aligned}\n\\]\n\\item[(d)] \\(h(1)=\\int_{0}^{1} f(t) d t\\)\ncannot be determined because \\(f(t)\\) is known only for \\(t=0\\) and \\(t=1\\)\n\\end{itemize}\n\\[\n\\begin{aligned}\n& 3\\left\\{\\begin{array}{c}\n2: 5-3 x+\\frac{1}{2} x^{2}+\\frac{2}{3} x^{3} \\\\\n<-1>\\text { each incorrect term } \\\\\n\\text { extra term, or }+\\cdots \\\\\n1: \\text { approximates } f(0.2)\n\\end{array}\\right. \\\\\n& \\langle-1\\rangle \\text { for incorrect use of }=\n\\end{aligned}\n\\]\n\\begin{itemize}\n\\item[2:] \\(P_{2}(f)\\left(x^{2}\\right)\\)\n\\(\\langle-1\\rangle\\) each incorrect or extra term\n\\(2\\left\\{\\begin{array}{l}1: P_{3}(h)(x)=\\int_{0}^{x} P_{2}(f)(t) d t \\\\ 1: \\text { answer } \\\\ \\quad 0 / 1 \\text { if any incorrect or extra terms }\\end{array}\\right.\\)\n\\(2\\left\\{\\begin{array}{l}1: h(1) \\text { cannot be determined } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

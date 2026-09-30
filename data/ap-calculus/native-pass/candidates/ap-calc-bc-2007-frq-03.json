@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2007-frq-03",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2007-frq-03-diagram-01.jpg\", width: 65%)\n\nThe graphs of the polar curves $r = 2$ and $r = 3 + 2 cos theta$ are shown in the figure above. The curves intersect when $theta = frac(2 pi,3)$ and $theta = frac(4 pi,3)$.\n\n(a) Let $R$ be the region that is inside the graph of $r = 2$ and also inside the graph of $r = 3 + 2 cos theta$, as shaded in the figure above. Find the area of $R$.\n\n(b) A particle moving with nonzero velocity along the polar curve given by $r = 3 + 2 cos theta$ has position $(x(t)\\, y(t))$ at time $t$, with $theta = 0$ when $t = 0$. This particle moves along the curve so that $frac(d r,d t)= frac(d r,d theta)$. Find the value of $frac(d r,d t)$ at $theta = frac(pi,3)$ and interpret your answer in terms of the motion of the particle.\n\n(c) For the particle described in part (b), $frac(d y,d t)= frac(d y,d theta)$. Find the value of $frac(d y,d t)$ at $theta = frac(pi,3)$ and interpret your answer in terms of the motion of the particle.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2007-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2007-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2007_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          488
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "069519f5ca2d5535c63f328dc440c7013d7ff97bbe3492863c66e9681429cb50",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ]
+}

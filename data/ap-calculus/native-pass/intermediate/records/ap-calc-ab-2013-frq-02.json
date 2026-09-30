@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2013-frq-02",
+  "course": "AB",
+  "year": 2013,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2013.pdf",
+      "sha256": "fa845fe83537972b9762e1e8c43f00f2f94bf617e8020428c7ce1f6b5ef46cd7",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2013.pdf",
+      "sha256": "652f933eef8103933042e3c9e05eaca17964e238256939989060a613225d753d"
+    }
+  },
+  "rawPrompt": "A particle moves along a straight line. For \\(0 \\leq t \\leq 5\\), the velocity of the particle is given by\n\\(v(t)=-2+\\left(t^{2}+3 t\\right)^{6 / 5}-t^{3}\\), and the position of the particle is given by \\(s(t)\\). It is known that \\(s(0)=10\\).\n(a) Find all values of \\(t\\) in the interval \\(2 \\leq t \\leq 4\\) for which the speed of the particle is 2 .\n(b) Write an expression involving an integral that gives the position \\(s(t)\\). Use this expression to find the\nposition of the particle at time \\(t=5\\).\n(c) Find all times \\(t\\) in the interval \\(0 \\leq t \\leq 5\\) at which the particle changes direction. Justify your answer.\n(d) Is the speed of the particle increasing or decreasing at time \\(t=4\\) ? Give a reason for your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nA particle moves along a straight line. For \\(0 \\leq t \\leq 5\\), the velocity of the particle is given by\n\\(v(t)=-2+\\left(t^{2}+3 t\\right)^{6 / 5}-t^{3}\\), and the position of the particle is given by \\(s(t)\\). It is known that \\(s(0)=10\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(t\\) in the interval \\(2 \\leq t \\leq 4\\) for which the speed of the particle is 2.\n\\item[(b)] Write an expression involving an integral that gives the position \\(s(t)\\). Use this expression to find the position of the particle at time \\(t=5\\).\n\\item[(c)] Find all times \\(t\\) in the interval \\(0 \\leq t \\leq 5\\) at which the particle changes direction. Justify your answer.\n\\item[(d)] Is the speed of the particle increasing or decreasing at time \\(t=4\\) ? Give a reason for your answer.\n\\item[(a)] Solve \\(|v(t)|=2\\) on \\(2 \\leq t \\leq 4\\).\n\\(t=3.128\\) (or 3.127) and \\(t=3.473\\)\n\\item[(b)] \\(s(t)=10+\\int_{0}^{t} v(x) d x\\)\n\\(s(5)=10+\\int_{0}^{5} v(x) d x=-9.207\\)\n\\item[(c)] \\(\\quad v(t)=0\\) when \\(t=0.536033,3.317756\\)\n\\(v(t)\\) changes sign from negative to positive at time \\(t=0.536033\\).\n\\(v(t)\\) changes sign from positive to negative at time \\(t=3.317756\\).\nTherefore, the particle changes direction at time \\(t=0.536\\) and time \\(t=3.318\\) (or 3.317).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers }|v(t)|=2 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: s(t) \\\\ 1: s(5)\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { considers } v(t)=0 \\\\ 2: \\text { answers with justification }\\end{array}\\right.\\)\n\\item[2] : conclusion with reason\n\\item[(d)] \\(v(4)=-11.475758<0, a(4)=v^{\\prime}(4)=-22.295714<0\\)\nThe speed is increasing at time \\(t=4\\) because velocity and acceleration have the same sign.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          65,
+          559,
+          524
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          69.408,
+          472.60799999999995,
+          82.368
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          83.52,
+          535.968,
+          106.27199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          113.75999999999999,
+          457.91999999999996,
+          126.71999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          133.63199999999998,
+          529.632,
+          147.744
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          149.184,
+          247.39199999999997,
+          162.14399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          168.19199999999998,
+          534.8159999999999,
+          181.152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          186.91199999999998,
+          519.8399999999999,
+          200.44799999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2013-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2013-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

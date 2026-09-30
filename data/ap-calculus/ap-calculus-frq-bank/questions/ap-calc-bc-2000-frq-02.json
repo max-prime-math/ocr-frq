@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-2000-frq-02-bc-2000_fig2.jpg\", width: 72%)\n\nRunners $A$ and $B$ run on a straight track for $0 <= t <= 10$ seconds. The graph gives Runner $A$'s velocity in m/s. Runner $B$'s velocity is $v(t)=24t/(2t+3)$ m/s.\n\n(a) Find each runner's velocity at $t=2$, with units.\n\n(b) Find each runner's acceleration at $t=2$, with units.\n\n(c) Find each runner's total distance over $0 <= t <= 10$, with units.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2000-frq-02",
+    "images": [
+      "ap-calc-bc-2000-frq-02-bc-2000_fig2.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-2",
+    "solution": "(a) From the graph, Runner $A$ has velocity $(10/3)(2)=20/3 approx 6.667$ m/s.\nRunner $B$ has velocity $v(2)=48/7 approx 6.857$ m/s.\n\n(b) Runner $A$'s acceleration is the slope $10/3 approx 3.333$ m/s².\n$v'(t)=72/(2t+3)^2$, so Runner $B$'s acceleration is $v'(2)=72/49 approx 1.469$ m/s².\n\n(c) Runner $A$ travels the area under its graph: $1/2(3)(10)+7(10)=85$ m.\nRunner $B$ travels\n$integral_0^10 24t/(2t+3) dif t = 120-18ln(23/3) approx 83.336$ m.",
+    "tags": [
+      "2000",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

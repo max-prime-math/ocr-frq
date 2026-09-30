@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-form-b-frq-05",
+  "course": "BC",
+  "year": 2008,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008-FORM-B.pdf",
+      "sha256": "a3f39100ad858b1e39f4ef65a5adbba5a1c4bb9b1b12fcc1af8fc1feb51865e5",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008-FORM-B.pdf",
+      "sha256": "1b7f39b2981738aadc9e2599c44ae1c8495d7cdb1c9a6584e35ba197e41fbd10"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2008-form-b-frq-05-diagram-01.jpg}\n\\end{center}\nLet $g$ be a continuous function with $g(2)=5$. The graph of the piecewise-linear function $g^{\\prime}$, the derivative of $g$, is shown above for $-3 \\leq x \\leq 7$.\\\\\n(a) Find the $x$-coordinate of all points of inflection of the graph of $y=g(x)$ for $-3<x<7$. Justify your answer.\\\\\n(b) Find the absolute maximum value of $g$ on the interval $-3 \\leq x \\leq 7$. Justify your answer.\\\\\n(c) Find the average rate of change of $g(x)$ on the interval $-3 \\leq x \\leq 7$.\\\\\n(d) Find the average rate of change of $g^{\\prime}(x)$ on the interval $-3 \\leq x \\leq 7$. Does the Mean Value Theorem applied on the interval $-3 \\leq x \\leq 7$ guarantee a value of $c$, for $-3<c<7$, such that $g^{\\prime \\prime}(c)$ is equal to this average rate of change? Why or why not?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2008-form-b-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2008-form-b-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2008-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\nLet \\(g\\) be a continuous function with \\(g(2)=5\\). The graph of the piecewise-linear function \\(g^{\\prime}\\), the derivative of \\(g\\), is shown above for \\(-3 \\leq x \\leq 7\\).\n\\begin{itemize}\n\\item[(a)] Find the \\(x\\)-coordinate of all points of inflection of the graph of \\(y=g(x)\\) for \\(-3<x<7\\). Justify your answer.\n\\item[(b)] Find the absolute maximum value of \\(g\\) on the interval \\(-3 \\leq x \\leq 7\\). Justify your answer.\n\\item[(c)] Find the average rate of change of \\(g(x)\\) on the interval \\(-3 \\leq x \\leq 7\\).\n\\item[(d)] Find the average rate of change of \\(g^{\\prime}(x)\\) on the interval \\(-3 \\leq x \\leq 7\\). Does the Mean Value Theorem applied on the interval \\(-3 \\leq x \\leq 7\\) guarantee a value of \\(c\\), for \\(-3<c<7\\), such that \\(g^{\\prime \\prime}(c)\\) is equal to this average rate of change? Why or why not?\n\\item[(a)] \\(g^{\\prime}\\) changes from increasing to decreasing at \\(x=1\\); \\(g^{\\prime}\\) changes from decreasing to increasing at \\(x=4\\).\nPoints of inflection for the graph of \\(y=g(x)\\) occur at \\(x=1\\) and \\(x=4\\).\n\\item[(b)] The only sign change of \\(g^{\\prime}\\) from positive to negative in the interval is at \\(x=2\\).\n\\[\n\\begin{aligned}\ng(-3) & =5+\\int_{2}^{-3} g^{\\prime}(x) d x=5+\\left(-\\frac{3}{2}\\right)+4=\\frac{15}{2} \\\\\ng(2) & =5 \\\\\ng(7) & =5+\\int_{2}^{7} g^{\\prime}(x) d x=5+(-4)+\\frac{1}{2}=\\frac{3}{2}\n\\end{aligned}\n\\]\nThe maximum value of \\(g\\) for \\(-3 \\leq x \\leq 7\\) is \\(\\frac{15}{2}\\).\n\\item[(c)] \\(\\frac{g(7)-g(-3)}{7-(-3)}=\\frac{\\frac{3}{2}-\\frac{15}{2}}{10}=-\\frac{3}{5}\\)\n\\item[(d)] \\(\\frac{g^{\\prime}(7)-g^{\\prime}(-3)}{7-(-3)}=\\frac{1-(-4)}{10}=\\frac{1}{2}\\)\n\\end{itemize}\n\nNo, the MVT does not guarantee the existence of a\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: x \\text {-values } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { identifies } x=2 \\text { as a candidate } \\\\ 1: \\text { considers endpoints } \\\\ 1: \\text { maximum value and justification }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { difference quotient } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { average value of } g^{\\prime}(x) \\\\ 1: \\text { answer \"No\" with reason }\\end{array}\\right.\\)\n\\end{itemize} value \\(c\\) with the stated properties because \\(g^{\\prime}\\) is not differentiable for at least one point in \\(-3<x<7\\).",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          525
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

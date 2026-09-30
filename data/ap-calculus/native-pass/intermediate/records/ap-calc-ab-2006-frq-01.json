@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-frq-01",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-frq-01-diagram-01.png}\nLet \\(R\\) be the shaded region bounded by the graph of \\(y=\\ln x\\) and the line \\(y=x-2\\), as shown above.\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-3\\).\n(c) Write, but do not evaluate, an integral expression that can be used to find the volume of the solid generated\nwhen \\(R\\) is rotated about the \\(y\\)-axis.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        235.17599487304688,
+        200.0399932861328,
+        377.3999938964844,
+        365.5920104980469
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\\begin{itemize}\n\\item[] Let \\(R\\) be the shaded region bounded by the graph of \\(y=\\ln x\\) and the line \\(y=x-2\\), as shown above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-3\\).\n(c) Write, but do not evaluate, an integral expression that can be used to find the volume of the solid generated when \\(R\\) is rotated about the \\(y\\)-axis.\n![](https://cdn.mathpix.com/cropped/418884ee-0888-40de-8286-463f5960fd7d-1.jpg?height=556&width=475&top_left_y=333&top_left_x=1472)\n\\end{itemize}\n\\(\\ln (x)=x-2\\) when \\(x=0.15859\\) and 3.14619.\nLet \\(S=0.15859\\) and \\(T=3.14619\\)\n\\begin{itemize}\n\\item[(a)] Area of \\(R=\\int_{S}^{T}(\\ln (x)-(x-2)) d x=1.949\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{S}^{T}\\left((\\ln (x)+3)^{2}-(x-2+3)^{2}\\right) d x \\\\\n& =34.198 \\text { or } 34.199\n\\end{aligned}\n\\]\n\\item[(c)] Volume \\(=\\pi \\int_{S-2}^{T-2}\\left((y+2)^{2}-\\left(e^{y}\\right)^{2}\\right) d y\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          483
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          238.176,
+          203.04,
+          374.4,
+          362.592
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          50.687999999999995,
+          373.248,
+          523.2959999999999,
+          386.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          394.272,
+          168.48,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          412.70399999999995,
+          487.008,
+          425.664
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          434.304,
+          556.992,
+          446.688
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          446.11199999999997,
+          240.19199999999998,
+          458.496
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

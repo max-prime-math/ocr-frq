@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-form-b-frq-02",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "rawPrompt": "An object moving along a curve in the $x y$-plane is at position $(x(t), y(t))$ at time $t$ with\n$$\n\\frac{d x}{d t}=\\arctan \\left(\\frac{t}{1+t}\\right) \\text { and } \\frac{d y}{d t}=\\ln \\left(t^{2}+1\\right)\n$$\n\nfor $t \\geq 0$. At time $t=0$, the object is at position $(-3,-4)$. (Note: $\\tan ^{-1} x=\\arctan x$ )\\\\\n(a) Find the speed of the object at time $t=4$.\\\\\n(b) Find the total distance traveled by the object over the time interval $0 \\leq t \\leq 4$.\\\\\n(c) Find $x(4)$.\\\\\n(d) For $t>0$, there is a point on the curve where the line tangent to the curve has slope 2 . At what time $t$ is the object at this point? Find the acceleration vector at this point.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nAn object moving along a curve in the \\(x y\\)-plane is at position \\((x(t), y(t))\\) at time \\(t\\) with\n\\[\n\\frac{d x}{d t}=\\arctan \\left(\\frac{t}{1+t}\\right) \\text { and } \\frac{d y}{d t}=\\ln \\left(t^{2}+1\\right)\n\\]\nfor \\(t \\geq 0\\). At time \\(t=0\\), the object is at position ( \\(-3,-4\\) ). (Note: \\(\\tan ^{-1} x=\\arctan x\\) )\n\\begin{itemize}\n\\item[(a)] Find the speed of the object at time \\(t=4\\).\n\\item[(b)] Find the total distance traveled by the object over the time interval \\(0 \\leq t \\leq 4\\).\n\\item[(c)] Find \\(x(4)\\).\n\\item[(d)] For \\(t>0\\), there is a point on the curve where the line tangent to the curve has slope 2 . At what time \\(t\\) is the object at this point? Find the acceleration vector at this point.\n\\item[(a)] Speed \\(=\\sqrt{x^{\\prime}(4)^{2}+y^{\\prime}(4)^{2}}=2.912\\)\n\\item[(b)] Distance \\(=\\int_{0}^{4} \\sqrt{\\left(\\frac{d x}{d t}\\right)^{2}+\\left(\\frac{d y}{d t}\\right)^{2}} d t=6.423\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\nx(4) & =x(0)+\\int_{0}^{4} x^{\\prime}(t) d t \\\\\n& =-3+2.10794=-0.892\n\\end{aligned}\n\\]\n\\item[(d)] The slope is 2, so \\(\\frac{\\frac{d y}{d t}}{\\frac{d x}{d t}}=2\\), or \\(\\ln \\left(t^{2}+1\\right)=2 \\arctan \\left(\\frac{t}{1+t}\\right)\\).\nSince \\(t>0, t=1.35766\\). At this time, the acceleration is \\(\\left.\\left\\langle x^{\\prime \\prime}(t), y^{\\prime \\prime}(t)\\right\\rangle\\right|_{t=1.35766}=\\langle 0.135,0.955\\rangle\\).\n\\end{itemize}\n\n1 : speed at \\(t=4\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { uses } x(0)=-3\\end{array}\\right. \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\frac{\\frac{d y}{d t}}{\\frac{d x}{d t}}=2 \\\\ 1: t \\text {-value } \\\\ 1: \\text { values for } x^{\\prime \\prime} \\text { and } y^{\\prime \\prime}\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          65,
+          572,
+          337
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

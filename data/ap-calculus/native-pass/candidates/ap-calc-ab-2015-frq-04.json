@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2015-frq-04",
+  "course": "AB",
+  "year": 2015,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2015.pdf",
+      "sha256": "6f057222ecd46cce2adc5876197c1b85c94077b4f42108f097eaccb73451f8ac",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2015.pdf",
+      "sha256": "41556b4f0750b625991d8298e05037cfc655d7cc2f6967137e94be9b5402f774"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= 2 x - y$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\n\n#image(\"/imgs/ap-calc-ab-2015-frq-04-diagram-01.png\", width: 65%)\n\n(b) Find $frac(d^(2) y,d x^(2))$ in terms of $x$ and $y$. Determine the concavity of all solution curves for the given differential equation in Quadrant II. Give a reason for your answer.\n\n(c) Let $y = f(x)$ be the particular solution to the differential equation with the initial condition $f(2)= 3$. Does $f$ have a relative minimum, a relative maximum, or neither at $x = 2$ ? Justify your answer.\n\n(d) Find the values of the constants $m$ and $b$ for which $y = m x + b$ is a solution to the differential equation.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2015-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2015-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        253.03199768066406,
+        108.45600128173828,
+        359.2560119628906,
+        299.35198974609375
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          54,
+          568,
+          438
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          58.751999999999995,
+          279.64799999999997,
+          84.09599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          91.58399999999999,
+          538.2719999999999,
+          104.544
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "chart",
+        "rect": [
+          256.032,
+          111.45599999999999,
+          356.256,
+          296.352
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.088,
+          308.15999999999997,
+          540.8639999999999,
+          337.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          338.976,
+          329.18399999999997,
+          351.936
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          357.69599999999997,
+          539.136,
+          372.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          373.82399999999996,
+          513.5039999999999,
+          386.784
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          394.84799999999996,
+          550.656,
+          407.808
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0a2aaa87c6054ea6a12ef86b28df15d0de3625947dd5630cbb136bea308f9efc",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2015-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2015-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

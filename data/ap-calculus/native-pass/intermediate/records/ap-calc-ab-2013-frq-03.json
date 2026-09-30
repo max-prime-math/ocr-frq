@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2013-frq-03",
+  "course": "AB",
+  "year": 2013,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2013.pdf",
+      "sha256": "fa845fe83537972b9762e1e8c43f00f2f94bf617e8020428c7ce1f6b5ef46cd7",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2013.pdf",
+      "sha256": "652f933eef8103933042e3c9e05eaca17964e238256939989060a613225d753d"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\\n\\hline \\(C(t)\\) (ounces) & 0 & 5.3 & 8.8 & 11.2 & 12.8 & 13.8 & 14.5 \\\\\n\\hline\n\\end{tabular}\nHot water is dripping through a coffeemaker, filling a large cup with coffee. The amount of coffee in the cup at\ntime \\(t, 0 \\leq t \\leq 6\\), is given by a differentiable function \\(C\\), where \\(t\\) is measured in minutes. Selected values of\n\\(C(t)\\), measured in ounces, are given in the table above.\n(a) Use the data in the table to approximate \\(C^{\\prime}(3.5)\\). Show the computations that lead to your answer, and\nindicate units of measure.\n(b) Is there a time \\(t, 2 \\leq t \\leq 4\\), at which \\(C^{\\prime}(t)=2\\) ? Justify your answer.\n(c) Use a midpoint sum with three subintervals of equal length indicated by the data in the table to approximate\nthe value of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\). Using correct units, explain the meaning of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\) in the context of the\nproblem.\n(d) The amount of coffee in the cup, in ounces, is modeled by \\(B(t)=16-16 e^{-0.4 t}\\). Using this model, find the\nrate at which the amount of coffee in the cup is changing when \\(t=5\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2013 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\\n\\hline \\(C(t)\\) (ounces) & 0 & 5.3 & 8.8 & 11.2 & 12.8 & 13.8 & 14.5 \\\\\n\\hline\n\\end{tabular}\nHot water is dripping through a coffeemaker, filling a large cup with coffee. The amount of coffee in the cup at time \\(t, 0 \\leq t \\leq 6\\), is given by a differentiable function \\(C\\), where \\(t\\) is measured in minutes. Selected values of \\(C(t)\\), measured in ounces, are given in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to approximate \\(C^{\\prime}(3.5)\\). Show the computations that lead to your answer, and indicate units of measure.\n\\item[(b)] Is there a time \\(t, 2 \\leq t \\leq 4\\), at which \\(C^{\\prime}(t)=2\\) ? Justify your answer.\n\\item[(c)] Use a midpoint sum with three subintervals of equal length indicated by the data in the table to approximate the value of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\). Using correct units, explain the meaning of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\) in the context of the problem.\n\\item[(d)] The amount of coffee in the cup, in ounces, is modeled by \\(B(t)=16-16 e^{-0.4 t}\\). Using this model, find the rate at which the amount of coffee in the cup is changing when \\(t=5\\).\n\\item[(a)] \\(C^{\\prime}(3.5) \\approx \\frac{C(4)-C(3)}{4-3}=\\frac{12.8-11.2}{1}=1.6\\) ounces \\(/ \\mathrm{min}\\)\n\\item[(b)] \\(C\\) is differentiable \\(\\Rightarrow C\\) is continuous (on the closed interval)\n\\[\n\\frac{C(4)-C(2)}{4-2}=\\frac{12.8-8.8}{2}=2\n\\]\nTherefore, by the Mean Value Theorem, there is at least one time \\(t, 2<t<4\\), for which \\(C^{\\prime}(t)=2\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\frac{1}{6} \\int_{0}^{6} C(t) d t & \\approx \\frac{1}{6}[2 \\cdot C(1)+2 \\cdot C(3)+2 \\cdot C(5)] \\\\\n& =\\frac{1}{6}(2 \\cdot 5.3+2 \\cdot 11.2+2 \\cdot 13.8) \\\\\n& =\\frac{1}{6}(60.6)=10.1 \\text { ounces }\n\\end{aligned}\n\\]\n\\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\) is the average amount of coffee in the cup, in ounces, over the time interval \\(0 \\leq t \\leq 6\\) minutes.\n\\item[(d)]\n\\[\n\\begin{aligned}\n& B^{\\prime}(t)=-16(-0.4) e^{-0.4 t}=6.4 e^{-0.4 t} \\\\\n& B^{\\prime}(5)=6.4 e^{-0.4(5)}=\\frac{6.4}{e^{2}} \\text { ounces } / \\mathrm{min}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : approximation } \\\\ 1 \\text { : units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{C(4)-C(2)}{4-2} \\\\ 1: \\text { conclusion, using MVT }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { midpoint sum } \\\\ 1: \\text { approximation } \\\\ 1: \\text { interpretation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: B^{\\prime}(t) \\\\ 1: B^{\\prime}(5)\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          52,
+          568,
+          464
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "table",
+        "rect": [
+          169.344,
+          170.208,
+          441.792,
+          225.504
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          237.88799999999998,
+          556.4159999999999,
+          250.272
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          64.512,
+          250.272,
+          551.232,
+          263.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          65.952,
+          264.67199999999997,
+          311.616,
+          277.632
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          65.952,
+          286.56,
+          538.2719999999999,
+          299.52
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          83.52,
+          302.4,
+          198.14399999999998,
+          313.344
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          321.11999999999995,
+          395.99999999999994,
+          334.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          65.952,
+          342.71999999999997,
+          560.448,
+          355.104
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          356.544,
+          537.9839999999999,
+          380.736
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          83.52,
+          382.464,
+          124.704,
+          395.424
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          65.088,
+          402.62399999999997,
+          556.992,
+          418.176
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 52,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          419.616,
+          392.256,
+          432.57599999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2013-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2013-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2015-frq-02",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "At time $t >= 0$, a particle moving along a curve in the $x y$-plane has position $(x(t)\\, y(t))$ with velocity vector $v(t)= lr((cos lr((t^(2)))\\, e^(0.5 t)))$. At $t = 1$, the particle is at the point $(3 \\,5)$.\n\n(a) Find the $x$-coordinate of the position of the particle at time $t = 2$.\n\n(b) For $0 < t < 1$, there is a point on the curve at which the line tangent to the curve has a slope of 2. At what time is the object at that point?\n\n(c) Find the time at which the speed of the particle is 3.\n\n(d) Find the total distance traveled by the particle from time $t = 0$ to time $t = 1$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          65,
+          568,
+          354
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "52f8c305c3eddb07adebbf334f29f3a7140044007b7d7a8c75065cdb5f3ac41b",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ]
+}

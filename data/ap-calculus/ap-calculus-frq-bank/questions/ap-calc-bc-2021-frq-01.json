@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$r$ (centimeters)], [0], [1], [2], [2.5], [4], table.hline(stroke: .5pt), [$f(r)$ (milligrams per square centimeter)], [1], [2], [6], [10], [18], table.hline(stroke: .5pt));\n\nThe density of a bacteria population in a circular petri dish at a distance $r$ centimeters from the center of the dish is given by an increasing, differentiable function $f$, where $f(r)$ is measured in milligrams per square centimeter. Values of $f(r)$ for selected values of $r$ are given in the table above.\n\n(a) Use the data in the table to estimate $f'(2.25)$. Using correct units, interpret the meaning of your answer in the context of this problem.\n\n(b) The total mass, in milligrams, of bacteria in the petri dish is given by the integral expression $2 pi integral_(0)^(4) r f(r) d r$. Approximate the value of $2 pi integral_(0)^(4) r f(r) d r$ using a right Riemann sum with the four subintervals indicated by the data in the table.\n\n(c) Is the approximation found in part (b) an overestimate or underestimate of the total mass of bacteria in the petri dish? Explain your reasoning.\n\n(d) The density of bacteria in the petri dish, for $1 <= r <= 4$, is modeled by the function $g$ defined by $g(r)= 2 - 16(cos(1.57 sqrt(r)))^(3)$. For what value of $k \\, 1 < k < 4$, is $g(k)$ equal to the average value of $g(r)$ on the interval $1 <= r <= 4$ ?",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2021-frq-01",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-1",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2021",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2004-frq-05",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A population is modeled by a function $P$ that satisfies the logistic differential equation $ frac(d P,d t)= frac(P,5)lr((1 - frac(P,12))) . $\n\n(a) If $P(0)= 3$, what is $lim_(t -> oo) P(t)$ ?\n\nIf $P(0)= 20$, what is $lim_(t -> oo) P(t)$ ?\n\n(b) If $P(0)= 3$, for what value of $P$ is the population growing the fastest?\n\n(c) A different population is modeled by a function $Y$ that satisfies the separable differential equation\n\n$ frac(d Y,d t)= frac(Y,5)lr((1 - frac(t,12))) $\n\nFind $Y(t)$ if $Y(0)= 3$.\n\n(d) For the function $Y$ found in part (c), what is $lim_(t -> oo) Y(t)$ ?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          348,
+          572,
+          607
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "017e9a370dbed84b22e57082f9cc98b27e2189855fed5e2f5c133342d087bf75",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ]
+}

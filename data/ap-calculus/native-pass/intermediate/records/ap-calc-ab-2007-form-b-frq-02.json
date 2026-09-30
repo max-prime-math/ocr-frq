@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-form-b-frq-02",
+  "course": "AB",
+  "year": 2007,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007-FORM-B.pdf",
+      "sha256": "9c053de89559fdff9dc3d2c68d4d0e6a291eb32bae83bc301793b6656c9a0256",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007-FORM-B.pdf",
+      "sha256": "262d617d708fc64aa571d2998feeb3ee8ba3af03c369c8fccd0f7a9f72c33290"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2007-form-b-frq-02-diagram-01.png}\nA particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at time \\(t \\geq 0\\) is given by \\(v(t)=\\sin \\left(t^{2}\\right)\\). The graph of \\(v\\)\nis shown above for \\(0 \\leq t \\leq \\sqrt{5 \\pi}\\). The position of the particle at time \\(t\\) is \\(x(t)\\) and its position at time \\(t=0\\) is\n\\(x(0)=5\\).\n(a) Find the acceleration of the particle at time \\(t=3\\).\n(b) Find the total distance traveled by the particle from time \\(t=0\\) to \\(t=3\\).\n(c) Find the position of the particle at time \\(t=3\\).\n(d) For \\(0 \\leq t \\leq \\sqrt{5 \\pi}\\), find the time \\(t\\) at which the particle is farthest to the right. Explain your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2007-form-b-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2007-form-b-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        173.25599670410156,
+        64.39199829101562,
+        438.45599365234375,
+        234.26400756835938
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nA particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at time \\(t \\geq 0\\) is given by \\(v(t)=\\sin \\left(t^{2}\\right)\\). The graph of \\(v\\) is shown above for \\(0 \\leq t \\leq \\sqrt{5 \\pi}\\). The position of the particle at time \\(t\\) is \\(x(t)\\) and its position at time \\(t=0\\) is \\(x(0)=5\\).\n\\begin{itemize}\n\\item[(a)] Find the acceleration of the particle at time \\(t=3\\).\n\\item[(b)] Find the total distance traveled by the particle from time \\(t=0\\) to \\(t=3\\).\n\\item[(c)] Find the position of the particle at time \\(t=3\\).\n\\item[(d)] For \\(0 \\leq t \\leq \\sqrt{5 \\pi}\\), find the time \\(t\\) at which the particle is farthest to the right. Explain your answer.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/d49ef5e9-b210-4bb1-8b4e-1b74d8f0fdb4-1.jpg?height=496&width=784&top_left_y=372&top_left_x=1162)\n\\begin{itemize}\n\\item[(a)] \\(a(3)=v^{\\prime}(3)=6 \\cos 9=-5.466\\) or -5.467\n\\item[(b)] Distance \\(=\\int_{0}^{3}|v(t)| d t=1.702\\)\nOR\nFor \\(0<t<3, v(t)=0\\) when \\(t=\\sqrt{\\pi}=1.77245\\) and\n\\[\n\\begin{aligned}\n& t=\\sqrt{2 \\pi}=2.50663 \\\\\n& x(0)=5\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& x(\\sqrt{\\pi})=5+\\int_{0}^{\\sqrt{\\pi}} v(t) d t=5.89483 \\\\\n& x(\\sqrt{2 \\pi})=5+\\int_{0}^{\\sqrt{2 \\pi}} v(t) d t=5.43041 \\\\\n& x(3)=5+\\int_{0}^{3} v(t) d t=5.77356 \\\\\n& |x(\\sqrt{\\pi})-x(0)|+|x(\\sqrt{2 \\pi})-x(\\sqrt{\\pi})|+|x(3)-x(\\sqrt{2 \\pi})|=1.702\n\\end{aligned}\n\\]\n\\item[(c)] \\(x(3)=5+\\int_{0}^{3} v(t) d t=5.773\\) or 5.774\n\\item[(d)] The particle's rightmost position occurs at time \\(t=\\sqrt{\\pi}=1.772\\).\nThe particle changes from moving right to moving left at those times \\(t\\) for which \\(v(t)=0\\) with \\(v(t)\\) changing from positive to negative, namely at \\(t=\\sqrt{\\pi}, \\sqrt{3 \\pi}, \\sqrt{5 \\pi}(t=1.772,3.070,3.963)\\).\nUsing \\(x(T)=5+\\int_{0}^{T} v(t) d t\\), the particle's positions at the times it changes from rightward to leftward movement are:\n\\[\n\\begin{array}{rcccc}\nT: & 0 & \\sqrt{\\pi} & \\sqrt{3 \\pi} & \\sqrt{5 \\pi} \\\\\nx(T): & 5 & 5.895 & 5.788 & 5.752\n\\end{array}\n\\]\nThe particle is farthest to the right when \\(T=\\sqrt{\\pi}\\).\n\\item[1] : a(3)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { setup } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}2\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { uses } x(0)=5 \\\\ 1: \\text { answer }\\end{array}\\right.\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { sets } v(t)=0 \\\\ 1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          475
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          176.256,
+          67.392,
+          435.45599999999996,
+          231.26399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          241.344,
+          562.4639999999999,
+          261.216
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          263.52,
+          555.5519999999999,
+          278.496
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.664,
+          280.79999999999995,
+          109.728,
+          294.33599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          302.688,
+          304.416,
+          315.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          321.69599999999997,
+          404.06399999999996,
+          334.08
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          340.416,
+          286.56,
+          353.376
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          360.0,
+          521.856,
+          374.976
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

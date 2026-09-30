@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2001-frq-03",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2001-frq-03-diagram-01.jpg\", width: 65%)\n\nA car is traveling on a straight road with velocity $55 upright(f t) \\/ upright(s e c)$ at time $t = 0$. For $0 <= t <= 18$ seconds, the car's acceleration $a(t)$, in $upright(f t) \\/ upright(s e c)^(2)$, is the piecewise linear function defined by the graph above.\n\n(a) Is the velocity of the car increasing at $t = 2$ seconds? Why or why not?\n\n(b) At what time in the interval $0 <= t <= 18$, other than $t = 0$, is the velocity of the car $55 upright(f t) \\/ upright(s e c)$ ? Why?\n\n(c) On the time interval $0 <= t <= 18$, what is the car's absolute maximum velocity, in $upright(f t) \\/ upright(s e c)$, and at what time does it occur? Justify your answer.\n\n(d) At what times in the interval $0 <= t <= 18$, if any, is the car's velocity equal to zero? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2001-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2001-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2001_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          68,
+          572,
+          510
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "26fcc8054fb33838a18c1b1ec87636c1f9d29fb758970cb8d85ed5a7a054d5fa",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ]
+}

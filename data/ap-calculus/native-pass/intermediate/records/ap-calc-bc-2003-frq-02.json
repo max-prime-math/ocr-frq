@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-frq-02",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2003-frq-02-diagram-01.jpg}\n\\end{center}\nA particle starts at point $A$ on the positive $x$-axis at time $t=0$ and travels along the curve from $A$ to $B$ to $C$ to $D$, as shown above. The coordinates of the particle's position $(x(t), y(t))$ are differentiable functions of $t$, where $x^{\\prime}(t)=\\frac{d x}{d t}=-9 \\cos \\left(\\frac{\\pi t}{6}\\right) \\sin \\left(\\frac{\\pi \\sqrt{t+1}}{2}\\right)$ and $y^{\\prime}(t)=\\frac{d y}{d t}$ is not explicitly given. At time $t=9$, the particle reaches its final position at point $D$ on the positive $x$-axis.\\\\\n(a) At point $C$, is $\\frac{d y}{d t}$ positive? At point $C$, is $\\frac{d x}{d t}$ positive? Give a reason for each answer.\\\\\n(b) The slope of the curve is undefined at point $B$. At what time $t$ is the particle at point $B$ ?\\\\\n(c) The line tangent to the curve at the point $(x(8), y(8))$ has equation $y=\\frac{5}{9} x-2$. Find the velocity vector and the speed of the particle at this point.\\\\\n(d) How far apart are points $A$ and $D$, the initial and final positions, respectively, of the particle?\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\nA particle starts at point \\(A\\) on the positive \\(x\\)-axis at time \\(t=0\\) and travels along the curve from \\(A\\) to \\(B\\) to \\(C\\) to \\(D\\), as shown above. The coordinates of the particle's position \\((x(t), y(t))\\) are differentiable functions of \\(t\\), where \\(x^{\\prime}(t)=\\frac{d x}{d t}=-9 \\cos \\left(\\frac{\\pi t}{6}\\right) \\sin \\left(\\frac{\\pi \\sqrt{t+1}}{2}\\right)\\) and \\(y^{\\prime}(t)=\\frac{d y}{d t}\\) is not explicitly given.\n![](https://cdn.mathpix.com/cropped/e0ea65ec-be55-41d2-8b87-e7d47de58351-1.jpg?height=236&width=460&top_left_y=382&top_left_x=1525)\nAt time \\(t=9\\), the particle reaches its final position at point \\(D\\) on the positive \\(x\\)-axis.\n\\begin{itemize}\n\\item[(a)] At point \\(C\\), is \\(\\frac{d y}{d t}\\) positive? At point \\(C\\), is \\(\\frac{d x}{d t}\\) positive? Give a reason for each answer.\n\\item[(b)] The slope of the curve is undefined at point \\(B\\). At what time \\(t\\) is the particle at point \\(B\\) ?\n\\item[(c)] The line tangent to the curve at the point \\((x(8), y(8))\\) has equation \\(y=\\frac{5}{9} x-2\\). Find the velocity vector and the speed of the particle at this point.\n\\item[(d)] How far apart are points \\(A\\) and \\(D\\), the initial and final positions, respectively, of the particle?\n\\item[(a)] At point \\(C, \\frac{d y}{d t}\\) is not positive because \\(y(t)\\) is decreasing along the arc \\(B D\\) as \\(t\\) increases. At point \\(C, \\frac{d x}{d t}\\) is not positive because \\(x(t)\\) is decreasing along the arc \\(B D\\) as \\(t\\) increases.\n\\end{itemize}\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\frac{d y}{d t} \\text { not positive with reason } \\\\\n1: \\frac{d x}{d t} \\text { not positive with reason }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] \\(\\frac{d x}{d t}=0 ; \\cos \\left(\\frac{\\pi t}{6}\\right)=0\\) or \\(\\sin \\left(\\frac{\\pi \\sqrt{t+1}}{2}\\right)=0\\) \\(\\frac{\\pi t}{6}=\\frac{\\pi}{2}\\) or \\(\\frac{\\pi \\sqrt{t+1}}{2}=\\pi ; t=3\\) for both. Particle is at point \\(B\\) at \\(t=3\\).\n\\end{itemize}\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { sets } \\frac{d x}{d t}=0 \\\\\n1: t=3\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)] \\(x^{\\prime}(8)=-9 \\cos \\left(\\frac{4 \\pi}{3}\\right) \\sin \\left(\\frac{3 \\pi}{2}\\right)=-\\frac{9}{2}\\) \\(\\frac{y^{\\prime}(8)}{x^{\\prime}(8)}=\\frac{d y}{d x}=\\frac{5}{9}\\) \\(y^{\\prime}(8)=\\frac{5}{9} x^{\\prime}(8)=-\\frac{5}{2}\\) The velocity vector is <-4.5,-2.5 >. Speed \\(=\\sqrt{4.5^{2}+2.5^{2}}=5.147\\) or 5.148\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: x^{\\prime}(8) \\\\\n1: y^{\\prime}(8) \\\\\n1: \\text { speed }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(d)]\n\\[\n\\begin{aligned}\nx(9)-x(0) & =\\int_{0}^{9} x^{\\prime}(t) d t \\\\\n& =-39.255\n\\end{aligned}\n\\]\nThe initial and final positions are 39.255 apart.\n\\end{itemize}\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { integral } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          69,
+          572,
+          405
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,230 @@
+{
+  "id": "ap-calc-ab-2010-frq-02",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (hours)], [0], [2], [5], [7], [8], table.hline(stroke: .5pt), [$E(t)$ (hundreds of entries)], [0], [4], [13], [21], [23], table.hline(stroke: .5pt));\n\nA zoo sponsored a one-day contest to name a new baby elephant. Zoo visitors deposited entries in a special box between noon $(t = 0)$ and 8 P.M. $(t = 8)$. The number of entries in the box $t$ hours after noon is modeled by a differentiable function $E$ for $0 <= t <= 8$. Values of $E(t)$, in hundreds of entries, at various times $t$ are shown in the table above.\n\n(a) Use the data in the table to approximate the rate, in hundreds of entries per hour, at which entries were being deposited at time $t = 6$. Show the computations that lead to your answer.\n\n(b) Use a trapezoidal sum with the four subintervals given by the table to approximate the value of $frac(1,8) integral_(0)^(8) E(t) d t$. Using correct units, explain the meaning of $frac(1,8) integral_(0)^(8) E(t) d t$ in terms of the number of entries.\n\n(c) At 8 P.M., volunteers began to process the entries. They processed the entries at a rate modeled by the function $P$, where $P(t)= t^(3)- 30 t^(2)+ 298 t - 976$ hundreds of entries per hour for $8 <= t <= 12$. According to the model, how many entries had not yet been processed by midnight $(t = 12)$ ?\n\n(d) According to the model from part (c), at what time were the entries being processed most quickly? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          75,
+          572,
+          464
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          183.16799999999998,
+          80.064,
+          428.832,
+          156.384
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          168.19199999999998,
+          557.568,
+          181.152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          181.152,
+          557.28,
+          195.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          64.512,
+          196.70399999999998,
+          560.448,
+          211.10399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          212.54399999999998,
+          135.072,
+          224.35199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          65.088,
+          230.688,
+          563.04,
+          243.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          243.64799999999997,
+          408.96,
+          256.032
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          65.088,
+          263.808,
+          561.024,
+          288.0
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          292.032,
+          482.11199999999997,
+          316.224
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          65.088,
+          323.712,
+          531.6479999999999,
+          336.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          338.11199999999997,
+          554.976,
+          353.08799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          355.67999999999995,
+          448.128,
+          369.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          65.088,
+          377.28,
+          550.656,
+          390.23999999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          390.816,
+          141.408,
+          402.62399999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "01009cb2a6da80a7bff9e0e89b689b161407e0b7889ac3d7b169bb1667540aed",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ap-calc-bc-2000-frq-06",
+  "course": "BC",
+  "year": 2000,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2000.pdf",
+      "sha256": "3d8ea931cf7c92587ae80781d46c8ee5c16eeef6beff6d2dd47bc91046d67056",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2000.pdf",
+      "sha256": "4b2c25346fe8235b27cb420a0479422d9c8c848ebbfe1514d44c90aed4325bca"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation given by $frac(d y,d x)= x(y - 1)^(2)$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the eleven points indicated.\n\n#image(\"/imgs/ap-calc-bc-2000-frq-06-diagram-01.jpg\", width: 65%)\n\n(b) Use the slope field for the given differential equation to explain why a solution could not have the graph shown below.\n\n#image(\"/imgs/ap-calc-bc-2000-frq-06-diagram-02.jpg\", width: 65%)\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(0)= - 1$.\n\n(d) Find the range of the solution found in part (c).",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2000-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2000-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2000_fig3.jpg"
+    },
+    {
+      "name": "ap-calc-bc-2000-frq-06-diagram-02.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2000-frq-06-diagram-02.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2000_fig4.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          53,
+          572,
+          619
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "20c83d16bf1bb22eb6b8ce3f9076cff554a870ce1d8acb67ac43d719c3ccf7ad",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2000.zip"
+    }
+  ]
+}

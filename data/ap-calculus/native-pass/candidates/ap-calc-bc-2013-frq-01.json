@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2013-frq-01",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "On a certain workday, the rate, in tons per hour, at which unprocessed gravel arrives at a gravel processing plant is modeled by $G(t)= 90 + 45 cos lr((frac(t^(2),18)))$, where $t$ is measured in hours and $0 <= t <= 8$. At the beginning of the workday $(t = 0)$, the plant has 500 tons of unprocessed gravel. During the hours of operation, $0 <= t <= 8$, the plant processes gravel at a constant rate of 100 tons per hour.\n\n(a) Find $G'(5)$. Using correct units, interpret your answer in the context of the problem.\n\n(b) Find the total amount of unprocessed gravel that arrives at the plant during the hours of operation on this workday.\n\n(c) Is the amount of unprocessed gravel at the plant increasing or decreasing at time $t = 5$ hours? Show the work that leads to your answer.\n\n(d) What is the maximum amount of unprocessed gravel at the plant during the hours of operation on this workday? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          568,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fb31d375056c2f86f919a896359edbd66ca62e22cac7e10d5384a8b323e697b4",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ]
+}

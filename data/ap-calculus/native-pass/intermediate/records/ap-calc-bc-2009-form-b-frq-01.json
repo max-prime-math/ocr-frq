@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-01",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg}\n\\end{center}\nA baker is creating a birthday cake. The base of the cake is the region $R$ in the first quadrant under the graph of $y=f(x)$ for $0 \\leq x \\leq 30$, where $f(x)=20 \\sin \\left(\\frac{\\pi x}{30}\\right)$. Both $x$ and $y$ are measured in centimeters. The region $R$ is shown in the figure above. The derivative of $f$ is $f^{\\prime}(x)=\\frac{2 \\pi}{3} \\cos \\left(\\frac{\\pi x}{30}\\right)$.\\\\\n(a) The region $R$ is cut out of a 30 -centimeter-by-20-centimeter rectangular sheet of cardboard, and the remaining cardboard is discarded. Find the area of the discarded cardboard.\\\\\n(b) The cake is a solid with base $R$. Cross sections of the cake perpendicular to the $x$-axis are semicircles. If the baker uses 0.05 gram of unsweetened chocolate for each cubic centimeter of cake, how many grams of unsweetened chocolate will be in the cake?\\\\\n(c) Find the perimeter of the base of the cake.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nA baker is creating a birthday cake. The base of the cake is the region \\(R\\) in the first quadrant under the graph of \\(y=f(x)\\) for \\(0 \\leq x \\leq 30\\), where \\(f(x)=20 \\sin \\left(\\frac{\\pi x}{30}\\right)\\). Both \\(x\\) and \\(y\\) are measured in centimeters. The region \\(R\\) is shown in the figure above. The derivative of \\(f\\) is \\(f^{\\prime}(x)=\\frac{2 \\pi}{3} \\cos \\left(\\frac{\\pi x}{30}\\right)\\).\n\\begin{itemize}\n\\item[(a)] The region \\(R\\) is cut out of a 30-centimeter-by-20centimeter rectangular sheet of cardboard, and the remaining cardboard is discarded. Find the area of the discarded cardboard.\n\\item[(b)] The cake is a solid with base \\(R\\). Cross sections of the cake perpendicular to the \\(x\\)-axis are semicircles. If the baker uses 0.05 gram of unsweetened chocolate for each cubic centimeter of cake, how many grams of unsweetened chocolate will be in the cake?\n\\item[(c)] Find the perimeter of the base of the cake.\n\\item[(a)] Area \\(=30 \\cdot 20-\\int_{0}^{30} f(x) d x=218.028 \\mathrm{~cm}^{2}\\)\n\\item[(b)] Volume \\(=\\int_{0}^{30} \\frac{\\pi}{2}\\left(\\frac{f(x)}{2}\\right)^{2} d x=2356.194 \\mathrm{~cm}^{3}\\)\n\\end{itemize}\n\nTherefore, the baker needs \\(2356.194 \\times 0.05=117.809\\) or 117.810 grams of chocolate.\n\\begin{itemize}\n\\item[(c)] Perimeter \\(=30+\\int_{0}^{30} \\sqrt{1+\\left(f^{\\prime}(x)\\right)^{2}} d x=81.803\\) or 81.804 cm\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}2 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}2 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          532
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

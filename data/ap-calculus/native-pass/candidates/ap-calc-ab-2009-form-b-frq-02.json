@@ -1,0 +1,219 @@
+{
+  "id": "ap-calc-ab-2009-form-b-frq-02",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A storm washed away sand from a beach, causing the edge of the water to get closer to a nearby road. The rate at which the distance between the road and the edge of the water was changing during the storm is modeled by $f(t)= sqrt(t)+ cos t - 3$ meters per hour, $t$ hours after the storm began. The edge of the water was 35 meters from the road when the storm began, and the storm lasted 5 hours. The derivative of $f(t)$ is $f'(t)= frac(1,2 sqrt(t))- sin t$.\n\n(a) What was the distance between the road and the edge of the water at the end of the storm?\n\n(b) Using correct units, interpret the value $f'(4)= 1.007$ in terms of the distance between the road and the edge of the water.\n\n(c) At what time during the 5 hours of the storm was the distance between the road and the edge of the water decreasing most rapidly? Justify your answer.\n\n(d) After the storm, a machine pumped sand back onto the beach so that the distance between the road and the edge of the water was growing at a rate of $g(p)$ meters per day, where $p$ is the number of days since pumping began. Write an equation involving an integral expression whose solution would give the number of days that sand must be pumped to restore the original distance between the road and the edge of the water.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          331
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          69.408,
+          553.2479999999999,
+          81.79199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          81.79199999999999,
+          552.9599999999999,
+          94.752
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.664,
+          94.17599999999999,
+          563.04,
+          109.15199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          112.032,
+          539.424,
+          137.37599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          144.28799999999998,
+          481.53599999999994,
+          157.248
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          163.87199999999999,
+          564.4799999999999,
+          177.408
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          179.42399999999998,
+          139.968,
+          190.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          197.27999999999997,
+          548.352,
+          209.664
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          209.664,
+          286.56,
+          222.04799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          227.808,
+          553.824,
+          240.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          240.76799999999997,
+          531.6479999999999,
+          254.30399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          256.032,
+          555.5519999999999,
+          268.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          268.416,
+          564.192,
+          280.79999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3be09e34556df2dd30a2f920852902831067dfc3b0866c977c785007b495f469",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

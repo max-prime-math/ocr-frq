@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-frq-05",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{y-1}{x^{2}}\\), where \\(x \\neq 0\\).\n(a) On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n(Note: Use the axes provided in the exam booklet.)\n\\includegraphics{ap-calc-ab-2008-frq-05-diagram-01.png}\n(b) Find the particular solution \\(y=f(x)\\) to the differential equation with the initial condition \\(f(2)=0\\).\n(c) For the particular solution \\(y=f(x)\\) described in part (b), find \\(\\lim _{x \\rightarrow \\infty} f(x)\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2008-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2008-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        225.9600067138672,
+        148.48800659179688,
+        386.6159973144531,
+        271.4159851074219
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{y-1}{x^{2}}\\), where \\(x \\neq 0\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n(Note: Use the axes provided in the exam booklet.)\n\\item[(b)] Find the particular solution \\(y=f(x)\\) to the differential equation with the initial condition \\(f(2)=0\\).\n\\item[(c)] For the particular solution \\(y=f(x)\\) described in part (b), find \\(\\lim _{x \\rightarrow \\infty} f(x)\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/9d72369d-8f1d-482d-b417-6aff56485376-1.jpg?height=408&width=548&top_left_y=1001&top_left_x=451)\n\\item[(b)] \\(\\frac{1}{y-1} d y=\\frac{1}{x^{2}} d x\\)\n\\[\n\\begin{aligned}\n& \\ln |y-1|=-\\frac{1}{x}+C \\\\\n& |y-1|=e^{-\\frac{1}{x}+C} \\\\\n& |y-1|=e^{C} e^{-\\frac{1}{x}} \\\\\n& y-1=k e^{-\\frac{1}{x}}, \\text { where } k= \\pm e^{C} \\\\\n& -1=k e^{-\\frac{1}{2}} \\\\\n& k=-e^{\\frac{1}{2}} \\\\\n& f(x)=1-e^{\\left(\\frac{1}{2}-\\frac{1}{x}\\right)}, x>0\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\lim _{x \\rightarrow \\infty} 1-e^{\\left(\\frac{1}{2}-\\frac{1}{x}\\right)}=1-\\sqrt{e}\\)\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { all other slopes }\\end{array}\\right.\\)\n\\(6:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 2: \\text { antidifferentiates } \\\\ 1: \\text { includes constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 3 / 6\\) [1-2-0-0-0] if no constant of integration\nNote: 0/6 if no separation of variables\n\n1 : limit",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          549,
+          338
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          70.55999999999999,
+          338.4,
+          97.91999999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          105.11999999999999,
+          544.608,
+          118.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          123.83999999999999,
+          323.13599999999997,
+          136.79999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "chart",
+        "rect": [
+          228.95999999999998,
+          151.488,
+          383.616,
+          268.416
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          292.032,
+          529.0559999999999,
+          305.568
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          313.63199999999995,
+          410.97599999999994,
+          332.928
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

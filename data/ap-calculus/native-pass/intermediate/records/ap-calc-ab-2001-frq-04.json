@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2001-frq-04",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "rawPrompt": "Let \\(h\\) be a function defined for all \\(x \\neq 0\\) such that \\(h(4)=-3\\) and the derivative of \\(h\\) is given by\n\\(h^{\\prime}(x)=\\frac{x^{2}-2}{x}\\) for all \\(x \\neq 0\\).\n(a) Find all values of \\(x\\) for which the graph of \\(h\\) has a horizontal tangent, and determine whether \\(h\\) has a local\nmaximum, a local minimum, or neither at each of these values. Justify your answers.\n(b) On what intervals, if any, is the graph of \\(h\\) concave up? Justify your answer.\n(c) Write an equation for the line tangent to the graph of \\(h\\) at \\(x=4\\).\n(d) Does the line tangent to the graph of \\(h\\) at \\(x=4\\) lie above or below the graph of \\(h\\) for \\(x>4\\) ? Why?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nLet \\(h\\) be a function defined for all \\(x \\neq 0\\) such that \\(h(4)=-3\\) and the derivative of \\(h\\) is given by \\(h^{\\prime}(x)=\\frac{x^{2}-2}{x}\\) for all \\(x \\neq 0\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\) for which the graph of \\(h\\) has a horizontal tangent, and determine whether \\(h\\) has a local maximum, a local minimum, or neither at each of these values. Justify your answers.\n\\item[(b)] On what intervals, if any, is the graph of \\(h\\) concave up? Justify your answer.\n\\item[(c)] Write an equation for the line tangent to the graph of \\(h\\) at \\(x=4\\).\n\\item[(d)] Does the line tangent to the graph of \\(h\\) at \\(x=4\\) lie above or below the graph of \\(h\\) for \\(x>4\\) ? Why?\n\\item[(a)] \\(h^{\\prime}(x)=0\\) at \\(x= \\pm \\sqrt{2}\\)\n![](https://cdn.mathpix.com/cropped/e1e7e113-5ad3-4736-a3ad-f423181ac139-1.jpg?height=146&width=645&top_left_y=1255&top_left_x=352)\nLocal minima at \\(x=-\\sqrt{2}\\) and at \\(x=\\sqrt{2}\\)\n\\item[(b)] \\(h^{\\prime \\prime}(x)=1+\\frac{2}{x^{2}}>0\\) for all \\(x \\neq 0\\). Therefore, the graph of \\(h\\) is concave up for all \\(x \\neq 0\\).\n\\item[(c)] \\(h^{\\prime}(4)=\\frac{16-2}{4}=\\frac{7}{2}\\)\n\\[\ny+3=\\frac{7}{2}(x-4)\n\\]\n\\end{itemize}\n\\(4:\\left\\{\\begin{aligned} 1 & : x= \\pm \\sqrt{2} \\\\ 1 & : \\text { analysis } \\\\ 2 & : \\text { conclusions } \\\\ & <-1>\\text { not dealing with } \\\\ & \\text { discontinuity at } 0\\end{aligned}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: h^{\\prime \\prime}(x) \\\\ 1: h^{\\prime \\prime}(x)>0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : tangent line equation\n\n1 : answer with reason\n\\begin{itemize}\n\\item[(d)] The tangent line is below the graph because the graph of \\(h\\) is concave up for \\(x>4\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          68,
+          572,
+          325
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          190.07999999999998,
+          500.544,
+          203.61599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.088,
+          205.344,
+          205.63199999999998,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          240.19199999999998,
+          561.312,
+          252.576
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          252.576,
+          457.91999999999996,
+          265.536
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          270.43199999999996,
+          423.936,
+          283.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          288.864,
+          372.67199999999997,
+          301.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          307.008,
+          539.712,
+          320.544
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

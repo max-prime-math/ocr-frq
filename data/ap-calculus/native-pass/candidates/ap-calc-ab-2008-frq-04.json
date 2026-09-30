@@ -1,0 +1,210 @@
+{
+  "id": "ap-calc-ab-2008-frq-04",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2008-frq-04-diagram-01.png\", width: 65%)\n\nA particle moves along the $x$-axis so that its velocity at time $t$, for $0 <= t <= 6$, is given by a differentiable function $v$ whose graph is shown above. The velocity is 0 at $t = 0 \\, t = 3$, and $t = 5$, and the graph has horizontal tangents at $t = 1$ and $t = 4$. The areas of the regions bounded by the $t$-axis and the graph of $v$ on the intervals \\[0, 3\\], \\[3, 5\\], and \\[5, 6\\] are 8, 3, and 2, respectively. At time $t = 0$, the particle is at $x = - 2$.\n\n(a) For $0 <= t <= 6$, find both the time and the position of the particle when the particle is farthest to the left. Justify your answer.\n\n(b) For how many values of $t$, where $0 <= t <= 6$, is the particle at $x = - 8$ ? Explain your reasoning.\n\n(c) On the interval $2 < t < 3$, is the speed of the particle increasing or decreasing? Give a reason for your answer.\n\n(d) During what time intervals, if any, is the acceleration of the particle negative? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2008-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2008-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        195.1439971923828,
+        167.20799255371094,
+        417.7200012207031,
+        334.7760009765625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          198.14399999999998,
+          170.208,
+          414.71999999999997,
+          331.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          342.14399999999995,
+          527.328,
+          355.104
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          356.544,
+          527.04,
+          368.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          370.08,
+          545.472,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          383.616,
+          538.2719999999999,
+          397.152
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          405.21599999999995,
+          540.8639999999999,
+          418.176
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.368,
+          418.75199999999995,
+          173.37599999999998,
+          431.712
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          436.89599999999996,
+          508.60799999999995,
+          450.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.664,
+          458.496,
+          536.544,
+          471.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          474.04799999999994,
+          118.94399999999999,
+          483.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          490.176,
+          519.264,
+          503.712
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0c3a904d2878685a8e53b80d33b7552beda58cb3c02667201f8c53e4869101a9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

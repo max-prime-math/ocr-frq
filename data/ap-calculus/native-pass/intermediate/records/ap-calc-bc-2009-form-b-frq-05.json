@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-05",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2009-form-b-frq-05-diagram-01.png}\n\nLet $f$ be a twice-differentiable function defined on the interval $-1.2<x<3.2$ with $f(1)=2$. The graph of $f^{\\prime}$, the derivative of $f$, is shown above. The graph of $f^{\\prime}$ crosses the $x$-axis at $x=-1$ and $x=3$ and has a horizontal tangent at $x=2$. Let $g$ be the function given by $g(x)=e^{f(x)}$.\\\\\n(a) Write an equation for the line tangent to the graph of $g$ at $x=1$.\\\\\n(b) For $-1.2<x<3.2$, find all values of $x$ at which $g$ has a local maximum. Justify your answer.\\\\\n(c) The second derivative of $g$ is $g^{\\prime \\prime}(x)=e^{f(x)}\\left[\\left(f^{\\prime}(x)\\right)^{2}+f^{\\prime \\prime}(x)\\right]$. Is $g^{\\prime \\prime}(-1)$ positive, negative, or zero? Justify your answer.\\\\\n(d) Find the average rate of change of $g^{\\prime}$, the derivative of $g$, over the interval $[1,3]$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.0,
+        68.0,
+        407.0,
+        201.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\nLet \\(f\\) be a twice-differentiable function defined on the interval \\(-1.2<x<3.2\\) with \\(f(1)=2\\). The graph of \\(f^{\\prime}\\), the derivative of \\(f\\), is shown above. The graph of \\(f^{\\prime}\\) crosses the \\(x\\)-axis at \\(x=-1\\) and \\(x=3\\) and has a horizontal tangent at \\(x=2\\). Let \\(g\\) be the function given by \\(g(x)=e^{f(x)}\\).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(g\\) at \\(x=1\\).\n\\item[(b)] For \\(-1.2<x<3.2\\), find all values of \\(x\\) at which \\(g\\) has a local maximum. Justify your answer.\n\\item[(c)] The second derivative of \\(g\\) is \\(g^{\\prime \\prime}(x)=e^{f(x)}\\left[\\left(f^{\\prime}(x)\\right)^{2}+f^{\\prime \\prime}(x)\\right]\\). Is \\(g^{\\prime \\prime}(-1)\\) positive, negative, or zero? Justify your answer.\n\\item[(d)] Find the average rate of change of \\(g^{\\prime}\\), the derivative of \\(g\\), over the interval \\([1,3]\\).\n\\item[(a)] \\(g(1)=e^{f(1)}=e^{2}\\)\n\\(g^{\\prime}(x)=e^{f(x)} f^{\\prime}(x), \\quad g^{\\prime}(1)=e^{f(1)} f^{\\prime}(1)=-4 e^{2}\\)\nThe tangent line is given by \\(y=e^{2}-4 e^{2}(x-1)\\).\n\\item[(b)] \\(g^{\\prime}(x)=e^{f(x)} f^{\\prime}(x)\\)\n\\(e^{f(x)}>0\\) for all \\(x\\)\nSo, \\(g^{\\prime}\\) changes from positive to negative only when \\(f^{\\prime}\\) changes from positive to negative. This occurs at \\(x=-1\\) only. Thus, \\(g\\) has a local maximum at \\(x=-1\\).\n\\item[(c)] \\(g^{\\prime \\prime}(-1)=e^{f(-1)}\\left[\\left(f^{\\prime}(-1)\\right)^{2}+f^{\\prime \\prime}(-1)\\right]\\)\n\\(e^{f(-1)}>0\\) and \\(f^{\\prime}(-1)=0\\)\nSince \\(f^{\\prime}\\) is decreasing on a neighborhood of -1 ,\n\\(f^{\\prime \\prime}(-1)<0\\). Therefore, \\(g^{\\prime \\prime}(-1)<0\\).\n\\item[(d)] \\(\\frac{g^{\\prime}(3)-g^{\\prime}(1)}{3-1}=\\frac{e^{f(3)} f^{\\prime}(3)-e^{f(1)} f^{\\prime}(1)}{2}=2 e^{2}\\)\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: g^{\\prime}(x) \\\\ 1: g(1) \\text { and } g^{\\prime}(1) \\\\ 1: \\text { tangent line equation }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { difference quotient } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          415
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.0,
+        68.0,
+        407.0,
+        201.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2009-form-b-frq-04"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

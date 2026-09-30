@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "For a function $f$, the Taylor series about $x=5$ converges to $f(x)$ in its interval of convergence. For $n>=1$,\n$f^(n)(5)=(-1)^n n!/(2^n(n+2))$, and $f(5)=1/2$.\n\n(a) Write the third-degree Taylor polynomial about $x=5$.\n\n(b) Find the radius of convergence.\n\n(c) Show that the sixth-degree Taylor polynomial approximates $f(6)$ with error less than $1/1000$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2000-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-13",
+    "solution": "(a)\n$P_3(x)=1/2-1/6(x-5)+1/16(x-5)^2-1/40(x-5)^3$.\n\n(b) The general Taylor coefficient is $a_n=(-1)^n/(2^n(n+2))$. The ratio test gives\n$lim_(n -> infinity) abs(a_(n+1)(x-5)/a_n)=abs(x-5)/2<1$.\nThus the radius of convergence is $2$.\n\n(c) At $x=6$, the series is alternating with decreasing terms. The alternating-series error is at most the first omitted term:\n$1/(2^7(9))=1/1152<1/1000$.",
+    "tags": [
+      "2000",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

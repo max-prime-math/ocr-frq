@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-frq-04",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis with position at time \\(t\\) given by \\(x(t)=e^{-t} \\sin t\\) for \\(0 \\leq t \\leq 2 \\pi\\).\n(a) Find the time \\(t\\) at which the particle is farthest to the left. Justify your answer.\n(b) Find the value of the constant \\(A\\) for which \\(x(t)\\) satisfies the equation \\(A x^{\\prime \\prime}(t)+x^{\\prime}(t)+x(t)=0\\)\nfor \\(0<t<2 \\pi\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nA particle moves along the \\(x\\)-axis with position at time \\(t\\) given by \\(x(t)=e^{-t} \\sin t\\) for \\(0 \\leq t \\leq 2 \\pi\\).\n\\begin{itemize}\n\\item[(a)] Find the time \\(t\\) at which the particle is farthest to the left. Justify your answer.\n\\item[(b)] Find the value of the constant \\(A\\) for which \\(x(t)\\) satisfies the equation \\(A x^{\\prime \\prime}(t)+x^{\\prime}(t)+x(t)=0\\) for \\(0<t<2 \\pi\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n& x^{\\prime}(t)=-e^{-t} \\sin t+e^{-t} \\cos t=e^{-t}(\\cos t-\\sin t) \\\\\n& x^{\\prime}(t)=0 \\text { when } \\cos t=\\sin t \\text {. Therefore, } x^{\\prime}(t)=0 \\text { on } \\\\\n& 0 \\leq t \\leq 2 \\pi \\text { for } t=\\frac{\\pi}{4} \\text { and } t=\\frac{5 \\pi}{4} .\n\\end{aligned}\n\\]\nThe candidates for the absolute minimum are at \\(t=0, \\frac{\\pi}{4}, \\frac{5 \\pi}{4}\\), and \\(2 \\pi\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & \\(x(t)\\) \\\\\n\\hline 0 & \\(e^{0} \\sin (0)=0\\) \\\\\n\\hline \\(\\frac{\\pi}{4}\\) & \\(e^{-\\frac{\\pi}{4}} \\sin \\left(\\frac{\\pi}{4}\\right)>0\\) \\\\\n\\hline \\(\\frac{5 \\pi}{4}\\) & \\(e^{-\\frac{5 \\pi}{4}} \\sin \\left(\\frac{5 \\pi}{4}\\right)<0\\) \\\\\n\\hline \\(2 \\pi\\) & \\(e^{-2 \\pi} \\sin (2 \\pi)=0\\) \\\\\n\\hline\n\\end{tabular}\nThe particle is farthest to the left when \\(t=\\frac{5 \\pi}{4}\\).\n\\end{itemize}\n\\[\n5:\\left\\{\\begin{array}{l}\n2: x^{\\prime}(t) \\\\\n1: \\text { sets } x^{\\prime}(t)=0 \\\\\n1: \\text { answer } \\\\\n1: \\text { justification }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)]\n\\[\n\\begin{aligned}\nx^{\\prime \\prime}(t) & =-e^{-t}(\\cos t-\\sin t)+e^{-t}(-\\sin t-\\cos t) \\\\\n& =-2 e^{-t} \\cos t\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& A x^{\\prime \\prime}(t)+x^{\\prime}(t)+x(t) \\\\\n& \\quad=A\\left(-2 e^{-t} \\cos t\\right)+e^{-t}(\\cos t-\\sin t)+e^{-t} \\sin t \\\\\n& \\quad=(-2 A+1) e^{-t} \\cos t \\\\\n& \\quad=0\n\\end{aligned}\n\\]\nTherefore, \\(A=\\frac{1}{2}\\).\n\\end{itemize}\n\\[\n4:\\left\\{\\begin{aligned}\n2: & x^{\\prime \\prime}(t) \\\\\n1: & \\text { substitutes } x^{\\prime \\prime}(t), x^{\\prime}(t), \\text { and } x(t) \\\\\n& \\text { into } A x^{\\prime \\prime}(t)+x^{\\prime}(t)+x(t) \\\\\n1: & \\text { answer }\n\\end{aligned}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          273
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          200.736,
+          500.544,
+          215.136
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          222.91199999999998,
+          429.984,
+          235.87199999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          242.49599999999998,
+          509.472,
+          256.32
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          258.048,
+          153.792,
+          268.99199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

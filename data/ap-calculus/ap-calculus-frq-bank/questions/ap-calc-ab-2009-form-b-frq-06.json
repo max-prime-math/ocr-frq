@@ -1,0 +1,22 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 7, align: (left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.hline(stroke: .5pt), [$t$ (seconds)], [0], [8], [20], [25], [32], [40], table.hline(stroke: .5pt), [$v(t)$ (meters per second)], [3], [5], [-10], [-8], [-4], [7], table.hline(stroke: .5pt));\n\nThe velocity of a particle moving along the $x$-axis is modeled by a differentiable function $v$, where the position $x$ is measured in meters, and time $t$ is measured in seconds. Selected values of $v(t)$ are given in the table above. The particle is at position $x = 7$ meters when $t = 0$ seconds.\n\n(a) Estimate the acceleration of the particle at $t = 36$ seconds. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) Using correct units, explain the meaning of $integral_(20)^(40) v(t) d t$ in the context of this problem. Use a trapezoidal sum with the three subintervals indicated by the data in the table to approximate $integral_(20)^(40) v(t) d t$.\n\n(c) For $0 <= t <= 40$, must the particle change direction in any of the subintervals indicated by the data in the table? If so, identify the subintervals and explain your reasoning. If not, explain why not.\n\n(d) Suppose that the acceleration of the particle is positive for $0 < t < 8$ seconds. Explain why the position of the particle at $t = 8$ seconds must be greater than $x = 30$ meters.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2009-form-b-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-2",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2009",
+      "Form B",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "Fish enter a lake at rate $E(t) = 20 + 15 sin(pi t / 6)$ and leave at rate $L(t) = 4 + 2^(0.1t^2)$, in fish per hour. Here $t$ is hours after midnight.\n\n(a) How many fish enter from $t = 0$ to $t = 5$? Give the nearest whole number.\n\n(b) Find the average number of fish leaving per hour from $t = 0$ to $t = 5$.\n\n(c) For $0 <= t <= 8$, when is the number of fish in the lake greatest? Justify.\n\n(d) Is the rate of change in the number of fish increasing or decreasing at $t = 5$? Explain.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-ab-2019-frq-01",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-3",
+    "solution": "(a)\n$ integral_0^5 E(t) dif t = 153.457690. $\nAbout $153$ fish enter.\n\n(b)\n$ frac(1, 5) integral_0^5 L(t) dif t = 6.059038. $\nThe average leaving rate is about $6.059$ fish per hour.\n\n(c) Let $N(t)$ be the number of fish. Then $N'(t) = E(t) - L(t)$. Solving $E(t) - L(t) = 0$ on $[0, 8]$ gives $t approx 6.20356$. Since $E(t) - L(t)$ is positive before this time and negative afterward, $N$ is greatest at\n$ t approx 6.204 $ hours after midnight.\n\n(d)\n$ N''(5) = E'(5) - L'(5) approx -10.7228 < 0. $\nTherefore the rate of change in the number of fish is decreasing at $t = 5$.",
+    "tags": [
+      "2019",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

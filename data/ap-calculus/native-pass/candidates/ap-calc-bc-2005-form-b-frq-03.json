@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2005-form-b-frq-03",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The Taylor series about $x = 0$ for a certain function $f$ converges to $f(x)$ for all $x$ in the interval of convergence. The $n$th derivative of $f$ at $x = 0$ is given by $ f^((n))(0)= frac((- 1)^(n + 1)(n + 1)!,5^(n)(n - 1)^(2)) \" for \" n >= 2 $\n\nThe graph of $f$ has a horizontal tangent line at $x = 0$, and $f(0)= 6$.\n\n(a) Determine whether $f$ has a relative maximum, a relative minimum, or neither at $x = 0$. Justify your answer.\n\n(b) Write the third-degree Taylor polynomial for $f$ about $x = 0$.\n\n(c) Find the radius of convergence of the Taylor series for $f$ about $x = 0$. Show the work that leads to your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          54,
+          572,
+          346
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e572bbc1db682128b09d7d0a26f9a68f7a53fd13b9f8ef136ec880cef1223de2",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ]
+}

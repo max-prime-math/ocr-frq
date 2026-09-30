@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2014-frq-03",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2014-frq-03-diagram-01.png}\nThe function \\(f\\) is defined on the closed interval [-5, 4]. The graph of \\(f\\) consists of three line segments and is\nshown in the figure above. Let \\(g\\) be the function defined by \\(g(x)=\\int_{-3}^{x} f(t) d t\\).\n(a) Find \\(g(3)\\).\n(b) On what open intervals contained in \\(-5<x<4\\) is the graph of \\(g\\) both increasing and concave down?\nGive a reason for your answer.\n(c) The function \\(h\\) is defined by \\(h(x)=\\frac{g(x)}{5 x}\\). Find \\(h^{\\prime}(3)\\).\n(d) The function \\(p\\) is defined by \\(p(x)=f\\left(x^{2}-x\\right)\\). Find the slope of the line tangent to the graph of \\(p\\) at the\npoint where \\(x=-1\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2014-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2014-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        208.67999267578125,
+        153.6719970703125,
+        403.32000732421875,
+        334.20001220703125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2014 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nThe function \\(f\\) is defined on the closed interval \\([-5,4]\\). The graph of \\(f\\) consists of three line segments and is shown in the figure above. Let \\(g\\) be the function defined by \\(g(x)=\\int_{-3}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(3)\\).\n\\item[(b)] On what open intervals contained in \\(-5<x<4\\) is the graph of \\(g\\) both increasing and concave down? Give a reason for your answer.\n\\item[(c)] The function \\(h\\) is defined by \\(h(x)=\\frac{g(x)}{5 x}\\). Find \\(h^{\\prime}(3)\\).\n\\item[(d)] The function \\(p\\) is defined by \\(p(x)=f\\left(x^{2}-x\\right)\\). Find the slope of the line tangent to the graph of \\(p\\) at the point where \\(x=-1\\).\n\\item[(a)] \\(g(3)=\\int_{-3}^{3} f(t) d t=6+4-1=9\\)\n\\item[(b)] \\(g^{\\prime}(x)=f(x)\\)\nThe graph of \\(g\\) is increasing and concave down on the intervals \\(-5<x<-3\\) and \\(0<x<2\\) because \\(g^{\\prime}=f\\) is positive and decreasing on these intervals.\n\\item[(c)] \\(h^{\\prime}(x)=\\frac{5 x g^{\\prime}(x)-g(x) 5}{(5 x)^{2}}=\\frac{5 x g^{\\prime}(x)-5 g(x)}{25 x^{2}}\\)\n\\[\n\\begin{aligned}\nh^{\\prime}(3) & =\\frac{(5)(3) g^{\\prime}(3)-5 g(3)}{25 \\cdot 3^{2}} \\\\\n& =\\frac{15(-2)-5(9)}{225}=\\frac{-75}{225}=-\\frac{1}{3}\n\\end{aligned}\n\\]\n\\item[(d)] \\(p^{\\prime}(x)=f^{\\prime}\\left(x^{2}-x\\right)(2 x-1)\\)\n\\[\np^{\\prime}(-1)=f^{\\prime}(2)(-3)=(-2)(-3)=6\n\\]\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/47eac3ae-c3bc-471e-82ec-6dbb6e7bb499-1.jpg?height=608&width=655&top_left_y=389&top_left_x=1278)\n\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: h^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: p^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          52,
+          568,
+          547
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          211.67999999999998,
+          156.672,
+          400.32,
+          331.2
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          342.71999999999997,
+          549.5039999999999,
+          356.832
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          361.44,
+          416.15999999999997,
+          385.056
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          393.40799999999996,
+          131.904,
+          406.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          415.296,
+          539.136,
+          428.256
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          428.256,
+          220.32,
+          440.64
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          446.688,
+          330.62399999999997,
+          472.60799999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.664,
+          481.248,
+          554.4,
+          499.67999999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          502.55999999999995,
+          176.256,
+          516.096
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

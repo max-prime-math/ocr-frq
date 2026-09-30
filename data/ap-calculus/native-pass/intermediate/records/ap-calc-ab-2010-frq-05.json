@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-frq-05",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2010-frq-05-diagram-01.png}\nThe function \\(g\\) is defined and differentiable on the closed interval [-7, 5] and satisfies \\(g(0)=5\\). The graph of\n\\(y=g^{\\prime}(x)\\), the derivative of \\(g\\), consists of a semicircle and three line segments, as shown in the figure above.\n(a) Find \\(g(3)\\) and \\(g(-2)\\).\n(b) Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(y=g(x)\\) on the interval \\(-7<x<5\\).\nExplain your reasoning.\n(c) The function \\(h\\) is defined by \\(h(x)=g(x)-\\frac{1}{2} x^{2}\\). Find the \\(x\\)-coordinate of each critical point of \\(h\\), where\n\\(-7<x<5\\), and classify each critical point as the location of a relative minimum, relative maximum, or\nneither a minimum nor a maximum. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        140.4239959716797,
+        67.55999755859375,
+        471.864013671875,
+        227.63999938964844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n![](https://cdn.mathpix.com/cropped/53b52aa7-184b-4e5a-8083-d25dadbd105f-1.jpg?height=535&width=1128&top_left_y=406&top_left_x=492)\nThe function \\(g\\) is defined and differentiable on the closed interval [-7, 5] and satisfies \\(g(0)=5\\). The graph of \\(y=g^{\\prime}(x)\\), the derivative of \\(g\\), consists of a semicircle and three line segments, as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Find \\(g(3)\\) and \\(g(-2)\\).\n\\item[(b)] Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(y=g(x)\\) on the interval \\(-7<x<5\\). Explain your reasoning.\n\\item[(c)] The function \\(h\\) is defined by \\(h(x)=g(x)-\\frac{1}{2} x^{2}\\). Find the \\(x\\)-coordinate of each critical point of \\(h\\), where \\(-7<x<5\\), and classify each critical point as the location of a relative minimum, relative maximum, or neither a minimum nor a maximum. Explain your reasoning.\n\\item[(a)] \\(g(3)=5+\\int_{0}^{3} g^{\\prime}(x) d x=5+\\frac{\\pi \\cdot 2^{2}}{4}+\\frac{3}{2}=\\frac{13}{2}+\\pi\\) \\(g(-2)=5+\\int_{0}^{-2} g^{\\prime}(x) d x=5-\\pi\\)\n\\item[(b)] The graph of \\(y=g(x)\\) has points of inflection at \\(x=0, x=2\\), and \\(x=3\\) because \\(g^{\\prime}\\) changes from increasing to decreasing at \\(x=0\\) and \\(x=3\\), and \\(g^{\\prime}\\) changes from decreasing to increasing at \\(x=2\\).\n\\item[(c)] \\(h^{\\prime}(x)=g^{\\prime}(x)-x=0 \\Rightarrow g^{\\prime}(x)=x\\)\nOn the interval \\(-2 \\leq x \\leq 2, g^{\\prime}(x)=\\sqrt{4-x^{2}}\\).\nOn this interval, \\(g^{\\prime}(x)=x\\) when \\(x=\\sqrt{2}\\).\nThe only other solution to \\(g^{\\prime}(x)=x\\) is \\(x=3\\).\n\\(h^{\\prime}(x)=g^{\\prime}(x)-x>0\\) for \\(0 \\leq x<\\sqrt{2}\\)\n\\(h^{\\prime}(x)=g^{\\prime}(x)-x \\leq 0\\) for \\(\\sqrt{2}<x \\leq 5\\)\nTherefore \\(h\\) has a relative maximum at \\(x=\\sqrt{2}\\), and \\(h\\) has neither a minimum nor a maximum at \\(x=3\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { uses } g(0)=5 \\\\ 1: g(3) \\\\ 1: g(-2)\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { identifies } x=0,2,3 \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: h^{\\prime}(x) \\\\ 1: \\text { identifies } x=\\sqrt{2}, 3 \\\\ 1: \\text { answer for } \\sqrt{2} \\text { with analysis } \\\\ 1: \\text { answer for } 3 \\text { with analysis }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          564,
+          388
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          143.42399999999998,
+          70.55999999999999,
+          468.864,
+          224.64
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          236.44799999999998,
+          559.2959999999999,
+          249.98399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.664,
+          251.712,
+          549.5039999999999,
+          265.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          273.59999999999997,
+          182.59199999999998,
+          288.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.088,
+          296.352,
+          533.376,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          311.328,
+          190.07999999999998,
+          324.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          330.912,
+          553.2479999999999,
+          353.664
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          355.67999999999995,
+          545.76,
+          368.64
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          370.08,
+          351.35999999999996,
+          383.03999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

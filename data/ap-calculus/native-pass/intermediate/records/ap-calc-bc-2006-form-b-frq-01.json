@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-form-b-frq-01",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg}\n\\end{center}\nLet $f$ be the function given by $f(x)=\\frac{x^{3}}{4}-\\frac{x^{2}}{3}-\\frac{x}{2}+3 \\cos x$. Let $R$ be the shaded region in the second quadrant bounded by the graph of $f$, and let $S$ be the shaded region bounded by the graph of $f$ and line $\\ell$, the line tangent to the graph of $f$ at $x=0$, as shown above.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the volume of the solid generated when $R$ is rotated about the horizontal line $y=-2$.\\\\\n(c) Write, but do not evaluate, an integral expression that can be used to find the area of $S$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(f\\) be the function given by \\(f(x)=\\frac{x^{3}}{4}-\\frac{x^{2}}{3}-\\frac{x}{2}+3 \\cos x\\). Let \\(R\\) be the shaded region in the second quadrant bounded by the graph of \\(f\\), and let \\(S\\) be the shaded region bounded by the graph of \\(f\\) and line \\(\\ell\\), the line tangent to the graph of \\(f\\) at \\(x=0\\), as shown above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-2\\).\n\\item[(c)] Write, but do not evaluate, an integral expression that can be used to find the area of \\(S\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/9aa8d74d-d3e0-42e4-b757-eaae6ac221b9-1.jpg?height=518&width=627&top_left_y=307&top_left_x=1319)\n\nFor \\(x<0, f(x)=0\\) when \\(x=-1.37312\\).\nLet \\(P=-1.37312\\).\n\\begin{itemize}\n\\item[(a)] Area of \\(R=\\int_{P}^{0} f(x) d x=2.903\\)\n\\item[(b)] Volume \\(=\\pi \\int_{P}^{0}\\left((f(x)+2)^{2}-4\\right) d x=59.361\\)\n\\item[(c)] The equation of the tangent line \\(\\ell\\) is \\(y=3-\\frac{1}{2} x\\).\nThe graph of \\(f\\) and line \\(\\ell\\) intersect at \\(A=3.38987\\).\nArea of \\(S=\\int_{0}^{A}\\left(\\left(3-\\frac{1}{2} x\\right)-f(x)\\right) d x\\)\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { tangent line } \\\\ 1: \\text { integrand } \\\\ 1: \\text { limits }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          519
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

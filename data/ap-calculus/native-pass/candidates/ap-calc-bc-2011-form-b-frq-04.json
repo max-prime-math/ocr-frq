@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2011-form-b-frq-04",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2011-form-b-frq-04-diagram-01.png\", width: 65%)\n\nThe graph of the differentiable function $y = f(x)$ with domain $0 <= x <= 10$ is shown in the figure above. The area of the region enclosed between the graph of $f$ and the $x$-axis for $0 <= x <= 5$ is 10, and the area of the region enclosed between the graph of $f$ and the $x$-axis for $5 <= x <= 10$ is 27. The arc length for the portion of the graph of $f$ between $x = 0$ and $x = 5$ is 11, and the arc length for the portion of the graph of $f$ between $x = 5$ and $x = 10$ is 18. The function $f$ has exactly two critical points that are located at $x = 3$ and $x = 8$.\n\n(a) Find the average value of $f$ on the interval $0 <= x <= 5$.\n\n(b) Evaluate $integral_(0)^(10)(3 f(x)+ 2) d x$. Show the computations that lead to your answer.\n\n(c) Let $g(x)= integral_(5)^(x) f(t) d t$. On what intervals, if any, is the graph of $g$ both concave up and decreasing? Explain your reasoning.\n\n(d) The function $h$ is defined by $h(x)= 2 f lr((frac(x,2)))$. The derivative of $h$ is $h'(x)= f'lr((frac(x,2)))$. Find the arc length of the graph of $y = h(x)$ from $x = 0$ to $x = 20$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-form-b-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        211.0,
+        68.0,
+        401.0,
+        257.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          509
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ee8c5b5346b23196f1c91ee546fabbd568281073b0f6d4df40081dfaa608235c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        211.0,
+        68.0,
+        401.0,
+        257.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2011-form-b-frq-03"
+    }
+  ]
+}

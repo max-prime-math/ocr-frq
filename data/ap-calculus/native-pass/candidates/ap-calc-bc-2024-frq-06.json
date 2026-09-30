@@ -1,0 +1,204 @@
+{
+  "id": "ap-calc-bc-2024-frq-06",
+  "course": "BC",
+  "year": 2024,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2024.pdf",
+      "sha256": "9ddd4d069db41e83a69ae1ad9095a7ce94dd7c9366645ff289a6dce671172f76",
+      "pages": [
+        10
+      ]
+    },
+    "promptPages": [
+      10
+    ]
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The Maclaurin series for a function $f$ is given by $sum_(n = 1)^(oo) frac((n + 1) x^(n),n^(2) 6^(n))$ and converges to $f(x)$ for all $x$ in the interval of convergence. It can be shown that the Maclaurin series for $f$ has a radius of convergence of 6.\n\n(a) Determine whether the Maclaurin series for $f$ converges or diverges at $x = 6$. Give a reason for your answer.\n\n(b) It can be shown that $f(- 3)= sum_(n = 1)^(oo) frac((n + 1)(- 3)^(n),n^(2) 6^(n))= sum_(n = 1)^(oo) frac(n + 1,n^(2))lr((- frac(1,2)))^(n)$ and that the first three terms of this series sum to $S_(3)= - frac(125,144)$. Show that $lr(| f(- 3)- S_(3)|)< frac(1,50)$.\n\n(c) Find the general term of the Maclaurin series for $f'$, the derivative of $f$. Find the radius of convergence of the Maclaurin series for $f'$.\n\n(d) Let $g(x)= sum_(n = 1)^(oo) frac((n + 1) x^(2 n),n^(2) 3^(n))$. Use the ratio test to determine the radius of convergence of the Maclaurin series for $g$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 10,
+        "rect": [
+          53,
+          67,
+          567,
+          465
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 10,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          56.736,
+          70.27199999999999,
+          559.0079999999999,
+          104.25599999999999
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          114.04799999999999,
+          499.104,
+          127.008
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          146.59199999999998,
+          534.24,
+          160.416
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          87.264,
+          163.00799999999998,
+          122.39999999999999,
+          172.79999999999998
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          185.184,
+          544.608,
+          219.16799999999998
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          87.264,
+          221.47199999999998,
+          346.464,
+          248.832
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          262.656,
+          557.568,
+          276.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          87.264,
+          278.20799999999997,
+          210.528,
+          291.168
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          302.4,
+          562.1759999999999,
+          337.536
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          87.264,
+          350.496,
+          114.624,
+          363.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          83.52,
+          434.01599999999996,
+          538.2719999999999,
+          446.4
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          446.97599999999994,
+          489.888,
+          459.35999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7085570ee370a35aeb8bf02854f664d30696330dbc1d2986cce02da311b60ceb",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-bc-2024-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2024-frq-06",
+      "sourcePage": 10,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "question": {
+    "body": "Consider $dif y / dif x = -x y^2 / 2$. Let $y=f(x)$ satisfy $f(-1)=2$.\n\n(a) On the provided axes, sketch the slope field at the twelve indicated points.\n\n#image(\"/imgs/ap-calc-ab-2005-form-b-frq-06-prompt-b6553edd-3e90-4eeb-8d43-7d799208e18b-1_595_808_1169_660.jpg\", width: 70%)\n\n(b) Write the equation of the line tangent to $f$ at $x=-1$.\n\n(c) Find $f(x)$.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-ab-2005-form-b-frq-06",
+    "images": [
+      "ap-calc-ab-2005-form-b-frq-06-prompt-b6553edd-3e90-4eeb-8d43-7d799208e18b-1_595_808_1169_660.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-7-7",
+    "solution": "(a) Horizontal segments occur where $x=0$ or $y=0$. At the remaining marked points, use slope $-x y^2/2$.\n\n(b) At $(-1,2)$,\n$ f'(-1) = -(-1)(2)^2 / 2 = 2. $\nThus the tangent line is $y - 2 = 2(x + 1)$.\n\n(c) Separate variables:\n$ 1/y^2 dif y = -x/2 dif x. $\nIntegrating gives $-1/y = -x^2/4 + C$. Using $f(-1)=2$ gives $C=-1/4$, so\n$ f(x) = frac(4, x^2 + 1). $",
+    "tags": [
+      "2005",
+      "Form B",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-7",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

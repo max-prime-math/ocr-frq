@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2007-frq-03",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 5, align: (left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.hline(stroke: .5pt), [$x$], [$f(x)$], [$f'(x)$], [$g(x)$], [$g'(x)$], table.hline(stroke: .5pt), [1], [6], [4], [2], [5], table.hline(stroke: .5pt), [2], [9], [2], [3], [1], table.hline(stroke: .5pt), [3], [10], [-4], [4], [2], table.hline(stroke: .5pt), [4], [-1], [3], [6], [7], table.hline(stroke: .5pt));\n\nThe functions $f$ and $g$ are differentiable for all real numbers, and $g$ is strictly increasing. The table above gives values of the functions and their first derivatives at selected values of $x$. The function $h$ is given by $h(x)= f(g(x))- 6$.\n\n(a) Explain why there must be a value $r$ for $1 < r < 3$ such that $h(r)= - 5$.\n\n(b) Explain why there must be a value $c$ for $1 < c < 3$ such that $h'(c)= - 5$.\n\n(c) Let $w$ be the function given by $w(x)= integral_(1)^(g(x)) f(t) d t$. Find the value of $w'(3)$.\n\n(d) If $g^(- 1)$ is the inverse function of $g$, write an equation for the line tangent to the graph of $y = g^(- 1)(x)$ at $x = 2$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          466
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          217.72799999999998,
+          71.136,
+          394.272,
+          192.95999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          210.528,
+          534.8159999999999,
+          222.91199999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          222.91199999999998,
+          532.512,
+          235.87199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          65.088,
+          235.87199999999999,
+          156.384,
+          249.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 42,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          258.048,
+          403.77599999999995,
+          271.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          280.224,
+          408.38399999999996,
+          293.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          301.82399999999996,
+          428.544,
+          327.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          65.088,
+          336.96,
+          525.024,
+          353.376
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          354.52799999999996,
+          124.99199999999999,
+          365.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "37243a1f78a6e0b9a505a14538fa49c27a0cc0420704c588e85b9e9b61553f78",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2006-form-b-frq-03",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg\", width: 65%)\n\nThe figure above is the graph of a function of $x$, which models the height of a skateboard ramp. The function meets the following requirements.\\ (i) At $x = 0$, the value of the function is 0, and the slope of the graph of the function is 0 .\\ (ii) At $x = 4$, the value of the function is 1, and the slope of the graph of the function is 1 .\\ (iii) Between $x = 0$ and $x = 4$, the function is increasing.\n\n(a) Let $f(x)= a x^(2)$, where $a$ is a nonzero constant. Show that it is not possible to find a value for $a$ so that $f$ meets requirement (ii) above.\n\n(b) Let $g(x)= c x^(3)- frac(x^(2),16)$, where $c$ is a nonzero constant. Find the value of $c$ so that $g$ meets requirement (ii) above. Show the work that leads to your answer.\n\n(c) Using the function $g$ and your value of $c$ from part (b), show that $g$ does not meet requirement (iii) above.\n\n(d) Let $h(x)= frac(x^(n),k)$, where $k$ is a nonzero constant and $n$ is a positive integer. Find the values of $k$ and $n$ so that $h$ meets requirement (ii) above. Show that $h$ also meets requirements (i) and (iii) above.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006-form-b_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          63,
+          572,
+          473
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "48245f67c68b8f9817ae124255291d7cac4c40ccf819954225fa3be7b29102c7",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ]
+}

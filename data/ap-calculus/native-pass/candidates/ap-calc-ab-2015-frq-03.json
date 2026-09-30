@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2015-frq-03",
+  "course": "AB",
+  "year": 2015,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2015.pdf",
+      "sha256": "6f057222ecd46cce2adc5876197c1b85c94077b4f42108f097eaccb73451f8ac",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2015.pdf",
+      "sha256": "41556b4f0750b625991d8298e05037cfc655d7cc2f6967137e94be9b5402f774"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [12], [20], [24], [40], table.hline(stroke: .5pt), [$v(t)$ (meters per minute)], [0], [200], [240], [-220], [150], table.hline(stroke: .5pt));\n\nJohanna jogs along a straight path. For $0 <= t <= 40$, Johanna's velocity is given by a differentiable function $v$. Selected values of $v(t)$, where $t$ is measured in minutes and $v(t)$ is measured in meters per minute, are given in the table above.\n\n(a) Use the data in the table to estimate the value of $v'(16)$.\n\n(b) Using correct units, explain the meaning of the definite integral $integral_(0)^(40)| v(t)| d t$ in the context of the problem. Approximate the value of $integral_(0)^(40)| v(t)| d t$ using a right Riemann sum with the four subintervals indicated in the table.\n\n(c) Bob is riding his bicycle along the same path. For $0 <= t <= 10$, Bob's velocity is modeled by $B(t)= t^(3)- 6 t^(2)+ 300$, where $t$ is measured in minutes and $B(t)$ is measured in meters per minute. Find Bob's acceleration at time $t = 5$.\n\n(d) Based on the model $B$ from part (c), find Bob's average velocity during the interval $0 <= t <= 10$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          45,
+          52,
+          568,
+          503
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "table",
+        "rect": [
+          164.16,
+          173.37599999999998,
+          446.97599999999994,
+          252.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          265.248,
+          551.232,
+          277.632
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          64.512,
+          278.784,
+          563.616,
+          293.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          64.512,
+          294.62399999999997,
+          135.648,
+          306.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 36,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          313.344,
+          330.33599999999996,
+          327.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          65.088,
+          336.09599999999995,
+          553.824,
+          359.424
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          362.304,
+          561.5999999999999,
+          387.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          83.52,
+          389.664,
+          108.86399999999999,
+          400.032
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          65.952,
+          407.808,
+          491.328,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          84.672,
+          422.20799999999997,
+          526.4639999999999,
+          439.2
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          83.52,
+          444.96,
+          254.30399999999997,
+          456.768
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          463.96799999999996,
+          510.04799999999994,
+          476.92799999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fca95a256219043898f602f5e9279e58d0ec46fa0aa56b1fad3c84c3175032a3",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2015-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2015-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

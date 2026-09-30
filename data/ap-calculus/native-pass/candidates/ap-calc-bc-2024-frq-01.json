@@ -1,0 +1,226 @@
+{
+  "id": "ap-calc-bc-2024-frq-01",
+  "course": "BC",
+  "year": 2024,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2024.pdf",
+      "sha256": "9ddd4d069db41e83a69ae1ad9095a7ce94dd7c9366645ff289a6dce671172f76",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ]
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 5, align: (left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [3], [7], [12], table.hline(stroke: .5pt), [$C(t)$ (degrees Celsius)], [100], [85], [69], [55], table.hline(stroke: .5pt));\n\nThe temperature of coffee in a cup at time $t$ minutes is modeled by a decreasing differentiable function $C$, where $C(t)$ is measured in degrees Celsius. For $0 <= t <= 12$, selected values of $C(t)$ are given in the table shown.\n\n(a) Approximate $C'(5)$ using the average rate of change of $C$ over the interval $3 <= t <= 7$. Show the work that leads to your answer and include units of measure.\n\n(b) Use a left Riemann sum with the three subintervals indicated by the data in the table to approximate the value of $integral_(0)^(12) C(t) d t$. Interpret the meaning of $frac(1,12) integral_(0)^(12) C(t) d t$ in the context of the problem.\n\n(c) For $12 <= t <= 20$, the rate of change of the temperature of the coffee is modeled by $C'(t)= frac(- 24.55 e^(0.01 t),t)$, where $C'(t)$ is measured in degrees Celsius per minute. Find the temperature of the coffee at time $t = 20$. Show the setup for your calculations.\n\n(d) For the model defined in part (c), it can be shown that $C''(t)= frac(0.2455 e^(0.01 t)(100 - t),t^(2))$. For $12 < t < 20$, determine whether the temperature of the coffee is changing at a decreasing rate or at an increasing rate. Give a reason for your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          54,
+          66,
+          559,
+          515
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          185.76,
+          72.288,
+          424.224,
+          142.56
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          57.888,
+          156.95999999999998,
+          538.848,
+          169.92
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 26,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          172.79999999999998,
+          531.072,
+          186.624
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          188.928,
+          102.81599999999999,
+          199.296
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          71.136,
+          213.696,
+          554.688,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          87.264,
+          229.248,
+          311.328,
+          242.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          260.64,
+          544.0319999999999,
+          273.024
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          87.264,
+          280.224,
+          488.736,
+          307.008
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          316.79999999999995,
+          552.384,
+          346.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          87.264,
+          358.272,
+          552.384,
+          371.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          87.264,
+          389.664,
+          251.99999999999997,
+          402.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          418.176,
+          546.6239999999999,
+          450.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          87.264,
+          463.96799999999996,
+          546.048,
+          476.92799999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          87.264,
+          497.08799999999997,
+          223.48799999999997,
+          509.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ecedc1fcdb136eeee019c757f4b6cdda788b2ea4ff51c0244a621064d364b626",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-bc-2024-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2024-frq-01",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-01",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "A particle moves in the $x y$-plane so that its position at any time $t$, for $-\\pi \\leq t \\leq \\pi$, is given by $x(t)=\\sin (3 t)$ and $y(t)=2 t$.\\\\\n(a) Sketch the path of the particle in the $x y$-plane provided. Indicate the direction of motion along the path.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2002-form-b-frq-01-diagram-01.jpg}\n\\end{center}\n(b) Find the range of $x(t)$ and the range of $y(t)$.\\\\\n(c) Find the smallest positive value of $t$ for which the $x$-coordinate of the particle is a local maximum. What is the speed of the particle at this time?\\\\\n(d) Is the distance traveled by the particle from $t=-\\pi$ to $t=\\pi$ greater than $5 \\pi$ ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2002-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2002-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2002-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nA particle moves in the \\(x y\\)-plane so that its position at any time \\(t\\), for \\(-\\pi \\leq t \\leq \\pi\\), is given by \\(x(t)=\\sin (3 t)\\) and \\(y(t)=2 t\\).\n\\begin{itemize}\n\\item[(a)] Sketch the path of the particle in the \\(x y\\)-plane provided. Indicate the direction of motion along the path.\n\\item[(b)] Find the range of \\(x(t)\\) and the range of \\(y(t)\\).\n\\item[(c)] Find the smallest positive value of \\(t\\) for which the \\(x\\)-coordinate of the particle is a local maximum. What is the speed of the particle at this time?\n\\item[(d)] Is the distance traveled by the particle from \\(t=-\\pi\\) to \\(t=\\pi\\) greater than \\(5 \\pi\\) ? Justify your answer.\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/a6acef09-a0dd-4830-95c3-02fb7b7e27ce-1.jpg?height=417&width=249&top_left_y=1036&top_left_x=331)\n\\item[(b)]\n\\[\n\\begin{aligned}\n& -1 \\leq x(t) \\leq 1 \\\\\n& -2 \\pi \\leq y(t) \\leq 2 \\pi\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& x^{\\prime}(t)=3 \\cos 3 t=0 \\\\\n& \\qquad 3 t=\\frac{\\pi}{2} ; t=\\frac{\\pi}{6} \\\\\n& \\text { Speed }=\\sqrt{9 \\cos ^{2}(3 t)+4} \\\\\n& \\text { At } t=\\frac{\\pi}{6} \\\\\n& \\text { Speed }=\\sqrt{9 \\cos ^{2}\\left(\\frac{\\pi}{2}\\right)+4}=2\n\\end{aligned}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\text { Distance } & =\\int_{-\\pi}^{\\pi} \\sqrt{9 \\cos ^{2}(3 t)+4} d t \\\\\n& =17.973>5 \\pi\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n2\\left\\{\\begin{aligned}\n1: \\text { graph } & \\\\\n& \\text { three cycles of sine } \\\\\n& x \\text { between }-1 \\text { and } 1 \\\\\n& y \\text { between }-2 \\pi \\text { and } 2 \\pi \\\\\n1: \\text { direction } &\n\\end{aligned}\\right.\n\\]\n\\[\n3\\left\\{\\begin{array}{l}\n1: x^{\\prime}(t)=3 \\cos 3 t=0 \\\\\n1: \\text { solves for } t \\\\\n1: \\text { speed at student's time }\n\\end{array}\\right.\n\\]\n\\[\n2\\left\\{\\begin{array}{l}\n1: \\text { integral for distance } \\\\\n1: \\text { conclusion with justification }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          75,
+          572,
+          590
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

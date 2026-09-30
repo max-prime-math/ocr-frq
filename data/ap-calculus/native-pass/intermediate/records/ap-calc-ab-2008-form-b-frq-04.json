@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-form-b-frq-04",
+  "course": "AB",
+  "year": 2008,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008-FORM-B.pdf",
+      "sha256": "fbb677a84e5c502522e698af497bef103355ec9482783e5e661f5c03f85df2eb",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008-FORM-B.pdf",
+      "sha256": "20c0da48412fe259116c8d818cf92ecb3a783537ca20494c332cf0555e6dbfda"
+    }
+  },
+  "rawPrompt": "The functions \\(f\\) and \\(g\\) are given by \\(f(x)=\\int_{0}^{3 x} \\sqrt{4+t^{2}} d t\\) and \\(g(x)=f(\\sin x)\\).\n(a) Find \\(f^{\\prime}(x)\\) and \\(g^{\\prime}(x)\\).\n(b) Write an equation for the line tangent to the graph of \\(y=g(x)\\) at \\(x=\\pi\\).\n(c) Write, but do not evaluate, an integral expression that represents the maximum value of \\(g\\) on the interval\n\\(0 \\leq x \\leq \\pi\\). Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 4}\n\nThe functions \\(f\\) and \\(g\\) are given by \\(f(x)=\\int_{0}^{3 x} \\sqrt{4+t^{2}} d t\\) and \\(g(x)=f(\\sin x)\\).\n\\begin{itemize}\n\\item[(a)] Find \\(f^{\\prime}(x)\\) and \\(g^{\\prime}(x)\\).\n\\item[(b)] Write an equation for the line tangent to the graph of \\(y=g(x)\\) at \\(x=\\pi\\).\n\\item[(c)] Write, but do not evaluate, an integral expression that represents the maximum value of \\(g\\) on the interval \\(0 \\leq x \\leq \\pi\\). Justify your answer.\n\\item[(a)] \\(f^{\\prime}(x)=3 \\sqrt{4+(3 x)^{2}}\\)\n\\[\n\\begin{aligned}\ng^{\\prime}(x) & =f^{\\prime}(\\sin x) \\cdot \\cos x \\\\\n& =3 \\sqrt{4+(3 \\sin x)^{2}} \\cdot \\cos x\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\quad g(\\pi)=0, \\quad g^{\\prime}(\\pi)=-6\\)\nTangent line: \\(y=-6(x-\\pi)\\)\n\\begin{itemize}\n\\item[] \\(4:\\left\\{\\begin{array}{l}2: f^{\\prime}(x) \\\\ 2: g^{\\prime}(x)\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: g(\\pi) \\text { or } g^{\\prime}(\\pi) \\\\ 1: \\text { tangent line equation }\\end{array}\\right.\\)\n\\end{itemize}\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : sets } g^{\\prime}(x)=0 \\\\ 1 \\text { : justifies maximum at } \\frac{\\pi}{2} \\\\ 1 \\text { : integral expression for } g\\left(\\frac{\\pi}{2}\\right)\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          416
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          199.87199999999999,
+          425.08799999999997,
+          225.21599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          232.70399999999998,
+          185.76,
+          247.67999999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          255.456,
+          407.23199999999997,
+          268.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          277.056,
+          548.352,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          289.44,
+          228.384,
+          301.82399999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,184 @@
+{
+  "id": "ap-calc-bc-2021-frq-05",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        9
+      ]
+    },
+    "promptPages": [
+      9
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $y = f(x)$ be the particular solution to the differential equation $frac(d y,d x)= y dot.c (x ln x)$ with initial condition $f(1)= 4$. It can be shown that $f''(1)= 4$.\n\n(a) Write the second-degree Taylor polynomial for $f$ about $x = 1$. Use the Taylor polynomial to approximate $f(2)$.\n\n(b) Use Euler's method, starting at $x = 1$ with two steps of equal size, to approximate $f(2)$. Show the work that leads to your answer.\n\n(c) Find the particular solution $y = f(x)$ to the differential equation $frac(d y,d x)= y dot.c (x ln x)$ with initial condition $f(1)= 4$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 9,
+        "rect": [
+          45,
+          84,
+          531,
+          371
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 9,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          48.948133785748915,
+          89.26339285714285,
+          526.6243334949104,
+          116.61830357142856
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          123.52901785714285,
+          253.66650508967524,
+          138.2142857142857
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.64808531265149,
+          157.21875,
+          492.9365002423655,
+          170.4642857142857
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          83.49975763451285,
+          172.4799107142857,
+          166.9995152690257,
+          186.5892857142857
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.64808531265149,
+          200.6986607142857,
+          517.1226369365003,
+          213.94419642857142
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          84.07561803199225,
+          217.11160714285714,
+          222.85797382452742,
+          229.78124999999997
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          243.3147321428571,
+          492.9365002423655,
+          270.66964285714283
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          83.49975763451285,
+          278.15625,
+          173.3339796412991,
+          292.265625
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          333.72991071428567,
+          522.0174503150752,
+          346.39955357142856
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          352.73437499999994,
+          473.6451769268057,
+          365.40401785714283
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "425389d73e8a9e6e89b4b80df3872abf40cbab86ef50e0d06dca1fc7200cfd8c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-05",
+      "sourcePage": 9,
+      "sourceSha256Matches": true
+    }
+  ]
+}

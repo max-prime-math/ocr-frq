@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2012-frq-06",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "rawPrompt": "For \\(0 \\leq t \\leq 12\\), a particle moves along the \\(x\\)-axis. The velocity of the particle at time \\(t\\) is given by\n\\(v(t)=\\cos \\left(\\frac{\\pi}{6} t\\right)\\). The particle is at position \\(x=-2\\) at time \\(t=0\\).\n(a) For \\(0 \\leq t \\leq 12\\), when is the particle moving to the left?\n(b) Write, but do not evaluate, an integral expression that gives the total distance traveled by the particle from\ntime \\(t=0\\) to time \\(t=6\\).\n(c) Find the acceleration of the particle at time \\(t\\). Is the speed of the particle increasing, decreasing, or neither at\ntime \\(t=4\\) ? Explain your reasoning.\n(d) Find the position of the particle at time \\(t=4\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nFor \\(0 \\leq t \\leq 12\\), a particle moves along the \\(x\\)-axis. The velocity of the particle at time \\(t\\) is given by\n\\(v(t)=\\cos \\left(\\frac{\\pi}{6} t\\right)\\). The particle is at position \\(x=-2\\) at time \\(t=0\\).\n\\begin{itemize}\n\\item[(a)] For \\(0 \\leq t \\leq 12\\), when is the particle moving to the left?\n\\item[(b)] Write, but do not evaluate, an integral expression that gives the total distance traveled by the particle from time \\(t=0\\) to time \\(t=6\\).\n\\item[(c)] Find the acceleration of the particle at time \\(t\\). Is the speed of the particle increasing, decreasing, or neither at time \\(t=4\\) ? Explain your reasoning.\n\\item[(d)] Find the position of the particle at time \\(t=4\\).\n\\item[(a)] \\(\\quad v(t)=\\cos \\left(\\frac{\\pi}{6} t\\right)=0 \\Rightarrow t=3,9\\)\nThe particle is moving to the left when \\(v(t)<0\\).\nThis occurs when \\(3<t<9\\).\n\\item[(b)] \\(\\int_{0}^{6}|v(t)| d t\\)\n\\item[(c)] \\(a(t)=-\\frac{\\pi}{6} \\sin \\left(\\frac{\\pi}{6} t\\right)\\)\n\\[\n\\begin{aligned}\n& a(4)=-\\frac{\\pi}{6} \\sin \\left(\\frac{2 \\pi}{3}\\right)=-\\frac{\\sqrt{3} \\pi}{12}<0 \\\\\n& v(4)=\\cos \\left(\\frac{2 \\pi}{3}\\right)=-\\frac{1}{2}<0\n\\end{aligned}\n\\]\nThe speed is increasing at time \\(t=4\\), because velocity and acceleration have the same sign.\n\\item[(d)] \\(x(4)=-2+\\int_{0}^{4} \\cos \\left(\\frac{\\pi}{6} t\\right) d t\\)\n\\[\n\\begin{aligned}\n& =-2+\\left[\\frac{6}{\\pi} \\sin \\left(\\frac{\\pi}{6} t\\right)\\right]_{0}^{4} \\\\\n& =-2+\\frac{6}{\\pi}\\left[\\sin \\left(\\frac{2 \\pi}{3}\\right)-0\\right] \\\\\n& =-2+\\frac{6}{\\pi} \\cdot \\frac{\\sqrt{3}}{2}=-2+\\frac{3 \\sqrt{3}}{\\pi}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } v(t)=0 \\\\ 1: \\text { interval }\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: a(t) \\\\ 2: \\text { conclusion with reason }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          64,
+          572,
+          374
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          68.544,
+          503.13599999999997,
+          82.08
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          83.52,
+          357.69599999999997,
+          109.44
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          116.928,
+          331.2,
+          129.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          137.37599999999998,
+          553.2479999999999,
+          149.76
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          149.76,
+          198.14399999999998,
+          160.992
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          168.19199999999998,
+          563.04,
+          181.152
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          180.576,
+          250.55999999999997,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          201.6,
+          287.13599999999997,
+          214.55999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1998-frq-05",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "rawPrompt": "The temperature outside a house during a 24 -hour period is given by\n$$\nF(t)=80-10 \\cos \\left(\\frac{\\pi t}{12}\\right), 0 \\leq t \\leq 24,\n$$\n\nwhere $F(t)$ is measured in degrees Fahrenheit and $t$ is measured in hours.\\\\\n(a) Sketch the graph of $F$ on the grid below.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-1998-frq-05-diagram-01.jpg}\n\\end{center}\n(b) Find the average temperature, to the nearest degree Fahrenheit, between $t=6$ and $t=14$.\\\\\n(c) An air conditioner cooled the house whenever the outside temperature was at or above 78 degrees Fahrenheit. For what values of $t$ was the air conditioner cooling the house?\\\\\n(d) The cost of cooling the house accumulates at the rate of $\\$ 0.05$ per hour for each degree the outside temperature exceeds 78 degrees Fahrenheit. What was the total cost, to the nearest cent, to cool the house for this 24 -hour period?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-1998-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-1998-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-1998_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[5.] The temperature outside a house during a 24 -hour period is given by\n\\[\nF(t)=80-10 \\cos \\left(\\frac{\\pi t}{12}\\right), 0 \\leq t \\leq 24,\n\\]\nwhere \\(F(t)\\) is measured in degrees Fahrenheit and \\(t\\) is measured in hours.\n\\begin{itemize}\n\\item[(a)] Sketch the graph of \\(F\\) on the grid below.\n\\item[(b)] Find the average temperature, to the nearest degree Fahrenheit, between \\(t=6\\) and \\(t=14\\).\n\\item[(c)] An air conditioner cooled the house whenever the outside temperature was at or above 78 degrees Fahrenheit. For what values of \\(t\\) was the air conditioner cooling the house?\n\\item[(d)] The cost of cooling the house accumulates at the rate of \\$0.05 per hour for each degree the outside temperature exceeds 78 degrees Fahrenheit. What was the total cost, to the nearest cent, to cool the house for this 24 -hour period?\n\\end{itemize}\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/41b0e50f-29e4-43d9-adbd-5c94fb302466-1.jpg?height=410&width=634&top_left_y=844&top_left_x=410)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Avg. } & =\\frac{1}{14-6} \\int_{6}^{14}\\left[80-10 \\cos \\left(\\frac{\\pi t}{12}\\right)\\right] d t \\\\\n& =\\frac{1}{8}(697.2957795) \\\\\n& =87.162 \\text { or } 87.161 \\\\\n& \\approx 87^{\\circ} \\mathrm{F}\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\left.\\begin{array}{l}\n{\\left[80-10 \\cos \\left(\\frac{\\pi t}{12}\\right)\\right]-78 \\geq 0} \\\\\n2-10 \\cos \\left(\\frac{\\pi t}{12}\\right) \\geq 0 \\\\\n5.230 \\\\\n\\text { or } \\\\\n5.231\n\\end{array}\\right\\} \\leq t \\leq\\left\\{\\begin{array}{c}\n18.769 \\\\\n\\text { or } \\\\\n18.770\n\\end{array}\\right.\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\nC & =0.05 \\int_{\\substack{5.231 \\\\\n\\text { or } \\\\\n5.230}}^{\\substack{18.770 \\\\\n\\text { or } \\\\\n18.769}}\\left(\\left[80-10 \\cos \\left(\\frac{\\pi t}{12}\\right)\\right]-78\\right) d t \\\\\n& =0.05(101.92741)=5.096 \\approx \\$ 5.10\n\\end{aligned}\n\\]\n\\item[1:] bell-shaped graph minimum 70 at \\(t=0, t=24\\) only maximum 90 at \\(t=12\\) only\n\\item[] \\(3\\left\\{\\begin{array}{l}\\text { 2: integral } \\\\ \\text { 1: limits and } 1 /(14-6) \\\\ \\text { 1: integrand } \\\\ \\text { 1: answer } \\\\ 0 / 1 \\text { if integral not of the form } \\\\ \\frac{1}{b-a} \\int_{a}^{b} F(t) d t\\end{array}\\right.\\)\n\\item[] \\(2\\left\\{\\begin{array}{l}\\text { 1: inequality or equation } \\\\ \\text { 1: solutions with interval }\\end{array}\\right.\\)\n\\item[] \\(3\\left\\{\\begin{array}{l}\\text { 2: integral } \\\\ \\text { 1: limits and } 0.05 \\\\ \\text { 1: integrand } \\\\ \\text { 1: answer } \\\\ 0 / 1 \\text { if integral not of the form } \\\\ k \\int_{a}^{b}(F(t)-78) d t\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

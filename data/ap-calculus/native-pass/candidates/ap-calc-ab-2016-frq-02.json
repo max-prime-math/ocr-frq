@@ -1,0 +1,142 @@
+{
+  "id": "ap-calc-ab-2016-frq-02",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "For $t >= 0$, a particle moves along the $x$-axis. The velocity of the particle at time $t$ is given by $v(t)= 1 + 2 sin lr((frac(t^(2),2)))$. The particle is at position $x = 2$ at time $t = 4$.\n\n(a) At time $t = 4$, is the particle speeding up or slowing down?\n\n(b) Find all times $t$ in the interval $0 < t < 3$ when the particle changes direction. Justify your answer.\n\n(c) Find the position of the particle at time $t = 0$.\n\n(d) Find the total distance the particle travels from time $t = 0$ to time $t = 3$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          35.0,
+          559,
+          399
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          58.751999999999995,
+          478.94399999999996,
+          71.71199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.952,
+          73.728,
+          373.53599999999994,
+          105.11999999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          112.032,
+          350.496,
+          125.856
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          132.19199999999998,
+          520.1279999999999,
+          145.152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          151.77599999999998,
+          287.424,
+          164.16
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          170.784,
+          406.65599999999995,
+          183.16799999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0d79872d29561dd9beebffba68a23bd153c88a5cad2c1d590f07cd59916b5c21",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

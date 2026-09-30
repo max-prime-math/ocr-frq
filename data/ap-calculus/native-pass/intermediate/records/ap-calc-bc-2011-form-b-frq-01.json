@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-form-b-frq-01",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "rawPrompt": "A cylindrical can of radius 10 millimeters is used to measure rainfall in Stormville. The can is initially empty, and rain enters the can during a 60-day period. The height of water in the can is modeled by the function $S$, where $S(t)$ is measured in millimeters and $t$ is measured in days for $0 \\leq t \\leq 60$. The rate at which the height of the water is rising in the can is given by $S^{\\prime}(t)=2 \\sin (0.03 t)+1.5$.\\\\\n(a) According to the model, what is the height of the water in the can at the end of the 60-day period?\\\\\n(b) According to the model, what is the average rate of change in the height of water in the can over the 60-day period? Show the computations that lead to your answer. Indicate units of measure.\\\\\n(c) Assuming no evaporation occurs, at what rate is the volume of water in the can changing at time $t=7$ ? Indicate units of measure.\\\\\n(d) During the same 60-day period, rain on Monsoon Mountain accumulates in a can identical to the one in Stormville. The height of the water in the can on Monsoon Mountain is modeled by the function $M$, where $M(t)=\\frac{1}{400}\\left(3 t^{3}-30 t^{2}+330 t\\right)$. The height $M(t)$ is measured in millimeters, and $t$ is measured in days for $0 \\leq t \\leq 60$. Let $D(t)=M^{\\prime}(t)-S^{\\prime}(t)$. Apply the Intermediate Value Theorem to the function $D$ on the interval $0 \\leq t \\leq 60$ to justify that there exists a time $t, 0<t<60$, at which the heights of water in the two cans are changing at the same rate.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nA cylindrical can of radius 10 millimeters is used to measure rainfall in Stormville. The can is initially empty, and rain enters the can during a 60-day period. The height of water in the can is modeled by the function \\(S\\), where \\(S(t)\\) is measured in millimeters and \\(t\\) is measured in days for \\(0 \\leq t \\leq 60\\). The rate at which the height of the water is rising in the can is given by \\(S^{\\prime}(t)=2 \\sin (0.03 t)+1.5\\).\n\\begin{itemize}\n\\item[(a)] According to the model, what is the height of the water in the can at the end of the 60-day period?\n\\item[(b)] According to the model, what is the average rate of change in the height of water in the can over the 60-day period? Show the computations that lead to your answer. Indicate units of measure.\n\\item[(c)] Assuming no evaporation occurs, at what rate is the volume of water in the can changing at time \\(t=7\\) ? Indicate units of measure.\n\\item[(d)] During the same 60-day period, rain on Monsoon Mountain accumulates in a can identical to the one in Stormville. The height of the water in the can on Monsoon Mountain is modeled by the function \\(M\\), where \\(M(t)=\\frac{1}{400}\\left(3 t^{3}-30 t^{2}+330 t\\right)\\). The height \\(M(t)\\) is measured in millimeters, and \\(t\\) is measured in days for \\(0 \\leq t \\leq 60\\). Let \\(D(t)=M^{\\prime}(t)-S^{\\prime}(t)\\). Apply the Intermediate Value Theorem to the function \\(D\\) on the interval \\(0 \\leq t \\leq 60\\) to justify that there exists a time \\(t, 0<t<60\\), at which the heights of water in the two cans are changing at the same rate.\n\\item[(a)] \\(S(60)=\\int_{0}^{60} S^{\\prime}(t) d t=171.813 \\mathrm{~mm}\\)\n\\item[(b)] \\(\\frac{S(60)-S(0)}{60}=2.863\\) or \\(2.864 \\mathrm{~mm} /\\) day\n\\item[(c)] \\(V(t)=100 \\pi S(t)\\)\n\\(V^{\\prime}(7)=100 \\pi S^{\\prime}(7)=602.218\\)\nThe volume of water in the can is increasing at a rate of \\(602.218 \\mathrm{~mm}^{3} /\\) day .\n\\item[(d)] \\(D(0)=-0.675<0\\) and \\(D(60)=69.37730>0\\)\nBecause \\(D\\) is continuous, the Intermediate Value Theorem implies that there is a time \\(t, 0<t<60\\), at which \\(D(t)=0\\).\nAt this time, the heights of water in the two cans are changing at the same rate.\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : relationship between } V \\text { and } S \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } D(0) \\text { and } D(60) \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[1] : units in (b) or (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          46,
+          65,
+          562,
+          416
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

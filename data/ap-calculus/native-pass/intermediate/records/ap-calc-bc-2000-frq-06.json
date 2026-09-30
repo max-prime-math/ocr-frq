@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2000-frq-06",
+  "course": "BC",
+  "year": 2000,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2000.pdf",
+      "sha256": "3d8ea931cf7c92587ae80781d46c8ee5c16eeef6beff6d2dd47bc91046d67056",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2000.pdf",
+      "sha256": "4b2c25346fe8235b27cb420a0479422d9c8c848ebbfe1514d44c90aed4325bca"
+    }
+  },
+  "rawPrompt": "Consider the differential equation given by $\\frac{d y}{d x}=x(y-1)^{2}$.\\\\\n(a) On the axes provided, sketch a slope field for the given differential equation at the eleven points indicated.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2000-frq-06-diagram-01.jpg}\n\\end{center}\n(b) Use the slope field for the given differential equation to explain why a solution could not have the graph shown below.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2000-frq-06-diagram-02.jpg}\n\\end{center}\n(c) Find the particular solution $y=f(x)$ to the given differential equation with the initial condition $f(0)=-1$.\\\\\n(d) Find the range of the solution found in part (c).",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2000-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2000-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2000_fig3.jpg"
+    },
+    {
+      "name": "ap-calc-bc-2000-frq-06-diagram-02.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2000-frq-06-diagram-02.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2000_fig4.jpg"
+    }
+  ],
+  "rawScoringGuide": "Consider the differential equation given by \\(\\frac{d y}{d x}=x(y-1)^{2}\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the eleven points indicated.\n\\item[(b)] Use the slope field for the given differential equation to explain why a solution could not have the graph shown below.\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(0)=-1\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/cee4805e-c8a3-406d-950f-e84eccdbb081-1.jpg?height=335&width=595&top_left_y=361&top_left_x=1369)\n\\begin{itemize}\n\\item[(d)] Find the range of the solution found in part (c).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/cee4805e-c8a3-406d-950f-e84eccdbb081-1.jpg?height=408&width=754&top_left_y=941&top_left_x=258)\n\\item[(b)] The graph does not have slope 0 where \\(y=1\\). - or -\nThe slope field shown suggests that solutions are asymptotic to \\(y=1\\) from below, but the graph does not exhibit this behavior.\n\\item[(c)] \\(\\frac{1}{(y-1)^{2}} d y=x d x\\)\n\\[\n\\begin{aligned}\n& -\\frac{1}{y-1}=\\frac{1}{2} x^{2}+C \\\\\n& \\frac{1}{2}=0+C ; \\quad C=\\frac{1}{2} \\\\\n& -\\frac{1}{y-1}=\\frac{1}{2}\\left(x^{2}+1\\right) ; \\quad y=1-\\frac{2}{x^{2}+1}\n\\end{aligned}\n\\]\n\\item[(d)] range is \\(-1 \\leq y<1\\)\n\\item[1] : zero slope at 7 points with \\(y=1\\) and \\(x=0\\)\n\\item[1] : negative slope at (-1, 0) and (-1, -1) positive slope at \\((1,0)\\) and (1, -1) steeper slope at \\(y=-1\\) than \\(y=0\\)\n\\end{itemize}\n\n1 : reason\n\\(5 \\begin{cases}1: & \\text { separates variables } \\\\ 1: & \\text { antiderivatives } \\\\ 1: & \\text { constant of integration } \\\\ 1: & \\text { uses initial condition } f(0)=-1 \\\\ 1: & \\text { solves for } y \\\\ & 0 / 1 \\text { if } y \\text { is linear }\\end{cases}\\)\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\nNote: 0/5 if no separation of variables\n\n1 : answer\n0/1 if -1 not in range",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          53,
+          572,
+          619
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2000.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

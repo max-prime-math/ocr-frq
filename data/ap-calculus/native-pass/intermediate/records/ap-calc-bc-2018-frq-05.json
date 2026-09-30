@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2018-frq-05",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2018-frq-05-diagram-01.jpg}\n\\end{center}\nThe graphs of the polar curves $r=4$ and $r=3+2 \\cos \\theta$ are shown in the figure above. The curves intersect at $\\theta=\\frac{\\pi}{3}$ and $\\theta=\\frac{5 \\pi}{3}$.\\\\\n(a) Let $R$ be the shaded region that is inside the graph of $r=4$ and also outside the graph of $r=3+2 \\cos \\theta$, as shown in the figure above. Write an expression involving an integral for the area of $R$.\\\\\n(b) Find the slope of the line tangent to the graph of $r=3+2 \\cos \\theta$ at $\\theta=\\frac{\\pi}{2}$.\\\\\n(c) A particle moves along the portion of the curve $r=3+2 \\cos \\theta$ for $0<\\theta<\\frac{\\pi}{2}$. The particle moves in such a way that the distance between the particle and the origin increases at a constant rate of 3 units per second. Find the rate at which the angle $\\theta$ changes with respect to time at the instant when the position of the particle corresponds to $\\theta=\\frac{\\pi}{3}$. Indicate units of measure.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2018-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2018-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2018_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\\begin{itemize}\n\\item[(a)] Area \\(=\\frac{1}{2} \\int_{\\pi / 3}^{5 \\pi / 3}\\left(4^{2}-(3+2 \\cos \\theta)^{2}\\right) d \\theta\\)\n\\item[(b)] \\(\\frac{d r}{d \\theta}=-\\left.2 \\sin \\theta \\Rightarrow \\frac{d r}{d \\theta}\\right|_{\\theta=\\pi / 2}=-2\\)\n\\[\n\\begin{aligned}\n& r\\left(\\frac{\\pi}{2}\\right)=3+2 \\cos \\left(\\frac{\\pi}{2}\\right)=3 \\\\\n& y=r \\sin \\theta \\Rightarrow \\frac{d y}{d \\theta}=\\frac{d r}{d \\theta} \\sin \\theta+r \\cos \\theta \\\\\n& x=r \\cos \\theta \\Rightarrow \\frac{d x}{d \\theta}=\\frac{d r}{d \\theta} \\cos \\theta-r \\sin \\theta \\\\\n& \\left.\\frac{d y}{d x}\\right|_{\\theta=\\pi / 2}=\\left.\\frac{d y / d \\theta}{d x / d \\theta}\\right|_{\\theta=\\pi / 2}=\\frac{-2 \\sin \\left(\\frac{\\pi}{2}\\right)+3 \\cos \\left(\\frac{\\pi}{2}\\right)}{-2 \\cos \\left(\\frac{\\pi}{2}\\right)-3 \\sin \\left(\\frac{\\pi}{2}\\right)}=\\frac{2}{3}\n\\end{aligned}\n\\]\nThe slope of the line tangent to the graph of \\(r=3+2 \\cos \\theta\\) at \\(\\theta=\\frac{\\pi}{2}\\) is \\(\\frac{2}{3}\\).\n— OR—\n\\[\n\\begin{aligned}\n& y=r \\sin \\theta=(3+2 \\cos \\theta) \\sin \\theta \\Rightarrow \\frac{d y}{d \\theta}=3 \\cos \\theta+2 \\cos ^{2} \\theta-2 \\sin ^{2} \\theta \\\\\n& x=r \\cos \\theta=(3+2 \\cos \\theta) \\cos \\theta \\Rightarrow \\frac{d x}{d \\theta}=-3 \\sin \\theta-4 \\sin \\theta \\cos \\theta \\\\\n& \\left.\\frac{d y}{d x}\\right|_{\\theta=\\pi / 2}=\\left.\\frac{d y / d \\theta}{d x / d \\theta}\\right|_{\\theta=\\pi / 2}=\\frac{3 \\cos \\left(\\frac{\\pi}{2}\\right)+2 \\cos ^{2}\\left(\\frac{\\pi}{2}\\right)-2 \\sin ^{2}\\left(\\frac{\\pi}{2}\\right)}{-3 \\sin \\left(\\frac{\\pi}{2}\\right)-4 \\sin \\left(\\frac{\\pi}{2}\\right) \\cos \\left(\\frac{\\pi}{2}\\right)}=\\frac{2}{3}\n\\end{aligned}\n\\]\nThe slope of the line tangent to the graph of \\(r=3+2 \\cos \\theta\\) at \\(\\theta=\\frac{\\pi}{2}\\) is \\(\\frac{2}{3}\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{d r}{d t}=\\frac{d r}{d \\theta} \\cdot \\frac{d \\theta}{d t}=-2 \\sin \\theta \\cdot \\frac{d \\theta}{d t} \\Rightarrow \\frac{d \\theta}{d t}=\\frac{d r}{d t} \\cdot \\frac{1}{-2 \\sin \\theta} \\\\\n& \\left.\\frac{d \\theta}{d t}\\right|_{\\theta=\\pi / 3}=3 \\cdot \\frac{1}{-2 \\sin \\left(\\frac{\\pi}{3}\\right)}=\\frac{3}{-\\sqrt{3}}=-\\sqrt{3} \\text { radians per second }\n\\end{aligned}\n\\]\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { constant and limits } \\\\ 2: \\text { integrand }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{c}1: \\frac{d y}{d \\theta}=\\frac{d r}{d \\theta} \\sin \\theta+r \\cos \\theta \\\\ \\text { or } \\frac{d x}{d \\theta}=\\frac{d r}{d \\theta} \\cos \\theta-r \\sin \\theta \\\\ 1: \\frac{d y}{d x}=\\frac{\\frac{d r}{d \\theta} \\sin \\theta+r \\cos \\theta}{\\frac{d r}{d \\theta} \\cos \\theta-r \\sin \\theta} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d r}{d t}=\\frac{d r}{d \\theta} \\cdot \\frac{d \\theta}{d t} \\\\ 1: \\frac{d \\theta}{d t}=\\frac{d r}{d t} \\cdot \\frac{1}{-2 \\sin \\theta} \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          39,
+          78,
+          571,
+          573
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "ap-calc-ab-2011-frq-04",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2011-frq-04-diagram-01.png\", width: 65%)\n\nThe continuous function $f$ is defined on the interval $- 4 <= x <= 3$. The graph of $f$ consists of two quarter circles and one line segment, as shown in the figure above. Let $g(x)= 2 x + integral_(0)^(x) f(t) d t$.\n\n(a) Find $g(- 3)$. Find $g'(x)$ and evaluate $g'(- 3)$.\n\n(b) Determine the $x$-coordinate of the point at which $g$ has an absolute maximum on the interval $- 4 <= x <= 3$. Justify your answer.\n\n(c) Find all values of $x$ on the interval $- 4 < x < 3$ for which the graph of $g$ has a point of inflection. Give a reason for your answer.\n\n(d) Find the average rate of change of $f$ on the interval $- 4 <= x <= 3$. There is no point $c \\,- 4 < c < 3$, for which $f'(c)$ is equal to that average rate of change. Explain why this statement does not contradict the Mean Value Theorem.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        180.74400329589844,
+        63.816001892089844,
+        430.3919982910156,
+        288.9840087890625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          62,
+          572,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          183.744,
+          66.81599999999999,
+          427.392,
+          285.984
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          316.79999999999995,
+          559.2959999999999,
+          329.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          334.08,
+          418.75199999999995,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          365.18399999999997,
+          287.13599999999997,
+          380.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          387.35999999999996,
+          553.2479999999999,
+          400.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.368,
+          402.04799999999994,
+          173.37599999999998,
+          415.008
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          420.768,
+          552.096,
+          434.304
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          435.45599999999996,
+          188.928,
+          448.41599999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          454.176,
+          536.544,
+          467.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          469.152,
+          538.2719999999999,
+          483.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          484.99199999999996,
+          183.744,
+          496.224
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "1770da16d0b80ea76720b779dc0be3d82b5937eb6576b05d472c28dcdee4e74c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

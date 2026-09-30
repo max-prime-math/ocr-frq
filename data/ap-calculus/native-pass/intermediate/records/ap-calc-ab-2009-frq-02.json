@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-frq-02",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "rawPrompt": "The rate at which people enter an auditorium for a rock concert is modeled by the function \\(R\\) given by\n\\(R(t)=1380 t^{2}-675 t^{3}\\) for \\(0 \\leq t \\leq 2\\) hours; \\(R(t)\\) is measured in people per hour. No one is in the auditorium\nat time \\(t=0\\), when the doors open. The doors close and the concert begins at time \\(t=2\\).\n(a) How many people are in the auditorium when the concert begins?\n(b) Find the time when the rate at which people enter the auditorium is a maximum. Justify your answer.\n(c) The total wait time for all the people in the auditorium is found by adding the time each person waits,\nstarting at the time the person enters the auditorium and ending when the concert begins. The function \\(w\\)\nmodels the total wait time for all the people who enter the auditorium before time \\(t\\). The derivative of \\(w\\) is\ngiven by \\(w^{\\prime}(t)=(2-t) R(t)\\). Find \\(w(2)-w(1)\\), the total wait time for those who enter the auditorium\nafter time \\(t=1\\).\n(d) On average, how long does a person wait in the auditorium for the concert to begin? Consider all people\nwho enter the auditorium after the doors open, and use the model for total wait time from part (c).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nThe rate at which people enter an auditorium for a rock concert is modeled by the function \\(R\\) given by \\(R(t)=1380 t^{2}-675 t^{3}\\) for \\(0 \\leq t \\leq 2\\) hours; \\(R(t)\\) is measured in people per hour. No one is in the auditorium at time \\(t=0\\), when the doors open. The doors close and the concert begins at time \\(t=2\\).\n\\begin{itemize}\n\\item[(a)] How many people are in the auditorium when the concert begins?\n\\item[(b)] Find the time when the rate at which people enter the auditorium is a maximum. Justify your answer.\n\\item[(c)] The total wait time for all the people in the auditorium is found by adding the time each person waits, starting at the time the person enters the auditorium and ending when the concert begins. The function \\(w\\) models the total wait time for all the people who enter the auditorium before time \\(t\\). The derivative of \\(w\\) is given by \\(w^{\\prime}(t)=(2-t) R(t)\\). Find \\(w(2)-w(1)\\), the total wait time for those who enter the auditorium after time \\(t=1\\).\n\\item[(d)] On average, how long does a person wait in the auditorium for the concert to begin? Consider all people who enter the auditorium after the doors open, and use the model for total wait time from part (c).\n\\item[(a)] \\(\\int_{0}^{2} R(t) d t=980\\) people\n\\item[(b)] \\(R^{\\prime}(t)=0\\) when \\(t=0\\) and \\(t=1.36296\\)\nThe maximum rate may occur at \\(0, a=1.36296\\), or 2 .\n\\[\n\\begin{aligned}\n& R(0)=0 \\\\\n& R(a)=854.527 \\\\\n& R(2)=120\n\\end{aligned}\n\\]\nThe maximum rate occurs when \\(t=1.362\\) or 1.363.\n\\item[(c)] \\(w(2)-w(1)=\\int_{1}^{2} w^{\\prime}(t) d t=\\int_{1}^{2}(2-t) R(t) d t=387.5\\)\nThe total wait time for those who enter the auditorium after time \\(t=1\\) is 387.5 hours.\n\\item[(d)] \\(\\frac{1}{980} w(2)=\\frac{1}{980} \\int_{0}^{2}(2-t) R(t) d t=0.77551\\)\nOn average, a person waits 0.775 or 0.776 hour.\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { considers } R^{\\prime}(t)=0 \\\\ 1: \\text { interior critical point } \\\\ 1: \\text { answer and justification }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          64,
+          561,
+          259
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          69.408,
+          518.688,
+          82.368
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          82.94399999999999,
+          554.4,
+          99.07199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          100.8,
+          461.95199999999994,
+          113.184
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          120.672,
+          374.976,
+          133.63199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          138.528,
+          529.632,
+          151.488
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          157.248,
+          531.6479999999999,
+          169.63199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          169.63199999999998,
+          546.9119999999999,
+          182.016
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          182.016,
+          556.4159999999999,
+          194.39999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          194.39999999999998,
+          542.592,
+          208.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          209.664,
+          156.672,
+          220.896
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          228.95999999999998,
+          543.4559999999999,
+          241.92
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          241.344,
+          514.944,
+          253.72799999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

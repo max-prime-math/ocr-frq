@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2009-frq-02",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The rate at which people enter an auditorium for a rock concert is modeled by the function $R$ given by $R(t)= 1380 t^(2)- 675 t^(3)$ for $0 <= t <= 2$ hours; $R(t)$ is measured in people per hour. No one is in the auditorium at time $t = 0$, when the doors open. The doors close and the concert begins at time $t = 2$.\n\n(a) How many people are in the auditorium when the concert begins?\n\n(b) Find the time when the rate at which people enter the auditorium is a maximum. Justify your answer.\n\n(c) The total wait time for all the people in the auditorium is found by adding the time each person waits, starting at the time the person enters the auditorium and ending when the concert begins. The function $w$ models the total wait time for all the people who enter the auditorium before time $t$. The derivative of $w$ is given by $w'(t)= (2 - t) R(t)$. Find $w(2)- w(1)$, the total wait time for those who enter the auditorium after time $t = 1$.\n\n(d) On average, how long does a person wait in the auditorium for the concert to begin? Consider all people who enter the auditorium after the doors open, and use the model for total wait time from part (c).",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          316
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f0ee8c7bbf0a564a7e2df50bf9b89d5f03dd193d0228d5daae9a3dcb8ca7e996",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2014-frq-03",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2014-frq-03-diagram-01.png}\n\nThe function $f$ is defined on the closed interval $[-5,4]$. The graph of $f$ consists of three line segments and is shown in the figure above. Let $g$ be the function defined by $g(x)=\\int_{-3}^{x} f(t) d t$.\\\\\n(a) Find $g(3)$.\\\\\n(b) On what open intervals contained in $-5<x<4$ is the graph of $g$ both increasing and concave down? Give a reason for your answer.\\\\\n(c) The function $h$ is defined by $h(x)=\\frac{g(x)}{5 x}$. Find $h^{\\prime}(3)$.\\\\\n(d) The function $p$ is defined by $p(x)=f\\left(x^{2}-x\\right)$. Find the slope of the line tangent to the graph of $p$ at the point where $x=-1$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2014-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2014-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        207.0,
+        166.0,
+        404.0,
+        346.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2014 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nThe function \\(f\\) is defined on the closed interval \\([-5,4]\\). The graph of \\(f\\) consists of three line segments and is shown in the figure above. Let \\(g\\) be the function defined by \\(g(x)=\\int_{-3}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(3)\\).\n\\item[(b)] On what open intervals contained in \\(-5<x<4\\) is the graph of \\(g\\) both increasing and concave down? Give a reason for your answer.\n\\item[(c)] The function \\(h\\) is defined by \\(h(x)=\\frac{g(x)}{5 x}\\). Find \\(h^{\\prime}(3)\\).\n\\item[(d)] The function \\(p\\) is defined by \\(p(x)=f\\left(x^{2}-x\\right)\\). Find the slope of the line tangent to the graph of \\(p\\) at the point where \\(x=-1\\).\n\\item[(a)] \\(g(3)=\\int_{-3}^{3} f(t) d t=6+4-1=9\\)\n\\item[(b)] \\(g^{\\prime}(x)=f(x)\\)\nThe graph of \\(g\\) is increasing and concave down on the intervals \\(-5<x<-3\\) and \\(0<x<2\\) because \\(g^{\\prime}=f\\) is positive and decreasing on these intervals.\n\\item[(c)] \\(h^{\\prime}(x)=\\frac{5 x g^{\\prime}(x)-g(x) 5}{(5 x)^{2}}=\\frac{5 x g^{\\prime}(x)-5 g(x)}{25 x^{2}}\\)\n\\[\n\\begin{aligned}\nh^{\\prime}(3) & =\\frac{(5)(3) g^{\\prime}(3)-5 g(3)}{25 \\cdot 3^{2}} \\\\\n& =\\frac{15(-2)-5(9)}{225}=\\frac{-75}{225}=-\\frac{1}{3}\n\\end{aligned}\n\\]\n\\item[(d)] \\(p^{\\prime}(x)=f^{\\prime}\\left(x^{2}-x\\right)(2 x-1)\\)\n\\[\np^{\\prime}(-1)=f^{\\prime}(2)(-3)=(-2)(-3)=6\n\\]\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/77918c05-d996-4135-b74b-3e566738b8ea-1.jpg?height=608&width=655&top_left_y=389&top_left_x=1278)\n\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: h^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: p^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          66,
+          568,
+          557
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 4,
+      "sourceRect": [
+        207.0,
+        166.0,
+        404.0,
+        346.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2014-frq-02"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2001-frq-05",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function satisfying $f'(x)= - 3 x f(x)$, for all real numbers $x$, with $f(1)= 4$ and $lim_(x -> oo) f(x)= 0$.\n\n(a) Evaluate $integral_(1)^(oo)- 3 x f(x) d x$. Show the work that leads to your answer.\n\n(b) Use Euler's method, starting at $x = 1$ with a step size of 0.5, to approximate $f(2)$.\n\n(c) Write an expression for $y = f(x)$ by solving the differential equation $frac(d y,d x)= - 3 x y$ with the initial condition $f(1)= 4$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          345,
+          572,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0fdff6057407c4b5b6914f013058dd38d5870611b087cf7a41a1db1517e121d9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ]
+}

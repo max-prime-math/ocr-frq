@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2011-frq-04",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2011-frq-04-diagram-01.png\", width: 65%)\n\nThe continuous function $f$ is defined on the interval $- 4 <= x <= 3$. The graph of $f$ consists of two quarter circles and one line segment, as shown in the figure above. Let $g(x)= 2 x + integral_(0)^(x) f(t) d t$.\n\n(a) Find $g(- 3)$. Find $g'(x)$ and evaluate $g'(- 3)$.\n\n(b) Determine the $x$-coordinate of the point at which $g$ has an absolute maximum on the interval $- 4 <= x <= 3$. Justify your answer.\n\n(c) Find all values of $x$ on the interval $- 4 < x < 3$ for which the graph of $g$ has a point of inflection. Give a reason for your answer.\n\n(d) Find the average rate of change of $f$ on the interval $- 4 <= x <= 3$. There is no point $c \\,- 4 < c < 3$, for which $f'(c)$ is equal to that average rate of change. Explain why this statement does not contradict the Mean Value Theorem.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        179.0,
+        63.0,
+        433.0,
+        309.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          62,
+          572,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "376acc71e2aadad86e800b960c21d165504d87e7b50aabbdc8121692f530d833",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 5,
+      "sourceRect": [
+        179.0,
+        63.0,
+        433.0,
+        309.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2011-frq-03"
+    }
+  ]
+}

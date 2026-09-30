@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-form-b-frq-03",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at time \\(t\\), for \\(0 \\leq t \\leq 5\\), is given by\n\\(v(t)=\\ln \\left(t^{2}-3 t+3\\right)\\). The particle is at position \\(x=8\\) at time \\(t=0\\).\n(a) Find the acceleration of the particle at time \\(t=4\\).\n(b) Find all times \\(t\\) in the open interval \\(0<t<5\\) at which the particle changes direction. During which time\nintervals, for \\(0 \\leq t \\leq 5\\), does the particle travel to the left?\n(c) Find the position of the particle at time \\(t=2\\).\n(d) Find the average speed of the particle over the interval \\(0 \\leq t \\leq 2\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at time \\(t\\), for \\(0 \\leq t \\leq 5\\), is given by \\(v(t)=\\ln \\left(t^{2}-3 t+3\\right)\\). The particle is at position \\(x=8\\) at time \\(t=0\\).\n\\begin{itemize}\n\\item[(a)] Find the acceleration of the particle at time \\(t=4\\).\n\\item[(b)] Find all times \\(t\\) in the open interval \\(0<t<5\\) at which the particle changes direction. During which time intervals, for \\(0 \\leq t \\leq 5\\), does the particle travel to the left?\n\\item[(c)] Find the position of the particle at time \\(t=2\\).\n\\item[(d)] Find the average speed of the particle over the interval \\(0 \\leq t \\leq 2\\).\n\\item[(a)] \\(a(4)=v^{\\prime}(4)=\\frac{5}{7}\\)\n\\item[(b)] \\(v(t)=0\\)\n\\[\n\\begin{aligned}\n& t^{2}-3 t+3=1 \\\\\n& t^{2}-3 t+2=0 \\\\\n& (t-2)(t-1)=0 \\\\\n& t=1,2\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& v(t)>0 \\text { for } 0<t<1 \\\\\n& v(t)<0 \\text { for } 1<t<2 \\\\\n& v(t)>0 \\text { for } 2<t<5\n\\end{aligned}\n\\]\nThe particle changes direction when \\(t=1\\) and \\(t=2\\). The particle travels to the left when \\(1<t<2\\).\n\\item[(c)] \\(s(t)=s(0)+\\int_{0}^{t} \\ln \\left(u^{2}-3 u+3\\right) d u\\)\n\\[\n\\begin{aligned}\ns(2) & =8+\\int_{0}^{2} \\ln \\left(u^{2}-3 u+3\\right) d u \\\\\n& =8.368 \\text { or } 8.369\n\\end{aligned}\n\\]\n\\item[(d)] \\(\\frac{1}{2} \\int_{0}^{2}|v(t)| d t=0.370\\) or 0.371\n\\end{itemize}\n\n1 : answer\n\n3 : \\(\\left\\{\\begin{array}{l}1: \\text { sets } v(t)=0 \\\\ 1: \\text { direction change at } t=1,2 \\\\ 1: \\text { interval with reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\int_{0}^{2} \\ln \\left(u^{2}-3 u+3\\right) d u \\\\ 1: \\text { handles initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          53,
+          572,
+          308
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          58.175999999999995,
+          471.45599999999996,
+          71.136
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          72.288,
+          378.71999999999997,
+          91.58399999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          99.648,
+          304.416,
+          112.60799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          118.65599999999999,
+          553.2479999999999,
+          131.61599999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          131.904,
+          344.736,
+          144.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          152.35199999999998,
+          286.56,
+          165.31199999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          170.784,
+          373.82399999999996,
+          184.32
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

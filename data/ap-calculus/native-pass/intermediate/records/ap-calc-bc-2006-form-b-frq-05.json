@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-form-b-frq-05",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "rawPrompt": "Let $f$ be a function with $f(4)=1$ such that all points $(x, y)$ on the graph of $f$ satisfy the differential equation\n$$\n\\frac{d y}{d x}=2 y(3-x)\n$$\n\nLet $g$ be a function with $g(4)=1$ such that all points $(x, y)$ on the graph of $g$ satisfy the logistic differential equation\n\n$$\n\\frac{d y}{d x}=2 y(3-y) .\n$$\n\n(a) Find $y=f(x)$.\\\\\n(b) Given that $g(4)=1$, find $\\lim _{x \\rightarrow \\infty} g(x)$ and $\\lim _{x \\rightarrow \\infty} g^{\\prime}(x)$. (It is not necessary to solve for $g(x)$ or to show how you arrived at your answers.)\\\\\n(c) For what value of $y$ does the graph of $g$ have a point of inflection? Find the slope of the graph of $g$ at the point of inflection. (It is not necessary to solve for $g(x)$.)\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nLet \\(f\\) be a function with \\(f(4)=1\\) such that all points \\((x, y)\\) on the graph of \\(f\\) satisfy the differential equation\n\\[\n\\frac{d y}{d x}=2 y(3-x) .\n\\]\nLet \\(g\\) be a function with \\(g(4)=1\\) such that all points \\((x, y)\\) on the graph of \\(g\\) satisfy the logistic differential equation\n\\[\n\\frac{d y}{d x}=2 y(3-y) .\n\\]\n\\begin{itemize}\n\\item[(a)] Find \\(y=f(x)\\).\n\\item[(b)] Given that \\(g(4)=1\\), find \\(\\lim _{x \\rightarrow \\infty} g(x)\\) and \\(\\lim _{x \\rightarrow \\infty} g^{\\prime}(x)\\). (It is not necessary to solve for \\(g(x)\\) or to show how you arrived at your answers.)\n\\item[(c)] For what value of \\(y\\) does the graph of \\(g\\) have a point of inflection? Find the slope of the graph of \\(g\\) at the point of inflection. (It is not necessary to solve for \\(g(x)\\).)\n\\item[(a)] \\(\\frac{d y}{d x}=2 y(3-x)\\)\n\\[\n\\frac{1}{y} d y=2(3-x) d x\n\\]\n\\[\n\\ln |y|=6 x-x^{2}+C\n\\]\n\\[\n0=24-16+C\n\\]\n\\[\nC=-8\n\\]\n\\[\n\\ln |y|=6 x-x^{2}-8\n\\]\n\\[\ny=e^{6 x-x^{2}-8} \\text { for }-\\infty<x<\\infty\n\\]\n\\item[(b)] \\(\\lim _{x \\rightarrow \\infty} g(x)=3\\)\n\\[\n\\lim _{x \\rightarrow \\infty} g^{\\prime}(x)=0\n\\]\n\\item[(c)] \\(\\frac{d^{2} y}{d x^{2}}=(6-4 y) \\frac{d y}{d x}\\)\nBecause \\(\\frac{d y}{d x} \\neq 0\\) at any point on the graph of \\(g\\), the concavity only changes sign at \\(y=\\frac{3}{2}\\), half the carrying capacity.\n\\[\n\\left.\\frac{d y}{d x}\\right|_{y=3 / 2}=2\\left(\\frac{3}{2}\\right)\\left(3-\\frac{3}{2}\\right)=\\frac{9}{2}\n\\]\n\\end{itemize}\n\\(5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solution }\\end{array}\\right.\\)\n\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\nNote: \\(0 / 5\\) if no separation of variables\n\\(2:\\left\\{\\begin{array}{l}1: \\lim _{x \\rightarrow \\infty} g(x)=3 \\\\ 1: \\lim _{x \\rightarrow \\infty} g^{\\prime}(x)=0\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: y=\\frac{3}{2} \\\\ 1:\\left.\\frac{d y}{d x}\\right|_{y=3 / 2}\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          561,
+          288
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

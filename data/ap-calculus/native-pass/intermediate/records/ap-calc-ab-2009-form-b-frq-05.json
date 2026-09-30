@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-form-b-frq-05",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2009-form-b-frq-05-diagram-01.png}\nLet \\(f\\) be a twice-differentiable function defined on the interval \\(-1.2<x<3.2\\) with \\(f(1)=2\\). The graph of \\(f^{\\prime}\\),\nthe derivative of \\(f\\), is shown above. The graph of \\(f^{\\prime}\\) crosses the \\(x\\)-axis at \\(x=-1\\) and \\(x=3\\) and has\na horizontal tangent at \\(x=2\\). Let \\(g\\) be the function given by \\(g(x)=e^{f(x)}\\).\n(a) Write an equation for the line tangent to the graph of \\(g\\) at \\(x=1\\).\n(b) For \\(-1.2<x<3.2\\), find all values of \\(x\\) at which \\(g\\) has a local maximum. Justify your answer.\n(c) The second derivative of \\(g\\) is \\(g^{\\prime \\prime}(x)=e^{f(x)}\\left[\\left(f^{\\prime}(x)\\right)^{2}+f^{\\prime \\prime}(x)\\right]\\). Is \\(g^{\\prime \\prime}(-1)\\) positive, negative, or zero?\nJustify your answer.\n(d) Find the average rate of change of \\(g^{\\prime}\\), the derivative of \\(g\\), over the interval [1, 3].",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.67999267578125,
+        67.55999755859375,
+        402.7439880371094,
+        185.01600646972656
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\nLet \\(f\\) be a twice-differentiable function defined on the interval \\(-1.2<x<3.2\\) with \\(f(1)=2\\). The graph of \\(f^{\\prime}\\), the derivative of \\(f\\), is shown above. The graph of \\(f^{\\prime}\\) crosses the \\(x\\)-axis at \\(x=-1\\) and \\(x=3\\) and has a horizontal tangent at \\(x=2\\). Let \\(g\\) be the function given by \\(g(x)=e^{f(x)}\\).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(g\\) at \\(x=1\\).\n\\item[(b)] For \\(-1.2<x<3.2\\), find all values of \\(x\\) at which \\(g\\) has a local maximum. Justify your answer.\n\\item[(c)] The second derivative of \\(g\\) is \\(g^{\\prime \\prime}(x)=e^{f(x)}\\left[\\left(f^{\\prime}(x)\\right)^{2}+f^{\\prime \\prime}(x)\\right]\\). Is \\(g^{\\prime \\prime}(-1)\\) positive, negative, or zero? Justify your answer.\n\\item[(d)] Find the average rate of change of \\(g^{\\prime}\\), the derivative of \\(g\\), over the interval \\([1,3]\\).\n\\item[(a)] \\(g(1)=e^{f(1)}=e^{2}\\)\n\\(g^{\\prime}(x)=e^{f(x)} f^{\\prime}(x), \\quad g^{\\prime}(1)=e^{f(1)} f^{\\prime}(1)=-4 e^{2}\\)\nThe tangent line is given by \\(y=e^{2}-4 e^{2}(x-1)\\).\n\\item[(b)] \\(g^{\\prime}(x)=e^{f(x)} f^{\\prime}(x)\\)\n\\(e^{f(x)}>0\\) for all \\(x\\)\nSo, \\(g^{\\prime}\\) changes from positive to negative only when \\(f^{\\prime}\\) changes from positive to negative. This occurs at \\(x=-1\\) only. Thus, \\(g\\) has a local maximum at \\(x=-1\\).\n\\item[(c)] \\(g^{\\prime \\prime}(-1)=e^{f(-1)}\\left[\\left(f^{\\prime}(-1)\\right)^{2}+f^{\\prime \\prime}(-1)\\right]\\)\n\\(e^{f(-1)}>0\\) and \\(f^{\\prime}(-1)=0\\)\nSince \\(f^{\\prime}\\) is decreasing on a neighborhood of -1 ,\n\\(f^{\\prime \\prime}(-1)<0\\). Therefore, \\(g^{\\prime \\prime}(-1)<0\\).\n\\item[(d)] \\(\\frac{g^{\\prime}(3)-g^{\\prime}(1)}{3-1}=\\frac{e^{f(3)} f^{\\prime}(3)-e^{f(1)} f^{\\prime}(1)}{2}=2 e^{2}\\)\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: g^{\\prime}(x) \\\\ 1: g(1) \\text { and } g^{\\prime}(1) \\\\ 1: \\text { tangent line equation }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : answer } \\\\ 1 \\text { : justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { difference quotient } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          415
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          211.67999999999998,
+          70.55999999999999,
+          399.74399999999997,
+          182.016
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          211.67999999999998,
+          561.8879999999999,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          228.384,
+          512.928,
+          241.344
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          243.64799999999997,
+          399.74399999999997,
+          260.928
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          268.416,
+          371.23199999999997,
+          281.376
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          287.13599999999997,
+          507.45599999999996,
+          300.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          307.008,
+          542.016,
+          328.032
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.368,
+          330.33599999999996,
+          173.37599999999998,
+          343.296
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          349.056,
+          444.38399999999996,
+          364.032
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-form-b-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

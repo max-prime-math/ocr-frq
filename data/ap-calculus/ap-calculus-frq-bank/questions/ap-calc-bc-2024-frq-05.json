@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 4, align: (left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.hline(stroke: .5pt), [$x$], [0], [$pi$], [$2 pi$], table.hline(stroke: .5pt), [$f'(x)$], [5], [6], [0], table.hline(stroke: .5pt));\n\nThe function $f$ is twice differentiable for all $x$ with $f(0)= 0$. Values of $f'$, the derivative of $f$, are given in the table for selected values of $x$.\n\n(a) For $x >= 0$, the function $h$ is defined by $h(x)= integral_(0)^(x) sqrt(1 + lr((f'(t)))^(2)) d t$. Find the value of $h'(pi)$. Show the work that leads to your answer.\n\n(b) What information does $integral_(0)^(pi) sqrt(1 + lr((f'(x)))^(2)) d x$ provide about the graph of $f$ ?\n\n(c) Use Euler's method, starting at $x = 0$ with two steps of equal size, to approximate $f(2 pi)$. Show the computations that lead to your answer.\n\n(d) Find $integral (t + 5) cos lr((frac(t,4))) d t$. Show the work that leads to your answer.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2024-frq-05",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-13",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2024",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

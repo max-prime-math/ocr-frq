@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-frq-04",
+  "course": "BC",
+  "year": 2008,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008.pdf",
+      "sha256": "03b33eb234707fece3d699c865ffd6219b3c515a3220cc9a4c364faba8bfc7c5",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008.pdf",
+      "sha256": "9f6e880bb45af770174406b5eb2500957dd71e9e2e1506e0c19d4dabe0a88ef3"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2008-frq-04-diagram-01.jpg}\n\\end{center}\n\nGraph of $v$\\\\\nA particle moves along the $x$-axis so that its velocity at time $t$, for $0 \\leq t \\leq 6$, is given by a differentiable function $v$ whose graph is shown above. The velocity is 0 at $t=0, t=3$, and $t=5$, and the graph has horizontal tangents at $t=1$ and $t=4$. The areas of the regions bounded by the $t$-axis and the graph of $v$ on the intervals $[0,3],[3,5]$, and $[5,6]$ are 8,3 , and 2 , respectively. At time $t=0$, the particle is at $x=-2$.\\\\\n(a) For $0 \\leq t \\leq 6$, find both the time and the position of the particle when the particle is farthest to the left. Justify your answer.\\\\\n(b) For how many values of $t$, where $0 \\leq t \\leq 6$, is the particle at $x=-8$ ? Explain your reasoning.\\\\\n(c) On the interval $2<t<3$, is the speed of the particle increasing or decreasing? Give a reason for your answer.\\\\\n(d) During what time intervals, if any, is the acceleration of the particle negative? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2008-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2008-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2008_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/e5e075ef-8b77-466e-a13f-62237f08e5f2-1.jpg?height=445&width=668&top_left_y=382&top_left_x=726}\n\\captionsetup{labelformat=empty}\n\\caption{Graph of \\(v\\)}\n\\end{figure}\nA particle moves along the \\(x\\)-axis so that its velocity at time \\(t\\), for \\(0 \\leq t \\leq 6\\), is given by a differentiable function \\(v\\) whose graph is shown above. The velocity is 0 at \\(t=0, t=3\\), and \\(t=5\\), and the graph has horizontal tangents at \\(t=1\\) and \\(t=4\\). The areas of the regions bounded by the \\(t\\)-axis and the graph of \\(v\\) on the intervals [0, 3], [3, 5], and [5, 6] are 8, 3, and 2, respectively. At time \\(t=0\\), the particle is at \\(x=-2\\).\n\\begin{itemize}\n\\item[(a)] For \\(0 \\leq t \\leq 6\\), find both the time and the position of the particle when the particle is farthest to the left. Justify your answer.\n\\item[(b)] For how many values of \\(t\\), where \\(0 \\leq t \\leq 6\\), is the particle at \\(x=-8\\) ? Explain your reasoning.\n\\item[(c)] On the interval \\(2<t<3\\), is the speed of the particle increasing or decreasing? Give a reason for your answer.\n\\item[(d)] During what time intervals, if any, is the acceleration of the particle negative? Justify your answer.\n\\item[(a)] Since \\(v(t)<0\\) for \\(0<t<3\\) and \\(5<t<6\\), and \\(v(t)>0\\) for \\(3<t<5\\), we consider \\(t=3\\) and \\(t=6\\).\n\\[\n\\begin{aligned}\n& x(3)=-2+\\int_{0}^{3} v(t) d t=-2-8=-10 \\\\\n& x(6)=-2+\\int_{0}^{6} v(t) d t=-2-8+3-2=-9\n\\end{aligned}\n\\]\nTherefore, the particle is farthest left at time \\(t=3\\) when its position is \\(x(3)=-10\\).\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { identifies } t=3 \\text { as a candidate } \\\\\n1: \\text { considers } \\int_{0}^{6} v(t) d t \\\\\n1: \\text { conclusion }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] The particle moves continuously and monotonically from \\(x(0)=-2\\) to \\(x(3)=-10\\). Similarly, the particle moves continuously and monotonically from \\(x(3)=-10\\) to \\(x(5)=-7\\) and also from \\(x(5)=-7\\) to \\(x(6)=-9\\).\nBy the Intermediate Value Theorem, there are three values of \\(t\\) for which the particle is at \\(x(t)=-8\\).\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{aligned}\n1: & \\text { positions at } t=3, t=5, \\\\\n& \\text { and } t=6 \\\\\n1: & \\text { description of motion } \\\\\n1: & \\text { conclusion }\n\\end{aligned}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)] The speed is decreasing on the interval \\(2<t<3\\) since on this interval \\(v<0\\) and \\(v\\) is increasing.\n\\item[(d)] The acceleration is negative on the intervals \\(0<t<1\\) and \\(4<t<6\\) since velocity is decreasing on these intervals.\n\\end{itemize}\n\\[\n\\begin{aligned}\n& 1: \\text { answer with reaso } \\\\\n& 2:\\left\\{\\begin{array}{l}\n1: \\text { answer } \\\\\n1: \\text { justification }\n\\end{array}\\right.\n\\end{aligned}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

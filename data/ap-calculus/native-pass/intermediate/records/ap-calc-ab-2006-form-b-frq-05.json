@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-05",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=(y-1)^{2} \\cos (\\pi x)\\).\n(a) On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n(Note: Use the axes provided in the exam booklet.)\n\\includegraphics{ap-calc-ab-2006-form-b-frq-05-diagram-01.png}\n(b) There is a horizontal line with equation \\(y=c\\) that satisfies this differential equation. Find the value of \\(c\\).\n(c) Find the particular solution \\(y=f(x)\\) to the differential equation with the initial condition \\(f(1)=0\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        249.5760040283203,
+        145.60800170898438,
+        362.7120056152344,
+        262.4880065917969
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=(y-1)^{2} \\cos (\\pi x)\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the nine points indicated. (Note: Use the axes provided in the exam booklet.)\n![](https://cdn.mathpix.com/cropped/d40aaf78-ca80-4e50-a53d-e6b710388a79-1.jpg?height=387&width=372&top_left_y=567&top_left_x=874)\n\\item[(b)] There is a horizontal line with equation \\(y=c\\) that satisfies this differential equation. Find the value of \\(c\\).\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the differential equation with the initial condition \\(f(1)=0\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/d40aaf78-ca80-4e50-a53d-e6b710388a79-1.jpg?height=380&width=372&top_left_y=1143&top_left_x=513)\n\\item[(b)] The line \\(y=1\\) satisfies the differential equation, so \\(c=1\\).\n\\item[(c)] \\(\\frac{1}{(y-1)^{2}} d y=\\cos (\\pi x) d x\\)\n\\[\n\\begin{aligned}\n& -(y-1)^{-1}=\\frac{1}{\\pi} \\sin (\\pi x)+C \\\\\n& \\frac{1}{1-y}=\\frac{1}{\\pi} \\sin (\\pi x)+C \\\\\n& 1=\\frac{1}{\\pi} \\sin (\\pi)+C=C \\\\\n& \\frac{1}{1-y}=\\frac{1}{\\pi} \\sin (\\pi x)+1 \\\\\n& \\frac{\\pi}{1-y}=\\sin (\\pi x)+\\pi \\\\\n& y=1-\\frac{\\pi}{\\sin (\\pi x)+\\pi} \\text { for }-\\infty<x<\\infty\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { all other slopes }\\end{array}\\right.\\)\n\\(1: c=1\\)\n\\(6:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 2: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\nNote: \\(\\max 3 / 6\\) [1-2-0-0-0] if no constant of integration\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          67,
+          572,
+          334
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          71.71199999999999,
+          321.69599999999997,
+          97.056
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          103.96799999999999,
+          544.0319999999999,
+          117.50399999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          122.39999999999999,
+          320.544,
+          135.93599999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "diagram",
+        "rect": [
+          252.576,
+          148.60799999999998,
+          359.712,
+          259.488
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          271.008,
+          550.944,
+          284.544
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          292.608,
+          530.496,
+          306.71999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

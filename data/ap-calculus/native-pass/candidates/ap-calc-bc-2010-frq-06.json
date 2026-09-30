@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2010-frq-06",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "$ f(x)= cases(frac(cos x - 1,x^(2)) & \" for \" x!= 0, - frac(1,2) & \" for \" x = 0) $ The function $f$, defined above, has derivatives of all orders. Let $g$ be the function defined by $g(x)= 1 + integral_(0)^(x) f(t) d t$.\n\n(a) Write the first three nonzero terms and the general term of the Taylor series for $cos x$ about $x = 0$. Use this series to write the first three nonzero terms and the general term of the Taylor series for $f$ about $x = 0$.\n\n(b) Use the Taylor series for $f$ about $x = 0$ found in part (a) to determine whether $f$ has a relative maximum, relative minimum, or neither at $x = 0$. Give a reason for your answer.\n\n(c) Write the fifth-degree Taylor polynomial for $g$ about $x = 0$.\n\n(d) The Taylor series for $g$ about $x = 0$, evaluated at $x = 1$, is an alternating series with individual terms that decrease in absolute value to 0. Use the third-degree Taylor polynomial for $g$ about $x = 0$ to estimate the value of $g(1)$. Explain why this estimate differs from the actual value of $g(1)$ by less than $frac(1,6!)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          245,
+          572,
+          545
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f327e1d0441065b02433a6cafa4658f8bfc03de589ba19c340addea60d4c009f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ]
+}

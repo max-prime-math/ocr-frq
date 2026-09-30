@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "Let $f(x) = 2x e^(2x)$.\n\n(a) Find $lim_(x -> -infinity) f(x)$ and $lim_(x -> infinity) f(x)$.\n\n(b) Find the absolute minimum value of $f$. Justify that it is absolute.\n\n(c) State the range of $f$.\n\n(d) For nonzero $b$, consider $y = b x e^(b x)$. Show that its absolute minimum value is the same for every $b$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1998-frq-02",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-5-5",
+    "solution": "(a) Exponential decay dominates the linear factor as $x -> -infinity$, so\n$ lim_(x -> -infinity) 2x e^(2x) = 0. $\nAlso, $lim_(x -> infinity) 2x e^(2x) = infinity$.\n\n(b)\n$ f'(x) = 2e^(2x) + 4x e^(2x) = 2e^(2x)(1 + 2x). $\nThe only critical point is $x = -frac(1, 2)$. Since $e^(2x) > 0$, $f'(x) < 0$ for $x < -frac(1, 2)$ and $f'(x) > 0$ for $x > -frac(1, 2)$. Therefore this point is an absolute minimum.\n$ f(-frac(1, 2)) = -frac(1, e). $\n\n(c) The range is $[-frac(1, e), infinity)$.\n\n(d)\n$ y' = b e^(b x) + b^2 x e^(b x) = b e^(b x)(1 + b x). $\nBecause $b != 0$, the critical point is $x = -frac(1, b)$. At that point,\n$ y = b(-frac(1, b))e^(-1) = -frac(1, e). $\nThus the absolute minimum is $-frac(1, e)$ for every nonzero $b$.",
+    "tags": [
+      "1998",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-5",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2006-frq-04",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 10, align: (center, center, center, center, center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.vline(stroke: .5pt, x: 9), table.vline(stroke: .5pt, x: 10), table.hline(stroke: .5pt), [$t$ (seconds)], [0], [10], [20], [30], [40], [50], [60], [70], [80], table.hline(stroke: .5pt), [$v(t)$ (feet per second)], [5], [14], [22], [29], [35], [40], [44], [47], [49], table.hline(stroke: .5pt));\n\nRocket $A$ has positive velocity $v(t)$ after being launched upward from an initial height of 0 feet at time $t = 0$ seconds. The velocity of the rocket is recorded for selected values of $t$ over the interval $0 <= t <= 80$ seconds, as shown in the table above.\n\n(a) Find the average acceleration of rocket $A$ over the time interval $0 <= t <= 80$ seconds. Indicate units of measure.\n\n(b) Using correct units, explain the meaning of $integral_(10)^(70) v(t) d t$ in terms of the rocket's flight. Use a midpoint Riemann sum with 3 subintervals of equal length to approximate $integral_(10)^(70) v(t) d t$.\n\n(c) Rocket $B$ is launched upward with an acceleration of $a(t)= frac(3,sqrt(t + 1))$ feet per second per second. At time $t = 0$ seconds, the initial height of the rocket is 0 feet, and the initial velocity is 2 feet per second. Which of the two rockets is traveling faster at time $t = 80$ seconds? Explain your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          530
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "378fa1f68844497ef66d76200e3dfc3ed266a46a076b25529081709a3b53d06e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ]
+}

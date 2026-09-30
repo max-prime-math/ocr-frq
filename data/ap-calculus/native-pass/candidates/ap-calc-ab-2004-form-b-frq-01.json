@@ -1,0 +1,118 @@
+{
+  "id": "ap-calc-ab-2004-form-b-frq-01",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $R$ be the region enclosed by the graph of $y = sqrt(x - 1)$, the vertical line $x = 10$, and the $x$-axis.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is revolved about the horizontal line $y = 3$.\n\n(c) Find the volume of the solid generated when $R$ is revolved about the vertical line $x = 10$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          70,
+          572,
+          281
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          50.687999999999995,
+          203.04,
+          502.27199999999993,
+          217.152
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          224.64,
+          168.48,
+          236.44799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          242.49599999999998,
+          489.02399999999994,
+          255.456
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          262.368,
+          482.688,
+          275.328
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "c5fe080faa79b03cdee6f3c68130ca421c89fa1d28bee72a5cb6d66046b29ac6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

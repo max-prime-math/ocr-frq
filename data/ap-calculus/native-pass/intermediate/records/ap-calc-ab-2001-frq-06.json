@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2001-frq-06",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "rawPrompt": "The function \\(f\\) is differentiable for all real numbers. The point \\(\\left(3, \\frac{1}{4}\\right)\\) is on the graph of \\(y=f(x)\\), and the\nslope at each point \\((x, y)\\) on the graph is given by \\(\\frac{d y}{d x}=y^{2}(6-2 x)\\).\n(a) Find \\(\\frac{d^{2} y}{d x^{2}}\\) and evaluate it at the point \\(\\left(3, \\frac{1}{4}\\right)\\).\n(b) Find \\(y=f(x)\\) by solving the differential equation \\(\\frac{d y}{d x}=y^{2}(6-2 x)\\) with the initial condition \\(f(3)=\\frac{1}{4}\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe function \\(f\\) is differentiable for all real numbers. The point \\(\\left(3, \\frac{1}{4}\\right)\\) is on the graph of \\(y=f(x)\\), and the slope at each point \\((x, y)\\) on the graph is given by \\(\\frac{d y}{d x}=y^{2}(6-2 x)\\).\n\\begin{itemize}\n\\item[(a)] Find \\(\\frac{d^{2} y}{d x^{2}}\\) and evaluate it at the point \\(\\left(3, \\frac{1}{4}\\right)\\).\n\\item[(b)] Find \\(y=f(x)\\) by solving the differential equation \\(\\frac{d y}{d x}=y^{2}(6-2 x)\\) with the initial condition \\(f(3)=\\frac{1}{4}\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n& \\frac{d^{2} y}{d x^{2}}=2 y \\frac{d y}{d x}(6-2 x)-2 y^{2} \\\\\n& \\quad=2 y^{3}(6-2 x)^{2}-2 y^{2} \\\\\n& \\left.\\frac{d^{2} y}{d x^{2}}\\right|_{\\left(3, \\frac{1}{4}\\right)}=0-2\\left(\\frac{1}{4}\\right)^{2}=-\\frac{1}{8}\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\frac{1}{y^{2}} d y=(6-2 x) d x \\\\\n& -\\frac{1}{y}=6 x-x^{2}+C \\\\\n& -4=18-9+C=9+C \\\\\n& C=-13 \\\\\n& y=\\frac{1}{x^{2}-6 x+13}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}2: \\frac{d^{2} y}{d x^{2}} \\\\ \\quad<-2>\\text { product rule or } \\\\ \\quad \\text { chain rule error } \\\\ 1: \\text { value at }\\left(3, \\frac{1}{4}\\right)\\end{array}\\right.\\)\n\\(6:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivative of } d y \\text { term } \\\\ 1: \\text { antiderivative of } d x \\text { term } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } f(3)=\\frac{1}{4} \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\nNote: \\(\\max 3 / 6\\) [1-1-1-0-0-0] if no constant of integration\n\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          478,
+          572,
+          648
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          497.376,
+          539.712,
+          522.7199999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          523.584,
+          374.976,
+          548.352
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          554.976,
+          286.56,
+          586.656
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          595.2959999999999,
+          562.4639999999999,
+          621.216
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

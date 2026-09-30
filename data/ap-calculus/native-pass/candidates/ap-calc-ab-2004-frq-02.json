@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2004-frq-02",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2004-frq-02-diagram-01.png\", width: 65%)\n\nLet $f$ and $g$ be the functions given by $f(x)= 2 x(1 - x)$ and $g(x)= 3(x - 1) sqrt(x)$ for $0 <= x <= 1$. The graphs of $f$ and $g$ are shown in the figure above.\n\n(a) Find the area of the shaded region enclosed by the graphs of $f$ and $g$.\n\n(b) Find the volume of the solid generated when the shaded region enclosed by the graphs of $f$ and $g$ is revolved about the horizontal line $y = 2$.\n\n(c) Let $h$ be the function given by $h(x)= k x(1 - x)$ for $0 <= x <= 1$. For each $k > 0$, the region (not shown) enclosed by the graphs of $h$ and $g$ is the base of a solid with square cross sections perpendicular to the $x$-axis. There is a value of $k$ for which the volume of this solid is equal to 15. Write, but do not solve, an equation involving an integral expression that could be used to find the value of $k$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        233.447998046875,
+        73.03199768066406,
+        379.4159851074219,
+        235.70399475097656
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          72,
+          572,
+          412
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          236.44799999999998,
+          76.032,
+          376.416,
+          232.70399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          243.64799999999997,
+          563.04,
+          258.62399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          62.495999999999995,
+          259.77599999999995,
+          237.6,
+          272.736
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          278.496,
+          390.52799999999996,
+          291.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          300.096,
+          527.328,
+          313.056
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          312.47999999999996,
+          266.688,
+          324.864
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          334.08,
+          546.9119999999999,
+          347.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          349.056,
+          540.8639999999999,
+          361.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          361.44,
+          546.336,
+          373.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          373.82399999999996,
+          448.128,
+          386.20799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "d2573465b1c7f73a9a1daa9fa06e4fceb78b9864b788b31c95c0794381c333a7",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

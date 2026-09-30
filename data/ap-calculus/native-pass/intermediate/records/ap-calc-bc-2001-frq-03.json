@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-03",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2001-frq-03-diagram-01.jpg}\n\\end{center}\nA car is traveling on a straight road with velocity $55 \\mathrm{ft} / \\mathrm{sec}$ at time $t=0$. For $0 \\leq t \\leq 18$ seconds, the car's acceleration $a(t)$, in $\\mathrm{ft} / \\mathrm{sec}^{2}$, is the piecewise linear function defined by the graph above.\\\\\n(a) Is the velocity of the car increasing at $t=2$ seconds? Why or why not?\\\\\n(b) At what time in the interval $0 \\leq t \\leq 18$, other than $t=0$, is the velocity of the car $55 \\mathrm{ft} / \\mathrm{sec}$ ? Why?\\\\\n(c) On the time interval $0 \\leq t \\leq 18$, what is the car's absolute maximum velocity, in $\\mathrm{ft} / \\mathrm{sec}$, and at what time does it occur? Justify your answer.\\\\\n(d) At what times in the interval $0 \\leq t \\leq 18$, if any, is the car's velocity equal to zero? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2001-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2001-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2001_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA car is traveling on a straight road with velocity 55 ft /sec at time \\(t=0\\). For \\(0 \\leq t \\leq 18\\) seconds, the car's acceleration \\(a(t)\\), in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), is the piecewise linear function defined by the graph above.\n\\begin{itemize}\n\\item[(a)] Is the velocity of the car increasing at \\(t=2\\) seconds? Why or why not?\n\\item[(b)] At what time in the interval \\(0 \\leq t \\leq 18\\), other than \\(t=0\\), is the velocity of the car 55 ft/sec? Why?\n\\item[(c)] On the time interval \\(0 \\leq t \\leq 18\\), what is the car's absolute maximum velocity, in ft/sec, and at what time does it occur? Justify your answer.\n\\item[(d)] At what times in the interval \\(0 \\leq t \\leq 18\\), if any, is the car's velocity equal to zero? Justify your answer.\n\\item[(a)] Since \\(v^{\\prime}(2)=a(2)\\) and \\(a(2)=15>0\\), the velocity is increasing at \\(t=2\\).\n\\item[(b)] At time \\(t=12\\) because\n\\[\nv(12)-v(0)=\\int_{0}^{12} a(t) d t=0\n\\]\n\\item[(c)] The absolute maximum velocity is 115 ft/sec at \\(t=6\\).\nThe absolute maximum must occur at \\(t=6\\) or at an endpoint.\n\\[\n\\begin{aligned}\n& v(6)=55+\\int_{0}^{6} a(t) d t \\\\\n& \\quad=55+2(15)+\\frac{1}{2}(4)(15)=115>v(0) \\\\\n& \\int_{6}^{18} a(t) d t<0 \\text { so } v(18)<v(6)\n\\end{aligned}\n\\]\n\\item[(d)] The car's velocity is never equal to 0. The absolute minimum occurs at \\(t=16\\) where\n\\[\nv(16)=115+\\int_{6}^{16} a(t) d t=115-105=10>0\n\\]\n\\end{itemize}\n\n1 : answer and reason\n\\(2:\\left\\{\\begin{array}{l}1: t=12 \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: t=6 \\\\ 1: \\text { absolute maximum velocity } \\\\ 1: \\text { identifies } t=6 \\text { and } \\\\ t=18 \\text { as candidates } \\\\ \\text { or } \\\\ \\text { indicates that } v \\text { increases, } \\\\ \\text { decreases, then increases } \\\\ 1: \\text { eliminates } t=18\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          68,
+          572,
+          510
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

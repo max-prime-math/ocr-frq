@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2009-frq-03",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Mighty Cable Company manufactures cable that sells for \\$120 per meter. For a cable of fixed length, the cost of producing a portion of the cable varies with its distance from the beginning of the cable. Mighty reports that the cost to produce a portion of a cable that is $x$ meters from the beginning of the cable is $6 sqrt(x)$ dollars per meter. (Note: Profit is defined to be the difference between the amount of money received by the company for selling the cable and the company's cost of producing the cable.)\n\n(a) Find Mighty's profit on the sale of a 25-meter cable.\n\n(b) Using correct units, explain the meaning of $integral_(25)^(30) 6 sqrt(x) d x$ in the context of this problem.\n\n(c) Write an expression, involving an integral, that represents Mighty's profit on the sale of a cable that is $k$ meters long.\n\n(d) Find the maximum profit that Mighty could earn on the sale of one cable. Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          265,
+          572,
+          514
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          286.56,
+          560.736,
+          299.52
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          299.52,
+          558.144,
+          311.904
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          311.904,
+          549.216,
+          326.01599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          326.01599999999996,
+          555.5519999999999,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          338.4,
+          319.104,
+          351.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 23,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          356.544,
+          315.64799999999997,
+          370.08
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 24,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          376.128,
+          465.40799999999996,
+          400.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 26,
+        "type": "text",
+        "rect": [
+          65.664,
+          408.38399999999996,
+          534.8159999999999,
+          421.91999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          82.368,
+          421.344,
+          148.60799999999998,
+          433.72799999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 28,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          439.2,
+          499.96799999999996,
+          452.15999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "dc844688e01a6a9d5040e9be51db3b6a481f01ff1641e362b0bc6b57af4d550b",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

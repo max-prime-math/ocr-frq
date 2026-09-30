@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-1999-frq-04",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Suppose that the function $f$ has a continuous second derivative for all $x$, and that $f(0)= 2 \\, f'(0)= - 3$, and $f''(0)= 0$. Let $g$ be a function whose derivative is given by $g'(x)= e^(- 2 x)lr((3 f(x)+ 2 f'(x)))$ for all $x$.\n\n(a) Write an equation of the line tangent to the graph of $f$ at the point where $x = 0$.\n\n(b) Is there sufficient information to determine whether or not the graph of $f$ has a point of inflection when $x = 0$ ? Explain your answer.\n\n(c) Given that $g(0)= 4$, write an equation of the line tangent to the graph of $g$ at the point where $x = 0$.\n\n(d) Show that $g''(x)= e^(- 2 x)lr((- 6 f(x)- f'(x)+ 2 f''(x)))$. Does $g$ have a local maximum at $x = 0$ ? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          39,
+          572,
+          651
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          71.71199999999999,
+          533.088,
+          84.672
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          85.24799999999999,
+          537.6959999999999,
+          100.8
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          113.472,
+          439.77599999999995,
+          127.29599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          64.512,
+          138.816,
+          543.4559999999999,
+          152.64
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          85.24799999999999,
+          151.77599999999998,
+          219.456,
+          164.16
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          176.54399999999998,
+          534.24,
+          190.368
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          203.32799999999997,
+          516.6719999999999,
+          219.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          84.672,
+          219.456,
+          175.968,
+          232.41599999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ec45da175f21fc84297b1b05171280918b0b16c763599ad8f0ecb0b7e2db72e1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

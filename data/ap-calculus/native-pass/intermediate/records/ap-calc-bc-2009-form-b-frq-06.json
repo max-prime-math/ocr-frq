@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-06",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "The function $f$ is defined by the power series\n$$\nf(x)=1+(x+1)+(x+1)^{2}+\\cdots+(x+1)^{n}+\\cdots=\\sum_{n=0}^{\\infty}(x+1)^{n}\n$$\n\nfor all real numbers $x$ for which the series converges.\\\\\n(a) Find the interval of convergence of the power series for $f$. Justify your answer.\\\\\n(b) The power series above is the Taylor series for $f$ about $x=-1$. Find the sum of the series for $f$.\\\\\n(c) Let $g$ be the function defined by $g(x)=\\int_{-1}^{x} f(t) d t$. Find the value of $g\\left(-\\frac{1}{2}\\right)$, if it exists, or explain why $g\\left(-\\frac{1}{2}\\right)$ cannot be determined.\\\\\n(d) Let $h$ be the function defined by $h(x)=f\\left(x^{2}-1\\right)$. Find the first three nonzero terms and the general term of the Taylor series for $h$ about $x=0$, and find the value of $h\\left(\\frac{1}{2}\\right)$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nThe function \\(f\\) is defined by the power series\n\\[\nf(x)=1+(x+1)+(x+1)^{2}+\\cdots+(x+1)^{n}+\\cdots=\\sum_{n=0}^{\\infty}(x+1)^{n}\n\\]\nfor all real numbers \\(x\\) for which the series converges.\n\\begin{itemize}\n\\item[(a)] Find the interval of convergence of the power series for \\(f\\). Justify your answer.\n\\item[(b)] The power series above is the Taylor series for \\(f\\) about \\(x=-1\\). Find the sum of the series for \\(f\\).\n\\item[(c)] Let \\(g\\) be the function defined by \\(g(x)=\\int_{-1}^{x} f(t) d t\\). Find the value of \\(g\\left(-\\frac{1}{2}\\right)\\), if it exists, or explain why \\(g\\left(-\\frac{1}{2}\\right)\\) cannot be determined.\n\\item[(d)] Let \\(h\\) be the function defined by \\(h(x)=f\\left(x^{2}-1\\right)\\). Find the first three nonzero terms and the general term of the Taylor series for \\(h\\) about \\(x=0\\), and find the value of \\(h\\left(\\frac{1}{2}\\right)\\).\n\\item[(a)] The power series is geometric with ratio \\((x+1)\\).\nThe series converges if and only if \\(|x+1|<1\\).\nTherefore, the interval of convergence is \\(-2<x<0\\).\nOR\n\\[\n\\lim _{n \\rightarrow \\infty}\\left|\\frac{(x+1)^{n+1}}{(x+1)^{n}}\\right|=|x+1|<1 \\text { when }-2<x<0\n\\]\nAt \\(x=-2\\), the series is \\(\\sum_{n=0}^{\\infty}(-1)^{n}\\), which diverges since the terms do not converge to 0 . At \\(x=0\\), the series is \\(\\sum_{n=0}^{\\infty} 1\\), which similarly diverges. Therefore, the interval of convergence is \\(-2<x<0\\).\n\\item[(b)] Since the series is geometric,\n\\[\nf(x)=\\sum_{n=0}^{\\infty}(x+1)^{n}=\\frac{1}{1-(x+1)}=-\\frac{1}{x} \\text { for }-2<x<0 .\n\\]\n\\item[(c)] \\(g\\left(-\\frac{1}{2}\\right)=\\int_{-1}^{-\\frac{1}{2}}-\\frac{1}{x} d x=-\\left.\\ln |x|\\right|_{x=-1} ^{x=-\\frac{1}{2}}=\\ln 2\\)\n\\item[(d)]\n\\[\n\\begin{aligned}\n& h(x)=f\\left(x^{2}-1\\right)=1+x^{2}+x^{4}+\\cdots+x^{2 n}+\\cdots \\\\\n& h\\left(\\frac{1}{2}\\right)=f\\left(-\\frac{3}{4}\\right)=\\frac{4}{3}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { identifies as geometric } \\\\ 1:|x+1|<1 \\\\ 1: \\text { interval of convergence }\\end{array}\\right.\\)\nOR\n\\(3:\\left\\{\\begin{array}{l}1: \\text { sets up limit of ratio } \\\\ 1: \\text { radius of convergence } \\\\ 1: \\text { interval of convergence }\\end{array}\\right.\\)\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : antiderivative } \\\\ 1: \\text { value }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { first three terms } \\\\ 1: \\text { general term } \\\\ 1: \\text { value of } h\\left(\\frac{1}{2}\\right)\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          64,
+          572,
+          399
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

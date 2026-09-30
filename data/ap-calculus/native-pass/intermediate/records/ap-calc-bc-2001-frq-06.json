@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-06",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "A function $f$ is defined by\n$$\nf(x)=\\frac{1}{3}+\\frac{2}{3^{2}} x+\\frac{3}{3^{3}} x^{2}+\\cdots+\\frac{n+1}{3^{n+1}} x^{n}+\\cdots\n$$\n\nfor all $x$ in the interval of convergence of the given power series.\\\\\n(a) Find the interval of convergence for this power series. Show the work that leads to your answer.\\\\\n(b) Find $\\lim _{x \\rightarrow 0} \\frac{f(x)-\\frac{1}{3}}{x}$.\\\\\n(c) Write the first three nonzero terms and the general term for an infinite series that represents $\\int_{0}^{1} f(x) d x$.\\\\\n(d) Find the sum of the series determined in part (c).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nA function \\(f\\) is defined by\n\\[\nf(x)=\\frac{1}{3}+\\frac{2}{3^{2}} x+\\frac{3}{3^{3}} x^{2}+\\cdots+\\frac{n+1}{3^{n+1}} x^{n}+\\cdots\n\\]\nfor all \\(x\\) in the interval of convergence of the given power series.\n\\begin{itemize}\n\\item[(a)] Find the interval of convergence for this power series. Show the work that leads to your answer.\n\\item[(b)] Find \\(\\lim _{x \\rightarrow 0} \\frac{f(x)-\\frac{1}{3}}{x}\\).\n\\item[(c)] Write the first three nonzero terms and the general term for an infinite series that represents \\(\\int_{0}^{1} f(x) d x\\).\n\\item[(d)] Find the sum of the series determined in part (c).\n\\item[(a)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(n+2) x^{n+1}}{3^{n+2}}}{\\frac{(n+1) x^{n}}{3^{n+1}}}\\right|=\\lim _{n \\rightarrow \\infty}\\left|\\frac{(n+2)}{(n+1)} \\frac{x}{3}\\right|=\\left|\\frac{x}{3}\\right|<1\\) At \\(x=-3\\), the series is \\(\\sum_{n=0}^{\\infty}(-1)^{n} \\frac{n+1}{3}\\), which diverges. At \\(x=3\\), the series is \\(\\sum_{n=0}^{\\infty} \\frac{n+1}{3}\\), which diverges. Therefore, the interval of convergence is \\(-3<x<3\\).\n\\item[(b)] \\(\\lim _{x \\rightarrow 0} \\frac{f(x)-\\frac{1}{3}}{x}=\\lim _{x \\rightarrow 0}\\left(\\frac{2}{3^{2}}+\\frac{3}{3^{3}} x+\\frac{4}{3^{4}} x^{2}+\\cdots\\right)=\\frac{2}{9}\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\int_{0}^{1} f(x) d x=\\int_{0}^{1}\\left(\\frac{1}{3}+\\frac{2}{3^{2}} x+\\frac{3}{3^{3}} x^{2}+\\cdots+\\frac{n+1}{3^{n+1}} x^{n}+\\cdots\\right) d x \\\\\n& \\quad=\\left.\\left(\\frac{1}{3} x+\\frac{1}{3^{2}} x^{2}+\\frac{1}{3^{3}} x^{3}+\\cdots+\\frac{1}{3^{n+1}} x^{n+1}+\\cdots\\right)\\right|_{x=0} ^{x=1} \\\\\n& \\quad=\\frac{1}{3}+\\frac{1}{3^{2}}+\\frac{1}{3^{3}}+\\cdots+\\frac{1}{3^{n+1}}+\\cdots\n\\end{aligned}\n\\]\n\\item[(d)] The series representing \\(\\int_{0}^{1} f(x) d x\\) is a geometric series. Therefore, \\(\\int_{0}^{1} f(x) d x=\\frac{\\frac{1}{3}}{1-\\frac{1}{3}}=\\frac{1}{2}\\).\n\\end{itemize}\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { sets up ratio test } \\\\ 1: \\text { computes limit } \\\\ 1: \\text { conclusion of ratio test } \\\\ 1: \\text { endpoint conclusion }\\end{array}\\right.\\)\n\n1 : answer\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { antidifferentiation } \\\\ \\text { of series } \\\\ 1: \\text { first three terms for } \\\\ \\text { definite integral series } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\item[1] : answer\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          68,
+          572,
+          421
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

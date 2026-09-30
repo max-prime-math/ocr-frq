@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-frq-03",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline Distance \\(x(\\mathrm{~cm})\\) & 0 & 1 & 5 & 6 & 8 \\\\\n\\hline Temperature \\(T(x)\\left({ }^{\\circ} \\mathrm{C}\\right)\\) & 100 & 93 & 70 & 62 & 55 \\\\\n\\hline\n\\end{tabular}\nA metal wire of length 8 centimeters (cm) is heated at one end. The table above gives selected values of the\ntemperature \\(T(x)\\), in degrees Celsius \\(\\left({ }^{\\circ} \\mathrm{C}\\right)\\), of the wire \\(x \\mathrm{~cm}\\) from the heated end. The function \\(T\\) is decreasing\nand twice differentiable.\n(a) Estimate \\(T^{\\prime}(7)\\). Show the work that leads to your answer. Indicate units of measure.\n(b) Write an integral expression in terms of \\(T(x)\\) for the average temperature of the wire. Estimate the average\ntemperature of the wire using a trapezoidal sum with the four subintervals indicated by the data in the table.\nIndicate units of measure.\n(c) Find \\(\\int_{0}^{8} T^{\\prime}(x) d x\\), and indicate units of measure. Explain the meaning of \\(\\int_{0}^{8} T^{\\prime}(x) d x\\) in terms of the\ntemperature of the wire.\n(d) Are the data in the table consistent with the assertion that \\(T^{\\prime \\prime}(x)>0\\) for every \\(x\\) in the interval \\(0<x<8\\) ?\nExplain your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline Distance \\(x(\\mathrm{~cm})\\) & 0 & 1 & 5 & 6 & 8 \\\\\n\\hline Temperature \\(T(x)\\left({ }^{\\circ} \\mathrm{C}\\right)\\) & 100 & 93 & 70 & 62 & 55 \\\\\n\\hline\n\\end{tabular}\n\nA metal wire of length 8 centimeters (cm) is heated at one end. The table above gives selected values of the temperature \\(T(x)\\), in degrees Celsius \\(\\left({ }^{\\circ} \\mathrm{C}\\right)\\), of the wire \\(x \\mathrm{~cm}\\) from the heated end. The function \\(T\\) is decreasing and twice differentiable.\n\\begin{itemize}\n\\item[(a)] Estimate \\(T^{\\prime}(7)\\). Show the work that leads to your answer. Indicate units of measure.\n\\item[(b)] Write an integral expression in terms of \\(T(x)\\) for the average temperature of the wire. Estimate the average temperature of the wire using a trapezoidal sum with the four subintervals indicated by the data in the table. Indicate units of measure.\n\\item[(c)] Find \\(\\int_{0}^{8} T^{\\prime}(x) d x\\), and indicate units of measure. Explain the meaning of \\(\\int_{0}^{8} T^{\\prime}(x) d x\\) in terms of the temperature of the wire.\n\\item[(d)] Are the data in the table consistent with the assertion that \\(T^{\\prime \\prime}(x)>0\\) for every \\(x\\) in the interval \\(0<x<8\\) ? Explain your answer.\n\\item[(a)] \\(\\frac{T(8)-T(6)}{8-6}=\\frac{55-62}{2}=-\\frac{7}{2}{ }^{\\circ} \\mathrm{C} / \\mathrm{cm}\\)\n\\item[(b)] \\(\\frac{1}{8} \\int_{0}^{8} T(x) d x\\)\nTrapezoidal approximation for \\(\\int_{0}^{8} T(x) d x\\) :\n\\[\nA=\\frac{100+93}{2} \\cdot 1+\\frac{93+70}{2} \\cdot 4+\\frac{70+62}{2} \\cdot 1+\\frac{62+55}{2} \\cdot 2\n\\]\nAverage temperature \\(\\approx \\frac{1}{8} A=75.6875^{\\circ} \\mathrm{C}\\)\n\\item[(c)] \\(\\int_{0}^{8} T^{\\prime}(x) d x=T(8)-T(0)=55-100=-45^{\\circ} \\mathrm{C}\\)\nThe temperature drops 45°C from the heated end of the wire to the other end of the wire.\n\\item[(d)] Average rate of change of temperature on [1, 5] is \\(\\frac{70-93}{5-1}=-5.75\\). Average rate of change of temperature on [5, 6] is \\(\\frac{62-70}{6-5}=-8\\).\nNo. By the MVT, \\(T^{\\prime}\\left(c_{1}\\right)=-5.75\\) for some \\(c_{1}\\) in the interval \\((1,5)\\) and \\(T^{\\prime}\\left(c_{2}\\right)=-8\\) for some \\(c_{2}\\) in the interval (5, 6). It follows that \\(T^{\\prime}\\) must decrease somewhere in the interval \\(\\left(c_{1}, c_{2}\\right)\\). Therefore \\(T^{\\prime \\prime}\\) is not positive for every \\(x\\) in [0,8].\n\\end{itemize}\n\nUnits of °C/cm in (a), and °C in (b) and (c)\n\\begin{itemize}\n\\item[1] : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\frac{1}{8} \\int_{0}^{8} T(x) d x \\\\ 1: \\text { trapezoidal sum } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { value } \\\\ 1: \\text { meaning }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { two slopes of secant lines } \\\\ 1: \\text { answer with explanation }\\end{array}\\right.\\)\n1 : units in (a), (b), and (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          53,
+          572,
+          428
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          183.744,
+          58.751999999999995,
+          427.96799999999996,
+          114.91199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          127.008,
+          539.424,
+          139.392
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          139.968,
+          563.04,
+          153.792
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          64.512,
+          154.944,
+          173.37599999999998,
+          165.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 31,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          173.952,
+          457.34399999999994,
+          187.77599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          65.088,
+          196.128,
+          557.568,
+          209.088
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          211.67999999999998,
+          558.4319999999999,
+          224.064
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          224.064,
+          197.856,
+          234.432
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          65.088,
+          243.64799999999997,
+          525.024,
+          267.84
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          270.43199999999996,
+          190.07999999999998,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          65.088,
+          289.44,
+          562.1759999999999,
+          302.4
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          304.416,
+          178.55999999999997,
+          316.79999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

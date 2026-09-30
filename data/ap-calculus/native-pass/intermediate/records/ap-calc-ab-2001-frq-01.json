@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2001-frq-01",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2001-frq-01-diagram-01.png}\nLet \\(R\\) and \\(S\\) be the regions in the first quadrant shown in the figure above. The region \\(R\\) is bounded by the\n\\(x\\)-axis and the graphs of \\(y=2-x^{3}\\) and \\(y=\\tan x\\). The region \\(S\\) is bounded by the \\(y\\)-axis and the graphs of\n\\(y=2-x^{3}\\) and \\(y=\\tan x\\).\n(a) Find the area of \\(R\\).\n(b) Find the area of \\(S\\).\n(c) Find the volume of the solid generated when \\(S\\) is revolved about the \\(x\\)-axis.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2001-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2001-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        216.16799926757812,
+        203.78399658203125,
+        395.54400634765625,
+        373.656005859375
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(R\\) and \\(S\\) be the regions in the first quadrant shown in the figure above. The region \\(R\\) is bounded by the \\(x\\)-axis and the graphs of \\(y=2-x^{3}\\) and \\(y=\\tan x\\). The region \\(S\\) is bounded by the \\(y\\)-axis and the graphs of \\(y=2-x^{3}\\) and \\(y=\\tan x\\).\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the area of \\(S\\).\n\\item[(c)] Find the volume of the solid generated when \\(S\\) is revolved about the \\(x\\)-axis.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/9586ed2f-cea7-49a8-bcbe-c9ba21432218-1.jpg?height=455&width=479&top_left_y=348&top_left_x=1399)\n\nPoint of intersection\n\\(2-x^{3}=\\tan x\\) at \\((A, B)=(0.902155,1.265751)\\)\n\\begin{itemize}\n\\item[(a)] Area \\(R=\\int_{0}^{A} \\tan x d x+\\int_{A}^{\\sqrt[3]{2}}\\left(2-x^{3}\\right) d x=0.729\\)\nor\nArea \\(R=\\int_{0}^{B}\\left((2-y)^{1 / 3}-\\tan ^{-1} y\\right) d y=0.729\\)\nor\nArea \\(R=\\int_{0}^{\\sqrt[3]{2}}\\left(2-x^{3}\\right) d x-\\int_{0}^{A}\\left(2-x^{3}-\\tan x\\right) d x=0.729\\)\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(b)] Area \\(S=\\int_{0}^{A}\\left(2-x^{3}-\\tan x\\right) d x=1.160\\) or 1.161\nor\nArea \\(S=\\int_{0}^{B} \\tan ^{-1} y d y+\\int_{B}^{2}(2-y)^{1 / 3} d y=1.160\\) or 1.161\nor\nArea \\(S\\)\n\\[\n\\begin{aligned}\n& =\\int_{0}^{2}(2-y)^{1 / 3} d y-\\int_{0}^{B}\\left((2-y)^{1 / 3}-\\tan ^{-1} y\\right) d y \\\\\n& =1.160 \\text { or } 1.161\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{0}^{A}\\left(\\left(2-x^{3}\\right)^{2}-\\tan ^{2} x\\right) d x \\\\\n& =2.652 \\pi \\text { or } 8.331 \\text { or } 8.332\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          70,
+          572,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          219.16799999999998,
+          206.784,
+          392.544,
+          370.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          389.952,
+          542.592,
+          402.33599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          405.792,
+          553.824,
+          421.344
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          424.51199999999994,
+          191.232,
+          439.48799999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          446.688,
+          168.48,
+          459.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          465.40799999999996,
+          167.04,
+          477.792
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          483.84,
+          419.616,
+          496.224
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

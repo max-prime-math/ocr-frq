@@ -1,0 +1,188 @@
+{
+  "id": "ap-calc-ab-2005-form-b-frq-04",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-04-diagram-01.png\", width: 65%)\n\nThe graph of the function $f$ above consists of three line segments.\n\n(a) Let $g$ be the function given by $g(x)= integral_(- 4)^(x) f(t) d t$. For each of $g(- 1)\\, g'(- 1)$, and $g''(- 1)$, find the value or state that it does not exist.\n\n(b) For the function $g$ defined in part (a), find the $x$-coordinate of each point of inflection of the graph of $g$ on the open interval $- 4 < x < 3$. Explain your reasoning.\n\n(c) Let $h$ be the function given by $h(x)= integral_(x)^(3) f(t) d t$. Find all values of $x$ in the closed interval $- 4 <= x <= 3$ for which $h(x)= 0$.\n\n(d) For the function $h$ defined in part (c), find all intervals on which $h$ is decreasing. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-form-b-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        212.4239959716797,
+        194.27999877929688,
+        408.5039978027344,
+        348.88800048828125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          54,
+          572,
+          554
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          215.42399999999998,
+          197.27999999999997,
+          405.50399999999996,
+          345.888
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          363.16799999999995,
+          357.11999999999995,
+          376.128
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          384.768,
+          560.736,
+          406.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          410.97599999999994,
+          211.10399999999998,
+          422.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          431.99999999999994,
+          558.144,
+          444.96
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          450.43199999999996,
+          328.032,
+          463.39199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.088,
+          467.13599999999997,
+          563.04,
+          491.328
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          493.63199999999995,
+          157.82399999999998,
+          507.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          514.944,
+          553.2479999999999,
+          528.4799999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "12c4fed77903b61d12cc06b08801fdfd08c2bfb791bf16e35ce66785c3ec5649",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

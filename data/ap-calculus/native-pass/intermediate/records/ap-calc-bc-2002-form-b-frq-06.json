@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-06",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for $\\ln \\left(\\frac{1}{1-x}\\right)$ is $\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}$ with interval of convergence $-1 \\leq x<1$.\\\\\n(a) Find the Maclaurin series for $\\ln \\left(\\frac{1}{1+3 x}\\right)$ and determine the interval of convergence.\\\\\n(b) Find the value of $\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n}$.\\\\\n(c) Give a value of $p$ such that $\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n^{p}}$ converges, but $\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}$ diverges. Give reasons why your value of $p$ is correct.\\\\\n(d) Give a value of $p$ such that $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$ diverges, but $\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}$ converges. Give reasons why your value of $p$ is correct.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe Maclaurin series for \\(\\ln \\left(\\frac{1}{1-x}\\right)\\) is \\(\\sum_{n=1}^{\\infty} \\frac{x^{n}}{n}\\) with interval of convergence \\(-1 \\leq x<1\\).\n\\begin{itemize}\n\\item[(a)] Find the Maclaurin series for \\(\\ln \\left(\\frac{1}{1+3 x}\\right)\\) and determine the interval of convergence.\n\\item[(b)] Find the value of \\(\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n}\\).\n\\item[(c)] Give a value of \\(p\\) such that \\(\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n^{p}}\\) converges, but \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}\\) diverges. Give reasons why your value of \\(p\\) is correct.\n\\item[(d)] Give a value of \\(p\\) such that \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}\\) diverges, but \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}\\) converges. Give reasons why your value of \\(p\\) is correct.\n\\item[(a)] \\(\\quad \\ln \\left(\\frac{1}{1+3 x}\\right)=\\ln \\left(\\frac{1}{1-(-3 x)}\\right)\\)\n\\[\n=\\sum_{n=1}^{\\infty} \\frac{(-3 x)^{n}}{n} \\text { or } \\sum_{n=1}^{\\infty}(-1)^{n} \\frac{3^{n}}{n} x^{n}\n\\]\nWe must have \\(-1 \\leq-3 x<1\\), so interval of convergence is \\(-\\frac{1}{3}<x \\leq \\frac{1}{3}\\).\n\\item[(b)] \\(\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n}=\\ln \\left(\\frac{1}{1-(-1)}\\right)=\\ln \\left(\\frac{1}{2}\\right)\\)\n\\item[(c)] Some \\(p\\) such that \\(0<p \\leq \\frac{1}{2}\\) because \\(\\sum_{n=1}^{\\infty} \\frac{(-1)^{n}}{n^{p}}\\) converges by AST, but the \\(p\\)-series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}\\) diverges for \\(2 p \\leq 1\\).\n\\item[(d)] Some \\(p\\) such that \\(\\frac{1}{2}<p \\leq 1\\) because the \\(p\\)-series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}\\) diverges for \\(p \\leq 1\\) and the \\(p\\)-series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^{2 p}}\\) converges for \\(2 p>1\\).\n\\end{itemize}\n\\[\n2\\left\\{\\begin{array}{l}\n1: \\text { series } \\\\\n1: \\text { interval of convergence }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[1] : answer\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { correct } p \\\\\n1: \\text { reason why } \\sum \\frac{(-1)^{n}}{n^{p}} \\text { converges } \\\\\n1: \\text { reason why } \\sum \\frac{1}{n^{2 p}} \\text { diverges }\n\\end{array}\\right.\n\\]\n\\item[] \\(3\\left\\{\\begin{array}{l}1: \\text { correct } p \\\\ 1: \\text { reason why } \\sum \\frac{1}{n^{p}} \\text { diverges } \\\\ 1: \\text { reason why } \\sum \\frac{1}{n^{2 p}} \\text { converges }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          78,
+          572,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

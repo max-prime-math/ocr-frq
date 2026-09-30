@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2001-frq-03",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2001-frq-03-diagram-01.png}\nA car is traveling on a straight road with velocity 55 ft/sec at time \\(t=0\\). For \\(0 \\leq t \\leq 18\\) seconds, the car's\nacceleration \\(a(t)\\), in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), is the piecewise linear function defined by the graph above.\n(a) Is the velocity of the car increasing at \\(t=2\\) seconds? Why or why not?\n(b) At what time in the interval \\(0 \\leq t \\leq 18\\), other than \\(t=0\\), is the velocity of the car 55 ft/sec? Why?\n(c) On the time interval \\(0 \\leq t \\leq 18\\), what is the car's absolute maximum velocity, in ft/sec, and at what time\ndoes it occur? Justify your answer.\n(d) At what times in the interval \\(0 \\leq t \\leq 18\\), if any, is the car's velocity equal to zero? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2001-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2001-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        134.37600708007812,
+        71.30400085449219,
+        479.35198974609375,
+        236.27999877929688
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA car is traveling on a straight road with velocity 55 ft /sec at time \\(t=0\\). For \\(0 \\leq t \\leq 18\\) seconds, the car's acceleration \\(a(t)\\), in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), is the piecewise linear function defined by the graph above.\n\\begin{itemize}\n\\item[(a)] Is the velocity of the car increasing at \\(t=2\\) seconds? Why or why not?\n\\item[(b)] At what time in the interval \\(0 \\leq t \\leq 18\\), other than \\(t=0\\), is the velocity of the car 55 ft/sec? Why?\n\\item[(c)] On the time interval \\(0 \\leq t \\leq 18\\), what is the car's absolute maximum velocity, in ft/sec, and at what time does it occur? Justify your answer.\n\\item[(d)] At what times in the interval \\(0 \\leq t \\leq 18\\), if any, is the car's velocity equal to zero? Justify your answer.\n\\item[(a)] Since \\(v^{\\prime}(2)=a(2)\\) and \\(a(2)=15>0\\), the velocity is increasing at \\(t=2\\).\n\\item[(b)] At time \\(t=12\\) because\n\\[\nv(12)-v(0)=\\int_{0}^{12} a(t) d t=0\n\\]\n\\item[(c)] The absolute maximum velocity is 115 ft/sec at \\(t=6\\).\nThe absolute maximum must occur at \\(t=6\\) or at an endpoint.\n\\[\n\\begin{aligned}\n& v(6)=55+\\int_{0}^{6} a(t) d t \\\\\n& \\quad=55+2(15)+\\frac{1}{2}(4)(15)=115>v(0) \\\\\n& \\int_{6}^{18} a(t) d t<0 \\text { so } v(18)<v(6)\n\\end{aligned}\n\\]\n\\item[(d)] The car's velocity is never equal to 0. The absolute minimum occurs at \\(t=16\\) where\n\\[\nv(16)=115+\\int_{6}^{16} a(t) d t=115-105=10>0\n\\]\n\\end{itemize}\n\n1 : answer and reason\n\\(2:\\left\\{\\begin{array}{l}1: t=12 \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{aligned} 1 & : t=6 \\\\ 1 & : \\text { absolute maximum velocity } \\\\ 1 & : \\text { identifies } t=6 \\text { and } \\\\ & t=18 \\text { as candidates } \\\\ & \\text { or } \\\\ & \\text { indicates that } v \\text { increases, } \\\\ & \\text { decreases, then increases } \\\\ 1 & : \\text { eliminates } t=18\\end{aligned}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          70,
+          572,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          137.37599999999998,
+          74.30399999999999,
+          476.352,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          245.088,
+          540.8639999999999,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          258.62399999999997,
+          459.64799999999997,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          281.664,
+          404.64,
+          294.62399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          300.096,
+          529.0559999999999,
+          312.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          319.96799999999996,
+          550.656,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          334.08,
+          237.6,
+          346.464
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          351.35999999999996,
+          543.4559999999999,
+          364.32
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

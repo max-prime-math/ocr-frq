@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2004-form-b-frq-04",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2004-form-b-frq-04-diagram-01.png}\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of the function \\(f\\), on the closed interval \\(-1 \\leq x \\leq 5\\).\nThe graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=1\\) and \\(x=3\\). The function \\(f\\) is twice differentiable with\n\\(f(2)=6\\).\n(a) Find the \\(x\\)-coordinate of each of the points of inflection of the graph of \\(f\\). Give a reason for your answer.\n(b) At what value of \\(x\\) does \\(f\\) attain its absolute minimum value on the closed interval \\(-1 \\leq x \\leq 5\\) ? At what\nvalue of \\(x\\) does \\(f\\) attain its absolute maximum value on the closed interval \\(-1 \\leq x \\leq 5\\) ? Show the analysis\nthat leads to your answers.\n(c) Let \\(g\\) be the function defined by \\(g(x)=x f(x)\\). Find an equation for the line tangent to the graph of \\(g\\)\nat \\(x=2\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-form-b-frq-04-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        191.9759979248047,
+        202.9199981689453,
+        421.4639892578125,
+        414.8399963378906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of the function \\(f\\), on the closed interval \\(-1 \\leq x \\leq 5\\). The graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=1\\) and \\(x=3\\). The function \\(f\\) is twice differentiable with \\(f(2)=6\\).\n\\begin{itemize}\n\\item[(a)] Find the \\(x\\)-coordinate of each of the points of inflection of the graph of \\(f\\). Give a reason for your answer.\n\\item[(b)] At what value of \\(x\\) does \\(f\\) attain its absolute minimum value on the closed interval \\(-1 \\leq x \\leq 5\\) ? At what value of \\(x\\) does \\(f\\) attain its absolute maximum value on the closed interval \\(-1 \\leq x \\leq 5\\) ? Show the analysis that leads to your answers.\n\\item[(c)] Let \\(g\\) be the function defined by \\(g(x)=x f(x)\\). Find an equation for the line tangent to the graph of \\(g\\) at \\(x=2\\).\n\\item[(a)] \\(x=1\\) and \\(x=3\\) because the graph of \\(f^{\\prime}\\) changes from increasing to decreasing at \\(x=1\\), and changes from decreasing to increasing at \\(x=3\\).\n\\item[(b)] The function \\(f\\) decreases from \\(x=-1\\) to \\(x=4\\), then increases from \\(x=4\\) to \\(x=5\\).\nTherefore, the absolute minimum value for \\(f\\) is at \\(x=4\\).\nThe absolute maximum value must occur at \\(x=-1\\) or at \\(x=5\\).\n\\[\nf(5)-f(-1)=\\int_{-1}^{5} f^{\\prime}(t) d t<0\n\\]\nSince \\(f(5)<f(-1)\\), the absolute maximum value occurs at \\(x=-1\\).\n\\item[(c)] \\(g^{\\prime}(x)=f(x)+x f^{\\prime}(x)\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(2)=f(2)+2 f^{\\prime}(2)=6+2(-1)=4 \\\\\n& g(2)=2 f(2)=12\n\\end{aligned}\n\\]\nTangent line is \\(y=4(x-2)+12\\)\n\\end{itemize}\n\\[\n\\bigcup_{(-1,-3)}^{(1,0)} \\bigcup_{(2,-1)}^{(4,0)} \\bigcup_{(3,-2)}^{C_{\\text {Graph of } f^{\\prime}}} \\bigcup^{(5,2)} x\n\\]\n\\[\n3:\\left\\{\\begin{array}{l}\n2: g^{\\prime}(x) \\\\\n1: \\text { tangent line }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          70,
+          572,
+          583
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          194.976,
+          205.92,
+          418.46399999999994,
+          411.84
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          422.496,
+          545.76,
+          435.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          436.32,
+          543.168,
+          449.28
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          449.28,
+          110.30399999999999,
+          462.816
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          469.152,
+          547.1999999999999,
+          482.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          487.58399999999995,
+          556.992,
+          499.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          499.96799999999996,
+          562.4639999999999,
+          512.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          512.928,
+          201.6,
+          525.312
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.088,
+          530.784,
+          539.712,
+          544.3199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          545.184,
+          125.56799999999998,
+          555.8399999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2008-frq-06",
+  "course": "BC",
+  "year": 2008,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008.pdf",
+      "sha256": "03b33eb234707fece3d699c865ffd6219b3c515a3220cc9a4c364faba8bfc7c5",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008.pdf",
+      "sha256": "9f6e880bb45af770174406b5eb2500957dd71e9e2e1506e0c19d4dabe0a88ef3"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the logistic differential equation $frac(d y,d t)= frac(y,8)(6 - y)$. Let $y = f(t)$ be the particular solution to the differential equation with $f(0)= 8$.\n\n(a) A slope field for this differential equation is given below. Sketch possible solution curves through the points $(3 \\,2)$ and $(0 \\,8)$.\n\n#image(\"/imgs/ap-calc-bc-2008-frq-06-diagram-01.jpg\", width: 65%)\n\n(b) Use Euler's method, starting at $t = 0$ with two steps of equal size, to approximate $f(1)$.\n\n(c) Write the second-degree Taylor polynomial for $f$ about $t = 0$, and use it to approximate $f(1)$.\n\n(d) What is the range of $f$ for $t >= 0$ ?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2008-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2008-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2008_fig3.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          66,
+          572,
+          522
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "135a979dd9c8bab1480713e3361184c8f5293dcb956e1f2448a6c533f0259531",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008.zip"
+    }
+  ]
+}

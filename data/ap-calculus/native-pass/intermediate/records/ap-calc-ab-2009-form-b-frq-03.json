@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-form-b-frq-03",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2009-form-b-frq-03-diagram-01.png}\nA continuous function \\(f\\) is defined on the closed interval \\(-4 \\leq x \\leq 6\\). The graph of \\(f\\) consists of a line segment\nand a curve that is tangent to the \\(x\\)-axis at \\(x=3\\), as shown in the figure above. On the interval \\(0<x<6\\), the\nfunction \\(f\\) is twice differentiable, with \\(f^{\\prime \\prime}(x)>0\\).\n(a) Is \\(f\\) differentiable at \\(x=0\\) ? Use the definition of the derivative with one-sided limits to justify your\nanswer.\n(b) For how many values of \\(a,-4 \\leq a<6\\), is the average rate of change of \\(f\\) on the interval \\([a, 6]\\) equal to 0 ?\nGive a reason for your answer.\n(c) Is there a value of \\(a,-4 \\leq a<6\\), for which the Mean Value Theorem, applied to the interval \\([a, 6]\\),\nguarantees a value \\(c, a<c<6\\), at which \\(f^{\\prime}(c)=\\frac{1}{3}\\) ? Justify your answer.\n(d) The function \\(g\\) is defined by \\(g(x)=\\int_{0}^{x} f(t) d t\\) for \\(-4 \\leq x \\leq 6\\). On what intervals contained in [-4, 6]\nis the graph of \\(g\\) concave up? Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-form-b-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        170.95199584960938,
+        66.98400115966797,
+        441.9119873046875,
+        176.37600708007812
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/4b3cf8ec-9852-46ed-b27b-edec9f7d9b6a-1.jpg?height=290&width=756&top_left_y=397&top_left_x=670}\n\\captionsetup{labelformat=empty}\n\\caption{Graph of \\(f\\)}\n\\end{figure}\nA continuous function \\(f\\) is defined on the closed interval \\(-4 \\leq x \\leq 6\\). The graph of \\(f\\) consists of a line segment and a curve that is tangent to the \\(x\\)-axis at \\(x=3\\), as shown in the figure above. On the interval \\(0<x<6\\), the function \\(f\\) is twice differentiable, with \\(f^{\\prime \\prime}(x)>0\\).\n\\begin{itemize}\n\\item[(a)] Is \\(f\\) differentiable at \\(x=0\\) ? Use the definition of the derivative with one-sided limits to justify your answer.\n\\item[(b)] For how many values of \\(a,-4 \\leq a<6\\), is the average rate of change of \\(f\\) on the interval \\([a, 6]\\) equal to 0 ? Give a reason for your answer.\n\\item[(c)] Is there a value of \\(a,-4 \\leq a<6\\), for which the Mean Value Theorem, applied to the interval \\([a, 6]\\), guarantees a value \\(c, a<c<6\\), at which \\(f^{\\prime}(c)=\\frac{1}{3}\\) ? Justify your answer.\n\\item[(d)] The function \\(g\\) is defined by \\(g(x)=\\int_{0}^{x} f(t) d t\\) for \\(-4 \\leq x \\leq 6\\). On what intervals contained in \\([-4,6]\\) is the graph of \\(g\\) concave up? Explain your reasoning.\n\\item[(a)] \\(\\lim _{h \\rightarrow 0^{-}} \\frac{f(h)-f(0)}{h}=\\frac{2}{3}\\)\n\\(\\lim _{h \\rightarrow 0^{+}} \\frac{f(h)-f(0)}{h}<0\\)\nSince the one-sided limits do not agree, \\(f\\) is not differentiable at \\(x=0\\).\n\\item[(b)] \\(\\frac{f(6)-f(a)}{6-a}=0\\) when \\(f(a)=f(6)\\). There are two values of \\(a\\) for which this is true.\n\\item[(c)] Yes, \\(a=3\\). The function \\(f\\) is differentiable on the interval \\(3<x<6\\) and continuous on \\(3 \\leq x \\leq 6\\).\nAlso, \\(\\frac{f(6)-f(3)}{6-3}=\\frac{1-0}{6-3}=\\frac{1}{3}\\).\nBy the Mean Value Theorem, there is a value \\(c\\), \\(3<c<6\\), such that \\(f^{\\prime}(c)=\\frac{1}{3}\\).\n\\item[(d)] \\(g^{\\prime}(x)=f(x), g^{\\prime \\prime}(x)=f^{\\prime}(x)\\)\n\\(g^{\\prime \\prime}(x)>0\\) when \\(f^{\\prime}(x)>0\\)\nThis is true for \\(-4<x<0\\) and \\(3<x<6\\).\n\\end{itemize}\n\n2 : \\(\\left\\{\\begin{array}{l}1 \\text { : sets up difference quotient at } x=0 \\\\ 1 \\text { : answer with justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : expression for average rate of change } \\\\ 1 \\text { : answer with reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answers \"yes\" and identifies } a=3 \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: g^{\\prime}(x)=f(x) \\\\ 1: \\text { considers } g^{\\prime \\prime}(x)>0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          466
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          173.952,
+          69.984,
+          438.912,
+          173.37599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          207.93599999999998,
+          563.04,
+          220.896
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          222.624,
+          551.808,
+          235.58399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          237.02399999999997,
+          288.28799999999995,
+          250.55999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.088,
+          258.62399999999997,
+          532.2239999999999,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          275.328,
+          118.94399999999999,
+          284.544
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          292.608,
+          564.4799999999999,
+          306.14399999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          308.15999999999997,
+          220.32,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          326.592,
+          529.632,
+          341.568
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.368,
+          344.15999999999997,
+          421.91999999999996,
+          366.912
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          378.71999999999997,
+          544.608,
+          400.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          403.48799999999994,
+          325.44,
+          415.87199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

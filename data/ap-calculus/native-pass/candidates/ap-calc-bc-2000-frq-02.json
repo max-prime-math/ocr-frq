@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2000-frq-02",
+  "course": "BC",
+  "year": 2000,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2000.pdf",
+      "sha256": "3d8ea931cf7c92587ae80781d46c8ee5c16eeef6beff6d2dd47bc91046d67056",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2000.pdf",
+      "sha256": "4b2c25346fe8235b27cb420a0479422d9c8c848ebbfe1514d44c90aed4325bca"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2000-frq-02-diagram-01.jpg\", width: 65%)\n\nTwo runners, $A$ and $B$, run on a straight racetrack for $0 <= t <= 10$ seconds. The graph above, which consists of two line segments, shows the velocity, in meters per second, of Runner $A$. The velocity, in meters per second, of Runner $B$ is given by the function $v$ defined by $v(t)= frac(24 t,2 t + 3)$.\n\n(a) Find the velocity of Runner $A$ and the velocity of Runner $B$ at time $t = 2$ seconds. Indicate units of measure.\n\n(b) Find the acceleration of Runner $A$ and the acceleration of Runner $B$ at time $t = 2$ seconds. Indicate units of measure.\n\n(c) Find the total distance run by Runner $A$ and the total distance run by Runner $B$ over the time interval $0 <= t <= 10$ seconds. Indicate units of measure.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2000-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2000-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2000_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          53,
+          568,
+          452
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a6ee554188f77964df20db6a613bc8dd9244f8e43f1a780acf13b1a6dc6282d5",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2000.zip"
+    }
+  ]
+}

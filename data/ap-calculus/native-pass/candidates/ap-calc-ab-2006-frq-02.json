@@ -1,0 +1,219 @@
+{
+  "id": "ap-calc-ab-2006-frq-02",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2006-frq-02-diagram-01.png\", width: 65%)\n\nAt an intersection in Thomasville, Oregon, cars turn left at the rate $L(t)= 60 sqrt(t) sin^(2)lr((frac(t,3)))$ cars per hour over the time interval $0 <= t <= 18$ hours. The graph of $y = L(t)$ is shown above.\n\n(a) To the nearest whole number, find the total number of cars turning left at the intersection over the time interval $0 <= t <= 18$ hours.\n\n(b) Traffic engineers will consider turn restrictions when $L(t) >= 150$ cars per hour. Find all values of $t$ for which $L(t) >= 150$ and compute the average value of $L$ over this time interval. Indicate units of measure.\n\n(c) Traffic engineers will install a signal if there is any two-hour time interval during which the product of the total number of cars turning left and the total number of oncoming cars traveling straight through the intersection is greater than 200,000. In every two-hour time interval, 500 oncoming cars travel straight through the intersection. Does this intersection require a traffic signal? Explain the reasoning that leads to your conclusion.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        171.5279998779297,
+        68.13600158691406,
+        440.47198486328125,
+        254.13600158691406
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          67,
+          572,
+          469
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          174.528,
+          71.136,
+          437.472,
+          251.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          263.52,
+          554.4,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          292.032,
+          382.176,
+          305.568
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          313.056,
+          537.6959999999999,
+          325.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          325.44,
+          201.02399999999997,
+          337.248
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          345.31199999999995,
+          540.8639999999999,
+          358.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          361.44,
+          546.9119999999999,
+          374.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          382.464,
+          553.2479999999999,
+          395.424
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          394.84799999999996,
+          529.0559999999999,
+          407.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          407.23199999999997,
+          537.12,
+          419.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          419.616,
+          550.0799999999999,
+          432.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          431.99999999999994,
+          157.82399999999998,
+          444.38399999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7194e1e4a6cdb1e72cec0e91ecfe34b57c9f58bfeb7ce46d4a33068b0207e68f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

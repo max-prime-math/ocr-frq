@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1999-frq-03",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (hours) & \\(R(t)\\) (gallons per hour) \\\\\n\\hline 0 & 9.6 \\\\\n\\hline 3 & 10.4 \\\\\n\\hline 6 & 10.8 \\\\\n\\hline 9 & 11.2 \\\\\n\\hline 12 & 11.4 \\\\\n\\hline 15 & 11.3 \\\\\n\\hline 18 & 10.7 \\\\\n\\hline 21 & 10.2 \\\\\n\\hline 24 & 9.6 \\\\\n\\hline\n\\end{tabular}\nThe rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function \\(R\\)\nof time \\(t\\). The table above shows the rate as measured every 3 hours for a 24 -hour period.\n(a) Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate \\(\\int_{0}^{24} R(t) d t\\). Using correct\nunits, explain the meaning of your answer in terms of water flow.\n(b) Is there some time \\(t, 0<t<24\\), such that \\(R^{\\prime}(t)=0\\) ? Justify your answer.\n(c) The rate of water flow \\(R(t)\\) can be approximated by \\(Q(t)=\\frac{1}{79}\\left(768+23 t-t^{2}\\right)\\).\nUse \\(Q(t)\\) to approximate the average rate of water flow during the 24-hour time period.\nIndicate units of measure.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[3.] The rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function \\(R\\) of time \\(t\\). The table above shows the rate as measured every 3 hours for a 24-hour period.\n\\begin{itemize}\n\\item[(a)] Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate \\(\\int_{0}^{24} R(t) d t\\). Using correct units, explain the meaning of your answer in terms of water flow.\n\\item[(b)] Is there some time \\(t, 0<t<24\\), such that \\(R^{\\prime}(t)=0\\) ? Justify your answer.\n\\item[(c)] The rate of water flow \\(R(t)\\) can be approximated by \\(Q(t)=\\frac{1}{79}\\left(768+23 t-t^{2}\\right)\\). Use \\(Q(t)\\) to approximate the average rate of water flow during the 24-hour time period. Indicate units of measure.\n\\end{itemize}\n\\end{itemize}\n\\[\n\\begin{array}{c|c}\n\\begin{array}{c}\nt \\\\\n\\text { (hours) }\n\\end{array} & \\begin{array}{c}\nR(t) \\\\\n\\text { (gallons per hour) }\n\\end{array} \\\\\n\\hline 0 & 9.6 \\\\\n3 & 10.4 \\\\\n6 & 10.8 \\\\\n9 & 11.2 \\\\\n12 & 11.4 \\\\\n15 & 11.3 \\\\\n18 & 10.7 \\\\\n21 & 10.2 \\\\\n24 & 9.6\n\\end{array}\n\\]\n\\begin{itemize}\n\\item[(a)]\n(a)\n\\[\n\\begin{aligned}\n\\int_{0}^{24} R(t) d t \\approx & 6[R(3)+R(9)+R(15)+R(21)] \\\\\n& =6[10.4+11.2+11.3+10.2] \\\\\n& =258.6 \\text { gallons }\n\\end{aligned}\n\\]\nThis is an approximation to the total flow in gallons of water from the pipe in the 24-hour period.\n\\end{itemize}\n\\[\n\\mathbf{3}\\left\\{\\begin{array}{l}\n1: R(3)+R(9)+R(15)+R(21) \\\\\n1: \\text { answer } \\\\\n1: \\text { explanation }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] Yes;\nSince \\(R(0)=R(24)=9.6\\), the Mean Value Theorem guarantees that there is a \\(t, 0<t<24\\), such that \\(R^{\\prime}(t)=0\\).\n\\end{itemize}\n\\[\n\\mathbf{2}\\left\\{\\begin{array}{l}\n1: \\text { answer } \\\\\n1: \\text { MVT or equivalent }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)] Average rate of flow\n\\[\n\\begin{aligned}\n& \\approx \\text { average value of } Q(t) \\\\\n& \\quad=\\frac{1}{24} \\int_{0}^{24} \\frac{1}{79}\\left(768+23 t-t^{2}\\right) d t \\\\\n& \\quad=10.785 \\mathrm{gal} / \\mathrm{hr} \\text { or } 10.784 \\mathrm{gal} / \\mathrm{hr}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n\\mathbf{3}\\left\\{\\begin{array}{l}\n\\text { 1: limits and average value constant } \\\\\n\\text { 1: } Q(t) \\text { as integrand } \\\\\n\\text { 1: answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[1:] units\n\\item[] (units) Gallons in part (a) and gallons/hr in part (c), or equivalent.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          39,
+          572,
+          684
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          224.064,
+          80.928,
+          387.07199999999995,
+          222.33599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          246.23999999999998,
+          518.688,
+          259.2
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          259.2,
+          462.816,
+          271.584
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          283.96799999999996,
+          555.264,
+          307.296
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          84.672,
+          308.736,
+          375.26399999999995,
+          321.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          333.50399999999996,
+          425.664,
+          347.328
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          360.28799999999995,
+          450.43199999999996,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          84.672,
+          384.47999999999996,
+          472.31999999999994,
+          397.44
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          84.672,
+          404.06399999999996,
+          200.736,
+          415.87199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

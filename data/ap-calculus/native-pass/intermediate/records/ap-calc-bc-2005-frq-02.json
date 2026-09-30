@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-frq-02",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2005-frq-02-diagram-01.jpg}\n\\end{center}\nThe curve above is drawn in the $x y$-plane and is described by the equation in polar coordinates $r=\\theta+\\sin (2 \\theta)$ for $0 \\leq \\theta \\leq \\pi$, where $r$ is measured in meters and $\\theta$ is measured in radians. The derivative of $r$ with respect to $\\theta$ is given by $\\frac{d r}{d \\theta}=1+2 \\cos (2 \\theta)$.\\\\\n(a) Find the area bounded by the curve and the $x$-axis.\\\\\n(b) Find the angle $\\theta$ that corresponds to the point on the curve with $x$-coordinate -2 .\\\\\n(c) For $\\frac{\\pi}{3}<\\theta<\\frac{2 \\pi}{3}, \\frac{d r}{d \\theta}$ is negative. What does this fact say about $r$ ? What does this fact say about the curve?\\\\\n(d) Find the value of $\\theta$ in the interval $0 \\leq \\theta \\leq \\frac{\\pi}{2}$ that corresponds to the point on the curve in the first quadrant with greatest distance from the origin. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe curve above is drawn in the \\(x y\\)-plane and is described by the equation in polar coordinates \\(r=\\theta+\\sin (2 \\theta)\\) for \\(0 \\leq \\theta \\leq \\pi\\), where \\(r\\) is measured in meters and \\(\\theta\\) is measured in radians. The derivative of \\(r\\) with respect to \\(\\theta\\) is given by \\(\\frac{d r}{d \\theta}=1+2 \\cos (2 \\theta)\\).\n\\begin{itemize}\n\\item[(a)] Find the area bounded by the curve and the \\(x\\)-axis.\n\\item[(b)] Find the angle \\(\\theta\\) that corresponds to the point on the curve with \\(x\\)-coordinate -2 .\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/f45f2e10-ac7b-42d3-b31e-2ac49c39e0ba-1.jpg?height=346&width=503&top_left_y=402&top_left_x=1444)\n\\begin{itemize}\n\\item[(c)] For \\(\\frac{\\pi}{3}<\\theta<\\frac{2 \\pi}{3}, \\frac{d r}{d \\theta}\\) is negative. What does this fact say about \\(r\\) ? What does this fact say about the curve?\n\\item[(d)] Find the value of \\(\\theta\\) in the interval \\(0 \\leq \\theta \\leq \\frac{\\pi}{2}\\) that corresponds to the point on the curve in the first quadrant with greatest distance from the origin. Justify your answer.\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\frac{1}{2} \\int_{0}^{\\pi} r^{2} d \\theta \\\\\n& =\\frac{1}{2} \\int_{0}^{\\pi}(\\theta+\\sin (2 \\theta))^{2} d \\theta=4.382\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& -2=r \\cos (\\theta)=(\\theta+\\sin (2 \\theta)) \\cos (\\theta) \\\\\n& \\theta=2.786\n\\end{aligned}\n\\]\n\\item[(c)] Since \\(\\frac{d r}{d \\theta}<0\\) for \\(\\frac{\\pi}{3}<\\theta<\\frac{2 \\pi}{3}, r\\) is decreasing on this interval. This means the curve is getting closer to the origin.\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { equation } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { information about } r \\\\ 1: \\text { information about the curve }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\theta=\\frac{\\pi}{3} \\text { or } 1.047 \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] The only value in \\(\\left[0, \\frac{\\pi}{2}\\right]\\) where \\(\\frac{d r}{d \\theta}=0\\) is \\(\\theta=\\frac{\\pi}{3}\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(\\theta\\) & \\(r\\) \\\\\n\\hline 0 & 0 \\\\\n\\hline \\(\\frac{\\pi}{3}\\) & 1.913 \\\\\n\\hline \\(\\frac{\\pi}{2}\\) & 1.571 \\\\\n\\hline\n\\end{tabular}\nThe greatest distance occurs when \\(\\theta=\\frac{\\pi}{3}\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          56,
+          572,
+          437
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2006-form-b-frq-06",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $f$ is defined by $f(x)= frac(1,1 + x^(3))$. The Maclaurin series for $f$ is given by\n\n$ 1 - x^(3)+ x^(6)- x^(9)+ dots.h.c + (- 1)^(n) x^(3 n)+ dots.h.c $\n\nwhich converges to $f(x)$ for $- 1 < x < 1$.\n\n(a) Find the first three nonzero terms and the general term for the Maclaurin series for $f'(x)$.\n\n(b) Use your results from part (a) to find the sum of the infinite series $- frac(3,2^(2))+ frac(6,2^(5))- frac(9,2^(8))+ dots.h.c + (- 1)^(n) frac(3 n,2^(3 n - 1))+ dots.h.c$.\n\n(c) Find the first four nonzero terms and the general term for the Maclaurin series representing $integral_(0)^(x) f(t) d t$.\n\n(d) Use the first three nonzero terms of the infinite series found in part (c) to approximate $integral_(0)^(1 \\/ 2) f(t) d t$. What are the properties of the terms of the series representing $integral_(0)^(1 \\/ 2) f(t) d t$ that guarantee that this approximation is within $frac(1,10 \\,000)$ of the exact value of the integral?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          296,
+          572,
+          601
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "5cb6c1549b8f1364f16c700f4a4c181b7cd8304a1eb79b4d89e69075aa58ed32",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ]
+}

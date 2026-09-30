@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-frq-06",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "rawPrompt": "$$\nf(x)= \\begin{cases}\\frac{\\cos x-1}{x^{2}} & \\text { for } x \\neq 0 \\\\ -\\frac{1}{2} & \\text { for } x=0\\end{cases}\n$$\nThe function $f$, defined above, has derivatives of all orders. Let $g$ be the function defined by $g(x)=1+\\int_{0}^{x} f(t) d t$.\\\\\n(a) Write the first three nonzero terms and the general term of the Taylor series for $\\cos x$ about $x=0$. Use this series to write the first three nonzero terms and the general term of the Taylor series for $f$ about $x=0$.\\\\\n(b) Use the Taylor series for $f$ about $x=0$ found in part (a) to determine whether $f$ has a relative maximum, relative minimum, or neither at $x=0$. Give a reason for your answer.\\\\\n(c) Write the fifth-degree Taylor polynomial for $g$ about $x=0$.\\\\\n(d) The Taylor series for $g$ about $x=0$, evaluated at $x=1$, is an alternating series with individual terms that decrease in absolute value to 0 . Use the third-degree Taylor polynomial for $g$ about $x=0$ to estimate the value of $g(1)$. Explain why this estimate differs from the actual value of $g(1)$ by less than $\\frac{1}{6!}$.",
+  "assets": [],
+  "rawScoringGuide": "Question 6\n\\[\nf(x)= \\begin{cases}\\frac{\\cos x-1}{x^{2}} & \\text { for } x \\neq 0 \\\\ -\\frac{1}{2} & \\text { for } x=0\\end{cases}\n\\]\nThe function \\(f\\), defined above, has derivatives of all orders. Let \\(g\\) be the function defined by \\(g(x)=1+\\int_{0}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Write the first three nonzero terms and the general term of the Taylor series for \\(\\cos x\\) about \\(x=0\\). Use this series to write the first three nonzero terms and the general term of the Taylor series for \\(f\\) about \\(x=0\\).\n\\item[(b)] Use the Taylor series for \\(f\\) about \\(x=0\\) found in part (a) to determine whether \\(f\\) has a relative maximum, relative minimum, or neither at \\(x=0\\). Give a reason for your answer.\n\\item[(c)] Write the fifth-degree Taylor polynomial for \\(g\\) about \\(x=0\\).\n\\item[(d)] The Taylor series for \\(g\\) about \\(x=0\\), evaluated at \\(x=1\\), is an alternating series with individual terms that decrease in absolute value to 0. Use the third-degree Taylor polynomial for \\(g\\) about \\(x=0\\) to estimate the value of \\(g(1)\\). Explain why this estimate differs from the actual value of \\(g(1)\\) by less than \\(\\frac{1}{6!}\\).\n\\item[(a)] \\(\\quad \\cos (x)=1-\\frac{x^{2}}{2}+\\frac{x^{4}}{4!}-\\cdots+(-1)^{n} \\frac{x^{2 n}}{(2 n)!}+\\cdots\\)\n\\[\nf(x)=-\\frac{1}{2}+\\frac{x^{2}}{4!}-\\frac{x^{4}}{6!}+\\cdots+(-1)^{n+1} \\frac{x^{2 n}}{(2 n+2)!}+\\cdots\n\\]\n\\item[(b)] \\(f^{\\prime}(0)\\) is the coefficient of \\(x\\) in the Taylor series for \\(f\\) about \\(x=0\\), so \\(f^{\\prime}(0)=0\\).\n\\[\n\\begin{aligned}\n& \\frac{f^{\\prime \\prime}(0)}{2!}=\\frac{1}{4!} \\text { is the coefficient of } x^{2} \\text { in the Taylor series for } f \\text { about } \\\\\n& x=0, \\text { so } f^{\\prime \\prime}(0)=\\frac{1}{12} .\n\\end{aligned}\n\\]\nTherefore, by the Second Derivative Test, \\(f\\) has a relative minimum at \\(x=0\\).\n\\item[(c)] \\(P_{5}(x)=1-\\frac{x}{2}+\\frac{x^{3}}{3 \\cdot 4!}-\\frac{x^{5}}{5 \\cdot 6!}\\)\n\\item[(d)] \\(g(1) \\approx 1-\\frac{1}{2}+\\frac{1}{3 \\cdot 4!}=\\frac{37}{72}\\)\n\\end{itemize}\nSince the Taylor series for \\(g\\) about \\(x=0\\) evaluated at \\(x=1\\) is\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{aligned} 1 & : \\text { terms for } \\cos x \\\\ 2 & : \\text { terms for } f \\\\ 1 & : \\text { first three terms } \\\\ 1 & : \\text { general term }\\end{aligned}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { determines } f^{\\prime}(0) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { two correct terms } \\\\ 1: \\text { remaining terms }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : estimate } \\\\ 1 \\text { : explanation }\\end{array}\\right.\\)\n\\end{itemize} alternating and the terms decrease in absolute value to 0, we know\n\\[\n\\left|g(1)-\\frac{37}{72}\\right|<\\frac{1}{5 \\cdot 6!}<\\frac{1}{6!} .\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          245,
+          572,
+          545
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-04",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2013-frq-04-diagram-01.jpg}\n\\end{center}\nThe figure above shows the graph of $f^{\\prime}$, the derivative of a twice-differentiable function $f$, on the closed interval $0 \\leq x \\leq 8$. The graph of $f^{\\prime}$ has horizontal tangent lines at $x=1, x=3$, and $x=5$. The areas of the regions between the graph of $f^{\\prime}$ and the $x$-axis are labeled in the figure. The function $f$ is defined for all real numbers and satisfies $f(8)=4$.\\\\\n(a) Find all values of $x$ on the open interval $0<x<8$ for which the function $f$ has a local minimum. Justify your answer.\\\\\n(b) Determine the absolute minimum value of $f$ on the closed interval $0 \\leq x \\leq 8$. Justify your answer.\\\\\n(c) On what open intervals contained in $0<x<8$ is the graph of $f$ both concave down and increasing? Explain your reasoning.\\\\\n(d) The function $g$ is defined by $g(x)=(f(x))^{3}$. If $f(3)=-\\frac{5}{2}$, find the slope of the line tangent to the graph of $g$ at $x=3$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2013-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2013-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2013_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=y^{2}(2 x+2)\\). Let \\(y=f(x)\\) be the particular solution to the differential equation with initial condition \\(f(0)=-1\\).\n\\begin{itemize}\n\\item[(a)] Find \\(\\lim _{x \\rightarrow 0} \\frac{f(x)+1}{\\sin x}\\). Show the work that leads to your answer.\n\\item[(b)] Use Euler's method, starting at \\(x=0\\) with two steps of equal size, to approximate \\(f\\left(\\frac{1}{2}\\right)\\).\n\\item[(c)] Find \\(y=f(x)\\), the particular solution to the differential equation with initial condition \\(f(0)=-1\\).\n\\item[(a)] \\(\\lim _{x \\rightarrow 0}(f(x)+1)=-1+1=0\\) and \\(\\lim _{x \\rightarrow 0} \\sin x=0\\)\nUsing L'Hospital's Rule,\n\\[\n\\lim _{x \\rightarrow 0} \\frac{f(x)+1}{\\sin x}=\\lim _{x \\rightarrow 0} \\frac{f^{\\prime}(x)}{\\cos x}=\\frac{f^{\\prime}(0)}{\\cos 0}=\\frac{(-1)^{2} \\cdot 2}{1}=2\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\nf\\left(\\frac{1}{4}\\right) & \\approx f(0)+f^{\\prime}(0)\\left(\\frac{1}{4}\\right) \\\\\n& =-1+(2)\\left(\\frac{1}{4}\\right)=-\\frac{1}{2}\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nf\\left(\\frac{1}{2}\\right) & \\approx f\\left(\\frac{1}{4}\\right)+f^{\\prime}\\left(\\frac{1}{4}\\right)\\left(\\frac{1}{4}\\right) \\\\\n& =-\\frac{1}{2}+\\left(-\\frac{1}{2}\\right)^{2}\\left(2 \\cdot \\frac{1}{4}+2\\right)\\left(\\frac{1}{4}\\right)=-\\frac{11}{32}\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{d y}{d x}=y^{2}(2 x+2) \\\\\n& \\frac{d y}{y^{2}}=(2 x+2) d x \\\\\n& \\int \\frac{d y}{y^{2}}=\\int(2 x+2) d x \\\\\n& -\\frac{1}{y}=x^{2}+2 x+C \\\\\n& -\\frac{1}{-1}=0^{2}+2 \\cdot 0+C \\Rightarrow C=1 \\\\\n& -\\frac{1}{y}=x^{2}+2 x+1 \\\\\n& y=-\\frac{1}{x^{2}+2 x+1}=-\\frac{1}{(x+1)^{2}}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { L'Hospital's Rule } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { Euler's method } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(5:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\n\nNote: 0/5 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          568,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

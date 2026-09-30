@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2002-form-b-frq-01",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2002-form-b-frq-01-diagram-01.png\", width: 65%)\n\nLet $R$ be the region bounded by the $y$-axis and the graphs of $y = frac(x^(3),1 + x^(2))$ and $y = 4 - 2 x$, as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\n\n(c) The region $R$ is the base of a solid. For this solid, each cross section perpendicular to the $x$-axis is a square. Find the volume of this solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2002-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2002-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        210.4080047607422,
+        213.5760040283203,
+        400.1520080566406,
+        387.1919860839844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          75,
+          572,
+          510
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          213.408,
+          216.576,
+          397.152,
+          384.19199999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          397.152,
+          544.3199999999999,
+          426.816
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          428.256,
+          124.416,
+          441.21599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          446.11199999999997,
+          168.48,
+          458.496
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          463.96799999999996,
+          420.768,
+          476.352
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          482.688,
+          558.144,
+          495.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.368,
+          495.07199999999995,
+          214.272,
+          506.304
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "5ea10b2ee5d51875312e462a5862a228bc5366148564785d270cca7a980f60e1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

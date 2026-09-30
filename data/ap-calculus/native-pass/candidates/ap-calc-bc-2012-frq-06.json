@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2012-frq-06",
+  "course": "BC",
+  "year": 2012,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2012.pdf",
+      "sha256": "79c15419c0fab55ddc4447f853b5476bc79428ee91a1b51a1a4d93224d0a08f8",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2012.pdf",
+      "sha256": "5b10738ec7ca6ffae5b052b280bac5cfd809610f3192fddeeab34d167ecc1139"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $g$ has derivatives of all orders, and the Maclaurin series for $g$ is $ sum_(n = 0)^(oo)(- 1)^(n) frac(x^(2 n + 1),2 n + 3)= frac(x,3)- frac(x^(3),5)+ frac(x^(5),7)- dots.h.c $\n\n(a) Using the ratio test, determine the interval of convergence of the Maclaurin series for $g$.\n\n(b) The Maclaurin series for $g$ evaluated at $x = frac(1,2)$ is an alternating series whose terms decrease in absolute value to 0. The approximation for $g lr((frac(1,2)))$ using the first two nonzero terms of this series is $frac(17,120)$. Show that this approximation differs from $g lr((frac(1,2)))$ by less than $frac(1,200)$.\n\n(c) Write the first three nonzero terms and the general term of the Maclaurin series for $g'(x)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          43,
+          64,
+          565,
+          475
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "bf01dbc23a19086bed4e356632cbdde66e9aff719339dff2390f35dcc59735e2",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2012.zip"
+    }
+  ]
+}

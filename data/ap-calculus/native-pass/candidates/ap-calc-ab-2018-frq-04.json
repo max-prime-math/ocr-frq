@@ -1,0 +1,219 @@
+{
+  "id": "ap-calc-ab-2018-frq-04",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (years)], [2], [3], [5], [7], [10], table.hline(stroke: .5pt), [$H(t)$ (meters)], [1.5], [2], [6], [11], [15], table.hline(stroke: .5pt));\n\nThe height of a tree at time $t$ is given by a twice-differentiable function $H$, where $H(t)$ is measured in meters and $t$ is measured in years. Selected values of $H(t)$ are given in the table above.\n\n(a) Use the data in the table to estimate $H'(6)$. Using correct units, interpret the meaning of $H'(6)$ in the context of the problem.\n\n(b) Explain why there must be at least one time $t$, for $2 < t < 10$, such that $H'(t)= 2$.\n\n(c) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the average height of the tree over the time interval $2 <= t <= 10$.\n\n(d) The height of the tree, in meters, can also be modeled by the function $G$, given by $G(x)= frac(100 x,1 + x)$, where $x$ is the diameter of the base of the tree, in meters. When the tree is 50 meters tall, the diameter of the base of the tree is increasing at a rate of 0.03 meter per year. According to this model, what is the rate of change of the height of the tree with respect to time, in meters per year, at the time when the tree is 50 meters tall?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          39,
+          74,
+          570,
+          495
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          207.93599999999998,
+          80.064,
+          401.472,
+          139.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          44.928,
+          156.384,
+          542.016,
+          170.208
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          171.93599999999998,
+          414.43199999999996,
+          185.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          199.296,
+          526.4639999999999,
+          213.696
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          79.488,
+          215.712,
+          183.16799999999998,
+          228.09599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 32,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          243.07199999999997,
+          444.38399999999996,
+          256.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          269.856,
+          523.872,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          79.488,
+          283.96799999999996,
+          342.14399999999995,
+          296.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          310.75199999999995,
+          542.304,
+          337.536
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          79.488,
+          345.31199999999995,
+          529.0559999999999,
+          358.272
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          80.064,
+          372.67199999999997,
+          544.0319999999999,
+          385.63199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          79.488,
+          400.032,
+          516.096,
+          412.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          80.064,
+          427.392,
+          147.744,
+          439.2
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "672e4499983d268af503c361c8b8de03e6b4a564ca21e3c11716486dd717b5ab",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2002-form-b-frq-03",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at any time \\(t\\), for \\(0 \\leq t \\leq 16\\), is given by\n\\(v(t)=e^{2 \\sin t}-1\\). At time \\(t=0\\), the particle is at the origin.\n(a) On the axes provided, sketch the graph of \\(v(t)\\) for \\(0 \\leq t \\leq 16\\).\n(Note: Use the axes provided in the test booklet.)\n\\includegraphics{ap-calc-ab-2002-form-b-frq-03-diagram-01.png}\n(b) During what intervals of time is the particle moving to the left? Give a reason for your answer.\n(c) Find the total distance traveled by the particle from \\(t=0\\) to \\(t=4\\).\n(d) Is there any time \\(t, 0<t \\leq 16\\), at which the particle returns to the origin? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2002-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2002-form-b-frq-03-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        206.08799743652344,
+        152.23199462890625,
+        406.4880065917969,
+        367.32000732421875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA particle moves along the \\(x\\)-axis so that its velocity \\(v\\) at any time \\(t\\), for \\(0 \\leq t \\leq 16\\), is given by \\(v(t)=e^{2 \\sin t}-1\\). At time \\(t=0\\), the particle is at the origin.\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch the graph of \\(v(t)\\) for \\(0 \\leq t \\leq 16\\).\n\\item[(b)] During what intervals of time is the particle moving to the left? Give a reason for your answer.\n\\item[(c)] Find the total distance traveled by the particle from \\(t=0\\) to \\(t=4\\).\n\\item[(d)] Is there any time \\(t, 0<t \\leq 16\\), at which the particle returns to the origin? Justify your answer.\n\\item[] \\({ }^{\\text {(a) }} v(t)\\)\n![](https://cdn.mathpix.com/cropped/706da492-16f2-4030-b1af-b664f6a4147d-1.jpg?height=269&width=677&top_left_y=1057&top_left_x=275)\n\\item[(b)] Particle is moving to the left when \\(v(t)<0\\), i.e. \\(e^{2 \\sin t}<1\\). \\((\\pi, 2 \\pi),(3 \\pi, 4 \\pi)\\) and \\((5 \\pi, 16]\\)\n\\item[(c)] \\(\\int_{0}^{4}|v(t)| d t=10.542\\) or \\(v(t)=e^{2 \\sin t}-1=0\\) \\(t=0\\) or \\(t=\\pi\\) \\(x(\\pi)=\\int_{0}^{\\pi} v(t) d t=10.10656\\) \\(x(4)=\\int_{0}^{4} v(t) d t=9.67066\\) \\(|x(\\pi)-x(0)|+|x(4)-x(\\pi)|\\) \\(=10.542\\)\n\\item[(d)] There is no such time because \\(\\int_{0}^{T} v(t) d t>0\\) for all \\(T>0\\).\n\\item[1] : graph three \"humps\" periodic behavior starts at origin reasonable relative max and min values\n\\item[] \\(3\\left\\{\\begin{array}{l}2: \\text { intervals } \\\\ \\quad<-1>\\text { each missing or incorrect interval } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\item[] \\(\\left[\\begin{array}{l}1 \\text { : limits of } 0 \\text { and } 4 \\text { on an integral of } \\\\ \\quad v(t) \\text { or }|v(t)|\\end{array}\\right.\\) or\n\\item[] uses \\(x(0)\\) and \\(x(4)\\) to compute distance\n\\item[1] : handles change of direction at student's turning point\n\\item[1] : answer note: \\(0 / 1\\) if incorrect turning point\n\\item[] \\(2\\left\\{\\begin{array}{l}1: \\text { no such time } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          74,
+          572,
+          514
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          79.19999999999999,
+          493.91999999999996,
+          92.16
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          91.58399999999999,
+          335.23199999999997,
+          107.136
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.088,
+          113.75999999999999,
+          362.592,
+          127.29599999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          129.88799999999998,
+          315.072,
+          143.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "chart",
+        "rect": [
+          209.088,
+          155.232,
+          403.48799999999994,
+          364.32
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          374.4,
+          501.40799999999996,
+          387.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          393.40799999999996,
+          383.616,
+          405.792
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          411.55199999999996,
+          503.712,
+          424.51199999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2010-form-b-frq-03",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg\", width: 65%)\n\nThe figure above shows an aboveground swimming pool in the shape of a cylinder with a radius of 12 feet and a height of 4 feet. The pool contains 1000 cubic feet of water at time $t = 0$. During the time interval $0 <= t <= 12$ hours, water is pumped into the pool at the rate $P(t)$ cubic feet per hour. The table above gives values of $P(t)$ for selected values of $t$. During the same time interval, water is leaking from the pool at the rate $R(t)$ cubic feet per hour, where $R(t)= 25 e^(- 0.05 t)$. (Note: The volume $V$ of a cylinder with radius $r$ and height $h$ is given by $V = pi r^(2) h$.)\n\n(a) Use a midpoint Riemann sum with three subintervals of equal length to approximate the total amount of water that was pumped into the pool during the time interval $0 <= t <= 12$ hours. Show the computations that lead to your answer.\n\n(b) Calculate the total amount of water that leaked out of the pool during the time interval $0 <= t <= 12$ hours.\n\n(c) Use the results from parts (a) and (b) to approximate the volume of water in the pool at time $t = 12$ hours. Round your answer to the nearest cubic foot.\n\n(d) Find the rate at which the volume of water in the pool is increasing at time $t = 8$ hours. How fast is the water level in the pool rising at $t = 8$ hours? Indicate units of measure in both answers.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2010-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2010-form-b_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          227,
+          572,
+          603
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a128bdd4ca3ed389983e71570dd4af032c68a77478256b163bc34bdcd18803bd",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ]
+}

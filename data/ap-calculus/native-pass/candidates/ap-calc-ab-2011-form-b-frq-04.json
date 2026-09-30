@@ -1,0 +1,140 @@
+{
+  "id": "ap-calc-ab-2011-form-b-frq-04",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider a differentiable function $f$ having domain all positive real numbers, and for which it is known that $f'(x)= (4 - x) x^(- 3)$ for $x > 0$.\n\n(a) Find the $x$-coordinate of the critical point of $f$. Determine whether the point is a relative maximum, a relative minimum, or neither for the function $f$. Justify your answer.\n\n(b) Find all intervals on which the graph of $f$ is concave down. Justify your answer.\n\n(c) Given that $f(1)= 2$, determine the function $f$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          421,
+          572,
+          571
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          442.94399999999996,
+          542.016,
+          455.90399999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          65.664,
+          456.768,
+          203.04,
+          472.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          65.664,
+          480.67199999999997,
+          564.4799999999999,
+          493.056
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          493.056,
+          349.056,
+          505.43999999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 25,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          511.2,
+          438.33599999999996,
+          523.584
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          530.208,
+          290.88,
+          543.168
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e16b10d3597fba7008f852b4ca71c51718948597fe34e9d57763b55a06c08753",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

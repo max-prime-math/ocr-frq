@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2014-frq-02",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2014-frq-02-diagram-01.jpg}\n\\end{center}\nThe graphs of the polar curves $r=3$ and $r=3-2 \\sin (2 \\theta)$ are shown in the figure above for $0 \\leq \\theta \\leq \\pi$.\\\\\n(a) Let $R$ be the shaded region that is inside the graph of $r=3$ and inside the graph of $r=3-2 \\sin (2 \\theta)$. Find the area of $R$.\\\\\n(b) For the curve $r=3-2 \\sin (2 \\theta)$, find the value of $\\frac{d x}{d \\theta}$ at $\\theta=\\frac{\\pi}{6}$.\\\\\n(c) The distance between the two curves changes for $0<\\theta<\\frac{\\pi}{2}$. Find the rate at which the distance between the two curves is changing with respect to $\\theta$ when $\\theta=\\frac{\\pi}{3}$.\\\\\n(d) A particle is moving along the curve $r=3-2 \\sin (2 \\theta)$ so that $\\frac{d \\theta}{d t}=3$ for all times $t \\geq 0$. Find the value of $\\frac{d r}{d t}$ at $\\theta=\\frac{\\pi}{6}$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2014-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2014-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2014_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe graphs of the polar curves \\(r=3\\) and \\(r=3-2 \\sin (2 \\theta)\\) are shown in the figure above for \\(0 \\leq \\theta \\leq \\pi\\).\n\\begin{itemize}\n\\item[(a)] Let \\(R\\) be the shaded region that is inside the graph of \\(r=3\\) and inside the graph of \\(r=3-2 \\sin (2 \\theta)\\). Find the area of \\(R\\).\n\\item[(b)] For the curve \\(r=3-2 \\sin (2 \\theta)\\), find the value of \\(\\frac{d x}{d \\theta}\\) at \\(\\theta=\\frac{\\pi}{6}\\).\n\\item[(c)] The distance between the two curves changes for \\(0<\\theta<\\frac{\\pi}{2}\\). Find the rate at which the distance between the two curves is changing with respect to \\(\\theta\\) when \\(\\theta=\\frac{\\pi}{3}\\).\n\\item[(d)] A particle is moving along the curve \\(r=3-2 \\sin (2 \\theta)\\) so that \\(\\frac{d \\theta}{d t}=3\\) for all times \\(t \\geq 0\\). Find the value of \\(\\frac{d r}{d t}\\) at \\(\\theta=\\frac{\\pi}{6}\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\frac{9 \\pi}{4}+\\frac{1}{2} \\int_{0}^{\\pi / 2}(3-2 \\sin (2 \\theta))^{2} d \\theta \\\\\n& =9.708(\\text { or } 9.707)\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{gathered}\nx=(3-2 \\sin (2 \\theta)) \\cos \\theta \\\\\n\\left.\\frac{d x}{d \\theta}\\right|_{\\theta=\\pi / 6}=-2.366\n\\end{gathered}\n\\]\n\\item[(c)] The distance between the two curves is\n\\[\n\\begin{aligned}\n& D=3-(3-2 \\sin (2 \\theta))=2 \\sin (2 \\theta) . \\\\\n& \\left.\\frac{d D}{d \\theta}\\right|_{\\theta=\\pi / 3}=-2\n\\end{aligned}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n& \\frac{d r}{d t}=\\frac{d r}{d \\theta} \\cdot \\frac{d \\theta}{d t}=\\frac{d r}{d \\theta} \\cdot 3 \\\\\n& \\left.\\frac{d r}{d t}\\right|_{\\theta=\\pi / 6}=(-2)(3)=-6\n\\end{aligned}\n\\]\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { expression for } x \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { expression for distance } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : chain rule with respect to } t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          66,
+          569,
+          480
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2014-frq-02-diagram-02.jpg",
+      "belongsToQuestion": "ap-calc-bc-2014-frq-03"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

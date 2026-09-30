@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2016-frq-03",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2016-frq-03-diagram-01.png}\nGraph of \\(f\\)\nThe figure above shows the graph of the piecewise-linear function \\(f\\). For \\(-4 \\leq x \\leq 12\\), the function \\(g\\) is defined\nby \\(g(x)=\\int_{2}^{x} f(t) d t\\).\n(a) Does \\(g\\) have a relative minimum, a relative maximum, or neither at \\(x=10\\) ? Justify your answer.\n(b) Does the graph of \\(g\\) have a point of inflection at \\(x=4\\) ? Justify your answer.\n(c) Find the absolute minimum value and the absolute maximum value of \\(g\\) on the interval \\(-4 \\leq x \\leq 12\\).\nJustify your answers.\n(d) For \\(-4 \\leq x \\leq 12\\), find all intervals for which \\(g(x) \\leq 0\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2016-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2016-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        160.58399963378906,
+        153.38400268554688,
+        451.99200439453125,
+        315.1919860839844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC \\\\ 2016 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nThe figure above shows the graph of the piecewise-linear function \\(f\\). For \\(-4 \\leq x \\leq 12\\), the function \\(g\\) is defined by\n\\[\ng(x)=\\int_{2}^{x} f(t) d t\n\\]\n\\begin{itemize}\n\\item[(a)] Does \\(g\\) have a relative minimum, a relative maximum, or neither at \\(x=10\\) ? Justify your answer.\n\\item[(b)] Does the graph of \\(g\\) have a point of inflection at \\(x=4\\) ? Justify your answer.\n\\item[(c)] Find the absolute minimum value and the absolute maximum value of \\(g\\) on the interval \\(-4 \\leq x \\leq 12\\). Justify your answers.\n\\item[(d)] For \\(-4 \\leq x \\leq 12\\), find all intervals for which \\(g(x) \\leq 0\\).\n\\item[(a)] The function \\(g\\) has neither a relative minimum nor a relative maximum at \\(x=10\\) since \\(g^{\\prime}(x)=f(x)\\) and \\(f(x) \\leq 0\\) for \\(8 \\leq x \\leq 12\\).\n\\item[(b)] The graph of \\(g\\) has a point of inflection at \\(x=4\\) since \\(g^{\\prime}(x)=f(x)\\) is increasing for \\(2 \\leq x \\leq 4\\) and decreasing for \\(4 \\leq x \\leq 8\\).\n\\item[(c)] \\(g^{\\prime}(x)=f(x)\\) changes sign only at \\(x=-2\\) and \\(x=6\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(x\\) & \\(g(x)\\) \\\\\n\\hline -4 & -4 \\\\\n\\hline -2 & -8 \\\\\n\\hline 6 & 8 \\\\\n\\hline 12 & -4 \\\\\n\\hline\n\\end{tabular}\nOn the interval \\(-4 \\leq x \\leq 12\\), the absolute minimum value is \\(g(-2)=-8\\) and the absolute maximum value is \\(g(6)=8\\).\n\\item[(d)] \\(g(x) \\leq 0\\) for \\(-4 \\leq x \\leq 2\\) and \\(10 \\leq x \\leq 12\\).\n\\item[] \\(1: g^{\\prime}(x)=f(x)\\) in (a), (b), (c), or (d)\n\n1 : answer with justification\n\n1 : answer with justification\n\n4: \\(\\left\\{\\begin{aligned} & 1: \\text { considers } x=-2 \\text { and } x=6 \\\\ & \\text { as candidates } \\\\ & 1: \\text { considers } x=-4 \\text { and } x=12 \\\\ & 2: \\text { answers with justification }\\end{aligned}\\right.\\)\n\n2 : intervals\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          45,
+          35.0,
+          569,
+          511
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          163.58399999999997,
+          156.384,
+          448.99199999999996,
+          312.19199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          281.376,
+          320.544,
+          333.50399999999996,
+          333.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          344.736,
+          564.7679999999999,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          362.304,
+          160.992,
+          385.63199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          393.69599999999997,
+          519.264,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          414.43199999999996,
+          430.55999999999995,
+          427.392
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.952,
+          436.032,
+          534.5279999999999,
+          448.41599999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          451.008,
+          178.55999999999997,
+          463.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          469.152,
+          330.912,
+          483.55199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

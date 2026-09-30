@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2021-frq-04",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        8
+      ]
+    },
+    "promptPages": [
+      8
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2021-frq-04-diagram-01.png}\nLet \\(f\\) be a continuous function defined on the closed interval \\(-4 \\leq x \\leq 6\\). The graph of \\(f\\), consisting of four\nline segments, is shown above. Let \\(G\\) be the function defined by \\(G(x)=\\int_{0}^{x} f(t) d t\\).\n(a) On what open intervals is the graph of \\(G\\) concave up? Give a reason for your answer.\n(b) Let \\(P\\) be the function defined by \\(P(x)=G(x) \\cdot f(x)\\). Find \\(P^{\\prime}(3)\\).\n(c) Find \\(\\lim _{x \\rightarrow 2} \\frac{G(x)}{x^{2}-2 x}\\).\n(d) Find the average rate of change of \\(G\\) on the interval [-4, 2]. Does the Mean Value Theorem guarantee a\nvalue \\(c,-4<c<2\\), for which \\(G^{\\prime}(c)\\) is equal to this average rate of change? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2021-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2021-frq-04-diagram-01.png",
+      "sourcePage": 8,
+      "sourceRect": [
+        190.4890899658203,
+        81.65625,
+        399.4798889160156,
+        281.15625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "Part B (AB or BC): Graphing calculator not allowed\nQuestion 4 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/fc11985a-24fe-424a-b34a-0bbc3782fa17-1.jpg?height=672&width=699&top_left_y=830&top_left_x=717}\n\\captionsetup{labelformat=empty}\n\\caption{Graph of \\(f\\)}\n\\end{figure}\nLet \\(f\\) be a continuous function defined on the closed interval \\(-4 \\leq x \\leq 6\\). The graph of \\(f\\), consisting of four line segments, is shown above. Let \\(G\\) be the function defined by \\(G(x)=\\int_{0}^{x} f(t) d t\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & \\multicolumn{2}{|c|}{Scoring} \\\\\n\\hline \\(G^{\\prime}(x)=f(x)\\) in any part of the response. & \\(G^{\\prime}(x)=f(x)\\) & 1 point \\\\\n\\hline \\multicolumn{3}{|l|}{Scoring notes:} \\\\\n\\hline \\multicolumn{3}{|l|}{- This \"global point\" can be earned in any one part. Expressions that show this connection and therefore earn this point include: \\(G^{\\prime}=f, G^{\\prime}(x)=f(x), G^{\\prime \\prime}(x)=f^{\\prime}(x)\\) in part (a), \\(G^{\\prime}(3)=f(3)\\) in part (b), or \\(G^{\\prime}(2)=f(2)\\) in part (c).} \\\\\n\\hline & & 1 point \\\\\n\\hline\n\\end{tabular}\n\\begin{itemize}\n\\item[(a)] On what open intervals is the graph of \\(G\\) concave up? Give a reason for your answer.\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(G^{\\prime}(x)=f(x)\\) & Answer with reason 1 point \\\\\n\\hline The graph of \\(G\\) is concave up for \\(-4<x<-2\\) and \\(2<x<6\\), because \\(G^{\\prime}=f\\) is increasing on these intervals. & \\\\\n\\hline\n\\end{tabular}\nScoring notes:\n\\begin{itemize}\n\\item[-] Intervals may also include one or both endpoints. Total for part (a) 1 point\n\\end{itemize}\n\\item[(b)] Let \\(P\\) be the function defined by \\(P(x)=G(x) \\cdot f(x)\\). Find \\(P^{\\prime}(3)\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\[\n\\begin{aligned}\n& P^{\\prime}(x)=G(x) \\cdot f^{\\prime}(x)+f(x) \\cdot G^{\\prime}(x) \\\\\n& P^{\\prime}(3)=G(3) \\cdot f^{\\prime}(3)+f(3) \\cdot G^{\\prime}(3)\n\\end{aligned}\n\\] & Product rule & 1 point \\\\\n\\hline Substituting \\(G(3)=\\int_{0}^{3} f(t) d t=-3.5\\) and \\(G^{\\prime}(3)=f(3)=-3\\) into the above expression for \\(P^{\\prime}(3)\\) gives the following: & \\(G(3)\\) or \\(G^{\\prime}(3)\\) & 1 point \\\\\n\\hline \\(P^{\\prime}(3)=-3.5 \\cdot 1+(-3) \\cdot(-3)=5.5\\) & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for the correct application of the product rule in terms of \\(x\\) or in the evaluation of \\(P^{\\prime}(3)\\). Once earned, this point cannot be lost.\n\\item[-] The second point is earned by correctly evaluating \\(G(3)=-3.5, G^{\\prime}(3)=-3\\), or \\(f(3)=-3\\).\n\\item[-] To be eligible to earn the third point a response must have earned the first two points.\n\\item[-] Simplification of the numerical value is not required to earn the third point.\n\\end{itemize}\n\\end{itemize}\n\\begin{itemize}\n\\item[(c)]\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\multicolumn{3}{|l|}{Find \\(\\lim _{x \\rightarrow 2} \\frac{G(x)}{x^{2}-2 x}\\).} \\\\\n\\hline \\(\\lim _{x \\rightarrow 2}\\left(x^{2}-2 x\\right)=0\\) & Uses L'Hospital's Rule & 1 point \\\\\n\\hline Because \\(G\\) is continuous for \\(-4 \\leq x \\leq 6\\),\n\\[\n\\lim _{x \\rightarrow 2} G(x)=\\int_{0}^{2} f(t) d t=0\n\\] & & \\\\\n\\hline Using L'Hospital's Rule,\n\\[\n\\begin{aligned}\n& \\lim _{x \\rightarrow 2} \\frac{G(x)}{x^{2}-2 x}=\\lim _{x \\rightarrow 2} \\frac{G^{\\prime}(x)}{2 x-2} \\\\\n& =\\lim _{x \\rightarrow 2} \\frac{f(x)}{2 x-2}=\\frac{f(2)}{2}=\\frac{-4}{2}=-2\n\\end{aligned}\n\\] & Answer with justification & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] To earn the first point the response must show \\(\\lim _{x \\rightarrow 2}\\left(x^{2}-2 x\\right)=0\\) and \\(\\lim _{x \\rightarrow 2} G(x)=0\\) and must show a ratio of the two derivatives, \\(G^{\\prime}(x)\\) and \\(2 x-2\\). The ratio may be shown as evaluations of the derivatives at \\(x=2\\), such as \\(\\frac{G^{\\prime}(2)}{2}\\).\n\\item[-] To earn the second point the response must evaluate correctly with appropriate limit notation. In particular the response must include \\(\\lim _{x \\rightarrow 2} \\frac{G^{\\prime}(x)}{2 x-2}\\) or \\(\\lim _{x \\rightarrow 2} \\frac{f(x)}{2 x-2}\\).\n\\item[-] With any linkage errors (such as \\(\\frac{G^{\\prime}(x)}{2 x-2}=\\frac{f(2)}{2}\\) ), the response does not earn the second point.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (c) 2 points\n\\begin{itemize}\n\\item[(d)] Find the average rate of change of \\(G\\) on the interval [-4, 2]. Does the Mean Value Theorem guarantee a value \\(c,-4<c<2\\), for which \\(G^{\\prime}(c)\\) is equal to this average rate of change? Justify your answer.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\begin{tabular}[t]{l}\n\\(G(2)=\\int_{0}^{2} f(t) d t=0\\) and \\(G(-4)=\\int_{0}^{-4} f(t) d t=-16\\) \\\\\nAverage rate of change \\(=\\frac{G(2)-G(-4)}{2-(-4)}=\\frac{0-(-16)}{6}=\\frac{8}{3}\\)\n\\end{tabular} & Average rate of change & 1 point \\\\\n\\hline Yes, \\(G^{\\prime}(x)=f(x)\\) so \\(G\\) is differentiable on (-4, 2) and continuous on [-4, 2]. Therefore, the Mean Value Theorem applies and guarantees a value \\(c,-4<c<2\\), such that \\(G^{\\prime}(c)=\\frac{8}{3}\\). & Answer with justification & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] To earn the first point a response must present at least a difference and a quotient and a correct evaluation. For example, \\(\\frac{0+16}{6}\\) or \\(\\frac{G(2)-G(-4)}{6}=\\frac{16}{6}\\).\n\\item[-] Simplification of the numerical value is not required to earn the first point, but any simplification must be correct.\n\\item[-] The second point can be earned without the first point if the response has the correct setup but an incorrect or no evaluation of the average rate of change. The Mean Value Theorem need not be explicitly stated provided the conditions and conclusion are stated.\n\\end{itemize}\n\\end{itemize}\n\n\\begin{tabular}[t]{|l|l|}\n\\hline Total for part (d) & 2 points \\\\\n\\hline Total for question 4 & 9 points \\\\\n\\hline\n\\end{tabular}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 8,
+        "rect": [
+          25,
+          79,
+          534,
+          515
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 8,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          193.48909355307805,
+          84.65625,
+          396.4798836645662,
+          278.15625
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          29.36888027144935,
+          327.9709821428571,
+          529.791565681047,
+          341.21651785714283
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          346.9754464285714,
+          415.19534658264666,
+          370.58705357142856
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          383.2566964285714,
+          439.9573436742608,
+          395.9263392857143
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          417.81026785714283,
+          352.7144934561319,
+          431.91964285714283
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          439.40624999999994,
+          152.89093553078044,
+          469.9285714285714
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          480.0066964285714,
+          525.7605428986913,
+          493.2522321428571
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          495.55580357142856,
+          496.6795928259816,
+          509.66517857142856
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-04",
+      "sourcePage": 8,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

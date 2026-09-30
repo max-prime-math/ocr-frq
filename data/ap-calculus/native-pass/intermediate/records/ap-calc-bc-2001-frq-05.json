@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-05",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function satisfying $f^{\\prime}(x)=-3 x f(x)$, for all real numbers $x$, with $f(1)=4$ and $\\lim _{x \\rightarrow \\infty} f(x)=0$.\\\\\n(a) Evaluate $\\int_{1}^{\\infty}-3 x f(x) d x$. Show the work that leads to your answer.\\\\\n(b) Use Euler's method, starting at $x=1$ with a step size of 0.5 , to approximate $f(2)$.\\\\\n(c) Write an expression for $y=f(x)$ by solving the differential equation $\\frac{d y}{d x}=-3 x y$ with the initial condition $f(1)=4$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nLet \\(f\\) be the function satisfying \\(f^{\\prime}(x)=-3 x f(x)\\), for all real numbers \\(x\\), with \\(f(1)=4\\) and \\(\\lim _{x \\rightarrow \\infty} f(x)=0\\).\n\\begin{itemize}\n\\item[(a)] Evaluate \\(\\int_{1}^{\\infty}-3 x f(x) d x\\). Show the work that leads to your answer.\n\\item[(b)] Use Euler's method, starting at \\(x=1\\) with a step size of 0.5 , to approximate \\(f(2)\\).\n\\item[(c)] Write an expression for \\(y=f(x)\\) by solving the differential equation \\(\\frac{d y}{d x}=-3 x y\\) with the initial condition \\(f(1)=4\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n& \\int_{1}^{\\infty}-3 x f(x) d x \\\\\n& =\\int_{1}^{\\infty} f^{\\prime}(x) d x=\\lim _{b \\rightarrow \\infty} \\int_{1}^{b} f^{\\prime}(x) d x=\\left.\\lim _{b \\rightarrow \\infty} f(x)\\right|_{1} ^{b} \\\\\n& =\\lim _{b \\rightarrow \\infty} f(b)-f(1)=0-4=-4\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\nf(1.5) & \\approx f(1)+f^{\\prime}(1)(0.5) \\\\\n& =4-3(1)(4)(0.5)=-2 \\\\\nf(2) & \\approx-2+f^{\\prime}(1.5)(0.5) \\\\\n& \\approx-2-3(1.5)(-2)(0.5)=2.5\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{1}{y} d y=-3 x d x \\\\\n& \\ln y=-\\frac{3}{2} x^{2}+k \\\\\n& y=C e^{-3 / 2 x^{2}} \\\\\n& 4=C e^{-3 / 2} ; C=4 e^{3 / 2} \\\\\n& y=4 e^{3 / 2} e^{-3 / 2 x^{2}}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { use of FTC } \\\\ 1: \\text { answer from limiting process }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { Euler's method equations or } \\\\ \\quad \\text { equivalent table } \\\\ 1: \\text { Euler approximation to } f(2) \\\\ \\quad(\\text { not eligible without first point })\\end{array}\\right.\\)\n\\(5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } f(1)=4 \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\n\nNote: \\(0 / 5\\) if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          345,
+          572,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

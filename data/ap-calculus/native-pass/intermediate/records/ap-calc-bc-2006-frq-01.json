@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-frq-01",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2006-frq-01-diagram-01.jpg}\n\\end{center}\nLet $R$ be the shaded region bounded by the graph of $y=\\ln x$ and the line $y=x-2$, as shown above.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the volume of the solid generated when $R$ is rotated about the horizontal line $y=-3$.\\\\\n(c) Write, but do not evaluate, an integral expression that can be used to find the volume of the solid generated when $R$ is rotated about the $y$-axis.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\\begin{itemize}\n\\item[] Let \\(R\\) be the shaded region bounded by the graph of \\(y=\\ln x\\) and the line \\(y=x-2\\), as shown above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-3\\).\n(c) Write, but do not evaluate, an integral expression that can be used to find the volume of the solid generated when \\(R\\) is rotated about the \\(y\\)-axis.\n![](https://cdn.mathpix.com/cropped/8daab4d8-5f6f-4273-8389-3752d3643438-1.jpg?height=556&width=475&top_left_y=333&top_left_x=1472)\n\\end{itemize}\n\\(\\ln (x)=x-2\\) when \\(x=0.15859\\) and 3.14619.\nLet \\(S=0.15859\\) and \\(T=3.14619\\)\n\\begin{itemize}\n\\item[(a)] Area of \\(R=\\int_{S}^{T}(\\ln (x)-(x-2)) d x=1.949\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{S}^{T}\\left((\\ln (x)+3)^{2}-(x-2+3)^{2}\\right) d x \\\\\n& =34.198 \\text { or } 34.199\n\\end{aligned}\n\\]\n\\item[(c)] Volume \\(=\\pi \\int_{S-2}^{T-2}\\left((y+2)^{2}-\\left(e^{y}\\right)^{2}\\right) d y\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          483
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

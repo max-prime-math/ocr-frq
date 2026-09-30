@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2016-frq-05",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2016-frq-05-diagram-01.jpg\", width: 65%)\n\nThe inside of a funnel of height 10 inches has circular cross sections, as shown in the figure above. At height $h$, the radius of the funnel is given by $r = frac(1,20)lr((3 + h^(2)))$, where $0 <= h <= 10$. The units of $r$ and $h$ are inches.\n\n(a) Find the average value of the radius of the funnel.\n\n(b) Find the volume of the funnel.\n\n(c) The funnel contains liquid that is draining from the bottom. At the instant when the height of the liquid is $h = 3$ inches, the radius of the surface of the liquid is decreasing at a rate of $frac(1,5)$ inch per second. At this instant, what is the rate of change of the height of the liquid with respect to time?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2016-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2016-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2016_fig3.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          35.0,
+          568,
+          419
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "57e9f657ceb56b1e551f49a3fdc7a86a1b7106ccd072e950b551d3b974151982",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ]
+}

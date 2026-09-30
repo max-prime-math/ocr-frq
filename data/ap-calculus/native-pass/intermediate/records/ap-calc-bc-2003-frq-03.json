@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-frq-03",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2003-frq-03-diagram-01.jpg}\n\\end{center}\nThe figure above shows the graphs of the line $x=\\frac{5}{3} y$ and the curve $C$ given by $x=\\sqrt{1+y^{2}}$. Let $S$ be the shaded region bounded by the two graphs and the $x$-axis. The line and the curve intersect at point $P$.\\\\\n(a) Find the coordinates of point $P$ and the value of $\\frac{d x}{d y}$ for curve $C$ at point $P$.\\\\\n(b) Set up and evaluate an integral expression with respect to $y$ that gives the area of $S$.\\\\\n(c) Curve $C$ is a part of the curve $x^{2}-y^{2}=1$. Show that $x^{2}-y^{2}=1$ can be written as the polar equation $r^{2}=\\frac{1}{\\cos ^{2} \\theta-\\sin ^{2} \\theta}$.\\\\\n(d) Use the polar equation given in part (c) to set up an integral expression with respect to the polar angle $\\theta$ that represents the area of $S$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nThe figure above shows the graphs of the line \\(x=\\frac{5}{3} y\\) and the curve \\(C\\) given by \\(x=\\sqrt{1+y^{2}}\\). Let \\(S\\) be the shaded region bounded by the two graphs and the \\(x\\)-axis. The line and the curve intersect at point \\(P\\).\n\\begin{itemize}\n\\item[(a)] Find the coordinates of point \\(P\\) and the value of \\(\\frac{d x}{d y}\\) for curve \\(C\\) at point \\(P\\).\n\\item[(b)] Set up and evaluate an integral expression with respect to \\(y\\) that gives the area of \\(S\\).\n\\item[(c)] Curve \\(C\\) is a part of the curve \\(x^{2}-y^{2}=1\\). Show that \\(x^{2}-y^{2}=1\\) can be written as the polar equation \\(r^{2}=\\frac{1}{\\cos ^{2} \\theta-\\sin ^{2} \\theta}\\).\n\\item[(d)] Use the polar equation given in part (c) to set up an integral expression with respect to the polar angle \\(\\theta\\) that represents the area of \\(S\\).\n\\item[(a)] At \\(P, \\frac{5}{3} y=\\sqrt{1+y^{2}}\\), so \\(y=\\frac{3}{4}\\).\nSince \\(x=\\frac{5}{3} y, x=\\frac{5}{4}\\).\n\\[\n\\frac{d x}{d y}=\\frac{y}{\\sqrt{1+y^{2}}}=\\frac{y}{x} . \\text { At } P, \\frac{d x}{d y}=\\frac{3 / 4}{5 / 4}=\\frac{3}{5} .\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{0}^{3 / 4}\\left(\\sqrt{1+y^{2}}-\\frac{5}{3} y\\right) d y \\\\\n& =0.346 \\text { or } 0.347\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& x=r \\cos \\theta ; y=r \\sin \\theta \\\\\n& x^{2}-y^{2}=1 \\Rightarrow r^{2} \\cos ^{2} \\theta-r^{2} \\sin ^{2} \\theta=1 \\\\\n& r^{2}=\\frac{1}{\\cos ^{2} \\theta-\\sin ^{2} \\theta}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { coordinates of } P \\\\ 1: \\frac{d x}{d y} \\text { at } P\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { substitutes } x=r \\cos \\theta \\text { and } \\\\ y=r \\sin \\theta \\text { into } x^{2}-y^{2}=1 \\\\ 1: \\text { isolates } r^{2}\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand and constant }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] Let \\(\\beta\\) be the angle that segment \\(O P\\) makes with the \\(x\\)-axis. Then \\(\\tan \\beta=\\frac{y}{x}=\\frac{3 / 4}{5 / 4}=\\frac{3}{5}\\).\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{0}^{\\tan ^{-1}(3 / 5)} \\frac{1}{2} r^{2} d \\theta \\\\\n& =\\frac{1}{2} \\int_{0}^{\\tan ^{-1}(3 / 5)} \\frac{1}{\\cos ^{2} \\theta-\\sin ^{2} \\theta} d \\theta\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          69,
+          572,
+          445
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

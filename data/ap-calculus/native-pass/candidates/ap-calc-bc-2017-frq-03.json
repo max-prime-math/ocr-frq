@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2017-frq-03",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2017-frq-03-diagram-01.jpg\", width: 65%)\n\nThe function $f$ is differentiable on the closed interval $\\[- 6 \\,5 \\]$ and satisfies $f(- 2)= 7$. The graph of $f'$, the derivative of $f$, consists of a semicircle and three line segments, as shown in the figure above.\n\n(a) Find the values of $f(- 6)$ and $f(5)$.\n\n(b) On what intervals is $f$ increasing? Justify your answer.\n\n(c) Find the absolute minimum value of $f$ on the closed interval $\\[- 6 \\,5 \\]$. Justify your answer.\n\n(d) For each of $f''(- 5)$ and $f''(3)$, find the value or explain why it does not exist.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2017-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2017-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2017_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          39,
+          84,
+          570,
+          572
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ac97473cf6ce5e5ca85716ced6e4b3eaebf902458ef0c2e753b77e6e5fcdcece",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ]
+}

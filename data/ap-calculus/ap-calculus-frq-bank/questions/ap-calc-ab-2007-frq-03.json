@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 5, align: (left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.hline(stroke: .5pt), [$x$], [$f(x)$], [$f'(x)$], [$g(x)$], [$g'(x)$], table.hline(stroke: .5pt), [1], [6], [4], [2], [5], table.hline(stroke: .5pt), [2], [9], [2], [3], [1], table.hline(stroke: .5pt), [3], [10], [-4], [4], [2], table.hline(stroke: .5pt), [4], [-1], [3], [6], [7], table.hline(stroke: .5pt));\n\nThe functions $f$ and $g$ are differentiable for all real numbers, and $g$ is strictly increasing. The table above gives values of the functions and their first derivatives at selected values of $x$. The function $h$ is given by $h(x)= f(g(x))- 6$.\n\n(a) Explain why there must be a value $r$ for $1 < r < 3$ such that $h(r)= - 5$.\n\n(b) Explain why there must be a value $c$ for $1 < c < 3$ such that $h'(c)= - 5$.\n\n(c) Let $w$ be the function given by $w(x)= integral_(1)^(g(x)) f(t) d t$. Find the value of $w'(3)$.\n\n(d) If $g^(- 1)$ is the inverse function of $g$, write an equation for the line tangent to the graph of $y = g^(- 1)(x)$ at $x = 2$.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2007-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-6-4",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2007",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-6",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

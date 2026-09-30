@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-form-b-frq-03",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "rawPrompt": "The wind chill is the temperature, in degrees Fahrenheit ( ${ }^{\\circ} \\mathrm{F}$ ), a human feels based on the air temperature, in degrees Fahrenheit, and the wind velocity $v$, in miles per hour (mph). If the air temperature is $32^{\\circ} \\mathrm{F}$, then the wind chill is given by $W(v)=55.6-22.1 v^{0.16}$ and is valid for $5 \\leq v \\leq 60$.\\\\\n(a) Find $W^{\\prime}(20)$. Using correct units, explain the meaning of $W^{\\prime}(20)$ in terms of the wind chill.\\\\\n(b) Find the average rate of change of $W$ over the interval $5 \\leq v \\leq 60$. Find the value of $v$ at which the instantaneous rate of change of $W$ is equal to the average rate of change of $W$ over the interval $5 \\leq v \\leq 60$.\\\\\n(c) Over the time interval $0 \\leq t \\leq 4$ hours, the air temperature is a constant $32^{\\circ} \\mathrm{F}$. At time $t=0$, the wind velocity is $v=20 \\mathrm{mph}$. If the wind velocity increases at a constant rate of 5 mph per hour, what is the rate of change of the wind chill with respect to time at $t=3$ hours? Indicate units of measure.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\nThe wind chill is the temperature, in degrees Fahrenheit (°F), a human feels based on the air temperature, in degrees Fahrenheit, and the wind velocity \\(v\\), in miles per hour (mph). If the air temperature is 32°F, then the wind chill is given by \\(W(v)=55.6-22.1 v^{0.16}\\) and is valid for \\(5 \\leq v \\leq 60\\).\n\\begin{itemize}\n\\item[(a)] Find \\(W^{\\prime}(20)\\). Using correct units, explain the meaning of \\(W^{\\prime}(20)\\) in terms of the wind chill.\n\\item[(b)] Find the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\). Find the value of \\(v\\) at which the instantaneous rate of change of \\(W\\) is equal to the average rate of change of \\(W\\) over the interval \\(5 \\leq v \\leq 60\\).\n\\item[(c)] Over the time interval \\(0 \\leq t \\leq 4\\) hours, the air temperature is a constant 32°F. At time \\(t=0\\), the wind velocity is \\(v=20 \\mathrm{mph}\\). If the wind velocity increases at a constant rate of 5 mph per hour, what is the rate of change of the wind chill with respect to time at \\(t=3\\) hours? Indicate units of measure.\n\\item[(a)] \\(W^{\\prime}(20)=-22.1 \\cdot 0.16 \\cdot 20^{-0.84}=-0.285\\) or -0.286\nWhen \\(v=20 \\mathrm{mph}\\), the wind chill is decreasing at 0.286 °F/mph.\n\\item[(b)] The average rate of change of \\(W\\) over the interval\n\\[\n\\begin{aligned}\n& 5 \\leq v \\leq 60 \\text { is } \\frac{W(60)-W(5)}{60-5}=-0.253 \\text { or }-0.254 . \\\\\n& W^{\\prime}(v)=\\frac{W(60)-W(5)}{60-5} \\text { when } v=23.011 .\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\left.\\frac{d W}{d t}\\right|_{t=3}=\\left.\\left(\\frac{d W}{d v} \\cdot \\frac{d v}{d t}\\right)\\right|_{t=3}=W^{\\prime}(35) \\cdot 5=-0.892{ }^{\\circ} \\mathrm{F} / \\mathrm{hr}\\)\n\\[\n\\begin{aligned}\n& \\text { OR } \\\\\n& \\frac{W=55.6-22.1(20+5 t)^{0.16}}{\\left.\\frac{d W}{d t}\\right|_{t=3}=-0.892^{\\circ} \\mathrm{F} / \\mathrm{hr}}\n\\end{aligned}\n\\]\n\\end{itemize}\nUnits of °F/mph in (a) and °F/hr in (c)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { value } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { average rate of change } \\\\ 1: W^{\\prime}(v)=\\text { average rate of change } \\\\ 1: \\text { value of } v\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d v}{d t}=5 \\\\ 1: \\text { uses } v(3)=35, \\\\ \\quad \\text { or } \\\\ \\quad \\text { uses } v(t)=20+5 t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[1] : units in (a) and (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          408
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

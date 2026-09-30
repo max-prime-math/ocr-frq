@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-form-b-frq-06",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2005-form-b-frq-06-diagram-01.jpg}\n\\end{center}\nConsider the graph of the function $f$ given by $f(x)=\\frac{1}{x+2}$ for $x \\geq 0$, as shown in the figure above. Let $R$ be the region bounded by the graph of $f$, the $x$ - and $y$-axes, and the vertical line $x=k$, where $k \\geq 0$.\\\\\n(a) Find the area of $R$ in terms of $k$.\\\\\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis in terms of $k$.\\\\\n(c) Let $S$ be the unbounded region in the first quadrant to the right of the vertical line $x=k$ and below the graph of $f$, as shown in the figure above. Find all values of $k$ such that the volume of the solid generated when $S$ is revolved about the $x$-axis is equal to the volume of the solid found in part (b).",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-form-b-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-form-b-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005-form-b_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[] Consider the graph of the function \\(f\\) given by \\(f(x)=\\frac{1}{x+2}\\) for \\(x \\geq 0\\), as shown in the figure above. Let \\(R\\) be the region bounded by the graph of \\(f\\), the \\(x\\) - and \\(y\\)-axes, and the vertical line \\(x=k\\), where \\(k \\geq 0\\).\n\\item[(a)] Find the area of \\(R\\) in terms of \\(k\\).\n(b) Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis in terms of \\(k\\).\n![](https://cdn.mathpix.com/cropped/bd3e9f79-8e38-44a9-9e76-d41ec9e9fd3d-1.jpg?height=505&width=836&top_left_y=359&top_left_x=1033)\n\\item[(c)] Let \\(S\\) be the unbounded region in the first quadrant to the right of the vertical line \\(x=k\\) and below the graph of \\(f\\), as shown in the figure above. Find all values of \\(k\\) such that the volume of the solid generated when \\(S\\) is revolved about the \\(x\\)-axis is equal to the volume of the solid found in part (b).\n\\item[(a)] Area of \\(R=\\int_{0}^{k} \\frac{1}{x+2} d x=\\ln (k+2)-\\ln (2)\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\nV_{R} & =\\pi \\int_{0}^{k} \\frac{1}{(x+2)^{2}} d x \\\\\n& =-\\left.\\frac{\\pi}{x+2}\\right|_{0} ^{k}=\\frac{\\pi}{2}-\\frac{\\pi}{k+2}\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& V_{S}=\\pi \\int_{k}^{\\infty} \\frac{1}{(x+2)^{2}} d x \\\\\n& \\quad=\\lim _{n \\rightarrow \\infty}-\\left.\\frac{\\pi}{x+2}\\right|_{k} ^{n}=\\frac{\\pi}{k+2} \\\\\n& V_{S}=V_{R} \\\\\n& \\frac{\\pi}{k+2}=\\frac{\\pi}{2}-\\frac{\\pi}{k+2} \\\\\n& \\frac{2}{k+2}=\\frac{1}{2} \\\\\n& k=2\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{c}1: \\text { integral } \\\\ 1: \\text { antidifferentiation and } \\\\ \\text { evaluation }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { antidifferentiation and } \\\\ \\quad \\text { evaluation }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\text { improper integral } \\\\ 1: \\text { antidifferentiation and } \\\\ \\quad \\text { evaluation } \\\\ 1: \\text { equation } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          230,
+          572,
+          578
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-frq-06",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "rawPrompt": "Let $f$ be a function with derivatives of all orders and for which $f(2)=7$. When $n$ is odd, the $n$th derivative of $f$ at $x=2$ is 0 . When $n$ is even and $n \\geq 2$, the $n$th derivative of $f$ at $x=2$ is given by $f^{(n)}(2)=\\frac{(n-1)!}{3^{n}}$.\\\\\n(a) Write the sixth-degree Taylor polynomial for $f$ about $x=2$.\\\\\n(b) In the Taylor series for $f$ about $x=2$, what is the coefficient of $(x-2)^{2 n}$ for $n \\geq 1$ ?\\\\\n(c) Find the interval of convergence of the Taylor series for $f$ about $x=2$. Show the work that leads to your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nLet \\(f\\) be a function with derivatives of all orders and for which \\(f(2)=7\\). When \\(n\\) is odd, the \\(n\\)th derivative of \\(f\\) at \\(x=2\\) is 0. When \\(n\\) is even and \\(n \\geq 2\\), the \\(n\\)th derivative of \\(f\\) at \\(x=2\\) is given by \\(f^{(n)}(2)=\\frac{(n-1)!}{3^{n}}\\).\n\\begin{itemize}\n\\item[(a)] Write the sixth-degree Taylor polynomial for \\(f\\) about \\(x=2\\).\n\\item[(b)] In the Taylor series for \\(f\\) about \\(x=2\\), what is the coefficient of \\((x-2)^{2 n}\\) for \\(n \\geq 1\\) ?\n\\item[(c)] Find the interval of convergence of the Taylor series for \\(f\\) about \\(x=2\\). Show the work that leads to your answer.\n\\item[(a)] \\(P_{6}(x)=7+\\frac{1!}{3^{2}} \\cdot \\frac{1}{2!}(x-2)^{2}+\\frac{3!}{3^{4}} \\cdot \\frac{1}{4!}(x-2)^{4}+\\frac{5!}{3^{6}} \\cdot \\frac{1}{6!}(x-2)^{6}\\)\n\\item[(b)] \\(\\frac{(2 n-1)!}{3^{2 n}} \\cdot \\frac{1}{(2 n)!}=\\frac{1}{3^{2 n}(2 n)}\\)\n\\item[(c)] The Taylor series for \\(f\\) about \\(x=2\\) is\n\\[\n\\begin{aligned}\nf & (x)=7+\\sum_{n=1}^{\\infty} \\frac{1}{2 n \\cdot 3^{2 n}}(x-2)^{2 n} \\cdot \\\\\nL & =\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{1}{2(n+1)} \\cdot \\frac{1}{3^{2(n+1)}}(x-2)^{2(n+1)}}{\\frac{1}{2 n} \\cdot \\frac{1}{3^{2 n}}(x-2)^{2 n}}\\right| \\\\\n& =\\lim _{n \\rightarrow \\infty}\\left|\\frac{2 n}{2(n+1)} \\cdot \\frac{3^{2 n}}{3^{2} 3^{2 n}}(x-2)^{2}\\right|=\\frac{(x-2)^{2}}{9} \\\\\nL & <1 \\text { when }|x-2|<3\n\\end{aligned}\n\\]\nThus, the series converges when \\(-1<x<5\\).\nWhen \\(x=5\\), the series is \\(7+\\sum_{n=1}^{\\infty} \\frac{3^{2 n}}{2 n \\cdot 3^{2 n}}=7+\\frac{1}{2} \\sum_{n=1}^{\\infty} \\frac{1}{n}\\),\nwhich diverges, because \\(\\sum_{n=1}^{\\infty} \\frac{1}{n}\\), the harmonic series, diverges.\nWhen \\(x=-1\\), the series is \\(7+\\sum_{n=1}^{\\infty} \\frac{(-3)^{2 n}}{2 n \\cdot 3^{2 n}}=7+\\frac{1}{2} \\sum_{n=1}^{\\infty} \\frac{1}{n}\\),\nwhich diverges, because \\(\\sum_{n=1}^{\\infty} \\frac{1}{n}\\), the harmonic series, diverges.\nThe interval of convergence is (-1, 5).\n\\item[] \\(3:\\left\\{\\begin{aligned} 1 & : \\text { polynomial about } x=2 \\\\ 2: & P_{6}(x) \\\\ & \\langle-1\\rangle \\text { each incorrect term } \\\\ & \\langle-1\\rangle \\text { max for all extra terms, } \\\\ & \\quad+\\cdots, \\text { misuse of equality }\\end{aligned}\\right.\\)\n\n1 : coefficient\n\\(5:\\left\\{\\begin{array}{l}1: \\text { sets up ratio } \\\\ 1: \\text { computes limit of ratio } \\\\ 1: \\text { identifies interior of } \\\\ \\quad \\text { interval of convergence } \\\\ 1: \\text { considers both endpoints } \\\\ 1: \\text { analysis/conclusion for } \\\\ \\quad \\text { both endpoints }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          391,
+          572,
+          561
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

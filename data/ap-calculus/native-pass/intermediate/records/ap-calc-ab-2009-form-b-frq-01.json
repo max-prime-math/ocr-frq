@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-form-b-frq-01",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "rawPrompt": "At a certain height, a tree trunk has a circular cross section. The radius \\(R(t)\\) of that cross section grows at a rate\nmodeled by the function\n\\[\n\\frac{d R}{d t}=\\frac{1}{16}\\left(3+\\sin \\left(t^{2}\\right)\\right) \\text { centimeters per year }\n\\]\nfor \\(0 \\leq t \\leq 3\\), where time \\(t\\) is measured in years. At time \\(t=0\\), the radius is 6 centimeters. The area of the\ncross section at time \\(t\\) is denoted by \\(A(t)\\).\n(a) Write an expression, involving an integral, for the radius \\(R(t)\\) for \\(0 \\leq t \\leq 3\\). Use your expression to\nfind \\(R(3)\\).\n(b) Find the rate at which the cross-sectional area \\(A(t)\\) is increasing at time \\(t=3\\) years. Indicate units of\nmeasure.\n(c) Evaluate \\(\\int_{0}^{3} A^{\\prime}(t) d t\\). Using appropriate units, interpret the meaning of that integral in terms of cross-\nsectional area.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nAt a certain height, a tree trunk has a circular cross section. The radius \\(R(t)\\) of that cross section grows at a rate modeled by the function\n\\[\n\\frac{d R}{d t}=\\frac{1}{16}\\left(3+\\sin \\left(t^{2}\\right)\\right) \\text { centimeters per year }\n\\]\nfor \\(0 \\leq t \\leq 3\\), where time \\(t\\) is measured in years. At time \\(t=0\\), the radius is 6 centimeters. The area of the cross section at time \\(t\\) is denoted by \\(A(t)\\).\n\\begin{itemize}\n\\item[(a)] Write an expression, involving an integral, for the radius \\(R(t)\\) for \\(0 \\leq t \\leq 3\\). Use your expression to find \\(R(3)\\).\n\\item[(b)] Find the rate at which the cross-sectional area \\(A(t)\\) is increasing at time \\(t=3\\) years. Indicate units of measure.\n\\item[(c)] Evaluate \\(\\int_{0}^{3} A^{\\prime}(t) d t\\). Using appropriate units, interpret the meaning of that integral in terms of crosssectional area.\n\\item[(a)] \\(R(t)=6+\\int_{0}^{t} \\frac{1}{16}\\left(3+\\sin \\left(x^{2}\\right)\\right) d x\\)\n\\[\nR(3)=6.610 \\text { or } 6.611\n\\]\n\\item[(b)] \\(A(t)=\\pi(R(t))^{2}\\)\n\\[\n\\begin{aligned}\n& A^{\\prime}(t)=2 \\pi R(t) R^{\\prime}(t) \\\\\n& A^{\\prime}(3)=8.858 \\mathrm{~cm}^{2} / \\text { year }\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{3} A^{\\prime}(t) d t=A(3)-A(0)=24.200\\) or 24.201\nFrom time \\(t=0\\) to \\(t=3\\) years, the crosssectional area grows by 24.201 square centimeters.\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1: \\text { expression for } R(t) \\\\ 1: R(3)\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { expression for } A(t) \\\\ 1: \\text { expression for } A^{\\prime}(t) \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : uses Fundamental Theorem of Calculus } \\\\ 1 \\text { : value of } \\int_{0}^{3} A^{\\prime}(t) d t \\\\ 1 \\text { : meaning of } \\int_{0}^{3} A^{\\prime}(t) d t\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          438
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          171.93599999999998,
+          559.872,
+          186.04799999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          188.064,
+          173.664,
+          200.44799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "math",
+        "rect": [
+          209.088,
+          206.784,
+          404.64,
+          231.552
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          238.75199999999998,
+          543.168,
+          251.712
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          253.152,
+          252.86399999999998,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          275.904,
+          531.072,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          291.45599999999996,
+          130.464,
+          305.568
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          313.63199999999995,
+          537.12,
+          327.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          330.33599999999996,
+          123.83999999999999,
+          340.128
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.088,
+          349.056,
+          531.072,
+          373.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          375.55199999999996,
+          147.16799999999998,
+          386.784
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

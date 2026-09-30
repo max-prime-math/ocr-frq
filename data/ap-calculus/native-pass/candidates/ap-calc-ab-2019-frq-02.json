@@ -1,0 +1,230 @@
+{
+  "id": "ap-calc-ab-2019-frq-02",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (hours)], [0], [0.3], [1.7], [2.8], [4], table.hline(stroke: .5pt), [$v_(P)(t)$ (meters per hour)], [0], [55], [-29], [55], [48], table.hline(stroke: .5pt));\n\nThe velocity of a particle, $P$, moving along the $x$-axis is given by the differentiable function $v_(P)$, where $v_(P)(t)$ is measured in meters per hour and $t$ is measured in hours. Selected values of $v_(P)(t)$ are shown in the table above. Particle $P$ is at the origin at time $t = 0$.\n\n(a) Justify why there must be at least one time $t$, for $0.3 <= t <= 2.8$, at which $v_(P) \"\"^(prime)(t)$, the acceleration of particle $P$, equals 0 meters per hour per hour.\n\n(b) Use a trapezoidal sum with the three subintervals \\[0, 0.3\\], \\[0.3, 1.7\\], and \\[1.7, 2.8\\] to approximate the value of $integral_(0)^(2.8) v_(P)(t) d t$.\n\n(c) A second particle, $Q$, also moves along the $x$-axis so that its velocity for $0 <= t <= 4$ is given by $v_(Q)(t)= 45 sqrt(t) cos lr((0.063 t^(2)))$ meters per hour. Find the time interval during which the velocity of particle $Q$ is at least 60 meters per hour. Find the distance traveled by particle $Q$ during the interval when the velocity of particle $Q$ is at least 60 meters per hour.\n\n(d) At time $t = 0$, particle $Q$ is at position $x = - 90$. Using the result from part (b) and the function $v_(Q)$ from part (c), approximate the distance between particles $P$ and $Q$ at time $t = 2.8$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          35,
+          74,
+          571,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          166.75199999999998,
+          80.064,
+          442.94399999999996,
+          136.79999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          39.168,
+          153.792,
+          530.496,
+          168.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          54.72,
+          170.208,
+          521.856,
+          184.03199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          186.33599999999998,
+          260.64,
+          198.72
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          213.696,
+          508.032,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          229.248,
+          274.75199999999995,
+          242.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          260.06399999999996,
+          521.28,
+          273.024
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          74.30399999999999,
+          278.784,
+          171.35999999999999,
+          304.70399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          319.392,
+          488.736,
+          332.352
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          337.536,
+          542.592,
+          360.864
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          73.728,
+          368.06399999999996,
+          509.75999999999993,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          73.728,
+          393.69599999999997,
+          302.976,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          429.984,
+          536.832,
+          444.38399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          73.728,
+          445.82399999999996,
+          413.28,
+          458.784
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3e1301dbcc62381a6928b7195de06bb457509d9c0409058d11389f598c9c5ac8",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

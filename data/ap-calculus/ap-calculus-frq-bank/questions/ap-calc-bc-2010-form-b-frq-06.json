@@ -1,0 +1,22 @@
+{
+  "question": {
+    "body": "The Maclaurin series for $f$ is\n$ f(x) = sum_(n=2)^infinity frac((-1)^n (2x)^n, n - 1). $\n\n(a) Find its interval of convergence and justify your answer.\n\n(b) Show that $y = f(x)$ satisfies\n$ x y' - y = frac(4x^2, 1 + 2x) $\nfor $abs(x) < R$, where $R$ is the radius of convergence from part (a).",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2010-form-b-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-15",
+    "solution": "(a) The ratio test gives\n$ lim_(n -> infinity) abs(frac((2x)^(n+1) / n, (2x)^n / (n-1))) = abs(2x). $\nThus $abs(2x) < 1$, so $R = frac(1, 2)$.\n\nAt $x = -frac(1, 2)$, the series becomes the harmonic series and diverges. At $x = frac(1, 2)$, it becomes an alternating harmonic series and converges. Therefore the interval is\n$ (-frac(1, 2), frac(1, 2)]. $\n\n(b) Write\n$ y = 4x^2 - 4x^3 + frac(16, 3)x^4 - dots. $\nThen\n$ y' = 8x - 12x^2 + frac(64, 3)x^3 - dots $\nand\n$ x y' - y = 4x^2 - 8x^3 + 16x^4 - dots. $\nFactor:\n$ x y' - y = 4x^2(1 - 2x + 4x^2 - dots). $\nThe expression in parentheses is the geometric series $sum_(n=0)^infinity (-2x)^n = 1 / (1 + 2x)$ for $abs(x) < frac(1, 2)$. Hence\n$ x y' - y = frac(4x^2, 1 + 2x). $",
+    "tags": [
+      "2010",
+      "Form B",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

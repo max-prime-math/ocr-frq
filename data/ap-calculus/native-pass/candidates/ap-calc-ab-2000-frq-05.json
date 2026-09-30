@@ -1,0 +1,129 @@
+{
+  "id": "ap-calc-ab-2000-frq-05",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the curve given by $x y^(2)- x^(3) y = 6$.\n\n(a) Show that $frac(d y,d x)= frac(3 x^(2) y - y^(2),2 x y - x^(3))$.\n\n(b) Find all points on the curve whose $x$-coordinate is 1, and write an equation for the tangent line at each of these points.\n\n(c) Find the $x$-coordinate of each point on the curve where the tangent line is vertical.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          316,
+          572,
+          445
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          335.52,
+          264.67199999999997,
+          351.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          357.11999999999995,
+          216.28799999999998,
+          388.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          64.512,
+          394.84799999999996,
+          545.472,
+          407.808
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.08,
+          407.808,
+          139.392,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          426.816,
+          444.38399999999996,
+          439.2
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "8549efa52b0d3bb1ae848c3e70abf65fee94ff9fee5116454b4f227d54e50eb9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

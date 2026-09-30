@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-01",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-form-b-frq-01-diagram-01.png}\nLet \\(f\\) be the function given by \\(f(x)=\\frac{x^{3}}{4}-\\frac{x^{2}}{3}-\\frac{x}{2}+3 \\cos x\\). Let \\(R\\) be the shaded region in the second\nquadrant bounded by the graph of \\(f\\), and let \\(S\\) be the shaded region bounded by the graph of \\(f\\) and line \\(\\ell\\), the\nline tangent to the graph of \\(f\\) at \\(x=0\\), as shown above.\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-2\\).\n(c) Write, but do not evaluate, an integral expression that can be used to find the area of \\(S\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        206.66400146484375,
+        199.46400451660156,
+        405.0480041503906,
+        363.2879943847656
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(f\\) be the function given by \\(f(x)=\\frac{x^{3}}{4}-\\frac{x^{2}}{3}-\\frac{x}{2}+3 \\cos x\\). Let \\(R\\) be the shaded region in the second quadrant bounded by the graph of \\(f\\), and let \\(S\\) be the shaded region bounded by the graph of \\(f\\) and line \\(\\ell\\), the line tangent to the graph of \\(f\\) at \\(x=0\\), as shown above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-2\\).\n\\item[(c)] Write, but do not evaluate, an integral expression that can be used to find the area of \\(S\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/18a693c2-30e5-4f89-b2eb-088f3e923515-1.jpg?height=518&width=627&top_left_y=307&top_left_x=1319)\n\nFor \\(x<0, f(x)=0\\) when \\(x=-1.37312\\).\nLet \\(P=-1.37312\\).\n\\begin{itemize}\n\\item[(a)] Area of \\(R=\\int_{P}^{0} f(x) d x=2.903\\)\n\\item[(b)] Volume \\(=\\pi \\int_{P}^{0}\\left((f(x)+2)^{2}-4\\right) d x=59.361\\)\n\\item[(c)] The equation of the tangent line \\(\\ell\\) is \\(y=3-\\frac{1}{2} x\\).\nThe graph of \\(f\\) and line \\(\\ell\\) intersect at \\(A=3.38987\\).\nArea of \\(S=\\int_{0}^{A}\\left(\\left(3-\\frac{1}{2} x\\right)-f(x)\\right) d x\\)\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { tangent line } \\\\ 1: \\text { integrand } \\\\ 1: \\text { limits }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          519
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          209.664,
+          202.464,
+          402.04799999999994,
+          360.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          371.808,
+          529.632,
+          399.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          400.89599999999996,
+          551.808,
+          413.856
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          419.616,
+          314.20799999999997,
+          431.99999999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          439.2,
+          168.48,
+          451.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          460.224,
+          487.58399999999995,
+          473.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          481.248,
+          469.152,
+          493.63199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

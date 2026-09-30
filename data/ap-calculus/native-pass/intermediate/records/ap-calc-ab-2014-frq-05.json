@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2014-frq-05",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(x\\) & -2 & \\(-2<x<-1\\) & -1 & \\(-1<x<1\\) & 1 & \\(1<x<3\\) & 3 \\\\\n\\hline \\(f(x)\\) & 12 & Positive & 8 & Positive & 2 & Positive & 7 \\\\\n\\hline \\(f^{\\prime}(x)\\) & -5 & Negative & 0 & Negative & 0 & Positive & \\(\\frac{1}{2}\\) \\\\\n\\hline \\(g(x)\\) & -1 & Negative & 0 & Positive & 3 & Positive & 1 \\\\\n\\hline \\(g^{\\prime}(x)\\) & 2 & Positive & \\(\\frac{3}{2}\\) & Positive & 0 & Negative & -2 \\\\\n\\hline\n\\end{tabular}\nThe twice-differentiable functions \\(f\\) and \\(g\\) are defined for all real numbers \\(x\\). Values of \\(f, f^{\\prime}, g\\), and \\(g^{\\prime}\\) for\nvarious values of \\(x\\) are given in the table above.\n(a) Find the \\(x\\)-coordinate of each relative minimum of \\(f\\) on the interval [-2, 3]. Justify your answers.\n(b) Explain why there must be a value \\(c\\), for \\(-1<c<1\\), such that \\(f^{\\prime \\prime}(c)=0\\).\n(c) The function \\(h\\) is defined by \\(h(x)=\\ln (f(x))\\). Find \\(h^{\\prime}(3)\\). Show the computations that lead to your\nanswer.\n(d) Evaluate \\(\\int_{-2}^{3} f^{\\prime}(g(x)) g^{\\prime}(x) d x\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2014 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(x\\) & -2 & \\(-2<x<-1\\) & -1 & \\(-1<x<1\\) & 1 & \\(1<x<3\\) & 3 \\\\\n\\hline \\(f(x)\\) & 12 & Positive & 8 & Positive & 2 & Positive & 7 \\\\\n\\hline \\(f^{\\prime}(x)\\) & -5 & Negative & 0 & Negative & 0 & Positive & \\(\\frac{1}{2}\\) \\\\\n\\hline \\(g(x)\\) & -1 & Negative & 0 & Positive & 3 & Positive & 1 \\\\\n\\hline \\(g^{\\prime}(x)\\) & 2 & Positive & \\(\\frac{3}{2}\\) & Positive & 0 & Negative & -2 \\\\\n\\hline\n\\end{tabular}\n\nThe twice-differentiable functions \\(f\\) and \\(g\\) are defined for all real numbers \\(x\\). Values of \\(f, f^{\\prime}, g\\), and \\(g^{\\prime}\\) for various values of \\(x\\) are given in the table above.\n\\begin{itemize}\n\\item[(a)] Find the \\(x\\)-coordinate of each relative minimum of \\(f\\) on the interval [-2,3]. Justify your answers.\n\\item[(b)] Explain why there must be a value \\(c\\), for \\(-1<c<1\\), such that \\(f^{\\prime \\prime}(c)=0\\).\n\\item[(c)] The function \\(h\\) is defined by \\(h(x)=\\ln (f(x))\\). Find \\(h^{\\prime}(3)\\). Show the computations that lead to your answer.\n\\item[(d)] Evaluate \\(\\int_{-2}^{3} f^{\\prime}(g(x)) g^{\\prime}(x) d x\\).\n\\item[(a)] \\(x=1\\) is the only critical point at which \\(f^{\\prime}\\) changes sign from negative to positive. Therefore, \\(f\\) has a relative minimum at \\(x=1\\).\n\\item[(b)] \\(f^{\\prime}\\) is differentiable \\(\\Rightarrow f^{\\prime}\\) is continuous on the interval \\(-1 \\leq x \\leq 1\\)\n\\[\n\\frac{f^{\\prime}(1)-f^{\\prime}(-1)}{1-(-1)}=\\frac{0-0}{2}=0\n\\]\nTherefore, by the Mean Value Theorem, there is at least one value \\(c,-1<c<1\\), such that \\(f^{\\prime \\prime}(c)=0\\).\n\\item[(c)] \\(h^{\\prime}(x)=\\frac{1}{f(x)} \\cdot f^{\\prime}(x)\\)\n\\[\nh^{\\prime}(3)=\\frac{1}{f(3)} \\cdot f^{\\prime}(3)=\\frac{1}{7} \\cdot \\frac{1}{2}=\\frac{1}{14}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\int_{-2}^{3} f^{\\prime}(g(x)) g^{\\prime}(x) d x & =[f(g(x))]_{x=-2}^{x=3} \\\\\n& =f(g(3))-f(g(-2)) \\\\\n& =f(1)-f(-1) \\\\\n& =2-8=-6\n\\end{aligned}\n\\]\n\\end{itemize}\n\n1 : answer with justification\n\\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(1)-f^{\\prime}(-1)=0 \\\\ 1: \\text { explanation, using Mean Value Theorem }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: h^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: \\text { Fundamental Theorem of Calculus } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          60,
+          568,
+          408
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          129.024,
+          65.088,
+          482.11199999999997,
+          213.11999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 57,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          226.07999999999998,
+          548.64,
+          239.04
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 58,
+        "type": "text",
+        "rect": [
+          64.512,
+          241.05599999999998,
+          279.64799999999997,
+          254.016
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 59,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          260.64,
+          516.096,
+          273.59999999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 60,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          282.23999999999995,
+          415.87199999999996,
+          296.06399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 62,
+        "type": "text",
+        "rect": [
+          65.952,
+          303.55199999999996,
+          529.3439999999999,
+          317.952
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 63,
+        "type": "text",
+        "rect": [
+          83.52,
+          321.11999999999995,
+          118.65599999999999,
+          330.912
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 64,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          339.55199999999996,
+          220.03199999999998,
+          363.74399999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

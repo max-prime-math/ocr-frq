@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1998-frq-02",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function given by $f(x)=2 x e^{2 x}$.\\\\\n(a) Find $\\lim _{x \\rightarrow-\\infty} f(x)$ and $\\lim _{x \\rightarrow \\infty} f(x)$.\\\\\n(b) Find the absolute minimum value of $f$. Justify that your answer is an absolute minimum.\\\\\n(c) What is the range of $f$ ?\\\\\n(d) Consider the family of functions defined by $y=b x e^{b x}$, where $b$ is a nonzero constant. Show that the absolute minimum value of $b x e^{b x}$ is the same for all nonzero values of $b$.",
+  "assets": [],
+  "rawScoringGuide": "2. Let \\(f\\) be the function given by \\(f(x)=2 x e^{2 x}\\).\n\\begin{itemize}\n\\begin{itemize}\n\\item[(a)] Find \\(\\lim _{x \\rightarrow-\\infty} f(x)\\) and \\(\\lim _{x \\rightarrow \\infty} f(x)\\).\n\\item[(b)] Find the absolute minimum value of \\(f\\). Justify that your answer is an absolute minimum.\n\\item[(c)] What is the range of \\(f\\) ?\n\\item[(d)] Consider the family of functions defined by \\(y=b x e^{b x}\\), where \\(b\\) is a nonzero constant. Show that the absolute minimum value of \\(b x e^{b z}\\) is the same for all nonzero values of \\(b\\).\n\\end{itemize}\n\\item[(a)] \\(\\lim _{x \\rightarrow-\\infty} 2 x e^{2 x}=0\\)\n\\(\\lim _{x \\rightarrow \\infty} 2 x e^{2 x}=\\infty\\) or DNE\n\\item[(b)] \\(f^{\\prime}(x)=2 e^{2 x}+2 x \\cdot 2 \\cdot e^{2 x}=2 e^{2 x}(1+2 x)=0\\)\nif \\(x=-1 / 2\\)\n\\(f(-1 / 2)=-1 / e\\) or -0.368 or -0.367\n\\(-1 / e\\) is an absolute minimum value because:\n\\begin{itemize}\n\\item[(i)] \\(f^{\\prime}(x)<0\\) for all \\(x<-1 / 2\\) and\n\\(f^{\\prime}(x)>0\\) for all \\(x>-1 / 2\\)\n\\item[] -or-\n\\item[(ii)]\n\\[\nf^{\\prime}(x)-\\frac{+}{-1 / 2}\n\\]\nand \\(x=-1 / 2\\) is the only critical\nnumber\n\\end{itemize}\n\\item[(c)] Range of \\(f=[-1 / e, \\infty)\\)\nor \\([-0.367, \\infty)\\)\nor \\([-0.368, \\infty)\\)\n\\item[(d)] \\(y^{\\prime}=b e^{b x}+b^{2} x e^{b z}=b e^{b x}(1+b x)=0\\)\nif \\(x=-1 / b\\)\nAt \\(x=-1 / b, y=-1 / e\\)\n\\(y\\) has an absolute minimum value of \\(-1 / e\\) for all nonzero \\(b\\)\n\\end{itemize}\n\\(2\\left\\{\\begin{array}{l}1: 0 \\text { as } x \\rightarrow-\\infty \\\\ 1: \\infty \\text { or DNE as } x \\rightarrow \\infty\\end{array}\\right.\\)\n\\(3\\left\\{\\begin{array}{l}1: \\text { solves } f^{\\prime}(x)=0 \\\\ 1: \\text { evaluates } f \\text { at student's critical point } \\\\ 0 / 1 \\text { if not local minimum from } \\\\ \\text { student's derivative } \\\\ 1: \\text { justifies absolute minimum value } \\\\ 0 / 1 \\text { for a local argument } \\\\ 0 / 1 \\text { without explicit symbolic } \\\\ \\text { derivative }\\end{array}\\right.\\)\nNote: \\(0 / 3\\) if no absolute minimum based on student's derivative\n\n1: answer\nNote: must include the left-hand endpoint; exclude the right-hand \"endpoint\"\n\\(3\\left\\{\\begin{array}{l}1: \\text { sets } y^{\\prime}=b e^{b z}(1+b x)=0 \\\\ 1: \\text { solves student's } y^{\\prime}=0 \\\\ 1: \\text { evaluates } y \\text { at a critical number } \\\\ \\text { and gets a value independent of } b\\end{array}\\right.\\)\nNote: 0/3 if only considering specific values of \\(b\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

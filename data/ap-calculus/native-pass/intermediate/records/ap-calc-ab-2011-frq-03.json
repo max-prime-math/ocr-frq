@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2011-frq-03",
+  "course": "AB",
+  "year": 2011,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011.pdf",
+      "sha256": "9a87ac69e0957ffdcdf5f8ce0e59dcffe05f7d0d54944eccf56f5943da701e85",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011.pdf",
+      "sha256": "12a44579e775e0abe2e23cc83712be149a4da34429133d3bdf980dafc4960b03"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2011-frq-03-diagram-01.png}\nLet \\(R\\) be the region in the first quadrant enclosed by the graphs of \\(f(x)=8 x^{3}\\) and \\(g(x)=\\sin (\\pi x)\\), as shown\nin the figure above.\n(a) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=\\frac{1}{2}\\).\n(b) Find the area of \\(R\\).\n(c) Write, but do not evaluate, an integral expression for the volume of the solid generated when \\(R\\) is rotated\nabout the horizontal line \\(y=1\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        240.07200622558594,
+        170.37600708007812,
+        371.6400146484375,
+        365.5920104980469
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nLet \\(R\\) be the region in the first quadrant enclosed by the graphs of \\(f(x)=8 x^{3}\\) and \\(g(x)=\\sin (\\pi x)\\), as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=\\frac{1}{2}\\).\n\\item[(b)] Find the area of \\(R\\).\n\\item[(c)] Write, but do not evaluate, an integral expression for the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=1\\).\n\\item[(a)] \\(f\\left(\\frac{1}{2}\\right)=1\\)\n\\[\nf^{\\prime}(x)=24 x^{2}, \\text { so } f^{\\prime}\\left(\\frac{1}{2}\\right)=6\n\\]\nAn equation for the tangent line is \\(y=1+6\\left(x-\\frac{1}{2}\\right)\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{0}^{1 / 2}(g(x)-f(x)) d x \\\\\n& =\\int_{0}^{1 / 2}\\left(\\sin (\\pi x)-8 x^{3}\\right) d x \\\\\n& =\\left[-\\frac{1}{\\pi} \\cos (\\pi x)-2 x^{4}\\right]_{x=0}^{x=1 / 2} \\\\\n& =-\\frac{1}{8}+\\frac{1}{\\pi}\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\pi \\int_{0}^{1 / 2}\\left((1-f(x))^{2}-(1-g(x))^{2}\\right) d x \\\\\n& =\\pi \\int_{0}^{1 / 2}\\left(\\left(1-8 x^{3}\\right)^{2}-(1-\\sin (\\pi x))^{2}\\right) d x\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}\\left(\\frac{1}{2}\\right) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 2: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1 \\text { : limits and constant } \\\\ 2 \\text { : integrand }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          514
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          243.07199999999997,
+          173.37599999999998,
+          368.64,
+          362.592
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          375.55199999999996,
+          554.4,
+          391.104
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          392.256,
+          151.488,
+          405.21599999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          412.128,
+          372.67199999999997,
+          435.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          442.94399999999996,
+          168.48,
+          455.328
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          461.664,
+          550.0799999999999,
+          474.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          474.04799999999994,
+          224.064,
+          486.43199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

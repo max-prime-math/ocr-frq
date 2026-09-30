@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-frq-01",
+  "course": "BC",
+  "year": 2002,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002.pdf",
+      "sha256": "64edbf0cc21bb02abac3daedd8843f19db31224976c1904c0a369c0dcf31e9bc",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002.pdf",
+      "sha256": "676da803295fea05f51302345025fb577c149c93c1387bedabbcc52ea0834896"
+    }
+  },
+  "rawPrompt": "Let $f$ and $g$ be the functions given by $f(x)=e^{x}$ and $g(x)=\\ln x$.\\\\\n(a) Find the area of the region enclosed by the graphs of $f$ and $g$ between $x=\\frac{1}{2}$ and $x=1$.\\\\\n(b) Find the volume of the solid generated when the region enclosed by the graphs of $f$ and $g$ between $x=\\frac{1}{2}$ and $x=1$ is revolved about the line $y=4$.\\\\\n(c) Let $h$ be the function given by $h(x)=f(x)-g(x)$. Find the absolute minimum value of $h(x)$ on the closed interval $\\frac{1}{2} \\leq x \\leq 1$, and find the absolute maximum value of $h(x)$ on the closed interval $\\frac{1}{2} \\leq x \\leq 1$. Show the analysis that leads to your answers.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC 2002 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\nLet \\(f\\) and \\(g\\) be the functions given by \\(f(x)=e^{x}\\) and \\(g(x)=\\ln x\\).\n\\begin{itemize}\n\\item[(a)] Find the area of the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\) and \\(x=1\\).\n\\item[(b)] Find the volume of the solid generated when the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\) and \\(x=1\\) is revolved about the line \\(y=4\\).\n\\item[(c)] Let \\(h\\) be the function given by \\(h(x)=f(x)-g(x)\\). Find the absolute minimum value of \\(h(x)\\) on the closed interval \\(\\frac{1}{2} \\leq x \\leq 1\\), and find the absolute maximum value of \\(h(x)\\) on the closed interval \\(\\frac{1}{2} \\leq x \\leq 1\\). Show the analysis that leads to your answers.\n\\item[(a)] Area \\(=\\int_{1 / 2}^{1}\\left(e^{x}-\\ln x\\right) d x=1.222\\) or 1.223\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{\\frac{1}{2}}^{1}\\left((4-\\ln x)^{2}-\\left(4-e^{x}\\right)^{2}\\right) d x \\\\\n& =7.515 \\pi \\text { or } 23.609\n\\end{aligned}\n\\]\n\\item[(c)] \\(h^{\\prime}(x)=f^{\\prime}(x)-g^{\\prime}(x)=e^{x}-\\frac{1}{x}=0\\) \\(x=0.567143\\)\nAbsolute minimum value and absolute maximum value occur at the critical point or at the endpoints.\n\\[\n\\begin{aligned}\n& h(0.567143)=2.330 \\\\\n& h(0.5)=2.3418 \\\\\n& h(1)=2.718\n\\end{aligned}\n\\]\nThe absolute minimum is 2.330.\nThe absolute maximum is 2.718.\n\\end{itemize}\n\\[\n2\\left\\{\\begin{array}{l}\n1: \\text { integral } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\nNote: Errors in computation come off the third point.",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          392
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

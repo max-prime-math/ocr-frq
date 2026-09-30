@@ -1,0 +1,24 @@
+{
+  "question": {
+    "body": "Consider $dif y/dif x=x(y-1)^2$.\n\n(a) Sketch the slope field at the eleven marked points.\n\n#image(\"/imgs/ap-calc-bc-2000-frq-06-bc-2000_fig3.jpg\", width: 65%)\n\n(b) Use the slope field to explain why a solution cannot have the graph shown.\n\n#image(\"/imgs/ap-calc-bc-2000-frq-06-bc-2000_fig4.jpg\", width: 65%)\n\n(c) Find the solution $y=f(x)$ satisfying $f(0)=-1$.\n\n(d) Find its range.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2000-frq-06",
+    "images": [
+      "ap-calc-bc-2000-frq-06-bc-2000_fig3.jpg",
+      "ap-calc-bc-2000-frq-06-bc-2000_fig4.jpg"
+    ],
+    "points": 10,
+    "questionType": "frq",
+    "sectionId": "ap-topic-7-7",
+    "solution": "(a) Slopes are $0$ wherever $x=0$ or $y=1$. At $(-1,0)$ and $(-1,-1)$ the slopes are negative; at $(1,0)$ and $(1,-1)$ they are positive. The segments at $y=-1$ are steeper than those at $y=0$.\n\n(b) At every point with $y=1$, the differential equation requires slope $0$, but the displayed graph does not have horizontal tangent there.\n\n(c) Separating variables,\n$1/(y-1)^2 dif y=x dif x$.\nThus $-1/(y-1)=x^2/2+C$. The initial condition gives $C=1/2$, hence\n$y=1-2/(x^2+1)$.\n\n(d) Since $2/(x^2+1)$ is in $(0,2]$, the range is $[-1,1)$.",
+    "tags": [
+      "2000",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-7",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

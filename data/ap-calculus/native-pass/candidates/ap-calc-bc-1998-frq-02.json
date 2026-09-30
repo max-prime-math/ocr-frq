@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-1998-frq-02",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= 2 x e^(2 x)$.\n\n(a) Find $lim_(x -> - oo) f(x)$ and $lim_(x -> oo) f(x)$.\n\n(b) Find the absolute minimum value of $f$. Justify that your answer is an absolute minimum.\n\n(c) What is the range of $f$ ?\n\n(d) Consider the family of functions defined by $y = b x e^(b x)$, where $b$ is a nonzero constant. Show that the absolute minimum value of $b x e^(b x)$ is the same for all nonzero values of $b$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7c72ec78eb7668222a3e89cf795a9bebd4b75e940f7e4fc79c1d4659d631240f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ]
+}

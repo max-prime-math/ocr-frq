@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 9, align: (left, left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.vline(stroke: .5pt, x: 9), table.hline(stroke: .5pt), [$x$], [0], [$0 < x < 1$], [1], [$1 < x < 2$], [2], [$2 < x < 3$], [3], [$3 < x < 4$], table.hline(stroke: .5pt), [$f(x)$], [-1], [Negative], [0], [Positive], [2], [Positive], [0], [Negative], table.hline(stroke: .5pt), [$f'(x)$], [4], [Positive], [0], [Positive], [DNE], [Negative], [-3], [Negative], table.hline(stroke: .5pt), [$f''(x)$], [-2], [Negative], [0], [Positive], [DNE], [Negative], [0], [Positive], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is continuous on the interval $\\[0 \\,4 \\)$. The function $f$ is twice differentiable except at $x = 2$. The function $f$ and its derivatives have the properties indicated in the table above, where DNE indicates that the derivatives of $f$ do not exist at $x = 2$.\n\n(a) For $0 < x < 4$, find all values of $x$ at which $f$ has a relative extremum. Determine whether $f$ has a relative maximum or a relative minimum at each of these values. Justify your answer.\n\n(b) On the axes provided, sketch the graph of a function that has all the characteristics of $f$.\n\n#image(\"/imgs/ap-calc-ab-2005-frq-04-diagram-01.png\", width: 65%)\n\n(c) Let $g$ be the function defined by $g(x)= integral_(1)^(x) f(t) d t$ on the open interval (0, 4). For $0 < x < 4$, find all values of $x$ at which $g$ has a relative extremum. Determine whether $g$ has a relative maximum or a relative minimum at each of these values. Justify your answer.\n\n(d) For the function $g$ defined in part (c), find all values of $x$, for $0 < x < 4$, at which the graph of $g$ has a point of inflection. Justify your answer.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2005-frq-04",
+    "images": [
+      "ap-calc-ab-2005-frq-04-diagram-01.png"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-6-5",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2005",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-6",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-03",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-form-b-frq-03-diagram-01.png}\nThe figure above is the graph of a function of \\(x\\), which models the height of a skateboard ramp. The function\nmeets the following requirements.\n(i) At \\(x=0\\), the value of the function is 0 , and the slope of the graph of the function is 0.\n(ii) At \\(x=4\\), the value of the function is 1 , and the slope of the graph of the function is 1.\n(iii) Between \\(x=0\\) and \\(x=4\\), the function is increasing.\n(a) Let \\(f(x)=a x^{2}\\), where \\(a\\) is a nonzero constant. Show that it is not possible to find a value for \\(a\\) so that \\(f\\)\nmeets requirement (ii) above.\n(b) Let \\(g(x)=c x^{3}-\\frac{x^{2}}{16}\\), where \\(c\\) is a nonzero constant. Find the value of \\(c\\) so that \\(g\\) meets requirement (ii)\nabove. Show the work that leads to your answer.\n(c) Using the function \\(g\\) and your value of \\(c\\) from part (b), show that \\(g\\) does not meet requirement (iii) above.\n(d) Let \\(h(x)=\\frac{x^{n}}{k}\\), where \\(k\\) is a nonzero constant and \\(n\\) is a positive integer. Find the values of \\(k\\) and \\(n\\) so\nthat \\(h\\) meets requirement (ii) above. Show that \\(h\\) also meets requirements (i) and (iii) above.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        209.83200073242188,
+        64.39199829101562,
+        401.5920104980469,
+        202.8719940185547
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nThe figure above is the graph of a function of \\(x\\), which models the height of a skateboard ramp. The function meets the following requirements.\n\\begin{itemize}\n\\item[(i)] At \\(x=0\\), the value of the function is 0 , and the slope of the graph of the function is 0 .\n\\item[(ii)] At \\(x=4\\), the value of the function is 1, and the slope of the graph of the function is 1.\n\\item[(iii)] Between \\(x=0\\) and \\(x=4\\), the function is increasing.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/c50cb804-fb95-4e3e-9d9e-6ddc9a21bfae-1.jpg?height=372&width=524&top_left_y=316&top_left_x=1418)\n\\begin{itemize}\n\\item[(a)] Let \\(f(x)=a x^{2}\\), where \\(a\\) is a nonzero constant. Show that it is not possible to find a value for \\(a\\) so that \\(f\\) meets requirement (ii) above.\n\\item[(b)] Let \\(g(x)=c x^{3}-\\frac{x^{2}}{16}\\), where \\(c\\) is a nonzero constant. Find the value of \\(c\\) so that \\(g\\) meets requirement (ii) above. Show the work that leads to your answer.\n\\item[(c)] Using the function \\(g\\) and your value of \\(c\\) from part (b), show that \\(g\\) does not meet requirement (iii) above.\n\\item[(d)] Let \\(h(x)=\\frac{x^{n}}{k}\\), where \\(k\\) is a nonzero constant and \\(n\\) is a positive integer. Find the values of \\(k\\) and \\(n\\) so that \\(h\\) meets requirement (ii) above. Show that \\(h\\) also meets requirements (i) and (iii) above.\n\\item[(a)] \\(f(4)=1\\) implies that \\(a=\\frac{1}{16}\\) and \\(f^{\\prime}(4)=2 a(4)=1\\) implies that \\(a=\\frac{1}{8}\\). Thus, \\(f\\) cannot satisfy (ii).\n\\item[(b)] \\(\\quad g(4)=64 c-1=1\\) implies that \\(c=\\frac{1}{32}\\). When \\(c=\\frac{1}{32}, g^{\\prime}(4)=3 c(4)^{2}-\\frac{2(4)}{16}=3\\left(\\frac{1}{32}\\right)(16)-\\frac{1}{2}=1\\)\n\\item[(c)] \\(\\quad g^{\\prime}(x)=\\frac{3}{32} x^{2}-\\frac{x}{8}=\\frac{1}{32} x(3 x-4)\\) \\(g^{\\prime}(x)<0\\) for \\(0<x<\\frac{4}{3}\\), so \\(g\\) does not satisfy (iii).\n\\item[(d)] \\(h(4)=\\frac{4^{n}}{k}=1\\) implies that \\(4^{n}=k\\). \\(h^{\\prime}(4)=\\frac{n 4^{n-1}}{k}=\\frac{n 4^{n-1}}{4^{n}}=\\frac{n}{4}=1\\) gives \\(n=4\\) and \\(k=4^{4}=256\\). \\(h(x)=\\frac{x^{4}}{256} \\Rightarrow h(0)=0\\). \\(h^{\\prime}(x)=\\frac{4 x^{3}}{256} \\Rightarrow h^{\\prime}(0)=0\\) and \\(h^{\\prime}(x)>0\\) for \\(0<x<4\\).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: a=\\frac{1}{16} \\text { or } a=\\frac{1}{8} \\\\ 1: \\text { shows } a \\text { does not work }\\end{array}\\right.\\)\n\n1 : value of \\(c\\)\n\\(2:\\left\\{\\begin{array}{l}1: g^{\\prime}(x) \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\frac{4^{n}}{k}=1 \\\\ 1: \\frac{n 4^{n-1}}{k}=1 \\\\ 1: \\text { values for } k \\text { and } n \\\\ 1: \\text { verifications }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          63,
+          572,
+          473
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          212.832,
+          67.392,
+          398.592,
+          199.87199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          210.23999999999998,
+          548.352,
+          223.2
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          223.48799999999997,
+          216.576,
+          235.87199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          90.43199999999999,
+          240.76799999999997,
+          490.176,
+          253.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          84.672,
+          280.79999999999995,
+          348.768,
+          293.76
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          303.26399999999995,
+          556.992,
+          318.816
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          319.96799999999996,
+          213.98399999999998,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          339.55199999999996,
+          556.704,
+          366.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          368.64,
+          298.368,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          386.20799999999997,
+          558.144,
+          399.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          408.38399999999996,
+          550.944,
+          433.152
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.368,
+          434.304,
+          496.224,
+          447.84
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    },
+    {
+      "type": "reviewed-source-text-correction",
+      "replaced": "slope of the graph of the function is 0.\n(iii)",
+      "with": "slope of the graph of the function is 0.\n(ii) At \\(x=4\\), the value of the function is 1 , and the slope of the graph of the function is 1.\n(iii)"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-frq-03",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2009-frq-03-diagram-01.jpg}\n\\end{center}\n\nNote: Figure not drawn to scale.\\\\\nA diver leaps from the edge of a diving platform into a pool below. The figure above shows the initial position of the diver and her position at a later time. At time $t$ seconds after she leaps, the horizontal distance from the front edge of the platform to the diver's shoulders is given by $x(t)$, and the vertical distance from the water surface to her shoulders is given by $y(t)$, where $x(t)$ and $y(t)$ are measured in meters. Suppose that the diver's shoulders are 11.4 meters above the water when she makes her leap and that\n\n$$\n\\frac{d x}{d t}=0.8 \\text { and } \\frac{d y}{d t}=3.6-9.8 t,\n$$\n\nfor $0 \\leq t \\leq A$, where $A$ is the time that the diver's shoulders enter the water.\\\\\n(a) Find the maximum vertical distance from the water surface to the diver's shoulders.\\\\\n(b) Find $A$, the time that the diver's shoulders enter the water.\\\\\n(c) Find the total distance traveled by the diver's shoulders from the time she leaps from the platform until the time her shoulders enter the water.\\\\\n(d) Find the angle $\\theta, 0<\\theta<\\frac{\\pi}{2}$, between the path of the diver and the water at the instant the diver's shoulders enter the water.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nA diver leaps from the edge of a diving platform into a pool below. The figure above shows the initial position of the diver and her position at a later time. At time \\(t\\) seconds after she leaps, the horizontal distance from the front edge of the platform to the diver's shoulders is given by \\(x(t)\\), and the vertical distance from the water surface to her shoulders is given by \\(y(t)\\), where \\(x(t)\\) and \\(y(t)\\) are measured in meters. Suppose that the diver's shoulders are 11.4 meters above the water when she makes her leap and that\n\\[\n\\frac{d x}{d t}=0.8 \\text { and } \\frac{d y}{d t}=3.6-9.8 t,\n\\]\nfor \\(0 \\leq t \\leq A\\), where \\(A\\) is the time that the diver's shoulders enter the water.\n\\begin{itemize}\n\\item[(a)] Find the maximum vertical distance from the water surface to the diver's shoulders.\n\\item[(b)] Find \\(A\\), the time that the diver's shoulders enter the water.\n\\item[(c)] Find the total distance traveled by the diver's shoulders from the time she leaps from the platform until the time her shoulders enter the water.\n\\item[(d)] Find the angle \\(\\theta, 0<\\theta<\\frac{\\pi}{2}\\), between the path of the diver and the water at the instant the diver's shoulders enter the water.\n\\item[(a)] \\(\\frac{d y}{d t}=0\\) only when \\(t=0.36735\\). Let \\(b=0.36735\\).\nThe maximum vertical distance from the water surface to the diver's shoulders is\n\\[\ny(b)=11.4+\\int_{0}^{b} \\frac{d y}{d t} d t=12.061 \\text { meters. }\n\\]\nAlternatively, \\(y(t)=11.4+3.6 t-4.9 t^{2}\\), so \\(y(b)=12.061\\) meters.\n\\item[(b)] \\(y(A)=11.4+\\int_{0}^{A} \\frac{d y}{d t} d t=11.4+3.6 A-4.9 A^{2}=0\\) when \\(A=1.936\\) seconds.\n\\item[(c)] \\(\\int_{0}^{A} \\sqrt{\\left(\\frac{d x}{d t}\\right)^{2}+\\left(\\frac{d y}{d t}\\right)^{2}} d t=12.946\\) meters\n\\item[(d)] At time \\(A, \\frac{d y}{d x}=\\left.\\frac{d y / d t}{d x / d t}\\right|_{t=A}=-19.21913\\).\nThe angle between the path of the diver and the water is \\(\\tan ^{-1}(19.21913)=1.518\\) or 1.519.\n\\end{itemize}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/fe93b606-4ecf-47cc-8e8e-54e8de712bfb-1.jpg?height=771&width=359&top_left_y=380&top_left_x=1493}\n\\captionsetup{labelformat=empty}\n\\caption{Note: Figure not drawn to scale.}\n\\end{figure}\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { considers } \\frac{d y}{d t}=0 \\\\ 1: \\text { integral or } y(t) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : equation } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1: \\frac{d y}{d x} \\text { at time } A \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          63,
+          572,
+          639
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

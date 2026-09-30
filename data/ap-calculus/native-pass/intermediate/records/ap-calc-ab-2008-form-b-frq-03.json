@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-form-b-frq-03",
+  "course": "AB",
+  "year": 2008,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008-FORM-B.pdf",
+      "sha256": "fbb677a84e5c502522e698af497bef103355ec9482783e5e661f5c03f85df2eb",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008-FORM-B.pdf",
+      "sha256": "20c0da48412fe259116c8d818cf92ecb3a783537ca20494c332cf0555e6dbfda"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline Distance from the river's edge (feet) & 0 & 8 & 14 & 22 & 24 \\\\\n\\hline Depth of the water (feet) & 0 & 7 & 8 & 2 & 0 \\\\\n\\hline\n\\end{tabular}\nA scientist measures the depth of the Doe River at Picnic Point. The river is 24 feet wide at this location. The\nmeasurements are taken in a straight line perpendicular to the edge of the river. The data are shown in the table\nabove. The velocity of the water at Picnic Point, in feet per minute, is modeled by \\(v(t)=16+2 \\sin (\\sqrt{t+10})\\) for\n\\(0 \\leq t \\leq 120\\) minutes.\n(a) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the area of\nthe cross section of the river at Picnic Point, in square feet. Show the computations that lead to your answer.\n(b) The volumetric flow at a location along the river is the product of the cross-sectional area and the velocity\nof the water at that location. Use your approximation from part (a) to estimate the average value of the\nvolumetric flow at Picnic Point, in cubic feet per minute, from \\(t=0\\) to \\(t=120\\) minutes.\n(c) The scientist proposes the function \\(f\\), given by \\(f(x)=8 \\sin \\left(\\frac{\\pi x}{24}\\right)\\), as a model for the depth of the water,\nin feet, at Picnic Point \\(x\\) feet from the river's edge. Find the area of the cross section of the river at Picnic\nPoint based on this model.\n(d) Recall that the volumetric flow is the product of the cross-sectional area and the velocity of the water at a\nlocation. To prevent flooding, water must be diverted if the average value of the volumetric flow at Picnic\nPoint exceeds 2100 cubic feet per minute for a 20 -minute period. Using your answer from part (c), find the\naverage value of the volumetric flow during the time interval \\(40 \\leq t \\leq 60\\) minutes. Does this value indicate\nthat the water must be diverted?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline Distance from the river's edge (feet) & 0 & 8 & 14 & 22 & 24 \\\\\n\\hline Depth of the water (feet) & 0 & 7 & 8 & 2 & 0 \\\\\n\\hline\n\\end{tabular}\n\nA scientist measures the depth of the Doe River at Picnic Point. The river is 24 feet wide at this location. The measurements are taken in a straight line perpendicular to the edge of the river. The data are shown in the table above. The velocity of the water at Picnic Point, in feet per minute, is modeled by \\(v(t)=16+2 \\sin (\\sqrt{t+10})\\) for \\(0 \\leq t \\leq 120\\) minutes.\n\\begin{itemize}\n\\item[(a)] Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the area of the cross section of the river at Picnic Point, in square feet. Show the computations that lead to your answer.\n\\item[(b)] The volumetric flow at a location along the river is the product of the cross-sectional area and the velocity of the water at that location. Use your approximation from part (a) to estimate the average value of the volumetric flow at Picnic Point, in cubic feet per minute, from \\(t=0\\) to \\(t=120\\) minutes.\n\\item[(c)] The scientist proposes the function \\(f\\), given by \\(f(x)=8 \\sin \\left(\\frac{\\pi x}{24}\\right)\\), as a model for the depth of the water, in feet, at Picnic Point \\(x\\) feet from the river's edge. Find the area of the cross section of the river at Picnic Point based on this model.\n\\item[(d)] Recall that the volumetric flow is the product of the cross-sectional area and the velocity of the water at a location. To prevent flooding, water must be diverted if the average value of the volumetric flow at Picnic Point exceeds 2100 cubic feet per minute for a 20 -minute period. Using your answer from part (c), find the average value of the volumetric flow during the time interval \\(40 \\leq t \\leq 60\\) minutes. Does this value indicate that the water must be diverted?\n\\item[(a)]\n\\[\n\\begin{aligned}\n& \\frac{(0+7)}{2} \\cdot 8+\\frac{(7+8)}{2} \\cdot 6+\\frac{(8+2)}{2} \\cdot 8+\\frac{(2+0)}{2} \\cdot 2 \\\\\n& \\quad=115 \\mathrm{ft}^{2}\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\frac{1}{120} \\int_{0}^{120} 115 v(t) d t \\\\\n& =1807.169 \\text { or } 1807.170 \\mathrm{ft}^{3} / \\mathrm{min}\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{24} 8 \\sin \\left(\\frac{\\pi x}{24}\\right) d x=122.230\\) or \\(122.231 \\mathrm{ft}^{2}\\)\n\\item[(d)] Let \\(C\\) be the cross-sectional area approximation from part (c). The average volumetric flow is \\(\\frac{1}{20} \\int_{40}^{60} C \\cdot v(t) d t=2181.912\\) or \\(2181.913 \\mathrm{ft}^{3} / \\mathrm{min}\\).\n\\end{itemize}\n\n1 : trapezoidal approximation\n\\[\n\\begin{aligned}\n& 3:\\left\\{\\begin{array}{c}\n1: \\text { limits and average value } \\\\\n\\text { constant } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right. \\\\\n& 2:\\left\\{\\begin{array}{l}\n1: \\text { integra1 } \\\\\n1: \\text { answer }\n\\end{array}\\right. \\\\\n& 3:\\left\\{\\begin{array}{l}\n1: \\text { volumetric flow integral } \\\\\n1: \\text { average volumetric flow } \\\\\n1: \\text { answer with reason }\n\\end{array}\\right.\n\\end{aligned}\n\\]\n\nYes, water must be diverted since the average volumetric flow for this 20-minute period exceeds \\(2100 \\mathrm{ft}^{3} / \\mathrm{min}\\).",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          74,
+          572,
+          498
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          147.16799999999998,
+          80.064,
+          463.96799999999996,
+          130.176
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 26,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          142.56,
+          546.6239999999999,
+          154.944
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          154.944,
+          554.688,
+          167.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          64.512,
+          168.19199999999998,
+          564.192,
+          183.16799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          65.952,
+          185.76,
+          162.432,
+          196.70399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          65.952,
+          204.48,
+          563.04,
+          216.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          216.86399999999998,
+          560.16,
+          229.248
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          65.088,
+          234.432,
+          551.232,
+          247.39199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          247.67999999999998,
+          535.3919999999999,
+          259.488
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          83.52,
+          260.06399999999996,
+          479.80799999999994,
+          272.448
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          65.088,
+          278.784,
+          544.0319999999999,
+          304.128
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          306.14399999999995,
+          551.232,
+          319.104
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          319.392,
+          200.736,
+          329.76
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          65.088,
+          337.536,
+          548.64,
+          349.344
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          349.344,
+          551.232,
+          361.72799999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          83.52,
+          361.72799999999995,
+          555.264,
+          374.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          83.52,
+          374.11199999999997,
+          561.8879999999999,
+          386.496
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          387.07199999999995,
+          225.21599999999998,
+          398.01599999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

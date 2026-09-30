@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-01",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "The rate at which rainwater flows into a drainpipe is modeled by the function $R$, where $R(t)=20 \\sin \\left(\\frac{t^{2}}{35}\\right)$ cubic feet per hour, $t$ is measured in hours, and $0 \\leq t \\leq 8$. The pipe is partially blocked, allowing water to drain out the other end of the pipe at a rate modeled by $D(t)=-0.04 t^{3}+0.4 t^{2}+0.96 t$ cubic feet per hour, for $0 \\leq t \\leq 8$. There are 30 cubic feet of water in the pipe at time $t=0$.\\\\\n(a) How many cubic feet of rainwater flow into the pipe during the 8 -hour time interval $0 \\leq t \\leq 8$ ?\\\\\n(b) Is the amount of water in the pipe increasing or decreasing at time $t=3$ hours? Give a reason for your answer.\\\\\n(c) At what time $t, 0 \\leq t \\leq 8$, is the amount of water in the pipe at a minimum? Justify your answer.\\\\\n(d) The pipe can hold 50 cubic feet of water before overflowing. For $t>8$, water continues to flow into and out of the pipe at the given rates until the pipe begins to overflow. Write, but do not solve, an equation involving one or more integrals that gives the time $w$ when the pipe will begin to overflow.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2015 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\nThe rate at which rainwater flows into a drainpipe is modeled by the function \\(R\\), where \\(R(t)=20 \\sin \\left(\\frac{t^{2}}{35}\\right)\\) cubic feet per hour, \\(t\\) is measured in hours, and \\(0 \\leq t \\leq 8\\). The pipe is partially blocked, allowing water to drain out the other end of the pipe at a rate modeled by \\(D(t)=-0.04 t^{3}+0.4 t^{2}+0.96 t\\) cubic feet per hour, for \\(0 \\leq t \\leq 8\\). There are 30 cubic feet of water in the pipe at time \\(t=0\\).\n\\begin{itemize}\n\\item[(a)] How many cubic feet of rainwater flow into the pipe during the 8-hour time interval \\(0 \\leq t \\leq 8\\) ?\n\\item[(b)] Is the amount of water in the pipe increasing or decreasing at time \\(t=3\\) hours? Give a reason for your answer.\n\\item[(c)] At what time \\(t, 0 \\leq t \\leq 8\\), is the amount of water in the pipe at a minimum? Justify your answer.\n\\item[(d)] The pipe can hold 50 cubic feet of water before overflowing. For \\(t>8\\), water continues to flow into and out of the pipe at the given rates until the pipe begins to overflow. Write, but do not solve, an equation involving one or more integrals that gives the time \\(w\\) when the pipe will begin to overflow.\n\\item[(a)] \\(\\int_{0}^{8} R(t) d t=76.570\\)\n\\item[(b)] \\(R(3)-D(3)=-0.313632<0\\)\nSince \\(R(3)<D(3)\\), the amount of water in the pipe is decreasing at time \\(t=3\\) hours.\n\\item[(c)] The amount of water in the pipe at time \\(t, 0 \\leq t \\leq 8\\), is\n\\[\n\\begin{aligned}\n& 30+\\int_{0}^{t}[R(x)-D(x)] d x \\\\\n& R(t)-D(t)=0 \\Rightarrow t=0,3.271658\n\\end{aligned}\n\\]\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & Amount of water in the pipe \\\\\n\\hline 0 & 30 \\\\\n\\hline 3.271658 & 27.964561 \\\\\n\\hline 8 & 48.543686 \\\\\n\\hline\n\\end{tabular}\nThe amount of water in the pipe is a minimum at time \\(t=3.272\\) (or 3.271) hours.\n\\item[(d)] \\(30+\\int_{0}^{w}[R(t)-D(t)] d t=50\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } R(3) \\text { and } D(3) \\\\ 1: \\text { answer and reason }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { considers } \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          569,
+          392
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

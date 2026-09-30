@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2002-form-b-frq-06",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2002-form-b-frq-06-diagram-01.png\", width: 65%)\n\nShip $A$ is traveling due west toward Lighthouse Rock at a speed of 15 kilometers per hour (km/hr). Ship $B$ is traveling due north away from Lighthouse Rock at a speed of 10 km/hr. Let $x$ be the distance between Ship $A$ and Lighthouse Rock at time $t$, and let $y$ be the distance between Ship $B$ and Lighthouse Rock at time $t$, as shown in the figure above.\n\n(a) Find the distance, in kilometers, between Ship $A$ and Ship $B$ when $x = 4 upright(space.nobreak k m)$ and $y = 3 upright(space.nobreak k m)$.\n\n(b) Find the rate of change, in km/hr, of the distance between the two ships when $x = 4 upright(space.nobreak k m)$ and $y = 3 upright(space.nobreak k m)$.\n\n(c) Let $theta$ be the angle shown in the figure. Find the rate of change of $theta$, in radians per hour, when $x = 4 upright(space.nobreak k m)$ and $y = 3 upright(space.nobreak k m)$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2002-form-b-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2002-form-b-frq-06-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        200.0399932861328,
+        76.19999694824219,
+        411.3840026855469,
+        240.60000610351562
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          74,
+          572,
+          487
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "diagram",
+        "rect": [
+          203.04,
+          79.19999999999999,
+          408.38399999999996,
+          237.6
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          247.39199999999997,
+          550.656,
+          259.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          259.77599999999995,
+          551.808,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          272.15999999999997,
+          543.168,
+          284.544
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          284.544,
+          182.88,
+          296.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          303.26399999999995,
+          503.424,
+          315.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          324.28799999999995,
+          546.336,
+          336.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          345.31199999999995,
+          554.4,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          81.79199999999999,
+          358.84799999999996,
+          152.35199999999998,
+          371.23199999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3402a8bfa830d96748bc6625ce65bd77e48fd0cba31984c864fbde077acd79ce",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-06",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

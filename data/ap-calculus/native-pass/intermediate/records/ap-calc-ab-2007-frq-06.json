@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-frq-06",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function defined by \\(f(x)=k \\sqrt{x}-\\ln x\\) for \\(x>0\\), where \\(k\\) is a positive constant.\n\n(a) Find \\(f^{\\prime}(x)\\) and \\(f^{\\prime \\prime}(x)\\).\n(b) For what value of the constant \\(k\\) does \\(f\\) have a critical point at \\(x=1\\) ? For this value of \\(k\\), determine whether \\(f\\) has a relative minimum, relative maximum, or neither at \\(x=1\\). Justify your answer.\n(c) For a certain value of the constant \\(k\\), the graph of \\(f\\) has a point of inflection on the \\(x\\)-axis. Find this value of \\(k\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nLet \\(f\\) be the function defined by \\(f(x)=k \\sqrt{x}-\\ln x\\) for \\(x>0\\), where \\(k\\) is a positive constant.\n\\begin{itemize}\n\\item[(a)] Find \\(f^{\\prime}(x)\\) and \\(f^{\\prime \\prime}(x)\\).\n\\item[(b)] For what value of the constant \\(k\\) does \\(f\\) have a critical point at \\(x=1\\) ? For this value of \\(k\\), determine whether \\(f\\) has a relative minimum, relative maximum, or neither at \\(x=1\\). Justify your answer.\n\\item[(c)] For a certain value of the constant \\(k\\), the graph of \\(f\\) has a point of inflection on the \\(x\\)-axis. Find this value of \\(k\\).\n\\item[(a)] \\(f^{\\prime}(x)=\\frac{k}{2 \\sqrt{x}}-\\frac{1}{x}\\)\n\\[\nf^{\\prime \\prime}(x)=-\\frac{1}{4} k x^{-3 / 2}+x^{-2}\n\\]\n\\item[(b)] \\(f^{\\prime}(1)=\\frac{1}{2} k-1=0 \\Rightarrow k=2\\)\nWhen \\(k=2, \\quad f^{\\prime}(1)=0\\) and \\(f^{\\prime \\prime}(1)=-\\frac{1}{2}+1>0\\). \\(f\\) has a relative minimum value at \\(x=1\\) by the Second Derivative Test.\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(x) \\\\ 1: f^{\\prime \\prime}(x)\\end{array}\\right.\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}1: \\text { sets } f^{\\prime}(1)=0 \\text { or } f^{\\prime}(x)=0 \\\\ 1: \\text { solves for } k \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: f^{\\prime \\prime}(x)=0 \\text { or } f(x)=0 \\\\ 1: \\text { equation in one variable } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] At this inflection point, \\(f^{\\prime \\prime}(x)=0\\) and \\(f(x)=0\\).\n\\[\n\\begin{aligned}\n& f^{\\prime \\prime}(x)=0 \\Rightarrow \\frac{-k}{4 x^{3 / 2}}+\\frac{1}{x^{2}}=0 \\Rightarrow k=\\frac{4}{\\sqrt{x}} \\\\\n& f(x)=0 \\Rightarrow k \\sqrt{x}-\\ln x=0 \\Rightarrow k=\\frac{\\ln x}{\\sqrt{x}}\n\\end{aligned}\n\\]\nTherefore,\n\\[\n\\begin{aligned}\n& \\frac{4}{\\sqrt{x}}=\\frac{\\ln x}{\\sqrt{x}} \\\\\n& \\Rightarrow 4=\\ln x \\\\\n& \\Rightarrow x=e^{4} \\\\\n& \\Rightarrow k=\\frac{4}{e^{2}}\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          64,
+          572,
+          348
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [
+    {
+      "kind": "prompt-recovered-from-scoring-guide",
+      "reviewRequired": true
+    }
+  ],
+  "ocrEvidence": [
+    {
+      "type": "scoring-guide-repeated-prompt",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-06--scoring-guide/mmd",
+      "reason": "original-prompt-cache-source-pages-mislabeled"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

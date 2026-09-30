@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-01",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "An object moving along a curve in the $x y$-plane has position $(x(t), y(t))$ at time $t$ with\n$$\n\\frac{d x}{d t}=\\cos \\left(t^{3}\\right) \\text { and } \\frac{d y}{d t}=3 \\sin \\left(t^{2}\\right)\n$$\n\nfor $0 \\leq t \\leq 3$. At time $t=2$, the object is at position (4,5).\\\\\n(a) Write an equation for the line tangent to the curve at $(4,5)$.\\\\\n(b) Find the speed of the object at time $t=2$.\\\\\n(c) Find the total distance traveled by the object over the time interval $0 \\leq t \\leq 1$.\\\\\n(d) Find the position of the object at time $t=3$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 1}\n\nAn object moving along a curve in the \\(x y\\)-plane has position \\((x(t), y(t))\\) at time \\(t\\) with\n\\[\n\\frac{d x}{d t}=\\cos \\left(t^{3}\\right) \\text { and } \\frac{d y}{d t}=3 \\sin \\left(t^{2}\\right)\n\\]\nfor \\(0 \\leq t \\leq 3\\). At time \\(t=2\\), the object is at position (4,5).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the curve at (4,5).\n\\item[(b)] Find the speed of the object at time \\(t=2\\).\n\\item[(c)] Find the total distance traveled by the object over the time interval \\(0 \\leq t \\leq 1\\).\n\\item[(d)] Find the position of the object at time \\(t=3\\).\n\\item[(a)] \\(\\frac{d y}{d x}=\\frac{3 \\sin \\left(t^{2}\\right)}{\\cos \\left(t^{3}\\right)}\\)\n\\[\n\\begin{aligned}\n& \\left.\\frac{d y}{d x}\\right|_{t=2}=\\frac{3 \\sin \\left(2^{2}\\right)}{\\cos \\left(2^{3}\\right)}=15.604 \\\\\n& y-5=15.604(x-4)\n\\end{aligned}\n\\]\n\\item[(b)] Speed \\(=\\sqrt{\\cos ^{2}(8)+9 \\sin ^{2}(4)}=2.275\\)\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Distance } & =\\int_{0}^{1} \\sqrt{\\cos ^{2}\\left(t^{3}\\right)+9 \\sin ^{2}\\left(t^{2}\\right)} d t \\\\\n& =1.458\n\\end{aligned}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n& x(3)=4+\\int_{2}^{3} \\cos \\left(t^{3}\\right) d t=3.953 \\text { or } 3.954 \\\\\n& y(3)=5+\\int_{2}^{3} 3 \\sin \\left(t^{2}\\right) d t=4.906\n\\end{aligned}\n\\]\n\\end{itemize}\n\n1 : tangent line\n\n1 : answer\n\\(3:\\left\\{\\begin{aligned} 2: & \\text { distance integral } \\\\ & <-1>\\text { each integrand error } \\\\ & <-1>\\text { error in limits } \\\\ 1: \\text { answer } & \\end{aligned}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\text { definite integral for } x \\\\ 1: \\text { answer for } x(3) \\\\ 1: \\text { definite integral for } y \\\\ 1: \\text { answer for } y(3)\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          68,
+          572,
+          388
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

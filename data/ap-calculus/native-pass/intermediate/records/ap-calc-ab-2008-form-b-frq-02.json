@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-form-b-frq-02",
+  "course": "AB",
+  "year": 2008,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008-FORM-B.pdf",
+      "sha256": "fbb677a84e5c502522e698af497bef103355ec9482783e5e661f5c03f85df2eb",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008-FORM-B.pdf",
+      "sha256": "20c0da48412fe259116c8d818cf92ecb3a783537ca20494c332cf0555e6dbfda"
+    }
+  },
+  "rawPrompt": "For time \\(t \\geq 0\\) hours, let \\(r(t)=120\\left(1-e^{-10 t^{2}}\\right)\\) represent the speed, in kilometers per hour, at which a car\ntravels along a straight road. The number of liters of gasoline used by the car to travel \\(x\\) kilometers is modeled\nby \\(g(x)=0.05 x\\left(1-e^{-x / 2}\\right)\\).\n(a) How many kilometers does the car travel during the first 2 hours?\n(b) Find the rate of change with respect to time of the number of liters of gasoline used by the car when\n\\(t=2\\) hours. Indicate units of measure.\n(c) How many liters of gasoline have been used by the car when it reaches a speed of 80 kilometers per hour?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nFor time \\(t \\geq 0\\) hours, let \\(r(t)=120\\left(1-e^{-10 t^{2}}\\right)\\) represent the speed, in kilometers per hour, at which a car travels along a straight road. The number of liters of gasoline used by the car to travel \\(x\\) kilometers is modeled by \\(g(x)=0.05 x\\left(1-e^{-x / 2}\\right)\\).\n\\begin{itemize}\n\\item[(a)] How many kilometers does the car travel during the first 2 hours?\n\\item[(b)] Find the rate of change with respect to time of the number of liters of gasoline used by the car when \\(t=2\\) hours. Indicate units of measure.\n\\item[(c)] How many liters of gasoline have been used by the car when it reaches a speed of 80 kilometers per hour?\n\\item[(a)] \\(\\int_{0}^{2} r(t) d t=206.370\\) kilometers\n\\item[(b)] \\(\\frac{d g}{d t}=\\frac{d g}{d x} \\cdot \\frac{d x}{d t} ; \\quad \\frac{d x}{d t}=r(t)\\)\n\\end{itemize}\n\\[\n\\begin{aligned}\n\\left.\\frac{d g}{d t}\\right|_{t=2} & =\\left.\\frac{d g}{d x}\\right|_{x=206.370} \\cdot r(2) \\\\\n& =(0.050)(120)=6 \\text { liters } / \\text { hour }\n\\end{aligned}\n\\]\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}2 \\text { : uses chain rule } \\\\ 1 \\text { : answer with units }\\end{array}\\right.\\)\n\\item[(c)] Let \\(T\\) be the time at which the car's speed reaches 80 kilometers per hour.\nThen, \\(r(T)=80\\) or \\(T=0.331453\\) hours.\nAt time \\(T\\), the car has gone\n\\[\nx(T)=\\int_{0}^{T} r(t) d t=10.794097 \\text { kilometers }\n\\]\nand has consumed \\(g(x(T))=0.537\\) liters of gasoline.\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          66,
+          572,
+          298
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          69.984,
+          538.848,
+          94.752
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          96.47999999999999,
+          554.976,
+          110.01599999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          110.01599999999999,
+          194.112,
+          129.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          137.37599999999998,
+          374.976,
+          150.33599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          155.808,
+          524.736,
+          168.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          168.19199999999998,
+          258.048,
+          179.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          186.91199999999998,
+          552.096,
+          199.87199999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

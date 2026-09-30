@@ -1,0 +1,243 @@
+{
+  "id": "ap-calc-ab-2010-frq-03",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2010-frq-03-diagram-01.png\", width: 65%)\n\nThere are 700 people in line for a popular amusement-park ride when the ride begins operation in the morning. Once it begins operation, the ride accepts passengers until the park closes 8 hours later. While there is a line, people move onto the ride at a rate of 800 people per hour. The graph above shows the rate, $r(t)$, at which people arrive at the ride throughout the day. Time $t$ is measured in hours from the time the ride begins operation.\n\n(a) How many people arrive at the ride between $t = 0$ and $t = 3$ ? Show the computations that lead to your answer.\n\n(b) Is the number of people waiting in line to get on the ride increasing or decreasing between $t = 2$ and $t = 3$ ? Justify your answer.\n\n(c) At what time $t$ is the line for the ride the longest? How many people are in line at that time? Justify your answers.\n\n(d) Write, but do not solve, an equation involving an integral expression of $r$ whose solution gives the earliest time $t$ at which there is no longer a line for the ride.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        164.0399932861328,
+        64.96800231933594,
+        447.09600830078125,
+        311.7359924316406
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          64,
+          572,
+          539
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          167.04,
+          67.96799999999999,
+          444.09599999999995,
+          308.736
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          320.544,
+          553.824,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          332.928,
+          543.7439999999999,
+          345.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          345.31199999999995,
+          535.68,
+          358.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          360.864,
+          518.4,
+          373.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          373.82399999999996,
+          110.01599999999999,
+          385.63199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          391.67999999999995,
+          546.336,
+          404.64
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          407.808,
+          118.07999999999998,
+          417.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          424.51199999999994,
+          531.072,
+          437.472
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          438.04799999999994,
+          210.23999999999998,
+          450.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.088,
+          458.496,
+          547.1999999999999,
+          471.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          472.60799999999995,
+          122.68799999999999,
+          481.248
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.088,
+          488.736,
+          555.8399999999999,
+          501.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          501.69599999999997,
+          314.496,
+          513.5039999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ccd431677ac154a330e37832bb57234c4389d425e59a5c592a54ac1a44c850f6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

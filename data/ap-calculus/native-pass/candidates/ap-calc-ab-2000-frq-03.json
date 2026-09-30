@@ -1,0 +1,166 @@
+{
+  "id": "ap-calc-ab-2000-frq-03",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2000-frq-03-diagram-01.png\", width: 65%)\n\nThe figure above shows the graph of $f'$, the derivative of the function $f$, for $- 7 <= x <= 7$. The graph of $f'$ has horizontal tangent lines at $x = - 3 \\, x = 2$, and $x = 5$, and a vertical tangent line at $x = 3$.\n\n(a) Find all values of $x$, for $- 7 < x < 7$, at which $f$ attains a relative minimum. Justify your answer.\n\n(b) Find all values of $x$, for $- 7 < x < 7$, at which $f$ attains a relative maximum. Justify your answer.\n\n(c) Find all values of $x$, for $- 7 < x < 7$, at which $f''(x)< 0$.\n\n(d) At what value of $x$, for $- 7 <= x <= 7$, does $f$ attain its absolute maximum? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2000-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2000-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        99.81600189208984,
+        56.90399932861328,
+        510.45599365234375,
+        231.0959930419922
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          55,
+          572,
+          486
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          102.81599999999999,
+          59.903999999999996,
+          507.45599999999996,
+          228.09599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          238.46399999999997,
+          561.5999999999999,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          254.016,
+          464.544,
+          266.976
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          273.024,
+          519.264,
+          285.984
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          294.62399999999997,
+          521.28,
+          307.584
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          315.35999999999996,
+          344.15999999999997,
+          328.32
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          335.52,
+          507.45599999999996,
+          347.904
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "bc8c942b5573d6850d3a3528709b619ad2f74cfca122847e41f2dfb07903d67f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

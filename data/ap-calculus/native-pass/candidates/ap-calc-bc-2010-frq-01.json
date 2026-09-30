@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2010-frq-01",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "There is no snow on Janet's driveway when snow begins to fall at midnight. From midnight to 9 A.M., snow accumulates on the driveway at a rate modeled by $f(t)= 7 t e^(cos t)$ cubic feet per hour, where $t$ is measured in hours since midnight. Janet starts removing snow at 6 A.M. $(t = 6)$. The rate $g(t)$, in cubic feet per hour, at which Janet removes snow from the driveway at time $t$ hours after midnight is modeled by $ g(t)= cases(0 & \" for \" 0 <= t < 6, 125 & \" for \" 6 <= t < 7, 108 & \" for \" 7 <= t <= 9 .) $\n\n(a) How many cubic feet of snow have accumulated on the driveway by 6 A.M.?\n\n(b) Find the rate of change of the volume of snow on the driveway at 8 A.M.\n\n(c) Let $h(t)$ represent the total amount of snow, in cubic feet, that Janet has removed from the driveway at time $t$ hours after midnight. Express $h$ as a piecewise-defined function with domain $0 <= t <= 9$.\n\n(d) How many cubic feet of snow are on the driveway at 9 A.M.?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          436
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e9c859f3f46b46cf29bc1ae08db9cabe9c2f552b72f7e507ef890a529f77b94c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ]
+}

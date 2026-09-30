@@ -5,7 +5,10 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const directory = process.env.MITEX_WASM_DIR
-  || path.join(os.homedir(), 'dev/typr/node_modules/mitex-wasm');
+  || ['dev/apps/typr', 'dev/typr']
+    .map((dir) => path.join(os.homedir(), dir, 'node_modules/mitex-wasm'))
+    .find((dir) => fs.existsSync(path.join(dir, 'mitex_wasm_bg.wasm')))
+  || path.join(os.homedir(), 'dev/apps/typr/node_modules/mitex-wasm');
 const bytes = fs.readFileSync(path.join(directory, 'mitex_wasm_bg.wasm'));
 let bindings;
 let generation = 0;

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-frq-05",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 2 & 5 & 7 & 11 & 12 \\\\\n\\hline \\(r^{\\prime}(t)\\) (feet per minute) & 5.7 & 4.0 & 2.0 & 1.2 & 0.6 & 0.5 \\\\\n\\hline\n\\end{tabular}\nThe volume of a spherical hot air balloon expands as the air inside the balloon is heated. The radius of the\nballoon, in feet, is modeled by a twice-differentiable function \\(r\\) of time \\(t\\), where \\(t\\) is measured in minutes. For\n\\(0<t<12\\), the graph of \\(r\\) is concave down. The table above gives selected values of the rate of change, \\(r^{\\prime}(t)\\),\nof the radius of the balloon over the time interval \\(0 \\leq t \\leq 12\\). The radius of the balloon is 30 feet when \\(t=5\\).\n(Note: The volume of a sphere of radius \\(r\\) is given by \\(V=\\frac{4}{3} \\pi r^{3}\\).)\n(a) Estimate the radius of the balloon when \\(t=5.4\\) using the tangent line approximation at \\(t=5\\). Is your\nestimate greater than or less than the true value? Give a reason for your answer.\n(b) Find the rate of change of the volume of the balloon with respect to time when \\(t=5\\). Indicate units of\nmeasure.\n(c) Use a right Riemann sum with the five subintervals indicated by the data in the table to approximate\n\\(\\int_{0}^{12} r^{\\prime}(t) d t\\). Using correct units, explain the meaning of \\(\\int_{0}^{12} r^{\\prime}(t) d t\\) in terms of the radius of the balloon.\n(d) Is your approximation in part (c) greater than or less than \\(\\int_{0}^{12} r^{\\prime}(t) d t\\) ? Give a reason for your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 2 & 5 & 7 & 11 & 12 \\\\\n\\hline \\(r^{\\prime}(t)\\) (feet per minute) & 5.7 & 4.0 & 2.0 & 1.2 & 0.6 & 0.5 \\\\\n\\hline\n\\end{tabular}\nThe volume of a spherical hot air balloon expands as the air inside the balloon is heated. The radius of the balloon, in feet, is modeled by a twice-differentiable function \\(r\\) of time \\(t\\), where \\(t\\) is measured in minutes. For \\(0<t<12\\), the graph of \\(r\\) is concave down. The table above gives selected values of the rate of change, \\(r^{\\prime}(t)\\), of the radius of the balloon over the time interval \\(0 \\leq t \\leq 12\\). The radius of the balloon is 30 feet when \\(t=5\\). (Note: The volume of a sphere of radius \\(r\\) is given by \\(V=\\frac{4}{3} \\pi r^{3}\\).)\n\\begin{itemize}\n\\item[(a)] Estimate the radius of the balloon when \\(t=5.4\\) using the tangent line approximation at \\(t=5\\). Is your estimate greater than or less than the true value? Give a reason for your answer.\n\\item[(b)] Find the rate of change of the volume of the balloon with respect to time when \\(t=5\\). Indicate units of measure.\n\\item[(c)] Use a right Riemann sum with the five subintervals indicated by the data in the table to approximate \\(\\int_{0}^{12} r^{\\prime}(t) d t\\). Using correct units, explain the meaning of \\(\\int_{0}^{12} r^{\\prime}(t) d t\\) in terms of the radius of the balloon.\n\\item[(d)] Is your approximation in part (c) greater than or less than \\(\\int_{0}^{12} r^{\\prime}(t) d t\\) ? Give a reason for your answer.\n\\item[(a)] \\(r(5.4) \\approx r(5)+r^{\\prime}(5) \\Delta t=30+2(0.4)=30.8 \\mathrm{ft}\\) Since the graph of \\(r\\) is concave down on the interval \\(5<t<5.4\\), this estimate is greater than \\(r(5.4)\\).\n\\item[(b)] \\(\\frac{d V}{d t}=3\\left(\\frac{4}{3}\\right) \\pi r^{2} \\frac{d r}{d t}\\) \\(\\left.\\frac{d V}{d t}\\right|_{t=5}=4 \\pi(30)^{2} 2=7200 \\pi \\mathrm{ft}^{3} / \\mathrm{min}\\)\n\\item[(c)] \\(\\int_{0}^{12} r^{\\prime}(t) d t \\approx 2(4.0)+3(2.0)+2(1.2)+4(0.6)+1(0.5)\\) \\(=19.3 \\mathrm{ft}\\) \\(\\int_{0}^{12} r^{\\prime}(t) d t\\) is the change in the radius, in feet, from \\(t=0\\) to \\(t=12\\) minutes.\n\\item[(d)] Since \\(r\\) is concave down, \\(r^{\\prime}\\) is decreasing on \\(0<t<12\\). Therefore, this approximation, 19.3 ft, is less than \\(\\int_{0}^{12} r^{\\prime}(t) d t\\).\nUnits of \\(\\mathrm{ft}^{3} / \\mathrm{min}\\) in part (b) and ft in part (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : estimate } \\\\ 1 \\text { : conclusion with reason }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\frac{d V}{d t} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { approximation } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[1] : conclusion with reason\n\\item[1] : units in (b) and (c)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          282,
+          572,
+          623
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "table",
+        "rect": [
+          153.21599999999998,
+          302.4,
+          458.784,
+          362.304
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          374.688,
+          532.2239999999999,
+          387.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          387.07199999999995,
+          556.4159999999999,
+          398.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          65.088,
+          400.032,
+          556.4159999999999,
+          412.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          64.512,
+          415.008,
+          551.232,
+          426.816
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          64.512,
+          429.984,
+          366.33599999999996,
+          452.736
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          65.088,
+          461.376,
+          538.2719999999999,
+          474.33599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          474.33599999999996,
+          435.16799999999995,
+          486.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          65.088,
+          492.47999999999996,
+          537.408,
+          504.864
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          506.87999999999994,
+          123.83999999999999,
+          516.096
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          65.088,
+          523.872,
+          525.8879999999999,
+          536.256
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 54,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          536.832,
+          547.4879999999999,
+          561.5999999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 55,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          570.8159999999999,
+          535.3919999999999,
+          595.584
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

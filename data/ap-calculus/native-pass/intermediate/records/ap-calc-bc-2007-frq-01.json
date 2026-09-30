@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-frq-01",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "rawPrompt": "Let $R$ be the region in the first and second quadrants bounded above by the graph of $y=\\frac{20}{1+x^{2}}$ and below by the horizontal line $y=2$.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the volume of the solid generated when $R$ is rotated about the $x$-axis.\\\\\n(c) The region $R$ is the base of a solid. For this solid, the cross sections perpendicular to the $x$-axis are semicircles. Find the volume of this solid.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(R\\) be the region in the first and second quadrants bounded above by the graph of \\(y=\\frac{20}{1+x^{2}}\\) and below by the horizontal line \\(y=2\\).\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the \\(x\\)-axis.\n\\item[(c)] The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(x\\)-axis are semicircles. Find the volume of this solid.\n\\end{itemize}\n\\[\n\\frac{20}{1+x^{2}}=2 \\text { when } x= \\pm 3\n\\]\n\\begin{itemize}\n\\item[(a)] Area \\(=\\int_{-3}^{3}\\left(\\frac{20}{1+x^{2}}-2\\right) d x=37.961\\) or 37.962\n\\item[(b)] Volume \\(=\\pi \\int_{-3}^{3}\\left(\\left(\\frac{20}{1+x^{2}}\\right)^{2}-2^{2}\\right) d x=1871.190\\)\n\\item[(c)] Volume \\(=\\frac{\\pi}{2} \\int_{-3}^{3}\\left(\\frac{1}{2}\\left(\\frac{20}{1+x^{2}}-2\\right)\\right)^{2} d x\\)\n\\[\n=\\frac{\\pi}{8} \\int_{-3}^{3}\\left(\\frac{20}{1+x^{2}}-2\\right)^{2} d x=174.268\n\\]\n\\end{itemize}\n\n1 : correct limits in an integral in\n\\begin{itemize}\n\\item[(a)] , (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          410
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

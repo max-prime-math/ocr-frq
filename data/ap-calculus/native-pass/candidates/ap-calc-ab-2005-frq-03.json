@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2005-frq-03",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [Distance $x(upright(space.nobreak c m))$], [0], [1], [5], [6], [8], table.hline(stroke: .5pt), [Temperature $T(x)lr((\"\"^(degree) upright(C)))$], [100], [93], [70], [62], [55], table.hline(stroke: .5pt));\n\nA metal wire of length 8 centimeters (cm) is heated at one end. The table above gives selected values of the temperature $T(x)$, in degrees Celsius $lr((\"\"^(degree) upright(C)))$, of the wire $x upright(space.nobreak c m)$ from the heated end. The function $T$ is decreasing and twice differentiable.\n\n(a) Estimate $T'(7)$. Show the work that leads to your answer. Indicate units of measure.\n\n(b) Write an integral expression in terms of $T(x)$ for the average temperature of the wire. Estimate the average temperature of the wire using a trapezoidal sum with the four subintervals indicated by the data in the table. Indicate units of measure.\n\n(c) Find $integral_(0)^(8) T'(x) d x$, and indicate units of measure. Explain the meaning of $integral_(0)^(8) T'(x) d x$ in terms of the temperature of the wire.\n\n(d) Are the data in the table consistent with the assertion that $T''(x)> 0$ for every $x$ in the interval $0 < x < 8$ ? Explain your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          53,
+          572,
+          428
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          183.744,
+          58.751999999999995,
+          427.96799999999996,
+          114.91199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          127.008,
+          539.424,
+          139.392
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          139.968,
+          563.04,
+          153.792
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          64.512,
+          154.944,
+          173.37599999999998,
+          165.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 31,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          173.952,
+          457.34399999999994,
+          187.77599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          65.088,
+          196.128,
+          557.568,
+          209.088
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          211.67999999999998,
+          558.4319999999999,
+          224.064
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          224.064,
+          197.856,
+          234.432
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          65.088,
+          243.64799999999997,
+          525.024,
+          267.84
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          270.43199999999996,
+          190.07999999999998,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          65.088,
+          289.44,
+          562.1759999999999,
+          302.4
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          304.416,
+          178.55999999999997,
+          316.79999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9ac4cd08cd10ee467f8e7ec50ee2510b3784fb5d6f7981b032e80a11d6e698ee",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

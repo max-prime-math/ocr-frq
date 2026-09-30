@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2019-frq-01",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Fish enter a lake at a rate modeled by the function $E$ given by $E(t)= 20 + 15 sin lr((frac(pi t,6)))$. Fish leave the lake at a rate modeled by the function $L$ given by $L(t)= 4 + 2^(0.1 t^(2))$. Both $E(t)$ and $L(t)$ are measured in fish per hour, and $t$ is measured in hours since midnight $(t = 0)$.\n\n(a) How many fish enter the lake over the 5 -hour period from midnight $(t = 0)$ to 5 A.M. $(t = 5)$ ? Give your answer to the nearest whole number.\n\n(b) What is the average number of fish that leave the lake per hour over the 5 -hour period from midnight $(t = 0)$ to 5 A.M. $(t = 5)$ ?\n\n(c) At what time $t$, for $0 <= t <= 8$, is the greatest number of fish in the lake? Justify your answer.\n\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at 5 A.M. ( $t = 5$ ) ? Explain your reasoning.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          36,
+          77,
+          571,
+          516
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "37017eda7e873f940ea10e1f8fed96f09b79f47a92a9054483bf95f0cb393e17",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    }
+  ]
+}

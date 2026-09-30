@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2011-form-b-frq-02",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The polar curve $r$ is given by $r(theta)= 3 theta + sin theta$, where $0 <= theta <= 2 pi$.\n\n(a) Find the area in the second quadrant enclosed by the coordinate axes and the graph of $r$.\n\n(b) For $frac(pi,2) <= theta <= pi$, there is one point $P$ on the polar curve $r$ with $x$-coordinate -3. Find the angle $theta$ that corresponds to point $P$. Find the $y$-coordinate of point $P$. Show the work that leads to your answers.\n\n(c) A particle is traveling along the polar curve $r$ so that its position at time $t$ is $(x(t)\\, y(t))$ and such that $frac(d theta,d t)= 2$. Find $frac(d y,d t)$ at the instant that $theta = frac(2 pi,3)$, and interpret the meaning of your answer in the context of the problem.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          421,
+          572,
+          609
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "dc6ebdc05ac4fc75c7904179ece1d40e40cc56ee3e3dc23bd41d371090a642da",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    }
+  ]
+}

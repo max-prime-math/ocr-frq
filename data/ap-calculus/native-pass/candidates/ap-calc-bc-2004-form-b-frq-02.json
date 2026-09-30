@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2004-form-b-frq-02",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be a function having derivatives of all orders for all real numbers. The third-degree Taylor polynomial for $f$ about $x = 2$ is given by\n\n$ T(x)= 7 - 9(x - 2)^(2)- 3(x - 2)^(3) . $\n\n(a) Find $f$ (2) and $f''(2)$.\n\n(b) Is there enough information given to determine whether $f$ has a critical point at $x = 2$ ?\n\nIf not, explain why not.\\ If so, determine whether $f(2)$ is a relative maximum, a relative minimum, or neither, and justify your answer.\n\n(c) Use $T(x)$ to find an approximation for $f(0)$. Is there enough information given to determine whether $f$ has a critical point at $x = 0$ ?\\ If not, explain why not.\\ If so, determine whether $f(0)$ is a relative maximum, a relative minimum, or neither, and justify your answer.\n\n(d) The fourth derivative of $f$ satisfies the inequality $lr(| f^((4))(x)|) <= 6$ for all $x$ in the closed interval \\[ 0,2 \\]. Use the Lagrange error bound on the approximation to $f(0)$ found in part (c) to explain why $f(0)$ is negative.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          339,
+          572,
+          648
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "255ae494f278f9d2ed5fa35dfc0235d13d4299222a6b5e63744708c1e31275c9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ]
+}

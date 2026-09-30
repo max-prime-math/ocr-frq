@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2005-frq-02",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2005-frq-02-diagram-01.jpg\", width: 65%)\n\nThe curve above is drawn in the $x y$-plane and is described by the equation in polar coordinates $r = theta + sin(2 theta)$ for $0 <= theta <= pi$, where $r$ is measured in meters and $theta$ is measured in radians. The derivative of $r$ with respect to $theta$ is given by $frac(d r,d theta)= 1 + 2 cos(2 theta)$.\n\n(a) Find the area bounded by the curve and the $x$-axis.\n\n(b) Find the angle $theta$ that corresponds to the point on the curve with $x$-coordinate -2.\n\n(c) For $frac(pi,3)< theta < frac(2 pi,3)\\, frac(d r,d theta)$ is negative. What does this fact say about $r$ ? What does this fact say about the curve?\n\n(d) Find the value of $theta$ in the interval $0 <= theta <= frac(pi,2)$ that corresponds to the point on the curve in the first quadrant with greatest distance from the origin. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          56,
+          572,
+          437
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "07c9e4252bd95bf0df7d39caf335381b0c8f8a76666c5b5e17474e00c98955f5",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ]
+}

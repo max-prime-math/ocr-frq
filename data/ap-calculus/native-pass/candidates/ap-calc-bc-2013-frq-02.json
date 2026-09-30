@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2013-frq-02",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2013-frq-02-diagram-01.jpg\", width: 65%)\n\nThe graphs of the polar curves $r = 3$ and $r = 4 - 2 sin theta$ are shown in the figure above. The curves intersect when $theta = frac(pi,6)$ and $theta = frac(5 pi,6)$.\n\n(a) Let $S$ be the shaded region that is inside the graph of $r = 3$ and also inside the graph of $r = 4 - 2 sin theta$. Find the area of $S$.\n\n(b) A particle moves along the polar curve $r = 4 - 2 sin theta$ so that at time $t$ seconds, $theta = t^(2)$. Find the time $t$ in the interval $1 <= t <= 2$ for which the $x$-coordinate of the particle's position is -1.\n\n(c) For the particle described in part (b), find the position vector in terms of $t$. Find the velocity vector at time $t = 1.5$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2013-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2013-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2013_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          66,
+          568,
+          409
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "55c5cb1ca2de9202299c293968c8d4a79c0af7d22ddc5f4971d85673fa1c4c12",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ]
+}

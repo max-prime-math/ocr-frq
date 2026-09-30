@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-form-b-frq-05",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "rawPrompt": "Consider the curve given by $y^{2}=2+x y$.\\\\\n(a) Show that $\\frac{d y}{d x}=\\frac{y}{2 y-x}$.\\\\\n(b) Find all points $(x, y)$ on the curve where the line tangent to the curve has slope $\\frac{1}{2}$.\\\\\n(c) Show that there are no points $(x, y)$ on the curve where the line tangent to the curve is horizontal.\\\\\n(d) Let $x$ and $y$ be functions of time $t$ that are related by the equation $y^{2}=2+x y$. At time $t=5$, the value of $y$ is 3 and $\\frac{d y}{d t}=6$. Find the value of $\\frac{d x}{d t}$ at time $t=5$.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the curve given by \\(y^{2}=2+x y\\).\n\\begin{itemize}\n\\item[(a)] Show that \\(\\frac{d y}{d x}=\\frac{y}{2 y-x}\\).\n\\item[(b)] Find all points \\((x, y)\\) on the curve where the line tangent to the curve has slope \\(\\frac{1}{2}\\).\n\\item[(c)] Show that there are no points \\((x, y)\\) on the curve where the line tangent to the curve is horizontal.\n\\item[(d)] Let \\(x\\) and \\(y\\) be functions of time \\(t\\) that are related by the equation \\(y^{2}=2+x y\\). At time \\(t=5\\), the value of \\(y\\) is 3 and \\(\\frac{d y}{d t}=6\\). Find the value of \\(\\frac{d x}{d t}\\) at time \\(t=5\\).\n\\item[(a)] \\(2 y y^{\\prime}=y+x y^{\\prime}\\)\n\\[\n\\begin{aligned}\n& (2 y-x) y^{\\prime}=y \\\\\n& y^{\\prime}=\\frac{y}{2 y-x}\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{y}{2 y-x}=\\frac{1}{2}\\)\n\\[\n\\begin{aligned}\n& 2 y=2 y-x \\\\\n& x=0 \\\\\n& y= \\pm \\sqrt{2} \\\\\n& (0, \\sqrt{2}),(0,-\\sqrt{2})\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\frac{y}{2 y-x}=0\\)\n\\[\ny=0\n\\]\nThe curve has no horizontal tangent since\n\\[\n0^{2} \\neq 2+x \\cdot 0 \\text { for any } x .\n\\]\n\\item[(d)] When \\(y=3,3^{2}=2+3 x\\) so \\(x=\\frac{7}{3}\\).\n\\[\n\\begin{aligned}\n& \\frac{d y}{d t}=\\frac{d y}{d x} \\cdot \\frac{d x}{d t}=\\frac{y}{2 y-x} \\cdot \\frac{d x}{d t} \\\\\n& \\text { At } t=5,6=\\frac{3}{6-\\frac{7}{3}} \\cdot \\frac{d x}{d t}=\\frac{9}{11} \\cdot \\frac{d x}{d t} \\\\\n& \\left.\\frac{d x}{d t}\\right|_{t=5}=\\frac{22}{3}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { implicit differentiation } \\\\ 1: \\text { solves for } y^{\\prime}\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\frac{y}{2 y-x}=\\frac{1}{2} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: y=0 \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { solves for } x \\\\ 1: \\text { chain rule } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          55,
+          559,
+          220
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

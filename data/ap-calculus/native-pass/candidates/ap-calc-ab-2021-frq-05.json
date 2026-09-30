@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2021-frq-05",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        9
+      ]
+    },
+    "promptPages": [
+      9
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the function $y = f(x)$ whose curve is given by the equation $2 y^(2)- 6 = y sin x$ for $y > 0$.\n\n(a) Show that $frac(d y,d x)= frac(y cos x,4 y - sin x)$.\n\n(b) Write an equation for the line tangent to the curve at the point $(0 \\, sqrt(3))$.\n\n(c) For $0 <= x <= pi$ and $y > 0$, find the coordinates of the point where the line tangent to the curve is horizontal.\n\n(d) Determine whether $f$ has a relative minimum, a relative maximum, or neither at the point found in part (c). Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 9,
+        "rect": [
+          30,
+          89,
+          527,
+          344
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 9,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          34.26369365002424,
+          93.58258928571428,
+          483.14687348521574,
+          109.99553571428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          49.52399418322831,
+          117.77008928571428,
+          197.23218613669417,
+          146.56473214285714
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          50.387784779447415,
+          159.234375,
+          382.0833737275812,
+          174.4955357142857
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          50.387784779447415,
+          196.09151785714283,
+          492.3606398448861,
+          209.33705357142856
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          67.37566650508968,
+          210.7767857142857,
+          116.899660688318,
+          222.29464285714283
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          238.70758928571428,
+          505.60542898691233,
+          251.3772321428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          68.81531749878818,
+          253.3928571428571,
+          197.52011633543384,
+          265.4866071428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          306.375,
+          522.0174503150752,
+          319.62053571428567
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          324.8035714285714,
+          473.6451769268057,
+          338.0491071428571
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "d917bb7683d1790a54168fc39c6fd21c2fdb9de51d6e43174dcb7e4142198d25",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-05",
+      "sourcePage": 9,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-form-b-frq-06",
+  "course": "AB",
+  "year": 2009,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009-FORM-B.pdf",
+      "sha256": "f823634bfbe4008cde8c95bbe8a2b6178aa4d492ccdbb14c06e0ef055653fef3",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009-FORM-B.pdf",
+      "sha256": "f971fd100f6dbb57aecff7de9bee9b047e6c04e3558201ecc7ed301d778de3ee"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 8 & 20 & 25 & 32 & 40 \\\\\n\\hline \\(v(t)\\) (meters per second) & 3 & 5 & -10 & -8 & -4 & 7 \\\\\n\\hline\n\\end{tabular}\nThe velocity of a particle moving along the \\(x\\)-axis is modeled by a differentiable function \\(v\\), where the position \\(x\\) is measured in meters, and time \\(t\\) is measured in seconds. Selected values of \\(v(t)\\) are given in the table above. The particle is at position \\(x=7\\) meters when \\(t=0\\) seconds.\n\n(a) Estimate the acceleration of the particle at \\(t=36\\) seconds. Show the computations that lead to your answer. Indicate units of measure.\n(b) Using correct units, explain the meaning of \\(\\int_{20}^{40} v(t) d t\\) in the context of this problem. Use a trapezoidal sum with the three subintervals indicated by the data in the table to approximate \\(\\int_{20}^{40} v(t) d t\\).\n(c) For \\(0 \\leq t \\leq 40\\), must the particle change direction in any of the subintervals indicated by the data in the table? If so, identify the subintervals and explain your reasoning. If not, explain why not.\n(d) Suppose that the acceleration of the particle is positive for \\(0<t<8\\) seconds. Explain why the position of the particle at \\(t=8\\) seconds must be greater than \\(x=30\\) meters.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 8 & 20 & 25 & 32 & 40 \\\\\n\\hline \\(v(t)\\) (meters per second) & 3 & 5 & -10 & -8 & -4 & 7 \\\\\n\\hline\n\\end{tabular}\nThe velocity of a particle moving along the \\(x\\)-axis is modeled by a differentiable function \\(v\\), where the position \\(x\\) is measured in meters, and time \\(t\\) is measured in seconds. Selected values of \\(v(t)\\) are given in the table above. The particle is at position \\(x=7\\) meters when \\(t=0\\) seconds.\n\\begin{itemize}\n\\item[(a)] Estimate the acceleration of the particle at \\(t=36\\) seconds. Show the computations that lead to your answer. Indicate units of measure.\n\\item[(b)] Using correct units, explain the meaning of \\(\\int_{20}^{40} v(t) d t\\) in the context of this problem. Use a trapezoidal sum with the three subintervals indicated by the data in the table to approximate \\(\\int_{20}^{40} v(t) d t\\).\n\\item[(c)] For \\(0 \\leq t \\leq 40\\), must the particle change direction in any of the subintervals indicated by the data in the table? If so, identify the subintervals and explain your reasoning. If not, explain why not.\n\\item[(d)] Suppose that the acceleration of the particle is positive for \\(0<t<8\\) seconds. Explain why the position of the particle at \\(t=8\\) seconds must be greater than \\(x=30\\) meters.\n\\item[(a)] \\(a(36)=v^{\\prime}(36) \\approx \\frac{v(40)-v(32)}{40-32}=\\frac{11}{8}\\) meters \\(/ \\mathrm{sec}^{2}\\)\n\\item[(b)] \\(\\int_{20}^{40} v(t) d t\\) is the particle's change in position in meters from time \\(t=20\\) seconds to time \\(t=40\\) seconds.\n\\[\n\\begin{aligned}\n\\int_{20}^{40} v(t) d t & \\approx \\frac{v(20)+v(25)}{2} \\cdot 5+\\frac{v(25)+v(32)}{2} \\cdot 7+\\frac{v(32)+v(40)}{2} \\cdot 8 \\\\\n& =-75 \\text { meters }\n\\end{aligned}\n\\]\n\\item[(c)] \\(v(8)>0\\) and \\(v(20)<0\\)\n\\(v(32)<0\\) and \\(v(40)>0\\)\nTherefore, the particle changes direction in the intervals\n\\(8<t<20\\) and \\(32<t<40\\).\n\\item[(d)] Since \\(v^{\\prime}(t)=a(t)>0\\) for \\(0<t<8, v(t) \\geq 3\\) on this interval.\nTherefore, \\(x(8)=x(0)+\\int_{0}^{8} v(t) d t \\geq 7+8 \\cdot 3>30\\).\n\\item[1] : units in (a) and (b)\n\\item[1] : answer\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { meaning of } \\int_{20}^{40} v(t) d t \\\\ 2: \\text { trapezoidal } \\\\ \\quad \\text { approximation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: v^{\\prime}(t)=a(t) \\\\ 1: \\text { explanation of } x(8)>30\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          74,
+          572,
+          460
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [
+    {
+      "kind": "prompt-recovered-from-scoring-guide",
+      "reviewRequired": true
+    }
+  ],
+  "ocrEvidence": [
+    {
+      "type": "scoring-guide-repeated-prompt",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-form-b-frq-06--scoring-guide/mmd",
+      "reason": "original-prompt-cache-source-pages-mislabeled"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

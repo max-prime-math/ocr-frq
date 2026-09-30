@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2016-frq-05",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2016-frq-05-diagram-01.png}\nThe inside of a funnel of height 10 inches has circular cross sections, as shown in the figure above. At height \\(h\\),\nthe radius of the funnel is given by \\(r=\\frac{1}{20}\\left(3+h^{2}\\right)\\), where \\(0 \\leq h \\leq 10\\). The units of \\(r\\) and \\(h\\) are inches.\n(a) Find the average value of the radius of the funnel.\n(b) Find the volume of the funnel.\n(c) The funnel contains liquid that is draining from the bottom. At the instant when the height of the liquid is\n\\(h=3\\) inches, the radius of the surface of the liquid is decreasing at a rate of \\(\\frac{1}{5}\\) inch per second. At this\ninstant, what is the rate of change of the height of the liquid with respect to time?",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2016-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2016-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        209.25599670410156,
+        52.007999420166016,
+        402.7439880371094,
+        250.39199829101562
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2016 SCORING GUIDELINES}\n\n\\section*{Question 5}\n![](https://cdn.mathpix.com/cropped/d68f5a3d-8118-4475-83cb-15a009549294-1.jpg?height=672&width=653&top_left_y=374&top_left_x=735)\nThe inside of a funnel of height 10 inches has circular cross sections, as shown in the figure above. At height \\(h\\), the radius of the funnel is given by \\(r=\\frac{1}{20}\\left(3+h^{2}\\right)\\), where \\(0 \\leq h \\leq 10\\). The units of \\(r\\) and \\(h\\) are inches.\n\\begin{itemize}\n\\item[(a)] Find the average value of the radius of the funnel.\n\\item[(b)] Find the volume of the funnel.\n\\item[(c)] The funnel contains liquid that is draining from the bottom. At the instant when the height of the liquid is \\(h=3\\) inches, the radius of the surface of the liquid is decreasing at a rate of \\(\\frac{1}{5}\\) inch per second. At this instant, what is the rate of change of the height of the liquid with respect to time?\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Average radius } & =\\frac{1}{10} \\int_{0}^{10} \\frac{1}{20}\\left(3+h^{2}\\right) d h=\\frac{1}{200}\\left[3 h+\\frac{h^{3}}{3}\\right]_{0}^{10} \\\\\n& =\\frac{1}{200}\\left(\\left(30+\\frac{1000}{3}\\right)-0\\right)=\\frac{109}{60} \\mathrm{in}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { integral } \\\\\n1: \\text { antiderivative } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{0}^{10}\\left(\\left(\\frac{1}{20}\\right)\\left(3+h^{2}\\right)\\right)^{2} d h=\\frac{\\pi}{400} \\int_{0}^{10}\\left(9+6 h^{2}+h^{4}\\right) d h \\\\\n& =\\frac{\\pi}{400}\\left[9 h+2 h^{3}+\\frac{h^{5}}{5}\\right]_{0}^{10} \\\\\n& =\\frac{\\pi}{400}\\left(\\left(90+2000+\\frac{100000}{5}\\right)-0\\right)=\\frac{2209 \\pi}{40} \\mathrm{in}^{3}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { integrand } \\\\\n1: \\text { antiderivative } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{d r}{d t}=\\frac{1}{20}(2 h) \\frac{d h}{d t} \\\\\n& -\\frac{1}{5}=\\frac{3}{10} \\frac{d h}{d t} \\\\\n& \\frac{d h}{d t}=-\\frac{1}{5} \\cdot \\frac{10}{3}=-\\frac{2}{3} \\mathrm{in} / \\mathrm{sec}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n2: \\text { chain rule } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          35.0,
+          568,
+          421
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "diagram",
+        "rect": [
+          212.25599999999997,
+          55.007999999999996,
+          399.74399999999997,
+          247.39199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          256.032,
+          558.144,
+          268.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          270.43199999999996,
+          533.376,
+          293.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          301.248,
+          304.416,
+          314.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          320.544,
+          219.16799999999998,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          338.4,
+          548.352,
+          351.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          352.79999999999995,
+          543.7439999999999,
+          374.976
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          377.568,
+          442.94399999999996,
+          390.52799999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

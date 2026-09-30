@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2009-frq-06",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2009-frq-06-diagram-01.png\", width: 65%)\n\nThe derivative of a function $f$ is defined by $f'(x)= lr(\\{ mat(delim: #none, g(x) \"\", \" for \" \"\", - 4 <= x <= 0 \"\"; 5 e^(- x \\/ 3)- 3 \"\", \" for \" \"\", 0 < x <= 4))$. The graph of the continuous function $f'$, shown in the figure above, has $x$-intercepts at $x = - 2$ and $x = 3 ln lr((frac(5,3)))$. The graph of $g$ on $- 4 <= x <= 0$ is a semicircle, and $f(0)= 5$.\n\n(a) For $- 4 < x < 4$, find all values of $x$ at which the graph of $f$ has a point of inflection. Justify your answer.\n\n(b) Find $f(- 4)$ and $f(4)$.\n\n(c) For $- 4 <= x <= 4$, find the value of $x$ at which $f$ has an absolute maximum. Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2009-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2009-frq-06-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        212.4239959716797,
+        67.55999755859375,
+        399.57598876953125,
+        178.67999267578125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          215.42399999999998,
+          70.55999999999999,
+          396.57599999999996,
+          175.67999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          204.19199999999998,
+          440.64,
+          237.02399999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          238.75199999999998,
+          508.032,
+          252.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.664,
+          254.87999999999997,
+          400.89599999999996,
+          281.376
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          288.28799999999995,
+          556.4159999999999,
+          301.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          309.31199999999995,
+          185.76,
+          324.28799999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          331.77599999999995,
+          508.60799999999995,
+          344.736
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "01a0e11d6a65417059c8cc6e4ac77f2b05579d0490fb1a4349bda65fc7857eca",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

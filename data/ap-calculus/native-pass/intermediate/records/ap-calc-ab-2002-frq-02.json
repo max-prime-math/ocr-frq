@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2002-frq-02",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "rawPrompt": "The rate at which people enter an amusement park on a given day is modeled by the function \\(E\\) defined by\n\\[\nE(t)=\\frac{15600}{\\left(t^{2}-24 t+160\\right)}\n\\]\nThe rate at which people leave the same amusement park on the same day is modeled by the function \\(L\\)\ndefined by\n\\[\nL(t)=\\frac{9890}{\\left(t^{2}-38 t+370\\right)} .\n\\]\nBoth \\(E(t)\\) and \\(L(t)\\) are measured in people per hour and time \\(t\\) is measured in hours after midnight. These\nfunctions are valid for \\(9 \\leq t \\leq 23\\), the hours during which the park is open. At time \\(t=9\\), there are no people\nin the park.\n(a) How many people have entered the park by 5:00 P.M. \\((t=17)\\) ? Round your answer to the nearest whole\nnumber.\n(b) The price of admission to the park is \\$15 until 5:00 P.M. ( \\(t=17\\) ). After 5:00 P.M., the price of admission to\nthe park is \\(\\$ 11\\). How many dollars are collected from admissions to the park on the given day? Round your\nanswer to the nearest whole number.\n(c) Let \\(H(t)=\\int_{9}^{t}(E(x)-L(x)) d x\\) for \\(9 \\leq t \\leq 23\\). The value of \\(H(17)\\) to the nearest whole number is 3725.\nFind the value of \\(H^{\\prime}(17)\\), and explain the meaning of \\(H(17)\\) and \\(H^{\\prime}(17)\\) in the context of the amusement\npark.\n(d) At what time \\(t\\), for \\(9 \\leq t \\leq 23\\), does the model predict that the number of people in the park is a maximum?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB 2002 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nThe rate at which people enter an amusement park on a given day is modeled by the function \\(E\\) defined by\n\\[\nE(t)=\\frac{15600}{\\left(t^{2}-24 t+160\\right)} .\n\\]\nThe rate at which people leave the same amusement park on the same day is modeled by the function \\(L\\) defined by\n\\[\nL(t)=\\frac{9890}{\\left(t^{2}-38 t+370\\right)} .\n\\]\nBoth \\(E(t)\\) and \\(L(t)\\) are measured in people per hour and time \\(t\\) is measured in hours after midnight. These functions are valid for \\(9 \\leq t \\leq 23\\), the hours during which the park is open. At time \\(t=9\\), there are no people in the park.\n\\begin{itemize}\n\\item[(a)] How many people have entered the park by 5:00 P.M. \\((t=17)\\) ? Round answer to the nearest whole number.\n\\item[(b)] The price of admission to the park is \\$15 until 5:00 P.M. ( \\(t=17\\) ). After 5:00 P.M., the price of admission to the park is \\$11. How many dollars are collected from admissions to the park on the given day? Round your answer to the nearest whole number.\n\\item[(c)] Let \\(H(t)=\\int_{9}^{t}(E(x)-L(x)) d x\\) for \\(9 \\leq t \\leq 23\\). The value of \\(H\\) (17) to the nearest whole number is 3725. Find the value of \\(H^{\\prime}(17)\\) and explain the meaning of \\(H\\) (17) and \\(H^{\\prime}(17)\\) in the context of the park.\n\\item[(d)] At what time \\(t\\), for \\(9 \\leq t \\leq 23\\), does the model predict that the number of people in the park is a maximum?\n\\item[(a)] \\(\\int_{9}^{17} E(t) d t=6004.270\\)\n6004 people entered the park by 5 pm.\n\\end{itemize}\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { limits } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[1] : setup\n\\item[(b)] \\(15 \\int_{9}^{17} E(t) d t+11 \\int_{17}^{23} E(t) d t=104048.165\\)\nThe amount collected was \\$104,048.\nor\n\\[\n\\int_{17}^{23} E(t) d t=1271.283\n\\]\n1271 people entered the park between 5 pm and\n11 pm, so the amount collected was\n\\[\n\\$ 15 \\cdot(6004)+\\$ 11 \\cdot(1271)=\\$ 104,041 .\n\\]\n\\item[(c)] \\(H^{\\prime}(17)=E(17)-L(17)=-380.281\\)\nThere were 3725 people in the park at \\(t=17\\).\nThe number of people in the park was decreasing at the rate of approximately 380 people/hr at time \\(t=17\\).\n\\end{itemize}\n\\[\n3\\left\\{\\begin{aligned}\n1: & \\text { value of } H^{\\prime}(17) \\\\\n2: & \\text { meanings } \\\\\n& 1: \\text { meaning of } H(17) \\\\\n& 1: \\text { meaning of } H^{\\prime}(17) \\\\\n& <-1>\\text { if no reference to } t=17\n\\end{aligned}\\right.\n\\]\n\\begin{itemize}\n\\item[(d)]\n\\[\n\\begin{aligned}\n& H^{\\prime}(t)=E(t)-L(t)=0 \\\\\n& t=15.794 \\text { or } 15.795\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n2 \\begin{cases}1: & E(t)-L(t)=0 \\\\ 1: & \\text { answer }\\end{cases}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          73,
+          572,
+          425
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          77.472,
+          536.544,
+          90.43199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "math",
+        "rect": [
+          245.088,
+          94.752,
+          367.488,
+          127.58399999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          133.63199999999998,
+          520.992,
+          146.59199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          146.59199999999998,
+          113.184,
+          159.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "math",
+        "rect": [
+          245.664,
+          163.296,
+          366.33599999999996,
+          195.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          204.19199999999998,
+          542.016,
+          217.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          220.32,
+          556.1279999999999,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          235.87199999999999,
+          115.48799999999999,
+          248.832
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          254.30399999999997,
+          546.336,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          266.688,
+          121.24799999999999,
+          277.344
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          284.544,
+          561.312,
+          297.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          296.928,
+          557.568,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          309.888,
+          246.23999999999998,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.088,
+          329.18399999999997,
+          555.8399999999999,
+          351.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.368,
+          352.79999999999995,
+          546.9119999999999,
+          365.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          368.06399999999996,
+          107.136,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          386.20799999999997,
+          564.4799999999999,
+          399.16799999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

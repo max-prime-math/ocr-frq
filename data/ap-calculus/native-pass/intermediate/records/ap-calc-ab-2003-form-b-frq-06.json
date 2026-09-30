@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-form-b-frq-06",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function satisfying \\(f^{\\prime}(x)=x \\sqrt{f(x)}\\) for all real numbers \\(x\\), where \\(f(3)=25\\).\n(a) Find \\(f^{\\prime \\prime}(3)\\).\n(b) Write an expression for \\(y=f(x)\\) by solving the differential equation \\(\\frac{d y}{d x}=x \\sqrt{y}\\) with the initial\ncondition \\(f(3)=25\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nLet \\(f\\) be the function satisfying \\(f^{\\prime}(x)=x \\sqrt{f(x)}\\) for all real numbers \\(x\\), where \\(f(3)=25\\).\n\\begin{itemize}\n\\item[(a)] Find \\(f^{\\prime \\prime}(3)\\).\n\\item[(b)] Write an expression for \\(y=f(x)\\) by solving the differential equation \\(\\frac{d y}{d x}=x \\sqrt{y}\\) with the initial condition \\(f(3)=25\\).\n\\item[(a)] \\(f^{\\prime \\prime}(x)=\\sqrt{f(x)}+x \\cdot \\frac{f^{\\prime}(x)}{2 \\sqrt{f(x)}}=\\sqrt{f(x)}+\\frac{x^{2}}{2}\\)\n\\[\nf^{\\prime \\prime}(3)=\\sqrt{25}+\\frac{9}{2}=\\frac{19}{2}\n\\]\n\\item[(b)] \\(\\frac{1}{\\sqrt{y}} d y=x d x\\)\n\\[\n\\begin{aligned}\n& 2 \\sqrt{y}=\\frac{1}{2} x^{2}+C \\\\\n& 2 \\sqrt{25}=\\frac{1}{2}(3)^{2}+C ; C=\\frac{11}{2} \\\\\n& \\sqrt{y}=\\frac{1}{4} x^{2}+\\frac{11}{4} \\\\\n& y=\\left(\\frac{1}{4} x^{2}+\\frac{11}{4}\\right)^{2}=\\frac{1}{16}\\left(x^{2}+11\\right)^{2}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{aligned} 2: & f^{\\prime \\prime}(x) \\\\ & <-2>\\text { product or } \\\\ & \\text { chain rule error } \\\\ 1: & \\text { value at } x=3\\end{aligned}\\right.\\)\n\\(6:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivative of } d y \\text { term } \\\\ 1: \\text { antiderivative of } d x \\text { term } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } f(3)=25 \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\nNote: \\(\\max 3 / 6\\) [1-1-1-0-0-0] if no constant of integration\n\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          70,
+          572,
+          250
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          74.88,
+          470.87999999999994,
+          92.16
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          99.07199999999999,
+          136.224,
+          112.60799999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.088,
+          118.65599999999999,
+          514.944,
+          142.84799999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          142.84799999999998,
+          178.272,
+          156.384
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

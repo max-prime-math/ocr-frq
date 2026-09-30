@@ -1,0 +1,166 @@
+{
+  "id": "ap-calc-ab-2017-frq-03",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2017-frq-03-diagram-01.png\", width: 65%)\n\nThe function $f$ is differentiable on the closed interval \\[-6, 5\\] and satisfies $f(- 2)= 7$. The graph of $f'$, the derivative of $f$, consists of a semicircle and three line segments, as shown in the figure above.\n\n(a) Find the values of $f(- 6)$ and $f(5)$.\n\n(b) On what intervals is $f$ increasing? Justify your answer.\n\n(c) Find the absolute minimum value of $f$ on the closed interval \\[-6, 5\\]. Justify your answer.\n\n(d) For each of $f''(- 5)$ and $f''(3)$, find the value or explain why it does not exist.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2017-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2017-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        197.447998046875,
+        231.4320068359375,
+        412.5360107421875,
+        388.343994140625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          39,
+          84,
+          570,
+          572
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          200.44799999999998,
+          234.432,
+          409.53599999999994,
+          385.344
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          45.215999999999994,
+          402.04799999999994,
+          541.4399999999999,
+          415.008
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          417.59999999999997,
+          471.45599999999996,
+          430.55999999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          444.38399999999996,
+          240.76799999999997,
+          458.496
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          474.04799999999994,
+          320.544,
+          487.008
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          501.11999999999995,
+          477.792,
+          513.5039999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          528.4799999999999,
+          428.832,
+          542.016
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "eb7d569ae8dfca07d572667ac9a3143554fc3e6ff8e28bd6652bd5d68802f5ba",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

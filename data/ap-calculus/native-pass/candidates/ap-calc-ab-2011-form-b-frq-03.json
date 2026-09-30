@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2011-form-b-frq-03",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2011-form-b-frq-03-diagram-01.png\", width: 65%)\n\nThe functions $f$ and $g$ are given by $f(x)= sqrt(x)$ and $g(x)= 6 - x$. Let $R$ be the region bounded by the $x$-axis and the graphs of $f$ and $g$, as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) The region $R$ is the base of a solid. For each $y$, where $0 <= y <= 2$, the cross section of the solid taken perpendicular to the $y$-axis is a rectangle whose base lies in $R$ and whose height is $2 y$. Write, but do not evaluate, an integral expression that gives the volume of the solid.\n\n(c) There is a point $P$ on the graph of $f$ at which the line tangent to the graph of $f$ is perpendicular to the graph of $g$. Find the coordinates of point $P$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-form-b-frq-03-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        195.1439971923828,
+        170.37600708007812,
+        417.1440124511719,
+        279.1919860839844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          65,
+          567,
+          416
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          198.14399999999998,
+          173.37599999999998,
+          414.14399999999995,
+          276.192
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          287.13599999999997,
+          554.4,
+          302.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          303.26399999999995,
+          314.20799999999997,
+          316.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          321.69599999999997,
+          168.48,
+          334.08
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          340.416,
+          531.072,
+          352.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          355.104,
+          544.608,
+          367.488
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          367.488,
+          375.55199999999996,
+          379.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          386.20799999999997,
+          561.8879999999999,
+          398.592
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          398.592,
+          251.13599999999997,
+          410.97599999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "74f95b95aec701ba1d465e7017a4a1a49b403c5d07aff6eca53d5a02a1d85b83",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

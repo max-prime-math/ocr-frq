@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-frq-01",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2005-frq-01-diagram-01.png}\nLet \\(f\\) and \\(g\\) be the functions given by \\(f(x)=\\frac{1}{4}+\\sin (\\pi x)\\) and \\(g(x)=4^{-x}\\). Let \\(R\\) be the shaded region in\nthe first quadrant enclosed by the \\(y\\)-axis and the graphs of \\(f\\) and \\(g\\), and let \\(S\\) be the shaded region in the first\nquadrant enclosed by the graphs of \\(f\\) and \\(g\\), as shown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Find the area of \\(S\\).\n(c) Find the volume of the solid generated when \\(S\\) is revolved about the horizontal line \\(y=-1\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        201.19200134277344,
+        186.21600341796875,
+        410.8080139160156,
+        395.2560119628906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\\begin{itemize}\n\\item[] Let \\(f\\) and \\(g\\) be the functions given by \\(f(x)=\\frac{1}{4}+\\sin (\\pi x)\\) and \\(g(x)=4^{-x}\\). Let \\(R\\) be the shaded region in the first quadrant enclosed by the \\(y\\)-axis and the graphs of \\(f\\) and \\(g\\), and let \\(S\\) be the shaded region in the first quadrant enclosed by the graphs of \\(f\\) and \\(g\\), as shown in the figure above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the area of \\(S\\).\n(c) Find the volume of the solid generated when \\(S\\) is revolved about the horizontal line \\(y=-1\\).\n![](https://cdn.mathpix.com/cropped/c4a12766-05c1-427e-a13a-6855d91202ba-1.jpg?height=460&width=460&top_left_y=352&top_left_x=1487)\n\\item[] \\(f(x)=g(x)\\) when \\(\\frac{1}{4}+\\sin (\\pi x)=4^{-x}\\).\n\\(f\\) and \\(g\\) intersect when \\(x=0.178218\\) and when \\(x=1\\).\nLet \\(a=0.178218\\).\n\\item[(a)] \\(\\int_{0}^{a}(g(x)-f(x)) d x=0.064\\) or 0.065\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(b)] \\(\\quad \\int_{a}^{1}(f(x)-g(x)) d x=0.410\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] \\(\\pi \\int_{a}^{1}\\left((f(x)+1)^{2}-(g(x)+1)^{2}\\right) d x=4.558\\) or 4.559\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { limits, constant, and answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          545
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          204.19199999999998,
+          189.21599999999998,
+          407.808,
+          392.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          404.64,
+          544.3199999999999,
+          428.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          429.984,
+          548.064,
+          442.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          447.84,
+          393.40799999999996,
+          461.376
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          466.55999999999995,
+          168.48,
+          478.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          484.99199999999996,
+          167.04,
+          497.376
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          503.712,
+          493.91999999999996,
+          516.096
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "Let $R$ be the region in the first quadrant bounded by $y = 8 - x^(3/2)$, the $x$-axis, and the $y$-axis.\n\n(a) Find the area of $R$.\n\n(b) Find the volume generated when $R$ is revolved about the $x$-axis.\n\n(c) The line $x = k$ divides $R$ into two regions. When each is revolved about the $x$-axis, the resulting solids have equal volume. Find $k$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1998-frq-01",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-9",
+    "solution": "The curve meets the $x$-axis when $8 - x^(3/2) = 0$, so $x = 4$.\n\n(a)\n$ integral_0^4 (8 - x^(3/2)) dif x = [8x - frac(2, 5)x^(5/2)]_0^4 = frac(96, 5) = 19.2 $\n\n(b)\n$ V = pi integral_0^4 (8 - x^(3/2))^2 dif x = frac(576 pi, 5) approx 361.911 $\n\n(c) Equal volumes require\n$ pi integral_0^k (8 - x^(3/2))^2 dif x = frac(1, 2) dot frac(576 pi, 5). $\nThus\n$ 64k - frac(32, 5)k^(5/2) + frac(k^4, 4) = 57.6. $\nSolving numerically gives $k approx 0.995$.",
+    "tags": [
+      "1998",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1999-frq-04",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "rawPrompt": "The function $f$ has derivatives of all orders for all real numbers $x$. Assume $f(2)=-3, f^{\\prime}(2)=5, f^{\\prime \\prime}(2)=3$, and $f^{\\prime \\prime \\prime}(2)=-8$.\\\\\n(a) Write the third-degree Taylor polynomial for $f$ about $x=2$ and use it to approximate $f(1.5)$.\\\\\n(b) The fourth derivative of $f$ satisfies the inequality $\\left|f^{(4)}(x)\\right| \\leq 3$ for all $x$ in the closed interval [1.5,2]. Use the Lagrange error bound on the approximation to $f(1.5)$ found in part (a) to explain why $f(1.5) \\neq-5$.\\\\\n(c) Write the fourth-degree Taylor polynomial, $P(x)$, for $g(x)=f\\left(x^{2}+2\\right)$ about $x=0$. Use $P$ to explain why $g$ must have a relative minimum at $x=0$.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[4.] The function \\(f\\) has derivatives of all orders for all real numbers \\(x\\). Assume \\(f(2)=-3, f^{\\prime}(2)=5\\), \\(f^{\\prime \\prime}(2)=3\\), and \\(f^{\\prime \\prime \\prime}(2)=-8\\).\n\\begin{itemize}\n\\item[(a)] Write the third-degree Taylor polynomial for \\(f\\) about \\(x=2\\) and use it to approximate \\(f(1.5)\\).\n\\item[(b)] The fourth derivative of \\(f\\) satisfies the inequality \\(\\left|f^{(4)}(x)\\right| \\leq 3\\) for all \\(x\\) in the closed interval [1.5, 2]. Use the Lagrange error bound on the approximation to \\(f(1.5)\\) found in part (a) to explain why \\(f(1.5) \\neq-5\\).\n\\item[(c)] Write the fourth-degree Taylor polynomial, \\(P(x)\\), for \\(g(x)=f\\left(x^{2}+2\\right)\\) about \\(x=0\\). Use \\(P\\) to explain why \\(g\\) must have a relative minimum at \\(x=0\\).\n\\end{itemize}\n\\item[(a)] \\(T_{3}(f, 2)(x)=-3+5(x-2)+\\frac{3}{2}(x-2)^{2}-\\frac{8}{6}(x-2)^{3}\\)\n\\[\n\\begin{aligned}\nf(1.5) \\approx & T_{3}(f, 2)(1.5) \\\\\n& =-3+5(-0.5)+\\frac{3}{2}(-0.5)^{2}-\\frac{4}{3}(-0.5)^{3} \\\\\n& =-4.958 \\overline{3}=-4.958\n\\end{aligned}\n\\]\n\\item[(b)] Lagrange Error Bound \\(=\\frac{3}{4!}|1.5-2|^{4}=0.0078125\\)\n\\[\nf(1.5)>-4.958 \\overline{3}-0.0078125=-4.966>-5\n\\]\nTherefore, \\(f(1.5) \\neq-5\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\nP(x) & =T_{4}(g, 0)(x) \\\\\n& =T_{2}(f, 2)\\left(x^{2}+2\\right)=-3+5 x^{2}+\\frac{3}{2} x^{4}\n\\end{aligned}\n\\]\nThe coefficient of \\(x\\) in \\(P(x)\\) is \\(g^{\\prime}(0)\\). This coefficient is 0, so \\(g^{\\prime}(0)=0\\).\nThe coefficient of \\(x^{2}\\) in \\(P(x)\\) is \\(\\frac{g^{\\prime \\prime}(0)}{2!}\\). This coefficient is 5, so \\(g^{\\prime \\prime}(0)=10\\) which is greater than 0.\nTherefore, \\(g\\) has a relative minimum at \\(x=0\\).\n\\end{itemize}\n\\[\n4\\left\\{\\begin{aligned}\n3: & T_{3}(f, 2)(x) \\\\\n& <-1>\\text { each error } \\\\\n& 1: \\text { approximation of } f(1.5)\n\\end{aligned}\\right.\n\\]\n\\[\n2\\left\\{\\begin{array}{l}\n\\text { 1: value of Lagrange Error Bound } \\\\\n\\text { 1: explanation }\n\\end{array}\\right.\n\\]\n\\[\n\\mathbf{3}\\left\\{\\begin{aligned}\n& 2: T_{4}(g, 0)(x) \\\\\n&<-1>\\text { each incorrect, missing, } \\\\\n& \\quad \\text { or extra term } \\\\\n& 1: \\text { explanation }\n\\end{aligned}\\right.\n\\]\nNote:\n\\(\\langle-1\\rangle\\) max for improper use of \\(+\\ldots\\) or equality",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          39,
+          572,
+          673
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

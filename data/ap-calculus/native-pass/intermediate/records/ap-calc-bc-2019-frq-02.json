@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2019-frq-02",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2019-frq-02-diagram-01.jpg}\n\\end{center}\nLet $S$ be the region bounded by the graph of the polar curve $r(\\theta)=3 \\sqrt{\\theta} \\sin \\left(\\theta^{2}\\right)$ for $0 \\leq \\theta \\leq \\sqrt{\\pi}$, as shown in the figure above.\\\\\n(a) Find the area of $S$.\\\\\n(b) What is the average distance from the origin to a point on the polar curve $r(\\theta)=3 \\sqrt{\\theta} \\sin \\left(\\theta^{2}\\right)$ for $0 \\leq \\theta \\leq \\sqrt{\\pi} ?$\\\\\n(c) There is a line through the origin with positive slope $m$ that divides the region $S$ into two regions with equal areas. Write, but do not solve, an equation involving one or more integrals whose solution gives the value of $m$.\\\\\n(d) For $k>0$, let $A(k)$ be the area of the portion of region $S$ that is also inside the circle $r=k \\cos \\theta$. Find $\\lim _{k \\rightarrow \\infty} A(k)$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2019-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2019-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2019_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(\\frac{1}{2} \\int_{0}^{\\sqrt{\\pi}}(r(\\theta))^{2} d \\theta=3.534292\\)\nThe area of \\(S\\) is 3.534.\n\\item[(b)] \\(\\frac{1}{\\sqrt{\\pi}-0} \\int_{0}^{\\sqrt{\\pi}} r(\\theta) d \\theta=1.579933\\)\nThe average distance from the origin to a point on the curve \\(r=r(\\theta)\\) for \\(0 \\leq \\theta \\leq \\sqrt{\\pi}\\) is 1.580 (or 1.579).\n\\item[(c)] \\(\\tan \\theta=\\frac{y}{x}=m \\Rightarrow \\theta=\\tan ^{-1} m\\)\n\\[\n\\frac{1}{2} \\int_{0}^{\\tan ^{-1} m}(r(\\theta))^{2} d \\theta=\\frac{1}{2}\\left(\\frac{1}{2} \\int_{0}^{\\sqrt{\\pi}}(r(\\theta))^{2} d \\theta\\right)\n\\]\n\\item[(d)] As \\(k \\rightarrow \\infty\\), the circle \\(r=k \\cos \\theta\\) grows to enclose all points to the right of the \\(y\\)-axis.\n\\[\n\\begin{aligned}\n\\lim _{k \\rightarrow \\infty} A(k) & =\\frac{1}{2} \\int_{0}^{\\pi / 2}(r(\\theta))^{2} d \\theta \\\\\n& =\\frac{1}{2} \\int_{0}^{\\pi / 2}\\left(3 \\sqrt{\\theta} \\sin \\left(\\theta^{2}\\right)\\right)^{2} d \\theta=3.324\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{aligned} & 1: \\text { equates polar areas } \\\\ & 1: \\text { inverse trigonometric function } \\\\ & \\text { applied to } m \\text { as limit of } \\\\ & \\text { integration } \\\\ & 1: \\text { equation }\\end{aligned}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : limits of integration } \\\\ 1 \\text { : answer with integral }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          35,
+          78,
+          571,
+          587
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

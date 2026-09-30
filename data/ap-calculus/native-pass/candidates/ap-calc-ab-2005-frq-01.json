@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2005-frq-01",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2005-frq-01-diagram-01.png\", width: 65%)\n\nLet $f$ and $g$ be the functions given by $f(x)= frac(1,4)+ sin(pi x)$ and $g(x)= 4^(- x)$. Let $R$ be the shaded region in the first quadrant enclosed by the $y$-axis and the graphs of $f$ and $g$, and let $S$ be the shaded region in the first quadrant enclosed by the graphs of $f$ and $g$, as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) Find the area of $S$.\n\n(c) Find the volume of the solid generated when $S$ is revolved about the horizontal line $y = - 1$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        201.19200134277344,
+        186.21600341796875,
+        410.8080139160156,
+        395.2560119628906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          545
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          204.19199999999998,
+          189.21599999999998,
+          407.808,
+          392.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          404.64,
+          544.3199999999999,
+          428.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          429.984,
+          548.064,
+          442.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          447.84,
+          393.40799999999996,
+          461.376
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          466.55999999999995,
+          168.48,
+          478.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          484.99199999999996,
+          167.04,
+          497.376
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          503.712,
+          493.91999999999996,
+          516.096
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e681f0678d3ad28f5d8362b7d0ef79602638222f11c3561a126753813cf4c143",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

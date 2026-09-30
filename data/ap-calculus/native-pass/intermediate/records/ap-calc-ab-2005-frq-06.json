@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-frq-06",
+  "course": "AB",
+  "year": 2005,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005.pdf",
+      "sha256": "e7d363333ffbab977de3d5977645decbc6636159e4bf40da6b474875dc9c8803",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005.pdf",
+      "sha256": "d33d696918b6acb8ed8d631b297ab244131bad5f2eee342083c7c350ca81eee1"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=-\\frac{2 x}{y}\\).\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated.\n\n\\includegraphics{ap-calc-ab-2005-frq-06-diagram-01.png}\n\n(b) Let \\(y=f(x)\\) be the particular solution to the differential equation with the initial condition \\(f(1)=-1\\). Write an equation for the line tangent to the graph of \\(f\\) at \\((1,-1)\\) and use it to approximate \\(f(1.1)\\).\n(c) Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(1)=-1\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        229.0,
+        138.0,
+        384.0,
+        343.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\nConsider the differential equation \\(\\frac{d y}{d x}=-\\frac{2 x}{y}\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated.\n(Note: Use the axes provided in the pink test booklet.)\n\\item[(b)] Let \\(y=f(x)\\) be the particular solution to the differential equation with the initial condition \\(f(1)=-1\\). Write an equation for the line tangent to the graph of \\(f\\) at \\((1,-1)\\) and use it to approximate \\(f(1.1)\\).\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(1)=-1\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/4e29c255-bc1a-4971-93d6-490115e12e7a-1.jpg?height=694&width=541&top_left_y=1003&top_left_x=378)\n\\item[(b)] The line tangent to \\(f\\) at (1, -1) is \\(y+1=2(x-1)\\). Thus, \\(f(1.1)\\) is approximately -0.8 .\n\\item[(c)] \\(\\frac{d y}{d x}=-\\frac{2 x}{y}\\)\n\\(y d y=-2 x d x\\)\n\\(\\frac{y^{2}}{2}=-x^{2}+C\\)\n\\(\\frac{1}{2}=-1+C ; C=\\frac{3}{2}\\)\n\\(y^{2}=-2 x^{2}+3\\)\nSince the particular solution goes through \\((1,-1)\\), \\(y\\) must be negative.\nThus the particular solution is \\(y=-\\sqrt{3-2 x^{2}}\\).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { nonzero slopes }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { equation of the tangent line } \\\\ 1: \\text { approximation for } f(1.1)\\end{array}\\right.\\)\n\\(5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\nNote: \\(0 / 5\\) if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          67,
+          572,
+          449
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [
+    {
+      "kind": "prompt-recovered-from-scoring-guide",
+      "reviewRequired": true
+    }
+  ],
+  "ocrEvidence": [
+    {
+      "type": "scoring-guide-repeated-prompt",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-frq-06--scoring-guide/mmd",
+      "reason": "original-prompt-cache-source-pages-mislabeled"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 7,
+      "sourceRect": [
+        229.0,
+        138.0,
+        384.0,
+        343.0
+      ]
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

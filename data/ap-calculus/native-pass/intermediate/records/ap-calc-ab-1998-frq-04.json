@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1998-frq-04",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be a function with \\(f(1)=4\\) such that for all points \\((x, y)\\) on the graph of \\(f\\) the slope is\ngiven by \\(\\frac{3 x^{2}+1}{2 y}\\).\n(a) Find the slope of the graph of \\(f\\) at the point where \\(x=1\\).\n(b) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=1\\) and use it to approximate\n\\(f(1.2)\\).\n(c) Find \\(f(x)\\) by solving the separable differential equation \\(\\frac{d y}{d x}=\\frac{3 x^{2}+1}{2 y}\\) with the initial\ncondition \\(f(1)=4\\).\n(d) Use your solution from part (c) to find \\(f(1.2)\\).",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[4.] Let \\(f\\) be a function with \\(f(1)=4\\) such that for all points \\((x, y)\\) on the graph of \\(f\\) the slope is given by \\(\\frac{3 x^{2}+1}{2 y}\\).\n\\begin{itemize}\n\\item[(a)] Find the slope of the graph of \\(f\\) at the point where \\(x=1\\).\n\\item[(b)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=1\\) and use it to approximate \\(f(1.2)\\).\n\\item[(c)] Find \\(f(x)\\) by solving the separable differential equation \\(\\frac{d y}{d x}=\\frac{3 x+1}{2 y}\\) with the initial condition \\(f(1)=4\\).\n\\item[(d)] Use your solution from part (c) to find \\(f(1.2)\\).\n\\end{itemize}\n\\item[(a)] \\(\\frac{d y}{d x}=\\frac{3 x^{2}+1}{2 y}\\)\n\\[\n\\left.\\frac{d y}{d x}\\right|_{\\substack{x=1 \\\\ y=4}}=\\frac{3+1}{2 \\cdot 4}=\\frac{4}{8}=\\frac{1}{2}\n\\]\n\\item[(b)] \\(y-4=\\frac{1}{2}(x-1)\\)\n\\[\n\\begin{aligned}\n& f(1.2)-4 \\approx \\frac{1}{2}(1.2-1) \\\\\n& f(1.2) \\approx 0.1+4=4.1\n\\end{aligned}\n\\]\n\\item[(c)] \\(2 y d y=\\left(3 x^{2}+1\\right) d x\\)\n\\[\n\\begin{aligned}\n& \\int 2 y d y=\\int\\left(3 x^{2}+1\\right) d x \\\\\n& y^{2}=x^{3}+x+C \\\\\n& 4^{2}=1+1+C \\\\\n& 14=C \\\\\n& y^{2}=x^{3}+x+14 \\\\\n& y=\\sqrt{x^{3}+x+14} \\text { is branch with point }(1,4) \\\\\n& f(x)=\\sqrt{x^{3}+x+14}\n\\end{aligned}\n\\]\n\\item[(d)] \\(f(1.2)=\\sqrt{1.2^{3}+1.2+14} \\approx 4.114\\)\n\\end{itemize}\n\n1: answer\n\\(2 \\begin{cases}\\text { 1: } & \\text { equation of tangent line } \\\\ \\text { 1: } & \\text { uses equation to approximate } f(1.2)\\end{cases}\\)\n\n5 \\(\\begin{cases}\\text { 1: } & \\text { separates variables } \\\\ \\text { 1: } & \\text { antiderivative of } d y \\text { term } \\\\ \\text { 1: } & \\text { antiderivative of } d x \\text { term } \\\\ \\text { 1: } & \\text { uses } y=4 \\text { when } x=1 \\text { to pick one } \\\\ & \\text { function out of a family of functions } \\\\ \\text { 1: } & \\text { solves for } y \\\\ & \\begin{array}{l}0 / 1 \\text { if solving a linear equation in } y \\\\ 0 / 1 \\text { if no constant of integration }\\end{array}\\end{cases}\\)\nNote: max 0/5 if no separation of variables\nNote: \\(\\max 1 / 5\\) [1-0-0-0-0] if substitutes value(s) for \\(x, y\\), or \\(d y / d x\\) before antidifferentiation\n\n1: answer, from student's solution to the given differential equation in (c)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          74.30375545726103,
+          74.87971724076704,
+          540.862219956342,
+          88.70366503906249
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          88.70370806525736,
+          87.26367047674005,
+          175.39142276539525,
+          116.06356172318891
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          117.21555737304686,
+          390.81471378102026,
+          130.17550843394886
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          133.63149538352272,
+          541.4382180606618,
+          147.45544318181817
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          147.16744426935367,
+          144.86352323644303,
+          160.99139206764914
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          162.1433877175071,
+          541.4382180606618,
+          190.94327896395595
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          188.92728657670452,
+          204.19132798138787,
+          202.75123437499997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          205.91922241210935,
+          332.926904296875,
+          219.7431702104048
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-05",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=\\frac{3-x}{y}$.\\\\\n(a) Let $y=f(x)$ be the particular solution to the given differential equation for $1<x<5$ such that the line $y=-2$ is tangent to the graph of $f$. Find the $x$-coordinate of the point of tangency, and determine whether $f$ has a local maximum, local minimum, or neither at this point. Justify your answer.\\\\\n(b) Let $y=g(x)$ be the particular solution to the given differential equation for $-2<x<8$, with the initial condition $g(6)=-4$. Find $y=g(x)$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{3-x}{y}\\).\n\\begin{itemize}\n\\item[(a)] Let \\(y=f(x)\\) be the particular solution to the given differential equation for \\(1<x<5\\) such that the line \\(y=-2\\) is tangent to the graph of \\(f\\). Find the \\(x\\)-coordinate of the point of tangency, and determine whether \\(f\\) has a local maximum, local minimum, or neither at this point. Justify your answer.\n\\item[(b)] Let \\(y=g(x)\\) be the particular solution to the given differential equation for \\(-2<x<8\\), with the initial condition \\(g(6)=-4\\). Find \\(y=g(x)\\).\n\\item[(a)] \\(\\frac{d y}{d x}=0\\) when \\(x=3\\)\n\\[\n\\left.\\frac{d^{2} y}{d x^{2}}\\right|_{(3,-2)}=\\left.\\frac{-y-y^{\\prime}(3-x)}{y^{2}}\\right|_{(3,-2)}=\\frac{1}{2},\n\\]\nso \\(f\\) has a local minimum at this point. or\nBecause \\(f\\) is continuous for \\(1<x<5\\), there is an interval containing \\(x=3\\) on which \\(y<0\\). On this interval, \\(\\frac{d y}{d x}\\) is negative to the left of \\(x=3\\) and \\(\\frac{d y}{d x}\\) is positive to the right of \\(x=3\\). Therefore \\(f\\) has a local minimum at \\(x=3\\).\n\\item[(b)] \\(y d y=(3-x) d x\\)\n\\[\n\\begin{aligned}\n& \\frac{1}{2} y^{2}=3 x-\\frac{1}{2} x^{2}+C \\\\\n& 8=18-18+C ; C=8 \\\\\n& y^{2}=6 x-x^{2}+16 \\\\\n& y=-\\sqrt{6 x-x^{2}+16}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3\\left\\{\\begin{array}{l}1: x=3 \\\\ 1: \\text { local minimum } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(6\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivative of } d y \\text { term } \\\\ 1: \\text { antiderivative of } d x \\text { term } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } g(6)=-4 \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 3 / 6\\) [1-1-1-0-0-0] if no constant of integration\n\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          531,
+          572,
+          698
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

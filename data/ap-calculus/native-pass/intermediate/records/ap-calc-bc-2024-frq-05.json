@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2024-frq-05",
+  "course": "BC",
+  "year": 2024,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2024.pdf",
+      "sha256": "9ddd4d069db41e83a69ae1ad9095a7ce94dd7c9366645ff289a6dce671172f76",
+      "pages": [
+        9
+      ]
+    },
+    "promptPages": [
+      9
+    ]
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|}\n\\hline \\(x\\) & 0 & \\(\\pi\\) & \\(2 \\pi\\) \\\\\n\\hline \\(f^{\\prime}(x)\\) & 5 & 6 & 0 \\\\\n\\hline\n\\end{tabular}\nThe function \\(f\\) is twice differentiable for all \\(x\\) with \\(f(0)=0\\). Values of \\(f^{\\prime}\\), the derivative of \\(f\\), are given in\nthe table for selected values of \\(x\\).\n(a) For \\(x \\geq 0\\), the function \\(h\\) is defined by \\(h(x)=\\int_{0}^{x} \\sqrt{1+\\left(f^{\\prime}(t)\\right)^{2}} d t\\). Find the value of \\(h^{\\prime}(\\pi)\\). Show the work\nthat leads to your answer.\n(b) What information does \\(\\int_{0}^{\\pi} \\sqrt{1+\\left(f^{\\prime}(x)\\right)^{2}} d x\\) provide about the graph of \\(f\\) ?\n(c) Use Euler's method, starting at \\(x=0\\) with two steps of equal size, to approximate \\(f(2 \\pi)\\). Show the\ncomputations that lead to your answer.\n(d) Find \\(\\int(t+5) \\cos \\left(\\frac{t}{4}\\right) d t\\). Show the work that leads to your answer.\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 9,
+        "rect": [
+          53,
+          66,
+          567,
+          431
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 9,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          235.87199999999999,
+          72.288,
+          374.11199999999997,
+          121.24799999999999
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          57.312,
+          135.648,
+          548.64,
+          149.47199999999998
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          152.35199999999998,
+          218.30399999999997,
+          163.296
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          175.968,
+          562.1759999999999,
+          200.16
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          87.264,
+          207.07199999999997,
+          200.736,
+          220.03199999999998
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          235.296,
+          425.95199999999994,
+          259.488
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          71.136,
+          270.43199999999996,
+          526.4639999999999,
+          283.392
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          87.264,
+          285.984,
+          258.62399999999997,
+          298.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          310.176,
+          388.224,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          83.52,
+          398.88,
+          538.2719999999999,
+          411.84
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          411.84,
+          489.888,
+          424.79999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-bc-2024-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2024-frq-05",
+      "sourcePage": 9,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-frq-04",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2003-frq-04-diagram-01.jpg}\n\\end{center}\nLet $f$ be a function defined on the closed interval $-3 \\leq x \\leq 4$ with $f(0)=3$. The graph of $f^{\\prime}$, the derivative of $f$, consists of one line segment and a semicircle, as shown above.\\\\\n(a) On what intervals, if any, is $f$ increasing? Justify your answer.\\\\\n(b) Find the $x$-coordinate of each point of inflection of the graph of $f$ on the open interval $-3<x<4$. Justify your answer.\\\\\n(c) Find an equation for the line tangent to the graph of $f$ at the point ( 0,3 ).\\\\\n(d) Find $f(-3)$ and $f(4)$. Show the work that leads to your answers.\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig4.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nLet \\(f\\) be a function defined on the closed interval \\(-3 \\leq x \\leq 4\\) with \\(f(0)=3\\). The graph of \\(f^{\\prime}\\), the derivative of \\(f\\), consists of one line segment and a semicircle, as shown above.\n\\begin{itemize}\n\\item[(a)] On what intervals, if any, is \\(f\\) increasing? Justify your answer.\n\\item[(b)] Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(f\\) on the open interval \\(-3<x<4\\). Justify your answer.\n\\item[(c)] Find an equation for the line tangent to the graph of \\(f\\) at the point (0, 3).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/f868c3ef-fbbe-4582-b51b-a9bbf3daf124-1.jpg?height=430&width=610&top_left_y=385&top_left_x=1384)\n\\begin{itemize}\n\\item[(d)] Find \\(f(-3)\\) and \\(f(4)\\). Show the work that leads to your answers.\n\\item[(a)] The function \\(f\\) is increasing on [-3,-2] since \\(f^{\\prime}>0\\) for \\(-3 \\leq x<-2\\).\n\\item[(b)] \\(x=0\\) and \\(x=2\\)\n\\(f^{\\prime}\\) changes from decreasing to increasing at \\(x=0\\) and from increasing to decreasing at \\(x=2\\)\n\\item[(c)] \\(f^{\\prime}(0)=-2\\)\nTangent line is \\(y=-2 x+3\\).\n\\item[(d)]\n\\[\n\\begin{aligned}\nf(0)-f(-3) & =\\int_{-3}^{0} f^{\\prime}(t) d t \\\\\n& =\\frac{1}{2}(1)(1)-\\frac{1}{2}(2)(2)=-\\frac{3}{2}\n\\end{aligned}\n\\]\n\\[\nf(-3)=f(0)+\\frac{3}{2}=\\frac{9}{2}\n\\]\n\\[\n\\begin{aligned}\nf(4)-f(0) & =\\int_{0}^{4} f^{\\prime}(t) d t \\\\\n& =-\\left(8-\\frac{1}{2}(2)^{2} \\pi\\right)=-8+2 \\pi\n\\end{aligned}\n\\]\n\\[\nf(4)=f(0)-8+2 \\pi=-5+2 \\pi\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { interval } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: x=0 \\text { and } x=2 \\text { only } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\n1 : equation\n\\(\\int 1: \\pm\\left(\\frac{1}{2}-2\\right)\\)\n(difference of areas\nof triangles)\n\n1 : answer for \\(f(-3)\\) using FTC\n4 :\n\\(1: \\pm\\left(8-\\frac{1}{2}(2)^{2} \\pi\\right)\\)\n(area of rectangle\n- area of semicircle)\n\n1 : answer for \\(f(4)\\) using FTC",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          556
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "ap-calc-ab-2001-frq-06",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $f$ is differentiable for all real numbers. The point $lr((3 \\, frac(1,4)))$ is on the graph of $y = f(x)$, and the slope at each point $(x \\, y)$ on the graph is given by $frac(d y,d x)= y^(2)(6 - 2 x)$.\n\n(a) Find $frac(d^(2) y,d x^(2))$ and evaluate it at the point $lr((3 \\, frac(1,4)))$.\n\n(b) Find $y = f(x)$ by solving the differential equation $frac(d y,d x)= y^(2)(6 - 2 x)$ with the initial condition $f(3)= frac(1,4)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          478,
+          572,
+          648
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          497.376,
+          539.712,
+          522.7199999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          523.584,
+          374.976,
+          548.352
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          554.976,
+          286.56,
+          586.656
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          595.2959999999999,
+          562.4639999999999,
+          621.216
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0ef886a157f2d0a03322e5a8727bc1382aa756720d8fb8040d4dfea25362ef78",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

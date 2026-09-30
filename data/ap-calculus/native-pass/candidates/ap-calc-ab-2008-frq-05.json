@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2008-frq-05",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(y - 1,x^(2))$, where $x!= 0$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n\n#image(\"/imgs/ap-calc-ab-2008-frq-05-diagram-01.png\", width: 65%)\n\n(b) Find the particular solution $y = f(x)$ to the differential equation with the initial condition $f(2)= 0$.\n\n(c) For the particular solution $y = f(x)$ described in part (b), find $lim_(x -> oo) f(x)$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2008-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2008-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        225.9600067138672,
+        148.48800659179688,
+        386.6159973144531,
+        271.4159851074219
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          549,
+          338
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          70.55999999999999,
+          338.4,
+          97.91999999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          105.11999999999999,
+          544.608,
+          118.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          123.83999999999999,
+          323.13599999999997,
+          136.79999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "chart",
+        "rect": [
+          228.95999999999998,
+          151.488,
+          383.616,
+          268.416
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          292.032,
+          529.0559999999999,
+          305.568
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          313.63199999999995,
+          410.97599999999994,
+          332.928
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7b9b478521ca92e7a8cbffcd241264ab961ff0709ba8e3c0415264a08ea9df44",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

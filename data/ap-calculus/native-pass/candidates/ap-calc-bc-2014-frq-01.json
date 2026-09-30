@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2014-frq-01",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Grass clippings are placed in a bin, where they decompose. For $0 <= t <= 30$, the amount of grass clippings remaining in the bin is modeled by $A(t)= 6.687(0.931)^(t)$, where $A(t)$ is measured in pounds and $t$ is measured in days.\n\n(a) Find the average rate of change of $A(t)$ over the interval $0 <= t <= 30$. Indicate units of measure.\n\n(b) Find the value of $A'(15)$. Using correct units, interpret the meaning of the value in the context of the problem.\n\n(c) Find the time $t$ for which the amount of grass clippings in the bin is equal to the average amount of grass clippings in the bin over the interval $0 <= t <= 30$.\n\n(d) For $t > 30 \\, L(t)$, the linear approximation to $A$ at $t = 30$, is a better model for the amount of grass clippings remaining in the bin. Use $L(t)$ to predict the time at which there will be 0.5 pound of grass clippings remaining in the bin. Show the work that leads to your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          568,
+          380
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fe3396fa1ae3f7630f4d8a8334dd1eb212de9c4562c286d03d46745d022a91f1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ]
+}

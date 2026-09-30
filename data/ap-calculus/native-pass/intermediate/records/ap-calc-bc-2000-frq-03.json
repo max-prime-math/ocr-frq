@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2000-frq-03",
+  "course": "BC",
+  "year": 2000,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2000.pdf",
+      "sha256": "3d8ea931cf7c92587ae80781d46c8ee5c16eeef6beff6d2dd47bc91046d67056",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2000.pdf",
+      "sha256": "4b2c25346fe8235b27cb420a0479422d9c8c848ebbfe1514d44c90aed4325bca"
+    }
+  },
+  "rawPrompt": "The Taylor series about $x=5$ for a certain function $f$ converges to $f(x)$ for all $x$ in the interval of convergence. The $n$th derivative of $f$ at $x=5$ is given by $f^{(n)}(5)=\\frac{(-1)^{n} n!}{2^{n}(n+2)}$, and $f(5)=\\frac{1}{2}$.\\\\\n(a) Write the third-degree Taylor polynomial for $f$ about $x=5$.\\\\\n(b) Find the radius of convergence of the Taylor series for $f$ about $x=5$.\\\\\n(c) Show that the sixth-degree Taylor polynomial for $f$ about $x=5$ approximates $f(6)$ with error less than $\\frac{1}{1000}$.",
+  "assets": [],
+  "rawScoringGuide": "The Taylor series about \\(x=5\\) for a certain function \\(f\\) converges to \\(f(x)\\) for all \\(x\\) in the interval of convergence. The \\(n\\)th derivative of \\(f\\) at \\(x=5\\) is given by \\(f^{(n)}(5)=\\frac{(-1)^{n} n!}{2^{n}(n+2)}\\), and \\(f(5)=\\frac{1}{2}\\).\n\\begin{itemize}\n\\item[(a)] Write the third-degree Taylor polynomial for \\(f\\) about \\(x=5\\).\n\\item[(b)] Find the radius of convergence of the Taylor series for \\(f\\) about \\(x=5\\).\n\\item[(c)] Show that the sixth-degree Taylor polynomial for \\(f\\) about \\(x=5\\) approximates \\(f(6)\\) with error less than \\(\\frac{1}{1000}\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n& f^{\\prime}(5)=\\frac{-1!}{2(3)}, f^{\\prime \\prime}(5)=\\frac{2!}{4(4)}, f^{\\prime \\prime \\prime}(5)=\\frac{-3!}{8(5)} \\\\\n& P_{3}(f, 5)(x)=\\frac{1}{2}-\\frac{1}{6}(x-5)+\\frac{1}{16}(x-5)^{2}-\\frac{1}{40}(x-5)^{3}\n\\end{aligned}\n\\]\n\\item[(b)] \\(a_{n}=\\frac{f^{(n)}(5)}{n!}=\\frac{(-1)^{n}}{2^{n}(n+2)}\\)\n\\[\n\\begin{aligned}\n\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(-1)^{n+1}(x-5)^{n+1}}{2^{n+1}(n+3)}}{\\frac{(-1)^{n}(x-5)^{n}}{2^{n}(n+2)}}\\right| & =\\lim _{n \\rightarrow \\infty} \\frac{1}{2}\\left(\\frac{n+2}{n+3}\\right)|x-5| \\\\\n& =\\frac{|x-5|}{2}<1\n\\end{aligned}\n\\]\nThe radius of convergence is 2 .\n\\item[(c)] The Taylor series about \\(x=5\\) for the function \\(f\\), when evaluated at \\(x=6\\), is an alternating series with absolute value of terms decreasing to 0. The error in approximating \\(f(6)\\) with the 6th degree Taylor polynomial at \\(x=6\\) is less than the first omitted term in the series.\n\\[\n\\left|f(6)-P_{6}(f, 5)(6)\\right| \\leq \\frac{1}{2^{7}(9)}=\\frac{1}{1152}<\\frac{1}{1000}\n\\]\n\\item[3] : \\(P_{3}(f, 5)(x)\\)\n\\(<-1>\\) each error or missing term\nNote: <-1> max for improper use of extra terms, equality or \\(+\\ldots\\)\n\\item[] \\(\\begin{cases}1: & \\text { general term } \\\\ 1: & \\text { sets up ratio test } \\\\ 1: & \\text { computes the limit } \\\\ 1: & \\text { applies ratio test to } \\\\ & \\text { get radius of convergence }\\end{cases}\\)\n\\item[] \\(2\\left\\{\\begin{aligned} 1: & \\text { error bound }<\\frac{1}{1000} \\\\ 1: & \\text { refers to an alternating series } \\\\ & \\text { and indicates the error bound is } \\\\ & \\text { found from the next term }\\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          462,
+          572,
+          618
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2000.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2009-form-b-frq-01",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg\", width: 65%)\n\nA baker is creating a birthday cake. The base of the cake is the region $R$ in the first quadrant under the graph of $y = f(x)$ for $0 <= x <= 30$, where $f(x)= 20 sin lr((frac(pi x,30)))$. Both $x$ and $y$ are measured in centimeters. The region $R$ is shown in the figure above. The derivative of $f$ is $f'(x)= frac(2 pi,3) cos lr((frac(pi x,30)))$.\n\n(a) The region $R$ is cut out of a 30 -centimeter-by-20-centimeter rectangular sheet of cardboard, and the remaining cardboard is discarded. Find the area of the discarded cardboard.\n\n(b) The cake is a solid with base $R$. Cross sections of the cake perpendicular to the $x$-axis are semicircles. If the baker uses 0.05 gram of unsweetened chocolate for each cubic centimeter of cake, how many grams of unsweetened chocolate will be in the cake?\n\n(c) Find the perimeter of the base of the cake.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009-form-b_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          532
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e525cd8861a67cee2976f86f5bb72921627b678e02f9650c4893524861a14ce2",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    }
+  ]
+}

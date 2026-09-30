@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2011-frq-01",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "At time $t$, a particle moving in the $x y$-plane is at position $(x(t)\\, y(t))$, where $x(t)$ and $y(t)$ are not explicitly given. For $t >= 0 \\, frac(d x,d t)= 4 t + 1$ and $frac(d y,d t)= sin lr((t^(2)))$. At time $t = 0 \\, x(0)= 0$ and $y(0)= - 4$.\n\n(a) Find the speed of the particle at time $t = 3$, and find the acceleration vector of the particle at time $t = 3$.\n\n(b) Find the slope of the line tangent to the path of the particle at time $t = 3$.\n\n(c) Find the position of the particle at time $t = 3$.\n\n(d) Find the total distance traveled by the particle over the time interval $0 <= t <= 3$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          343
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "c8b2de9620824f7b620cef0a3db54e4eb3abac60314cfeeb1ed1f857a88b30cf",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2019-frq-01",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "rawPrompt": "Fish enter a lake at a rate modeled by the function $E$ given by $E(t)=20+15 \\sin \\left(\\frac{\\pi t}{6}\\right)$. Fish leave the lake at a rate modeled by the function $L$ given by $L(t)=4+2^{0.1 t^{2}}$. Both $E(t)$ and $L(t)$ are measured in fish per hour, and $t$ is measured in hours since midnight $(t=0)$.\\\\\n(a) How many fish enter the lake over the 5 -hour period from midnight $(t=0)$ to 5 A.M. $(t=5)$ ? Give your answer to the nearest whole number.\\\\\n(b) What is the average number of fish that leave the lake per hour over the 5 -hour period from midnight $(t=0)$ to 5 A.M. $(t=5)$ ?\\\\\n(c) At what time $t$, for $0 \\leq t \\leq 8$, is the greatest number of fish in the lake? Justify your answer.\\\\\n(d) Is the rate of change in the number of fish in the lake increasing or decreasing at 5 A.M. ( $t=5$ ) ? Explain your reasoning.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2019 SCORING GUIDELINES}\n\nQuestion 1\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{5} E(t) d t=153.457690\\)\nTo the nearest whole number, 153 fish enter the lake from midnight to 5 A.M.\n\\item[(b)] \\(\\frac{1}{5-0} \\int_{0}^{5} L(t) d t=6.059038\\)\nThe average number of fish that leave the lake per hour from midnight to 5 A.M. is 6.059 fish per hour.\n\\item[(c)] The rate of change in the number of fish in the lake at time \\(t\\) is given by \\(E(t)-L(t)\\).\n\\[\nE(t)-L(t)=0 \\Rightarrow t=6.20356\n\\]\n\\(E(t)-L(t)>0\\) for \\(0 \\leq t<6.20356\\), and \\(E(t)-L(t)<0\\) for \\(6.20356<t \\leq 8\\). Therefore the greatest number of fish in the lake is at time \\(t=6.204\\) (or 6.203).\n\\end{itemize}\n- OR -\n\nLet \\(A(t)\\) be the change in the number of fish in the lake from midnight to \\(t\\) hours after midnight.\n\\[\n\\begin{aligned}\n& A(t)=\\int_{0}^{t}(E(s)-L(s)) d s \\\\\n& A^{\\prime}(t)=E(t)-L(t)=0 \\Rightarrow t=C=6.20356\n\\end{aligned}\n\\]\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & \\(A(t)\\) \\\\\n\\hline 0 & 0 \\\\\n\\hline \\(C\\) & 135.01492 \\\\\n\\hline 8 & 80.91998 \\\\\n\\hline\n\\end{tabular}\nTherefore the greatest number of fish in the lake is at time \\(t=6.204\\) (or 6.203).\n\\begin{itemize}\n\\item[(d)] \\(E^{\\prime}(5)-L^{\\prime}(5)=-10.7228<0\\)\nBecause \\(E^{\\prime}(5)-L^{\\prime}(5)<0\\), the rate of change in the number of fish is decreasing at time \\(t=5\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1: \\text { sets } E(t)-L(t)=0 \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          36,
+          77,
+          571,
+          516
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2021-frq-06",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        10
+      ]
+    },
+    "promptPages": [
+      10
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "rawPrompt": "The function \\(g\\) has derivatives of all orders for all real numbers. The Maclaurin series for \\(g\\) is given by\n\\(g(x)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{n}}{2 e^{n}+3}\\) on its interval of convergence.\n(a) State the conditions necessary to use the integral test to determine convergence of the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\).\nUse the integral test to show that \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges.\n(b) Use the limit comparison test with the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) to show that the series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\)\nconverges absolutely.\n(c) Determine the radius of convergence of the Maclaurin series for \\(g\\).\n(d) The first two terms of the series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) are used to approximate \\(g(1)\\). Use the alternating\nseries error bound to determine an upper bound on the error of the approximation.\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "Part B (BC): Graphing calculator not allowed\nQuestion 6 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\nThe function \\(g\\) has derivatives of all orders for all real numbers. The Maclaurin series for \\(g\\) is given by \\(g(x)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{n}}{2 e^{n}+3}\\) on its interval of convergence.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & \\multicolumn{2}{|c|}{Scoring} \\\\\n\\hline \\multicolumn{3}{|c|}{State the conditions necessary to use the integral test to determine convergence of the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\). Use the integral test to show that \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges.} \\\\\n\\hline \\(e^{-x}\\) is positive, decreasing, and continuous on the interval \\([0, \\infty)\\). & Conditions & 1 point \\\\\n\\hline To use the integral test to show that \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges, show that \\(\\int_{0}^{\\infty} e^{-x} d x\\) is finite (converges). & Improper integral & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\[\n\\int_{0}^{\\infty} e^{-x} d x=\\lim _{b \\rightarrow \\infty} \\int_{0}^{b} e^{-x} d x=\\lim _{b \\rightarrow \\infty}\\left(-\\left.e^{-x}\\right|_{0} ^{b}\\right)=\\lim _{b \\rightarrow \\infty}\\left(-e^{-b}+e^{0}\\right)=1\n\\] \\\\\nBecause the integral \\(\\int_{0}^{\\infty} e^{-x} d x\\) converges, the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges.\n\\end{tabular} & Evaluation & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] To earn the first point a response must list all three conditions: \\(e^{-x}\\) is positive, decreasing, and continuous.\n\\item[-] The second point is earned for correctly writing the improper integral or for presenting a correct limit equivalent to the improper integral (for example, \\(\\lim _{b \\rightarrow \\infty} \\int_{0}^{b} e^{-x} d x\\) ).\n\\item[-] To earn the third point a response must correctly use limit notation to evaluate the improper integral, find an evaluation of \\(e^{0}\\) (or 1 ), and conclude that the integral converges or that the series converges.\n\\item[-] If an incorrect lower limit of 1 is used in the improper integral, then the second point is not earned. In this case, if the correct limit \\((1 / e)\\) is presented, then the response is eligible for the third point.\n\\item[-] If the response only relies on using a geometric series approach, then no points are earned [0-0-0].\n\\item[-] A response that presents an evaluation with \\(\\infty\\), such as \\(e^{-\\infty}=0\\), does not earn the third point.\n\\end{itemize}\n\nTotal for part (a) 3 points\n\\begin{itemize}\n\\item[(b)] Use the limit comparison test with the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) to show that the series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) converges absolutely.\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(\\lim _{n \\rightarrow \\infty}\\) & \\(\\frac{(-1)^{n}}{2 e^{n}+3} \\left\\lvert\\,=\\lim _{n \\rightarrow \\infty} \\frac{e^{n}}{}=2\\right.\\) \\\\\n\\hline\n\\end{tabular}\nSets up limit 1 point The limit exists and is positive. Therefore, because the series \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges, the series \\(\\sum_{n=0}^{\\infty}\\left|\\frac{(-1)^{n}}{2 e^{n}+3}\\right|\\) converges by the limit comparison test. Thus, the series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) converges absolutely.\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for setting up the limit comparison, with or without absolute values. Limit notation is required to earn this point.\n\\item[-] The reciprocal of the given ratio is an acceptable alternative; the limit in this case is 1/2.\n\\item[-] The second point cannot be earned without the use of absolute value symbols, which can occur explicitly or implicitly (e.g., a response might set up the limit comparison initially as\n\\[\n\\lim _{n \\rightarrow \\infty} \\frac{\\frac{\\frac{1}{e^{n}}}{\\frac{1}{2 e^{n}+3}}}{.}\n\\]\n\\item[-] Earning the second point requires correctly evaluating the limit and noting that the limit is a positive number. For example, \\(L=2>0\\) or \\(L=1 / 2>0\\). Therefore, comparing the limit \\(L\\) to 1 does not earn the explanation point.\n\\item[-] A response does not have to repeat that \\(\\sum_{n=0}^{\\infty} \\frac{1}{e^{n}}\\) converges.\n\\item[-] A response that draws a conclusion based only on the sequence (such as \\(\\frac{1}{e^{n}}\\) ) without referencing a series does not earn the second point.\n\\item[-] If the response does not explicitly use the limit comparison test, then no points are earned in this part.\n\\item[-] A response cannot earn the second point for just concluding that \"the series\" converges absolutely because there are multiple series in this part of the problem. The response must specify that the series \\(g(1)\\) or \\(\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) converges absolutely.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (b) 2 points\n\\begin{itemize}\n\\item[(c)] Determine the radius of convergence of the Maclaurin series for \\(g\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(\\left|\\frac{(-1)^{n+1} x^{n+1}}{2 e^{n+1}+3} \\cdot \\frac{2 e^{n}+3}{(-1)^{n} x^{n}}\\right|=\\left|\\frac{\\left(2 e^{n}+3\\right) x^{n+1}}{\\left(2 e^{n+1}+3\\right) x^{n}}\\right|=\\frac{2 e^{n}+3}{2 e^{n+1}+3}|x|\\) & Sets up ratio & 1 point \\\\\n\\hline \\(\\lim _{n \\rightarrow \\infty} \\frac{2 e^{n}+3}{2 e^{n+1}+3}|x|=\\frac{1}{e}|x|\\) & Computes limit of ratio & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\n\\[\n\\frac{1}{e}|x|<1 \\Rightarrow|x|<e\n\\] \\\\\nThe radius of convergence is \\(R=e\\).\n\\end{tabular} & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point is earned for \\(\\frac{(-1)^{n+1} x^{n+1}}{2 e^{n+1}+3} \\cdot \\frac{2 e^{n}+3}{(-1)^{n} x^{n}}\\) or the equivalent. Once earned, this point cannot be lost.\n\\begin{itemize}\n\\item[-] The second point cannot be earned without the first point.\n\\item[-] To be eligible for the third point the response must have found a limit for a presented ratio such that the limiting value of the coefficient on \\(|x|\\) is finite and not 0. The third point is earned for setting up an inequality such that the limit is less than 1 , solving for \\(|x|\\), and interpreting the result to find the radius of convergence.\n\\item[-] The radius of convergence must be explicitly presented, for example, \\(R=e\\). The third point cannot be earned by presenting an interval, for example \\(-e<x<e\\), with no identification of the radius of convergence.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (c) 3 points\n\\begin{itemize}\n\\item[(d)]\nThe first two terms of the series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) are used to approximate \\(g(1)\\). Use the alternating series error bound to determine an upper bound on the error of the approximation.\nThe terms of the alternating series \\(g(1)=\\sum_{n=0}^{\\infty} \\frac{(-1)^{n}}{2 e^{n}+3}\\) decrease in magnitude to 0.\nThe alternating series error bound for the error of the approximation is the absolute value of the third term of the series.\nError \\(\\leq\\left|\\frac{(-1)^{2}}{2 e^{2}+3}\\right|=\\frac{1}{2 e^{2}+3}\\)\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] A response of \\(\\frac{1}{2 e^{2}+3}\\) earns this point.\n\\end{itemize}\n\nTotal for part (d) 1 point\n\nTotal for question 6 9 points",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 10,
+        "rect": [
+          45,
+          87,
+          539,
+          491
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 10,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          48.948133785748915,
+          91.56696428571428,
+          522.0174503150752,
+          104.81249999999999
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          115.17857142857142,
+          293.9767329132332,
+          150.3080357142857
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          162.4017857142857,
+          522.3053805138148,
+          195.51562499999997
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.63596703829376,
+          195.51562499999997,
+          310.6766844401358,
+          228.62946428571428
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          241.2991071428571,
+          503.014057198255,
+          274.9888392857143
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          84.07561803199225,
+          285.35491071428567,
+          179.6684440135725,
+          298.6004464285714
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.64808531265149,
+          319.62053571428567,
+          378.3402811439651,
+          333.72991071428567
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.64808531265149,
+          346.39955357142856,
+          534.9743092583617,
+          380.66517857142856
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          84.07561803199225,
+          391.03124999999994,
+          445.71594764905484,
+          403.70089285714283
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          453.51562499999994,
+          522.0174503150752,
+          466.18526785714283
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          472.5200892857142,
+          473.6451769268057,
+          485.1897321428571
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-06",
+      "sourcePage": 10,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

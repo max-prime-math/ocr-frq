@@ -1,0 +1,263 @@
+{
+  "id": "ap-calc-ab-2002-frq-02",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The rate at which people enter an amusement park on a given day is modeled by the function $E$ defined by $ E(t)= frac(15600,lr((t^(2)- 24 t + 160))) $ The rate at which people leave the same amusement park on the same day is modeled by the function $L$ defined by $ L(t)= frac(9890,lr((t^(2)- 38 t + 370))) . $ Both $E(t)$ and $L(t)$ are measured in people per hour and time $t$ is measured in hours after midnight. These functions are valid for $9 <= t <= 23$, the hours during which the park is open. At time $t = 9$, there are no people in the park.\n\n(a) How many people have entered the park by 5:00 P.M. $(t = 17)$ ? Round your answer to the nearest whole number.\n\n(b) The price of admission to the park is \\$15 until 5:00 P.M. ( $t = 17$ ). After 5:00 P.M., the price of admission to the park is \\$11. How many dollars are collected from admissions to the park on the given day? Round your answer to the nearest whole number.\n\n(c) Let $H(t)= integral_(9)^(t)(E(x)- L(x)) d x$ for $9 <= t <= 23$. The value of $H(17)$ to the nearest whole number is 3725. Find the value of $H'(17)$, and explain the meaning of $H(17)$ and $H'(17)$ in the context of the amusement park.\n\n(d) At what time $t$, for $9 <= t <= 23$, does the model predict that the number of people in the park is a maximum?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          73,
+          572,
+          425
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          77.472,
+          536.544,
+          90.43199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "math",
+        "rect": [
+          245.088,
+          94.752,
+          367.488,
+          127.58399999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          133.63199999999998,
+          520.992,
+          146.59199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          146.59199999999998,
+          113.184,
+          159.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "math",
+        "rect": [
+          245.664,
+          163.296,
+          366.33599999999996,
+          195.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          204.19199999999998,
+          542.016,
+          217.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          220.32,
+          556.1279999999999,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          235.87199999999999,
+          115.48799999999999,
+          248.832
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          254.30399999999997,
+          546.336,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          266.688,
+          121.24799999999999,
+          277.344
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.088,
+          284.544,
+          561.312,
+          297.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          296.928,
+          557.568,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          309.888,
+          246.23999999999998,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          65.088,
+          329.18399999999997,
+          555.8399999999999,
+          351.35999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          82.368,
+          352.79999999999995,
+          546.9119999999999,
+          365.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          368.06399999999996,
+          107.136,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          386.20799999999997,
+          564.4799999999999,
+          399.16799999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "dab3ebb260851681eb2b7f69502f324e1d04feaa4865320f62d07cbece30f80e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

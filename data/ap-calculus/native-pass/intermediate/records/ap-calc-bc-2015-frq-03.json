@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-03",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(minutes) \\\\\n\\end{tabular} & 0 & 12 & 20 & 24 & 40 \\\\\n\\hline\n\\begin{tabular}{c}\n$v(t)$ \\\\\n(meters per minute) \\\\\n\\end{tabular} & 0 & 200 & 240 & -220 & 150 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nJohanna jogs along a straight path. For $0 \\leq t \\leq 40$, Johanna's velocity is given by a differentiable function $v$. Selected values of $v(t)$, where $t$ is measured in minutes and $v(t)$ is measured in meters per minute, are given in the table above.\\\\\n(a) Use the data in the table to estimate the value of $v^{\\prime}(16)$.\\\\\n(b) Using correct units, explain the meaning of the definite integral $\\int_{0}^{40}|v(t)| d t$ in the context of the problem. Approximate the value of $\\int_{0}^{40}|v(t)| d t$ using a right Riemann sum with the four subintervals indicated in the table.\\\\\n(c) Bob is riding his bicycle along the same path. For $0 \\leq t \\leq 10$, Bob's velocity is modeled by $B(t)=t^{3}-6 t^{2}+300$, where $t$ is measured in minutes and $B(t)$ is measured in meters per minute. Find Bob's acceleration at time $t=5$.\\\\\n(d) Based on the model $B$ from part (c), find Bob's average velocity during the interval $0 \\leq t \\leq 10$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2015 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 12 & 20 & 24 & 40 \\\\\n\\hline \\(v(t)\\) (meters per minute) & 0 & 200 & 240 & -220 & 150 \\\\\n\\hline\n\\end{tabular}\nJohanna jogs along a straight path. For \\(0 \\leq t \\leq 40\\), Johanna's velocity is given by a differentiable function \\(v\\). Selected values of \\(v(t)\\), where \\(t\\) is measured in minutes and \\(v(t)\\) is measured in meters per minute, are given in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to estimate the value of \\(v^{\\prime}(16)\\).\n\\item[(b)] Using correct units, explain the meaning of the definite integral \\(\\int_{0}^{40}|v(t)| d t\\) in the context of the problem. Approximate the value of \\(\\int_{0}^{40}|v(t)| d t\\) using a right Riemann sum with the four subintervals indicated in the table.\n\\item[(c)] Bob is riding his bicycle along the same path. For \\(0 \\leq t \\leq 10\\), Bob's velocity is modeled by \\(B(t)=t^{3}-6 t^{2}+300\\), where \\(t\\) is measured in minutes and \\(B(t)\\) is measured in meters per minute. Find Bob's acceleration at time \\(t=5\\).\n\\item[(d)] Based on the model \\(B\\) from part (c), find Bob's average velocity during the interval \\(0 \\leq t \\leq 10\\).\n\\item[(a)] \\(v^{\\prime}(16) \\approx \\frac{240-200}{20-12}=5\\) meters \\(/ \\mathrm{min}^{2}\\)\n\\item[(b)] \\(\\int_{0}^{40}|v(t)| d t\\) is the total distance Johanna jogs, in meters, over the time interval \\(0 \\leq t \\leq 40\\) minutes.\n\\[\n\\begin{aligned}\n\\int_{0}^{40}|v(t)| d t & \\approx 12 \\cdot|v(12)|+8 \\cdot|v(20)|+4 \\cdot|v(24)|+16 \\cdot|v(40)| \\\\\n& =12 \\cdot 200+8 \\cdot 240+4 \\cdot 220+16 \\cdot 150 \\\\\n& =2400+1920+880+2400 \\\\\n& =7600 \\text { meters }\n\\end{aligned}\n\\]\n\\item[(c)] Bob's acceleration is \\(B^{\\prime}(t)=3 t^{2}-12 t\\).\n\\[\nB^{\\prime}(5)=3(25)-12(5)=15 \\text { meters } / \\mathrm{min}^{2}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\text { Avg vel } & =\\frac{1}{10} \\int_{0}^{10}\\left(t^{3}-6 t^{2}+300\\right) d t \\\\\n& =\\frac{1}{10}\\left[\\frac{t^{4}}{4}-2 t^{3}+300 t\\right]_{0}^{10} \\\\\n& =\\frac{1}{10}\\left[\\frac{10000}{4}-2000+3000\\right]=350 \\text { meters } / \\mathrm{min}\n\\end{aligned}\n\\]\n\\item[1] : approximation\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { explanation } \\\\\n1: \\text { right Riemann sum } \\\\\n1: \\text { approximation }\n\\end{array}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { uses } B^{\\prime}(t) \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { integral } \\\\\n1: \\text { antiderivative } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          66,
+          568,
+          516
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

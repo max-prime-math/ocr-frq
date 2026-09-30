@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-form-b-frq-01",
+  "course": "BC",
+  "year": 2005,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005-FORM-B.pdf",
+      "sha256": "40436a6a9ffc3442c9941a4d57d7a7b672fdde8af7b2448a666f706446b7df58",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005-FORM-B.pdf",
+      "sha256": "fddfa4c7b2e34518dda2b55bd0a83bbc74fb3380765e91e4b9fbd4db1c6acc86"
+    }
+  },
+  "rawPrompt": "An object moving along a curve in the $x y$-plane has position $(x(t), y(t))$ at time $t \\geq 0$ with\n$$\n\\frac{d x}{d t}=12 t-3 t^{2} \\text { and } \\frac{d y}{d t}=\\ln \\left(1+(t-4)^{4}\\right)\n$$\n\nAt time $t=0$, the object is at position $(-13,5)$. At time $t=2$, the object is at point $P$ with $x$-coordinate 3 .\\\\\n(a) Find the acceleration vector at time $t=2$ and the speed at time $t=2$.\\\\\n(b) Find the $y$-coordinate of $P$.\\\\\n(c) Write an equation for the line tangent to the curve at $P$.\\\\\n(d) For what value of $t$, if any, is the object at rest? Explain your reasoning.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 1}\n\nAn object moving along a curve in the \\(x y\\)-plane has position \\((x(t), y(t))\\) at time \\(t \\geq 0\\) with\n\\[\n\\frac{d x}{d t}=12 t-3 t^{2} \\text { and } \\frac{d y}{d t}=\\ln \\left(1+(t-4)^{4}\\right) .\n\\]\nAt time \\(t=0\\), the object is at position (-13, 5). At time \\(t=2\\), the object is at point \\(P\\) with \\(x\\)-coordinate 3.\n\\begin{itemize}\n\\item[(a)] Find the acceleration vector at time \\(t=2\\) and the speed at time \\(t=2\\).\n\\item[(b)] Find the \\(y\\)-coordinate of \\(P\\).\n\\item[(c)] Write an equation for the line tangent to the curve at \\(P\\).\n\\item[(d)] For what value of \\(t\\), if any, is the object at rest? Explain your reasoning.\n\\item[(a)] \\(x^{\\prime \\prime}(2)=0, y^{\\prime \\prime}(2)=-\\frac{32}{17}=-1.882\\)\n\\[\na(2)=\\langle 0,-1.882\\rangle\n\\]\nSpeed \\(=\\sqrt{12^{2}+(\\ln (17))^{2}}=12.329\\) or 12.330\n\\item[(b)] \\(y(t)=y(0)+\\int_{0}^{t} \\ln \\left(1+(u-4)^{4}\\right) d u\\)\n\\[\ny(2)=5+\\int_{0}^{2} \\ln \\left(1+(u-4)^{4}\\right) d u=13.671\n\\]\n\\item[(c)] At \\(t=2\\), slope \\(=\\frac{\\frac{d y}{d t}}{\\frac{d x}{d t}}=\\frac{\\ln (17)}{12}=0.236\\)\n\\[\ny-13.671=0.236(x-3)\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n& x^{\\prime}(t)=0 \\text { if } t=0,4 \\\\\n& y^{\\prime}(t)=0 \\text { if } t=4 \\\\\n& t=4\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { acceleration vector } \\\\ 1: \\text { speed }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\int_{0}^{2} \\ln \\left(1+(u-4)^{4}\\right) d u \\\\ 1: \\text { handles initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { slope } \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { reason } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          421
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

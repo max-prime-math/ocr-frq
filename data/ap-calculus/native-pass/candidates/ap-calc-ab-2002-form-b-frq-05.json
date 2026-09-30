@@ -1,0 +1,138 @@
+{
+  "id": "ap-calc-ab-2002-form-b-frq-05",
+  "course": "AB",
+  "year": 2002,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002-FORM-B.pdf",
+      "sha256": "b0b0536926cc81e7caa3db0b01365d3260cf29b92bc475cb778189c7f6b7c459",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002-FORM-B.pdf",
+      "sha256": "e95628eee21a07c42971b0107b8c7b005bc9491324f1abede8f923c0cc006a22"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(3 - x,y)$.\n\n(a) Let $y = f(x)$ be the particular solution to the given differential equation for $1 < x < 5$ such that the line $y = - 2$ is tangent to the graph of $f$. Find the $x$-coordinate of the point of tangency, and determine whether $f$ has a local maximum, local minimum, or neither at this point. Justify your answer.\n\n(b) Let $y = g(x)$ be the particular solution to the given differential equation for $- 2 < x < 8$, with the initial condition $g(6)= - 4$. Find $y = g(x)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          531,
+          572,
+          692
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          553.2479999999999,
+          279.64799999999997,
+          580.608
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          589.536,
+          551.232,
+          603.072
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          605.664,
+          553.824,
+          618.6239999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          80.35199999999999,
+          619.4879999999999,
+          454.75199999999995,
+          632.448
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 22,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          638.496,
+          548.064,
+          652.0319999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 23,
+        "type": "text",
+        "rect": [
+          81.79199999999999,
+          655.776,
+          251.42399999999998,
+          669.3119999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "4ba489b2f6ba21a57b5524541e5715eedf724bafaf40e06f33f087034acc4a83",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-form-b-frq-04",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

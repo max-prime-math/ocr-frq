@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2003-form-b-frq-03",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 8, align: (left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [Distance $x$ (mm)], [0], [60], [120], [180], [240], [300], [360], table.hline(stroke: .5pt), [Diameter $B(x)$ (mm)], [24], [30], [28], [30], [26], [24], [26], table.hline(stroke: .5pt));\n\nA blood vessel is 360 millimeters (mm) long with circular cross sections of varying diameter. The table above gives the measurements of the diameter of the blood vessel at selected points along the length of the blood vessel, where $x$ represents the distance from one end of the blood vessel and $B(x)$ is a twice-differentiable function that represents the diameter at that point.\n\n(a) Write an integral expression in terms of $B(x)$ that represents the average radius, in mm, of the blood vessel between $x = 0$ and $x = 360$.\n\n(b) Approximate the value of your answer from part (a) using the data from the table and a midpoint Riemann sum with three subintervals of equal length. Show the computations that lead to your answer.\n\n(c) Using correct units, explain the meaning of $pi integral_(125)^(275)lr((frac(B(x),2)))^(2) d x$ in terms of the blood vessel.\n\n(d) Explain why there must be at least one value $x$, for $0 < x < 360$, such that $B''(x)= 0$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          80,
+          572,
+          445
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          173.37599999999998,
+          85.24799999999999,
+          438.62399999999997,
+          170.49599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          188.928,
+          550.656,
+          201.31199999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          64.512,
+          201.31199999999998,
+          534.24,
+          213.696
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          64.512,
+          213.696,
+          536.832,
+          226.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          64.512,
+          227.51999999999998,
+          284.832,
+          239.90399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          65.088,
+          245.664,
+          556.4159999999999,
+          258.048
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          259.2,
+          215.712,
+          271.008
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          65.088,
+          277.632,
+          553.2479999999999,
+          290.592
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          290.592,
+          494.496,
+          302.4
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          307.584,
+          486.14399999999995,
+          337.536
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          344.15999999999997,
+          472.31999999999994,
+          357.11999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "7b5aae153d2c4550a52145fb3bb304de2818caf0c2e6eaeb87ddaeaa347a19f9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

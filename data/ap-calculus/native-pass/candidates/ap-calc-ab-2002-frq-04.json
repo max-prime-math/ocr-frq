@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2002-frq-04",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2002-frq-04-diagram-01.png\", width: 65%)\n\nThe graph of the function $f$ shown above consists of two line segments. Let $g$ be the function given by $g(x)= integral_(0)^(x) f(t) d t$.\n\n(a) Find $g(- 1)\\, g'(- 1)$, and $g''(- 1)$.\n\n(b) For what values of $x$ in the open interval $(- 2 \\,2)$ is $g$ increasing? Explain your reasoning.\n\n(c) For what values of $x$ in the open interval \\(-2, 2) is the graph of $g$ concave down? Explain your reasoning.\n\n(d) On the axes provided, sketch the graph of $g$ on the closed interval \\[-2, 2\\].",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2002-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2002-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        232.00799560546875,
+        201.76800537109375,
+        380.8559875488281,
+        402.7439880371094
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          566
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          235.00799999999998,
+          204.76799999999997,
+          377.856,
+          399.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          409.53599999999994,
+          522.144,
+          423.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          425.08799999999997,
+          150.33599999999998,
+          447.84
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          455.328,
+          227.808,
+          468.864
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          475.2,
+          483.84,
+          488.736
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          495.64799999999997,
+          558.144,
+          508.60799999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          65.664,
+          516.096,
+          412.128,
+          529.632
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          529.632,
+          361.44,
+          542.592
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "60ec62b323b6d880035aa570d883f0c8c3083f506f03512a827124d0924ba069",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

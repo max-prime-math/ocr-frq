@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2005-form-b-frq-03",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves along the $x$-axis so that its velocity $v$ at time $t$, for $0 <= t <= 5$, is given by $v(t)= ln lr((t^(2)- 3 t + 3))$. The particle is at position $x = 8$ at time $t = 0$.\n\n(a) Find the acceleration of the particle at time $t = 4$.\n\n(b) Find all times $t$ in the open interval $0 < t < 5$ at which the particle changes direction. During which time intervals, for $0 <= t <= 5$, does the particle travel to the left?\n\n(c) Find the position of the particle at time $t = 2$.\n\n(d) Find the average speed of the particle over the interval $0 <= t <= 2$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          53,
+          572,
+          308
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          58.175999999999995,
+          471.45599999999996,
+          71.136
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          72.288,
+          378.71999999999997,
+          91.58399999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          99.648,
+          304.416,
+          112.60799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          118.65599999999999,
+          553.2479999999999,
+          131.61599999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          131.904,
+          344.736,
+          144.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          152.35199999999998,
+          286.56,
+          165.31199999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          170.784,
+          373.82399999999996,
+          184.32
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "20d8946091d7ed972daf5c32a790f9788778826fa7515c7a4241c71678786e5d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

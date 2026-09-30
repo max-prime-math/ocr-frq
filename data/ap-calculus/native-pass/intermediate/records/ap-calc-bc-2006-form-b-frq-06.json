@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-form-b-frq-06",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "rawPrompt": "The function $f$ is defined by $f(x)=\\frac{1}{1+x^{3}}$. The Maclaurin series for $f$ is given by\n\n$$\n1-x^{3}+x^{6}-x^{9}+\\cdots+(-1)^{n} x^{3 n}+\\cdots\n$$\n\nwhich converges to $f(x)$ for $-1<x<1$.\\\\\n(a) Find the first three nonzero terms and the general term for the Maclaurin series for $f^{\\prime}(x)$.\\\\\n(b) Use your results from part (a) to find the sum of the infinite series $-\\frac{3}{2^{2}}+\\frac{6}{2^{5}}-\\frac{9}{2^{8}}+\\cdots+(-1)^{n} \\frac{3 n}{2^{3 n-1}}+\\cdots$.\\\\\n(c) Find the first four nonzero terms and the general term for the Maclaurin series representing $\\int_{0}^{x} f(t) d t$.\\\\\n(d) Use the first three nonzero terms of the infinite series found in part (c) to approximate $\\int_{0}^{1 / 2} f(t) d t$. What are the properties of the terms of the series representing $\\int_{0}^{1 / 2} f(t) d t$ that guarantee that this approximation is within $\\frac{1}{10,000}$ of the exact value of the integral?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe function \\(f\\) is defined by \\(f(x)=\\frac{1}{1+x^{3}}\\). The Maclaurin series for \\(f\\) is given by\n\\[\n1-x^{3}+x^{6}-x^{9}+\\cdots+(-1)^{n} x^{3 n}+\\cdots,\n\\]\nwhich converges to \\(f(x)\\) for \\(-1<x<1\\).\n\\begin{itemize}\n\\item[(a)] Find the first three nonzero terms and the general term for the Maclaurin series for \\(f^{\\prime}(x)\\).\n\\item[(b)] Use your results from part (a) to find the sum of the infinite series \\(-\\frac{3}{2^{2}}+\\frac{6}{2^{5}}-\\frac{9}{2^{8}}+\\cdots+(-1)^{n} \\frac{3 n}{2^{3 n-1}}+\\cdots\\).\n\\item[(c)] Find the first four nonzero terms and the general term for the Maclaurin series representing \\(\\int_{0}^{x} f(t) d t\\).\n\\item[(d)] Use the first three nonzero terms of the infinite series found in part (c) to approximate \\(\\int_{0}^{1 / 2} f(t) d t\\). What are the properties of the terms of the series representing \\(\\int_{0}^{1 / 2} f(t) d t\\) that guarantee that this approximation is within \\(\\frac{1}{10,000}\\) of the exact value of the integral?\n\\item[(a)] \\(f^{\\prime}(x)=-3 x^{2}+6 x^{5}-9 x^{8}+\\cdots+3 n(-1)^{n} x^{3 n-1}+\\cdots\\)\n\\item[(b)] The given series is the Maclaurin series for \\(f^{\\prime}(x)\\) with \\(x=\\frac{1}{2}\\).\n\\[\nf^{\\prime}(x)=-\\left(1+x^{3}\\right)^{-2}\\left(3 x^{2}\\right)\n\\]\nThus, the sum of the series is \\(f^{\\prime}\\left(\\frac{1}{2}\\right)=-\\frac{3\\left(\\frac{1}{4}\\right)}{\\left(1+\\frac{1}{8}\\right)^{2}}=-\\frac{16}{27}\\).\n\\item[(c)] \\(\\int_{0}^{x} \\frac{1}{1+t^{3}} d t=x-\\frac{x^{4}}{4}+\\frac{x^{7}}{7}-\\frac{x^{10}}{10}+\\cdots+\\frac{(-1)^{n} x^{3 n+1}}{3 n+1}+\\cdots\\)\n\\item[(d)] \\(\\int_{0}^{1 / 2} \\frac{1}{1+t^{3}} d t \\approx \\frac{1}{2}-\\frac{\\left(\\frac{1}{2}\\right)^{4}}{4}+\\frac{\\left(\\frac{1}{2}\\right)^{7}}{7}\\).\nThe series in part (c) with \\(x=\\frac{1}{2}\\) has terms that alternate, decrease in absolute value, and have limit 0 . Hence the error is bounded by the absolute value of the next term.\n\\[\n\\left|\\int_{0}^{1 / 2} \\frac{1}{1+t^{3}} d t-\\left(\\frac{1}{2}-\\frac{\\left(\\frac{1}{2}\\right)^{4}}{4}+\\frac{\\left(\\frac{1}{2}\\right)^{7}}{7}\\right)\\right|<\\frac{\\left(\\frac{1}{2}\\right)^{10}}{10}=\\frac{1}{10240}<0.0001\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { first three terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(x) \\\\ 1: f^{\\prime}\\left(\\frac{1}{2}\\right)\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { first four terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { approximation } \\\\ 1: \\text { properties of terms } \\\\ 1: \\text { absolute value of } \\\\ \\quad \\text { fourth term }<0.0001\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          296,
+          572,
+          601
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

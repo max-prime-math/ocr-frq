@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-1998-frq-04",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "rawPrompt": "Consider the differential equation given by $\\frac{d y}{d x}=\\frac{x y}{2}$.\\\\\n(a) On the axes provided below, sketch a slope field for the given differential equation at the nine points indicated.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-1998-frq-04-diagram-01.jpg}\n\\end{center}\n(b) Let $y=f(x)$ be the particular solution to the given differential equation with the initial condition $f(0)=3$. Use Euler's method starting at $x=0$, with a step size of 0.1 , to approximate $f(0.2)$. Show the work that leads to your answer.\\\\\n(c) Find the particular solution $y=f(x)$ to the given differential equation with the initial condition $f(0)=3$. Use your solution to find $f(0.2)$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-1998-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-1998-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-1998_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "4. Consider the differential equation given by \\(\\frac{d y}{d x}=\\frac{x y}{2}\\).\n\\begin{itemize}\n\\begin{itemize}\n\\item[(a)] On the axes provided below, sketch a slope field for the given differential equation at the nine points indicated.\n\\item[(b)] Let \\(y=f(x)\\) be the particular solution to the given differential equation with the initial condition \\(f(0)=3\\). Use Euler's method starting at \\(x=0\\), with a step size of 0.1 , to approximate \\(f(0.2)\\). Show the work that leads to your answer.\n\\item[(c)] Find the particular solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(0)=3\\). Use your solution to find \\(f(0.2)\\).\n\\end{itemize}\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/a9e2ddca-17ea-4e65-a636-b30d8dd4f04c-1.jpg?height=473&width=376&top_left_y=778&top_left_x=408)\n\\item[(b)]\n\\[\n\\begin{aligned}\nf(0.1) & \\approx f(0)+f^{\\prime}(0)(0.1) \\\\\n& =3+\\frac{1}{2}(0)(3)(0.1)=3 \\\\\nf(0.2) & \\approx f(0.1)+f^{\\prime}(0.1)(0.1) \\\\\n& =3+\\frac{1}{2}(0.1)(3)(0.1) \\\\\n& =3+\\frac{.03}{2}=3.015\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\frac{d y}{d x}=\\frac{x y}{2}\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{d y}{y}=\\int \\frac{x}{2} d x \\\\\n& \\ln |y|=\\frac{1}{4} x^{2}+C_{1} \\\\\n& y=C e^{x^{2} / 4} \\\\\n& 3=C e^{0} \\Longrightarrow C=3 \\\\\n& y=3 e^{x^{2} / 4} \\\\\n& f(0.2)=3 e^{.04 / 4}=3 e^{.01}=3.030\n\\end{aligned}\n\\]\n\\item[1:] line segments at nine points with negative - zero - positive slope left to right and increasing steepness bottom to top at \\(x=1\\) and \\(x=-1\\)\n\\end{itemize}\n\\[\n2 \\begin{cases}1: & \\text { Euler's Method equations } \\\\ & \\text { or equivalent table } \\\\ 1: & \\text { answer } \\\\ & \\text { (not eligible without first point) }\\end{cases}\n\\]\nSpecial Case: 1/2 for first iteration 3.015 and second iteration 3.045\n\\[\n6\\left\\{\\begin{array}{l}\n\\text { 1: separates variables } \\\\\n\\text { 1: antiderivative of } d y \\text { term } \\\\\n\\text { 1: antiderivative of } d x \\text { term } \\\\\n\\text { 1: solves for } y \\\\\n\\text { 1: solves for constant of integration } \\\\\n\\text { 1: evaluates } f(0.2)\n\\end{array}\\right.\n\\]\nNote: \\(\\max 4 / 6\\) [1-1-1-0-0-1] if no constant of integration",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

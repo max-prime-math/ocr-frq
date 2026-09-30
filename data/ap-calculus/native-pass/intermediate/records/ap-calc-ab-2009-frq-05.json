@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2009-frq-05",
+  "course": "AB",
+  "year": 2009,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2009.pdf",
+      "sha256": "0b9fce927a57430ff15966981f7509160479b952bb977809be1ace87e1426bf4",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2009.pdf",
+      "sha256": "8e8af755994a5792374923740f04a3125cf7f6a0935d666800ea14d343fda434"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(x\\) & 2 & 3 & 5 & 8 & 13 \\\\\n\\hline \\(f(x)\\) & 1 & 4 & -2 & 3 & 6 \\\\\n\\hline\n\\end{tabular}\nLet \\(f\\) be a function that is twice differentiable for all real numbers. The table above gives values of \\(f\\) for\nselected points in the closed interval \\(2 \\leq x \\leq 13\\).\n(a) Estimate \\(f^{\\prime}(4)\\). Show the work that leads to your answer.\n(b) Evaluate \\(\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x\\). Show the work that leads to your answer.\n(c) Use a left Riemann sum with subintervals indicated by the data in the table to approximate \\(\\int_{2}^{13} f(x) d x\\).\nShow the work that leads to your answer.\n(d) Suppose \\(f^{\\prime}(5)=3\\) and \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the closed interval \\(5 \\leq x \\leq 8\\). Use the line tangent to the\ngraph of \\(f\\) at \\(x=5\\) to show that \\(f(7) \\leq 4\\). Use the secant line for the graph of \\(f\\) on \\(5 \\leq x \\leq 8\\) to show\nthat \\(f(7) \\geq \\frac{4}{3}\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2009 SCORING GUIDELINES}\n\nQuestion 5\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(x\\) & 2 & 3 & 5 & 8 & 13 \\\\\n\\hline \\(f(x)\\) & 1 & 4 & -2 & 3 & 6 \\\\\n\\hline\n\\end{tabular}\nLet \\(f\\) be a function that is twice differentiable for all real numbers. The table above gives values of \\(f\\) for selected points in the closed interval \\(2 \\leq x \\leq 13\\).\n\\begin{itemize}\n\\item[(a)] Estimate \\(f^{\\prime}(4)\\). Show the work that leads to your answer.\n\\item[(b)] Evaluate \\(\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x\\). Show the work that leads to your answer.\n\\item[(c)] Use a left Riemann sum with subintervals indicated by the data in the table to approximate \\(\\int_{2}^{13} f(x) d x\\). Show the work that leads to your answer.\n\\item[(d)] Suppose \\(f^{\\prime}(5)=3\\) and \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the closed interval \\(5 \\leq x \\leq 8\\). Use the line tangent to the graph of \\(f\\) at \\(x=5\\) to show that \\(f(7) \\leq 4\\). Use the secant line for the graph of \\(f\\) on \\(5 \\leq x \\leq 8\\) to show that \\(f(7) \\geq \\frac{4}{3}\\).\n\\item[(a)] \\(f^{\\prime}(4) \\approx \\frac{f(5)-f(3)}{5-3}=-3\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x & =\\int_{2}^{13} 3 d x-5 \\int_{2}^{13} f^{\\prime}(x) d x \\\\\n& =3(13-2)-5(f(13)-f(2))=8\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\int_{2}^{13} f(x) d x \\approx & f(2)(3-2)+f(3)(5-3) \\\\\n& +f(5)(8-5)+f(8)(13-8)=18\n\\end{aligned}\n\\]\n\\item[(d)] An equation for the tangent line is \\(y=-2+3(x-5)\\). Since \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the interval \\(5 \\leq x \\leq 8\\), the line tangent to the graph of \\(y=f(x)\\) at \\(x=5\\) lies above the graph for all \\(x\\) in the interval \\(5<x \\leq 8\\). Therefore, \\(f(7) \\leq-2+3 \\cdot 2=4\\). An equation for the secant line is \\(y=-2+\\frac{5}{3}(x-5)\\). Since \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the interval \\(5 \\leq x \\leq 8\\), the secant line connecting (5, \\(f(5)\\) ) and (8, \\(f(8)\\) ) lies below the graph of \\(y=f(x)\\) for all \\(x\\) in the interval \\(5<x<8\\). Therefore, \\(f(7) \\geq-2+\\frac{5}{3} \\cdot 2=\\frac{4}{3}\\).\n\\end{itemize}\n\n1 : answer\n\\[\n2:\\left\\{\\begin{aligned}\n1: \\text { uses Fundamental Theorem } & \\\\\n& \\text { of Calculus } \\\\\n1: \\text { answer } &\n\\end{aligned}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { left Riemann sum } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\[\n4:\\left\\{\\begin{array}{l}\n1: \\text { tangent line } \\\\\n1: \\text { shows } f(7) \\leq 4 \\\\\n1: \\text { secant line } \\\\\n1: \\text { shows } f(7) \\geq \\frac{4}{3}\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          384
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          195.552,
+          71.136,
+          415.87199999999996,
+          117.50399999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 24,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          129.024,
+          527.616,
+          141.98399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 25,
+        "type": "text",
+        "rect": [
+          64.512,
+          141.98399999999998,
+          282.23999999999995,
+          154.368
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 26,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          161.56799999999998,
+          340.70399999999995,
+          174.528
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          183.744,
+          400.032,
+          208.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          65.088,
+          217.72799999999998,
+          539.424,
+          242.49599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          245.088,
+          266.4,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          65.088,
+          263.23199999999997,
+          547.1999999999999,
+          277.632
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          279.64799999999997,
+          546.048,
+          293.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          296.352,
+          150.33599999999998,
+          319.67999999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-26/mathpix-recovery-cache/artifacts/ap-calc-ab-2009-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2009-frq-05",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

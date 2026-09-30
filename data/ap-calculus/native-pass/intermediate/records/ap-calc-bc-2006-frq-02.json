@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-frq-02",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2006-frq-02-diagram-01.jpg}\n\\end{center}\nAt an intersection in Thomasville, Oregon, cars turn left at the rate $L(t)=60 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{3}\\right)$ cars per hour over the time interval $0 \\leq t \\leq 18$ hours. The graph of $y=L(t)$ is shown above.\\\\\n(a) To the nearest whole number, find the total number of cars turning left at the intersection over the time interval $0 \\leq t \\leq 18$ hours.\\\\\n(b) Traffic engineers will consider turn restrictions when $L(t) \\geq 150$ cars per hour. Find all values of $t$ for which $L(t) \\geq 150$ and compute the average value of $L$ over this time interval. Indicate units of measure.\\\\\n(c) Traffic engineers will install a signal if there is any two-hour time interval during which the product of the total number of cars turning left and the total number of oncoming cars traveling straight through the intersection is greater than 200,000. In every two-hour time interval, 500 oncoming cars travel straight through the intersection. Does this intersection require a traffic signal? Explain the reasoning that leads to your conclusion.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[] At an intersection in Thomasville, Oregon, cars turn left at the rate \\(L(t)=60 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{3}\\right)\\) cars per hour over the time interval \\(0 \\leq t \\leq 18\\) hours. The graph of \\(y=L(t)\\) is shown above.\n\\item[(a)] To the nearest whole number, find the total number of cars turning left at the intersection over the time interval \\(0 \\leq t \\leq 18\\) hours.\n(b) Traffic engineers will consider turn restrictions when \\(L(t) \\geq 150\\) cars per hour. Find all values of \\(t\\) for which \\(L(t) \\geq 150\\) and compute the average value of \\(L\\) over this time interval. Indicate units of measure.\n![](https://cdn.mathpix.com/cropped/dee4bbdf-3f0d-4600-870f-26cd2f9211a0-1.jpg?height=623&width=915&top_left_y=357&top_left_x=1031)\n\\item[(c)] Traffic engineers will install a signal if there is any two-hour time interval during which the product of the total number of cars turning left and the total number of oncoming cars traveling straight through the intersection is greater than 200,000. In every two-hour time interval, 500 oncoming cars travel straight through the intersection. Does this intersection require a traffic signal? Explain the reasoning that leads to your conclusion.\n\\item[(a)] \\(\\int_{0}^{18} L(t) d t \\approx 1658\\) cars\n\\item[(b)] \\(L(t)=150\\) when \\(t=12.42831,16.12166\\)\nLet \\(R=12.42831\\) and \\(S=16.12166\\)\n\\(L(t) \\geq 150\\) for \\(t\\) in the interval \\([R, S]\\)\n\\(\\frac{1}{S-R} \\int_{R}^{S} L(t) d t=199.426\\) cars per hour\n\\item[(c)] For the product to exceed 200,000, the number of cars turning left in a two-hour interval must be greater than 400.\n\\[\n\\int_{13}^{15} L(t) d t=431.931>400\n\\]\nOR\nThe number of cars turning left will be greater than 400 on a two-hour interval if \\(L(t) \\geq 200\\) on that interval.\n\\(L(t) \\geq 200\\) on any two-hour subinterval of [13.25304, 15.32386].\n\\end{itemize}\nYes, a traffic signal is required.\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { setup } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: t \\text {-interval when } L(t) \\geq 150 \\\\ 1: \\text { average value integral } \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { considers } 400 \\text { cars } \\\\ 1: \\text { valid interval }[h, h+2] \\\\ 1: \\text { value of } \\int_{h}^{h+2} L(t) d t \\\\ 1: \\text { answer and explanation }\\end{array}\\right.\\)\nOR\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { considers } 200 \\text { cars per hour } \\\\ 1: \\text { solves } L(t) \\geq 200 \\\\ 1: \\text { discusses } 2 \\text { hour interval } \\\\ 1: \\text { answer and explanation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          67,
+          572,
+          469
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

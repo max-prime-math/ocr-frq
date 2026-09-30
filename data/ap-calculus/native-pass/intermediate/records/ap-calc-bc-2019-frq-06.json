@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2019-frq-06",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2019-frq-06-diagram-01.png}\n\n\\begin{center}\n\\begin{tabular}{|c|c|}\n\\hline\n$n$ & $f^{(n)}(0)$ \\\\\n\\hline\\hline\n2 & 3 \\\\\n\\hline\n3 & $-\\frac{23}{2}$ \\\\\n\\hline\n4 & 54 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nA function $f$ has derivatives of all orders for all real numbers $x$. A portion of the graph of $f$ is shown above, along with the line tangent to the graph of $f$ at $x=0$. Selected derivatives of $f$ at $x=0$ are given in the table above.\\\\\n(a) Write the third-degree Taylor polynomial for $f$ about $x=0$.\\\\\n(b) Write the first three nonzero terms of the Maclaurin series for $e^{x}$. Write the second-degree Taylor polynomial for $e^{x} f(x)$ about $x=0$.\\\\\n(c) Let $h$ be the function defined by $h(x)=\\int_{0}^{x} f(t) d t$. Use the Taylor polynomial found in part (a) to find an approximation for $h(1)$.\\\\\n(d) It is known that the Maclaurin series for $h$ converges to $h(x)$ for all real numbers $x$. It is also known that the individual terms of the series for $h(1)$ alternate in sign and decrease in absolute value to 0 . Use the alternating series error bound to show that the approximation found in part (c) differs from $h(1)$ by at most 0.45 .",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2019-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2019-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        143.0,
+        94.0,
+        341.0,
+        322.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)] \\(f(0)=3\\) and \\(f^{\\prime}(0)=-2\\)\nThe third-degree Taylor polynomial for \\(f\\) about \\(x=0\\) is\n\\[\n3-2 x+\\frac{3}{2!} x^{2}+\\frac{-\\frac{23}{2}}{3!} x^{3}=3-2 x+\\frac{3}{2} x^{2}-\\frac{23}{12} x^{3} .\n\\]\n\\item[(b)] The first three nonzero terms of the Maclaurin series for \\(e^{x}\\) are \\(1+x+\\frac{1}{2!} x^{2}\\).\nThe second-degree Taylor polynomial for \\(e^{x} f(x)\\) about \\(x=0\\) is\n\\[\n\\begin{aligned}\n& 3\\left(1+x+\\frac{1}{2!} x^{2}\\right)-2 x(1+x)+\\frac{3}{2} x^{2}(1) \\\\\n& \\quad=3+(3-2) x+\\left(\\frac{3}{2}-2+\\frac{3}{2}\\right) x^{2} \\\\\n& \\quad=3+x+x^{2}\n\\end{aligned}\n\\]\n\\item[(c)] \\(h(1)=\\int_{0}^{1} f(t) d t\\)\n\\[\n\\begin{aligned}\n& \\approx \\int_{0}^{1}\\left(3-2 t+\\frac{3}{2} t^{2}-\\frac{23}{12} t^{3}\\right) d t \\\\\n& =\\left[3 t-t^{2}+\\frac{1}{2} t^{3}-\\frac{23}{48} t^{4}\\right]_{t=0}^{t=1} \\\\\n& =3-1+\\frac{1}{2}-\\frac{23}{48}=\\frac{97}{48}\n\\end{aligned}\n\\]\n\\item[(d)] The alternating series error bound is the absolute value of the first omitted term of the series for \\(h(1)\\).\n\\[\n\\begin{aligned}\n& \\int_{0}^{1}\\left(\\frac{54}{4!} t^{4}\\right) d t=\\left[\\frac{9}{20} t^{5}\\right]_{t=0}^{t=1}=\\frac{9}{20} \\\\\n& \\text { Error } \\leq\\left|\\frac{9}{20}\\right|=0.45\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { two terms } \\\\ 1: \\text { remaining terms }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : three terms for } e^{x} \\\\ 1: \\text { three terms for } e^{x} f(x)\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { uses fourth-degree term } \\\\ \\text { of Maclaurin series for } f \\\\ 1: \\text { uses first omitted term } \\\\ \\text { of series for } h(1) \\\\ 1: \\text { error bound }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          35,
+          92,
+          570,
+          665.52
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 7,
+      "sourceRect": [
+        143.0,
+        94.0,
+        341.0,
+        322.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2019-frq-05"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "ap-calc-bc-2014-frq-02",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2014-frq-02-diagram-01.jpg\", width: 65%)\n\nThe graphs of the polar curves $r = 3$ and $r = 3 - 2 sin(2 theta)$ are shown in the figure above for $0 <= theta <= pi$.\n\n(a) Let $R$ be the shaded region that is inside the graph of $r = 3$ and inside the graph of $r = 3 - 2 sin(2 theta)$. Find the area of $R$.\n\n(b) For the curve $r = 3 - 2 sin(2 theta)$, find the value of $frac(d x,d theta)$ at $theta = frac(pi,6)$.\n\n(c) The distance between the two curves changes for $0 < theta < frac(pi,2)$. Find the rate at which the distance between the two curves is changing with respect to $theta$ when $theta = frac(pi,3)$.\n\n(d) A particle is moving along the curve $r = 3 - 2 sin(2 theta)$ so that $frac(d theta,d t)= 3$ for all times $t >= 0$. Find the value of $frac(d r,d t)$ at $theta = frac(pi,6)$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2014-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2014-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2014_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          66,
+          569,
+          480
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f06f0aba4788f2a60117c4ba6145a513766258b277a25ec89b4e5e42a4afa922",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2014-frq-02-diagram-02.jpg",
+      "belongsToQuestion": "ap-calc-bc-2014-frq-03"
+    }
+  ]
+}

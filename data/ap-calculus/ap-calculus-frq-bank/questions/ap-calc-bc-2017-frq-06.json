@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "$ f(0) & = 0 \\ f'(0) & = 1 \\ f^((n + 1))(0) & = - n dot.c f^((n))(0) \" for all \" n >= 1 $ A function $f$ has derivatives of all orders for $- 1 < x < 1$. The derivatives of $f$ satisfy the conditions above. The Maclaurin series for $f$ converges to $f(x)$ for $| x | < 1$.\n\n(a) Show that the first four nonzero terms of the Maclaurin series for $f$ are $x - frac(x^(2),2)+ frac(x^(3),3)- frac(x^(4),4)$, and write the general term of the Maclaurin series for $f$.\n\n(b) Determine whether the Maclaurin series described in part (a) converges absolutely, converges conditionally, or diverges at $x = 1$. Explain your reasoning.\n\n(c) Write the first four nonzero terms and the general term of the Maclaurin series for $g(x)= integral_(0)^(x) f(t) d t$.\n\n(d) Let $P_(n)lr((frac(1,2)))$ represent the $n$ th-degree Taylor polynomial for $g$ about $x = 0$ evaluated at $x = frac(1,2)$, where $g$ is the function defined in part (c). Use the alternating series error bound to show that $lr(| P_(4)lr((frac(1,2)))- g lr((frac(1,2)))|)< frac(1,500)$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2017-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-15",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2017",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

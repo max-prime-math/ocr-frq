@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-frq-06",
+  "course": "BC",
+  "year": 2002,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002.pdf",
+      "sha256": "64edbf0cc21bb02abac3daedd8843f19db31224976c1904c0a369c0dcf31e9bc",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002.pdf",
+      "sha256": "676da803295fea05f51302345025fb577c149c93c1387bedabbcc52ea0834896"
+    }
+  },
+  "rawPrompt": "The Maclaurin series for the function $f$ is given by\n\n$$\nf(x)=\\sum_{n=0}^{\\infty} \\frac{(2 x)^{n+1}}{n+1}=2 x+\\frac{4 x^{2}}{2}+\\frac{8 x^{3}}{3}+\\frac{16 x^{4}}{4}+\\cdots+\\frac{(2 x)^{n+1}}{n+1}+\\cdots\n$$\n\non its interval of convergence.\\\\\n(a) Find the interval of convergence of the Maclaurin series for $f$. Justify your answer.\\\\\n(b) Find the first four terms and the general term for the Maclaurin series for $f^{\\prime}(x)$.\\\\\n(c) Use the Maclaurin series you found in part (b) to find the value of $f^{\\prime}\\left(-\\frac{1}{3}\\right)$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC 2002 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nThe Maclaurin series for the function \\(f\\) is given by\n\\[\nf(x)=\\sum_{n=0}^{\\infty} \\frac{(2 x)^{n+1}}{n+1}=2 x+\\frac{4 x^{2}}{2}+\\frac{8 x^{3}}{3}+\\frac{16 x^{4}}{4}+\\cdots+\\frac{(2 x)^{n+1}}{n+1}+\\cdots\n\\]\non its interval of convergence.\n\\begin{itemize}\n\\item[(a)] Find the interval of convergence of the Maclaurin series for \\(f\\). Justify your answer.\n\\item[(b)] Find the first four terms and the general term for the Maclaurin series for \\(f^{\\prime}(x)\\).\n\\item[(c)] Use the Maclaurin series you found in part (b) to find the value of \\(f^{\\prime}\\left(-\\frac{1}{3}\\right)\\).\n\\item[(a)] \\(\\lim _{n \\rightarrow \\infty}\\left|\\frac{\\frac{(2 x)^{n+2}}{n+2}}{\\frac{(2 x)^{n+1}}{n+1}}\\right|=\\lim _{n \\rightarrow \\infty}\\left|\\frac{(n+1)}{(n+2)} 2 x\\right|=|2 x|\\)\n\\(|2 x|<1\\) for \\(-\\frac{1}{2}<x<\\frac{1}{2}\\)\nAt \\(x=\\frac{1}{2}\\), the series is \\(\\sum_{n=0}^{\\infty} \\frac{1}{n+1}\\) which diverges since this is the harmonic series.\nAt \\(x=-\\frac{1}{2}\\), the series is \\(\\sum_{n=0}^{\\infty}(-1)^{n+1} \\frac{1}{n+1}\\) which converges by the Alternating Series Test.\nHence, the interval of convergence is \\(-\\frac{1}{2} \\leq x<\\frac{1}{2}\\).\n\\item[(b)] \\(f^{\\prime}(x)=2+4 x+8 x^{2}+16 x^{3}+\\ldots+2(2 x)^{n}+\\ldots\\)\n\\item[(c)] The series in (b) is a geometric series.\n\\[\n\\begin{aligned}\nf^{\\prime}\\left(-\\frac{1}{3}\\right) & =2+4\\left(-\\frac{1}{3}\\right)+8\\left(-\\frac{1}{3}\\right)^{2}+\\ldots+2\\left(2 \\cdot\\left(-\\frac{1}{3}\\right)\\right)^{n}+\\ldots \\\\\n& =2-\\frac{4}{3}+\\frac{8}{9}-\\frac{16}{27}+\\ldots+2\\left(-\\frac{2}{3}\\right)^{n}+\\ldots \\\\\n& =\\frac{2}{1+\\frac{2}{3}}=\\frac{6}{5}\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=\\frac{2}{1-2 x} \\text { for }-\\frac{1}{2}<x<\\frac{1}{2} . \\text { Therefore, }, \\\\\n& f^{\\prime}\\left(-\\frac{1}{3}\\right)=\\frac{2}{1+\\frac{2}{3}}=\\frac{6}{5}\n\\end{aligned}\n\\][ 1 : sets up ratio\n1 : computes limit of ratio\n1 : identifies interior of interval of convergence\n\n2 : analysis/conclusion at endpoints\n1 : right endpoint\n1 : left endpoint\n\\(\\langle-1\\rangle\\) if endpoints not \\(x= \\pm \\frac{1}{2}\\)\n\\(\\langle-1\\rangle\\) if multiple intervals\n\\(2 \\begin{cases}1 & : \\text { first } 4 \\text { terms } \\\\ 1 & : \\text { general term }\\end{cases}\\)\n\\(2\\left\\{\\begin{aligned} 1: & \\text { substitutes } x=-\\frac{1}{3} \\text { into infinite } \\\\ & \\text { series from (b) or expresses series } \\\\ & \\text { from (b) in closed form } \\\\ 1: & \\text { answer for student's series }\\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          478,
+          572,
+          667
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

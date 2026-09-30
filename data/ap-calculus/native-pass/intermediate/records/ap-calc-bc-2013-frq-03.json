@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-03",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(minutes) \\\\\n\\end{tabular} & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\\n\\hline\n\\begin{tabular}{c}\n$C(t)$ \\\\\n(ounces) \\\\\n\\end{tabular} & 0 & 5.3 & 8.8 & 11.2 & 12.8 & 13.8 & 14.5 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nHot water is dripping through a coffeemaker, filling a large cup with coffee. The amount of coffee in the cup at time $t, 0 \\leq t \\leq 6$, is given by a differentiable function $C$, where $t$ is measured in minutes. Selected values of $C(t)$, measured in ounces, are given in the table above.\\\\\n(a) Use the data in the table to approximate $C^{\\prime}(3.5)$. Show the computations that lead to your answer, and indicate units of measure.\\\\\n(b) Is there a time $t, 2 \\leq t \\leq 4$, at which $C^{\\prime}(t)=2$ ? Justify your answer.\\\\\n(c) Use a midpoint sum with three subintervals of equal length indicated by the data in the table to approximate the value of $\\frac{1}{6} \\int_{0}^{6} C(t) d t$. Using correct units, explain the meaning of $\\frac{1}{6} \\int_{0}^{6} C(t) d t$ in the context of the problem.\\\\\n(d) The amount of coffee in the cup, in ounces, is modeled by $B(t)=16-16 e^{-0.4 t}$. Using this model, find the rate at which the amount of coffee in the cup is changing when $t=5$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of a twice-differentiable function \\(f\\), on the closed interval \\(0 \\leq x \\leq 8\\). The graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=1, x=3\\), and \\(x=5\\). The areas of the regions between the graph of \\(f^{\\prime}\\) and the \\(x\\)-axis are labeled in the figure. The function \\(f\\) is defined for all real numbers and satisfies \\(f(8)=4\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\) on the open interval \\(0<x<8\\) for which the function \\(f\\) has a local minimum. Justify your answer.\n\\item[(b)] Determine the absolute minimum value of \\(f\\) on the closed interval \\(0 \\leq x \\leq 8\\). Justify your answer.\n\\item[(c)] On what open intervals contained in \\(0<x<8\\) is the graph of \\(f\\) both concave down and increasing? Explain your reasoning.\n\\item[(d)] The function \\(g\\) is defined by \\(g(x)=(f(x))^{3}\\). If \\(f(3)=-\\frac{5}{2}\\), find the slope of the line tangent to the graph of \\(g\\) at \\(x=3\\).\n\\item[(a)] \\(x=6\\) is the only critical point at which \\(f^{\\prime}\\) changes sign from negative to positive. Therefore, \\(f\\) has a local minimum at \\(x=6\\).\n\\item[(b)] From part (a), the absolute minimum occurs either at \\(x=6\\) or at an endpoint.\n\\[\n\\begin{aligned}\nf(0) & =f(8)+\\int_{8}^{0} f^{\\prime}(x) d x \\\\\n& =f(8)-\\int_{0}^{8} f^{\\prime}(x) d x=4-12=-8 \\\\\nf(6) & =f(8)+\\int_{8}^{6} f^{\\prime}(x) d x \\\\\n& =f(8)-\\int_{6}^{8} f^{\\prime}(x) d x=4-7=-3 \\\\\nf(8) & =4\n\\end{aligned}\n\\]\nThe absolute minimum value of \\(f\\) on the closed interval [0,8] is -8.\n\\item[(c)] The graph of \\(f\\) is concave down and increasing on \\(0<x<1\\) and \\(3<x<4\\), because \\(f^{\\prime}\\) is decreasing and positive on these intervals.\n\\item[(d)] \\(g^{\\prime}(x)=3[f(x)]^{2} \\cdot f^{\\prime}(x)\\)\n\\[\ng^{\\prime}(3)=3[f(3)]^{2} \\cdot f^{\\prime}(3)=3\\left(-\\frac{5}{2}\\right)^{2} \\cdot 4=75\n\\]\n\\item[1] : answer with justification\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { considers } x=0 \\text { and } x=6 \\\\\n1: \\text { answer } \\\\\n1: \\text { justification }\n\\end{array}\\right.\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: g^{\\prime}(x) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          66,
+          568,
+          478
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

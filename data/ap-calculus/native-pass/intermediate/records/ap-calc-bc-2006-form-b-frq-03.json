@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-form-b-frq-03",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg}\n\\end{center}\nThe figure above is the graph of a function of $x$, which models the height of a skateboard ramp. The function meets the following requirements.\\\\\n(i) At $x=0$, the value of the function is 0 , and the slope of the graph of the function is 0 .\\\\\n(ii) At $x=4$, the value of the function is 1 , and the slope of the graph of the function is 1 .\\\\\n(iii) Between $x=0$ and $x=4$, the function is increasing.\\\\\n(a) Let $f(x)=a x^{2}$, where $a$ is a nonzero constant. Show that it is not possible to find a value for $a$ so that $f$ meets requirement (ii) above.\\\\\n(b) Let $g(x)=c x^{3}-\\frac{x^{2}}{16}$, where $c$ is a nonzero constant. Find the value of $c$ so that $g$ meets requirement (ii) above. Show the work that leads to your answer.\\\\\n(c) Using the function $g$ and your value of $c$ from part (b), show that $g$ does not meet requirement (iii) above.\\\\\n(d) Let $h(x)=\\frac{x^{n}}{k}$, where $k$ is a nonzero constant and $n$ is a positive integer. Find the values of $k$ and $n$ so that $h$ meets requirement (ii) above. Show that $h$ also meets requirements (i) and (iii) above.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006-form-b_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\nThe figure above is the graph of a function of \\(x\\), which models the height of a skateboard ramp. The function meets the following requirements.\n\\begin{itemize}\n\\item[(i)] At \\(x=0\\), the value of the function is 0 , and the slope of the graph of the function is 0 .\n\\item[(ii)] At \\(x=4\\), the value of the function is 1, and the slope of the graph of the function is 1 .\n\\item[(iii)] Between \\(x=0\\) and \\(x=4\\), the function is increasing.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/ae6548c0-b4a7-42c5-9345-285ede81aaad-1.jpg?height=372&width=524&top_left_y=316&top_left_x=1418)\n\\begin{itemize}\n\\item[(a)] Let \\(f(x)=a x^{2}\\), where \\(a\\) is a nonzero constant. Show that it is not possible to find a value for \\(a\\) so that \\(f\\) meets requirement (ii) above.\n\\item[(b)] Let \\(g(x)=c x^{3}-\\frac{x^{2}}{16}\\), where \\(c\\) is a nonzero constant. Find the value of \\(c\\) so that \\(g\\) meets requirement (ii) above. Show the work that leads to your answer.\n\\item[(c)] Using the function \\(g\\) and your value of \\(c\\) from part (b), show that \\(g\\) does not meet requirement (iii) above.\n\\item[(d)] Let \\(h(x)=\\frac{x^{n}}{k}\\), where \\(k\\) is a nonzero constant and \\(n\\) is a positive integer. Find the values of \\(k\\) and \\(n\\) so that \\(h\\) meets requirement (ii) above. Show that \\(h\\) also meets requirements (i) and (iii) above.\n\\item[(a)] \\(f(4)=1\\) implies that \\(a=\\frac{1}{16}\\) and \\(f^{\\prime}(4)=2 a(4)=1\\) implies that \\(a=\\frac{1}{8}\\). Thus, \\(f\\) cannot satisfy (ii).\n\\item[(b)] \\(\\quad g(4)=64 c-1=1\\) implies that \\(c=\\frac{1}{32}\\). When \\(c=\\frac{1}{32}, g^{\\prime}(4)=3 c(4)^{2}-\\frac{2(4)}{16}=3\\left(\\frac{1}{32}\\right)(16)-\\frac{1}{2}=1\\)\n\\item[(c)] \\(\\quad g^{\\prime}(x)=\\frac{3}{32} x^{2}-\\frac{x}{8}=\\frac{1}{32} x(3 x-4)\\) \\(g^{\\prime}(x)<0\\) for \\(0<x<\\frac{4}{3}\\), so \\(g\\) does not satisfy (iii).\n\\item[(d)] \\(h(4)=\\frac{4^{n}}{k}=1\\) implies that \\(4^{n}=k\\). \\(h^{\\prime}(4)=\\frac{n 4^{n-1}}{k}=\\frac{n 4^{n-1}}{4^{n}}=\\frac{n}{4}=1\\) gives \\(n=4\\) and \\(k=4^{4}=256\\). \\(h(x)=\\frac{x^{4}}{256} \\Rightarrow h(0)=0\\). \\(h^{\\prime}(x)=\\frac{4 x^{3}}{256} \\Rightarrow h^{\\prime}(0)=0\\) and \\(h^{\\prime}(x)>0\\) for \\(0<x<4\\).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: a=\\frac{1}{16} \\text { or } a=\\frac{1}{8} \\\\ 1: \\text { shows } a \\text { does not work }\\end{array}\\right.\\)\n\n1 : value of \\(c\\)\n\\(2:\\left\\{\\begin{array}{l}1: g^{\\prime}(x) \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\frac{4^{n}}{k}=1 \\\\ 1: \\frac{n 4^{n-1}}{k}=1 \\\\ 1: \\text { values for } k \\text { and } n \\\\ 1: \\text { verifications }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          63,
+          572,
+          473
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

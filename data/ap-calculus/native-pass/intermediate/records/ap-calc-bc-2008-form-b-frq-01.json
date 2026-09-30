@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-form-b-frq-01",
+  "course": "BC",
+  "year": 2008,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008-FORM-B.pdf",
+      "sha256": "a3f39100ad858b1e39f4ef65a5adbba5a1c4bb9b1b12fcc1af8fc1feb51865e5",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008-FORM-B.pdf",
+      "sha256": "1b7f39b2981738aadc9e2599c44ae1c8495d7cdb1c9a6584e35ba197e41fbd10"
+    }
+  },
+  "rawPrompt": "A particle moving along a curve in the $x y$-plane has position $(x(t), y(t))$ at time $t \\geq 0$ with\n$$\n\\frac{d x}{d t}=\\sqrt{3 t} \\text { and } \\frac{d y}{d t}=3 \\cos \\left(\\frac{t^{2}}{2}\\right) .\n$$\n\nThe particle is at position $(1,5)$ at time $t=4$.\\\\\n(a) Find the acceleration vector at time $t=4$.\\\\\n(b) Find the $y$-coordinate of the position of the particle at time $t=0$.\\\\\n(c) On the interval $0 \\leq t \\leq 4$, at what time does the speed of the particle first reach 3.5 ?\\\\\n(d) Find the total distance traveled by the particle over the time interval $0 \\leq t \\leq 4$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nA particle moving along a curve in the \\(x y\\)-plane has position \\((x(t), y(t))\\) at time \\(t \\geq 0\\) with\n\\[\n\\frac{d x}{d t}=\\sqrt{3 t} \\text { and } \\frac{d y}{d t}=3 \\cos \\left(\\frac{t^{2}}{2}\\right) .\n\\]\nThe particle is at position \\((1,5)\\) at time \\(t=4\\).\n\\begin{itemize}\n\\item[(a)] Find the acceleration vector at time \\(t=4\\).\n\\item[(b)] Find the \\(y\\)-coordinate of the position of the particle at time \\(t=0\\).\n\\item[(c)] On the interval \\(0 \\leq t \\leq 4\\), at what time does the speed of the particle first reach 3.5 ?\n\\item[(d)] Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 4\\).\n\\item[(a)] \\(a(4)=\\left\\langle x^{\\prime \\prime}(4), y^{\\prime \\prime}(4)\\right\\rangle=\\langle 0.433,-11.872\\rangle\\)\n\\item[(b)] \\(y(0)=5+\\int_{4}^{0} 3 \\cos \\left(\\frac{t^{2}}{2}\\right) d t=1.600\\) or 1.601\n\\item[(c)] Speed \\(=\\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}}\\)\n\\[\n=\\sqrt{3 t+9 \\cos ^{2}\\left(\\frac{t^{2}}{2}\\right)}=3.5\n\\]\nThe particle first reaches this speed when \\(t=2.225\\) or 2.226.\n\\item[(d)] \\(\\int_{0}^{4} \\sqrt{3 t+9 \\cos ^{2}\\left(\\frac{t^{2}}{2}\\right)} d t=13.182\\)\n\\end{itemize}\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { uses } y(4)=5 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { expression for speed } \\\\ 1: \\text { equation } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          454
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

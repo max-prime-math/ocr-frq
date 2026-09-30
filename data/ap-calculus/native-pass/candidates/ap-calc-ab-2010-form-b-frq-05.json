@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2010-form-b-frq-05",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(x + 1,y)$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated, and for $- 1 < x < 1$, sketch the solution curve that passes through the point ( $0 \\,- 1$ ).\n\n#image(\"/imgs/ap-calc-ab-2010-form-b-frq-05-diagram-01.png\", width: 65%)\n\n(b) While the slope field in part (a) is drawn at only twelve points, it is defined at every point in the $x y$-plane for which $y!= 0$. Describe all points in the $x y$-plane, $y!= 0$, for which $frac(d y,d x)= - 1$.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(0)= - 2$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-form-b-frq-05-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        234.60000610351562,
+        157.1280059814453,
+        377.97601318359375,
+        363.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          567,
+          437
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          70.55999999999999,
+          274.176,
+          97.91999999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          105.11999999999999,
+          554.4,
+          118.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          118.07999999999998,
+          450.43199999999996,
+          131.61599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          139.10399999999998,
+          323.13599999999997,
+          152.064
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          237.6,
+          160.128,
+          374.976,
+          360.0
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.088,
+          371.23199999999997,
+          563.04,
+          384.768
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          384.768,
+          427.104,
+          409.53599999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          417.59999999999997,
+          563.04,
+          431.712
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "67c4d4eee41844805a128583b670e7b585aa90e92db688df068ea398a9897379",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-05",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

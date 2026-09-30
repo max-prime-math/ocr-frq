@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2015-frq-01",
+  "course": "AB",
+  "year": 2015,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2015.pdf",
+      "sha256": "6f057222ecd46cce2adc5876197c1b85c94077b4f42108f097eaccb73451f8ac",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2015.pdf",
+      "sha256": "41556b4f0750b625991d8298e05037cfc655d7cc2f6967137e94be9b5402f774"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The rate at which rainwater flows into a drainpipe is modeled by the function $R$, where $R(t)= 20 sin lr((frac(t^(2),35)))$ cubic feet per hour, $t$ is measured in hours, and $0 <= t <= 8$. The pipe is partially blocked, allowing water to drain out the other end of the pipe at a rate modeled by $D(t)= - 0.04 t^(3)+ 0.4 t^(2)+ 0.96 t$ cubic feet per hour, for $0 <= t <= 8$. There are 30 cubic feet of water in the pipe at time $t = 0$.\n\n(a) How many cubic feet of rainwater flow into the pipe during the 8-hour time interval $0 <= t <= 8$ ?\n\n(b) Is the amount of water in the pipe increasing or decreasing at time $t = 3$ hours? Give a reason for your answer.\n\n(c) At what time $t \\, 0 <= t <= 8$, is the amount of water in the pipe at a minimum? Justify your answer.\n\n(d) The pipe can hold 50 cubic feet of water before overflowing. For $t > 8$, water continues to flow into and out of the pipe at the given rates until the pipe begins to overflow. Write, but do not solve, an equation involving one or more integrals that gives the time $w$ when the pipe will begin to overflow.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          569,
+          395
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          173.37599999999998,
+          537.6959999999999,
+          204.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          205.92,
+          563.616,
+          218.88
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          220.896,
+          532.512,
+          236.44799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          238.176,
+          370.08,
+          251.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          257.472,
+          508.60799999999995,
+          270.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          278.496,
+          540.288,
+          291.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          292.608,
+          118.94399999999999,
+          302.4
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          309.31199999999995,
+          514.944,
+          322.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.664,
+          329.76,
+          564.4799999999999,
+          342.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          343.296,
+          564.192,
+          356.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          356.544,
+          444.38399999999996,
+          368.928
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "e5fe81615a533dee58a1191b8ac895bb13888d26bc157bae39a0c9f80b751159",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2015-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2015-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

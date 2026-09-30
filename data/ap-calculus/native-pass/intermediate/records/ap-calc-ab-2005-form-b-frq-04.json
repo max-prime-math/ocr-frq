@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-form-b-frq-04",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2005-form-b-frq-04-diagram-01.png}\nThe graph of the function \\(f\\) above consists of three line segments.\n(a) Let \\(g\\) be the function given by \\(g(x)=\\int_{-4}^{x} f(t) d t\\). For each of \\(g(-1), g^{\\prime}(-1)\\), and \\(g^{\\prime \\prime}(-1)\\), find the value\nor state that it does not exist.\n(b) For the function \\(g\\) defined in part (a), find the \\(x\\)-coordinate of each point of inflection of the graph of \\(g\\) on\nthe open interval \\(-4<x<3\\). Explain your reasoning.\n(c) Let \\(h\\) be the function given by \\(h(x)=\\int_{x}^{3} f(t) d t\\). Find all values of \\(x\\) in the closed interval \\(-4 \\leq x \\leq 3\\) for\nwhich \\(h(x)=0\\).\n(d) For the function \\(h\\) defined in part (c), find all intervals on which \\(h\\) is decreasing. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-form-b-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-form-b-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        212.4239959716797,
+        194.27999877929688,
+        408.5039978027344,
+        348.88800048828125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe graph of the function \\(f\\) above consists of three line\n\\begin{itemize}\n\\item[] segments.\n\\item[(a)] Let \\(g\\) be the function given by \\(g(x)=\\int_{-4}^{x} f(t) d t\\). For each of \\(g(-1), g^{\\prime}(-1)\\), and \\(g^{\\prime \\prime}(-1)\\), find the value or state that it does not exist.\n(b) For the function \\(g\\) defined in part (a), find the \\(x\\)-coordinate of each point of inflection of the graph of \\(g\\) on the open interval \\(-4<x<3\\). Explain your reasoning.\n![](https://cdn.mathpix.com/cropped/baf85291-8a7f-4116-9e56-190bdcd06934-1.jpg?height=518&width=660&top_left_y=385&top_left_x=1195)\n\\item[(c)] Let \\(h\\) be the function given by \\(h(x)=\\int_{x}^{3} f(t) d t\\). Find all values of \\(x\\) in the closed interval \\(-4 \\leq x \\leq 3\\) for which \\(h(x)=0\\).\n\\item[(d)] For the function \\(h\\) defined in part (c), find all intervals on which \\(h\\) is decreasing. Explain your reasoning.\n\\item[(a)] \\(\\quad g(-1)=\\int_{-4}^{-1} f(t) d t=-\\frac{1}{2}(3)(5)=-\\frac{15}{2}\\) \\(g^{\\prime}(-1)=f(-1)=-2\\) \\(g^{\\prime \\prime}(-1)\\) does not exist because \\(f\\) is not differentiable at \\(x=-1\\).\n\\item[(b)] \\(x=1\\) \\(g^{\\prime}=f\\) changes from increasing to decreasing at \\(x=1\\).\n\\item[(c)] \\(x=-1,1,3\\)\n\\item[(d)] \\(h\\) is decreasing on [0, 2] \\(h^{\\prime}=-f<0\\) when \\(f>0\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: g(-1) \\\\ 1: g^{\\prime}(-1) \\\\ 1: g^{\\prime \\prime}(-1)\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: x=1 \\text { (only) } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\item[2] : correct values \\(\\langle-1\\rangle\\) each missing or extra value\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { interval } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          54,
+          572,
+          554
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          215.42399999999998,
+          197.27999999999997,
+          405.50399999999996,
+          345.888
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          363.16799999999995,
+          357.11999999999995,
+          376.128
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          384.768,
+          560.736,
+          406.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          410.97599999999994,
+          211.10399999999998,
+          422.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          431.99999999999994,
+          558.144,
+          444.96
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          450.43199999999996,
+          328.032,
+          463.39199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.088,
+          467.13599999999997,
+          563.04,
+          491.328
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          493.63199999999995,
+          157.82399999999998,
+          507.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          514.944,
+          553.2479999999999,
+          528.4799999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

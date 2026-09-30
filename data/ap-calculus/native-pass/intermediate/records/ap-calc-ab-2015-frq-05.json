@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2015-frq-05",
+  "course": "AB",
+  "year": 2015,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2015.pdf",
+      "sha256": "6f057222ecd46cce2adc5876197c1b85c94077b4f42108f097eaccb73451f8ac",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2015.pdf",
+      "sha256": "41556b4f0750b625991d8298e05037cfc655d7cc2f6967137e94be9b5402f774"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2015-frq-05-diagram-01.png}\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of a twice-differentiable function \\(f\\), on the interval\n\\([-3,4]\\). The graph of \\(f^{\\prime}\\) has horizontal tangents at \\(x=-1, x=1\\), and \\(x=3\\). The areas of the regions\nbounded by the \\(x\\)-axis and the graph of \\(f^{\\prime}\\) on the intervals [-2, 1] and [1, 4] are 9 and 12, respectively.\n(a) Find all \\(x\\)-coordinates at which \\(f\\) has a relative maximum. Give a reason for your answer.\n(b) On what open intervals contained in \\(-3<x<4\\) is the graph of \\(f\\) both concave down and decreasing?\nGive a reason for your answer.\n(c) Find the \\(x\\)-coordinates of all points of inflection for the graph of \\(f\\). Give a reason for your answer.\n(d) Given that \\(f(1)=3\\), write an expression for \\(f(x)\\) that involves an integral. Find \\(f(4)\\) and \\(f(-2)\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2015-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2015-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        165.76800537109375,
+        54.88800048828125,
+        445.9440002441406,
+        217.84800720214844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2015 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of a twice-differentiable function \\(f\\), on the interval [-3, 4]. The graph of \\(f^{\\prime}\\) has horizontal tangents at \\(x=-1, x=1\\), and \\(x=3\\). The areas of the regions bounded by the \\(x\\)-axis and the graph of \\(f^{\\prime}\\) on the intervals [-2, 1] and [1, 4] are 9 and 12 , respectively.\n\\begin{itemize}\n\\item[(a)] Find all \\(x\\)-coordinates at which \\(f\\) has a relative maximum. Give a reason for your answer.\n\\item[(b)] On what open intervals contained in \\(-3<x<4\\) is the graph of \\(f\\) both concave down and decreasing? Give a reason for your answer.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/be09582e-415b-462a-861c-4218626861a9-1.jpg?height=505&width=776&top_left_y=400&top_left_x=1156)\n\\begin{itemize}\n\\item[(c)] Find the \\(x\\)-coordinates of all points of inflection for the graph of \\(f\\). Give a reason for your answer.\n\\item[(d)] Given that \\(f(1)=3\\), write an expression for \\(f(x)\\) that involves an integral. Find \\(f(4)\\) and \\(f(-2)\\).\n\\item[(a)] \\(f^{\\prime}(x)=0\\) at \\(x=-2, x=1\\), and \\(x=4\\).\n\\(f^{\\prime}(x)\\) changes from positive to negative at \\(x=-2\\).\nTherefore, \\(f\\) has a relative maximum at \\(x=-2\\).\n\\item[(b)] The graph of \\(f\\) is concave down and decreasing on the intervals \\(-2<x<-1\\) and \\(1<x<3\\) because \\(f^{\\prime}\\) is decreasing and negative on these intervals.\n\\item[(c)] The graph of \\(f\\) has a point of inflection at \\(x=-1\\) and \\(x=3\\) because \\(f^{\\prime}\\) changes from decreasing to increasing at these points.\nThe graph of \\(f\\) has a point of inflection at \\(x=1\\) because \\(f^{\\prime}\\) changes from increasing to decreasing at this point.\n\\item[(d)] \\(f(x)=3+\\int_{1}^{x} f^{\\prime}(t) d t\\)\n\\[\nf(4)=3+\\int_{1}^{4} f^{\\prime}(t) d t=3+(-12)=-9\n\\]\n\\[\n\\begin{aligned}\nf(-2) & =3+\\int_{1}^{-2} f^{\\prime}(t) d t=3-\\int_{-2}^{1} f^{\\prime}(t) d t \\\\\n& =3-(-9)=12\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { identifies } x=-2 \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { intervals } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { identifies } x=-1,1, \\text { and } 3 \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { expression for } f(x) \\\\ 1: f(4) \\text { and } f(-2)\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          54,
+          568,
+          411
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          168.768,
+          57.888,
+          442.94399999999996,
+          214.84799999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          246.23999999999998,
+          535.68,
+          259.2
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.088,
+          261.216,
+          525.024,
+          275.616
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.512,
+          277.056,
+          524.448,
+          291.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          298.368,
+          479.52,
+          311.328
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.952,
+          316.79999999999995,
+          539.136,
+          329.76
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          83.52,
+          330.33599999999996,
+          220.32,
+          342.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          347.904,
+          516.096,
+          360.864
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          366.04799999999994,
+          522.7199999999999,
+          380.448
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2015-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2015-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

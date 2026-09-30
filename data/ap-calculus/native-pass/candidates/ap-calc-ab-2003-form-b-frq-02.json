@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2003-form-b-frq-02",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A tank contains 125 gallons of heating oil at time $t = 0$. During the time interval $0 <= t <= 12$ hours, heating oil is pumped into the tank at the rate $ H(t)= 2 + frac(10,(1 + ln(t + 1))) \" gallons per hour \" $ During the same time interval, heating oil is removed from the tank at the rate $ R(t)= 12 sin lr((frac(t^(2),47))) \" gallons per hour. \" $\n\n(a) How many gallons of heating oil are pumped into the tank during the time interval $0 <= t <= 12$ hours?\n\n(b) Is the level of heating oil in the tank rising or falling at time $t = 6$ hours? Give a reason for your answer.\n\n(c) How many gallons of heating oil are in the tank at time $t = 12$ hours?\n\n(d) At what time $t$, for $0 <= t <= 12$, is the volume of heating oil in the tank the least? Show the analysis that leads to your conclusion.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          70,
+          572,
+          300
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          74.30399999999999,
+          558.7199999999999,
+          87.83999999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          87.264,
+          215.99999999999997,
+          99.648
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "math",
+        "rect": [
+          205.344,
+          103.96799999999999,
+          406.368,
+          131.904
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          137.952,
+          409.53599999999994,
+          150.91199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "math",
+        "rect": [
+          223.48799999999997,
+          154.65599999999998,
+          388.79999999999995,
+          186.91199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          192.95999999999998,
+          535.3919999999999,
+          205.92
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          211.67999999999998,
+          548.352,
+          224.64
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          230.112,
+          394.272,
+          242.49599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          248.832,
+          546.9119999999999,
+          261.216
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          261.216,
+          194.976,
+          274.176
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "c3512e321cd07ef0206b7412113656682be26ecbd96c76e8e5e59d00dcac4808",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-09-30T23:35:43.846Z",
+  "input": "/home/max/dev/apps/ocr-frq/data/ap-calculus/native-pass/product/testgen-question-bank.json",
+  "inputSha256": "ca93cd8a6871ac5029c8f72191b6dfa4bbab48d25bc1e3824ecd9a9c7fe6f48b",
+  "output": "/home/max/dev/apps/ocr-frq/data/ap-calculus/ap-calculus-frq-bank",
+  "schemaVersion": 1,
+  "legacyRevision": "bd2acc1",
+  "questions": 408,
+  "images": 183,
+  "files": 597,
+  "bytes": 4744217,
+  "checks": [
+    "historical schema-1 importer",
+    "current importer",
+    "all question content preserved",
+    "all image bytes preserved",
+    "manifest sizes and hashes",
+    "on-disk folder re-import",
+    "empty saved-tests migration"
+  ],
+  "limitations": [
+    "Browser Local Folder click-through not performed.",
+    "Source draft content and its review limitations are unchanged.",
+    "Independent snapshot: future exports do not overwrite user edits."
+  ]
+}

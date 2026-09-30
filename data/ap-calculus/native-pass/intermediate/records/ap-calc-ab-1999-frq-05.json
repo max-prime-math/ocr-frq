@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1999-frq-05",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-1999-frq-05-diagram-01.png}\nThe graph of the function \\(f\\), consisting of three line segments, is given above. Let \\(g(x)=\\int_{1}^{x} f(t) d t\\).\n(a) Compute \\(g(4)\\) and \\(g(-2)\\).\n(b) Find the instantaneous rate of change of \\(g\\), with respect to \\(x\\), at \\(x=1\\).\n(c) Find the absolute minimum value of \\(g\\) on the closed interval [-2, 4]. Justify your answer.\n(d) The second derivative of \\(g\\) is not defined at \\(x=1\\) and \\(x=2\\). How many of these values are \\(x\\)-coordinates\nof points of inflection of the graph of \\(g\\) ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1999-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1999-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        227.11199951171875,
+        71.87999725341797,
+        383.7359924316406,
+        227.06399536132812
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[5.] The graph of the function \\(f\\), consisting of three line segments, is given above. Let \\(g(x)=\\int_{1}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Compute \\(g(4)\\) and \\(g(-2)\\).\n\\item[(b)] Find the instantaneous rate of change of \\(g\\), with respect to \\(x\\), at \\(x=1\\).\n\\item[(c)] Find the absolute minimum value of \\(g\\) on the closed interval [-2, 4]. Justify your answer.\n\\item[(d)] The second derivative of \\(g\\) is not defined at \\(x=1\\) and \\(x=2\\). How many of these values are \\(x\\)-coordinates of points of inflection of the graph of \\(g\\) ? Justify your answer.\n\\end{itemize}\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/0e9e931f-4e97-4443-aeef-9e9fc43b2085-1.jpg?height=419&width=425&top_left_y=287&top_left_x=1407)\n(a) \\(g(4)=\\int_{1}^{4} f(t) d t=\\frac{3}{2}+1+\\frac{1}{2}-\\frac{1}{2}=\\frac{5}{2}\\)\n\\(g(-2)=\\int_{1}^{-2} f(t) d t=-\\frac{1}{2}(12)=-6\\)\n(b) \\(g^{\\prime}(1)=f(1)=4\\)\n(c) \\(g\\) is increasing on [-2, 3] and decreasing on [3, 4]. Therefore, \\(g\\) has absolute minimum at an endpoint of [-2, 4].\nSince \\(g(-2)=-6\\) and \\(g(4)=\\frac{5}{2}\\),\nthe absolute minimum value is -6 .\n(d) One; \\(x=1\\)\nOn \\((-2,1), g^{\\prime \\prime}(x)=f^{\\prime}(x)>0\\)\nOn \\((1,2), g^{\\prime \\prime}(x)=f^{\\prime}(x)<0\\)\nOn \\((2,4), g^{\\prime \\prime}(x)=f^{\\prime}(x)<0\\)\nTherefore \\((1, g(1))\\) is a point of inflection and \\((2, g(2))\\) is not.\n\\(2\\left\\{\\begin{array}{l}1: g(4) \\\\ 1: g(-2)\\end{array}\\right.\\)\n1: answer\n\\(3\\left\\{\\begin{array}{l}\\text { 1: interior analysis } \\\\ \\text { 1: endpoint analysis } \\\\ \\text { 1: answer }\\end{array}\\right.\\)\n\\(3\\left\\{\\begin{array}{l}1: \\text { choice of } x=1 \\text { only } \\\\ 1: \\text { show }(1, g(1)) \\text { is a point of inflection } \\\\ 1: \\text { show }(2, g(2)) \\text { is not a point of inflection }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          39,
+          572,
+          703
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          230.112,
+          74.88,
+          380.736,
+          224.064
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          245.088,
+          512.064,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          280.224,
+          202.176,
+          294.048
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          307.584,
+          402.04799999999994,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          332.352,
+          483.55199999999996,
+          346.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.512,
+          359.712,
+          561.5999999999999,
+          372.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          84.672,
+          372.67199999999997,
+          360.28799999999995,
+          385.056
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-frq-06",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function defined by\n\\[\nf(x)= \\begin{cases}\\sqrt{x+1} & \\text { for } 0 \\leq x \\leq 3 \\\\ 5-x & \\text { for } 3<x \\leq 5 .\\end{cases}\n\\]\n(a) Is \\(f\\) continuous at \\(x=3\\) ? Explain why or why not.\n(b) Find the average value of \\(f(x)\\) on the closed interval \\(0 \\leq x \\leq 5\\).\n(c) Suppose the function \\(g\\) is defined by\n\\[\ng(x)= \\begin{cases}k \\sqrt{x+1} & \\text { for } 0 \\leq x \\leq 3 \\\\ m x+2 & \\text { for } 3<x \\leq 5,\\end{cases}\n\\]\nwhere \\(k\\) and \\(m\\) are constants. If \\(g\\) is differentiable at \\(x=3\\), what are the values of \\(k\\) and \\(m\\) ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nLet \\(f\\) be the function defined by\n\\[\nf(x)= \\begin{cases}\\sqrt{x+1} & \\text { for } 0 \\leq x \\leq 3 \\\\ 5-x & \\text { for } 3<x \\leq 5 .\\end{cases}\n\\]\n\\begin{itemize}\n\\item[(a)] Is \\(f\\) continuous at \\(x=3\\) ? Explain why or why not.\n\\item[(b)] Find the average value of \\(f(x)\\) on the closed interval \\(0 \\leq x \\leq 5\\).\n\\item[(c)] Suppose the function \\(g\\) is defined by\n\\[\ng(x)= \\begin{cases}k \\sqrt{x+1} & \\text { for } 0 \\leq x \\leq 3 \\\\ m x+2 & \\text { for } 3<x \\leq 5,\\end{cases}\n\\]\nwhere \\(k\\) and \\(m\\) are constants. If \\(g\\) is differentiable at \\(x=3\\), what are the values of \\(k\\) and \\(m\\) ?\n\\item[(a)] \\(f\\) is continuous at \\(x=3\\) because\n\\[\n\\lim _{x \\rightarrow 3^{-}} f(x)=\\lim _{x \\rightarrow 3^{+}} f(x)=2 .\n\\]\nTherefore, \\(\\lim _{x \\rightarrow 3} f(x)=2=f(3)\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{0}^{5} f(x) d x & =\\int_{0}^{3} f(x) d x+\\int_{3}^{5} f(x) d x \\\\\n& =\\left.\\frac{2}{3}(x+1)^{3 / 2}\\right|_{0} ^{3}+\\left.\\left(5 x-\\frac{1}{2} x^{2}\\right)\\right|_{3} ^{5} \\\\\n& =\\left(\\frac{16}{3}-\\frac{2}{3}\\right)+\\left(\\frac{25}{2}-\\frac{21}{2}\\right)=\\frac{20}{3}\n\\end{aligned}\n\\]\nAverage value: \\(\\frac{1}{5} \\int_{0}^{5} f(x) d x=\\frac{4}{3}\\)\n\\item[(c)] Since \\(g\\) is continuous at \\(x=3,2 k=3 m+2\\).\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)=\\left\\{\\begin{array}{cc}\n\\frac{k}{2 \\sqrt{x+1}} & \\text { for } 0<x<3 \\\\\nm & \\text { for } 3<x<5\n\\end{array}\\right. \\\\\n& \\lim _{x \\rightarrow 3^{-}} g^{\\prime}(x)=\\frac{k}{4} \\text { and } \\lim _{x \\rightarrow 3^{+}} g^{\\prime}(x)=m\n\\end{aligned}\n\\]\nSince these two limits exist and \\(g\\) is\ndifferentiable at \\(x=3\\), the two limits are\nequal. Thus \\(\\frac{k}{4}=m\\).\n\\[\n8 m=3 m+2 ; m=\\frac{2}{5} \\text { and } k=\\frac{8}{5}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          428,
+          572,
+          643
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          447.84,
+          208.51199999999997,
+          460.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "math",
+        "rect": [
+          228.95999999999998,
+          466.55999999999995,
+          382.464,
+          498.816
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          506.01599999999996,
+          316.79999999999995,
+          519.5519999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          527.04,
+          375.84,
+          540.0
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          548.352,
+          249.408,
+          561.8879999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 18,
+        "type": "math",
+        "rect": [
+          226.944,
+          566.208,
+          383.616,
+          597.8879999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          603.9359999999999,
+          508.60799999999995,
+          617.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

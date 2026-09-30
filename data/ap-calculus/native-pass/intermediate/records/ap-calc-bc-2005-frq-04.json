@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2005-frq-04",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=2 x-y$.\\\\\n(a) On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated, and sketch the solution curve that passes through the point $(0,1)$.\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2005-frq-04-diagram-01.jpg}\n\\end{center}\n(b) The solution curve that passes through the point $(0,1)$ has a local minimum at $x=\\ln \\left(\\frac{3}{2}\\right)$. What is the $y$-coordinate of this local minimum?\\\\\n(c) Let $y=f(x)$ be the particular solution to the given differential equation with the initial condition $f(0)=1$. Use Euler's method, starting at $x=0$ with two steps of equal size, to approximate $f(-0.4)$. Show the work that leads to your answer.\\\\\n(d) Find $\\frac{d^{2} y}{d x^{2}}$ in terms of $x$ and $y$. Determine whether the approximation found in part (c) is less than or greater than $f(-0.4)$. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2005-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2005-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2005_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nConsider the differential equation \\(\\frac{d y}{d x}=2 x-y\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated, and sketch the solution curve that passes through the point (0, 1). (Note: Use the axes provided in the pink test booklet.)\n\\item[(b)] The solution curve that passes through the point \\((0,1)\\) has a local minimum at \\(x=\\ln \\left(\\frac{3}{2}\\right)\\). What is the \\(y\\)-coordinate of this local minimum?\n\\item[(c)] Let \\(y=f(x)\\) be the particular solution to the given differential equation with the initial condition \\(f(0)=1\\). Use Euler's method, starting at \\(x=0\\) with two steps of equal size, to approximate \\(f(-0.4)\\). Show the work that leads to your answer.\n\\item[(d)] Find \\(\\frac{d^{2} y}{d x^{2}}\\) in terms of \\(x\\) and \\(y\\). Determine whether the approximation found in part (c) is less than or greater than \\(f(-0.4)\\). Explain your reasoning.\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/24b0949d-f579-4b32-a162-bf906c33abee-1.jpg?height=546&width=739&top_left_y=1134&top_left_x=318)\n\\item[(b)] \\(\\frac{d y}{d x}=0\\) when \\(2 x=y\\)\nThe \\(y\\)-coordinate is \\(2 \\ln \\left(\\frac{3}{2}\\right)\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\nf(-0.2) & \\approx f(0)+f^{\\prime}(0)(-0.2) \\\\\n& =1+(-1)(-0.2)=1.2 \\\\\nf(-0.4) & \\approx f(-0.2)+f^{\\prime}(-0.2)(-0.2) \\\\\n& \\approx 1.2+(-1.6)(-0.2)=1.52\n\\end{aligned}\n\\]\n\\item[(d)] \\(\\frac{d^{2} y}{d x^{2}}=2-\\frac{d y}{d x}=2-2 x+y\\)\n\\(\\frac{d^{2} y}{d x^{2}}\\) is positive in quadrant II because \\(x<0\\) and \\(y>0\\).\n\\(1.52<f(-0.4)\\) since all solution curves in quadrant II are concave up.\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { nonzero slopes } \\\\ 1: \\text { curve through }(0,1)\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { sets } \\frac{d y}{d x}=0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n2 : \\(\\left\\{\\begin{array}{l}1: \\text { Euler's method with two steps } \\\\ 1: \\text { Euler approximation to } f(-0.4)\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{d^{2} y}{d x^{2}} \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          59,
+          572,
+          603
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

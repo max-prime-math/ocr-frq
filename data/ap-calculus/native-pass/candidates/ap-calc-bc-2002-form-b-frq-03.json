@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2002-form-b-frq-03",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg\", width: 65%)\n\nLet $R$ be the region in the first quadrant bounded by the $y$-axis and the graphs of $y = 4 x - x^(3)+ 1$ and $y = frac(3,4) x$.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\n\n(c) Write an expression involving one or more integrals that gives the perimeter of $R$. Do not evaluate.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2002-form-b_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          226,
+          572,
+          526
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "1e4c784379bd5d56a6493b64ad18ad00ab39afe00960759f09afe0f1d690543a",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ]
+}

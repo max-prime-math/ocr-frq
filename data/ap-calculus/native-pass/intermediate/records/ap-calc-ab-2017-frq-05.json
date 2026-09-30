@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2017-frq-05",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "rawPrompt": "Two particles move along the \\(x\\)-axis. For \\(0 \\leq t \\leq 8\\), the position of particle \\(P\\) at time \\(t\\) is given by\n\\(x_{P}(t)=\\ln \\left(t^{2}-2 t+10\\right)\\), while the velocity of particle \\(Q\\) at time \\(t\\) is given by \\(v_{Q}(t)=t^{2}-8 t+15\\).\nParticle \\(Q\\) is at position \\(x=5\\) at time \\(t=0\\).\n(a) For \\(0 \\leq t \\leq 8\\), when is particle \\(P\\) moving to the left?\n(b) For \\(0 \\leq t \\leq 8\\), find all times \\(t\\) during which the two particles travel in the same direction.\n(c) Find the acceleration of particle \\(Q\\) at time \\(t=2\\). Is the speed of particle \\(Q\\) increasing, decreasing, or\nneither at time \\(t=2\\) ? Explain your reasoning.\n(d) Find the position of particle \\(Q\\) the first time it changes direction.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\\begin{itemize}\n\\item[(a)] \\(x_{P}^{\\prime}(t)=\\frac{2 t-2}{t^{2}-2 t+10}=\\frac{2(t-1)}{t^{2}-2 t+10}\\)\n\\(t^{2}-2 t+10>0\\) for all \\(t\\).\n\\(x_{P}^{\\prime}(t)=0 \\Rightarrow t=1\\)\n\\(x_{P}^{\\prime}(t)<0\\) for \\(0 \\leq t<1\\).\nTherefore, the particle is moving to the left for \\(0 \\leq t<1\\).\n\\item[(b)] \\(v_{Q}(t)=(t-5)(t-3)\\)\n\\(v_{Q}(t)=0 \\Rightarrow t=3, t=5\\)\n![](https://cdn.mathpix.com/cropped/9fe1f645-3770-4eda-9aa7-7d875959b6d6-1.jpg?height=367&width=917&top_left_y=1154&top_left_x=256)\nBoth particles move in the same direction for \\(1<t<3\\) and \\(5<t \\leq 8\\) since \\(v_{P}(t)=x_{P}^{\\prime}(t)\\) and \\(v_{Q}(t)\\) have the same sign on these intervals.\n\\item[(c)] \\(a_{Q}(t)=v_{Q}^{\\prime}(t)=2 t-8\\)\n\\(a_{Q}(2)=2 \\cdot 2-8=-4\\)\n\\(a_{Q}(2)<0\\) and \\(v_{Q}(2)=3>0\\)\nAt time \\(t=2\\), the speed of the particle is decreasing because velocity and acceleration have opposite signs.\n\\item[(d)] Particle \\(Q\\) first changes direction at time \\(t=3\\).\n\\[\n\\begin{aligned}\nx_{Q}(3) & =x_{Q}(0)+\\int_{0}^{3} v_{Q}(t) d t=5+\\int_{0}^{3}\\left(t^{2}-8 t+15\\right) d t \\\\\n& =5+\\left[\\frac{1}{3} t^{3}-4 t^{2}+15 t\\right]_{t=0}^{t=3}=5+(9-36+45)=23\n\\end{aligned}\n\\]\n\\item[2] : \\(\\left\\{\\begin{array}{l}1: x_{P}^{\\prime}(t) \\\\ 1: \\text { interval }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1 \\text { : intervals } \\\\ 1 \\text { : analysis using } v_{P}(t) \\text { and } v_{Q}(t)\\end{array}\\right.\\)\n\\item[] Note: 1/2 if only one interval with analysis\n\\item[] Note: \\(0 / 2\\) if no analysis\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: a_{Q}(2) \\\\ 1: \\text { speed decreasing with reason }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          39,
+          91,
+          571,
+          324
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          44.928,
+          95.03999999999999,
+          495.936,
+          108.86399999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          60.48,
+          114.624,
+          506.87999999999994,
+          137.952
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          145.44,
+          258.048,
+          158.39999999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          61.919999999999995,
+          175.968,
+          314.20799999999997,
+          189.79199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          204.48,
+          473.76,
+          217.44
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          233.27999999999997,
+          527.328,
+          247.10399999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          78.91199999999999,
+          247.67999999999998,
+          289.44,
+          261.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          276.192,
+          366.33599999999996,
+          289.152
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

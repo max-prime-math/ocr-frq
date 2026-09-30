@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2006-form-b-frq-02",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2006-form-b-frq-02-diagram-01.png\", width: 65%)\n\nLet $f$ be the function defined for $x >= 0$ with $f(0)= 5$ and $f'$, the first derivative of $f$, given by $f'(x)= e^((- x \\/ 4)) sin lr((x^(2)))$. The graph of $y = f'(x)$ is shown above.\n\n(a) Use the graph of $f'$ to determine whether the graph of $f$ is concave up, concave down, or neither on the interval $1.7 < x < 1.9$. Explain your reasoning.\n\n(b) On the interval $0 <= x <= 3$, find the value of $x$ at which $f$ has an absolute maximum. Justify your answer.\n\n(c) Write an equation for the line tangent to the graph of $f$ at $x = 2$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        198.60000610351562,
+        68.13600158691406,
+        409.3680114746094,
+        222.74400329589844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          67,
+          572,
+          443
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          201.6,
+          71.136,
+          406.368,
+          219.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          232.128,
+          483.84,
+          246.23999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          247.39199999999997,
+          374.976,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.088,
+          276.47999999999996,
+          547.1999999999999,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          291.45599999999996,
+          294.62399999999997,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          310.75199999999995,
+          551.52,
+          323.712
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          330.33599999999996,
+          369.50399999999996,
+          343.87199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "406f49f912ff810c45fad127e48d5cc9faee0177ab5b6d1a46172e0a0e83eb15",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2024-frq-03",
+  "course": "AB",
+  "year": 2024,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2024.pdf",
+      "sha256": "070c3a4cd277d6aa74c5cb1b0dd5ae631458d71ac7cf5f7dfe2460814aaf08bd",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ]
+  },
+  "rawPrompt": "The depth of seawater at a location can be modeled by the function \\(H\\) that satisfies the differential equation\n\\(\\frac{d H}{d t}=\\frac{1}{2}(H-1) \\cos \\left(\\frac{t}{2}\\right)\\), where \\(H(t)\\) is measured in feet and \\(t\\) is measured in hours after noon ( \\(t=0\\) ). It is\nknown that \\(H(0)=4\\).\n(a) A portion of the slope field for the differential equation is provided. Sketch the solution curve, \\(y=H(t)\\),\nthrough the point (0, 4).\n\\includegraphics{ap-calc-ab-2024-frq-03-diagram-01.png}\n(b) For \\(0<t<5\\), it can be shown that \\(H(t)>1\\). Find the value of \\(t\\), for \\(0<t<5\\), at which \\(H\\) has a critical\npoint. Determine whether the critical point corresponds to a relative minimum, a relative maximum, or\nneither a relative minimum nor a relative maximum of the depth of seawater at the location. Justify your\nanswer.\n(c) Use separation of variables to find \\(y=H(t)\\), the particular solution to the differential equation\n\\(\\frac{d H}{d t}=\\frac{1}{2}(H-1) \\cos \\left(\\frac{t}{2}\\right)\\) with initial condition \\(H(0)=4\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2024-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2024-frq-03-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        219.04800415039062,
+        213.86399841308594,
+        432.9840087890625,
+        475.89599609375
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          53,
+          75,
+          556,
+          620
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          56.736,
+          78.91199999999999,
+          546.048,
+          92.73599999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          69.696,
+          99.648,
+          547.1999999999999,
+          127.008
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          134.784,
+          169.344,
+          149.184
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          166.176,
+          548.64,
+          180.0
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          87.264,
+          181.152,
+          195.552,
+          194.976
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "chart",
+        "rect": [
+          222.04799999999997,
+          216.86399999999998,
+          429.984,
+          472.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          488.736,
+          551.232,
+          501.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          87.264,
+          504.28799999999995,
+          540.0,
+          517.2479999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          87.264,
+          519.8399999999999,
+          546.6239999999999,
+          532.8
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          87.264,
+          537.6959999999999,
+          122.39999999999999,
+          547.4879999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          567.6479999999999,
+          503.712,
+          581.472
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          86.68799999999999,
+          587.808,
+          344.15999999999997,
+          615.168
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-ab-2024-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2024-frq-03",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2021-frq-05",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        9
+      ]
+    },
+    "promptPages": [
+      9
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "rawPrompt": "Consider the function \\(y=f(x)\\) whose curve is given by the equation \\(2 y^{2}-6=y \\sin x\\) for \\(y>0\\).\n(a) Show that \\(\\frac{d y}{d x}=\\frac{y \\cos x}{4 y-\\sin x}\\).\n(b) Write an equation for the line tangent to the curve at the point \\((0, \\sqrt{3})\\).\n(c) For \\(0 \\leq x \\leq \\pi\\) and \\(y>0\\), find the coordinates of the point where the line tangent to the curve is\nhorizontal.\n(d) Determine whether \\(f\\) has a relative minimum, a relative maximum, or neither at the point found in\npart (c). Justify your answer.\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "Part B (AB): Graphing calculator not allowed\nQuestion 5 9 points\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n\nConsider the function \\(y=f(x)\\) whose curve is given by the equation \\(2 y^{2}-6=y \\sin x\\) for \\(y>0\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & Scoring & \\\\\n\\hline \\multicolumn{3}{|l|}{Show that \\(\\frac{d y}{d x}=\\frac{y \\cos x}{4 y-\\sin x}\\).} \\\\\n\\hline \\(\\frac{d}{d x}\\left(2 y^{2}-6\\right)=\\frac{d}{d x}(y \\sin x) \\Rightarrow 4 y \\frac{d y}{d x}=\\frac{d y}{d x} \\sin x+y \\cos x\\) & Implicit differentiation & 1 point \\\\\n\\hline \\[\n\\begin{aligned}\n& \\Rightarrow 4 y \\frac{d y}{d x}-\\frac{d y}{d x} \\sin x=y \\cos x \\Rightarrow \\frac{d y}{d x}(4 y-\\sin x)=y \\cos x \\\\\n& \\Rightarrow \\frac{d y}{d x}=\\frac{y \\cos x}{4 y-\\sin x}\n\\end{aligned}\n\\] & Verification & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point is earned only for correctly implicitly differentiating \\(2 y^{2}-6=y \\sin x\\). Responses may use alternative notations for \\(\\frac{d y}{d x}\\), such as \\(y^{\\prime}\\).\n\\item[-] The second point may not be earned without the first point.\n\\item[-] It is sufficient to present \\(\\frac{d y}{d x}(4 y-\\sin x)=y \\cos x\\) to earn the second point, provided that there are no subsequent errors.\n\\end{itemize}\n\nTotal for part (a) 2 points\n\\begin{itemize}\n\\item[(b)] Write an equation for the line tangent to the curve at the point \\((0, \\sqrt{3})\\).\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline At the point \\((0, \\sqrt{3}), \\frac{d y}{d x}=\\frac{\\sqrt{3} \\cos 0}{4 \\sqrt{3}-\\sin 0}=\\frac{1}{4}\\). & Answer & 1 point \\\\\n\\hline An equation for the tangent line is \\(y=\\sqrt{3}+\\frac{1}{4} x\\). & & \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] Any correct tangent line equation will earn the point. No supporting work is required. Simplification of the slope value is not required.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (b) 1 point\n\\begin{itemize}\n\\item[(c)] For \\(0 \\leq x \\leq \\pi\\) and \\(y>0\\), find the coordinates of the point where the line tangent to the curve is horizontal.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(\\frac{d y}{d x}=\\frac{y \\cos x}{4 y-\\sin x}=0 \\Rightarrow y \\cos x=0\\) and \\(4 y-\\sin x \\neq 0\\) & Sets \\(\\frac{d y}{d x}=0\\) & 1 point \\\\\n\\hline \\(y \\cos x=0\\) and \\(y>0 \\Rightarrow x=\\frac{\\pi}{2}\\) & \\(x=\\frac{\\pi}{2}\\) & 1 point \\\\\n\\hline \\begin{tabular}[t]{l}\nWhen \\(x=\\frac{\\pi}{2}, y \\sin x=2 y^{2}-6 \\Rightarrow y \\sin \\frac{\\pi}{2}=2 y^{2}-6\\)\n\\[\n\\begin{aligned}\n& \\Rightarrow y=2 y^{2}-6 \\Rightarrow 2 y^{2}-y-6=0 \\\\\n& \\Rightarrow(2 y+3)(y-2)=0 \\Rightarrow y=2\n\\end{aligned}\n\\] \\\\\nWhen \\(x=\\frac{\\pi}{2}\\) and \\(y=2,4 y-\\sin x=8-1 \\neq 0\\). Therefore, the line tangent to the curve is horizontal at the point \\(\\left(\\frac{\\pi}{2}, 2\\right)\\).\n\\end{tabular} & \\(y=2\\) & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned by any of \\(\\frac{d y}{d x}=0, \\frac{y \\cos x}{4 y-\\sin x}=0, y \\cos x=0\\), or \\(\\cos x=0\\).\n\\item[-] If additional \"correct\" \\(x\\)-values are considered outside of the given domain, the response must commit to only \\(x=\\frac{\\pi}{2}\\) to earn the second point. Any presented \\(y\\)-values, correct or incorrect, are not considered for the second point.\n\\item[-] Entering with \\(x=\\frac{\\pi}{2}\\) does not earn the first point, earns the second point, and is eligible for the third point. The third point is earned for finding \\(y=2\\). The coordinates do not have to be presented as an ordered pair.\n\\item[-] The third point is not earned with additional points present unless the response commits to the correct point.\n\\end{itemize}\n\\end{itemize}\n\nTotal for part (c) 3 points\n\\begin{itemize}\n\\item[(d)] Determine whether \\(f\\) has a relative minimum, a relative maximum, or neither at the point found in part (c). Justify your answer.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\(\\frac{d^{2} y}{d x^{2}}=\\frac{(4 y-\\sin x)\\left(\\frac{d y}{d x} \\cos x-y \\sin x\\right)-(y \\cos x)\\left(4 \\frac{d y}{d x}-\\cos x\\right)}{(4 y-\\sin x)^{2}}\\) & Considers \\(\\frac{d^{2} y}{d x^{2}}\\) & 1 point \\\\\n\\hline When \\(x=\\frac{\\pi}{2}\\) and \\(y=2\\),\n\\[\n\\begin{aligned}\n& \\frac{d^{2} y}{d x^{2}}=\\frac{\\left(4 \\cdot 2-\\sin \\frac{\\pi}{2}\\right)\\left(0 \\cdot \\cos \\frac{\\pi}{2}-2 \\cdot \\sin \\frac{\\pi}{2}\\right)-\\left(2 \\cos \\frac{\\pi}{2}\\right)\\left(4 \\cdot 0-\\cos \\frac{\\pi}{2}\\right)}{\\left(4 \\cdot 2-\\sin \\frac{\\pi}{2}\\right)^{2}} \\\\\n& =\\frac{(7)(-2)-(0)(0)}{(7)^{2}}=\\frac{-2}{7}<0 .\n\\end{aligned}\n\\] & \\(\\frac{d^{2} y}{d x^{2}}\\) at \\(\\left(\\frac{\\pi}{2}, 2\\right)\\) & 1 point \\\\\n\\hline \\(f\\) has a relative maximum at the point \\(\\left(\\frac{\\pi}{2}, 2\\right)\\) because \\(\\frac{d y}{d x}=0\\) and \\(\\frac{d^{2} y}{d x^{2}}<0\\). & Answer with justification & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\begin{itemize}\n\\item[-] The first point is earned for an attempt to use the quotient rule (or product rule) to find \\(\\frac{d^{2} y}{d x^{2}}\\).\n\\item[-] The second point is earned for correctly finding \\(\\frac{d^{2} y}{d x^{2}}\\) and evaluating to find that \\(\\frac{d^{2} y}{d x^{2}}<0\\) at \\(\\left(\\frac{\\pi}{2}, 2\\right)\\). The explicit value of \\(-\\frac{2}{7}\\) or the equivalent does not need to be reported, but any reported values must be correct in order to earn this point.\n\\item[-] The third point can be earned without the second point by reaching a consistent conclusion based on the reported sign of a nonzero value of \\(\\frac{d^{2} y}{d x^{2}}\\) obtained utilizing \\(\\frac{d y}{d x}=0\\).\n\\item[-] Imports: A response is eligible to earn all 3 points in part (d) with a point of the form \\(\\left(\\frac{\\pi}{2}, k\\right)\\) with \\(k>0\\), imported from part (c).\n\\end{itemize}\n\\end{itemize}\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Alternate Solution for part (d) & \\multicolumn{2}{|c|}{Scoring for Alternate Solution} \\\\\n\\hline For the function \\(y=f(x)\\) near the point \\(\\left(\\frac{\\pi}{2}, 2\\right), 4 y-\\sin x>0\\) and \\(y>0\\). & Considers sign of \\(4 y-\\sin x\\) & 1 point \\\\\n\\hline Thus, \\(\\frac{d y}{d x}=\\frac{y \\cos x}{4 y-\\sin x}\\) changes from positive to negative at \\(x=\\frac{\\pi}{2}\\). & \\(\\frac{d y}{d x}\\) changes from positive to negative at \\(x=\\frac{\\pi}{2}\\) & 1 point \\\\\n\\hline By the First Derivative Test, \\(f\\) has a relative maximum at the point \\(\\left(\\frac{\\pi}{2}, 2\\right)\\). & Conclusion & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point for considering the sign of \\(4 y-\\sin x\\) may also be earned by stating that \\(4 y-\\sin x\\) is not equal to zero.\n\\item[-] The second and third points can be earned without the first point.\n\\item[-] To earn the second point a response must state that \\(\\frac{d y}{d x}\\) (or \\(\\cos x\\) ) changes from positive to negative at \\(x=\\frac{\\pi}{2}\\).\n\\item[-] The third point cannot be earned without the second point.\n\\item[-] A response that concludes there is a minimum at this point does not earn the third point.\n\\end{itemize}\n\nTotal for part (d) 3 points\nTotal for question 59 points",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 9,
+        "rect": [
+          30,
+          89,
+          527,
+          344
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 9,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          34.26369365002424,
+          93.58258928571428,
+          483.14687348521574,
+          109.99553571428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          49.52399418322831,
+          117.77008928571428,
+          197.23218613669417,
+          146.56473214285714
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          50.387784779447415,
+          159.234375,
+          382.0833737275812,
+          174.4955357142857
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          50.387784779447415,
+          196.09151785714283,
+          492.3606398448861,
+          209.33705357142856
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          67.37566650508968,
+          210.7767857142857,
+          116.899660688318,
+          222.29464285714283
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.96364517692681,
+          238.70758928571428,
+          505.60542898691233,
+          251.3772321428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          68.81531749878818,
+          253.3928571428571,
+          197.52011633543384,
+          265.4866071428571
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          306.375,
+          522.0174503150752,
+          319.62053571428567
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          324.8035714285714,
+          473.6451769268057,
+          338.0491071428571
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-05",
+      "sourcePage": 9,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

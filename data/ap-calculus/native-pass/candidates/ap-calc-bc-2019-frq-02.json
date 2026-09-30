@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2019-frq-02",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2019-frq-02-diagram-01.jpg\", width: 65%)\n\nLet $S$ be the region bounded by the graph of the polar curve $r(theta)= 3 sqrt(theta) sin lr((theta^(2)))$ for $0 <= theta <= sqrt(pi)$, as shown in the figure above.\n\n(a) Find the area of $S$.\n\n(b) What is the average distance from the origin to a point on the polar curve $r(theta)= 3 sqrt(theta) sin lr((theta^(2)))$ for $0 <= theta <= sqrt(pi) ?$\n\n(c) There is a line through the origin with positive slope $m$ that divides the region $S$ into two regions with equal areas. Write, but do not solve, an equation involving one or more integrals whose solution gives the value of $m$.\n\n(d) For $k > 0$, let $A(k)$ be the area of the portion of region $S$ that is also inside the circle $r = k cos theta$. Find $lim_(k -> oo) A(k)$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2019-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2019-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2019_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          35,
+          78,
+          571,
+          587
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6bb7b3bd5f1c1a7e81607611d8aab7067bda0903aeff0620de2145a537943710",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    }
+  ]
+}

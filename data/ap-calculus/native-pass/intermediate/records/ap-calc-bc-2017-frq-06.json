@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2017-frq-06",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "rawPrompt": "$$\n\\begin{aligned}\nf(0) & =0 \\\\\nf^{\\prime}(0) & =1 \\\\\nf^{(n+1)}(0) & =-n \\cdot f^{(n)}(0) \\text { for all } n \\geq 1\n\\end{aligned}\n$$\nA function $f$ has derivatives of all orders for $-1<x<1$. The derivatives of $f$ satisfy the conditions above. The Maclaurin series for $f$ converges to $f(x)$ for $|x|<1$.\\\\\n(a) Show that the first four nonzero terms of the Maclaurin series for $f$ are $x-\\frac{x^{2}}{2}+\\frac{x^{3}}{3}-\\frac{x^{4}}{4}$, and write the general term of the Maclaurin series for $f$.\\\\\n(b) Determine whether the Maclaurin series described in part (a) converges absolutely, converges conditionally, or diverges at $x=1$. Explain your reasoning.\\\\\n(c) Write the first four nonzero terms and the general term of the Maclaurin series for $g(x)=\\int_{0}^{x} f(t) d t$.\\\\\n(d) Let $P_{n}\\left(\\frac{1}{2}\\right)$ represent the $n$ th-degree Taylor polynomial for $g$ about $x=0$ evaluated at $x=\\frac{1}{2}$, where $g$ is the function defined in part (c). Use the alternating series error bound to show that $\\left|P_{4}\\left(\\frac{1}{2}\\right)-g\\left(\\frac{1}{2}\\right)\\right|<\\frac{1}{500}$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[(a)] \\(f(0)=0\\)\n\\(f^{\\prime}(0)=1\\)\n\\(f^{\\prime \\prime}(0)=-1(1)=-1\\)\n\\(f^{\\prime \\prime \\prime}(0)=-2(-1)=2\\)\n\\(f^{(4)}(0)=-3(2)=-6\\)\nThe first four nonzero terms are\n\\(0+1 x+\\frac{-1}{2!} x^{2}+\\frac{2}{3!} x^{3}+\\frac{-6}{4!} x^{4}=x-\\frac{x^{2}}{2}+\\frac{x^{3}}{3}-\\frac{x^{4}}{4}\\).\nThe general term is \\(\\frac{(-1)^{n+1} x^{n}}{n}\\).\n\\item[(b)] For \\(x=1\\), the Maclaurin series becomes \\(\\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n}\\).\nThe series does not converge absolutely because the harmonic series diverges.\nThe series alternates with terms that decrease in magnitude to 0, and therefore the series converges conditionally.\n\\item[(c)] \\(\\int_{0}^{x} f(t) d t=\\int_{0}^{x}\\left(t-\\frac{t^{2}}{2}+\\frac{t^{3}}{3}-\\frac{t^{4}}{4}+\\cdots+\\frac{(-1)^{n+1} t^{n}}{n}+\\cdots\\right) d t\\)\n\\(=\\left[\\frac{t^{2}}{2}-\\frac{t^{3}}{3 \\cdot 2}+\\frac{t^{4}}{4 \\cdot 3}-\\frac{t^{5}}{5 \\cdot 4}+\\cdots+\\frac{(-1)^{n+1} t^{n+1}}{(n+1) n}+\\cdots\\right]_{t=0}^{t=x}\\)\n\\(=\\frac{x^{2}}{2}-\\frac{x^{3}}{6}+\\frac{x^{4}}{12}-\\frac{x^{5}}{20}+\\cdots+\\frac{(-1)^{n+1} x^{n+1}}{(n+1) n}+\\cdots\\)\n\\item[(d)] The terms alternate in sign and decrease in magnitude to 0 . By the alternating series error bound, the error \\(\\left|P_{4}\\left(\\frac{1}{2}\\right)-g\\left(\\frac{1}{2}\\right)\\right|\\) is bounded by the magnitude of the first unused term, \\(\\left|-\\frac{(1 / 2)^{5}}{20}\\right|\\).\nThus, \\(\\left|P_{4}\\left(\\frac{1}{2}\\right)-g\\left(\\frac{1}{2}\\right)\\right| \\leq\\left|-\\frac{(1 / 2)^{5}}{20}\\right|=\\frac{1}{32 \\cdot 20}<\\frac{1}{500}\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: f^{\\prime \\prime}(0), f^{\\prime \\prime \\prime}(0), \\text { and } f^{(4)}(0) \\\\ 1: \\text { verify terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[2] : converges conditionally with reason\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { two terms } \\\\ 1: \\text { remaining terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\item[1] : error bound\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          92,
+          570,
+          559.69
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

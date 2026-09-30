@@ -1,0 +1,153 @@
+{
+  "id": "ap-calc-ab-2011-form-b-frq-06",
+  "course": "AB",
+  "year": 2011,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2011-FORM-B.pdf",
+      "sha256": "6d5f62f09cbc73c87bf1e33df856ab367631554dc96c612a5d77efc932cbc360",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2011-FORM-B.pdf",
+      "sha256": "9d6112a109e12fef2c2a6955b86ca1a346eb9081e3c4bb9fde1cfb731af71122"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2011-form-b-frq-06-diagram-01.png\", width: 65%)\n\nLet $g$ be the piecewise-linear function defined on $\\[- 2 pi \\, 4 pi \\]$ whose graph is given above, and let $f(x)= g(x)- cos lr((frac(x,2)))$.\n\n(a) Find $integral_(- 2 pi)^(4 pi) f(x) d x$. Show the computations that lead to your answer.\n\n(b) Find all $x$-values in the open interval $(- 2 pi \\, 4 pi)$ for which $f$ has a critical point.\n\n(c) Let $h(x)= integral_(0)^(3 x) g(t) d t$. Find $h'lr((- frac(pi,3)))$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2011-form-b-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2011-form-b-frq-06-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        202.343994140625,
+        67.55999755859375,
+        408.7919921875,
+        176.95199584960938
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          492
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          205.344,
+          70.55999999999999,
+          405.792,
+          173.952
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          206.784,
+          482.688,
+          220.32
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          222.04799999999997,
+          183.16799999999998,
+          248.54399999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          257.472,
+          384.768,
+          282.23999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          290.304,
+          438.33599999999996,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          313.056,
+          251.42399999999998,
+          338.976
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fa392f23ca6c6dae4c4342b2cc2926e291ba624c343e32915139c1a5b041527e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-28/mathpix-cache/artifacts/ap-calc-ab-2011-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2011-form-b-frq-06",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

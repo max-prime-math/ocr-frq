@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2015-frq-02",
+  "course": "AB",
+  "year": 2015,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2015.pdf",
+      "sha256": "6f057222ecd46cce2adc5876197c1b85c94077b4f42108f097eaccb73451f8ac",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2015.pdf",
+      "sha256": "41556b4f0750b625991d8298e05037cfc655d7cc2f6967137e94be9b5402f774"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2015-frq-02-diagram-01.png\", width: 65%)\n\nLet $f$ and $g$ be the functions defined by $f(x)= 1 + x + e^(x^(2)- 2 x)$ and $g(x)= x^(4)- 6.5 x^(2)+ 6 x + 2$. Let $R$ and $S$ be the two regions enclosed by the graphs of $f$ and $g$ shown in the figure above.\n\n(a) Find the sum of the areas of regions $R$ and $S$.\n\n(b) Region $S$ is the base of a solid whose cross sections perpendicular to the $x$-axis are squares. Find the volume of the solid.\n\n(c) Let $h$ be the vertical distance between the graphs of $f$ and $g$ in region $S$. Find the rate at which $h$ changes with respect to $x$ when $x = 1.8$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2015-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2015-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        192.552001953125,
+        55.17599868774414,
+        420.02398681640625,
+        260.47198486328125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          54,
+          564,
+          411
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          195.552,
+          58.175999999999995,
+          417.02399999999994,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          268.416,
+          558.7199999999999,
+          286.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          288.28799999999995,
+          421.91999999999996,
+          301.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          307.008,
+          287.712,
+          319.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          325.44,
+          529.632,
+          337.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          337.82399999999996,
+          173.37599999999998,
+          349.056
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          355.67999999999995,
+          558.7199999999999,
+          368.64
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          368.64,
+          227.808,
+          381.02399999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "91b6140e5fb6091132f9f584c9558069ae2cc0adfc0766f5d2179bbed9283fb0",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2015-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2015-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

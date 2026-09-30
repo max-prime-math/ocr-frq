@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1998-frq-01",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "rawPrompt": "Let \\(R\\) be the region bounded by the \\(x\\)-axis, the graph of \\(y=\\sqrt{x}\\), and the line \\(x=4\\).\n(a) Find the area of the region \\(R\\).\n(b) Find the value of \\(h\\) such that the vertical line \\(x=h\\) divides the region \\(R\\) into two regions\nof equal area.\n(c) Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n(d) The vertical line \\(x=k\\) divides the region \\(R\\) into two regions such that when these two\nregions are revolved about the \\(x\\)-axis, they generate solids with equal volumes. Find the\nvalue of \\(k\\).",
+  "assets": [],
+  "rawScoringGuide": "1. Let \\(R\\) be the region bounded by the \\(x\\)-axis, the graph of \\(y=\\sqrt{x}\\), and the line \\(x=4\\).\n\\begin{itemize}\n\\begin{itemize}\n\\item[(a)] Find the area of the region \\(R\\).\n\\item[(b)] Find the value of \\(h\\) such that the vertical line \\(x=h\\) divides the region \\(R\\) into two regions of equal area.\n\\item[(c)] Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n\\item[(d)] The vertical line \\(x=k\\) divides the region \\(R\\) into two regions such that when these two regions are revolved about the \\(x\\)-axis, they generate solids with equal volumes. Find the value of \\(k\\).\n\\end{itemize}\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/4acd5a4d-23ad-4458-9886-7e67dd2aca8b-1.jpg?height=387&width=621&top_left_y=718&top_left_x=316)\n\\(A=\\int_{0}^{4} \\sqrt{x} d x=\\left.\\frac{2}{3} x^{3 / 2}\\right|_{0} ^{4}=\\frac{16}{3}\\) or 5.333\n\\item[(b)] \\(\\int_{0}^{h} \\sqrt{x} d x=\\frac{8}{3} \\underset{\\text { or }-}{\\int_{0}^{h} \\sqrt{x}} d x=\\int_{h}^{4} \\sqrt{x} d x\\)\n\\(\\frac{2}{3} h^{3 / 2}=\\frac{8}{3} \\quad \\frac{2}{3} h^{3 / 2}=\\frac{16}{3}-\\frac{2}{3} h^{3 / 2}\\)\n\\(h=\\sqrt[3]{16}\\) or 2.520 or 2.519\n\\item[(c)] \\(V=\\pi \\int_{0}^{4}(\\sqrt{x})^{2} d x=\\left.\\pi \\frac{x^{2}}{2}\\right|_{0} ^{4}=8 \\pi\\)\nor 25.133 or 25.132\n\\item[(d)]\n\\[\n\\begin{array}{l:l}\n\\pi \\int_{0}^{k}(\\sqrt{x})^{2} d x=4 \\pi & \\pi \\int_{0}^{k}(\\sqrt{x})^{2} d x=\\pi \\int_{k}^{4}(\\sqrt{x})^{2} d x \\\\\n\\pi \\frac{k^{2}}{2}=4 \\pi & \\pi \\frac{k^{2}}{2}=8 \\pi-\\pi \\frac{k^{2}}{2} \\\\\nk=\\sqrt{8} \\text { or } 2.828\n\\end{array}\n\\]\n\\end{itemize}\n\\[\n\\mathbf{2} \\begin{cases}1: & A=\\int_{0}^{4} \\sqrt{x} d x \\\\ 1: & \\text { answer }\\end{cases}\n\\]\n\\(\\mathbf{2} \\begin{cases}\\text { 1: } & \\text { equation in } h \\\\ \\text { 1: } & \\text { answer }\\end{cases}\\)\n\\(3 \\begin{cases}\\text { 1: limits and constant } \\\\ \\text { 1: } & \\text { integrand } \\\\ \\text { 1: } & \\text { answer }\\end{cases}\\)\n\\(\\mathbf{2} \\begin{cases}\\text { 1: } & \\text { equation in } k \\\\ \\text { 1: } & \\text { answer }\\end{cases}\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          74.87975356158088,
+          250.84705275656958,
+          497.662362132353,
+          264.67100055486503
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          267.26299076704544,
+          256.03115737017464,
+          281.08693856534086
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          283.96692768998577,
+          540.862219956342,
+          296.92687875088774
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          298.3668733132102,
+          176.83141802619485,
+          310.7508265491832
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          92.44769574333641,
+          314.20681349875707,
+          478.9424237419578,
+          327.16676455965904
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          330.9107504216974,
+          540.862219956342,
+          343.8707014825994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          344.1587003950639,
+          540.862219956342,
+          357.1186514559659
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          358.27064710582385,
+          161.56746826171877,
+          369.2146057794744
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

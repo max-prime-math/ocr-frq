@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1998-frq-03",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-1998-frq-03-diagram-01.png}\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (seconds) & \\(v(t)\\) (feet per second) \\\\\n\\hline 0 & 0 \\\\\n\\hline 5 & 12 \\\\\n\\hline 10 & 20 \\\\\n\\hline 15 & 30 \\\\\n\\hline 20 & 55 \\\\\n\\hline 25 & 70 \\\\\n\\hline 30 & 78 \\\\\n\\hline 35 & 81 \\\\\n\\hline 40 & 75 \\\\\n\\hline 45 & 60 \\\\\n\\hline 50 & 72 \\\\\n\\hline\n\\end{tabular}\nThe graph of the velocity \\(v(t)\\), in ft/sec, of a car traveling on a straight road, for \\(0 \\leq t \\leq 50\\),\nis shown above. A table of values for \\(v(t)\\), at 5 second intervals of time \\(t\\), is shown to the right\nof the graph.\n(a) During what intervals of time is the acceleration of the car positive? Give a reason for\nyour answer.\n(b) Find the average acceleration of the car, in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), over the interval \\(0 \\leq t \\leq 50\\).\n(c) Find one approximation for the acceleration of the car, in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), at \\(t=40\\). Show the\ncomputations you used to arrive at your answer.\n(d) Approximate \\(\\int_{0}^{50} v(t) d t\\) with a Riemann sum, using the midpoints of five subintervals of\nequal length. Using correct units, explain the meaning of this integral.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1998-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1998-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        92.9036865234375,
+        91.4636459350586,
+        315.7669677734375,
+        304.53485107421875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{1998 Calculus AB Scoring Guidelines}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/21d02e66-6070-4ada-8939-ee7e3770805f-1.jpg?height=451&width=507&top_left_y=249&top_left_x=483}\n\\captionsetup{labelformat=empty}\n\\caption{Time (seconds)}\n\\end{figure}\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) (seconds) & \\(v(t)\\) (feet per second) \\\\\n\\hline 0 & 0 \\\\\n\\hline 5 & 12 \\\\\n\\hline 10 & 20 \\\\\n\\hline 15 & 30 \\\\\n\\hline 20 & 55 \\\\\n\\hline 25 & 70 \\\\\n\\hline 30 & 78 \\\\\n\\hline 35 & 81 \\\\\n\\hline 40 & 75 \\\\\n\\hline 45 & 60 \\\\\n\\hline 50 & 72 \\\\\n\\hline\n\\end{tabular}\n3. The graph of the velocity \\(v(t)\\), in ft/sec, of a car traveling on a straight road, for \\(0 \\leq t \\leq 50\\), is shown above. A table of values for \\(v(t)\\), at 5 second intervals of time \\(t\\), is shown to the right of the graph.\n\\begin{itemize}\n\\item[(a)] During what intervals of time is the acceleration of the car positive? Give a reason for your answer.\n\\item[(b)] Find the average acceleration of the car, in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), over the interval \\(0 \\leq t \\leq 50\\).\n\\item[(c)] Find one approximation for the acceleration of the car, in \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\), at \\(t=40\\). Show the computations you used to arrive at your answer.\n\\item[(d)] Approximate \\(\\int_{0}^{50} v(t) d t\\) with a Riemann sum, using the midpoints of five subintervals of equal length. Using correct units, explain the meaning of this integral.\n\\item[(a)] Acceleration is positive on \\((0,35)\\) and \\((45,50)\\) because the velocity \\(v(t)\\) is increasing on [0, 35] and [45, 50]\n\\item[(b)] Avg. Acc. \\(=\\frac{v(50)-v(0)}{50-0}=\\frac{72-0}{50}=\\frac{72}{50}\\) or \\(1.44 \\mathrm{ft} / \\mathrm{sec}^{2}\\)\n\\item[(c)] Difference quotient; e.g.\n\\[\n\\begin{aligned}\n\\frac{v(45)-v(40)}{5} & =\\frac{60-75}{5}=-3 \\mathrm{ft} / \\mathrm{sec}^{2} \\text { or } \\\\\n\\frac{v(40)-v(35)}{5} & =\\frac{75-81}{5}=-\\frac{6}{5} \\mathrm{ft} / \\mathrm{sec}^{2} \\text { or } \\\\\n\\frac{v(45)-v(35)}{10} & =\\frac{60-81}{10}=-\\frac{21}{10} \\mathrm{ft} / \\mathrm{sec}^{2}\n\\end{aligned}\n\\]\nSlope of tangent line, e.g.\nthrough \\((35,90)\\) and \\((40,75): \\frac{90-75}{35-40}=-3 \\mathrm{ft} / \\mathrm{sec}^{2}\\)\n\\item[(d)] \\(\\int_{0}^{50} v(t) d t\\)\n\\[\n\\begin{aligned}\n& \\approx 10[v(5)+v(15)+v(25)+v(35)+v(45)] \\\\\n& =10(12+30+70+81+60) \\\\\n& =2530 \\text { feet }\n\\end{aligned}\n\\]\nThis integral is the total distance traveled in feet over the time 0 to 50 seconds.\n\\end{itemize}\n\\[\n\\mathbf{3} \\begin{cases}1: & (0,35) \\\\ 1: & (45,50) \\\\ 1: & \\text { reason }\\end{cases}\n\\]\nNote: ignore inclusion of endpoints\n\n1: answer\n\\[\n\\mathbf{2} \\begin{cases}1: & \\text { method } \\\\ 1: & \\text { answer }\\end{cases}\n\\]\nNote: 0/2 if first point not earned\n\\[\n\\mathbf{3} \\begin{cases}\\text { 1: } & \\text { midpoint Riemann sum } \\\\ \\text { 1: } & \\text { answer } \\\\ \\text { 1: } & \\text { meaning of integral }\\end{cases}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          66,
+          91,
+          547,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          95.90368436925553,
+          94.46364328835226,
+          312.76697064568015,
+          301.5348613503196
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "table",
+        "rect": [
+          353.0868379480699,
+          104.83160413707385,
+          513.5023100011489,
+          291.742898326527
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          74.87975356158088,
+          310.7508265491832,
+          540.862219956342,
+          323.7107776100852
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          88.70370806525736,
+          324.57477434747864,
+          540.862219956342,
+          337.53472540838067
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          89.27970616957721,
+          338.6867210582386,
+          151.77550048828127,
+          351.07067429421164
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          354.5266612437855,
+          540.862219956342,
+          367.48661230468747
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          110.01563792509192,
+          370.0786025168679,
+          172.51143224379598,
+          381.02256119051845
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 52,
+        "type": "list_item",
+        "rect": [
+          91.2956995346967,
+          384.4785481400923,
+          493.91837445427393,
+          397.4384992009943
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 54,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          400.6064872381037,
+          540.862219956342,
+          414.4304350363991
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 55,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          415.58243068625706,
+          344.15886733111216,
+          427.3903860973011
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 57,
+        "type": "text",
+        "rect": [
+          91.2956995346967,
+          428.83038065962353,
+          542.3022152171416,
+          455.614279518821
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 58,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          454.1742849564985,
+          449.56652042164524,
+          466.55823819247155
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

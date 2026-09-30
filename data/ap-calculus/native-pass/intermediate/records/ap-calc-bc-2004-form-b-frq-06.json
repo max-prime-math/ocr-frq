@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2004-form-b-frq-06",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2004-form-b-frq-06-diagram-01.jpg}\n\\end{center}\nLet $\\ell$ be the line tangent to the graph of $y=x^{n}$ at the point $(1,1)$, where $n>1$, as shown above.\\\\\n(a) Find $\\int_{0}^{1} x^{n} d x$ in terms of $n$.\\\\\n(b) Let $T$ be the triangular region bounded by $\\ell$, the $x$-axis, and the line $x=1$. Show that the area of $T$ is $\\frac{1}{2 n}$.\\\\\n(c) Let $S$ be the region bounded by the graph of $y=x^{n}$, the line $\\ell$, and the $x$-axis. Express the area of $S$ in terms of $n$ and determine the value of $n$ that maximizes the area of $S$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2004-form-b-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2004-form-b-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2004-form-b_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[] Let \\(\\ell\\) be the line tangent to the graph of \\(y=x^{n}\\) at the point (1, 1), where \\(n>1\\), as shown above.\n\\item[(a)] Find \\(\\int_{0}^{1} x^{n} d x\\) in terms of \\(n\\).\n\\item[(b)] Let \\(T\\) be the triangular region bounded by \\(\\ell\\), the \\(x\\)-axis, and the line \\(x=1\\). Show that the area of \\(T\\) is \\(\\frac{1}{2 n}\\).\n(c) Let \\(S\\) be the region bounded by the graph of \\(y=x^{n}\\), the line \\(\\ell\\), and the \\(x\\)-axis. Express the area of \\(S\\) in terms of \\(n\\) and determine the value of \\(n\\) that maximizes the area of \\(S\\).\n![](https://cdn.mathpix.com/cropped/ace209cc-5868-47c6-9e48-1ebb0b1d384d-1.jpg?height=507&width=522&top_left_y=374&top_left_x=1401)\n\\item[(a)] \\(\\int_{0}^{1} x^{n} d x=\\left.\\frac{x^{n+1}}{n+1}\\right|_{0} ^{1}=\\frac{1}{n+1}\\)\n\\item[(b)] Let \\(b\\) be the length of the base of triangle \\(T\\). \\(\\frac{1}{b}\\) is the slope of line \\(\\ell\\), which is \\(n\\)\n\\[\n\\operatorname{Area}(T)=\\frac{1}{2} b(1)=\\frac{1}{2 n}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\operatorname{Area}(S)=\\int_{0}^{1} x^{n} d x-\\operatorname{Area}(T) \\\\\n& \\quad=\\frac{1}{n+1}-\\frac{1}{2 n} \\\\\n& \\frac{d}{d n} \\operatorname{Area}(S)=-\\frac{1}{(n+1)^{2}}+\\frac{1}{2 n^{2}}=0 \\\\\n& 2 n^{2}=(n+1)^{2} \\\\\n& \\sqrt{2} n=(n+1) \\\\\n& n=\\frac{1}{\\sqrt{2}-1}=1+\\sqrt{2}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { antiderivative of } x^{n} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : slope of line } \\ell \\text { is } n \\\\ 1 \\text { : base of } T \\text { is } \\frac{1}{n} \\\\ 1 \\text { : shows area is } \\frac{1}{2 n}\\end{array}\\right.\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}1: \\text { area of } S \\text { in terms of } n \\\\ 1: \\text { derivative } \\\\ 1: \\text { sets derivative equal to } 0 \\\\ 1: \\text { solves for } n\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          268,
+          572,
+          647
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

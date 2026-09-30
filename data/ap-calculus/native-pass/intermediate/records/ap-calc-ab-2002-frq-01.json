@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2002-frq-01",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) and \\(g\\) be the functions given by \\(f(x)=e^{x}\\) and \\(g(x)=\\ln x\\).\n(a) Find the area of the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\) and \\(x=1\\).\n(b) Find the volume of the solid generated when the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\)\nand \\(x=1\\) is revolved about the line \\(y=4\\).\n(c) Let \\(h\\) be the function given by \\(h(x)=f(x)-g(x)\\). Find the absolute minimum value of \\(h(x)\\) on the\nclosed interval \\(\\frac{1}{2} \\leq x \\leq 1\\), and find the absolute maximum value of \\(h(x)\\) on the closed interval \\(\\frac{1}{2} \\leq x \\leq 1\\).\nShow the analysis that leads to your answers.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB 2002 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\nLet \\(f\\) and \\(g\\) be the functions given by \\(f(x)=e^{x}\\) and \\(g(x)=\\ln x\\).\n\\begin{itemize}\n\\item[(a)] Find the area of the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\) and \\(x=1\\).\n\\item[(b)] Find the volume of the solid generated when the region enclosed by the graphs of \\(f\\) and \\(g\\) between \\(x=\\frac{1}{2}\\) and \\(x=1\\) is revolved about the line \\(y=4\\).\n\\item[(c)] Let \\(h\\) be the function given by \\(h(x)=f(x)-g(x)\\). Find the absolute minimum value of \\(h(x)\\) on the closed interval \\(\\frac{1}{2} \\leq x \\leq 1\\), and find the absolute maximum value of \\(h(x)\\) on the closed interval \\(\\frac{1}{2} \\leq x \\leq 1\\). Show the analysis that leads to your answers.\n\\item[(a)] Area \\(=\\int_{1 / 2}^{1}\\left(e^{x}-\\ln x\\right) d x=1.222\\) or 1.223\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{\\frac{1}{2}}^{1}\\left((4-\\ln x)^{2}-\\left(4-e^{x}\\right)^{2}\\right) d x \\\\\n& =7.515 \\pi \\text { or } 23.609\n\\end{aligned}\n\\]\n\\item[(c)] \\(h^{\\prime}(x)=f^{\\prime}(x)-g^{\\prime}(x)=e^{x}-\\frac{1}{x}=0\\) \\(x=0.567143\\)\nAbsolute minimum value and absolute maximum value occur at the critical point or at the endpoints.\n\\[\n\\begin{aligned}\n& h(0.567143)=2.330 \\\\\n& h(0.5)=2.3418 \\\\\n& h(1)=2.718\n\\end{aligned}\n\\]\nThe absolute minimum is 2.330.\nThe absolute maximum is 2.718.\n\\end{itemize}\n\\[\n2\\left\\{\\begin{array}{l}\n1: \\text { integral } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\nNote: Errors in computation come off the third point.",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          74,
+          572,
+          397
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          213.98399999999998,
+          367.488,
+          228.09599999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          238.176,
+          482.4,
+          262.368
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          271.584,
+          556.992,
+          295.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          296.928,
+          279.64799999999997,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          318.52799999999996,
+          535.968,
+          332.64
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          334.08,
+          559.2959999999999,
+          357.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          358.272,
+          283.96799999999996,
+          371.23199999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

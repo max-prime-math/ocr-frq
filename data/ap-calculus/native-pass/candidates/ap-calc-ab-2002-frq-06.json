@@ -1,0 +1,219 @@
+{
+  "id": "ap-calc-ab-2002-frq-06",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 8, align: (left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [$x$], [-1.5], [-1.0], [-0.5], [0], [0.5], [1.0], [1.5], table.hline(stroke: .5pt), [$f(x)$], [-1], [-4], [-6], [-7], [-6], [-4], [-1], table.hline(stroke: .5pt), [$f'(x)$], [-7], [-5], [-3], [0], [3], [5], [7], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is differentiable for all real numbers. The table above gives the values of $f$ and its derivative $f'$ for selected points $x$ in the closed interval $- 1.5 <= x <= 1.5$. The second derivative of $f$ has the property that $f''(x)> 0$ for $- 1.5 <= x <= 1.5$.\n\n(a) Evaluate $integral_(0)^(1.5)lr((3 f'(x)+ 4)) d x$. Show the work that leads to your answer.\n\n(b) Write an equation of the line tangent to the graph of $f$ at the point where $x = 1$. Use this line to approximate the value of $f(1.2)$. Is this approximation greater than or less than the actual value of $f(1.2)$ ? Give a reason for your answer.\n\n(c) Find a positive real number $r$ having the property that there must exist a value $c$ with $0 < c < 0.5$ and $f''(c)= r$. Give a reason for your answer.\n\n(d) Let $g$ be the function given by $g(x)= lr(\\{ mat(delim: #none, 2 x^(2)- x - 7 \"\", \" for \" x < 0 \"\"; 2 x^(2)+ x - 7 \"\", \" for \" x >= 0))$. The graph of $g$ passes through each of the points $(x \\, f(x))$ given in the table above. Is it possible that $f$ and $g$ are the same function? Give a reason for your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          76,
+          572,
+          432
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          153.21599999999998,
+          81.50399999999999,
+          458.20799999999997,
+          138.816
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          150.624,
+          532.8,
+          163.58399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          163.58399999999997,
+          529.0559999999999,
+          175.968
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          179.712,
+          281.664,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 42,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          201.31199999999998,
+          400.60799999999995,
+          225.504
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          65.088,
+          232.70399999999998,
+          563.04,
+          245.664
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          245.664,
+          560.16,
+          258.62399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          259.2,
+          156.95999999999998,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          65.088,
+          277.632,
+          522.432,
+          290.592
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          292.032,
+          291.74399999999997,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          65.088,
+          310.176,
+          383.03999999999996,
+          345.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 52,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          346.75199999999995,
+          534.24,
+          359.712
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          80.928,
+          359.712,
+          360.57599999999996,
+          372.67199999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "da957f4cf4f36aedee2c8493bbfd06bcec32a104a8fde82d8c4aedb1b883adf6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

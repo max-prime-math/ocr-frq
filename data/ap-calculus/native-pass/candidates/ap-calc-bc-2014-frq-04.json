@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2014-frq-04",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [2], [5], [8], [12], table.hline(stroke: .5pt), [$v_(A)(t)$ (meters/minute)], [0], [100], [40], [-120], [-150], table.hline(stroke: .5pt));\n\nTrain $A$ runs back and forth on an east-west section of railroad track. Train A's velocity, measured in meters per minute, is given by a differentiable function $v_(A)(t)$, where time $t$ is measured in minutes. Selected values for $v_(A)(t)$ are given in the table above.\n\n(a) Find the average acceleration of $op(\"train\") A$ over the interval $2 <= t <= 8$.\n\n(b) Do the data in the table support the conclusion that train $A$ 's velocity is -100 meters per minute at some time $t$ with $5 < t < 8$ ? Give a reason for your answer.\n\n(c) At time $t = 2$, train $A$ 's position is 300 meters east of the Origin Station, and the train is moving to the east. Write an expression involving an integral that gives the position of train $A$, in meters from the Origin Station, at time $t = 12$. Use a trapezoidal sum with three subintervals indicated by the table to approximate the position of the train at time $t = 12$.\n\n(d) A second train, train $B$, travels north from the Origin Station. At time $t$ the velocity of train $B$ is given by $v_(B)(t)= - 5 t^(2)+ 60 t + 25$, and at time $t = 2$ the train is 400 meters north of the station. Find the rate, in meters per minute, at which the distance between train $A$ and train $B$ is changing at time $t = 2$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          74,
+          569,
+          414
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "470030664dd2c17d9210b47d6bb167ad53899ec14c51b5fe120d6320ae8cba47",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ]
+}

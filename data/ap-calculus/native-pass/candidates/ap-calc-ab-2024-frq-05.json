@@ -1,0 +1,204 @@
+{
+  "id": "ap-calc-ab-2024-frq-05",
+  "course": "AB",
+  "year": 2024,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2024.pdf",
+      "sha256": "070c3a4cd277d6aa74c5cb1b0dd5ae631458d71ac7cf5f7dfe2460814aaf08bd",
+      "pages": [
+        9
+      ]
+    },
+    "promptPages": [
+      9
+    ]
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the curve defined by the equation $x^(2)+ 3 y + 2 y^(2)= 48$. It can be shown that $frac(d y,d x)= frac(- 2 x,3 + 4 y)$.\n\n(a) There is a point on the curve near $(2 \\,4)$ with $x$-coordinate 3. Use the line tangent to the curve at $(2 \\,4)$ to approximate the $y$-coordinate of this point.\n\n(b) Is the horizontal line $y = 1$ tangent to the curve? Give a reason for your answer.\n\n(c) The curve intersects the positive $x$-axis at the point $(sqrt(48)\\, 0)$. Is the line tangent to the curve at this point vertical? Give a reason for your answer.\n\n(d) For time $t >= 0$, a particle is moving along another curve defined by the equation $y^(3)+ 2 x y = 24$. At the instant the particle is at the point (4, 2), the $y$-coordinate of the particle's position is decreasing at a rate of 2 units per second. At that instant, what is the rate of change of the $x$-coordinate of the particle's position with respect to time?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 9,
+        "rect": [
+          53,
+          66,
+          563,
+          380
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 9,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          56.736,
+          71.136,
+          509.472,
+          99.93599999999999
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          110.88,
+          553.824,
+          125.27999999999999
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          87.264,
+          127.008,
+          278.784,
+          139.968
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          149.76,
+          439.77599999999995,
+          163.58399999999997
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          173.952,
+          549.7919999999999,
+          188.928
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          87.264,
+          192.95999999999998,
+          263.808,
+          205.344
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          216.28799999999998,
+          539.424,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          87.264,
+          237.88799999999998,
+          557.568,
+          251.712
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          86.68799999999999,
+          256.608,
+          552.6719999999999,
+          268.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          87.264,
+          274.176,
+          181.152,
+          287.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          347.904,
+          538.2719999999999,
+          360.864
+        ]
+      },
+      {
+        "sourcePage": 9,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          360.864,
+          489.888,
+          373.82399999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f6f0ec36ddb75a13965852a87a79273dd7d20494285676364822e5912af23f6b",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-ab-2024-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2024-frq-05",
+      "sourcePage": 9,
+      "sourceSha256Matches": true
+    }
+  ]
+}

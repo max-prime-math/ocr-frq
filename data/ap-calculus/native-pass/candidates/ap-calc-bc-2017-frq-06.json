@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2017-frq-06",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "$ f(0) & = 0 \\ f'(0) & = 1 \\ f^((n + 1))(0) & = - n dot.c f^((n))(0) \" for all \" n >= 1 $ A function $f$ has derivatives of all orders for $- 1 < x < 1$. The derivatives of $f$ satisfy the conditions above. The Maclaurin series for $f$ converges to $f(x)$ for $| x | < 1$.\n\n(a) Show that the first four nonzero terms of the Maclaurin series for $f$ are $x - frac(x^(2),2)+ frac(x^(3),3)- frac(x^(4),4)$, and write the general term of the Maclaurin series for $f$.\n\n(b) Determine whether the Maclaurin series described in part (a) converges absolutely, converges conditionally, or diverges at $x = 1$. Explain your reasoning.\n\n(c) Write the first four nonzero terms and the general term of the Maclaurin series for $g(x)= integral_(0)^(x) f(t) d t$.\n\n(d) Let $P_(n)lr((frac(1,2)))$ represent the $n$ th-degree Taylor polynomial for $g$ about $x = 0$ evaluated at $x = frac(1,2)$, where $g$ is the function defined in part (c). Use the alternating series error bound to show that $lr(| P_(4)lr((frac(1,2)))- g lr((frac(1,2)))|)< frac(1,500)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          39,
+          92,
+          570,
+          559.69
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6ec0d7aeb1eeff0760b182864bc3d105bc8abd5c9eb62dfe4795db78921b5465",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ]
+}

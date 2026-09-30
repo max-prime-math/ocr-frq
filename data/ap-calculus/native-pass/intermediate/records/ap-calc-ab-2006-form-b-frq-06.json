@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-06",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (sec) & 0 & 15 & 25 & 30 & 35 & 50 & 60 \\\\\n\\hline \\(v(t)\\) (ft/sec) & -20 & -30 & -20 & -14 & -10 & 0 & 10 \\\\\n\\hline \\(a(t)\\) ( \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\) ) & 1 & 5 & 2 & 1 & 2 & 4 & 2 \\\\\n\\hline\n\\end{tabular}\nA car travels on a straight track. During the time interval \\(0 \\leq t \\leq 60\\) seconds, the car's velocity \\(v\\), measured in\nfeet per second, and acceleration \\(a\\), measured in feet per second per second, are continuous functions. The table\nabove shows selected values of these functions.\n(a) Using appropriate units, explain the meaning of \\(\\int_{30}^{60}|v(t)| d t\\) in terms of the car's motion. Approximate\n\\(\\int_{30}^{60}|v(t)| d t\\) using a trapezoidal approximation with the three subintervals determined by the table.\n(b) Using appropriate units, explain the meaning of \\(\\int_{0}^{30} a(t) d t\\) in terms of the car's motion. Find the exact\nvalue of \\(\\int_{0}^{30} a(t) d t\\).\n(c) For \\(0<t<60\\), must there be a time \\(t\\) when \\(v(t)=-5\\) ? Justify your answer.\n(d) For \\(0<t<60\\), must there be a time \\(t\\) when \\(a(t)=0\\) ? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2006 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (sec) & 0 & 15 & 25 & 30 & 35 & 50 & 60 \\\\\n\\hline \\(v(t)\\) (ft / sec) & -20 & -30 & -20 & -14 & -10 & 0 & 10 \\\\\n\\hline \\(a(t)\\) ( \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\) ) & 1 & 5 & 2 & 1 & 2 & 4 & 2 \\\\\n\\hline\n\\end{tabular}\nA car travels on a straight track. During the time interval \\(0 \\leq t \\leq 60\\) seconds, the car's velocity \\(v\\), measured in feet per second, and acceleration \\(a\\), measured in feet per second per second, are continuous functions. The table above shows selected values of these functions.\n\\begin{itemize}\n\\item[(a)] Using appropriate units, explain the meaning of \\(\\int_{30}^{60}|v(t)| d t\\) in terms of the car's motion. Approximate \\(\\int_{30}^{60}|v(t)| d t\\) using a trapezoidal approximation with the three subintervals determined by the table.\n\\item[(b)] Using appropriate units, explain the meaning of \\(\\int_{0}^{30} a(t) d t\\) in terms of the car's motion. Find the exact value of \\(\\int_{0}^{30} a(t) d t\\).\n\\item[(c)] For \\(0<t<60\\), must there be a time \\(t\\) when \\(v(t)=-5\\) ? Justify your answer.\n\\item[(d)] For \\(0<t<60\\), must there be a time \\(t\\) when \\(a(t)=0\\) ? Justify your answer.\n\\item[(a)] \\(\\int_{30}^{60}|v(t)| d t\\) is the distance in feet that the car travels from \\(t=30 \\mathrm{sec}\\) to \\(t=60 \\mathrm{sec}\\).\nTrapezoidal approximation for \\(\\int_{30}^{60}|v(t)| d t\\) :\n\\[\nA=\\frac{1}{2}(14+10) 5+\\frac{1}{2}(10)(15)+\\frac{1}{2}(10)(10)=185 \\mathrm{ft}\n\\]\n\\item[(b)] \\(\\int_{0}^{30} a(t) d t\\) is the car's change in velocity in \\(\\mathrm{ft} / \\mathrm{sec}\\) from \\(t=0 \\mathrm{sec}\\) to \\(t=30 \\mathrm{sec}\\).\n\\[\n\\begin{aligned}\n\\int_{0}^{30} a(t) d t & =\\int_{0}^{30} v^{\\prime}(t) d t=v(30)-v(0) \\\\\n& =-14-(-20)=6 \\mathrm{ft} / \\mathrm{sec}\n\\end{aligned}\n\\]\n\\item[(c)] Yes. Since \\(v(35)=-10<-5<0=v(50)\\), the IVT guarantees a \\(t\\) in (35, 50) so that \\(v(t)=-5\\).\n\\item[(d)] Yes. Since \\(v(0)=v(25)\\), the MVT guarantees a \\(t\\) in \\((0,25)\\) so that \\(a(t)=v^{\\prime}(t)=0\\).\n\\end{itemize}\nUnits of ft in (a) and ft/sec in (b)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { explanation } \\\\ 1: \\text { value }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { explanation } \\\\ 1: \\text { value }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: v(35)<-5<v(50) \\\\ 1: \\text { Yes; refers to IVT or hypotheses }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: v(0)=v(25) \\\\ 1: \\text { Yes; refers to MVT or hypotheses }\\end{array}\\right.\\)\n\\item[1] : units in (a) and (b)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          76,
+          572,
+          479
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          134.784,
+          81.50399999999999,
+          476.352,
+          185.76
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          198.14399999999998,
+          557.568,
+          210.528
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          211.10399999999998,
+          559.872,
+          223.48799999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          64.512,
+          223.48799999999997,
+          275.03999999999996,
+          234.432
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          65.088,
+          243.07199999999997,
+          539.424,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          84.672,
+          270.43199999999996,
+          519.8399999999999,
+          295.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 52,
+        "type": "text",
+        "rect": [
+          65.088,
+          304.416,
+          539.424,
+          329.18399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          332.352,
+          172.512,
+          357.11999999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 54,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          366.04799999999994,
+          431.13599999999997,
+          379.008
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 55,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          387.64799999999997,
+          425.95199999999994,
+          401.472
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

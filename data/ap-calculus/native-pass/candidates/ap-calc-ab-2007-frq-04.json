@@ -1,0 +1,116 @@
+{
+  "id": "ap-calc-ab-2007-frq-04",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves along the $x$-axis with position at time $t$ given by $x(t)= e^(- t) sin t$ for $0 <= t <= 2 pi$.\n\n(a) Find the time $t$ at which the particle is farthest to the left. Justify your answer.\n\n(b) Find the value of the constant $A$ for which $x(t)$ satisfies the equation $A x''(t)+ x'(t)+ x(t)= 0$ for $0 < t < 2 pi$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          273
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          200.736,
+          500.544,
+          215.136
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          222.91199999999998,
+          429.984,
+          235.87199999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          242.49599999999998,
+          509.472,
+          256.32
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          258.048,
+          153.792,
+          268.99199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "68dfce4dcfb01b97227c80e0db037f86a34f81fad5f280f0c808efa259fbe50c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

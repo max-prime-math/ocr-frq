@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 6, align: (left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$t$ (minutes)], [0], [4], [9], [15], [20], table.hline(stroke: .5pt), [$W(t)$ (degrees Fahrenheit)], [55.0], [57.1], [61.8], [67.9], [71.0], table.hline(stroke: .5pt));\n\nThe temperature of water in a tub at time $t$ is modeled by a strictly increasing, twice-differentiable function $W$, where $W(t)$ is measured in degrees Fahrenheit and $t$ is measured in minutes. At time $t = 0$, the temperature of the water is 55°F. The water is heated for 30 minutes, beginning at time $t = 0$. Values of $W(t)$ at selected times $t$ for the first 20 minutes are given in the table above.\n\n(a) Use the data in the table to estimate $W'(12)$. Show the computations that lead to your answer. Using correct units, interpret the meaning of your answer in the context of this problem.\n\n(b) Use the data in the table to evaluate $integral_(0)^(20) W'(t) d t$. Using correct units, interpret the meaning of $integral_(0)^(20) W'(t) d t$ in the context of this problem.\n\n(c) For $0 <= t <= 20$, the average temperature of the water in the tub is $frac(1,20) integral_(0)^(20) W(t) d t$. Use a left Riemann sum with the four subintervals indicated by the data in the table to approximate $frac(1,20) integral_(0)^(20) W(t) d t$. Does this approximation overestimate or underestimate the average temperature of the water over these 20 minutes? Explain your reasoning.\n\n(d) For $20 <= t <= 25$, the function $W$ that models the water temperature has first derivative given by $W'(t)= 0.4 sqrt(t) cos(0.06 t)$. Based on the model, what is the temperature of the water at time $t = 25$ ?",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2012-frq-01",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-3",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2012",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

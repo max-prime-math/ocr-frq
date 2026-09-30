@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2006-form-b-frq-05",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be a function with $f(4)= 1$ such that all points $(x \\, y)$ on the graph of $f$ satisfy the differential equation $ frac(d y,d x)= 2 y(3 - x) $\n\nLet $g$ be a function with $g(4)= 1$ such that all points $(x \\, y)$ on the graph of $g$ satisfy the logistic differential equation\n\n$ frac(d y,d x)= 2 y(3 - y) . $\n\n(a) Find $y = f(x)$.\n\n(b) Given that $g(4)= 1$, find $lim_(x -> oo) g(x)$ and $lim_(x -> oo) g'(x)$. (It is not necessary to solve for $g(x)$ or to show how you arrived at your answers.)\n\n(c) For what value of $y$ does the graph of $g$ have a point of inflection? Find the slope of the graph of $g$ at the point of inflection. (It is not necessary to solve for $g(x)$.)",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          561,
+          288
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "163aee05758d55abed3e3b22d3151c831e6ed6086d7dfe7dbdad7b4eb6e4283f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "A particle has position $(x(t),y(t))$. At $t=1$, its position is $(2,6)$, and for $t>0$ its velocity vector is $(1-1/t^2, 2+1/t^2)$.\n\n(a) Find the acceleration vector at $t=3$.\n\n(b) Find the position at $t=3$.\n\n(c) When does the tangent line to the path have slope $8$?\n\n(d) The particle approaches a line as $t -> infinity$. Find the slope of this line and justify.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-2000-frq-04",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-9-6",
+    "solution": "(a) The acceleration vector is $(2/t^3,-2/t^3)$, so at $t=3$ it is $(2/27,-2/27)$.\n\n(b) Integrating gives $x=t+1/t+C_1$ and $y=2t-1/t+C_2$. The initial position gives $C_1=0$ and $C_2=5$, so the position at $t=3$ is $(10/3,32/3)$.\n\n(c) $dif y/dif x=(2+1/t^2)/(1-1/t^2)=8$. Hence $t^2=3/2$, so $t=sqrt(3/2)$.\n\n(d) $lim_(t -> infinity) dif y/dif x=lim_(t -> infinity) (2+1/t^2)/(1-1/t^2)=2$. The asymptotic line has slope $2$.",
+    "tags": [
+      "2000",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-9",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

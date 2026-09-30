@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2018-frq-04",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (years) & 2 & 3 & 5 & 7 & 10 \\\\\n\\hline \\(H(t)\\) (meters) & 1.5 & 2 & 6 & 11 & 15 \\\\\n\\hline\n\\end{tabular}\nThe height of a tree at time \\(t\\) is given by a twice-differentiable function \\(H\\), where \\(H(t)\\) is measured in meters\nand \\(t\\) is measured in years. Selected values of \\(H(t)\\) are given in the table above.\n(a) Use the data in the table to estimate \\(H^{\\prime}(6)\\). Using correct units, interpret the meaning of \\(H^{\\prime}(6)\\) in the\ncontext of the problem.\n(b) Explain why there must be at least one time \\(t\\), for \\(2<t<10\\), such that \\(H^{\\prime}(t)=2\\).\n(c) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the\naverage height of the tree over the time interval \\(2 \\leq t \\leq 10\\).\n(d) The height of the tree, in meters, can also be modeled by the function \\(G\\), given by \\(G(x)=\\frac{100 x}{1+x}\\), where\n\\(x\\) is the diameter of the base of the tree, in meters. When the tree is 50 meters tall, the diameter of the\nbase of the tree is increasing at a rate of 0.03 meter per year. According to this model, what is the rate of\nchange of the height of the tree with respect to time, in meters per year, at the time when the tree is\n50 meters tall?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2018 SCORING GUIDELINES}\n\nQuestion 4\n\\begin{itemize}\n\\item[(a)] \\(H^{\\prime}(6) \\approx \\frac{H(7)-H(5)}{7-5}=\\frac{11-6}{2}=\\frac{5}{2}\\)\n\\(H^{\\prime}(6)\\) is the rate at which the height of the tree is changing, in meters per year, at time \\(t=6\\) years.\n\\item[(b)] \\(\\frac{H(5)-H(3)}{5-3}=\\frac{6-2}{2}=2\\)\nBecause \\(H\\) is differentiable on \\(3 \\leq t \\leq 5, H\\) is continuous on \\(3 \\leq t \\leq 5\\).\nBy the Mean Value Theorem, there exists a value \\(c, 3<c<5\\), such that \\(H^{\\prime}(c)=2\\).\n\\item[(c)] The average height of the tree over the time interval \\(2 \\leq t \\leq 10\\) is given by \\(\\frac{1}{10-2} \\int_{2}^{10} H(t) d t\\).\n\\[\n\\begin{aligned}\n\\frac{1}{8} \\int_{2}^{10} H(t) d t & \\approx \\frac{1}{8}\\left(\\frac{1.5+2}{2} \\cdot 1+\\frac{2+6}{2} \\cdot 2+\\frac{6+11}{2} \\cdot 2+\\frac{11+15}{2} \\cdot 3\\right) \\\\\n& =\\frac{1}{8}(65.75)=\\frac{263}{32}\n\\end{aligned}\n\\]\nThe average height of the tree over the time interval \\(2 \\leq t \\leq 10\\) is \\(\\frac{263}{32}\\) meters.\n\\item[(d)] \\(G(x)=50 \\Rightarrow x=1\\)\n\\[\n\\begin{aligned}\n& \\frac{d}{d t}(G(x))=\\frac{d}{d x}(G(x)) \\cdot \\frac{d x}{d t}=\\frac{(1+x) 100-100 x \\cdot 1}{(1+x)^{2}} \\cdot \\frac{d x}{d t}=\\frac{100}{(1+x)^{2}} \\cdot \\frac{d x}{d t} \\\\\n& \\left.\\frac{d}{d t}(G(x))\\right|_{x=1}=\\frac{100}{(1+1)^{2}} \\cdot 0.03=\\frac{3}{4}\n\\end{aligned}\n\\]\nAccording to the model, the rate of change of the height of the tree with respect to time when the tree is 50 meters tall is \\(\\frac{3}{4}\\) meter per year.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { estimate } \\\\ 1: \\text { interpretation with units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{H(5)-H(3)}{5-3} \\\\ 1: \\text { conclusion using } \\\\ \\text { Mean Value Theorem }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : trapezoidal sum } \\\\ 1 \\text { : approximation }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: \\frac{d}{d t}(G(x)) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\nNote: \\(\\max 1 / 3\\) [1-0] if no chain rule",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          39,
+          74,
+          570,
+          495
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          207.93599999999998,
+          80.064,
+          401.472,
+          139.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 27,
+        "type": "text",
+        "rect": [
+          44.928,
+          156.384,
+          542.016,
+          170.208
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          171.93599999999998,
+          414.43199999999996,
+          185.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          199.296,
+          526.4639999999999,
+          213.696
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          79.488,
+          215.712,
+          183.16799999999998,
+          228.09599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 32,
+        "type": "list_item",
+        "rect": [
+          61.343999999999994,
+          243.07199999999997,
+          444.38399999999996,
+          256.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          269.856,
+          523.872,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          79.488,
+          283.96799999999996,
+          342.14399999999995,
+          296.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          310.75199999999995,
+          542.304,
+          337.536
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          79.488,
+          345.31199999999995,
+          529.0559999999999,
+          358.272
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          80.064,
+          372.67199999999997,
+          544.0319999999999,
+          385.63199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          79.488,
+          400.032,
+          516.096,
+          412.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          80.064,
+          427.392,
+          147.744,
+          439.2
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

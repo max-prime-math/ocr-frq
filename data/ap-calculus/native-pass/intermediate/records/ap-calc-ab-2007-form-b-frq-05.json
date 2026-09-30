@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2007-form-b-frq-05",
+  "course": "AB",
+  "year": 2007,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007-FORM-B.pdf",
+      "sha256": "9c053de89559fdff9dc3d2c68d4d0e6a291eb32bae83bc301793b6656c9a0256",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007-FORM-B.pdf",
+      "sha256": "262d617d708fc64aa571d2998feeb3ee8ba3af03c369c8fccd0f7a9f72c33290"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{1}{2} x+y-1\\).\n(a) On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n(Note: Use the axes provided in the exam booklet.)\n\\includegraphics{ap-calc-ab-2007-form-b-frq-05-diagram-01.png}\n(b) Find \\(\\frac{d^{2} y}{d x^{2}}\\) in terms of \\(x\\) and \\(y\\). Describe the region in the \\(x y\\)-plane in which all solution curves to the\ndifferential equation are concave up.\n(c) Let \\(y=f(x)\\) be a particular solution to the differential equation with the initial condition \\(f(0)=1\\). Does \\(f\\)\nhave a relative minimum, a relative maximum, or neither at \\(x=0\\) ? Justify your answer.\n(d) Find the values of the constants \\(m\\) and \\(b\\), for which \\(y=m x+b\\) is a solution to the differential equation.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2007-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2007-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        246.98399353027344,
+        145.60800170898438,
+        365.0159912109375,
+        268.5360107421875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{1}{2} x+y-1\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the nine points indicated.\n(Note: Use the axes provided in the exam booklet.)\n\\item[(b)] Find \\(\\frac{d^{2} y}{d x^{2}}\\) in terms of \\(x\\) and \\(y\\). Describe the region in the \\(x y\\)-plane in which all solution curves to the differential equation are concave up.\n\\item[(c)] Let \\(y=f(x)\\) be a particular solution to the differential equation with the initial condition \\(f(0)=1\\). Does \\(f\\) have a relative minimum, a relative maximum, or neither at \\(x=0\\) ? Justify your answer.\n\\item[(d)] Find the values of the constants \\(m\\) and \\(b\\), for which \\(y=m x+b\\) is a solution to the differential equation.\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/8713a368-82b8-4b2f-8c0e-44f18d052280-1.jpg?height=404&width=389&top_left_y=1195&top_left_x=647)\n\\item[(b)] \\(\\frac{d^{2} y}{d x^{2}}=\\frac{1}{2}+\\frac{d y}{d x}=\\frac{1}{2} x+y-\\frac{1}{2}\\)\n\\end{itemize}\nSolution curves will be concave up on the half-plane above the line \\(y=-\\frac{1}{2} x+\\frac{1}{2}\\).\n\\begin{itemize}\n\\item[(c)] \\(\\left.\\frac{d y}{d x}\\right|_{(0,1)}=0+1-1=0\\) and \\(\\left.\\frac{d^{2} y}{d x^{2}}\\right|_{(0,1)}=0+1-\\frac{1}{2}>0\\)\nThus, \\(f\\) has a relative minimum at (0, 1).\n\\item[(d)] Substituting \\(y=m x+b\\) into the differential equation:\n\\[\nm=\\frac{1}{2} x+(m x+b)-1=\\left(m+\\frac{1}{2}\\right) x+(b-1)\n\\]\nThen \\(0=m+\\frac{1}{2}\\) and \\(m=b-1: m=-\\frac{1}{2}\\) and \\(b=\\frac{1}{2}\\).\n\\item[2] : Sign of slope at each point and relative steepness of slope lines in rows and columns.\n\\item[3] : \\(\\left\\{\\begin{array}{l}2: \\frac{d^{2} y}{d x^{2}} \\\\ 1: \\text { description }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { value for } m \\\\ 1: \\text { value for } b\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          569,
+          382
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          70.55999999999999,
+          299.52,
+          95.904
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.088,
+          102.81599999999999,
+          544.608,
+          116.35199999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          121.24799999999999,
+          320.544,
+          134.208
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "chart",
+        "rect": [
+          249.98399999999998,
+          148.60799999999998,
+          362.01599999999996,
+          265.536
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.088,
+          276.47999999999996,
+          533.376,
+          306.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          308.15999999999997,
+          245.664,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.088,
+          326.592,
+          564.4799999999999,
+          340.128
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.368,
+          342.14399999999995,
+          478.36799999999994,
+          355.104
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          363.16799999999995,
+          552.096,
+          376.128
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-form-b-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

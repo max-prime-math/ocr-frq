@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-frq-05",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2003-frq-05-diagram-01.jpg}\n\\end{center}\nA coffeepot has the shape of a cylinder with radius 5 inches, as shown in the figure above. Let $h$ be the depth of the coffee in the pot, measured in inches, where $h$ is a function of time $t$, measured in seconds. The volume $V$ of coffee in the pot is changing at the rate of $-5 \\pi \\sqrt{h}$ cubic inches per second. (The volume $V$ of a cylinder with radius $r$ and height $h$ is $V=\\pi r^{2} h$.)\\\\\n(a) Show that $\\frac{d h}{d t}=-\\frac{\\sqrt{h}}{5}$.\\\\\n(b) Given that $h=17$ at time $t=0$, solve the differential equation $\\frac{d h}{d t}=-\\frac{\\sqrt{h}}{5}$ for $h$ as a function of $t$.\\\\\n(c) At what time $t$ is the coffeepot empty?\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig5.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 5}\n\nA coffeepot has the shape of a cylinder with radius 5 inches, as shown in the figure above. Let \\(h\\) be the depth of the coffee in the pot, measured in inches, where \\(h\\) is a function of time \\(t\\), measured in seconds. The volume \\(V\\) of coffee in the pot is changing at the rate of \\(-5 \\pi \\sqrt{h}\\) cubic inches per second. (The volume \\(V\\) of a cylinder with radius \\(r\\) and height \\(h\\) is \\(V=\\pi r^{2} h\\).)\n\\begin{itemize}\n\\item[(a)] Show that \\(\\frac{d h}{d t}=-\\frac{\\sqrt{h}}{5}\\).\n\\item[(b)] Given that \\(h=17\\) at time \\(t=0\\), solve the differential equation \\(\\frac{d h}{d t}=-\\frac{\\sqrt{h}}{5}\\) for \\(h\\) as a function of \\(t\\).\n\\item[(c)] At what time \\(t\\) is the coffeepot empty?\n\\item[(a)]\n\\[\n\\begin{aligned}\n& V=25 \\pi h \\\\\n& \\frac{d V}{d t}=25 \\pi \\frac{d h}{d t}=-5 \\pi \\sqrt{h} \\\\\n& \\frac{d h}{d t}=\\frac{-5 \\pi \\sqrt{h}}{25 \\pi}=-\\frac{\\sqrt{h}}{5}\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\frac{d h}{d t}=-\\frac{\\sqrt{h}}{5} \\\\\n& \\frac{1}{\\sqrt{h}} d h=-\\frac{1}{5} d t \\\\\n& 2 \\sqrt{h}=-\\frac{1}{5} t+C \\\\\n& 2 \\sqrt{17}=0+C \\\\\n& h=\\left(-\\frac{1}{10} t+\\sqrt{17}\\right)^{2}\n\\end{aligned}\n\\]\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/9791c2d9-122d-458b-976e-c1e4bb693409-1.jpg?height=589&width=357&top_left_y=385&top_left_x=1616)\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d V}{d t}=-5 \\pi \\sqrt{h} \\\\ 1: \\text { computes } \\frac{d V}{d t} \\\\ 1: \\text { shows result }\\end{array}\\right.\\)\n\\item[] \\(5:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } h=17 \\\\ \\quad \\text { when } t=0 \\\\ 1: \\text { solves for } h\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: \\(\\max 2 / 5[1-1-0-0-0]\\) if no constant of integration\n\nNote: 0/5 if no separation of variables\n\n1 : answer\n\\begin{itemize}\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\left(-\\frac{1}{10} t+\\sqrt{17}\\right)^{2}=0 \\\\\n& t=10 \\sqrt{17}\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          567,
+          420
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

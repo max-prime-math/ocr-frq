@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2012-frq-02",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2012-frq-02-diagram-01.png}\nLet \\(R\\) be the region in the first quadrant bounded by the \\(x\\)-axis and the graphs of \\(y=\\ln x\\) and \\(y=5-x\\), as\nshown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Region \\(R\\) is the base of a solid. For the solid, each cross section perpendicular to the \\(x\\)-axis is a square.\nWrite, but do not evaluate, an expression involving one or more integrals that gives the volume of the solid.\n(c) The horizontal line \\(y=k\\) divides \\(R\\) into two regions of equal area. Write, but do not solve, an equation\ninvolving one or more integrals whose solution gives the value of \\(k\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2012-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2012-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        160.29600524902344,
+        66.98400115966797,
+        452.2799987792969,
+        187.32000732421875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[] Let \\(R\\) be the region in the first quadrant bounded by the \\(x\\)-axis and the graphs of \\(y=\\ln x\\) and \\(y=5-x\\), as shown in the figure above.\n\\item[(a)] Find the area of \\(R\\).\n(b) Region \\(R\\) is the base of a solid. For the solid, each cross section perpendicular to the \\(x\\)-axis is a square. Write, but do not evaluate, an\n![](https://cdn.mathpix.com/cropped/093748a5-a90c-4ea8-9408-f3ffa3e60b5f-1.jpg?height=354&width=892&top_left_y=402&top_left_x=1038) expression involving one or more integrals that gives the volume of the solid.\n\\item[(c)] The horizontal line \\(y=k\\) divides \\(R\\) into two regions of equal area. Write, but do not solve, an equation involving one or more integrals whose solution gives the value of \\(k\\).\n\\[\n\\ln x=5-x \\Rightarrow x=3.69344\n\\]\nTherefore, the graphs of \\(y=\\ln x\\) and \\(y=5-x\\) intersect in the first quadrant at the point \\((A, B)=(3.69344,1.30656)\\).\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{0}^{B}\\left(5-y-e^{y}\\right) d y \\\\\n& =2.986(\\text { or } 2.985)\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{1}^{A} \\ln x d x+\\int_{A}^{5}(5-x) d x \\\\\n& =2.986(\\text { or } 2.985)\n\\end{aligned}\n\\]\n\\item[(b)] Volume \\(=\\int_{1}^{A}(\\ln x)^{2} d x+\\int_{A}^{5}(5-x)^{2} d x\\)\n\\item[(c)] \\(\\int_{0}^{k}\\left(5-y-e^{y}\\right) d y=\\frac{1}{2} \\cdot 2.986\\left(\\right.\\) or \\(\\left.\\frac{1}{2} \\cdot 2.985\\right)\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrands } \\\\ 1: \\text { expression for total volume }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : integrand } \\\\ 1 \\text { : limits } \\\\ 1 \\text { : equation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          66,
+          572,
+          331
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          163.296,
+          69.984,
+          449.28,
+          184.32
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          196.70399999999998,
+          549.5039999999999,
+          209.664
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          211.67999999999998,
+          182.88,
+          224.064
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          229.53599999999997,
+          168.48,
+          241.92
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          247.39199999999997,
+          539.712,
+          260.352
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          260.352,
+          558.7199999999999,
+          272.736
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          278.496,
+          545.76,
+          291.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          293.18399999999997,
+          385.63199999999995,
+          306.14399999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

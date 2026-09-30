@@ -1,0 +1,138 @@
+{
+  "id": "ap-calc-ab-2001-frq-05",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A cubic polynomial function $f$ is defined by $ f(x)= 4 x^(3)+ a x^(2)+ b x + k $ where $a$, $b$, and $k$ are constants. The function $f$ has a local minimum at $x = - 1$, and the graph of $f$ has a point of inflection at $x = - 2$.\n\n(a) Find the values of $a$ and $b$.\n\n(b) If $integral_(0)^(1) f(x) d x = 32$, what is the value of $k$ ?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          332,
+          572,
+          470
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          352.79999999999995,
+          262.368,
+          365.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "math",
+        "rect": [
+          238.75199999999998,
+          370.08,
+          371.808,
+          386.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          391.104,
+          560.448,
+          404.64
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          404.64,
+          171.35999999999999,
+          415.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 21,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          421.91999999999996,
+          207.35999999999999,
+          434.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 22,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          440.64,
+          277.344,
+          464.83199999999994
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f07bbd8510ab4afc9d10cb6292a0a5e0dddef886d86db3474cf1ca3e7d0b5f02",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2003-form-b-frq-01",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2003-form-b-frq-01-diagram-01.png\", width: 65%)\n\nLet $f$ be the function given by $f(x)= 4 x^(2)- x^(3)$, and let $ell$ be the line $y = 18 - 3 x$, where $ell$ is tangent to the graph of $f$. Let $R$ be the region bounded by the graph of $f$ and the $x$-axis, and let $S$ be the region bounded by the graph of $f$, the line $ell$, and the $x$-axis, as shown above.\n\n(a) Show that $ell$ is tangent to the graph of $y = f(x)$ at the point $x = 3$.\n\n(b) Find the area of $S$.\n\n(c) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        128.0399932861328,
+        214.72799682617188,
+        483.6719970703125,
+        387.76800537109375
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          70,
+          572,
+          520
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          131.04,
+          217.72799999999998,
+          480.67199999999997,
+          384.768
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          395.99999999999994,
+          553.2479999999999,
+          410.97599999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          411.55199999999996,
+          550.656,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          424.51199999999994,
+          320.256,
+          436.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          442.94399999999996,
+          385.63199999999995,
+          456.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          462.816,
+          167.04,
+          475.2
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          481.248,
+          420.768,
+          493.63199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3a78cc03b429ebaf0b6b030fabb8f1125d8317e6a00436c8a495a75358985597",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

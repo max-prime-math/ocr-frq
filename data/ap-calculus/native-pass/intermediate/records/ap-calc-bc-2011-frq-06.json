@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-frq-06",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2011-frq-06-diagram-01.jpg}\n\\end{center}\n\nGraph of $y=\\left|f^{(5)}(x)\\right|$\\\\\nLet $f(x)=\\sin \\left(x^{2}\\right)+\\cos x$. The graph of $y=\\left|f^{(5)}(x)\\right|$ is shown above.\\\\\n(a) Write the first four nonzero terms of the Taylor series for $\\sin x$ about $x=0$, and write the first four nonzero terms of the Taylor series for $\\sin \\left(x^{2}\\right)$ about $x=0$.\\\\\n(b) Write the first four nonzero terms of the Taylor series for $\\cos x$ about $x=0$. Use this series and the series for $\\sin \\left(x^{2}\\right)$, found in part (a), to write the first four nonzero terms of the Taylor series for $f$ about $x=0$.\\\\\n(c) Find the value of $f^{(6)}(0)$.\\\\\n(d) Let $P_{4}(x)$ be the fourth-degree Taylor polynomial for $f$ about $x=0$. Using information from the graph of $y=\\left|f^{(5)}(x)\\right|$ shown above, show that $\\left|P_{4}\\left(\\frac{1}{4}\\right)-f\\left(\\frac{1}{4}\\right)\\right|<\\frac{1}{3000}$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-frq-06-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-frq-06-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2011_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\nLet \\(f(x)=\\sin \\left(x^{2}\\right)+\\cos x\\). The graph of \\(y=\\left|f^{(5)}(x)\\right|\\) is shown above.\n\\begin{itemize}\n\\item[(a)] Write the first four nonzero terms of the Taylor series for \\(\\sin x\\) about \\(x=0\\), and write the first four nonzero terms of the Taylor series for \\(\\sin \\left(x^{2}\\right)\\) about \\(x=0\\).\n\\item[(b)] Write the first four nonzero terms of the Taylor series for \\(\\cos x\\) about \\(x=0\\). Use this series and the series for \\(\\sin \\left(x^{2}\\right)\\), found in part (a), to write the first four nonzero terms of the Taylor series for \\(f\\) about \\(x=0\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/3c77f16d-ee6e-410b-b6f8-92d0bcdd7e8f-1.jpg?height=501&width=726&top_left_y=402&top_left_x=1207)\n\\begin{itemize}\n\\item[(c)] Find the value of \\(f^{(6)}(0)\\).\n\\item[(d)] Let \\(P_{4}(x)\\) be the fourth-degree Taylor polynomial for \\(f\\) about \\(x=0\\). Using information from the graph of \\(y=\\left|f^{(5)}(x)\\right|\\) shown above, show that \\(\\left|P_{4}\\left(\\frac{1}{4}\\right)-f\\left(\\frac{1}{4}\\right)\\right|<\\frac{1}{3000}\\).\n\\item[(a)] \\(\\sin x=x-\\frac{x^{3}}{3!}+\\frac{x^{5}}{5!}-\\frac{x^{7}}{7!}+\\cdots\\)\n\\[\n\\sin \\left(x^{2}\\right)=x^{2}-\\frac{x^{6}}{3!}+\\frac{x^{10}}{5!}-\\frac{x^{14}}{7!}+\\cdots\n\\]\n\\item[(b)] \\(\\cos x=1-\\frac{x^{2}}{2!}+\\frac{x^{4}}{4!}-\\frac{x^{6}}{6!}+\\cdots\\)\n\\[\nf(x)=1+\\frac{x^{2}}{2}+\\frac{x^{4}}{4!}-\\frac{121 x^{6}}{6!}+\\cdots\n\\]\n\\item[(c)] \\(\\frac{f^{(6)}(0)}{6!}\\) is the coefficient of \\(x^{6}\\) in the Taylor series for \\(f\\) about \\(x=0\\). Therefore \\(f^{(6)}(0)=-121\\).\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { series for } \\sin x \\\\ 2: \\text { series for } \\sin \\left(x^{2}\\right)\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1 \\text { : series for } \\cos x \\\\ 2: \\text { series for } f(x)\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { form of the error bound } \\\\ 1: \\text { analysis }\\end{array}\\right.\\)\n\\item[(d)] The graph of \\(y=\\left|f^{(5)}(x)\\right|\\) indicates that \\(\\max _{0 \\leq x \\leq \\frac{1}{4}}\\left|f^{(5)}(x)\\right|<40\\). Therefore\n\\[\n\\left|P_{4}\\left(\\frac{1}{4}\\right)-f\\left(\\frac{1}{4}\\right)\\right| \\leq \\frac{\\max _{0 \\leq x \\leq \\frac{1}{4}}\\left|f^{(5)}(x)\\right|}{5!} \\cdot\\left(\\frac{1}{4}\\right)^{5}<\\frac{40}{120 \\cdot 4^{5}}=\\frac{1}{3072}<\\frac{1}{3000} .\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          66,
+          572,
+          458
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

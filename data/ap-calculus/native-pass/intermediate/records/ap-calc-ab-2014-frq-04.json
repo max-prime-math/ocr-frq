@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2014-frq-04",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 2 & 5 & 8 & 12 \\\\\n\\hline \\(v_{A}(t)\\) (meters / minute) & 0 & 100 & 40 & -120 & -150 \\\\\n\\hline\n\\end{tabular}\nTrain \\(A\\) runs back and forth on an east-west section of railroad track. Train \\(A\\) 's velocity, measured in meters\nper minute, is given by a differentiable function \\(v_{A}(t)\\), where time \\(t\\) is measured in minutes. Selected values for\n\\(v_{A}(t)\\) are given in the table above.\n(a) Find the average acceleration of train \\(A\\) over the interval \\(2 \\leq t \\leq 8\\).\n(b) Do the data in the table support the conclusion that train \\(A\\) 's velocity is -100 meters per minute at some\ntime \\(t\\) with \\(5<t<8\\) ? Give a reason for your answer.\n(c) At time \\(t=2\\), train \\(A\\) 's position is 300 meters east of the Origin Station, and the train is moving to the east.\nWrite an expression involving an integral that gives the position of train \\(A\\), in meters from the Origin\nStation, at time \\(t=12\\). Use a trapezoidal sum with three subintervals indicated by the table to approximate\nthe position of the train at time \\(t=12\\).\n(d) A second train, train \\(B\\), travels north from the Origin Station. At time \\(t\\) the velocity of train \\(B\\) is given by\n\\(v_{B}(t)=-5 t^{2}+60 t+25\\), and at time \\(t=2\\) the train is 400 meters north of the station. Find the rate, in\nmeters per minute, at which the distance between train \\(A\\) and train \\(B\\) is changing at time \\(t=2\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC \\\\ 2014 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nTrain \\(A\\) runs back and forth on an east-west section of railroad track. Train \\(A\\) 's velocity, measured in meters per minute, is given by a differentiable function \\(v_{A}(t)\\), where time \\(t\\) is measured in minutes. Selected values for \\(v_{A}(t)\\)\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 2 & 5 & 8 & 12 \\\\\n\\hline \\(v_{A}(t)\\) (meters/minute) & 0 & 100 & 40 & -120 & -150 \\\\\n\\hline\n\\end{tabular}\nare given in the table above.\n\\begin{itemize}\n\\item[(a)] Find the average acceleration of train \\(A\\) over the interval \\(2 \\leq t \\leq 8\\).\n\\item[(b)] Do the data in the table support the conclusion that train \\(A\\) 's velocity is -100 meters per minute at some time \\(t\\) with \\(5<t<8\\) ? Give a reason for your answer.\n\\item[(c)] At time \\(t=2\\), train \\(A\\) 's position is 300 meters east of the Origin Station, and the train is moving to the east. Write an expression involving an integral that gives the position of train \\(A\\), in meters from the Origin Station, at time \\(t=12\\). Use a trapezoidal sum with three subintervals indicated by the table to approximate the position of the train at time \\(t=12\\).\n\\item[(d)] A second train, train \\(B\\), travels north from the Origin Station. At time \\(t\\) the velocity of train \\(B\\) is given by \\(v_{B}(t)=-5 t^{2}+60 t+25\\), and at time \\(t=2\\) the train is 400 meters north of the station. Find the rate, in meters per minute, at which the distance between train \\(A\\) and train \\(B\\) is changing at time \\(t=2\\).\n\\item[(a)] average accel \\(=\\frac{v_{A}(8)-v_{A}(2)}{8-2}=\\frac{-120-100}{6}=-\\frac{110}{3} \\mathrm{~m} / \\mathrm{min}^{2}\\)\n\\item[(b)] \\(v_{A}\\) is differentiable \\(\\Rightarrow v_{A}\\) is continuous\n\\[\nv_{A}(8)=-120<-100<40=v_{A}(5)\n\\]\nTherefore, by the Intermediate Value Theorem, there is a time \\(t\\), \\(5<t<8\\), such that \\(v_{A}(t)=-100\\).\n\\item[(c)] \\(s_{A}(12)=s_{A}(2)+\\int_{2}^{12} v_{A}(t) d t=300+\\int_{2}^{12} v_{A}(t) d t\\)\n\\[\n\\begin{aligned}\n\\int_{2}^{12} v_{A}(t) d t & \\approx 3 \\cdot \\frac{100+40}{2}+3 \\cdot \\frac{40-120}{2}+4 \\cdot \\frac{-120-150}{2} \\\\\n& =-450 \\\\\ns_{A}(12) \\approx 300 & -450=-150\n\\end{aligned}\n\\]\nThe position of Train \\(A\\) at time \\(t=12\\) minutes is approximately 150 meters west of Origin Station.\n\\item[(d)] Let \\(x\\) be train \\(A\\) 's position, \\(y\\) train \\(B\\) 's position, and \\(z\\) the distance between \\(\\operatorname{train} A\\) and \\(\\operatorname{train} B\\).\n\\[\n\\begin{aligned}\n& z^{2}=x^{2}+y^{2} \\Rightarrow 2 z \\frac{d z}{d t}=2 x \\frac{d x}{d t}+2 y \\frac{d y}{d t} \\\\\n& x=300, y=400 \\Rightarrow z=500 \\\\\n& v_{B}(2)=-20+120+25=125 \\\\\n& 500 \\frac{d z}{d t}=(300)(100)+(400)(125) \\\\\n& \\frac{d z}{d t}=\\frac{80000}{500}=160 \\text { meters per minute }\n\\end{aligned}\n\\]\n\\item[1] : average acceleration\n\\[\n2:\\left\\{\\begin{array}{l}\n1: v_{A}(8)<-100<v_{A}(5) \\\\\n1: \\text { conclusion, using IVT }\n\\end{array}\\right.\n\\]\n\\item[3] : \\(\\left\\{\\begin{array}{l}1: \\text { position expression } \\\\ 1: \\text { trapezoidal sum } \\\\ 1: \\text { position at time } t=12\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{c}2: \\text { implicit differentiation of } \\\\ \\text { distance relationship } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          59,
+          569,
+          398
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          170.784,
+          63.93599999999999,
+          441.792,
+          151.77599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          163.58399999999997,
+          547.1999999999999,
+          175.968
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          64.512,
+          176.54399999999998,
+          564.192,
+          190.944
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          66.52799999999999,
+          192.09599999999998,
+          220.32,
+          207.07199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 31,
+        "type": "list_item",
+        "rect": [
+          65.952,
+          214.272,
+          385.91999999999996,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          65.952,
+          233.27999999999997,
+          546.048,
+          246.23999999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          83.52,
+          246.81599999999997,
+          329.76,
+          259.2
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          65.952,
+          267.84,
+          561.8879999999999,
+          280.224
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          83.52,
+          281.376,
+          531.9359999999999,
+          293.76
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          83.52,
+          294.62399999999997,
+          557.856,
+          306.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          83.52,
+          307.584,
+          255.456,
+          319.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          65.952,
+          325.72799999999995,
+          554.112,
+          338.688
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          84.672,
+          340.128,
+          542.88,
+          355.67999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          83.52,
+          357.11999999999995,
+          509.75999999999993,
+          370.08
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

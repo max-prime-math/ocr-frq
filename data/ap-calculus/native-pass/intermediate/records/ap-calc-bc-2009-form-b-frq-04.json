@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-form-b-frq-04",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2009-form-b-frq-04-diagram-01.jpg}\n\\end{center}\nThe graph of the polar curve $r=1-2 \\cos \\theta$ for $0 \\leq \\theta \\leq \\pi$ is shown above. Let $S$ be the shaded region in the third quadrant bounded by the curve and the $x$-axis.\\\\\n(a) Write an integral expression for the area of $S$.\\\\\n(b) Write expressions for $\\frac{d x}{d \\theta}$ and $\\frac{d y}{d \\theta}$ in terms of $\\theta$.\\\\\n(c) Write an equation in terms of $x$ and $y$ for the line tangent to the graph of the polar curve at the point where $\\theta=\\frac{\\pi}{2}$. Show the computations that lead to your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009-form-b_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 4}\n\nThe graph of the polar curve \\(r=1-2 \\cos \\theta\\) for \\(0 \\leq \\theta \\leq \\pi\\) is shown above. Let \\(S\\) be the shaded region in the third quadrant bounded by the curve and the \\(x\\)-axis.\n\\begin{itemize}\n\\item[(a)] Write an integral expression for the area of \\(S\\).\n\\item[(b)] Write expressions for \\(\\frac{d x}{d \\theta}\\) and \\(\\frac{d y}{d \\theta}\\) in terms of \\(\\theta\\).\n\\item[(c)] Write an equation in terms of \\(x\\) and \\(y\\) for the line tangent to the graph of the polar curve at the point where \\(\\theta=\\frac{\\pi}{2}\\). Show the computations that lead to your answer.\n\\item[(a)] \\(r(0)=-1 ; r(\\theta)=0\\) when \\(\\theta=\\frac{\\pi}{3}\\).\nArea of \\(S=\\frac{1}{2} \\int_{0}^{\\pi / 3}(1-2 \\cos \\theta)^{2} d \\theta\\)\n\\item[(b)] \\(x=r \\cos \\theta\\) and \\(y=r \\sin \\theta\\)\n\\[\n\\begin{aligned}\n& \\frac{d r}{d \\theta}=2 \\sin \\theta \\\\\n& \\frac{d x}{d \\theta}=\\frac{d r}{d \\theta} \\cos \\theta-r \\sin \\theta=4 \\sin \\theta \\cos \\theta-\\sin \\theta \\\\\n& \\frac{d y}{d \\theta}=\\frac{d r}{d \\theta} \\sin \\theta+r \\cos \\theta=2 \\sin ^{2} \\theta+(1-2 \\cos \\theta) \\cos \\theta\n\\end{aligned}\n\\]\n\\item[(c)] When \\(\\theta=\\frac{\\pi}{2}\\), we have \\(x=0, y=1\\).\n\\[\n\\left.\\frac{d y}{d x}\\right|_{\\theta=\\frac{\\pi}{2}}=\\left.\\frac{d y / d \\theta}{d x / d \\theta}\\right|_{\\theta=\\frac{\\pi}{2}}=-2\n\\]\nThe tangent line is given by \\(y=1-2 x\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 1: \\text { integrand }\\end{array}\\right.\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}1 \\text { : uses } x=r \\cos \\theta \\text { and } y=r \\sin \\theta \\\\ 1: \\frac{d r}{d \\theta} \\\\ 2: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { values for } x \\text { and } y \\\\ 1: \\text { expression for } \\frac{d y}{d x} \\\\ 1: \\text { tangent line equation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          519
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2009-form-b-frq-04-diagram-02.jpg",
+      "belongsToQuestion": "ap-calc-bc-2009-form-b-frq-05"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "ap-calc-ab-2004-frq-04",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the curve given by $x^(2)+ 4 y^(2)= 7 + 3 x y$.\n\n(a) Show that $frac(d y,d x)= frac(3 y - 2 x,8 y - 3 x)$.\n\n(b) Show that there is a point $P$ with $x$-coordinate 3 at which the line tangent to the curve at $P$ is horizontal. Find the $y$-coordinate of $P$.\n\n(c) Find the value of $frac(d^(2) y,d x^(2))$ at the point $P$ found in part (b). Does the curve have a local maximum, a local minimum, or neither at the point $P$ ? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          70,
+          572,
+          346
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          205.92,
+          287.13599999999997,
+          222.04799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.22399999999999,
+          231.552,
+          201.6,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          265.536,
+          549.5039999999999,
+          278.496
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          278.496,
+          206.784,
+          290.88
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          296.928,
+          536.544,
+          326.592
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          328.032,
+          338.4,
+          340.99199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "aa9bedc8814b57d6032e7d4d97ef9a6f09208db96df5b0817a14205ff69d3963",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

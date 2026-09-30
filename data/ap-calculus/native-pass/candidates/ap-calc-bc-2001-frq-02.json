@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2001-frq-02",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 2, align: (center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (days)], [$W(t)$ $lr((\"\"^(degree) upright(C)))$], table.hline(stroke: .5pt), [0], [20], [3], [31], [6], [28], [9], [24], [12], [22], [15], [21], table.hline(stroke: .5pt));\n\nThe temperature, in degrees Celsius ( $\"\"^(degree) upright(C)$ ), of the water in a pond is a differentiable function $W$ of time $t$. The table above shows the water temperature as recorded every 3 days over a 15-day period.\n\n(a) Use data from the table to find an approximation for $W'(12)$. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) Approximate the average temperature, in degrees Celsius, of the water over the time interval $0 <= t <= 15$ days by using a trapezoidal approximation with subintervals of length $Delta t = 3$ days.\n\n(c) A student proposes the function $P$, given by $P(t)= 20 + 10 t e^((- t \\/ 3))$, as a model for the temperature of the water in the pond at time $t$, where $t$ is measured in days and $P(t)$ is measured in degrees Celsius. Find $P'(12)$. Using appropriate units, explain the meaning of your answer in terms of water temperature.\n\n(d) Use the function $P$ defined in part (c) to find the average value, in degrees Celsius, of $P(t)$ over the time interval $0 <= t <= 15$ days.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          66,
+          572,
+          390
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "5e2345f227b730ad4b2e888c3d115c8a72ef53c8b5228c3464960c638a460771",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ]
+}

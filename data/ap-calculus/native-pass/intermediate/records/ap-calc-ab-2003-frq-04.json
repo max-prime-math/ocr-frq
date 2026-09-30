@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-frq-04",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2003-frq-04-diagram-01.png}\nLet \\(f\\) be a function defined on the closed interval \\(-3 \\leq x \\leq 4\\) with \\(f(0)=3\\). The graph of \\(f^{\\prime}\\), the derivative\nof \\(f\\), consists of one line segment and a semicircle, as shown above.\n(a) On what intervals, if any, is \\(f\\) increasing? Justify your answer.\n(b) Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(f\\) on the open interval \\(-3<x<4\\). Justify\nyour answer.\n(c) Find an equation for the line tangent to the graph of \\(f\\) at the point \\((0,3)\\).\n(d) Find \\(f(-3)\\) and \\(f(4)\\). Show the work that leads to your answers.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        167.20799255371094,
+        203.78399658203125,
+        445.9440002441406,
+        401.5920104980469
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\nLet \\(f\\) be a function defined on the closed interval \\(-3 \\leq x \\leq 4\\) with \\(f(0)=3\\). The graph of \\(f^{\\prime}\\), the derivative of \\(f\\), consists of one line segment and a semicircle, as shown above.\n\\begin{itemize}\n\\item[(a)] On what intervals, if any, is \\(f\\) increasing? Justify your answer.\n\\item[(b)] Find the \\(x\\)-coordinate of each point of inflection of the graph of \\(f\\) on the open interval \\(-3<x<4\\). Justify your answer.\n\\item[(c)] Find an equation for the line tangent to the graph of \\(f\\) at the point (0, 3).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/97236c8c-b16e-46c8-8699-3f352fa81633-1.jpg?height=430&width=610&top_left_y=385&top_left_x=1384)\n\\begin{itemize}\n\\item[(d)] Find \\(f(-3)\\) and \\(f(4)\\). Show the work that leads to your answers.\n\\item[(a)] The function \\(f\\) is increasing on [-3,-2] since \\(f^{\\prime}>0\\) for \\(-3 \\leq x<-2\\).\n\\item[(b)] \\(x=0\\) and \\(x=2\\)\n\\(f^{\\prime}\\) changes from decreasing to increasing at \\(x=0\\) and from increasing to decreasing at \\(x=2\\)\n\\item[(c)] \\(f^{\\prime}(0)=-2\\)\nTangent line is \\(y=-2 x+3\\).\n\\item[(d)]\n\\[\n\\begin{aligned}\nf(0)-f(-3) & =\\int_{-3}^{0} f^{\\prime}(t) d t \\\\\n& =\\frac{1}{2}(1)(1)-\\frac{1}{2}(2)(2)=-\\frac{3}{2}\n\\end{aligned}\n\\]\n\\[\nf(-3)=f(0)+\\frac{3}{2}=\\frac{9}{2}\n\\]\n\\[\n\\begin{aligned}\nf(4)-f(0) & =\\int_{0}^{4} f^{\\prime}(t) d t \\\\\n& =-\\left(8-\\frac{1}{2}(2)^{2} \\pi\\right)=-8+2 \\pi\n\\end{aligned}\n\\]\n\\[\nf(4)=f(0)-8+2 \\pi=-5+2 \\pi\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { interval } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: x=0 \\text { and } x=2 \\text { only } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\n1 : equation\n\\(\\int 1: \\pm\\left(\\frac{1}{2}-2\\right)\\)\n(difference of areas\nof triangles)\n\n1 : answer for \\(f(-3)\\) using FTC\n4 :\n\\(1: \\pm\\left(8-\\frac{1}{2}(2)^{2} \\pi\\right)\\)\n(area of rectangle\n- area of semicircle)\n\n1 : answer for \\(f(4)\\) using FTC",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          70,
+          572,
+          556
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          170.208,
+          206.784,
+          442.94399999999996,
+          398.592
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          409.53599999999994,
+          556.992,
+          423.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          425.664,
+          365.472,
+          438.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          444.38399999999996,
+          360.864,
+          456.768
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          462.23999999999995,
+          556.992,
+          475.2
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          476.352,
+          141.696,
+          487.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          493.63199999999995,
+          403.48799999999994,
+          507.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          517.2479999999999,
+          368.928,
+          529.632
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

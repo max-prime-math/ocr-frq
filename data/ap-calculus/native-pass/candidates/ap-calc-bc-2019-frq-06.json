@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2019-frq-06",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2019-frq-06-diagram-01.png\", width: 65%)\n\n#table(stroke: none, columns: 2, align: (center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$n$], [$f^((n))(0)$], table.hline(stroke: .5pt), [2], [3], table.hline(stroke: .5pt), [3], [$- frac(23,2)$], table.hline(stroke: .5pt), [4], [54], table.hline(stroke: .5pt));\n\nA function $f$ has derivatives of all orders for all real numbers $x$. A portion of the graph of $f$ is shown above, along with the line tangent to the graph of $f$ at $x = 0$. Selected derivatives of $f$ at $x = 0$ are given in the table above.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x = 0$.\n\n(b) Write the first three nonzero terms of the Maclaurin series for $e^(x)$. Write the second-degree Taylor polynomial for $e^(x) f(x)$ about $x = 0$.\n\n(c) Let $h$ be the function defined by $h(x)= integral_(0)^(x) f(t) d t$. Use the Taylor polynomial found in part (a) to find an approximation for $h(1)$.\n\n(d) It is known that the Maclaurin series for $h$ converges to $h(x)$ for all real numbers $x$. It is also known that the individual terms of the series for $h(1)$ alternate in sign and decrease in absolute value to 0. Use the alternating series error bound to show that the approximation found in part (c) differs from $h(1)$ by at most 0.45.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2019-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2019-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        143.0,
+        94.0,
+        341.0,
+        322.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          35,
+          92,
+          570,
+          665.52
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a697e550ce4c11f98ed2c05b1c201765b83218e62a05302c58c782487c0463b6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 7,
+      "sourceRect": [
+        143.0,
+        94.0,
+        341.0,
+        322.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2019-frq-05"
+    }
+  ]
+}

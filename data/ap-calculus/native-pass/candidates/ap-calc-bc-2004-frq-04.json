@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2004-frq-04",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the curve given by $x^(2)+ 4 y^(2)= 7 + 3 x y$.\n\n(a) Show that $frac(d y,d x)= frac(3 y - 2 x,8 y - 3 x)$.\n\n(b) Show that there is a point $P$ with $x$-coordinate 3 at which the line tangent to the curve at $P$ is horizontal. Find the $y$-coordinate of $P$.\n\n(c) Find the value of $frac(d^(2) y,d x^(2))$ at the point $P$ found in part (b). Does the curve have a local maximum, a local minimum, or neither at the point $P$ ? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          342
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "df4dbe35968da1d437e7d7816fb9c17c468a1edd0438fbf166bdb145360f5fcc",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ]
+}

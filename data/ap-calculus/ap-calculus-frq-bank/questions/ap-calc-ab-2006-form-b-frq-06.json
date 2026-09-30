@@ -1,0 +1,22 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 8, align: (left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [$t$ (sec)], [0], [15], [25], [30], [35], [50], [60], table.hline(stroke: .5pt), [$v(t)$ (ft/sec)], [-20], [-30], [-20], [-14], [-10], [0], [10], table.hline(stroke: .5pt), [$a(t)$ ( $upright(f t) \\/ upright(s e c)^(2)$ )], [1], [5], [2], [1], [2], [4], [2], table.hline(stroke: .5pt));\n\nA car travels on a straight track. During the time interval $0 <= t <= 60$ seconds, the car's velocity $v$, measured in feet per second, and acceleration $a$, measured in feet per second per second, are continuous functions. The table above shows selected values of these functions.\n\n(a) Using appropriate units, explain the meaning of $integral_(30)^(60)| v(t)| d t$ in terms of the car's motion. Approximate $integral_(30)^(60)| v(t)| d t$ using a trapezoidal approximation with the three subintervals determined by the table.\n\n(b) Using appropriate units, explain the meaning of $integral_(0)^(30) a(t) d t$ in terms of the car's motion. Find the exact value of $integral_(0)^(30) a(t) d t$.\n\n(c) For $0 < t < 60$, must there be a time $t$ when $v(t)= - 5$ ? Justify your answer.\n\n(d) For $0 < t < 60$, must there be a time $t$ when $a(t)= 0$ ? Justify your answer.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2006-form-b-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-2",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2006",
+      "Form B",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2004-form-b-frq-04",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2004-form-b-frq-04-diagram-01.jpg\", width: 65%)\n\nThe figure above shows the graph of $f'$, the derivative of the function $f$, on the closed interval $- 1 <= x <= 5$. The graph of $f'$ has horizontal tangent lines at $x = 1$ and $x = 3$. The function $f$ is twice differentiable with $f(2)= 6$.\n\n(a) Find the $x$-coordinate of each of the points of inflection of the graph of $f$. Give a reason for your answer.\n\n(b) At what value of $x$ does $f$ attain its absolute minimum value on the closed interval $- 1 <= x <= 5$ ? At what value of $x$ does $f$ attain its absolute maximum value on the closed interval $- 1 <= x <= 5$ ? Show the analysis that leads to your answers.\n\n(c) Let $g$ be the function defined by $g(x)= x f(x)$. Find an equation for the line tangent to the graph of $g$ at $x = 2$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2004-form-b-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2004-form-b-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2004-form-b_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          56,
+          572,
+          569
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9c10c2302336997e9befe031a7d719fba6eeb0dac8d836fe6dbd309ef312d2f8",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ]
+}

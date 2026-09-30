@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-form-b-frq-05",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "rawPrompt": "Let $f$ and $g$ be the functions defined by $f(x)=\\frac{1}{x}$ and $g(x)=\\frac{4 x}{1+4 x^{2}}$, for all $x>0$.\\\\\n(a) Find the absolute maximum value of $g$ on the open interval $(0, \\infty)$ if the maximum exists. Find the absolute minimum value of $g$ on the open interval $(0, \\infty)$ if the minimum exists. Justify your answers.\\\\\n(b) Find the area of the unbounded region in the first quadrant to the right of the vertical line $x=1$, below the graph of $f$, and above the graph of $g$.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\nLet \\(f\\) and \\(g\\) be the functions defined by \\(f(x)=\\frac{1}{x}\\) and \\(g(x)=\\frac{4 x}{1+4 x^{2}}\\), for all \\(x>0\\).\n\\begin{itemize}\n\\item[(a)] Find the absolute maximum value of \\(g\\) on the open interval \\((0, \\infty)\\) if the maximum exists. Find the absolute minimum value of \\(g\\) on the open interval \\((0, \\infty)\\) if the minimum exists. Justify your answers.\n\\item[(b)] Find the area of the unbounded region in the first quadrant to the right of the vertical line \\(x=1\\), below the graph of \\(f\\), and above the graph of \\(g\\).\n\\item[(a)] \\(g^{\\prime}(x)=\\frac{4\\left(1+4 x^{2}\\right)-4 x(8 x)}{\\left(1+4 x^{2}\\right)^{2}}=\\frac{4\\left(1-4 x^{2}\\right)}{\\left(1+4 x^{2}\\right)^{2}}\\)\nFor \\(x>0, g^{\\prime}(x)=0\\) for \\(x=\\frac{1}{2}\\).\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)>0 \\text { for } 0<x<\\frac{1}{2} \\\\\n& g^{\\prime}(x)<0 \\text { for } x>\\frac{1}{2} \\\\\n& g\\left(\\frac{1}{2}\\right)=1\n\\end{aligned}\n\\]\nTherefore \\(g\\) has a maximum value of 1 at \\(x=\\frac{1}{2}\\), and \\(g\\) has no minimum value on the open interval \\((0, \\infty)\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\int_{1}^{\\infty}(f(x)-g(x)) d x=\\lim _{b \\rightarrow \\infty} \\int_{1}^{b}(f(x)-g(x)) d x \\\\\n& =\\left.\\lim _{b \\rightarrow \\infty}\\left(\\ln (x)-\\frac{1}{2} \\ln \\left(1+4 x^{2}\\right)\\right)\\right|_{x=1} ^{x=b} \\\\\n& =\\lim _{b \\rightarrow \\infty}\\left(\\ln (b)-\\frac{1}{2} \\ln \\left(1+4 b^{2}\\right)+\\frac{1}{2} \\ln (5)\\right) \\\\\n& =\\lim _{b \\rightarrow \\infty} \\ln \\left(\\frac{b \\sqrt{5}}{\\sqrt{1+4 b^{2}}}\\right) \\\\\n& =\\lim _{b \\rightarrow \\infty} \\ln \\left(\\frac{\\sqrt{5 b^{2}}}{\\sqrt{1+4 b^{2}}}\\right) \\\\\n& =\\frac{1}{2} \\lim _{b \\rightarrow \\infty} \\ln \\left(\\frac{5 b^{2}}{1+4 b^{2}}\\right) \\\\\n& =\\frac{1}{2} \\ln \\frac{5}{4}\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          544,
+          174
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

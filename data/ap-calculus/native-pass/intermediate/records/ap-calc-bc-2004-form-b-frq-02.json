@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2004-form-b-frq-02",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "rawPrompt": "Let $f$ be a function having derivatives of all orders for all real numbers. The third-degree Taylor polynomial for $f$ about $x=2$ is given by\n\n$$\nT(x)=7-9(x-2)^{2}-3(x-2)^{3} .\n$$\n\n(a) Find $f$ (2) and $f^{\\prime \\prime}(2)$.\\\\\n(b) Is there enough information given to determine whether $f$ has a critical point at $x=2$ ?\n\nIf not, explain why not.\\\\\nIf so, determine whether $f(2)$ is a relative maximum, a relative minimum, or neither, and justify your answer.\\\\\n(c) Use $T(x)$ to find an approximation for $f(0)$. Is there enough information given to determine whether $f$ has a critical point at $x=0$ ?\\\\\nIf not, explain why not.\\\\\nIf so, determine whether $f(0)$ is a relative maximum, a relative minimum, or neither, and justify your answer.\\\\\n(d) The fourth derivative of $f$ satisfies the inequality $\\left|f^{(4)}(x)\\right| \\leq 6$ for all $x$ in the closed interval [ 0,2 ]. Use the Lagrange error bound on the approximation to $f(0)$ found in part (c) to explain why $f(0)$ is negative.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nLet \\(f\\) be a function having derivatives of all orders for all real numbers. The third-degree Taylor polynomial for \\(f\\) about \\(x=2\\) is given by \\(T(x)=7-9(x-2)^{2}-3(x-2)^{3}\\).\n\\begin{itemize}\n\\item[(a)] Find \\(f(2)\\) and \\(f^{\\prime \\prime}(2)\\).\n\\item[(b)] Is there enough information given to determine whether \\(f\\) has a critical point at \\(x=2\\) ? If not, explain why not. If so, determine whether \\(f(2)\\) is a relative maximum, a relative minimum, or neither, and justify your answer.\n\\item[(c)] Use \\(T(x)\\) to find an approximation for \\(f(0)\\). Is there enough information given to determine whether \\(f\\) has a critical point at \\(x=0\\) ? If not, explain why not. If so, determine whether \\(f(0)\\) is a relative maximum, a relative minimum, or neither, and justify your answer.\n\\item[(d)] The fourth derivative of \\(f\\) satisfies the inequality \\(\\left|f^{(4)}(x)\\right| \\leq 6\\) for all \\(x\\) in the closed interval \\([0,2]\\). Use the Lagrange error bound on the approximation to \\(f(0)\\) found in part (c) to explain why \\(f(0)\\) is negative.\n\\item[(a)] \\(f(2)=T(2)=7\\)\n\\[\n\\frac{f^{\\prime \\prime}(2)}{2!}=-9 \\text { so } f^{\\prime \\prime}(2)=-18\n\\]\n\\item[(b)] Yes, since \\(f^{\\prime}(2)=T^{\\prime}(2)=0, f\\) does have a critical point at \\(x=2\\).\nSince \\(f^{\\prime \\prime}(2)=-18<0, f(2)\\) is a relative maximum value.\n\\item[(c)] \\(f(0) \\approx T(0)=-5\\)\nIt is not possible to determine if \\(f\\) has a critical point at \\(x=0\\) because \\(T(x)\\) gives exact information only at \\(x=2\\).\n\\item[(d)] Lagrange error bound \\(=\\frac{6}{4!}|0-2|^{4}=4\\)\n\\[\nf(0) \\leq T(0)+4=-1\n\\]\nTherefore, \\(f(0)\\) is negative.\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f(2)=7 \\\\ 1: f^{\\prime \\prime}(2)=-18\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{aligned} 1 & : \\text { states } f^{\\prime}(2)=0 \\\\ 1 & : \\text { declares } f(2) \\text { as a relative } \\\\ & \\text { maximum because } f^{\\prime \\prime}(2)<0\\end{aligned}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: f(0) \\approx T(0)=-5 \\\\ 1: \\text { declares that it is not } \\\\ \\text { possible to determine } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { value of Lagrange error } \\\\ \\quad \\text { bound } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          339,
+          572,
+          648
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

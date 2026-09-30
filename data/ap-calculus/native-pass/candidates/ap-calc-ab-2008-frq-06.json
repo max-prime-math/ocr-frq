@@ -1,0 +1,142 @@
+{
+  "id": "ap-calc-ab-2008-frq-06",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function given by $f(x)= frac(ln x,x)$ for all $x > 0$. The derivative of $f$ is given by $f'(x)= frac(1 - ln x,x^(2))$.\n\n(a) Write an equation for the line tangent to the graph of $f$ at $x = e^(2)$.\n\n(b) Find the $x$-coordinate of the critical point of $f$. Determine whether this point is a relative minimum, a relative maximum, or neither for the function $f$. Justify your answer.\n\n(c) The graph of the function $f$ has exactly one point of inflection. Find the $x$-coordinate of this point.\n\n(d) Find $lim_(x -> 0^(+)) f(x)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          346,
+          572,
+          524
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          368.64,
+          544.608,
+          396.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          405.21599999999995,
+          374.4,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          426.816,
+          565.0559999999999,
+          439.2
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          439.2,
+          350.20799999999997,
+          451.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          457.91999999999996,
+          517.536,
+          470.304
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          475.77599999999995,
+          156.672,
+          497.376
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0e46624059439e2e9190270d8112f7a1bdbc123c8a22fd8f5569a60c57d11938",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

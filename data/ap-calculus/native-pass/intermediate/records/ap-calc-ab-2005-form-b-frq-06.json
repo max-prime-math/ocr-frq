@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2005-form-b-frq-06",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=\\frac{-x y^{2}}{2}\\). Let \\(y=f(x)\\) be the particular solution to this differential\nequation with the initial condition \\(f(-1)=2\\).\n(a) On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated.\n(Note: Use the axes provided in the test booklet.)\n\\includegraphics{ap-calc-ab-2005-form-b-frq-06-diagram-01.png}\n(b) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=-1\\).\n(c) Find the solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(-1)=2\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-form-b-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-form-b-frq-06-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        187.0800018310547,
+        333.6719970703125,
+        425.78399658203125,
+        511.0320129394531
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\nConsider the differential equation \\(\\frac{d y}{d x}=\\frac{-x y^{2}}{2}\\). Let \\(y=f(x)\\) be the particular solution to this differential equation with the initial condition \\(f(-1)=2\\).\n\\begin{itemize}\n\\item[(a)] On the axes provided, sketch a slope field for the given differential equation at the twelve points indicated.\n(Note: Use the axes provided in the test booklet.)\n\\item[(b)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=-1\\).\n\\item[(c)] Find the solution \\(y=f(x)\\) to the given differential equation with the initial condition \\(f(-1)=2\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/e2f80ea1-e8a7-40da-ac57-6fdafc41330b-1.jpg?height=683&width=846&top_left_y=1066&top_left_x=339)\n\\item[(b)] Slope \\(=\\frac{-(-1) 4}{2}=2\\)\n\\[\ny-2=2(x+1)\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\frac{1}{y^{2}} d y=-\\frac{x}{2} d x \\\\\n& -\\frac{1}{y}=-\\frac{x^{2}}{4}+C \\\\\n& -\\frac{1}{2}=-\\frac{1}{4}+C ; C=-\\frac{1}{4} \\\\\n& y=\\frac{1}{\\frac{x^{2}}{4}+\\frac{1}{4}}=\\frac{4}{x^{2}+1}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { zero slopes } \\\\ 1: \\text { nonzero slopes }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[1] : equation\n\\item[] \\(6:\\left\\{\\begin{array}{l}1: \\text { separates variables } \\\\ 2: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\n\\item[] Note: max 3 / 6 [1-2-0-0-0] if no constant of integration\n\\item[] Note: 0/6 if no separation of variables\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          231,
+          572,
+          580
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          252.576,
+          537.12,
+          279.936
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          281.664,
+          268.416,
+          295.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.664,
+          303.26399999999995,
+          554.4,
+          316.224
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          315.64799999999997,
+          315.072,
+          328.60799999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "chart",
+        "rect": [
+          190.07999999999998,
+          336.67199999999997,
+          422.784,
+          508.032
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          518.4,
+          376.416,
+          531.9359999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          538.2719999999999,
+          519.8399999999999,
+          552.384
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

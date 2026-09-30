@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1998-frq-02",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "rawPrompt": "Let \\(f\\) be the function given by \\(f(x)=2 x e^{2 x}\\).\n(a) Find \\(\\lim _{x \\rightarrow-\\infty} f(x)\\) and \\(\\lim _{x \\rightarrow \\infty} f(x)\\).\n(b) Find the absolute minimum value of \\(f\\). Justify that your answer is an absolute minimum.\n(c) What is the range of \\(f\\) ?\n(d) Consider the family of functions defined by \\(y=b x e^{b x}\\), where \\(b\\) is a nonzero constant. Show\nthat the absolute minimum value of \\(b x e^{b x}\\) is the same for all nonzero values of \\(b\\).",
+  "assets": [],
+  "rawScoringGuide": "2. Let \\(f\\) be the function given by \\(f(x)=2 x e^{2 x}\\).\n\\begin{itemize}\n\\begin{itemize}\n\\item[(a)] Find \\(\\lim _{x \\rightarrow-\\infty} f(x)\\) and \\(\\lim _{x \\rightarrow \\infty} f(x)\\).\n\\item[(b)] Find the absolute minimum value of \\(f\\). Justify that your answer is an absolute minimum.\n\\item[(c)] What is the range of \\(f\\) ?\n\\item[(d)] Consider the family of functions defined by \\(y=b x e^{b x}\\), where \\(b\\) is a nonzero constant. Show that the absolute minimum value of \\(b x e^{b x}\\) is the same for all nonzero values of \\(b\\).\n\\end{itemize}\n\\item[(a)] \\(\\lim _{x \\rightarrow-\\infty} 2 x e^{2 x}=0\\)\n\\(\\lim _{x \\rightarrow \\infty} 2 x e^{2 x}=\\infty\\) or DNE\n\\item[(b)] \\(f^{\\prime}(x)=2 e^{2 x}+2 x \\cdot 2 \\cdot e^{2 x}=2 e^{2 x}(1+2 x)=0\\)\nif \\(x=-1 / 2\\)\n\\(f(-1 / 2)=-1 / e\\) or -0.368 or -0.367\n\\(-1 / e\\) is an absolute minimum value because:\n\\begin{itemize}\n\\item[(i)] \\(f^{\\prime}(x)<0\\) for all \\(x<-1 / 2\\) and\n\\(f^{\\prime}(x)>0\\) for all \\(x>-1 / 2\\)\n-or-\n\\item[(ii)]\n\\[\nf^{\\prime}(x)-\\frac{+}{-1 / 2}\n\\]\n\\end{itemize}\n\\item[(c)] Range of \\(f=[-1 / e, \\infty)\\)\nor \\([-0.367, \\infty)\\)\nor \\([-0.368, \\infty)\\)\n\\item[(d)] \\(y^{\\prime}=b e^{b x}+b^{2} x e^{b x}=b e^{b x}(1+b x)=0\\)\nif \\(x=-1 / b\\)\nAt \\(x=-1 / b, y=-1 / e\\)\n\\(y\\) has an absolute minimum value of \\(-1 / e\\) for all nonzero \\(b\\)\n\\end{itemize}\n\n\\section*{\\(2 \\begin{cases}1: & 0 \\text { as } x \\rightarrow-\\infty \\\\ 1: & \\infty \\text { or DNE as } x \\rightarrow \\infty\\end{cases}\\)}\n\\(3 \\begin{cases}\\text { 1: } & \\text { solves } f^{\\prime}(x)=0 \\\\ \\text { 1: } & \\text { evaluates } f \\text { at student's critical point } \\\\ & 0 / 1 \\text { if not local minimum from } \\\\ & \\text { student's derivative } \\\\ \\text { 1: } & \\text { justifies absolute minimum value } \\\\ & 0 / 1 \\text { for a local argument } \\\\ & 0 / 1 \\text { without explicit symbolic } \\\\ & \\text { derivative }\\end{cases}\\)\nNote: 0/3 if no absolute minimum based on student's derivative\n\n1: answer\nNote: must include the left-hand endpoint; exclude the right-hand \"endpoint\"\n\\(3 \\begin{cases}1: & \\text { sets } y^{\\prime}=b e^{b x}(1+b x)=0 \\\\ 1: & \\text { solves student's } y^{\\prime}=0 \\\\ 1: & \\text { evaluates } y \\text { at a critical number } \\\\ & \\text { and gets a value independent of } b\\end{cases}\\)\nNote: 0/3 if only considering specific values of \\(b\\)\n\n\\section*{1998 AP Calculus AB Scoring Guidelines}\n\n\\section*{AB 2 Board Note \\# 1}\n\nPart (d)\n\\begin{itemize}\n\\item[] 3/3 Argument with the following three ingredients:\n\\begin{itemize}\n\\item[1.] The graph of \\(y=b x e^{b x}\\) is a horizontal compression or expansion (with a reflection across the \\(y\\)-axis if \\(b<0\\) ) of the graph of \\(y=x e^{x}\\).\n\\item[2.] The range of \\(y=b x e^{b x}\\) is therefore the same as the range of \\(y=x e^{x}\\).\n\\item[3.] Therefore the absolute minimum value of \\(y=b x e^{b x}\\) is the same for all (non-zero) values of \\(b\\).\n\\end{itemize}\n\\item[] 0/3 Analyzing the horizontal compression/expansion of graphs of \\(y=b x e^{b x}\\) for specific values of \\(b\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          74.30375545726103,
+          73.72772159090908,
+          305.566994341682,
+          88.70366503906249
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          91.29565525124289,
+          262.655135569853,
+          109.43958673650567
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          112.03157694868607,
+          540.862219956342,
+          125.85552474698152
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          92.44769574333641,
+          129.02351278409088,
+          226.65525404986215,
+          141.98346384499288
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          143.9994562322443,
+          540.862219956342,
+          158.97539968039771
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          157.82340403053976,
+          497.95036118451293,
+          170.78335509144173
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

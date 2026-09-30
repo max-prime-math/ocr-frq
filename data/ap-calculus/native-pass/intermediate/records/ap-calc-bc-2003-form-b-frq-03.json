@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2003-form-b-frq-03",
+  "course": "BC",
+  "year": 2003,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003-FORM-B.pdf",
+      "sha256": "a713639f10f24728383e4c9c11b467168128b498a4c07d63f9d69bb258cd39b6",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003-FORM-B.pdf",
+      "sha256": "bd493081be43f5d7853d52cbbd70fe5484ac2c0d212c498663e5bdf240f8f130"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\nDistance \\\\\n$x$ \\\\\n$(\\mathrm{~mm})$ \\\\\n\\end{tabular} & 0 & 60 & 120 & 180 & 240 & 300 & 360 \\\\\n\\hline\n\\begin{tabular}{c}\nDiameter \\\\\n$B(x)$ \\\\\n$(\\mathrm{mm})$ \\\\\n\\end{tabular} & 24 & 30 & 28 & 30 & 26 & 24 & 26 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nA blood vessel is 360 millimeters ( mm ) long with circular cross sections of varying diameter. The table above gives the measurements of the diameter of the blood vessel at selected points along the length of the blood vessel, where $x$ represents the distance from one end of the blood vessel and $B(x)$ is a twice-differentiable function that represents the diameter at that point.\\\\\n(a) Write an integral expression in terms of $B(x)$ that represents the average radius, in mm , of the blood vessel between $x=0$ and $x=360$.\\\\\n(b) Approximate the value of your answer from part (a) using the data from the table and a midpoint Riemann sum with three subintervals of equal length. Show the computations that lead to your answer.\\\\\n(c) Using correct units, explain the meaning of $\\pi \\int_{125}^{275}\\left(\\frac{B(x)}{2}\\right)^{2} d x$ in terms of the blood vessel.\\\\\n(d) Explain why there must be at least one value $x$, for $0<x<360$, such that $B^{\\prime \\prime}(x)=0$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA blood vessel is 360 millimeters (mm) long with circular cross sections of varying diameter. The table above gives the measurements of the diameter of the blood vessel at selected points along the length of the blood vessel, where \\(x\\) represents the distance from one end of the blood vessel and \\(B(x)\\) is a twice-differentiable function that represents the diameter at that point.\n\\begin{itemize}\n\\item[(a)] Write an integral expression in terms of \\(B(x)\\) that represents the average radius, in mm, of the blood vessel between \\(x=0\\) and \\(x=360\\).\n\\item[(b)] Approximate the value of your answer from part (a) using the data from the table and a midpoint Riemann sum with three subintervals of equal length. Show the computations that lead to your answer.\n\\item[(c)] Using correct units, explain the meaning of \\(\\pi \\int_{125}^{275}\\left(\\frac{B(x)}{2}\\right)^{2} d x\\) in terms of the blood vessel.\n\\item[(d)] Explain why there must be at least one value \\(x\\), for \\(0<x<360\\), such that \\(B^{\\prime \\prime}(x)=0\\).\n\\item[(a)] \\(\\frac{1}{360} \\int_{0}^{360} \\frac{B(x)}{2} d x\\)\n\\item[(b)] \\(\\frac{1}{360}\\left[120\\left(\\frac{B(60)}{2}+\\frac{B(180)}{2}+\\frac{B(300)}{2}\\right)\\right]=\\) \\(\\frac{1}{360}[60(30+30+24)]=14\\)\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { limits and constant } \\\\ 1: \\text { integrand }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: B(60)+B(180)+B(300) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] \\(\\frac{B(x)}{2}\\) is the radius, so \\(\\pi\\left(\\frac{B(x)}{2}\\right)^{2}\\) is the area of the cross section at \\(x\\). The expression is the volume in \\(\\mathrm{mm}^{3}\\) of the blood vessel between 125 mm and 275 mm from the end of the vessel.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { volume in } \\mathrm{mm}^{3} \\\\ 1: \\text { between } x=125 \\text { and } \\\\ \\quad x=275\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] By the MVT, \\(B^{\\prime}\\left(c_{1}\\right)=0\\) for some \\(c_{1}\\) in \\((60,180)\\) and \\(B^{\\prime}\\left(c_{2}\\right)=0\\) for some \\(c_{2}\\) in \\((240,360)\\). The MVT applied to \\(B^{\\prime}(x)\\) shows that \\(B^{\\prime \\prime}(x)=0\\) for some \\(x\\) in the interval \\(\\left(c_{1}, c_{2}\\right)\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{c}2: \\text { explains why there are two } \\\\ \\quad \\text { values of } x \\text { where } B^{\\prime}(x) \\text { has } \\\\ \\quad \\text { the same value } \\\\ 1: \\text { explains why that means } \\\\ \\quad B^{\\prime \\prime}(x)=0 \\text { for } 0<x<360\\end{array}\\right.\\)\nNote: max 1/3 if only explains why \\(B^{\\prime}(x)=0\\) at some \\(x\\) in ( 0,360 ).",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          361,
+          572,
+          670
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

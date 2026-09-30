@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2000-frq-03",
+  "course": "AB",
+  "year": 2000,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2000.pdf",
+      "sha256": "8e08e92dec509bc366d977e79e39cf3554173f6a13e377a7e97f517a816237b7",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2000.pdf",
+      "sha256": "ce28273ef702462dbebe3af061493570d66d1ad118e59d65e92a671a852ee8b1"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2000-frq-03-diagram-01.png}\nThe figure above shows the graph of \\(f^{\\prime}\\), the derivative of the function \\(f\\), for \\(-7 \\leq x \\leq 7\\). The graph of \\(f^{\\prime}\\) has\nhorizontal tangent lines at \\(x=-3, x=2\\), and \\(x=5\\), and a vertical tangent line at \\(x=3\\).\n(a) Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f\\) attains a relative minimum. Justify your answer.\n(b) Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f\\) attains a relative maximum. Justify your answer.\n(c) Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f^{\\prime \\prime}(x)<0\\).\n(d) At what value of \\(x\\), for \\(-7 \\leq x \\leq 7\\), does \\(f\\) attain its absolute maximum? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2000-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2000-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        99.81600189208984,
+        56.90399932861328,
+        510.45599365234375,
+        231.0959930419922
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "The figure above shows the graph of \\(f^{\\prime}\\), the derivative of the function \\(f\\), for \\(-7 \\leq x \\leq 7\\). The graph of \\(f^{\\prime}\\) has horizontal tangent lines at \\(x=-3, x=2\\), and \\(x=5\\), and a vertical tangent line at \\(x=3\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f\\) attains a relative minimum. Justify your answer.\n\\item[(b)] Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f\\) attains a relative maximum. Justify your answer.\n\\item[(c)] Find all values of \\(x\\), for \\(-7<x<7\\), at which \\(f^{\\prime \\prime}(x)<0\\).\n\\item[(d)] At what value of \\(x\\), for \\(-7 \\leq x \\leq 7\\), does \\(f\\) attain its absolute maximum? Justify your answer.\n\\item[(a)] \\(x=-1\\)\n\\(f^{\\prime}(x)\\) changes from negative to positive at \\(x=-1\\)\n\\item[(b)] \\(x=-5\\)\n\\(f^{\\prime}(x)\\) changes from positive to negative at \\(x=-5\\)\n\\item[(c)] \\(f^{\\prime \\prime}(x)\\) exists and \\(f^{\\prime}\\) is decreasing on the intervals (-7,-3), (2,3), and (3,5)\n\\item[(d)] \\(x=7\\)\n\\end{itemize}\n\nThe absolute maximum must occur at \\(x=-5\\) or at an endpoint.\n\\(f(-5)>f(-7)\\) because \\(f\\) is increasing on (-7,-5)\nThe graph of \\(f^{\\prime}\\) shows that the magnitude of the negative change in \\(f\\) from \\(x=-5\\) to \\(x=-1\\) is smaller\n\\(2 \\begin{cases}1: & \\text { answer } \\\\ 1: & \\text { justification }\\end{cases}\\)\n\\(2 \\begin{cases}1: & \\text { answer } \\\\ 1: & \\text { justification }\\end{cases}\\)\n\\(2 \\begin{cases}1: & (-7,-3) \\\\ 1: & (2,3) \\cup(3,5)\\end{cases}\\)\n\\(\\begin{cases}1: & \\text { answer } \\\\ 1: & \\text { identifies } x=-5 \\text { and } x=7\\end{cases}\\) as candidates\n- or - indicates that the graph of \\(f\\) increases, decreases, then increases\n\n1 : justifies \\(f(7)>f(-5)\\) than the positive change in \\(f\\) from \\(x=-1\\) to \\(x=7\\).\n\nTherefore the net change in \\(f\\) is positive from \\(x=-5\\) to \\(x=7\\), and \\(f(7)>f(-5)\\). So \\(f(7)\\) is the absolute maximum.",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          55,
+          572,
+          486
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          102.81599999999999,
+          59.903999999999996,
+          507.45599999999996,
+          228.09599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          238.46399999999997,
+          561.5999999999999,
+          251.42399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          254.016,
+          464.544,
+          266.976
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          273.024,
+          519.264,
+          285.984
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          294.62399999999997,
+          521.28,
+          307.584
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          315.35999999999996,
+          344.15999999999997,
+          328.32
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          335.52,
+          507.45599999999996,
+          347.904
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2000-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2000-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

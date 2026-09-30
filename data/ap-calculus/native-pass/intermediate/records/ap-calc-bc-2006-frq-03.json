@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-frq-03",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "rawPrompt": "An object moving along a curve in the $x y$-plane is at position $(x(t), y(t))$ at time $t$, where\n\n$$\n\\frac{d x}{d t}=\\sin ^{-1}\\left(1-2 e^{-t}\\right) \\text { and } \\frac{d y}{d t}=\\frac{4 t}{1+t^{3}}\n$$\n\nfor $t \\geq 0$. At time $t=2$, the object is at the point $(6,-3)$. (Note: $\\sin ^{-1} x=\\arcsin x$ )\\\\\n(a) Find the acceleration vector and the speed of the object at time $t=2$.\\\\\n(b) The curve has a vertical tangent line at one point. At what time $t$ is the object at this point?\\\\\n(c) Let $m(t)$ denote the slope of the line tangent to the curve at the point $(x(t), y(t))$. Write an expression for $m(t)$ in terms of $t$ and use it to evaluate $\\lim _{t \\rightarrow \\infty} m(t)$.\\\\\n(d) The graph of the curve has a horizontal asymptote $y=c$. Write, but do not evaluate, an expression involving an improper integral that represents this value $c$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\nAn object moving along a curve in the \\(x y\\)-plane is at position \\((x(t), y(t))\\) at time \\(t\\), where\n\\[\n\\frac{d x}{d t}=\\sin ^{-1}\\left(1-2 e^{-t}\\right) \\text { and } \\frac{d y}{d t}=\\frac{4 t}{1+t^{3}}\n\\]\nfor \\(t \\geq 0\\). At time \\(t=2\\), the object is at the point (6, -3). (Note: \\(\\sin ^{-1} x=\\arcsin x\\) )\n\\begin{itemize}\n\\item[(a)] Find the acceleration vector and the speed of the object at time \\(t=2\\).\n\\item[(b)] The curve has a vertical tangent line at one point. At what time \\(t\\) is the object at this point?\n\\item[(c)] Let \\(m(t)\\) denote the slope of the line tangent to the curve at the point \\((x(t), y(t))\\). Write an expression for \\(m(t)\\) in terms of \\(t\\) and use it to evaluate \\(\\lim _{t \\rightarrow \\infty} m(t)\\).\n\\item[(d)] The graph of the curve has a horizontal asymptote \\(y=c\\). Write, but do not evaluate, an expression involving an improper integral that represents this value \\(c\\).\n\\item[(a)] \\(a(2)=\\langle 0.395\\) or 0.396, -0.741 or -0.740〉\nSpeed \\(=\\sqrt{x^{\\prime}(2)^{2}+y^{\\prime}(2)^{2}}=1.207\\) or 1.208\n\\item[(b)] \\(\\sin ^{-1}\\left(1-2 e^{-t}\\right)=0\\)\n\\(1-2 e^{-t}=0\\)\n\\(t=\\ln 2=0.693\\) and \\(\\frac{d y}{d t} \\neq 0\\) when \\(t=\\ln 2\\)\n\\item[(c)] \\(m(t)=\\frac{4 t}{1+t^{3}} \\cdot \\frac{1}{\\sin ^{-1}\\left(1-2 e^{-t}\\right)}\\)\n\\[\n\\begin{aligned}\n\\lim _{t \\rightarrow \\infty} m(t) & =\\lim _{t \\rightarrow \\infty}\\left(\\frac{4 t}{1+t^{3}} \\cdot \\frac{1}{\\sin ^{-1}\\left(1-2 e^{-t}\\right)}\\right) \\\\\n& =0\\left(\\frac{1}{\\sin ^{-1}(1)}\\right)=0\n\\end{aligned}\n\\]\n\\item[(d)] Since \\(\\lim _{t \\rightarrow \\infty} x(t)=\\infty\\),\n\\[\nc=\\lim _{t \\rightarrow \\infty} y(t)=-3+\\int_{2}^{\\infty} \\frac{4 t}{1+t^{3}} d t\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { acceleration } \\\\ 1: \\text { speed }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: x^{\\prime}(t)=0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: m(t) \\\\ 1: \\text { limit value }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { initial value consistent } \\\\ \\quad \\text { with lower limit }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          66,
+          572,
+          436
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

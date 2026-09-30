@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2019-frq-04",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2019-frq-04-diagram-01.png}\nA cylindrical barrel with a diameter of 2 feet contains collected rainwater, as shown in the figure above. The\nwater drains out through a valve (not shown) at the bottom of the barrel. The rate of change of the height \\(h\\) of\nthe water in the barrel with respect to time \\(t\\) is modeled by \\(\\frac{d h}{d t}=-\\frac{1}{10} \\sqrt{h}\\), where \\(h\\) is measured in feet and\n\\(t\\) is measured in seconds. (The volume \\(V\\) of a cylinder with radius \\(r\\) and height \\(h\\) is \\(V=\\pi r^{2} h\\).)\n(a) Find the rate of change of the volume of water in the barrel with respect to time when the height of the\nwater is 4 feet. Indicate units of measure.\n(b) When the height of the water is 3 feet, is the rate of change of the height of the water with respect to time\nincreasing or decreasing? Explain your reasoning.\n(c) At time \\(t=0\\) seconds, the height of the water is 5 feet. Use separation of variables to find an expression\nfor \\(h\\) in terms of \\(t\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2019-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2019-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        264.2640075683594,
+        114.21600341796875,
+        345.7200012207031,
+        271.4159851074219
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2019 SCORING GUIDELINES}\n\nQuestion 4\n\\begin{itemize}\n\\item[(a)] \\(V=\\pi r^{2} h=\\pi(1)^{2} h=\\pi h\\)\n\\(\\left.\\frac{d V}{d t}\\right|_{h=4}=\\left.\\pi \\frac{d h}{d t}\\right|_{h=4}=\\pi\\left(-\\frac{1}{10} \\sqrt{4}\\right)=-\\frac{\\pi}{5}\\) cubic feet per second\n\\item[(b)] \\(\\frac{d^{2} h}{d t^{2}}=-\\frac{1}{20 \\sqrt{h}} \\cdot \\frac{d h}{d t}=-\\frac{1}{20 \\sqrt{h}} \\cdot\\left(-\\frac{1}{10} \\sqrt{h}\\right)=\\frac{1}{200}\\)\nBecause \\(\\frac{d^{2} h}{d t^{2}}=\\frac{1}{200}>0\\) for \\(h>0\\), the rate of change of the height is increasing when the height of the water is 3 feet.\n\\item[(c)] \\(\\frac{d h}{\\sqrt{h}}=-\\frac{1}{10} d t\\)\n\\(\\int \\frac{d h}{\\sqrt{h}}=\\int-\\frac{1}{10} d t\\)\n\\(2 \\sqrt{h}=-\\frac{1}{10} t+C\\)\n\\(2 \\sqrt{5}=-\\frac{1}{10} \\cdot 0+C \\Rightarrow C=2 \\sqrt{5}\\)\n\\(2 \\sqrt{h}=-\\frac{1}{10} t+2 \\sqrt{5}\\)\n\\(h(t)=\\left(-\\frac{1}{20} t+\\sqrt{5}\\right)^{2}\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1: \\frac{d V}{d t}=\\pi \\frac{d h}{d t} \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d}{d h}\\left(-\\frac{1}{10} \\sqrt{h}\\right)=-\\frac{1}{20 \\sqrt{h}} \\\\ 1: \\frac{d^{2} h}{d t^{2}}=-\\frac{1}{20 \\sqrt{h}} \\cdot \\frac{d h}{d t} \\\\ 1: \\text { answer with explanation }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ \\quad \\text { and uses initial condition } \\\\ 1: h(t)\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: 0/4 if no separation of variables\nNote: \\(\\max 2 / 4\\) [1-1-0-0] if no constant of integration",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          34,
+          112,
+          571,
+          548
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "diagram",
+        "rect": [
+          267.26399999999995,
+          117.216,
+          342.71999999999997,
+          268.416
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          39.168,
+          292.032,
+          534.24,
+          304.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          319.392,
+          539.424,
+          332.352
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          54.72,
+          338.688,
+          534.24,
+          364.60799999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          370.08,
+          475.48799999999994,
+          386.496
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          402.62399999999997,
+          525.024,
+          415.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          73.728,
+          416.448,
+          258.048,
+          427.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          441.792,
+          539.424,
+          454.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          73.728,
+          455.328,
+          295.2,
+          467.712
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          483.55199999999996,
+          535.3919999999999,
+          496.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          497.95199999999994,
+          157.536,
+          509.75999999999993
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

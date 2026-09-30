@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2004-frq-02",
+  "course": "BC",
+  "year": 2004,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004.pdf",
+      "sha256": "bf0a67ced8c5d6689dd5ea579d142ee7a15ac87862f56fb49a2b756faf8b86ea",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004.pdf",
+      "sha256": "e57f1fc71ab2a96aef4ff3b6717614e031da72bfc5b420885d8b7c8d5d549c05"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2004-frq-02-diagram-01.jpg\", width: 65%)\n\nLet $f$ and $g$ be the functions given by $f(x)= 2 x(1 - x)$ and $g(x)= 3(x - 1) sqrt(x)$ for $0 <= x <= 1$. The graphs of $f$ and $g$ are shown in the figure above.\n\n(a) Find the area of the shaded region enclosed by the graphs of $f$ and $g$.\n\n(b) Find the volume of the solid generated when the shaded region enclosed by the graphs of $f$ and $g$ is revolved about the horizontal line $y = 2$.\n\n(c) Let $h$ be the function given by $h(x)= k x(1 - x)$ for $0 <= x <= 1$. For each $k > 0$, the region (not shown) enclosed by the graphs of $h$ and $g$ is the base of a solid with square cross sections perpendicular to the $x$-axis. There is a value of $k$ for which the volume of this solid is equal to 15. Write, but do not solve, an equation involving an integral expression that could be used to find the value of $k$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2004-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2004-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2004_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          69,
+          572,
+          409
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "d53107ee36f31416c25a331a3dd349e1ed083c6c2dea12c78575586021775d35",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004.zip"
+    }
+  ]
+}

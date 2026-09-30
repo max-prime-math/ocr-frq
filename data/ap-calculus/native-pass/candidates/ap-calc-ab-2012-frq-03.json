@@ -1,0 +1,199 @@
+{
+  "id": "ap-calc-ab-2012-frq-03",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2012-frq-03-diagram-01.png\", width: 65%)\n\nLet $f$ be the continuous function defined on \\[-4, 3\\] whose graph, consisting of three line segments and a semicircle centered at the origin, is given above. Let $g$ be the function given by $g(x)= integral_(1)^(x) f(t) d t$.\n\n(a) Find the values of $g(2)$ and $g(- 2)$.\n\n(b) For each of $g'(- 3)$ and $g''(- 3)$, find the value or state that it does not exist.\n\n(c) Find the $x$-coordinate of each point at which the graph of $g$ has a horizontal tangent line. For each of these points, determine whether $g$ has a relative minimum, relative maximum, or neither a minimum nor a maximum at the point. Justify your answers.\n\n(d) For $- 4 < x < 3$, find all values of $x$ for which the graph of $g$ has a point of inflection. Explain your reasoning.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2012-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2012-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        183.91200256347656,
+        191.9759979248047,
+        427.5119934082031,
+        356.9519958496094
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          554
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          186.91199999999998,
+          194.976,
+          424.51199999999994,
+          353.952
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          365.18399999999997,
+          530.784,
+          378.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          383.03999999999996,
+          501.11999999999995,
+          405.792
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          414.43199999999996,
+          241.92,
+          427.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          436.89599999999996,
+          421.344,
+          450.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          457.91999999999996,
+          555.8399999999999,
+          470.87999999999994
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          470.87999999999994,
+          530.784,
+          483.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          482.688,
+          280.224,
+          495.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.664,
+          501.11999999999995,
+          528.4799999999999,
+          514.0799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          516.096,
+          130.464,
+          528.4799999999999
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9a01b5d95369f6198762b90e490c60e6e923894d12dc3b3d6e4efa10f2673705",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

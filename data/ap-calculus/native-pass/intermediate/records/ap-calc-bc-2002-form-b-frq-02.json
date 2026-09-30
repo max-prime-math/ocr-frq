@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-02",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "The number of gallons, $P(t)$, of a pollutant in a lake changes at the rate $P^{\\prime}(t)=1-3 e^{-0.2 \\sqrt{t}}$ gallons per day, where $t$ is measured in days. There are 50 gallons of the pollutant in the lake at time $t=0$. The lake is considered to be safe when it contains 40 gallons or less of pollutant.\\\\\n(a) Is the amount of pollutant increasing at time $t=9$ ? Why or why not?\\\\\n(b) For what value of $t$ will the number of gallons of pollutant be at its minimum? Justify your answer.\\\\\n(c) Is the lake safe when the number of gallons of pollutant is at its minimum? Justify your answer.\\\\\n(d) An investigator uses the tangent line approximation to $P(t)$ at $t=0$ as a model for the amount of pollutant in the lake. At what time $t$ does this model predict that the lake becomes safe?\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2002 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 2}\n\nThe number of gallons, \\(P(t)\\), of a pollutant in a lake changes at the rate \\(P^{\\prime}(t)=1-3 e^{-0.2 \\sqrt{t}}\\) gallons per day, where \\(t\\) is measured in days. There are 50 gallons of the pollutant in the lake at time \\(t=0\\). The lake is considered to be safe when it contains 40 gallons or less of pollutant.\n\\begin{itemize}\n\\item[(a)] Is the amount of pollutant increasing at time \\(t=9\\) ? Why or why not?\n\\item[(b)] For what value of \\(t\\) will the number of gallons of pollutant be at its minimum? Justify your answer.\n\\item[(c)] Is the lake safe when the number of gallons of pollutant is at its minimum? Justify your answer.\n\\item[(d)] An investigator uses the tangent line approximation to \\(P(t)\\) at \\(t=0\\) as a model for the amount of pollutant in the lake. At what time \\(t\\) does this model predict that the lake becomes safe?\n\\item[(a)] \\(P^{\\prime}(9)=1-3 e^{-0.6}=-0.646<0\\)\nso the amount is not increasing at this time.\n\\item[(b)] \\(P^{\\prime}(t)=1-3 e^{-0.2 \\sqrt{t}}=0\\)\n\\(t=(5 \\ln 3)^{2}=30.174\\)\n\\(P^{\\prime}(t)\\) is negative for \\(0<t<(5 \\ln 3)^{2}\\) and positive for \\(t>(5 \\ln 3)^{2}\\). Therefore there is a minimum at \\(t=(5 \\ln 3)^{2}\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\nP(30.174) & =50+\\int_{0}^{30.174}\\left(1-3 e^{-0.2 \\sqrt{t}}\\right) d t \\\\\n& =35.104<40, \\text { so the lake is safe. }\n\\end{aligned}\n\\]\n\\item[(d)] \\(P^{\\prime}(0)=1-3=-2\\). The lake will become safe when the amount decreases by 10. A linear model predicts this will happen when \\(t=5\\).\n\\item[1] : answer with reason\n\\(3\\left\\{\\begin{array}{l}1: \\text { sets } P^{\\prime}(t)=0 \\\\ 1: \\text { solves for } t \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\item[] \\(3\\left\\{\\begin{aligned} 1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { conclusion with reason } \\\\ \\quad \\text { based on integral of } P^{\\prime}(t)\\end{aligned}\\right.\\)\n\\(2\\left\\{\\begin{array}{l}1: \\text { slope of tangent line } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          71,
+          566,
+          214
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

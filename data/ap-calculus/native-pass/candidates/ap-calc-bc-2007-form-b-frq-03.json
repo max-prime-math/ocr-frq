@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2007-form-b-frq-03",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The wind chill is the temperature, in degrees Fahrenheit ( $\"\"^(degree) upright(F)$ ), a human feels based on the air temperature, in degrees Fahrenheit, and the wind velocity $v$, in miles per hour (mph). If the air temperature is $32^(degree) upright(F)$, then the wind chill is given by $W(v)= 55.6 - 22.1 v^(0.16)$ and is valid for $5 <= v <= 60$.\n\n(a) Find $W'(20)$. Using correct units, explain the meaning of $W'(20)$ in terms of the wind chill.\n\n(b) Find the average rate of change of $W$ over the interval $5 <= v <= 60$. Find the value of $v$ at which the instantaneous rate of change of $W$ is equal to the average rate of change of $W$ over the interval $5 <= v <= 60$.\n\n(c) Over the time interval $0 <= t <= 4$ hours, the air temperature is a constant $32^(degree) upright(F)$. At time $t = 0$, the wind velocity is $v = 20 upright(m p h)$. If the wind velocity increases at a constant rate of 5 mph per hour, what is the rate of change of the wind chill with respect to time at $t = 3$ hours? Indicate units of measure.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          65,
+          572,
+          408
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "63ebfcccc7b59ac1cf212d1ad18bff2138b71b0a33449a4d4e21d07fd27b34e7",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ]
+}

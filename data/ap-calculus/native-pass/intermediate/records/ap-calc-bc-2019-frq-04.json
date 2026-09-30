@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2019-frq-04",
+  "course": "BC",
+  "year": 2019,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2019.pdf",
+      "sha256": "d5957ac5f733ed8159d144fb7e76b5cdc40293269397ed12a4042d689a200db2",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2019.pdf",
+      "sha256": "8f418657356ad4e3db1d8eb91536c012d841a6eaf5cb525305e5dfec9f85475f"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2019-frq-04-diagram-01.jpg}\n\\end{center}\nA cylindrical barrel with a diameter of 2 feet contains collected rainwater, as shown in the figure above. The water drains out through a valve (not shown) at the bottom of the barrel. The rate of change of the height $h$ of the water in the barrel with respect to time $t$ is modeled by $\\frac{d h}{d t}=-\\frac{1}{10} \\sqrt{h}$, where $h$ is measured in feet and $t$ is measured in seconds. (The volume $V$ of a cylinder with radius $r$ and height $h$ is $V=\\pi r^{2} h$.)\\\\\n(a) Find the rate of change of the volume of water in the barrel with respect to time when the height of the water is 4 feet. Indicate units of measure.\\\\\n(b) When the height of the water is 3 feet, is the rate of change of the height of the water with respect to time increasing or decreasing? Explain your reasoning.\\\\\n(c) At time $t=0$ seconds, the height of the water is 5 feet. Use separation of variables to find an expression for $h$ in terms of $t$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2019-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2019-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2019_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2019 SCORING GUIDELINES}\n\nQuestion 4\n\\begin{itemize}\n\\item[(a)] \\(V=\\pi r^{2} h=\\pi(1)^{2} h=\\pi h\\)\n\\(\\left.\\frac{d V}{d t}\\right|_{h=4}=\\left.\\pi \\frac{d h}{d t}\\right|_{h=4}=\\pi\\left(-\\frac{1}{10} \\sqrt{4}\\right)=-\\frac{\\pi}{5}\\) cubic feet per second\n\\item[(b)] \\(\\frac{d^{2} h}{d t^{2}}=-\\frac{1}{20 \\sqrt{h}} \\cdot \\frac{d h}{d t}=-\\frac{1}{20 \\sqrt{h}} \\cdot\\left(-\\frac{1}{10} \\sqrt{h}\\right)=\\frac{1}{200}\\)\nBecause \\(\\frac{d^{2} h}{d t^{2}}=\\frac{1}{200}>0\\) for \\(h>0\\), the rate of change of the height is increasing when the height of the water is 3 feet.\n\\item[(c)] \\(\\frac{d h}{\\sqrt{h}}=-\\frac{1}{10} d t\\)\n\\(\\int \\frac{d h}{\\sqrt{h}}=\\int-\\frac{1}{10} d t\\)\n\\(2 \\sqrt{h}=-\\frac{1}{10} t+C\\)\n\\(2 \\sqrt{5}=-\\frac{1}{10} \\cdot 0+C \\Rightarrow C=2 \\sqrt{5}\\)\n\\(2 \\sqrt{h}=-\\frac{1}{10} t+2 \\sqrt{5}\\)\n\\(h(t)=\\left(-\\frac{1}{20} t+\\sqrt{5}\\right)^{2}\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1: \\frac{d V}{d t}=\\pi \\frac{d h}{d t} \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\frac{d}{d h}\\left(-\\frac{1}{10} \\sqrt{h}\\right)=-\\frac{1}{20 \\sqrt{h}} \\\\ 1: \\frac{d^{2} h}{d t^{2}}=-\\frac{1}{20 \\sqrt{h}} \\cdot \\frac{d h}{d t} \\\\ 1: \\text { answer with explanation }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ \\quad \\text { and uses initial condition } \\\\ 1: h(t)\\end{array}\\right.\\)\n\\end{itemize}\n\nNote: 0/4 if no separation of variables\nNote: \\(\\max 2 / 4\\) [1-1-0-0] if no constant of integration",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          34,
+          91,
+          571,
+          544
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2019.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

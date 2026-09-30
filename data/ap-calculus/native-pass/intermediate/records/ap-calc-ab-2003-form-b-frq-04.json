@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-form-b-frq-04",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis with velocity at time \\(t \\geq 0\\) given by \\(v(t)=-1+e^{1-t}\\).\n(a) Find the acceleration of the particle at time \\(t=3\\).\n(b) Is the speed of the particle increasing at time \\(t=3\\) ? Give a reason for your answer.\n(c) Find all values of \\(t\\) at which the particle changes direction. Justify your answer.\n(d) Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 3\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nA particle moves along the \\(x\\)-axis with velocity at time \\(t \\geq 0\\) given by \\(v(t)=-1+e^{1-t}\\).\n\\begin{itemize}\n\\item[(a)] Find the acceleration of the particle at time \\(t=3\\).\n\\item[(b)] Is the speed of the particle increasing at time \\(t=3\\) ? Give a reason for your answer.\n\\item[(c)] Find all values of \\(t\\) at which the particle changes direction. Justify your answer.\n\\item[(d)] Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 3\\).\n\\item[(a)] \\(a(t)=v^{\\prime}(t)=-e^{1-t}\\)\n\\[\na(3)=-e^{-2}\n\\]\n\\item[(b)] \\(a(3)<0\\)\n\\[\nv(3)=-1+e^{-2}<0\n\\]\nSpeed is increasing since \\(v(3)<0\\) and \\(a(3)<0\\).\n\\item[(c)] \\(v(t)=0\\) when \\(1=e^{1-t}\\), so \\(t=1\\).\n\\[\nv(t)>0 \\text { for } t<1 \\text { and } v(t)<0 \\text { for } t>1 \\text {. }\n\\]\nTherefore, the particle changes direction at \\(t=1\\).\n\\item[(d)] Distance \\(=\\int_{0}^{3}|v(t)| d t\\)\n\\[\n\\begin{aligned}\n& =\\int_{0}^{1}\\left(-1+e^{1-t}\\right) d t+\\int_{1}^{3}\\left(1-e^{1-t}\\right) d t \\\\\n& =\\left(-t-\\left.e^{1-t}\\right|_{0} ^{1}\\right)+\\left(t+\\left.e^{1-t}\\right|_{1} ^{3}\\right) \\\\\n& =(-1-1+e)+\\left(3+e^{-2}-1-1\\right) \\\\\n& =e+e^{-2}-1\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n& x(t)=-t-e^{1-t} \\\\\n& x(0)=-e \\\\\n& x(1)=-2 \\\\\n& \\begin{aligned}\n& x(3)=-e^{-2}-3 \\\\\n& \\text { Distance }=(x(1)-x(0))+(x(1)-x(3)) \\\\\n&=(-2+e)+\\left(1+e^{-2}\\right) \\\\\n&=e+e^{-2}-1\n\\end{aligned}\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n2:\\left\\{\\begin{array}{l}\n1: v^{\\prime}(t) \\\\\n1: a(3)\n\\end{array}\\right.\n\\]\n\n1 : answer with reason\n\\(2:\\left\\{\\begin{array}{c}1: \\text { solves } v(t)=0 \\text { to } \\\\ \\text { get } t=1 \\\\ 1: \\text { justifies change in } \\\\ \\text { direction at } t=1\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { antidifferentiation } \\\\ 1: \\text { evaluation }\\end{array}\\right.\\)\n\nOR\n\\(4:\\left\\{\\begin{array}{c}1: \\text { any antiderivative } \\\\ 1: \\text { evaluates } x(t) \\text { when } \\\\ t=0,1,3 \\\\ 1: \\text { evaluates distance } \\\\ \\text { between points } \\\\ 1: \\text { evaluates total distance }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          70,
+          572,
+          300
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          203.04,
+          457.91999999999996,
+          220.32
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          226.368,
+          304.416,
+          239.32799999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          244.51199999999997,
+          455.616,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          262.94399999999996,
+          437.472,
+          275.904
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          280.79999999999995,
+          433.72799999999995,
+          293.76
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

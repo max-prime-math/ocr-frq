@@ -1,0 +1,129 @@
+{
+  "id": "ap-calc-ab-1998-frq-06",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the curve defined by $2 y^(3)+ 6 x^(2) y - 12 x^(2)+ 6 y = 1$.\n\n(a) Show that $frac(d y,d x)= frac(4 x - 2 x y,x^(2)+ y^(2)+ 1)$.\n\n(b) Write an equation of each horizontal tangent line to the curve.\n\n(c) The line through the origin with slope -1 is tangent to the curve at point $P$. Find the $x -$ and $y$-coordinates of point $P$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          66,
+          71.33,
+          546,
+          181
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          74.30375545726103,
+          73.72772159090908,
+          371.5187772863052,
+          88.70366503906249
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          89.27966286399148,
+          252.86316779641547,
+          117.21555737304686
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          91.87169763901655,
+          118.07955411044033,
+          411.8386445886949,
+          131.9035019087358
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          134.78349103338067,
+          541.4382180606618,
+          147.74344209428267
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          148.60743883167612,
+          255.4551592658548,
+          161.56738989257812
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fd95d3a93ef40b54ed27ad7578de3abb65941f826dd863cb1caea89c0cf757fe",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

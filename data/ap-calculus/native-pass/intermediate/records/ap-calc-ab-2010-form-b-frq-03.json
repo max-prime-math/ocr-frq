@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-form-b-frq-03",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) & 0 & 2 & 4 & 6 & 8 & 10 & 12 \\\\\n\\hline \\(P(t)\\) & 0 & 46 & 53 & 57 & 60 & 62 & 63 \\\\\n\\hline\n\\end{tabular}\n\\includegraphics{ap-calc-ab-2010-form-b-frq-03-diagram-01.png}\nThe figure above shows an aboveground swimming pool in the shape of a cylinder with a radius of 12 feet and a\nheight of 4 feet. The pool contains 1000 cubic feet of water at time \\(t=0\\). During the time interval \\(0 \\leq t \\leq 12\\)\nhours, water is pumped into the pool at the rate \\(P(t)\\) cubic feet per hour. The table above gives values of \\(P(t)\\)\nfor selected values of \\(t\\). During the same time interval, water is leaking from the pool at the rate \\(R(t)\\) cubic feet\nper hour, where \\(R(t)=25 e^{-0.05 t}\\). (Note: The volume \\(V\\) of a cylinder with radius \\(r\\) and height \\(h\\) is given by\n\\(V=\\pi r^{2} h\\).)\n(a) Use a midpoint Riemann sum with three subintervals of equal length to approximate the total amount of\nwater that was pumped into the pool during the time interval \\(0 \\leq t \\leq 12\\) hours. Show the computations that\nlead to your answer.\n(b) Calculate the total amount of water that leaked out of the pool during the time interval \\(0 \\leq t \\leq 12\\) hours.\n(c) Use the results from parts (a) and (b) to approximate the volume of water in the pool at time \\(t=12\\) hours.\nRound your answer to the nearest cubic foot.\n(d) Find the rate at which the volume of water in the pool is increasing at time \\(t=8\\) hours. How fast is the\nwater level in the pool rising at \\(t=8\\) hours? Indicate units of measure in both answers.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-form-b-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-form-b-frq-03-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        271.1759948730469,
+        230.27999877929688,
+        520.2479858398438,
+        314.90399169921875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) & 0 & 2 & 4 & 6 & 8 & 10 & 12 \\\\\n\\hline \\(P(t)\\) & 0 & 46 & 53 & 57 & 60 & 62 & 63 \\\\\n\\hline\n\\end{tabular}\n![](https://cdn.mathpix.com/cropped/ff257701-ff34-47fe-95b6-72001ceed93b-1.jpg?height=241&width=752&top_left_y=385&top_left_x=999)\nThe figure above shows an aboveground swimming pool in the shape of a cylinder with a radius of 12 feet and a height of 4 feet. The pool contains 1000 cubic feet of water at time \\(t=0\\). During the time interval \\(0 \\leq t \\leq 12\\) hours, water is pumped into the pool at the rate \\(P(t)\\) cubic feet per hour. The table above gives values of \\(P(t)\\) for selected values of \\(t\\). During the same time interval, water is leaking from the pool at the rate \\(R(t)\\) cubic feet per hour, where \\(R(t)=25 e^{-0.05 t}\\). (Note: The volume \\(V\\) of a cylinder with radius \\(r\\) and height \\(h\\) is given by \\(V=\\pi r^{2} h\\).)\n\\begin{itemize}\n\\item[(a)] Use a midpoint Riemann sum with three subintervals of equal length to approximate the total amount of water that was pumped into the pool during the time interval \\(0 \\leq t \\leq 12\\) hours. Show the computations that lead to your answer.\n\\item[(b)] Calculate the total amount of water that leaked out of the pool during the time interval \\(0 \\leq t \\leq 12\\) hours.\n\\item[(c)] Use the results from parts (a) and (b) to approximate the volume of water in the pool at time \\(t=12\\) hours. Round your answer to the nearest cubic foot.\n\\item[(d)] Find the rate at which the volume of water in the pool is increasing at time \\(t=8\\) hours. How fast is the water level in the pool rising at \\(t=8\\) hours? Indicate units of measure in both answers.\n\\item[(a)] \\(\\int_{0}^{12} P(t) d t \\approx 46 \\cdot 4+57 \\cdot 4+62 \\cdot 4=660 \\mathrm{ft}^{3}\\)\n\\item[(b)] \\(\\int_{0}^{12} R(t) d t=225.594 \\mathrm{ft}^{3}\\)\n\\item[(c)] \\(1000+\\int_{0}^{12} P(t) d t-\\int_{0}^{12} R(t) d t=1434.406\\)\n\\end{itemize}\n\nAt time \\(t=12\\) hours, the volume of water in the pool is approximately \\(1434 \\mathrm{ft}^{3}\\).\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { midpoint sum } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n1 : answer\n\\item[(d)] \\(V^{\\prime}(t)=P(t)-R(t)\\)\n\\(V^{\\prime}(8)=P(8)-R(8)=60-25 e^{-0.4}=43.241\\) or \\(43.242 \\mathrm{ft}^{3} / \\mathrm{hr}\\)\n\\(V=\\pi(12)^{2} h\\)\n\\(\\frac{d V}{d t}=144 \\pi \\frac{d h}{d t}\\)\n\\(\\left.\\frac{d h}{d t}\\right|_{t=8}=\\left.\\frac{1}{144 \\pi} \\cdot \\frac{d V}{d t}\\right|_{t=8}=0.095\\) or \\(0.096 \\mathrm{ft} / \\mathrm{hr}\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          209,
+          572,
+          581
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "table",
+        "rect": [
+          65.088,
+          253.72799999999998,
+          247.10399999999998,
+          299.52
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "diagram",
+        "rect": [
+          274.176,
+          233.27999999999997,
+          517.2479999999999,
+          311.904
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          335.23199999999997,
+          561.312,
+          347.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          347.616,
+          551.808,
+          360.0
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          361.44,
+          552.384,
+          374.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          377.568,
+          561.024,
+          391.104
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 42,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          393.40799999999996,
+          551.232,
+          409.53599999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          65.664,
+          412.70399999999995,
+          118.94399999999999,
+          428.256
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          65.664,
+          434.304,
+          544.0319999999999,
+          446.688
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          446.688,
+          560.736,
+          459.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          460.224,
+          173.952,
+          472.60799999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 48,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          478.36799999999994,
+          547.776,
+          491.328
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          65.664,
+          497.376,
+          554.4,
+          509.75999999999993
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          509.75999999999993,
+          282.23999999999995,
+          522.144
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          65.088,
+          528.4799999999999,
+          541.4399999999999,
+          540.8639999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 54,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          542.016,
+          471.45599999999996,
+          554.4
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

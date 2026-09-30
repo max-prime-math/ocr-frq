@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2016-frq-06",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "rawPrompt": "The function $f$ has a Taylor series about $x=1$ that converges to $f(x)$ for all $x$ in the interval of convergence. It is known that $f(1)=1, f^{\\prime}(1)=-\\frac{1}{2}$, and the $n$th derivative of $f$ at $x=1$ is given by $f^{(n)}(1)=(-1)^{n} \\frac{(n-1)!}{2^{n}}$ for $n \\geq 2$.\\\\\n(a) Write the first four nonzero terms and the general term of the Taylor series for $f$ about $x=1$.\\\\\n(b) The Taylor series for $f$ about $x=1$ has a radius of convergence of 2 . Find the interval of convergence. Show the work that leads to your answer.\\\\\n(c) The Taylor series for $f$ about $x=1$ can be used to represent $f(1.2)$ as an alternating series. Use the first three nonzero terms of the alternating series to approximate $f(1.2)$.\\\\\n(d) Show that the approximation found in part (c) is within 0.001 of the exact value of $f(1.2)$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe function \\(f\\) has a Taylor series about \\(x=1\\) that converges to \\(f(x)\\) for all \\(x\\) in the interval of convergence. It is known that \\(f(1)=1, f^{\\prime}(1)=-\\frac{1}{2}\\), and the \\(n\\)th derivative of \\(f\\) at \\(x=1\\) is given by \\(f^{(n)}(1)=(-1)^{n} \\frac{(n-1)!}{2^{n}}\\) for \\(n \\geq 2\\).\n\\begin{itemize}\n\\item[(a)] Write the first four nonzero terms and the general term of the Taylor series for \\(f\\) about \\(x=1\\).\n\\item[(b)] The Taylor series for \\(f\\) about \\(x=1\\) has a radius of convergence of 2. Find the interval of convergence. Show the work that leads to your answer.\n\\item[(c)] The Taylor series for \\(f\\) about \\(x=1\\) can be used to represent \\(f(1.2)\\) as an alternating series. Use the first three nonzero terms of the alternating series to approximate \\(f(1.2)\\).\n\\item[(d)] Show that the approximation found in part (c) is within 0.001 of the exact value of \\(f(1.2)\\).\n\\item[(a)] \\(f(1)=1, f^{\\prime}(1)=-\\frac{1}{2}, f^{\\prime \\prime}(1)=\\frac{1}{2^{2}}, f^{\\prime \\prime \\prime}(1)=-\\frac{2}{2^{3}}\\)\n\\[\n\\begin{aligned}\nf(x)=1 & -\\frac{1}{2}(x-1)+\\frac{1}{2^{2} \\cdot 2}(x-1)^{2}-\\frac{1}{2^{3} \\cdot 3}(x-1)^{3}+\\cdots \\\\\n& +\\frac{(-1)^{n}}{2^{n} \\cdot n}(x-1)^{n}+\\cdots\n\\end{aligned}\n\\]\n\\end{itemize}\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { first two terms } \\\\ 1: \\text { third term } \\\\ 1: \\text { fourth term } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { identifies both endpoints } \\\\ 1: \\text { analysis and interval of convergence }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(b)] \\(R=2\\). The series converges on the interval \\((-1,3)\\).\nWhen \\(x=-1\\), the series is \\(1+1+\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}+\\cdots\\).\nSince the harmonic series diverges, this series diverges.\nWhen \\(x=3\\), the series is \\(1-1+\\frac{1}{2}-\\frac{1}{3}+\\frac{1}{4}+\\cdots\\).\nSince the alternating harmonic series converges, this series converges.\nTherefore, the interval of convergence is \\(-1<x \\leq 3\\).\n\\item[(c)] \\(f(1.2) \\approx 1-\\frac{1}{2}(0.2)+\\frac{1}{8}(0.2)^{2}=1-0.1+0.005=0.905\\)\n\\end{itemize}\n\n1 : approximation\n\\begin{itemize}\n\\item[(d)] The series for \\(f(1.2)\\) alternates with terms that decrease in magnitude to 0.\n\\[\n\\left|f(1.2)-T_{2}(1.2)\\right| \\leq\\left|\\frac{-1}{2^{3} \\cdot 3}(0.2)^{3}\\right|=\\frac{1}{3000} \\leq 0.001\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { error form } \\\\ 1: \\text { analysis }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          35.0,
+          569,
+          469
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

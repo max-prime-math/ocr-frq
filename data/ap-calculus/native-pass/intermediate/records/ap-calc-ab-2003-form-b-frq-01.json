@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-form-b-frq-01",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2003-form-b-frq-01-diagram-01.png}\nLet \\(f\\) be the function given by \\(f(x)=4 x^{2}-x^{3}\\), and let \\(\\ell\\) be the line \\(y=18-3 x\\), where \\(\\ell\\) is tangent to the\ngraph of \\(f\\). Let \\(R\\) be the region bounded by the graph of \\(f\\) and the \\(x\\)-axis, and let \\(S\\) be the region bounded by\nthe graph of \\(f\\), the line \\(\\ell\\), and the \\(x\\)-axis, as shown above.\n(a) Show that \\(\\ell\\) is tangent to the graph of \\(y=f(x)\\) at the point \\(x=3\\).\n(b) Find the area of \\(S\\).\n(c) Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        128.0399932861328,
+        214.72799682617188,
+        483.6719970703125,
+        387.76800537109375
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(f\\) be the function given by \\(f(x)=4 x^{2}-x^{3}\\), and let \\(\\ell\\) be the line \\(y=18-3 x\\), where \\(\\ell\\) is tangent to the graph of \\(f\\). Let \\(R\\) be the region bounded by the graph of \\(f\\) and the \\(x\\)-axis, and let \\(S\\) be the region bounded by the graph of \\(f\\), the line \\(\\ell\\), and the \\(x\\)-axis, as shown above.\n\\begin{itemize}\n\\item[(a)] Show that \\(\\ell\\) is tangent to the graph of \\(y=f(x)\\) at the point \\(x=3\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/d30ff589-407b-4fd9-bc94-803d9d42adcd-1.jpg?height=382&width=795&top_left_y=378&top_left_x=1164)\n\\begin{itemize}\n\\item[(b)] Find the area of \\(S\\).\n\\item[(c)] Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n\\item[(a)]\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=8 x-3 x^{2} ; f^{\\prime}(3)=24-27=-3 \\\\\n& f(3)=36-27=9\n\\end{aligned}\n\\]\nTangent line at \\(x=3\\) is\n\\[\ny=-3(x-3)+9=-3 x+18,\n\\]\nwhich is the equation of line \\(\\ell\\).\n\\item[(b)]\n\\[\n\\begin{aligned}\n& f(x)=0 \\text { at } x=4 \\\\\n& \\text { The line intersects the } x \\text {-axis at } x= \\\\\n& \\text { Area }=\\frac{1}{2}(3)(9)-\\int_{3}^{4}\\left(4 x^{2}-x^{3}\\right) d x \\\\\n& \\quad=7.916 \\text { or } 7.917\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n\\text { Area }= & \\int_{3}^{4}\\left((18-3 x)-\\left(4 x^{2}-x^{3}\\right)\\right) d x \\\\\n& +\\frac{1}{2}(2)(18-12) \\\\\n= & 7.916 \\text { or } 7.917\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{c}1: \\text { finds } f^{\\prime}(3) \\text { and } f(3) \\\\ 1:\\left\\{\\begin{array}{c}\\text { finds equation of tangent line } \\\\ \\text { or } \\\\ \\text { shows }(3,9) \\text { is on both the } \\\\ \\text { graph of } f \\text { and line } \\ell\\end{array}\\right.\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{aligned} 2 & : \\text { integral for non-triangular region } \\\\ & 1: \\text { limits } \\\\ & 1: \\text { integrand } \\\\ & 1: \\text { area of triangular region } \\\\ & 1: \\text { answer }\\end{aligned}\\right.\\)\n\\begin{itemize}\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{0}^{4}\\left(4 x^{2}-x^{3}\\right)^{2} d x \\\\\n& =156.038 \\pi \\text { or } 490.208\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          70,
+          572,
+          520
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          131.04,
+          217.72799999999998,
+          480.67199999999997,
+          384.768
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          395.99999999999994,
+          553.2479999999999,
+          410.97599999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          411.55199999999996,
+          550.656,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          424.51199999999994,
+          320.256,
+          436.89599999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          442.94399999999996,
+          385.63199999999995,
+          456.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          462.816,
+          167.04,
+          475.2
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          481.248,
+          420.768,
+          493.63199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

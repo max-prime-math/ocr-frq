@@ -1,0 +1,22 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 8, align: (center, center, center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [Distance $x$ $(upright(space.nobreak m m))$], [0], [60], [120], [180], [240], [300], [360], table.hline(stroke: .5pt), [Diameter $B(x)$ $(upright(m m))$], [24], [30], [28], [30], [26], [24], [26], table.hline(stroke: .5pt));\n\nA blood vessel is 360 millimeters ( mm ) long with circular cross sections of varying diameter. The table above gives the measurements of the diameter of the blood vessel at selected points along the length of the blood vessel, where $x$ represents the distance from one end of the blood vessel and $B(x)$ is a twice-differentiable function that represents the diameter at that point.\n\n(a) Write an integral expression in terms of $B(x)$ that represents the average radius, in mm , of the blood vessel between $x = 0$ and $x = 360$.\n\n(b) Approximate the value of your answer from part (a) using the data from the table and a midpoint Riemann sum with three subintervals of equal length. Show the computations that lead to your answer.\n\n(c) Using correct units, explain the meaning of $pi integral_(125)^(275)lr((frac(B(x),2)))^(2) d x$ in terms of the blood vessel.\n\n(d) Explain why there must be at least one value $x$, for $0 < x < 360$, such that $B''(x)= 0$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2003-form-b-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-9",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2003",
+      "Form B",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

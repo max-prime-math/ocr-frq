@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-frq-05",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "rawPrompt": "At the beginning of 2010, a landfill contained 1400 tons of solid waste. The increasing function $W$ models the total amount of solid waste stored at the landfill. Planners estimate that $W$ will satisfy the differential equation $\\frac{d W}{d t}=\\frac{1}{25}(W-300)$ for the next 20 years. $W$ is measured in tons, and $t$ is measured in years from the start of 2010.\\\\\n(a) Use the line tangent to the graph of $W$ at $t=0$ to approximate the amount of solid waste that the landfill contains at the end of the first 3 months of 2010 (time $t=\\frac{1}{4}$ ).\\\\\n(b) Find $\\frac{d^{2} W}{d t^{2}}$ in terms of $W$. Use $\\frac{d^{2} W}{d t^{2}}$ to determine whether your answer in part (a) is an underestimate or an overestimate of the amount of solid waste that the landfill contains at time $t=\\frac{1}{4}$.\\\\\n(c) Find the particular solution $W=W(t)$ to the differential equation $\\frac{d W}{d t}=\\frac{1}{25}(W-300)$ with initial condition $W(0)=1400$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\nAt the beginning of 2010, a landfill contained 1400 tons of solid waste. The increasing function \\(W\\) models the total amount of solid waste stored at the landfill. Planners estimate that \\(W\\) will satisfy the differential equation \\(\\frac{d W}{d t}=\\frac{1}{25}(W-300)\\) for the next 20 years. \\(W\\) is measured in tons, and \\(t\\) is measured in years from the start of 2010.\n\\begin{itemize}\n\\item[(a)] Use the line tangent to the graph of \\(W\\) at \\(t=0\\) to approximate the amount of solid waste that the landfill contains at the end of the first 3 months of 2010 (time \\(t=\\frac{1}{4}\\) ).\n\\item[(b)] Find \\(\\frac{d^{2} W}{d t^{2}}\\) in terms of \\(W\\). Use \\(\\frac{d^{2} W}{d t^{2}}\\) to determine whether your answer in part (a) is an underestimate or an overestimate of the amount of solid waste that the landfill contains at time \\(t=\\frac{1}{4}\\).\n\\item[(c)] Find the particular solution \\(W=W(t)\\) to the differential equation \\(\\frac{d W}{d t}=\\frac{1}{25}(W-300)\\) with initial condition \\(W(0)=1400\\).\n\\item[(a)] \\(\\left.\\quad \\frac{d W}{d t}\\right|_{t=0}=\\frac{1}{25}(W(0)-300)=\\frac{1}{25}(1400-300)=44\\)\nThe tangent line is \\(y=1400+44 t\\).\n\\[\nW\\left(\\frac{1}{4}\\right) \\approx 1400+44\\left(\\frac{1}{4}\\right)=1411 \\text { tons }\n\\]\n\\item[(b)] \\(\\frac{d^{2} W}{d t^{2}}=\\frac{1}{25} \\frac{d W}{d t}=\\frac{1}{625}(W-300)\\) and \\(W \\geq 1400\\)\nTherefore \\(\\frac{d^{2} W}{d t^{2}}>0\\) on the interval \\(0 \\leq t \\leq \\frac{1}{4}\\).\nThe answer in part (a) is an underestimate.\n\\item[(c)] \\(\\frac{d W}{d t}=\\frac{1}{25}(W-300)\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{1}{W-300} d W=\\int \\frac{1}{25} d t \\\\\n& \\ln |W-300|=\\frac{1}{25} t+C \\\\\n& \\ln (1400-300)=\\frac{1}{25}(0)+C \\Rightarrow \\ln (1100)=C \\\\\n& W-300=1100 e^{\\frac{1}{25} t} \\\\\n& W(t)=300+1100 e^{\\frac{1}{25} t}, 0 \\leq t \\leq 20\n\\end{aligned}\n\\]\n\\end{itemize}\n\n2: \\(\\left\\{\\begin{array}{l}1: \\frac{d W}{d t} \\text { at } t=0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{d^{2} W}{d t^{2}} \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\(5:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 1: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } W\\end{array}\\right.\\)\nNote: \\(\\max 2 / 5\\) [1-1-0-0-0] if no constant of integration\nNote: 0/5 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          64,
+          572,
+          341
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

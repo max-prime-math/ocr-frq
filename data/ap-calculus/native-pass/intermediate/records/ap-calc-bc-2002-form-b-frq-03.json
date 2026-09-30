@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-form-b-frq-03",
+  "course": "BC",
+  "year": 2002,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002-FORM-B.pdf",
+      "sha256": "fc9515ba4570a2582a61254867c9ca547c2d4677f1aa1eca61a56063851c514a",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002-FORM-B.pdf",
+      "sha256": "187faef737916537c5ebfeae605251eb2912b2702d6da88945c62a37e6a7cfcc"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg}\n\\end{center}\nLet $R$ be the region in the first quadrant bounded by the $y$-axis and the graphs of $y=4 x-x^{3}+1$ and $y=\\frac{3}{4} x$.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\\\\\n(c) Write an expression involving one or more integrals that gives the perimeter of $R$. Do not evaluate.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2002-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2002-form-b_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 3}\n\\begin{itemize}\n\\item[] Let \\(R\\) be the region in the first quadrant bounded by the \\(y\\)-axis and the graphs of \\(y=4 x-x^{3}+1\\) and \\(y=\\frac{3}{4} x\\).\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is revolved about the \\(x\\)-axis.\n(c) Write an expression involving one or more integrals that gives the perimeter of \\(R\\). Do not evaluate.\n![](https://cdn.mathpix.com/cropped/677d922e-ba71-4652-8798-b2e3c6f2b3a2-1.jpg?height=468&width=490&top_left_y=370&top_left_x=1427)\n\\end{itemize}\n\nRegion \\(R\\)\n\\[\n4 x-x^{3}+1=\\frac{3}{4} x \\text { when } x=1.94045=A\n\\]\n\\begin{itemize}\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{0}^{A}\\left(4 x-x^{3}+1-\\frac{3}{4} x\\right) d x \\\\\n& =4.514 \\text { or } 4.515\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { limits } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] Volume\n\\[\n\\begin{aligned}\n& =\\pi \\int_{0}^{A}\\left(\\left(4 x-x^{3}+1\\right)^{2}-\\left(\\frac{3}{4} x\\right)^{2}\\right) d x \\\\\n& =18.291 \\pi \\text { or } 57.463\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { limits and constant } \\\\\n1: \\text { integrand } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\text { Perimeter }=1 & +\\sqrt{(1.940)^{2}+(1.455)^{2}} \\\\\n& +\\int_{0}^{A} \\sqrt{1+\\left(4-3 x^{2}\\right)^{2}} d x\n\\end{aligned}\n\\]\n\\end{itemize}\n\\[\n3\\left\\{\\begin{array}{l}\n1: \\text { uses } y^{\\prime}=4-3 x^{2} \\text { in integrand } \\\\\n1: \\text { arc length integral } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          226,
+          572,
+          526
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

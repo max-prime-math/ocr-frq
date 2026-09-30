@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 6, align: (center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$x$], [$h(x)$], [$h'(x)$], [$h''(x)$], [$h'''(x)$], [$h^((4))(x)$], table.hline(stroke: .5pt), [1], [11], [30], [42], [99], [18], table.hline(stroke: .5pt), [2], [80], [128], [$frac(488,3)$], [$frac(448,3)$], [$frac(584,9)$], table.hline(stroke: .5pt), [3], [317], [$frac(753,2)$], [$frac(1383,4)$], [$frac(3483,16)$], [$frac(1125,16)$], table.hline(stroke: .5pt));\n\nLet $h$ be a function having derivatives of all orders for $x > 0$. Selected values of $h$ and its first four derivatives are indicated in the table above. The function $h$ and these four derivatives are increasing on the interval $1 <= x <= 3$.\n\n(a) Write the first-degree Taylor polynomial for $h$ about $x = 2$ and use it to approximate $h(1.9)$. Is this approximation greater than or less than $h(1.9)$ ? Explain your reasoning.\n\n(b) Write the third-degree Taylor polynomial for $h$ about $x = 2$ and use it to approximate $h(1.9)$.\n\n(c) Use the Lagrange error bound to show that the third-degree Taylor polynomial for $h$ about $x = 2$ approximates $h(1.9)$ with error less than $3 times 10^(- 4)$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2008-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-12",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2008",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

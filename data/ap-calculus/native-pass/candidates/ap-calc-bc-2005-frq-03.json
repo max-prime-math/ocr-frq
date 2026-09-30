@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2005-frq-03",
+  "course": "BC",
+  "year": 2005,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2005.pdf",
+      "sha256": "19379d3cae1e37e67f19c7bab2ae172cb382c11d48af359259f47105c27822d5",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2005.pdf",
+      "sha256": "4ab3bfd47e70748a167001b643087004897a7947796db00a7b9b5c6e853f882e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [Distance $x(upright(space.nobreak c m))$], [0], [1], [5], [6], [8], table.hline(stroke: .5pt), [Temperature $T(x)lr((\"\"^(degree) upright(C)))$], [100], [93], [70], [62], [55], table.hline(stroke: .5pt));\n\nA metal wire of length 8 centimeters (cm) is heated at one end. The table above gives selected values of the temperature $T(x)$, in degrees Celsius $lr((\"\"^(degree) upright(C)))$, of the wire $x upright(space.nobreak c m)$ from the heated end. The function $T$ is decreasing and twice differentiable.\n\n(a) Estimate $T'(7)$. Show the work that leads to your answer. Indicate units of measure.\n\n(b) Write an integral expression in terms of $T(x)$ for the average temperature of the wire. Estimate the average temperature of the wire using a trapezoidal sum with the four subintervals indicated by the data in the table. Indicate units of measure.\n\n(c) Find $integral_(0)^(8) T'(x) d x$, and indicate units of measure. Explain the meaning of $integral_(0)^(8) T'(x) d x$ in terms of the temperature of the wire.\n\n(d) Are the data in the table consistent with the assertion that $T''(x)> 0$ for every $x$ in the interval $0 < x < 8$ ? Explain your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          51,
+          572,
+          527
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "468de6c01e8cfe49d6eb57f4a96c63550100b772f03dd01c2c38a025dc12c176",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2005.zip"
+    }
+  ]
+}

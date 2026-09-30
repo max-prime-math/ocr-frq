@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2002-frq-05",
+  "course": "BC",
+  "year": 2002,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2002.pdf",
+      "sha256": "64edbf0cc21bb02abac3daedd8843f19db31224976c1904c0a369c0dcf31e9bc",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2002.pdf",
+      "sha256": "676da803295fea05f51302345025fb577c149c93c1387bedabbcc52ea0834896"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=2 y-4 x$.\\\\\n(a) The slope field for the given differential equation is provided. Sketch the solution curve that passes through the point $(0,1)$ and sketch the solution curve that passes through the point $(0,-1)$.\\\\\n(Note: Use the slope field provided in the pink test booklet.)\\\\\n\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2002-frq-05-diagram-01.jpg}\n\\end{center}\n(b) Let $f$ be the function that satisfies the given differential equation with the initial condition $f(0)=1$. Use Euler's method, starting at $x=0$ with a step size of 0.1 , to approximate $f(0.2)$. Show the work that leads to your answer.\\\\\n(c) Find the value of $b$ for which $y=2 x+b$ is a solution to the given differential equation. Justify your answer.\\\\\n(d) Let $g$ be the function that satisfies the given differential equation with the initial condition $g(0)=0$. Does the graph of $g$ have a local extremum at the point $(0,0)$ ? If so, is the point a local maximum or a local minimum? Justify your answer.\\\\",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2002-frq-05-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2002-frq-05-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2002_fig3.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC 2002 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\nConsider the differential equation \\(\\frac{d y}{d x}=2 y-4 x\\).\n\\begin{itemize}\n\\item[(a)] The slope field for the given differential equation is provided. Sketch the solution curve that passes through the point (0, 1) and sketch the solution curve that passes through the point (0, -1).\n\\item[(b)] Let \\(f\\) be the function that satisfies the given differential equation with the initial condition \\(f(0)=1\\). Use Euler's method, starting at \\(x=0\\) with a step size of 0.1 , to approximate \\(f(0.2)\\). Show the work that leads to your answer.\n\\item[(c)] Find the value of \\(b\\) for which \\(y=2 x+b\\) is a solution to the given differential equation. Justify your answer.\n\\item[(d)] Let \\(g\\) be the function that satisfies the given differential equation with the initial condition \\(g(0)=0\\). Does the graph of \\(g\\) have a local extremum at the point ( 0,0 ) ? If so, is the point a local maximum or a local minimum? Justify your answer.\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/de825ecd-d3ee-41da-9a35-a49119335df7-1.jpg?height=406&width=475&top_left_y=1029&top_left_x=370)\n\\item[(b)]\n\\[\n\\begin{aligned}\nf(0.1) & \\approx f(0)+f^{\\prime}(0)(0.1) \\\\\n& =1+(2-0)(0.1)=1.2 \\\\\nf(0.2) & \\approx f(0.1)+f^{\\prime}(0.1)(0.1) \\\\\n& \\approx 1.2+(2.4-0.4)(0.1)=1.4\n\\end{aligned}\n\\]\n\\item[(c)] Substitute \\(y=2 x+b\\) in the DE:\n\\[\n2=2(2 x+b)-4 x=2 b, \\text { so } b=1\n\\]\nGuess \\(b=1, y=2 x+1\\)\nVerify: \\(2 y-4 x=(4 x+2)-4 x=2=\\frac{d y}{d x}\\).\n\\item[(d)] \\(g\\) has local maximum at \\((0,0)\\).\n\\[\n\\begin{aligned}\ng^{\\prime}(0) & =\\left.\\frac{d y}{d x}\\right|_{(0,0)}=2(0)-4(0)=0, \\text { and } \\\\\ng^{\\prime \\prime}(x) & =\\frac{d^{2} y}{d x^{2}}=2 \\frac{d y}{d x}-4, \\text { so } \\\\\ng^{\\prime \\prime}(0) & =2 g^{\\prime}(0)-4=-4<0\n\\end{aligned}\n\\]\n\\item[] \\(2\\left\\{\\begin{array}{l}1: \\text { solution curve through }(0,1) \\\\ 1: \\text { solution curve through }(0,-1)\\end{array}\\right.\\)\nCurves must go through the indicated points, follow the given slope lines, and extend to the boundary of the slope field.\n\\item[] \\(2\\left\\{\\begin{aligned} 1: & \\text { Euler's method equations or } \\\\ & \\text { equivalent table applied to (at least) } \\\\ & \\text { two iterations } \\\\ 1: & \\text { Euler approximation to } f(0.2) \\\\ & \\text { (not eligible without first point) }\\end{aligned}\\right.\\)\n\\(2 \\begin{cases}1: & \\text { uses } \\frac{d}{d x}(2 x+b)=2 \\text { in } \\mathrm{DE} \\\\ 1: & b=1\\end{cases}\\)\n\\item[] \\(3 \\begin{cases}1: & g^{\\prime}(0)=0 \\\\ 1: & \\text { shows } g^{\\prime \\prime}(0)=-4 \\\\ 1: & \\text { conclusion }\\end{cases}\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          73,
+          563,
+          472
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2002.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

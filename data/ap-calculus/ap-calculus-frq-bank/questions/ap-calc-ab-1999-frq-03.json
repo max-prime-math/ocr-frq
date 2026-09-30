@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (hours)], [$R(t)$ (gallons per hour)], table.hline(stroke: .5pt), [0], [9.6], table.hline(stroke: .5pt), [3], [10.4], table.hline(stroke: .5pt), [6], [10.8], table.hline(stroke: .5pt), [9], [11.2], table.hline(stroke: .5pt), [12], [11.4], table.hline(stroke: .5pt), [15], [11.3], table.hline(stroke: .5pt), [18], [10.7], table.hline(stroke: .5pt), [21], [10.2], table.hline(stroke: .5pt), [24], [9.6], table.hline(stroke: .5pt));\n\nThe rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function $R$ of time $t$. The table above shows the rate as measured every 3 hours for a 24 -hour period.\n\n(a) Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate $integral_(0)^(24) R(t) d t$. Using correct units, explain the meaning of your answer in terms of water flow.\n\n(b) Is there some time $t \\, 0 < t < 24$, such that $R'(t)= 0$ ? Justify your answer.\n\n(c) The rate of water flow $R(t)$ can be approximated by $Q(t)= frac(1,79)lr((768 + 23 t - t^(2)))$. Use $Q(t)$ to approximate the average rate of water flow during the 24-hour time period. Indicate units of measure.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-1999-frq-03",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-1",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "1999",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2014-frq-06",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "rawPrompt": "The Taylor series for a function $f$ about $x=1$ is given by $\\sum_{n=1}^{\\infty}(-1)^{n+1} \\frac{2^{n}}{n}(x-1)^{n}$ and converges to $f(x)$ for $|x-1|<R$, where $R$ is the radius of convergence of the Taylor series.\\\\\n(a) Find the value of $R$.\\\\\n(b) Find the first three nonzero terms and the general term of the Taylor series for $f^{\\prime}$, the derivative of $f$, about $x=1$.\\\\\n(c) The Taylor series for $f^{\\prime}$ about $x=1$, found in part (b), is a geometric series. Find the function $f^{\\prime}$ to which the series converges for $|x-1|<R$. Use this function to determine $f$ for $|x-1|<R$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe Taylor series for a function \\(f\\) about \\(x=1\\) is given by \\(\\sum_{n=1}^{\\infty}(-1)^{n+1} \\frac{2^{n}}{n}(x-1)^{n}\\) and converges to \\(f(x)\\) for \\(|x-1|<R\\), where \\(R\\) is the radius of convergence of the Taylor series.\n\\begin{itemize}\n\\item[(a)] Find the value of \\(R\\).\n\\item[(b)] Find the first three nonzero terms and the general term of the Taylor series for \\(f^{\\prime}\\), the derivative of \\(f\\), about \\(x=1\\).\n\\item[(c)] The Taylor series for \\(f^{\\prime}\\) about \\(x=1\\), found in part (b), is a geometric series. Find the function \\(f^{\\prime}\\) to which the series converges for \\(|x-1|<R\\). Use this function to determine \\(f\\) for \\(|x-1|<R\\).\n\\item[(a)] Let \\(a_{n}\\) be the \\(n\\)th term of the Taylor series.\n\\[\n\\begin{aligned}\n\\frac{a_{n+1}}{a_{n}} & =\\frac{(-1)^{n+2} 2^{n+1}(x-1)^{n+1}}{n+1} \\cdot \\frac{n}{(-1)^{n+1} 2^{n}(x-1)^{n}} \\\\\n& =\\frac{-2 n(x-1)}{n+1}\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& \\lim _{n \\rightarrow \\infty}\\left|\\frac{-2 n(x-1)}{n+1}\\right|=2|x-1| \\\\\n& 2|x-1|<1 \\Rightarrow|x-1|<\\frac{1}{2}\n\\end{aligned}\n\\]\nThe radius of convergence is \\(R=\\frac{1}{2}\\).\n\\item[(b)] The first three nonzero terms are\n\\[\n2-4(x-1)+8(x-1)^{2} .\n\\]\nThe general term is \\((-1)^{n+1} 2^{n}(x-1)^{n-1}\\) for \\(n \\geq 1\\).\n\\item[(c)] The common ratio is \\(-2(x-1)\\).\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=\\frac{2}{1-(-2(x-1))}=\\frac{2}{2 x-1} \\text { for }|x-1|<\\frac{1}{2} \\\\\n& f(x)=\\int \\frac{2}{2 x-1} d x=\\ln |2 x-1|+C\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& f(1)=0 \\\\\n& \\ln |1|+C=0 \\Rightarrow C=0 \\\\\n& f(x)=\\ln |2 x-1| \\text { for }|x-1|<\\frac{1}{2}\n\\end{aligned}\n\\]\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { sets up ratio } \\\\ 1: \\text { computes limit of ratio } \\\\ 1: \\text { determines radius of convergence }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { first three nonzero terms } \\\\ 1: \\text { general term }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: f^{\\prime}(x) \\\\ 1: \\text { antiderivative } \\\\ 1: f(x)\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          68,
+          577,
+          430
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

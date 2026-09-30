@@ -1,0 +1,142 @@
+{
+  "id": "ap-calc-ab-2010-form-b-frq-02",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $g$ is defined for $x > 0$ with $g(1)= 2 \\, g'(x)= sin lr((x + frac(1,x)))$, and $g''(x)= lr((1 - frac(1,x^(2)))) cos lr((x + frac(1,x)))$.\n\n(a) Find all values of $x$ in the interval $0.12 <= x <= 1$ at which the graph of $g$ has a horizontal tangent line.\n\n(b) On what subintervals of $(0.12 \\,1)$, if any, is the graph of $g$ concave down? Justify your answer.\n\n(c) Write an equation for the line tangent to the graph of $g$ at $x = 0.3$.\n\n(d) Does the line tangent to the graph of $g$ at $x = 0.3$ lie above or below the graph of $g$ for $0.3 < x < 1$ ? Why?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          65,
+          552,
+          198
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          69.408,
+          548.352,
+          98.496
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          105.11999999999999,
+          537.12,
+          118.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          124.99199999999999,
+          507.45599999999996,
+          138.528
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          146.016,
+          380.15999999999997,
+          159.552
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          165.88799999999998,
+          538.2719999999999,
+          178.272
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          180.0,
+          111.45599999999999,
+          192.95999999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "438100357a1cd6b8b76164ecf2a17f56cbd779d039c4a24f7dbf4a3d2bbe8877",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-03",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

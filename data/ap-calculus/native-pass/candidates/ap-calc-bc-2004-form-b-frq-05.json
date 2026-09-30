@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2004-form-b-frq-05",
+  "course": "BC",
+  "year": 2004,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2004-FORM-B.pdf",
+      "sha256": "3cfed176d7d41f56917497931217a301974702b663463528a6f7117814c355ee",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2004-FORM-B.pdf",
+      "sha256": "960d5470569631cc8f672214b07355e4d6a6bc87ce54a4a6831f07f0d7e43195"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $g$ be the function given by $g(x)= frac(1,sqrt(x))$.\n\n(a) Find the average value of $g$ on the closed interval $\\[1 \\,4 \\]$.\n\n(b) Let $S$ be the solid generated when the region bounded by the graph of $y = g(x)$, the vertical lines $x = 1$ and $x = 4$, and the $x$-axis is revolved about the $x$-axis. Find the volume of $S$.\n\n(c) For the solid $S$, given in part (b), find the average value of the areas of the cross sections perpendicular to the $x$-axis.\n\n(d) The average value of a function $f$ on the unbounded interval $\\[a \\, oo \\)$ is defined to be $lim_(b -> oo)lr(\\[frac(integral_(a)^(b) f(x) d x,b - a)\\])$. Show that the improper integral $integral_(4)^(oo) g(x) d x$ is divergent, but the average value of $g$ on the interval $\\[4 \\, oo \\)$ is finite.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          54,
+          569,
+          260
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "21ea2ea4a1967d493352663105c68b430dcdbd77ff83b8e7601bd0df3a4d157c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2004-FORM-B.zip"
+    }
+  ]
+}

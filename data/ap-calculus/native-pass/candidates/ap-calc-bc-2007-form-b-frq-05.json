@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2007-form-b-frq-05",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= 3 x + 2 y + 1$.\n\n(a) Find $frac(d^(2) y,d x^(2))$ in terms of $x$ and $y$.\n\n(b) Find the values of the constants $m \\, b$, and $r$ for which $y = m x + b + e^(r x)$ is a solution to the differential equation.\n\n(c) Let $y = f(x)$ be a particular solution to the differential equation with the initial condition $f(0)= - 2$. Use Euler's method, starting at $x = 0$ with a step size of $frac(1,2)$, to approximate $f(1)$. Show the work that leads to your answer.\n\n(d) Let $y = g(x)$ be another solution to the differential equation with the initial condition $g(0)= k$, where $k$ is a constant. Euler's method, starting at $x = 0$ with a step size of 1, gives the approximation $g(1) approx 0$. Find the value of $k$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          66,
+          561,
+          287
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "9ec37788f110df127544f1a98d4c7ada2b4d71ee82557acb277bc83dd8c9d53a",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-frq-04",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2008-frq-04-diagram-01.png}\nA particle moves along the \\(x\\)-axis so that its velocity at time \\(t\\), for \\(0 \\leq t \\leq 6\\), is given by a differentiable\nfunction \\(v\\) whose graph is shown above. The velocity is 0 at \\(t=0, t=3\\), and \\(t=5\\), and the graph has\nhorizontal tangents at \\(t=1\\) and \\(t=4\\). The areas of the regions bounded by the \\(t\\)-axis and the graph of \\(v\\) on\nthe intervals [0, 3], [3, 5], and [5, 6] are 8, 3, and 2, respectively. At time \\(t=0\\), the particle is at \\(x=-2\\).\n(a) For \\(0 \\leq t \\leq 6\\), find both the time and the position of the particle when the particle is farthest to the left.\nJustify your answer.\n(b) For how many values of \\(t\\), where \\(0 \\leq t \\leq 6\\), is the particle at \\(x=-8\\) ? Explain your reasoning.\n(c) On the interval \\(2<t<3\\), is the speed of the particle increasing or decreasing? Give a reason for your\nanswer.\n(d) During what time intervals, if any, is the acceleration of the particle negative? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2008-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2008-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        195.1439971923828,
+        167.20799255371094,
+        417.7200012207031,
+        334.7760009765625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 4}\n\n\\begin{figure}\n\\includegraphics[alt={},max width=\\textwidth]{https://cdn.mathpix.com/cropped/76679461-42bd-4113-907f-7e334f24faea-1.jpg?height=445&width=668&top_left_y=382&top_left_x=726}\n\\captionsetup{labelformat=empty}\n\\caption{Graph of \\(v\\)}\n\\end{figure}\nA particle moves along the \\(x\\)-axis so that its velocity at time \\(t\\), for \\(0 \\leq t \\leq 6\\), is given by a differentiable function \\(v\\) whose graph is shown above. The velocity is 0 at \\(t=0, t=3\\), and \\(t=5\\), and the graph has horizontal tangents at \\(t=1\\) and \\(t=4\\). The areas of the regions bounded by the \\(t\\)-axis and the graph of \\(v\\) on the intervals [0, 3], [3, 5], and [5, 6] are 8, 3, and 2, respectively. At time \\(t=0\\), the particle is at \\(x=-2\\).\n\\begin{itemize}\n\\item[(a)] For \\(0 \\leq t \\leq 6\\), find both the time and the position of the particle when the particle is farthest to the left. Justify your answer.\n\\item[(b)] For how many values of \\(t\\), where \\(0 \\leq t \\leq 6\\), is the particle at \\(x=-8\\) ? Explain your reasoning.\n\\item[(c)] On the interval \\(2<t<3\\), is the speed of the particle increasing or decreasing? Give a reason for your answer.\n\\item[(d)] During what time intervals, if any, is the acceleration of the particle negative? Justify your answer.\n\\item[(a)] Since \\(v(t)<0\\) for \\(0<t<3\\) and \\(5<t<6\\), and \\(v(t)>0\\) for \\(3<t<5\\), we consider \\(t=3\\) and \\(t=6\\).\n\\[\n\\begin{aligned}\n& x(3)=-2+\\int_{0}^{3} v(t) d t=-2-8=-10 \\\\\n& x(6)=-2+\\int_{0}^{6} v(t) d t=-2-8+3-2=-9\n\\end{aligned}\n\\]\nTherefore, the particle is farthest left at time \\(t=3\\) when its position is \\(x(3)=-10\\).\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{array}{l}\n1: \\text { identifies } t=3 \\text { as a candidate } \\\\\n1: \\text { considers } \\int_{0}^{6} v(t) d t \\\\\n1: \\text { conclusion }\n\\end{array}\\right.\n\\]\n\\begin{itemize}\n\\item[(b)] The particle moves continuously and monotonically from \\(x(0)=-2\\) to \\(x(3)=-10\\). Similarly, the particle moves continuously and monotonically from \\(x(3)=-10\\) to \\(x(5)=-7\\) and also from \\(x(5)=-7\\) to \\(x(6)=-9\\).\nBy the Intermediate Value Theorem, there are three values of \\(t\\) for which the particle is at \\(x(t)=-8\\).\n\\end{itemize}\n\\[\n3:\\left\\{\\begin{aligned}\n1: & \\text { positions at } t=3, t=5, \\\\\n& \\text { and } t=6 \\\\\n1: & \\text { description of motion } \\\\\n1: & \\text { conclusion }\n\\end{aligned}\\right.\n\\]\n\\begin{itemize}\n\\item[(c)] The speed is decreasing on the interval \\(2<t<3\\) since on this interval \\(v<0\\) and \\(v\\) is increasing.\n\\item[(d)] The acceleration is negative on the intervals \\(0<t<1\\) and \\(4<t<6\\) since velocity is decreasing on these intervals.\n\\end{itemize}\n\\[\n\\begin{aligned}\n& 1: \\text { answer with reaso } \\\\\n& 2:\\left\\{\\begin{array}{l}\n1: \\text { answer } \\\\\n1: \\text { justification }\n\\end{array}\\right.\n\\end{aligned}\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          198.14399999999998,
+          170.208,
+          414.71999999999997,
+          331.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          342.14399999999995,
+          527.328,
+          355.104
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          356.544,
+          527.04,
+          368.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          370.08,
+          545.472,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          383.616,
+          538.2719999999999,
+          397.152
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.088,
+          405.21599999999995,
+          540.8639999999999,
+          418.176
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.368,
+          418.75199999999995,
+          173.37599999999998,
+          431.712
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          436.89599999999996,
+          508.60799999999995,
+          450.43199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          65.664,
+          458.496,
+          536.544,
+          471.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          474.04799999999994,
+          118.94399999999999,
+          483.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          490.176,
+          519.264,
+          503.712
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

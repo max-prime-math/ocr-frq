@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-form-b-frq-01",
+  "course": "BC",
+  "year": 2010,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010-FORM-B.pdf",
+      "sha256": "c2463fd321adbc125484a617c8e8bbd6a9f07f6166a9327f34c6b6481ab557c2",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010-FORM-B.pdf",
+      "sha256": "e306b2f07965f05aaf377779b9babf7491b54e4af718251f6c1ae724a0bdd253"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2010-form-b-frq-01-diagram-01.jpg}\n\\end{center}\nIn the figure above, $R$ is the shaded region in the first quadrant bounded by the graph of $y=4 \\ln (3-x)$, the horizontal line $y=6$, and the vertical line $x=2$.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the volume of the solid generated when $R$ is revolved about the horizontal line $y=8$.\\\\\n(c) The region $R$ is the base of a solid. For this solid, each cross section perpendicular to the $x$-axis is a square. Find the volume of the solid.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2010-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2010-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2010-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\\begin{itemize}\n\\item[] In the figure above, \\(R\\) is the shaded region in the first quadrant bounded by the graph of \\(y=4 \\ln (3-x)\\), the horizontal line \\(y=6\\), and the vertical line \\(x=2\\).\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is revolved about the horizontal line \\(y=8\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is a square. Find the volume of the solid.\n![](https://cdn.mathpix.com/cropped/eecfdc0a-febc-4346-a489-c8b669bbb39c-1.jpg?height=466&width=455&top_left_y=410&top_left_x=1489)\n\\item[(a)] \\(\\quad \\int_{0}^{2}(6-4 \\ln (3-x)) d x=6.816\\) or 6.817\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\pi \\int_{0}^{2}\\left((8-4 \\ln (3-x))^{2}-(8-6)^{2}\\right) d x \\\\\n& =168.179 \\text { or } 168.180\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{2}(6-4 \\ln (3-x))^{2} d x=26.266\\) or 26.267\n\\item[1] : Correct limits in an integral in (a), (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          520
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

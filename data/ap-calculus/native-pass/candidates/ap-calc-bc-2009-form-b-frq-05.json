@@ -1,0 +1,96 @@
+{
+  "id": "ap-calc-bc-2009-form-b-frq-05",
+  "course": "BC",
+  "year": 2009,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009-FORM-B.pdf",
+      "sha256": "34133f19420505521e29842db5b2478cc0d12e67cb28f0f8356334b7ffbe7664",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009-FORM-B.pdf",
+      "sha256": "6d701f37dbf0b8adbbcf2eff3296d0ef882758e386f8c920751d2756b794e0c4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2009-form-b-frq-05-diagram-01.png\", width: 65%)\n\nLet $f$ be a twice-differentiable function defined on the interval $- 1.2 < x < 3.2$ with $f(1)= 2$. The graph of $f'$, the derivative of $f$, is shown above. The graph of $f'$ crosses the $x$-axis at $x = - 1$ and $x = 3$ and has a horizontal tangent at $x = 2$. Let $g$ be the function given by $g(x)= e^(f(x))$.\n\n(a) Write an equation for the line tangent to the graph of $g$ at $x = 1$.\n\n(b) For $- 1.2 < x < 3.2$, find all values of $x$ at which $g$ has a local maximum. Justify your answer.\n\n(c) The second derivative of $g$ is $g''(x)= e^(f(x))lr(\\[lr((f'(x)))^(2)+ f''(x)\\])$. Is $g''(- 1)$ positive, negative, or zero? Justify your answer.\n\n(d) Find the average rate of change of $g'$, the derivative of $g$, over the interval $\\[1 \\,3 \\]$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-form-b-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-form-b-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.0,
+        68.0,
+        407.0,
+        201.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          66,
+          572,
+          415
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "4bd6d7520bca07bb75ca32a32eb2f55569ac4665104c5bcdddf0559481fba6d3",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 6,
+      "sourceRect": [
+        208.0,
+        68.0,
+        407.0,
+        201.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2009-form-b-frq-04"
+    }
+  ]
+}

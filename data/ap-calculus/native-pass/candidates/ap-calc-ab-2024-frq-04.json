@@ -1,0 +1,204 @@
+{
+  "id": "ap-calc-ab-2024-frq-04",
+  "course": "AB",
+  "year": 2024,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2024.pdf",
+      "sha256": "070c3a4cd277d6aa74c5cb1b0dd5ae631458d71ac7cf5f7dfe2460814aaf08bd",
+      "pages": [
+        8
+      ]
+    },
+    "promptPages": [
+      8
+    ]
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2024-frq-04-diagram-01.png\", width: 65%)\n\nThe graph of the differentiable function $f$, shown for $- 6 <= x <= 7$, has a horizontal tangent at $x = - 2$ and is linear for $0 <= x <= 7$. Let $R$ be the region in the second quadrant bounded by the graph of $f$, the vertical line $x = - 6$, and the $x$ - and $y$-axes. Region $R$ has area 12.\n\n(a) The function $g$ is defined by $g(x)= integral_(0)^(x) f(t) d t$. Find the values of $g(- 6)\\, g(4)$, and $g(6)$.\n\n(b) For the function $g$ defined in part (a), find all values of $x$ in the interval $0 <= x <= 6$ at which the graph of $g$ has a critical point. Give a reason for your answer.\n\n(c) The function $h$ is defined by $h(x)= integral_(- 6)^(x) f'(t) d t$. Find the values of $h(6)\\, h'(6)$, and $h''(6)$. Show the work that leads to your answers.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2024-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2024-frq-04-diagram-01.png",
+      "sourcePage": 8,
+      "sourceRect": [
+        151.3679962158203,
+        71.30400085449219,
+        458.3280029296875,
+        221.3040008544922
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 8,
+        "rect": [
+          52,
+          69,
+          564,
+          496
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 8,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          154.368,
+          74.30399999999999,
+          455.328,
+          218.30399999999997
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          56.736,
+          232.70399999999998,
+          548.64,
+          245.664
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          247.67999999999998,
+          547.1999999999999,
+          260.64
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          262.08,
+          311.328,
+          275.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          285.40799999999996,
+          480.09599999999995,
+          308.736
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          318.52799999999996,
+          559.0079999999999,
+          332.352
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          87.264,
+          332.928,
+          310.176,
+          345.888
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          357.11999999999995,
+          559.584,
+          379.87199999999996
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          87.264,
+          386.496,
+          205.92,
+          399.45599999999996
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          83.52,
+          464.544,
+          538.2719999999999,
+          477.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 8,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          478.36799999999994,
+          489.888,
+          490.75199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "5479e0d0f06541d7fe8c87c00b6bd88cb5d67433d11cc16725681c5f29c58577",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-ab-2024-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2024-frq-04",
+      "sourcePage": 8,
+      "sourceSha256Matches": true
+    }
+  ]
+}

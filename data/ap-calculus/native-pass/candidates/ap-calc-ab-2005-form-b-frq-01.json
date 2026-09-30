@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2005-form-b-frq-01",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-01-diagram-01.png\", width: 65%)\n\nLet $f$ and $g$ be the functions given by $f(x)= 1 + sin(2 x)$ and $g(x)= e^(x \\/ 2)$. Let $R$ be the shaded region in the first quadrant enclosed by the graphs of $f$ and $g$ as shown in the figure above.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is revolved about the $x$-axis.\n\n(c) The region $R$ is the base of a solid. For this solid, the cross sections perpendicular to the $x$-axis are semicircles with diameters extending from $y = f(x)$ to $y = g(x)$. Find the volume of this solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2005-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2005-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        239.49600219726562,
+        187.656005859375,
+        373.0799865722656,
+        351.4800109863281
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          54,
+          572,
+          488
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          242.49599999999998,
+          190.65599999999998,
+          370.08,
+          348.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          360.0,
+          558.7199999999999,
+          376.128
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          378.14399999999995,
+          411.84,
+          391.104
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          395.99999999999994,
+          168.48,
+          408.96
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          414.43199999999996,
+          422.784,
+          427.392
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          433.152,
+          522.432,
+          445.53599999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          445.53599999999994,
+          516.096,
+          459.64799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fe1eb57dc369a2d78de429f474a5cc323fb115ce17211b4ef8919186314ffd4b",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

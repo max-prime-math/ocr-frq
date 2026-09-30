@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2019-frq-02",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (hours) & 0 & 0.3 & 1.7 & 2.8 & 4 \\\\\n\\hline \\(v_{P}(t)\\) (meters per hour) & 0 & 55 & -29 & 55 & 48 \\\\\n\\hline\n\\end{tabular}\nThe velocity of a particle, \\(P\\), moving along the \\(x\\)-axis is given by the differentiable function \\(v_{P}\\), where \\(v_{P}(t)\\)\nis measured in meters per hour and \\(t\\) is measured in hours. Selected values of \\(v_{P}(t)\\) are shown in the table\nabove. Particle \\(P\\) is at the origin at time \\(t=0\\).\n(a) Justify why there must be at least one time \\(t\\), for \\(0.3 \\leq t \\leq 2.8\\), at which \\(v_{P}{ }^{\\prime}(t)\\), the acceleration of\nparticle \\(P\\), equals 0 meters per hour per hour.\n(b) Use a trapezoidal sum with the three subintervals [0, 0.3], [0.3, 1.7], and [1.7, 2.8] to approximate the\nvalue of \\(\\int_{0}^{2.8} v_{P}(t) d t\\).\n(c) A second particle, \\(Q\\), also moves along the \\(x\\)-axis so that its velocity for \\(0 \\leq t \\leq 4\\) is given by\n\\(v_{Q}(t)=45 \\sqrt{t} \\cos \\left(0.063 t^{2}\\right)\\) meters per hour. Find the time interval during which the velocity of particle \\(Q\\)\nis at least 60 meters per hour. Find the distance traveled by particle \\(Q\\) during the interval when the\nvelocity of particle \\(Q\\) is at least 60 meters per hour.\n(d) At time \\(t=0\\), particle \\(Q\\) is at position \\(x=-90\\). Using the result from part (b) and the function \\(v_{Q}\\) from\npart (c), approximate the distance between particles \\(P\\) and \\(Q\\) at time \\(t=2.8\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(v_{P}\\) is differentiable \\(\\Rightarrow v_{P}\\) is continuous on \\(0.3 \\leq t \\leq 2.8\\).\n\\[\n\\frac{v_{P}(2.8)-v_{P}(0.3)}{2.8-0.3}=\\frac{55-55}{2.5}=0\n\\]\nBy the Mean Value Theorem, there is a value \\(c, 0.3<c<2.8\\), such that \\(v_{P}^{\\prime}(c)=0\\).\n- OR -\n\\(v_{P}\\) is differentiable \\(\\Rightarrow v_{P}\\) is continuous on \\(0.3 \\leq t \\leq 2.8\\).\nBy the Extreme Value Theorem, \\(v_{p}\\) has a minimum on [ \\(0.3,2.8\\) ]. \\(v_{P}(0.3)=55>-29=v_{P}(1.7)\\) and \\(v_{P}(1.7)=-29<55=v_{P}(2.8)\\).\nThus \\(v_{P}\\) has a minimum on the interval (0.3, 2.8).\nBecause \\(v_{P}\\) is differentiable, \\(v_{P}{ }^{\\prime}(t)\\) must equal 0 at this minimum.\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{0}^{2.8} v_{P}(t) d t \\approx & 0.3\\left(\\frac{v_{P}(0)+v_{P}(0.3)}{2}\\right)+1.4\\left(\\frac{v_{P}(0.3)+v_{P}(1.7)}{2}\\right) \\\\\n& +1.1\\left(\\frac{v_{P}(1.7)+v_{P}(2.8)}{2}\\right) \\\\\n= & 0.3\\left(\\frac{0+55}{2}\\right)+1.4\\left(\\frac{55+(-29)}{2}\\right)+1.1\\left(\\frac{-29+55}{2}\\right) \\\\\n= & 40.75\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& v_{Q}(t)=60 \\Rightarrow t=A=1.866181 \\text { or } t=B=3.519174 \\\\\n& v_{Q}(t) \\geq 60 \\text { for } A \\leq t \\leq B \\\\\n& \\int_{A}^{B}\\left|v_{Q}(t)\\right| d t=106.108754\n\\end{aligned}\n\\]\nThe distance traveled by particle \\(Q\\) during the interval \\(A \\leq t \\leq B\\) is 106.109 (or 106.108) meters.\n\\item[(d)] From part (b), the position of particle \\(P\\) at time \\(t=2.8\\) is\n\\[\n\\begin{aligned}\n& x_{P}(2.8)=\\int_{0}^{2.8} v_{P}(t) d t \\approx 40.75 \\\\\n& x_{Q}(2.8)=x_{Q}(0)+\\int_{0}^{2.8} v_{Q}(t) d t=-90+135.937653=45.937653\n\\end{aligned}\n\\]\nTherefore at time \\(t=2.8\\), particles \\(P\\) and \\(Q\\) are approximately \\(45.937653-40.75=5.188\\) (or 5.187) meters apart.\n\\item[] \\(2:\\left\\{\\begin{array}{c}1: v_{P}(2.8)-v_{P}(0.3)=0 \\\\ 1: \\text { justification, using } \\\\ \\text { Mean Value Theorem }\\end{array}\\right.\\)\n\\item[-] OR -\n\\item[] \\(2:\\left\\{\\begin{array}{c}1: v_{P}(0.3)>v_{P}(1.7) \\\\ \\text { and } v_{P}(1.7)<v_{P}(2.8) \\\\ 1: \\text { justification, using } \\\\ \\text { Extreme Value Theorem }\\end{array}\\right.\\)\n\\item[1] : answer, using trapezoidal sum\n\\begin{itemize}\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { interval } \\\\ 1: \\text { definite integral } \\\\ 1: \\text { distance }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\int_{0}^{2.8} v_{Q}(t) d t \\\\ 1: \\text { position of particle } Q \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          35,
+          74,
+          571,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          166.75199999999998,
+          80.064,
+          442.94399999999996,
+          136.79999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 28,
+        "type": "text",
+        "rect": [
+          39.168,
+          153.792,
+          530.496,
+          168.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 29,
+        "type": "text",
+        "rect": [
+          54.72,
+          170.208,
+          521.856,
+          184.03199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          186.33599999999998,
+          260.64,
+          198.72
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          213.696,
+          508.032,
+          226.65599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 33,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          229.248,
+          274.75199999999995,
+          242.20799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          260.06399999999996,
+          521.28,
+          273.024
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 36,
+        "type": "text",
+        "rect": [
+          74.30399999999999,
+          278.784,
+          171.35999999999999,
+          304.70399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          319.392,
+          488.736,
+          332.352
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          337.536,
+          542.592,
+          360.864
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          73.728,
+          368.06399999999996,
+          509.75999999999993,
+          381.02399999999994
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          73.728,
+          393.69599999999997,
+          302.976,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          429.984,
+          536.832,
+          444.38399999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          73.728,
+          445.82399999999996,
+          413.28,
+          458.784
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

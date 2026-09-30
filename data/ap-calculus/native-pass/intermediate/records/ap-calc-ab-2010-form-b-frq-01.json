@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-form-b-frq-01",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2010-form-b-frq-01-diagram-01.png}\nIn the figure above, \\(R\\) is the shaded region in the first quadrant bounded by the graph of \\(y=4 \\ln (3-x)\\), the\nhorizontal line \\(y=6\\), and the vertical line \\(x=2\\).\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is revolved about the horizontal line \\(y=8\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is a square.\nFind the volume of the solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2010-form-b-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2010-form-b-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        201.19200134277344,
+        170.95199584960938,
+        411.3840026855469,
+        385.4639892578125
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\\begin{itemize}\n\\item[] In the figure above, \\(R\\) is the shaded region in the first quadrant bounded by the graph of \\(y=4 \\ln (3-x)\\), the horizontal line \\(y=6\\), and the vertical line \\(x=2\\).\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is revolved about the horizontal line \\(y=8\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is a square. Find the volume of the solid.\n![](https://cdn.mathpix.com/cropped/c4b91665-29f6-4bf0-be5d-803b35e95be4-1.jpg?height=466&width=455&top_left_y=410&top_left_x=1489)\n\\item[(a)] \\(\\quad \\int_{0}^{2}(6-4 \\ln (3-x)) d x=6.816\\) or 6.817\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\pi \\int_{0}^{2}\\left((8-4 \\ln (3-x))^{2}-(8-6)^{2}\\right) d x \\\\\n& =168.179 \\text { or } 168.180\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{2}(6-4 \\ln (3-x))^{2} d x=26.266\\) or 26.267\n\\item[1] : Correct limits in an integral in (a), (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          520
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          204.19199999999998,
+          173.952,
+          408.38399999999996,
+          382.464
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          394.272,
+          548.064,
+          407.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          409.53599999999994,
+          285.69599999999997,
+          421.91999999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          429.984,
+          168.48,
+          442.36799999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          448.70399999999995,
+          487.58399999999995,
+          461.664
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          470.304,
+          558.144,
+          482.688
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          482.11199999999997,
+          211.67999999999998,
+          492.768
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2015-frq-05",
+  "course": "BC",
+  "year": 2015,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2015.pdf",
+      "sha256": "31ed31c8214d83bf9aaf17d513fa9cdd9970f235caecbcdb76afd95daaf6969d",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2015.pdf",
+      "sha256": "8e5b445e2e44eae159362e693a83800b92249a035430f098a7ca184782e4b553"
+    }
+  },
+  "rawPrompt": "Consider the function $f(x)=\\frac{1}{x^{2}-k x}$, where $k$ is a nonzero constant. The derivative of $f$ is given by $f^{\\prime}(x)=\\frac{k-2 x}{\\left(x^{2}-k x\\right)^{2}}$.\\\\\n(a) Let $k=3$, so that $f(x)=\\frac{1}{x^{2}-3 x}$. Write an equation for the line tangent to the graph of $f$ at the point whose $x$-coordinate is 4 .\\\\\n(b) Let $k=4$, so that $f(x)=\\frac{1}{x^{2}-4 x}$. Determine whether $f$ has a relative minimum, a relative maximum, or neither at $x=2$. Justify your answer.\\\\\n(c) Find the value of $k$ for which $f$ has a critical point at $x=-5$.\\\\\n(d) Let $k=6$, so that $f(x)=\\frac{1}{x^{2}-6 x}$. Find the partial fraction decomposition for the function $f$.\nFind $\\int f(x) d x$.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2015 SCORING GUIDELINES}\n\n\\section*{Question 5}\n\nConsider the function \\(f(x)=\\frac{1}{x^{2}-k x}\\), where \\(k\\) is a nonzero constant. The derivative of \\(f\\) is given by \\(f^{\\prime}(x)=\\frac{k-2 x}{\\left(x^{2}-k x\\right)^{2}}\\).\n\\begin{itemize}\n\\item[(a)] Let \\(k=3\\), so that \\(f(x)=\\frac{1}{x^{2}-3 x}\\). Write an equation for the line tangent to the graph of \\(f\\) at the point whose \\(x\\)-coordinate is 4 .\n\\item[(b)] Let \\(k=4\\), so that \\(f(x)=\\frac{1}{x^{2}-4 x}\\). Determine whether \\(f\\) has a relative minimum, a relative maximum, or neither at \\(x=2\\). Justify your answer.\n\\item[(c)] Find the value of \\(k\\) for which \\(f\\) has a critical point at \\(x=-5\\).\n\\item[(d)] Let \\(k=6\\), so that \\(f(x)=\\frac{1}{x^{2}-6 x}\\). Find the partial fraction decomposition for the function \\(f\\). Find \\(\\int f(x) d x\\).\n\\item[(a)] \\(f(4)=\\frac{1}{4^{2}-3 \\cdot 4}=\\frac{1}{4} \\quad f^{\\prime}(4)=\\frac{3-2 \\cdot 4}{\\left(4^{2}-3 \\cdot 4\\right)^{2}}=-\\frac{5}{16}\\) An equation for the line tangent to the graph of \\(f\\) at the point whose \\(x\\)-coordinate is 4 is \\(y=-\\frac{5}{16}(x-4)+\\frac{1}{4}\\).\n\\item[(b)] \\(f^{\\prime}(x)=\\frac{4-2 x}{\\left(x^{2}-4 x\\right)^{2}} \\quad f^{\\prime}(2)=\\frac{4-2 \\cdot 2}{\\left(2^{2}-4 \\cdot 2\\right)^{2}}=0\\) \\(f^{\\prime}(x)\\) changes sign from positive to negative at \\(x=2\\). Therefore, \\(f\\) has a relative maximum at \\(x=2\\).\n\\item[(c)] \\(f^{\\prime}(-5)=\\frac{k-2 \\cdot(-5)}{\\left((-5)^{2}-k \\cdot(-5)\\right)^{2}}=0 \\Rightarrow k=-10\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { slope } \\\\ 1: \\text { tangent line equation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } f^{\\prime}(2) \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)\n\\item[1] : answer\n\\item[] \\(4:\\left\\{\\begin{array}{l}2: \\text { partial fraction decomposition } \\\\ 2: \\text { general antiderivative }\\end{array}\\right.\\)\n\\item[(d)] \\(\\frac{1}{x^{2}-6 x}=\\frac{1}{x(x-6)}=\\frac{A}{x}+\\frac{B}{x-6} \\Rightarrow 1=A(x-6)+B x\\)\n\\[\n\\begin{aligned}\n& x=0 \\Rightarrow 1=A \\cdot(-6) \\Rightarrow A=-\\frac{1}{6} \\\\\n& x=6 \\Rightarrow 1=B \\cdot(6) \\Rightarrow B=\\frac{1}{6} \\\\\n& \\begin{aligned}\n\\frac{1}{x(x-6)} & =\\frac{-1 / 6}{x}+\\frac{1 / 6}{x-6} \\\\\n\\int f(x) d x & =\\int\\left(\\frac{-1 / 6}{x}+\\frac{1 / 6}{x-6}\\right) d x \\\\\n& =-\\frac{1}{6} \\ln |x|+\\frac{1}{6} \\ln |x-6|+C=\\frac{1}{6} \\ln \\left|\\frac{x-6}{x}\\right|+C\n\\end{aligned}\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          54,
+          568,
+          334
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2015.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

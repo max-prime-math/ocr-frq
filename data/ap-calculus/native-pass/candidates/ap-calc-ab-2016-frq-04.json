@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2016-frq-04",
+  "course": "AB",
+  "year": 2016,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2016.pdf",
+      "sha256": "108aae105f6f756961adcd8138387d34c0fc83133e62de827115c105e3738138",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2016.pdf",
+      "sha256": "f54976bd2ac78f5f0598dc347ff6479a3a67babd0d21d445822d82aeadc82722"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= frac(y^(2),x - 1)$.\n\n(a) On the axes provided, sketch a slope field for the given differential equation at the six points indicated.\n\n#image(\"/imgs/ap-calc-ab-2016-frq-04-diagram-01.png\", width: 65%)\n\n(b) Let $y = f(x)$ be the particular solution to the given differential equation with the initial condition $f(2)= 3$. Write an equation for the line tangent to the graph of $y = f(x)$ at $x = 2$. Use your equation to approximate $f(2.1)$.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(2)= 3$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2016-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2016-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        246.4080047607422,
+        109.60800170898438,
+        365.5920104980469,
+        269.11199951171875
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          35.0,
+          568,
+          375
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          55.007999999999996,
+          274.75199999999995,
+          83.52
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          90.43199999999999,
+          538.2719999999999,
+          103.392
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "chart",
+        "rect": [
+          249.408,
+          112.60799999999999,
+          362.592,
+          266.11199999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          275.328,
+          474.04799999999994,
+          288.864
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          290.88,
+          501.69599999999997,
+          304.99199999999996
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          307.008,
+          270.43199999999996,
+          321.11999999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          329.18399999999997,
+          558.144,
+          342.71999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "6b94f27fbc5528d64b7d8d26c4114d57f451ebdb67f95c346a7426b9fb49f7bd",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2016-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2016-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

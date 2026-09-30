@@ -1,0 +1,283 @@
+{
+  "id": "ap-calc-ab-2021-frq-06",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        10,
+        11
+      ]
+    },
+    "promptPages": [
+      10,
+      11
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A medication is administered to a patient. The amount, in milligrams, of the medication in the patient at time $t$ hours is modeled by a function $y = A(t)$ that satisfies the differential equation $frac(d y,d t)= frac(12 - y,3)$. At time $t = 0$ hours, there are 0 milligrams of the medication in the patient.\n\n(a) A portion of the slope field for the differential equation $frac(d y,d t)= frac(12 - y,3)$ is given below. Sketch the solution curve through the point $(0 \\,0)$.\n\n#image(\"/imgs/ap-calc-ab-2021-frq-06-diagram-01.png\", width: 65%)\n\n(b) Using correct units, interpret the statement $lim_(t -> oo) A(t)= 12$ in the context of this problem.\n\n(c) Use separation of variables to find $y = A(t)$, the particular solution to the differential equation $frac(d y,d t)= frac(12 - y,3)$ with initial condition $A(0)= 0$.\n\n(d) A different procedure is used to administer the medication to a second patient. The amount, in milligrams, of the medication in the second patient at time $t$ hours is modeled by a function $y = B(t)$ that satisfies the differential equation $frac(d y,d t)= 3 - frac(y,t + 2)$. At time $t = 1$ hour, there are 2.5 milligrams of the medication in the second patient. Is the rate of change of the amount of medication in the second patient increasing or decreasing at time $t = 1$ ? Give a reason for your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2021-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2021-frq-06-diagram-01.png",
+      "sourcePage": 10,
+      "sourceRect": [
+        187.89772033691406,
+        266.22991943359375,
+        407.8298645019531,
+        488.1897277832031
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 10,
+        "rect": [
+          25,
+          92,
+          534,
+          621
+        ]
+      },
+      {
+        "page": 11,
+        "rect": [
+          40,
+          84,
+          537,
+          294
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 10,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          29.94474066892875,
+          96.17410714285714,
+          505.60542898691233,
+          108.84374999999999
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          115.75446428571428,
+          524.0329617062531,
+          142.53348214285714
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          151.45982142857142,
+          344.3645176926806,
+          164.12946428571428
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          183.42187499999997,
+          529.791565681047,
+          210.20089285714283
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          217.68749999999997,
+          198.67183713039265,
+          231.79687499999997
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 9,
+        "type": "chart",
+        "rect": [
+          190.89772176442077,
+          269.22991071428567,
+          404.82985942801747,
+          485.1897321428571
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          528.3816964285713,
+          457.8090159961222,
+          548.8258928571428
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          46.35676199709162,
+          569.2700892857142,
+          477.96412990790117,
+          583.3794642857142
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          588.2745535714286,
+          270.07852641783813,
+          616.2053571428571
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          89.26339285714285,
+          532.3829374697044,
+          101.93303571428571
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          115.75446428571428,
+          529.791565681047,
+          129.86383928571428
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          136.1986607142857,
+          520.289869122637,
+          162.97767857142856
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          171.90401785714283,
+          520.8657295201164,
+          184.5736607142857
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          199.25892857142856,
+          318.4507998061076,
+          212.50446428571428
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          257.13616071428567,
+          522.0174503150752,
+          269.80580357142856
+        ]
+      },
+      {
+        "sourcePage": 11,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          275.85267857142856,
+          473.6451769268057,
+          288.5223214285714
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "38441a0538d4a75c506d5e87e0b28a94bc00470147c7c76fe7792618654471f4",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-06",
+      "sourcePage": 10,
+      "sourceSha256Matches": true
+    },
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-06",
+      "sourcePage": 11,
+      "sourceSha256Matches": true
+    }
+  ]
+}

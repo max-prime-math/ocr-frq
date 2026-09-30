@@ -1,0 +1,173 @@
+{
+  "id": "ap-calc-ab-1999-frq-03",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (hours)], [$R(t)$ (gallons per hour)], table.hline(stroke: .5pt), [0], [9.6], table.hline(stroke: .5pt), [3], [10.4], table.hline(stroke: .5pt), [6], [10.8], table.hline(stroke: .5pt), [9], [11.2], table.hline(stroke: .5pt), [12], [11.4], table.hline(stroke: .5pt), [15], [11.3], table.hline(stroke: .5pt), [18], [10.7], table.hline(stroke: .5pt), [21], [10.2], table.hline(stroke: .5pt), [24], [9.6], table.hline(stroke: .5pt));\n\nThe rate at which water flows out of a pipe, in gallons per hour, is given by a differentiable function $R$ of time $t$. The table above shows the rate as measured every 3 hours for a 24 -hour period.\n\n(a) Use a midpoint Riemann sum with 4 subdivisions of equal length to approximate $integral_(0)^(24) R(t) d t$. Using correct units, explain the meaning of your answer in terms of water flow.\n\n(b) Is there some time $t \\, 0 < t < 24$, such that $R'(t)= 0$ ? Justify your answer.\n\n(c) The rate of water flow $R(t)$ can be approximated by $Q(t)= frac(1,79)lr((768 + 23 t - t^(2)))$. Use $Q(t)$ to approximate the average rate of water flow during the 24-hour time period. Indicate units of measure.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          39,
+          572,
+          684
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          224.064,
+          80.928,
+          387.07199999999995,
+          222.33599999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          246.23999999999998,
+          518.688,
+          259.2
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          259.2,
+          462.816,
+          271.584
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          283.96799999999996,
+          555.264,
+          307.296
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          84.672,
+          308.736,
+          375.26399999999995,
+          321.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 45,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          333.50399999999996,
+          425.664,
+          347.328
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          360.28799999999995,
+          450.43199999999996,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          84.672,
+          384.47999999999996,
+          472.31999999999994,
+          397.44
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          84.672,
+          404.06399999999996,
+          200.736,
+          415.87199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "8d69e9d4163ef40051e327a51717dfa6b0af2ac62e711002c4336e42f3d0d76e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "The graph of $f$ passes through $(3,6)$ and $f'(x)=(1+e^x)/x^2$.\n\n(a) Write the tangent line at $x=3$ and use it to approximate $f(3.1)$.\n\n(b) Starting at $x=3$ with step size $0.05$, use Euler's method to approximate $f(3.1)$. Use $f''$ to explain why this estimate is less than $f(3.1)$.\n\n(c) Use $integral_3^3.1 f'(x) dif x$ to evaluate $f(3.1)$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1999-frq-06",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-7-5",
+    "solution": "(a) $f'(3)=(1+e^3)/9 approx 2.3426$. The tangent line is\n$y-6=(1+e^3)/9(x-3)$,\nso $f(3.1) approx 6.2343$.\n\n(b) Euler's method gives\n$f(3.05) approx 6+f'(3)(0.05) approx 6.1171$,\n$f(3.1) approx 6.1171+f'(3.05)(0.05) approx 6.2360$.\nAlso\n$f''(x)=((x-2)e^x-2)/x^3>0$ on $[3,3.1]$. The graph is concave up, so the Euler tangent-line estimates lie below it.\n\n(c)\n$f(3.1)=6+integral_3^3.1 (1+e^x)/x^2 dif x approx 6.2378$.",
+    "tags": [
+      "1999",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-7",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-frq-04",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\\\\n\\hline \\(v(t)\\) (feet per second) & 5 & 14 & 22 & 29 & 35 & 40 & 44 & 47 & 49 \\\\\n\\hline\n\\end{tabular}\nRocket \\(A\\) has positive velocity \\(v(t)\\) after being launched upward from an initial height of 0 feet at time \\(t=0\\)\nseconds. The velocity of the rocket is recorded for selected values of \\(t\\) over the interval \\(0 \\leq t \\leq 80\\) seconds, as\nshown in the table above.\n(a) Find the average acceleration of rocket \\(A\\) over the time interval \\(0 \\leq t \\leq 80\\) seconds. Indicate units of\nmeasure.\n(b) Using correct units, explain the meaning of \\(\\int_{10}^{70} v(t) d t\\) in terms of the rocket's flight. Use a midpoint\nRiemann sum with 3 subintervals of equal length to approximate \\(\\int_{10}^{70} v(t) d t\\).\n(c) Rocket \\(B\\) is launched upward with an acceleration of \\(a(t)=\\frac{3}{\\sqrt{t+1}}\\) feet per second per second. At time\n\\(t=0\\) seconds, the initial height of the rocket is 0 feet, and the initial velocity is 2 feet per second. Which of\nthe two rockets is traveling faster at time \\(t=80\\) seconds? Explain your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\\\\n\\hline \\(v(t)\\) (feet per second) & 5 & 14 & 22 & 29 & 35 & 40 & 44 & 47 & 49 \\\\\n\\hline\n\\end{tabular}\n\nRocket \\(A\\) has positive velocity \\(v(t)\\) after being launched upward from an initial height of 0 feet at time \\(t=0\\) seconds. The velocity of the rocket is recorded for selected values of \\(t\\) over the interval \\(0 \\leq t \\leq 80\\) seconds, as shown in the table above.\n\\begin{itemize}\n\\item[(a)] Find the average acceleration of rocket \\(A\\) over the time interval \\(0 \\leq t \\leq 80\\) seconds. Indicate units of measure.\n\\item[(b)] Using correct units, explain the meaning of \\(\\int_{10}^{70} v(t) d t\\) in terms of the rocket's flight. Use a midpoint Riemann sum with 3 subintervals of equal length to approximate \\(\\int_{10}^{70} v(t) d t\\).\n\\item[(c)] Rocket \\(B\\) is launched upward with an acceleration of \\(a(t)=\\frac{3}{\\sqrt{t+1}}\\) feet per second per second. At time \\(t=0\\) seconds, the initial height of the rocket is 0 feet, and the initial velocity is 2 feet per second. Which of the two rockets is traveling faster at time \\(t=80\\) seconds? Explain your answer.\n\\item[(a)] Average acceleration of rocket \\(A\\) is\n\\[\n\\frac{v(80)-v(0)}{80-0}=\\frac{49-5}{80}=\\frac{11}{20} \\mathrm{ft} / \\mathrm{sec}^{2}\n\\]\n\\item[(b)] Since the velocity is positive, \\(\\int_{10}^{70} v(t) d t\\) represents the distance, in feet, traveled by rocket \\(A\\) from \\(t=10\\) seconds to \\(t=70\\) seconds.\nA midpoint Riemann sum is\n\\[\n\\begin{aligned}\n& 20[v(20)+v(40)+v(60)] \\\\\n& =20[22+35+44]=2020 \\mathrm{ft}\n\\end{aligned}\n\\]\n\\item[(c)] Let \\(v_{B}(t)\\) be the velocity of rocket \\(B\\) at time \\(t\\).\n\\[\n\\begin{aligned}\n& v_{B}(t)=\\int \\frac{3}{\\sqrt{t+1}} d t=6 \\sqrt{t+1}+C \\\\\n& 2=v_{B}(0)=6+C \\\\\n& v_{B}(t)=6 \\sqrt{t+1}-4 \\\\\n& v_{B}(80)=50>49=v(80)\n\\end{aligned}\n\\]\nRocket \\(B\\) is traveling faster at time \\(t=80\\) seconds.\n\\end{itemize}\n\nUnits of \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\) in (a) and ft in (b)\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { explanation } \\\\ 1: \\text { uses } v(20), v(40), v(60) \\\\ 1: \\text { value }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: 6 \\sqrt{t+1} \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { finds } v_{B}(80), \\text { compares to } v(80), \\\\ \\quad \\text { and draws a conclusion }\\end{array}\\right.\\)\n\n1 : units in (a) and (b)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          530
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "table",
+        "rect": [
+          100.22399999999999,
+          198.14399999999998,
+          511.48799999999994,
+          261.216
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          273.59999999999997,
+          548.64,
+          287.424
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          289.44,
+          557.856,
+          302.4
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 47,
+        "type": "text",
+        "rect": [
+          64.512,
+          302.4,
+          177.98399999999998,
+          313.344
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          65.088,
+          320.544,
+          531.6479999999999,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 50,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          334.94399999999996,
+          123.83999999999999,
+          344.736
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 52,
+        "type": "text",
+        "rect": [
+          65.088,
+          353.08799999999997,
+          530.208,
+          377.856
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          381.888,
+          420.768,
+          405.21599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 55,
+        "type": "text",
+        "rect": [
+          65.088,
+          415.008,
+          542.016,
+          439.77599999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 56,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          441.792,
+          562.4639999999999,
+          454.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 57,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          454.75199999999995,
+          437.76,
+          467.712
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

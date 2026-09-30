@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2009-frq-05",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\n$x$ & 2 & 3 & 5 & 8 & 13 \\\\\n\\hline\n$f(x)$ & 1 & 4 & -2 & 3 & 6 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nLet $f$ be a function that is twice differentiable for all real numbers. The table above gives values of $f$ for selected points in the closed interval $2 \\leq x \\leq 13$.\\\\\n(a) Estimate $f^{\\prime}(4)$. Show the work that leads to your answer.\\\\\n(b) Evaluate $\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x$. Show the work that leads to your answer.\\\\\n(c) Use a left Riemann sum with subintervals indicated by the data in the table to approximate $\\int_{2}^{13} f(x) d x$. Show the work that leads to your answer.\\\\\n(d) Suppose $f^{\\prime}(5)=3$ and $f^{\\prime \\prime}(x)<0$ for all $x$ in the closed interval $5 \\leq x \\leq 8$. Use the line tangent to the graph of $f$ at $x=5$ to show that $f(7) \\leq 4$. Use the secant line for the graph of $f$ on $5 \\leq x \\leq 8$ to show that $f(7) \\geq \\frac{4}{3}$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2009 SCORING GUIDELINES}\n\nQuestion 5\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(x\\) & 2 & 3 & 5 & 8 & 13 \\\\\n\\hline \\(f(x)\\) & 1 & 4 & -2 & 3 & 6 \\\\\n\\hline\n\\end{tabular}\nLet \\(f\\) be a function that is twice differentiable for all real numbers. The table above gives values of \\(f\\) for selected points in the closed interval \\(2 \\leq x \\leq 13\\).\n\\begin{itemize}\n\\item[(a)] Estimate \\(f^{\\prime}(4)\\). Show the work that leads to your answer.\n\\item[(b)] Evaluate \\(\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x\\). Show the work that leads to your answer.\n\\item[(c)] Use a left Riemann sum with subintervals indicated by the data in the table to approximate \\(\\int_{2}^{13} f(x) d x\\). Show the work that leads to your answer.\n\\item[(d)] Suppose \\(f^{\\prime}(5)=3\\) and \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the closed interval \\(5 \\leq x \\leq 8\\). Use the line tangent to the graph of \\(f\\) at \\(x=5\\) to show that \\(f(7) \\leq 4\\). Use the secant line for the graph of \\(f\\) on \\(5 \\leq x \\leq 8\\) to show that \\(f(7) \\geq \\frac{4}{3}\\).\n\\item[(a)] \\(f^{\\prime}(4) \\approx \\frac{f(5)-f(3)}{5-3}=-3\\)\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\int_{2}^{13}\\left(3-5 f^{\\prime}(x)\\right) d x & =\\int_{2}^{13} 3 d x-5 \\int_{2}^{13} f^{\\prime}(x) d x \\\\\n& =3(13-2)-5(f(13)-f(2))=8\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\int_{2}^{13} f(x) d x \\approx & f(2)(3-2)+f(3)(5-3) \\\\\n& +f(5)(8-5)+f(8)(13-8)=18\n\\end{aligned}\n\\]\n\\item[(d)] An equation for the tangent line is \\(y=-2+3(x-5)\\). Since \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the interval \\(5 \\leq x \\leq 8\\), the line tangent to the graph of \\(y=f(x)\\) at \\(x=5\\) lies above the graph for all \\(x\\) in the interval \\(5<x \\leq 8\\). Therefore, \\(f(7) \\leq-2+3 \\cdot 2=4\\). An equation for the secant line is \\(y=-2+\\frac{5}{3}(x-5)\\). Since \\(f^{\\prime \\prime}(x)<0\\) for all \\(x\\) in the interval \\(5 \\leq x \\leq 8\\), the secant line connecting (5, \\(f(5)\\) ) and (8, \\(f(8))\\) lies below the graph of \\(y=f(x)\\) for all \\(x\\) in the interval \\(5<x<8\\). Therefore, \\(f(7) \\geq-2+\\frac{5}{3} \\cdot 2=\\frac{4}{3}\\).\n\\end{itemize}\n\n1 : answer\n\\[\n2:\\left\\{\\begin{aligned}\n1: \\text { uses Fundamental Theorem } & \\\\\n& \\text { of Calculus } \\\\\n1: \\text { answer } &\n\\end{aligned}\\right.\n\\]\n\\[\n2:\\left\\{\\begin{array}{l}\n1: \\text { left Riemann sum } \\\\\n1: \\text { answer }\n\\end{array}\\right.\n\\]\n\\[\n4:\\left\\{\\begin{array}{l}\n1: \\text { tangent line } \\\\\n1: \\text { shows } f(7) \\leq 4 \\\\\n1: \\text { secant line } \\\\\n1: \\text { shows } f(7) \\geq \\frac{4}{3}\n\\end{array}\\right.\n\\]",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          65,
+          552,
+          324
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

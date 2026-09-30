@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2004-form-b-frq-06",
+  "course": "AB",
+  "year": 2004,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004-FORM-B.pdf",
+      "sha256": "54120ce8b7ecef839166ce28f6afd8bde2ab80d63d8680ba8690ab5eb616b92d",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004-FORM-B.pdf",
+      "sha256": "b0d5ea32631908bc02a1f042cb796f09a7f7167a429f4d64d1d2c6853558d714"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2004-form-b-frq-06-diagram-01.png}\nLet \\(\\ell\\) be the line tangent to the graph of \\(y=x^{n}\\) at the point \\((1,1)\\), where \\(n>1\\), as shown above.\n(a) Find \\(\\int_{0}^{1} x^{n} d x\\) in terms of \\(n\\).\n(b) Let \\(T\\) be the triangular region bounded by \\(\\ell\\), the \\(x\\)-axis, and the line \\(x=1\\). Show that the area of \\(T\\) is \\(\\frac{1}{2 n}\\).\n(c) Let \\(S\\) be the region bounded by the graph of \\(y=x^{n}\\), the line \\(\\ell\\), and the \\(x\\)-axis. Express the area of \\(S\\) in\nterms of \\(n\\) and determine the value of \\(n\\) that maximizes the area of \\(S\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2004-form-b-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2004-form-b-frq-06-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        195.72000122070312,
+        72.45600128173828,
+        416.5679931640625,
+        287.54400634765625
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\\begin{itemize}\n\\item[] Let \\(\\ell\\) be the line tangent to the graph of \\(y=x^{n}\\) at the point (1, 1), where \\(n>1\\), as shown above.\n\\item[(a)] Find \\(\\int_{0}^{1} x^{n} d x\\) in terms of \\(n\\).\n\\item[(b)] Let \\(T\\) be the triangular region bounded by \\(\\ell\\), the \\(x\\)-axis, and the line \\(x=1\\). Show that the area of \\(T\\) is \\(\\frac{1}{2 n}\\).\n(c) Let \\(S\\) be the region bounded by the graph of \\(y=x^{n}\\), the line \\(\\ell\\), and the \\(x\\)-axis. Express the area of \\(S\\) in terms of \\(n\\) and determine the value of \\(n\\) that maximizes the area of \\(S\\).\n![](https://cdn.mathpix.com/cropped/cebfdce5-51a9-4777-91c0-68f837750899-1.jpg?height=507&width=522&top_left_y=374&top_left_x=1401)\n\\item[(a)] \\(\\int_{0}^{1} x^{n} d x=\\left.\\frac{x^{n+1}}{n+1}\\right|_{0} ^{1}=\\frac{1}{n+1}\\)\n\\item[(b)] Let \\(b\\) be the length of the base of triangle \\(T\\). \\(\\frac{1}{b}\\) is the slope of line \\(\\ell\\), which is \\(n\\)\n\\[\n\\operatorname{Area}(T)=\\frac{1}{2} b(1)=\\frac{1}{2 n}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\operatorname{Area}(S)=\\int_{0}^{1} x^{n} d x-\\operatorname{Area}(T) \\\\\n& \\quad=\\frac{1}{n+1}-\\frac{1}{2 n} \\\\\n& \\frac{d}{d n} \\operatorname{Area}(S)=-\\frac{1}{(n+1)^{2}}+\\frac{1}{2 n^{2}}=0 \\\\\n& 2 n^{2}=(n+1)^{2} \\\\\n& \\sqrt{2} n=(n+1) \\\\\n& n=\\frac{1}{\\sqrt{2}-1}=1+\\sqrt{2}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { antiderivative of } x^{n} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1 \\text { : slope of line } \\ell \\text { is } n \\\\ 1 \\text { : base of } T \\text { is } \\frac{1}{n} \\\\ 1 \\text { : shows area is } \\frac{1}{2 n}\\end{array}\\right.\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}1: \\text { area of } S \\text { in terms of } n \\\\ 1: \\text { derivative } \\\\ 1: \\text { sets derivative equal to } 0 \\\\ 1: \\text { solves for } n\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          72,
+          572,
+          496
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          198.72,
+          75.45599999999999,
+          413.568,
+          284.544
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          295.77599999999995,
+          497.376,
+          309.888
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          317.952,
+          207.35999999999999,
+          342.71999999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          349.056,
+          560.736,
+          372.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          379.87199999999996,
+          548.352,
+          393.984
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          394.84799999999996,
+          397.152,
+          406.65599999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-form-b-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

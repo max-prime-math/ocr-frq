@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2009-frq-05",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 6, align: (center, center, center, center, center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.hline(stroke: .5pt), [$x$], [2], [3], [5], [8], [13], table.hline(stroke: .5pt), [$f(x)$], [1], [4], [-2], [3], [6], table.hline(stroke: .5pt));\n\nLet $f$ be a function that is twice differentiable for all real numbers. The table above gives values of $f$ for selected points in the closed interval $2 <= x <= 13$.\n\n(a) Estimate $f'(4)$. Show the work that leads to your answer.\n\n(b) Evaluate $integral_(2)^(13)lr((3 - 5 f'(x))) d x$. Show the work that leads to your answer.\n\n(c) Use a left Riemann sum with subintervals indicated by the data in the table to approximate $integral_(2)^(13) f(x) d x$. Show the work that leads to your answer.\n\n(d) Suppose $f'(5)= 3$ and $f''(x)< 0$ for all $x$ in the closed interval $5 <= x <= 8$. Use the line tangent to the graph of $f$ at $x = 5$ to show that $f(7) <= 4$. Use the secant line for the graph of $f$ on $5 <= x <= 8$ to show that $f(7) >= frac(4,3)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          65,
+          552,
+          324
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "1ec03ca8be6dacf95df09f73ae29a4112afe5aca9965ba6e6e1d7b2ab7dd044c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ]
+}

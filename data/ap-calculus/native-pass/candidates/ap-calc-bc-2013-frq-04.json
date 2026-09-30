@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2013-frq-04",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2013-frq-04-diagram-01.jpg\", width: 65%)\n\nThe figure above shows the graph of $f'$, the derivative of a twice-differentiable function $f$, on the closed interval $0 <= x <= 8$. The graph of $f'$ has horizontal tangent lines at $x = 1 \\, x = 3$, and $x = 5$. The areas of the regions between the graph of $f'$ and the $x$-axis are labeled in the figure. The function $f$ is defined for all real numbers and satisfies $f(8)= 4$.\n\n(a) Find all values of $x$ on the open interval $0 < x < 8$ for which the function $f$ has a local minimum. Justify your answer.\n\n(b) Determine the absolute minimum value of $f$ on the closed interval $0 <= x <= 8$. Justify your answer.\n\n(c) On what open intervals contained in $0 < x < 8$ is the graph of $f$ both concave down and increasing? Explain your reasoning.\n\n(d) The function $g$ is defined by $g(x)= (f(x))^(3)$. If $f(3)= - frac(5,2)$, find the slope of the line tangent to the graph of $g$ at $x = 3$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2013-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2013-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2013_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          66,
+          568,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "cde14e8a9623de6441522448536657b2c651ca38343fcba9a217bb628244e408",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2016-frq-02",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2016-frq-02-diagram-01.jpg\", width: 65%)\n\nAt time $t$, the position of a particle moving in the $x y$-plane is given by the parametric functions $(x(t)\\, y(t))$, where $frac(d x,d t)= t^(2)+ sin lr((3 t^(2)))$. The graph of $y$, consisting of three line segments, is shown in the figure above. At $t = 0$, the particle is at position $(5 \\,1)$.\n\n(a) Find the position of the particle at $t = 3$.\n\n(b) Find the slope of the line tangent to the path of the particle at $t = 3$.\n\n(c) Find the speed of the particle at $t = 3$.\n\n(d) Find the total distance traveled by the particle from $t = 0$ to $t = 2$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2016-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2016-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2016_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          35.0,
+          568,
+          411
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b9673e5b379acb2af0580ac9d5af672fb2d9115b03f1ee7795689cf8ca21aa9d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ]
+}

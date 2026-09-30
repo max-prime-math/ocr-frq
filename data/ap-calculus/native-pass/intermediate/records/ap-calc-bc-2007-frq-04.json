@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-frq-04",
+  "course": "BC",
+  "year": 2007,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007.pdf",
+      "sha256": "7f744e6b686f4067e997f5bf07938692140d7467c5fdb1ec6b0e4400a9689591",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007.pdf",
+      "sha256": "1cdcfd87327c10f705bcc0e37c5bade0967046e4fdc5672fc4c11b455791dd76"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function defined for $x>0$, with $f(e)=2$ and $f^{\\prime}$, the first derivative of $f$, given by $f^{\\prime}(x)=x^{2} \\ln x$.\\\\\n(a) Write an equation for the line tangent to the graph of $f$ at the point $(e, 2)$.\\\\\n(b) Is the graph of $f$ concave up or concave down on the interval $1<x<3$ ? Give a reason for your answer.\\\\\n(c) Use antidifferentiation to find $f(x)$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nLet \\(f\\) be the function defined for \\(x>0\\), with \\(f(e)=2\\) and \\(f^{\\prime}\\), the first derivative of \\(f\\), given by \\(f^{\\prime}(x)=x^{2} \\ln x\\).\n\\begin{itemize}\n\\item[(a)] Write an equation for the line tangent to the graph of \\(f\\) at the point \\((e, 2)\\).\n\\item[(b)] Is the graph of \\(f\\) concave up or concave down on the interval \\(1<x<3\\) ? Give a reason for your answer.\n\\item[(c)] Use antidifferentiation to find \\(f(x)\\).\n\\item[(a)] \\(f^{\\prime}(e)=e^{2}\\)\nAn equation for the line tangent to the graph of \\(f\\) at the point \\((e, 2)\\) is \\(y-2=e^{2}(x-e)\\).\n\\item[(b)] \\(f^{\\prime \\prime}(x)=x+2 x \\ln x\\).\nFor \\(1<x<3, x>0\\) and \\(\\ln x>0\\), so \\(f^{\\prime \\prime}(x)>0\\). Thus, the graph of \\(f\\) is concave up on (1, 3).\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(e) \\\\ 1: \\text { equation of tangent line }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: f^{\\prime \\prime}(x) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}2: \\text { antiderivative } \\\\ 1: \\text { uses } f(e)=2 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(c)] Since \\(f(x)=\\int\\left(x^{2} \\ln x\\right) d x\\), we consider integration by parts.\n\\[\n\\begin{array}{ll}\nu=\\ln x & d v=x^{2} d x \\\\\nd u=\\frac{1}{x} d x & v=\\int\\left(x^{2}\\right) d x=\\frac{1}{3} x^{3}\n\\end{array}\n\\]\nTherefore,\n\\[\n\\begin{aligned}\nf(x) & =\\int\\left(x^{2} \\ln x\\right) d x \\\\\n& =\\frac{1}{3} x^{3} \\ln x-\\int\\left(\\frac{1}{3} x^{3} \\cdot \\frac{1}{x}\\right) d x \\\\\n& =\\frac{1}{3} x^{3} \\ln x-\\frac{1}{9} x^{3}+C\n\\end{aligned}\n\\]\nSince \\(f(e)=2,2=\\frac{e^{3}}{3}-\\frac{e^{3}}{9}+C\\) and \\(C=2-\\frac{2}{9} e^{3}\\).\nThus, \\(f(x)=\\frac{x^{3}}{3} \\ln x-\\frac{1}{9} x^{3}+2-\\frac{2}{9} e^{3}\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          302
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

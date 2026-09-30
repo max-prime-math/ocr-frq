@@ -1,0 +1,166 @@
+{
+  "id": "ap-calc-ab-1999-frq-05",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-1999-frq-05-diagram-01.png\", width: 65%)\n\nThe graph of the function $f$, consisting of three line segments, is given above. Let $g(x)= integral_(1)^(x) f(t) d t$.\n\n(a) Compute $g(4)$ and $g(- 2)$.\n\n(b) Find the instantaneous rate of change of $g$, with respect to $x$, at $x = 1$.\n\n(c) Find the absolute minimum value of $g$ on the closed interval \\[-2, 4\\]. Justify your answer.\n\n(d) The second derivative of $g$ is not defined at $x = 1$ and $x = 2$. How many of these values are $x$-coordinates of points of inflection of the graph of $g$ ? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1999-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1999-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        227.11199951171875,
+        71.87999725341797,
+        383.7359924316406,
+        227.06399536132812
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          39,
+          572,
+          703
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          230.112,
+          74.88,
+          380.736,
+          224.064
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          245.088,
+          512.064,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          280.224,
+          202.176,
+          294.048
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          307.584,
+          402.04799999999994,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          64.512,
+          332.352,
+          483.55199999999996,
+          346.75199999999995
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          64.512,
+          359.712,
+          561.5999999999999,
+          372.67199999999997
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          84.672,
+          372.67199999999997,
+          360.28799999999995,
+          385.056
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b72293845a6b19b6dd914ad21deff4f3ae1107d9cdb8bd19e0ba16bb0e91cdd8",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

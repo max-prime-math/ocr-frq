@@ -1,0 +1,210 @@
+{
+  "id": "ap-calc-ab-1998-frq-05",
+  "course": "AB",
+  "year": 1998,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1998.pdf",
+      "sha256": "eaabf8cbe60c30b49d4bc7965208cdbfc5daf467357ab4e73f8e0127bf6a7ff8",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1998.pdf",
+      "sha256": "6d85d1a61d929302a7e47bebcfd639dd3d95e40872212e0bfa01ef9c6fe7509e"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The temperature outside a house during a 24-hour period is given by $ F(t)= 80 - 10 cos lr((frac(pi t,12)))\\, 0 <= t <= 24 \\, $ where $F(t)$ is measured in degrees Fahrenheit and $t$ is measured in hours.\n\n(a) Sketch the graph of $F$ on the grid below.\n\n#image(\"/imgs/ap-calc-ab-1998-frq-05-diagram-01.png\", width: 65%)\n\n(b) Find the average temperature, to the nearest degree Fahrenheit, between $t = 6$ and $t = 14$.\n\n(c) An air conditioner cooled the house whenever the outside temperature was at or above 78 degrees Fahrenheit. For what values of $t$ was the air conditioner cooling the house?\n\n(d) The cost of cooling the house accumulates at the rate of \\$0.05 per hour for each degree the outside temperature exceeds 78 degrees Fahrenheit. What was the total cost, to the nearest cent, to cool the house for this 24-hour period?",
+  "assets": [
+    {
+      "name": "ap-calc-ab-1998-frq-05-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-1998-frq-05-diagram-01.png",
+      "sourcePage": 6,
+      "sourceRect": [
+        179.30340576171875,
+        168.35935974121094,
+        473.8784484863281,
+        361.2706604003906
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          74.87975356158088,
+          75.45571506569601,
+          420.7666152056526,
+          88.415666126598
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 4,
+        "type": "math",
+        "rect": [
+          224.92725973690258,
+          97.05563350053266,
+          405.50266544117653,
+          124.41553018465908
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          88.70370806525736,
+          133.63149538352272,
+          441.79054601332723,
+          146.5914464444247
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          147.16744426935367,
+          308.15898581112134,
+          160.12739533025567
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 8,
+        "type": "chart",
+        "rect": [
+          182.30340001723346,
+          171.3593529163707,
+          470.87845028147984,
+          358.27064710582385
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          91.2956995346967,
+          372.6705927290483,
+          540.862219956342,
+          386.4945405273437
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          92.44769574333641,
+          389.6625285644531,
+          540.862219956342,
+          402.6224796253551
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          403.19847745028403,
+          510.9103185317096,
+          416.15842851118606
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          91.87169763901655,
+          419.6144154607599,
+          540.862219956342,
+          433.43836325905534
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          434.01436108398434,
+          541.4382180606618,
+          446.39831431995736
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          110.8796350815717,
+          446.9743121448863,
+          378.1427554859835,
+          459.9342632057883
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "38acc054a8fa7eab31effafe0543e6a655281473d184c6e5699ce07be158671e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1998-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1998-frq-05",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

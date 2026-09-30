@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-frq-06",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "rawPrompt": "The function $f$ is defined by the power series\n$$\nf(x)=-\\frac{x}{2}+\\frac{2 x^{2}}{3}-\\frac{3 x^{3}}{4}+\\cdots+\\frac{(-1)^{n} n x^{n}}{n+1}+\\cdots\n$$\n\nfor all real numbers $x$ for which the series converges. The function $g$ is defined by the power series\n\n$$\ng(x)=1-\\frac{x}{2!}+\\frac{x^{2}}{4!}-\\frac{x^{3}}{6!}+\\cdots+\\frac{(-1)^{n} x^{n}}{(2 n)!}+\\cdots\n$$\n\nfor all real numbers $x$ for which the series converges.\\\\\n(a) Find the interval of convergence of the power series for $f$. Justify your answer.\\\\\n(b) The graph of $y=f(x)-g(x)$ passes through the point $(0,-1)$. Find $y^{\\prime}(0)$ and $y^{\\prime \\prime}(0)$. Determine whether $y$ has a relative minimum, a relative maximum, or neither at $x=0$. Give a reason for your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 6}\n\nThe function \\(f\\) is defined by the power series\n\\[\nf(x)=-\\frac{x}{2}+\\frac{2 x^{2}}{3}-\\frac{3 x^{3}}{4}+\\cdots+\\frac{(-1)^{n} n x^{n}}{n+1}+\\cdots\n\\]\nfor all real numbers \\(x\\) for which the series converges. The function \\(g\\) is defined by the power series\n\\[\ng(x)=1-\\frac{x}{2!}+\\frac{x^{2}}{4!}-\\frac{x^{3}}{6!}+\\cdots+\\frac{(-1)^{n} x^{n}}{(2 n)!}+\\cdots\n\\]\nfor all real numbers \\(x\\) for which the series converges.\n\\begin{itemize}\n\\item[(a)] Find the interval of convergence of the power series for \\(f\\). Justify your answer.\n\\item[(b)] The graph of \\(y=f(x)-g(x)\\) passes through the point (0, -1). Find \\(y^{\\prime}(0)\\) and \\(y^{\\prime \\prime}(0)\\). Determine whether \\(y\\) has a relative minimum, a relative maximum, or neither at \\(x=0\\). Give a reason for your answer.\n\\item[(a)] \\(\\left|\\frac{(-1)^{n+1}(n+1) x^{n+1}}{n+2} \\cdot \\frac{n+1}{(-1)^{n} n x^{n}}\\right|=\\frac{(n+1)^{2}}{(n+2)(n)} \\cdot|x|\\)\n\\[\n\\lim _{n \\rightarrow \\infty} \\frac{(n+1)^{2}}{(n+2)(n)} \\cdot|x|=|x|\n\\]\nThe series converges when \\(-1<x<1\\).\nWhen \\(x=1\\), the series is \\(-\\frac{1}{2}+\\frac{2}{3}-\\frac{3}{4}+\\cdots\\)\nThis series does not converge, because the limit of the individual terms is not zero.\nWhen \\(x=-1\\), the series is \\(\\frac{1}{2}+\\frac{2}{3}+\\frac{3}{4}+\\cdots\\)\nThis series does not converge, because the limit of the individual terms is not zero.\nThus, the interval of convergence is \\(-1<x<1\\).\n\\item[(b)] \\(f^{\\prime}(x)=-\\frac{1}{2}+\\frac{4}{3} x-\\frac{9}{4} x^{2}+\\cdots\\) and \\(f^{\\prime}(0)=-\\frac{1}{2}\\).\n\\[\ng^{\\prime}(x)=-\\frac{1}{2!}+\\frac{2}{4!} x-\\frac{3}{6!} x^{2}+\\cdots \\text { and } g^{\\prime}(0)=-\\frac{1}{2} .\n\\]\n\\[\n\\begin{aligned}\n& y^{\\prime}(0)=f^{\\prime}(0)-g^{\\prime}(0)=0 \\\\\n& f^{\\prime \\prime}(0)=\\frac{4}{3} \\text { and } g^{\\prime \\prime}(0)=\\frac{2}{4!}=\\frac{1}{12} .\n\\end{aligned}\n\\]\nThus, \\(y^{\\prime \\prime}(0)=\\frac{4}{3}-\\frac{1}{12}>0\\).\nSince \\(y^{\\prime}(0)=0\\) and \\(y^{\\prime \\prime}(0)>0, y\\) has a relative minimum at \\(x=0\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          238,
+          572,
+          502
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

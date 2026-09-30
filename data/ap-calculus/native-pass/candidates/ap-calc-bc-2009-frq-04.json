@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2009-frq-04",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= 6 x^(2)- x^(2) y$. Let $y = f(x)$ be a particular solution to this differential equation with the initial condition $f(- 1)= 2$.\n\n(a) Use Euler's method with two steps of equal size, starting at $x = - 1$, to approximate $f(0)$. Show the work that leads to your answer.\n\n(b) At the point $(- 1 \\,2)$, the value of $frac(d^(2) y,d x^(2))$ is -12. Find the second-degree Taylor polynomial for $f$ about $x = - 1$.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(- 1)= 2$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f3b86e71437ee179570a96157c5b77473c917aff1845a6500f16d4d8b12aff12",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ]
+}

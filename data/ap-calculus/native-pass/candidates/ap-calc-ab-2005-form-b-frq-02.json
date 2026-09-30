@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2005-form-b-frq-02",
+  "course": "AB",
+  "year": 2005,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2005-FORM-B.pdf",
+      "sha256": "d736de3ac9c5ef30538f29c35556f32c50e6eb5c3382b494116609d0c2bbec6d",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2005-FORM-B.pdf",
+      "sha256": "bb1e5e519d200e7d830135698d277b572787978f1e5493098d7e0a7b8490e60d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A water tank at Camp Newton holds 1200 gallons of water at time $t = 0$. During the time interval $0 <= t <= 18$ hours, water is pumped into the tank at the rate $ W(t)= 95 sqrt(t) sin^(2)lr((frac(t,6))) \" gallons per hour. \" $ During the same time interval, water is removed from the tank at the rate $ R(t)= 275 sin^(2)lr((frac(t,3))) \" gallons per hour. \" $\n\n(a) Is the amount of water in the tank increasing at time $t = 15$ ? Why or why not?\n\n(b) To the nearest whole number, how many gallons of water are in the tank at time $t = 18$ ?\n\n(c) At what time $t$, for $0 <= t <= 18$, is the amount of water in the tank at an absolute minimum? Show the work that leads to your conclusion.\n\n(d) For $t > 18$, no water is pumped into the tank, but water continues to be removed at the rate $R(t)$ until the tank becomes empty. Let $k$ be the time at which the tank becomes empty. Write, but do not solve, an equation involving an integral expression that can be used to find the value of $k$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          53,
+          572,
+          368
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          58.175999999999995,
+          550.0799999999999,
+          71.136
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          71.136,
+          272.736,
+          83.52
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "math",
+        "rect": [
+          219.16799999999998,
+          88.99199999999999,
+          393.69599999999997,
+          116.35199999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          123.264,
+          387.35999999999996,
+          136.224
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "math",
+        "rect": [
+          224.064,
+          141.696,
+          389.952,
+          168.19199999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          175.67999999999998,
+          435.74399999999997,
+          188.64
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          196.70399999999998,
+          476.64,
+          209.664
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          217.72799999999998,
+          559.2959999999999,
+          230.112
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          232.128,
+          213.98399999999998,
+          244.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          250.55999999999997,
+          550.656,
+          264.096
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          266.11199999999997,
+          530.784,
+          279.072
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          280.79999999999995,
+          439.48799999999994,
+          293.76
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "92f6e976653da7e858d70155fb7bac1bba87e2c5cbe55ffb2930921eadd0704e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-22/mathpix-cache/artifacts/ap-calc-ab-2005-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2005-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

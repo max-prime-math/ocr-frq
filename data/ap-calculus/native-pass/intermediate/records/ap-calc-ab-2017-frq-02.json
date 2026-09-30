@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2017-frq-02",
+  "course": "AB",
+  "year": 2017,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2017.pdf",
+      "sha256": "7a0a1daea7af07680d9f3daf5f3d33433bae03c38b53370e70a65b3a8c0d8b52",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2017.pdf",
+      "sha256": "d89cb59f5553fde5252ab24f6ee03b6feb128c13a5c947f0ef5fe34ed8178bac"
+    }
+  },
+  "rawPrompt": "When a certain grocery store opens, it has 50 pounds of bananas on a display table. Customers remove\nbananas from the display table at a rate modeled by\n\\[\nf(t)=10+(0.8 t) \\sin \\left(\\frac{t^{3}}{100}\\right) \\text { for } 0<t \\leq 12,\n\\]\nwhere \\(f(t)\\) is measured in pounds per hour and \\(t\\) is the number of hours after the store opened. After the\nstore has been open for three hours, store employees add bananas to the display table at a rate modeled by\n\\[\ng(t)=3+2.4 \\ln \\left(t^{2}+2 t\\right) \\text { for } 3<t \\leq 12,\n\\]\nwhere \\(g(t)\\) is measured in pounds per hour and \\(t\\) is the number of hours after the store opened.\n(a) How many pounds of bananas are removed from the display table during the first 2 hours the store is\nopen?\n(b) Find \\(f^{\\prime}(7)\\). Using correct units, explain the meaning of \\(f^{\\prime}(7)\\) in the context of the problem.\n(c) Is the number of pounds of bananas on the display table increasing or decreasing at time \\(t=5\\) ? Give a\nreason for your answer.\n(d) How many pounds of bananas are on the display table at time \\(t=8\\) ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{2} f(t) d t=20.051175\\)\n20.051 pounds of bananas are removed from the display table during the first 2 hours the store is open.\n\\item[(b)] \\(f^{\\prime}(7)=-8.120\\) (or -8.119)\nAfter the store has been open 7 hours, the rate at which bananas are being removed from the display table is decreasing by 8.120 (or 8.119) pounds per hour per hour.\n\\item[(c)] \\(g(5)-f(5)=-2.263103<0\\)\nBecause \\(g(5)-f(5)<0\\), the number of pounds of bananas on the display table is decreasing at time \\(t=5\\).\n\\item[(d)] \\(50+\\int_{3}^{8} g(t) d t-\\int_{0}^{8} f(t) d t=23.347396\\)\n23.347 pounds of bananas are on the display table at time \\(t=8\\).\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { value } \\\\ 1: \\text { meaning }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers } f(5) \\text { and } g(5) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrals } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          39,
+          91,
+          570,
+          445
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          44.928,
+          95.904,
+          516.096,
+          108.86399999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          108.86399999999999,
+          289.44,
+          121.82399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "math",
+        "rect": [
+          205.344,
+          134.784,
+          404.06399999999996,
+          171.93599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          184.32,
+          525.312,
+          198.14399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          200.736,
+          527.904,
+          213.696
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "math",
+        "rect": [
+          210.528,
+          226.07999999999998,
+          398.88,
+          250.272
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          61.343999999999994,
+          269.856,
+          480.38399999999996,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          59.903999999999996,
+          295.2,
+          523.2959999999999,
+          307.584
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          77.472,
+          308.15999999999997,
+          106.27199999999999,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          59.903999999999996,
+          333.50399999999996,
+          486.14399999999995,
+          346.464
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          59.903999999999996,
+          366.04799999999994,
+          535.68,
+          379.008
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          77.472,
+          380.448,
+          182.30399999999997,
+          393.40799999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "list_item",
+        "rect": [
+          59.327999999999996,
+          407.23199999999997,
+          384.47999999999996,
+          420.19199999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-31/mathpix-cache/artifacts/ap-calc-ab-2017-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2017-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

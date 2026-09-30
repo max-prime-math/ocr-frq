@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-frq-02",
+  "course": "AB",
+  "year": 2006,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006.pdf",
+      "sha256": "d9390a475937753d1d3e7f0260a74dbd87a856ec0fa860d837d263be92540692",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006.pdf",
+      "sha256": "892e0f0116cac58c7cda13cadc69f83b5e123b9781f2455bac411a98a5bb182e"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-frq-02-diagram-01.png}\nAt an intersection in Thomasville, Oregon, cars turn left at the rate \\(L(t)=60 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{3}\\right)\\) cars per hour over the\ntime interval \\(0 \\leq t \\leq 18\\) hours. The graph of \\(y=L(t)\\) is shown above.\n(a) To the nearest whole number, find the total number of cars turning left at the intersection over the time\ninterval \\(0 \\leq t \\leq 18\\) hours.\n(b) Traffic engineers will consider turn restrictions when \\(L(t) \\geq 150\\) cars per hour. Find all values of \\(t\\) for\nwhich \\(L(t) \\geq 150\\) and compute the average value of \\(L\\) over this time interval. Indicate units of measure.\n(c) Traffic engineers will install a signal if there is any two-hour time interval during which the product of the\ntotal number of cars turning left and the total number of oncoming cars traveling straight through the\nintersection is greater than 200,000. In every two-hour time interval, 500 oncoming cars travel straight\nthrough the intersection. Does this intersection require a traffic signal? Explain the reasoning that leads to\nyour conclusion.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        171.5279998779297,
+        68.13600158691406,
+        440.47198486328125,
+        254.13600158691406
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[] At an intersection in Thomasville, Oregon, cars turn left at the rate \\(L(t)=60 \\sqrt{t} \\sin ^{2}\\left(\\frac{t}{3}\\right)\\) cars per hour over the time interval \\(0 \\leq t \\leq 18\\) hours. The graph of \\(y=L(t)\\) is shown above.\n\\item[(a)] To the nearest whole number, find the total number of cars turning left at the intersection over the time interval \\(0 \\leq t \\leq 18\\) hours.\n(b) Traffic engineers will consider turn restrictions when \\(L(t) \\geq 150\\) cars per hour. Find all values of \\(t\\) for which \\(L(t) \\geq 150\\) and compute the average value of \\(L\\) over this time interval. Indicate units of measure.\n![](https://cdn.mathpix.com/cropped/89338e55-3041-464d-9421-b713df9c7f60-1.jpg?height=623&width=915&top_left_y=361&top_left_x=1031)\n\\item[(c)] Traffic engineers will install a signal if there is any two-hour time interval during which the product of the total number of cars turning left and the total number of oncoming cars traveling straight through the intersection is greater than 200,000. In every two-hour time interval, 500 oncoming cars travel straight through the intersection. Does this intersection require a traffic signal? Explain the reasoning that leads to your conclusion.\n\\item[(a)] \\(\\int_{0}^{18} L(t) d t \\approx 1658\\) cars\n\\item[(b)] \\(L(t)=150\\) when \\(t=12.42831,16.12166\\)\nLet \\(R=12.42831\\) and \\(S=16.12166\\)\n\\(L(t) \\geq 150\\) for \\(t\\) in the interval \\([R, S]\\)\n\\(\\frac{1}{S-R} \\int_{R}^{S} L(t) d t=199.426\\) cars per hour\n\\item[(c)] For the product to exceed 200,000, the number of cars turning left in a two-hour interval must be greater than 400.\n\\[\n\\int_{13}^{15} L(t) d t=431.931>400\n\\]\nOR\nThe number of cars turning left will be greater than 400 on a two-hour interval if \\(L(t) \\geq 200\\) on that interval.\n\\(L(t) \\geq 200\\) on any two-hour subinterval of\n[13.25304, 15.32386].\n\\end{itemize}\nYes, a traffic signal is required.\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { setup } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: t \\text {-interval when } L(t) \\geq 150 \\\\ 1: \\text { average value integral } \\\\ 1: \\text { answer with units }\\end{array}\\right.\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}1: \\text { considers } 400 \\text { cars } \\\\ 1: \\text { valid interval }[h, h+2] \\\\ 1: \\text { value of } \\int_{h}^{h+2} L(t) d t \\\\ 1: \\text { answer and explanation }\\end{array}\\right.\\)\n\\item[] OR\n\\(4:\\left\\{\\begin{array}{l}1: \\text { considers } 200 \\text { cars per hour } \\\\ 1: \\text { solves } L(t) \\geq 200 \\\\ 1: \\text { discusses } 2 \\text { hour interval } \\\\ 1: \\text { answer and explanation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          67,
+          572,
+          469
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          174.528,
+          71.136,
+          437.472,
+          251.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          263.52,
+          554.4,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          292.032,
+          382.176,
+          305.568
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          313.056,
+          537.6959999999999,
+          325.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          325.44,
+          201.02399999999997,
+          337.248
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.088,
+          345.31199999999995,
+          540.8639999999999,
+          358.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          361.44,
+          546.9119999999999,
+          374.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.088,
+          382.464,
+          553.2479999999999,
+          395.424
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          394.84799999999996,
+          529.0559999999999,
+          407.23199999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          407.23199999999997,
+          537.12,
+          419.616
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          419.616,
+          550.0799999999999,
+          432.57599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          431.99999999999994,
+          157.82399999999998,
+          444.38399999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

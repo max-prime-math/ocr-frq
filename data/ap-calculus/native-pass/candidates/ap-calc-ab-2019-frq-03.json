@@ -1,0 +1,188 @@
+{
+  "id": "ap-calc-ab-2019-frq-03",
+  "course": "AB",
+  "year": 2019,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2019.pdf",
+      "sha256": "37293504d7e138c4de0e8663a59a53e27e0e86dc2e2aa467d2b4b0790d20e9f2",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2019.pdf",
+      "sha256": "99fcd2cc7c9debeaa1dba294cea2a4ade958438219372891f0d290475a3c549d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2019-frq-03-diagram-01.png\", width: 65%)\n\nThe continuous function $f$ is defined on the closed interval $- 6 <= x <= 5$. The figure above shows a portion of the graph of $f$, consisting of two line segments and a quarter of a circle centered at the point (5, 3). It is known that the point $(3 \\,3 - sqrt(5))$ is on the graph of $f$.\n\n(a) If $integral_(- 6)^(5) f(x) d x = 7$, find the value of $integral_(- 6)^(- 2) f(x) d x$. Show the work that leads to your answer.\n\n(b) Evaluate $integral_(3)^(5)lr((2 f'(x)+ 4)) d x$.\n\n(c) The function $g$ is given by $g(x)= integral_(- 2)^(x) f(t) d t$. Find the absolute maximum value of $g$ on the interval $- 2 <= x <= 5$. Justify your answer.\n\n(d) Find $lim_(x -> 1) frac(10^(x)- 3 f'(x),f(x)- arctan x)$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2019-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2019-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        204.07200622558594,
+        203.49600219726562,
+        404.760009765625,
+        336.5039978027344
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          35,
+          72,
+          570,
+          653
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          207.07199999999997,
+          206.49599999999998,
+          401.76,
+          333.50399999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          39.168,
+          381.888,
+          535.68,
+          394.84799999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          54.72,
+          397.44,
+          510.04799999999994,
+          411.84
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          54.72,
+          412.99199999999996,
+          295.2,
+          428.544
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          54.72,
+          441.792,
+          475.77599999999995,
+          467.712
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          480.96,
+          201.31199999999998,
+          505.72799999999995
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          55.29599999999999,
+          519.264,
+          518.688,
+          542.016
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          72.86399999999999,
+          548.64,
+          221.47199999999998,
+          561.5999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "list_item",
+        "rect": [
+          55.29599999999999,
+          582.6239999999999,
+          194.112,
+          614.016
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f5097af732c6e85f50f840367d2d30f5e0cc14a4dd9afa7c35b0b82a1b1fdcfc",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2019-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2019-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

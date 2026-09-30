@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-form-b-frq-04",
+  "course": "BC",
+  "year": 2008,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008-FORM-B.pdf",
+      "sha256": "a3f39100ad858b1e39f4ef65a5adbba5a1c4bb9b1b12fcc1af8fc1feb51865e5",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008-FORM-B.pdf",
+      "sha256": "1b7f39b2981738aadc9e2599c44ae1c8495d7cdb1c9a6584e35ba197e41fbd10"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function given by $f(x)=k x^{2}-x^{3}$, where $k$ is a positive constant. Let $R$ be the region in the first quadrant bounded by the graph of $f$ and the $x$-axis.\\\\\n(a) Find all values of the constant $k$ for which the area of $R$ equals 2 .\\\\\n(b) For $k>0$, write, but do not evaluate, an integral expression in terms of $k$ for the volume of the solid generated when $R$ is rotated about the $x$-axis.\\\\\n(c) For $k>0$, write, but do not evaluate, an expression in terms of $k$, involving one or more integrals, that gives the perimeter of $R$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 4}\n\nLet \\(f\\) be the function given by \\(f(x)=k x^{2}-x^{3}\\), where \\(k\\) is a positive constant. Let \\(R\\) be the region in the first quadrant bounded by the graph of \\(f\\) and the \\(x\\)-axis.\n\\begin{itemize}\n\\item[(a)] Find all values of the constant \\(k\\) for which the area of \\(R\\) equals 2.\n\\item[(b)] For \\(k>0\\), write, but do not evaluate, an integral expression in terms of \\(k\\) for the volume of the solid generated when \\(R\\) is rotated about the \\(x\\)-axis.\n\\item[(c)] For \\(k>0\\), write, but do not evaluate, an expression in terms of \\(k\\), involving one or more integrals, that gives the perimeter of \\(R\\).\n\\item[(a)] For \\(x \\geq 0, f(x)=x^{2}(k-x) \\geq 0\\) if \\(0 \\leq x \\leq k\\)\n\\[\n\\begin{aligned}\n& \\int_{0}^{k}\\left(k x^{2}-x^{3}\\right) d x=\\left.\\left(\\frac{k}{3} x^{3}-\\frac{1}{4} x^{4}\\right)\\right|_{x=0} ^{x=k}=\\frac{k^{4}}{12} \\\\\n& \\text { Area }=\\frac{k^{4}}{12}=2 ; k=\\sqrt[4]{24}\n\\end{aligned}\n\\]\n\\item[(b)] Volume \\(=\\pi \\int_{0}^{k}\\left(k x^{2}-x^{3}\\right)^{2} d x\\)\n\\item[(c)] Perimeter \\(=k+\\int_{0}^{k} \\sqrt{1+\\left(2 k x-3 x^{2}\\right)^{2}} d x\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { antiderivative } \\\\ 1: \\text { value of integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits and constant }\\end{array}\\right.\\)\n\\item[3] : \\(\\left\\{\\begin{array}{l}1: \\int_{0}^{k} \\sqrt{1+\\left(f^{\\prime}(x)\\right)^{2}} d x \\\\ 1: \\text { uses } f^{\\prime}(x)=2 k x-3 x^{2} \\text { in integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          426
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2004-frq-03",
+  "course": "AB",
+  "year": 2004,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2004.pdf",
+      "sha256": "896e0242cc40162f9dd920a43e88d4fbebf83e96642991116eacf69cff57ddaa",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2004.pdf",
+      "sha256": "b67864c33df5ca8a97ee7f66db3aba9df697c56129fee533dbc91cb57b5d589a"
+    }
+  },
+  "rawPrompt": "A particle moves along the \\(y\\)-axis so that its velocity \\(v\\) at time \\(t \\geq 0\\) is given by \\(v(t)=1-\\tan ^{-1}\\left(e^{t}\\right)\\). At time\n\\(t=0\\), the particle is at \\(y=-1\\). (Note: \\(\\tan ^{-1} x=\\arctan x\\) )\n(a) Find the acceleration of the particle at time \\(t=2\\).\n(b) Is the speed of the particle increasing or decreasing at time \\(t=2\\) ? Give a reason for your answer.\n(c) Find the time \\(t \\geq 0\\) at which the particle reaches its highest point. Justify your answer.\n(d) Find the position of the particle at time \\(t=2\\). Is the particle moving toward the origin or away from the\norigin at time \\(t=2\\) ? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 3}\n\nA particle moves along the \\(y\\)-axis so that its velocity \\(v\\) at time \\(t \\geq 0\\) is given by \\(v(t)=1-\\tan ^{-1}\\left(e^{t}\\right)\\). At time \\(t=0\\), the particle is at \\(y=-1\\). (Note: \\(\\tan ^{-1} x=\\arctan x\\) )\n\\begin{itemize}\n\\item[(a)] Find the acceleration of the particle at time \\(t=2\\).\n\\item[(b)] Is the speed of the particle increasing or decreasing at time \\(t=2\\) ? Give a reason for your answer.\n\\item[(c)] Find the time \\(t \\geq 0\\) at which the particle reaches its highest point. Justify your answer.\n\\item[(d)] Find the position of the particle at time \\(t=2\\). Is the particle moving toward the origin or away from the origin at time \\(t=2\\) ? Justify your answer.\n\\item[(a)] \\(a(2)=v^{\\prime}(2)=-0.132\\) or -0.133\n\\item[(b)] \\(v(2)=-0.436\\)\nSpeed is increasing since \\(a(2)<0\\) and \\(v(2)<0\\).\n\\item[(c)] \\(\\quad v(t)=0\\) when \\(\\tan ^{-1}\\left(e^{t}\\right)=1\\)\n\\(t=\\ln (\\tan (1))=0.443\\) is the only critical value for \\(y\\).\n\\(v(t)>0\\) for \\(0<t<\\ln (\\tan (1))\\)\n\\(v(t)<0\\) for \\(t>\\ln (\\tan (1))\\)\n\\(y(t)\\) has an absolute maximum at \\(t=0.443\\).\n\\item[(d)] \\(y(2)=-1+\\int_{0}^{2} v(t) d t=-1.360\\) or -1.361\nThe particle is moving away from the origin since \\(v(2)<0\\) and \\(y(2)<0\\).\n\\end{itemize}\n\n1 : answer\n\n1 : answer with reason\n\n3 : \\(\\left\\{\\begin{array}{l}1 \\text { : sets } v(t)=0 \\\\ 1: \\text { identifies } t=0.443 \\text { as a candidate } \\\\ 1: \\text { justifies absolute maximum }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: \\int_{0}^{2} v(t) d t \\\\ 1: \\text { handles initial condition } \\\\ 1: \\text { value of } y(2) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          71,
+          572,
+          320
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          75.45599999999999,
+          556.992,
+          93.88799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          97.63199999999999,
+          328.032,
+          113.75999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          121.24799999999999,
+          304.416,
+          134.784
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          140.54399999999998,
+          518.688,
+          153.504
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          161.56799999999998,
+          469.152,
+          174.528
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          180.576,
+          544.608,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          193.53599999999997,
+          273.024,
+          206.49599999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-21/mathpix-cache/artifacts/ap-calc-ab-2004-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2004-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2003-frq-02",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves along the $x$-axis so that its velocity at time $t$ is given by $ v(t)= - (t + 1) sin lr((frac(t^(2),2))) . $ At time $t = 0$, the particle is at position $x = 1$.\n\n(a) Find the acceleration of the particle at time $t = 2$. Is the speed of the particle increasing at $t = 2$ ? Why or why not?\n\n(b) Find all times $t$ in the open interval $0 < t < 3$ when the particle changes direction. Justify your answer.\n\n(c) Find the total distance traveled by the particle from time $t = 0$ until time $t = 3$.\n\n(d) During the time interval $0 <= t <= 3$, what is the greatest distance between the particle and the origin? Show the work that leads to your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          70,
+          572,
+          269
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          74.30399999999999,
+          391.104,
+          87.264
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "math",
+        "rect": [
+          249.98399999999998,
+          91.58399999999999,
+          362.01599999999996,
+          123.83999999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          129.88799999999998,
+          273.888,
+          142.84799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.088,
+          149.184,
+          560.736,
+          162.14399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          162.14399999999998,
+          126.14399999999999,
+          173.952
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          179.42399999999998,
+          544.608,
+          192.384
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          198.14399999999998,
+          437.472,
+          211.10399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          216.576,
+          559.584,
+          229.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          82.368,
+          230.112,
+          239.61599999999999,
+          243.07199999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f3d54e2d8e09cc268af5c715f9e146ff492b7955d2bc0ee61152b135b9f33264",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

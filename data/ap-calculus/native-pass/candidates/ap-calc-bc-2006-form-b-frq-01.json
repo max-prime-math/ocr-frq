@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-2006-form-b-frq-01",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg\", width: 65%)\n\nLet $f$ be the function given by $f(x)= frac(x^(3),4)- frac(x^(2),3)- frac(x,2)+ 3 cos x$. Let $R$ be the shaded region in the second quadrant bounded by the graph of $f$, and let $S$ be the shaded region bounded by the graph of $f$ and line $ell$, the line tangent to the graph of $f$ at $x = 0$, as shown above.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is rotated about the horizontal line $y = - 2$.\n\n(c) Write, but do not evaluate, an integral expression that can be used to find the area of $S$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006-form-b_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          66,
+          572,
+          519
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0dee0808a09f7859f3df5d55636a65cc7fcc6f15a64575f6f546a141c1e7aa1d",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ]
+}

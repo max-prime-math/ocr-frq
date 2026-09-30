@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2018-frq-01",
+  "course": "AB",
+  "year": 2018,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2018.pdf",
+      "sha256": "dd612b2345fade1171a0bbf96b8f65a9c3d01ec3ec1cf14471b3acc3a44a8e6e",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2018.pdf",
+      "sha256": "e76c3a45d37d80ad87aad5003076ed667c121dcbadfc53e37a6c91e98da366a8"
+    }
+  },
+  "rawPrompt": "People enter a line for an escalator at a rate modeled by the function \\(r\\) given by\n\\[\nr(t)= \\begin{cases}44\\left(\\frac{t}{100}\\right)^{3}\\left(1-\\frac{t}{300}\\right)^{7} & \\text { for } 0 \\leq t \\leq 300 \\\\ 0 & \\text { for } t>300\\end{cases}\n\\]\nwhere \\(r(t)\\) is measured in people per second and \\(t\\) is measured in seconds. As people get on the escalator,\nthey exit the line at a constant rate of 0.7 person per second. There are 20 people in line at time \\(t=0\\).\n(a) How many people enter the line for the escalator during the time interval \\(0 \\leq t \\leq 300\\) ?\n(b) During the time interval \\(0 \\leq t \\leq 300\\), there are always people in line for the escalator. How many people\nare in line at time \\(t=300\\) ?\n(c) For \\(t>300\\), what is the first time \\(t\\) that there are no people in line for the escalator?\n(d) For \\(0 \\leq t \\leq 300\\), at what time \\(t\\) is the number of people in line a minimum? To the nearest whole\nnumber, find the number of people in line at this time. Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2018 SCORING GUIDELINES}\n\nQuestion 1\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{300} r(t) d t=270\\)\nAccording to the model, 270 people enter the line for the escalator during the time interval \\(0 \\leq t \\leq 300\\).\n\\item[(b)] \\(20+\\int_{0}^{300}(r(t)-0.7) d t=20+\\int_{0}^{300} r(t) d t-0.7 \\cdot 300=80\\)\nAccording to the model, 80 people are in line at time \\(t=300\\).\n\\item[(c)] Based on part (b), the number of people in line at time \\(t=300\\) is 80 .\nThe first time \\(t\\) that there are no people in line is\n\\[\n300+\\frac{80}{0.7}=414.286 \\text { (or 414.285) seconds. }\n\\]\n\\item[(d)] The total number of people in line at time \\(t, 0 \\leq t \\leq 300\\), is modeled by\n\\[\n\\begin{aligned}\n& 20+\\int_{0}^{t} r(x) d x-0.7 t \\\\\n& r(t)-0.7=0 \\Rightarrow t_{1}=33.013298, t_{2}=166.574719\n\\end{aligned}\n\\]\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & People in line for escalator \\\\\n\\hline 0 & 20 \\\\\n\\hline \\(t_{1}\\) & 3.803 \\\\\n\\hline \\(t_{2}\\) & 158.070 \\\\\n\\hline 300 & 80 \\\\\n\\hline\n\\end{tabular}\nThe number of people in line is a minimum at time \\(t=33.013\\) seconds, when there are 4 people in line.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { considers rate out } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : answer\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\text { considers } r(t)-0.7=0 \\\\ 1: \\text { identifies } t=33.013 \\\\ 1: \\text { answers } \\\\ 1: \\text { justification }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          51,
+          85,
+          568,
+          528
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          55.583999999999996,
+          236.44799999999998,
+          421.344,
+          249.408
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "math",
+        "rect": [
+          184.896,
+          262.368,
+          410.11199999999997,
+          311.904
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          70.55999999999999,
+          325.44,
+          538.2719999999999,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          70.55999999999999,
+          341.568,
+          521.568,
+          354.52799999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          70.55999999999999,
+          367.488,
+          475.2,
+          380.448
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          71.136,
+          393.40799999999996,
+          551.808,
+          406.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          88.99199999999999,
+          408.38399999999996,
+          213.408,
+          420.19199999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          70.55999999999999,
+          434.304,
+          460.51199999999994,
+          447.84
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          71.136,
+          461.664,
+          518.4,
+          474.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          88.99199999999999,
+          475.2,
+          419.904,
+          488.736
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-32/mathpix-cache/artifacts/ap-calc-ab-2018-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2018-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

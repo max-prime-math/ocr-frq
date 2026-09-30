@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-form-b-frq-03",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2011-form-b-frq-03-diagram-01.jpg}\n\\end{center}\nThe functions $f$ and $g$ are given by $f(x)=\\sqrt{x}$ and $g(x)=6-x$. Let $R$ be the region bounded by the $x$-axis and the graphs of $f$ and $g$, as shown in the figure above.\\\\\n(a) Find the area of $R$.\\\\\n(b) The region $R$ is the base of a solid. For each $y$, where $0 \\leq y \\leq 2$, the cross section of the solid taken perpendicular to the $y$-axis is a rectangle whose base lies in $R$ and whose height is $2 y$. Write, but do not evaluate, an integral expression that gives the volume of the solid.\\\\\n(c) There is a point $P$ on the graph of $f$ at which the line tangent to the graph of $f$ is perpendicular to the graph of $g$. Find the coordinates of point $P$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-form-b-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-form-b-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2011-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 3}\n\nThe functions \\(f\\) and \\(g\\) are given by \\(f(x)=\\sqrt{x}\\) and \\(g(x)=6-x\\). Let \\(R\\) be the region bounded by the \\(x\\)-axis and the graphs of \\(f\\) and \\(g\\), as shown in the figure above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] The region \\(R\\) is the base of a solid. For each \\(y\\), where \\(0 \\leq y \\leq 2\\), the cross section of the solid taken perpendicular to the \\(y\\)-axis is a rectangle whose base lies in \\(R\\) and whose height is \\(2 y\\). Write, but do not evaluate, an integral expression that gives the volume of the solid.\n\\item[(c)] There is a point \\(P\\) on the graph of \\(f\\) at which the line tangent to the graph of \\(f\\) is perpendicular to the graph of \\(g\\). Find the coordinates of point \\(P\\).\n\\item[(a)] Area \\(=\\int_{0}^{4} \\sqrt{x} d x+\\frac{1}{2} \\cdot 2 \\cdot 2=\\left.\\frac{2}{3} x^{3 / 2}\\right|_{x=0} ^{x=4}+2=\\frac{22}{3}\\)\n\\item[(b)] \\(y=\\sqrt{x} \\Rightarrow x=y^{2}\\)\n\\[\n\\begin{aligned}\n& y=6-x \\Rightarrow x=6-y \\\\\n& \\text { Width }=(6-y)-y^{2} \\\\\n& \\text { Volume }=\\int_{0}^{2} 2 y\\left(6-y-y^{2}\\right) d y\n\\end{aligned}\n\\]\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: f^{\\prime}(x) \\\\ 1: \\text { equation } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[(c)] \\(g^{\\prime}(x)=-1\\)\nThus a line perpendicular to the graph of \\(g\\) has slope 1.\n\\[\n\\begin{aligned}\n& f^{\\prime}(x)=\\frac{1}{2 \\sqrt{x}} \\\\\n& \\frac{1}{2 \\sqrt{x}}=1 \\Rightarrow x=\\frac{1}{4}\n\\end{aligned}\n\\]\nThe point \\(P\\) has coordinates \\(\\left(\\frac{1}{4}, \\frac{1}{2}\\right)\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          65,
+          572,
+          460
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    },
+    {
+      "type": "visually-verified-legacy-figure-boundary-correction",
+      "removedFigure": "ap-calc-bc-2011-form-b-frq-03-diagram-02.jpg",
+      "belongsToQuestion": "ap-calc-bc-2011-form-b-frq-04"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

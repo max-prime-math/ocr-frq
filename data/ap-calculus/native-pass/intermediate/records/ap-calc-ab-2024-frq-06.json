@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2024-frq-06",
+  "course": "AB",
+  "year": 2024,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2024.pdf",
+      "sha256": "070c3a4cd277d6aa74c5cb1b0dd5ae631458d71ac7cf5f7dfe2460814aaf08bd",
+      "pages": [
+        10
+      ]
+    },
+    "promptPages": [
+      10
+    ]
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2024-frq-06-diagram-01.png}\nThe functions \\(f\\) and \\(g\\) are defined by \\(f(x)=x^{2}+2\\) and \\(g(x)=x^{2}-2 x\\), as shown in the graph.\n(a) Let \\(R\\) be the region bounded by the graphs of \\(f\\) and \\(g\\), from \\(x=0\\) to \\(x=2\\), as shown in the graph. Write,\nbut do not evaluate, an integral expression that gives the area of region \\(R\\).\n(b) Let \\(S\\) be the region bounded by the graph of \\(g\\) and the \\(x\\)-axis, from \\(x=2\\) to \\(x=5\\), as shown in the graph.\nRegion \\(S\\) is the base of a solid. For this solid, at each \\(x\\) the cross section perpendicular to the \\(x\\)-axis is a\nrectangle with height equal to half its base in region \\(S\\). Find the volume of the solid. Show the work that\nleads to your answer.\n(c) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when\nregion \\(S\\), as described in part (b), is rotated about the horizontal line \\(y=20\\).\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2024-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2024-frq-06-diagram-01.png",
+      "sourcePage": 10,
+      "sourceRect": [
+        197.73599243164062,
+        70.72799682617188,
+        410.8080139160156,
+        247.51199340820312
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 10,
+        "rect": [
+          53,
+          69,
+          566,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 10,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          200.736,
+          73.728,
+          407.808,
+          244.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          56.736,
+          262.08,
+          499.67999999999995,
+          279.072
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          289.44,
+          560.16,
+          301.82399999999996
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          87.264,
+          303.55199999999996,
+          411.84,
+          316.512
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          71.136,
+          327.16799999999995,
+          561.024,
+          340.128
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          87.264,
+          341.568,
+          548.64,
+          354.52799999999996
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          87.264,
+          355.67999999999995,
+          547.1999999999999,
+          368.64
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          87.264,
+          370.08,
+          181.72799999999998,
+          383.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          71.136,
+          393.69599999999997,
+          525.312,
+          406.65599999999995
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          87.264,
+          407.808,
+          424.79999999999995,
+          420.768
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          83.52,
+          481.53599999999994,
+          538.2719999999999,
+          494.496
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          495.07199999999995,
+          489.888,
+          507.45599999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-ab-2024-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2024-frq-06",
+      "sourcePage": 10,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

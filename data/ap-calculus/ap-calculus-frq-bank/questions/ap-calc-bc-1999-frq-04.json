@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "The function $f$ has derivatives of all orders. Suppose $f(2)=-3$, $f'(2)=5$, $f''(2)=3$, and $f'''(2)=-8$.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x=2$, then use it to approximate $f(1.5)$.\n\n(b) If $abs(f^(4)(x)) <= 3$ for $1.5 <= x <= 2$, use the Lagrange error bound to explain why $f(1.5) != -5$.\n\n(c) Write the fourth-degree Taylor polynomial $P$ for $g(x)=f(x^2+2)$ about $x=0$. Use $P$ to explain why $g$ has a relative minimum at $x=0$.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-bc-1999-frq-04",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-12",
+    "solution": "(a)\n$T_3(x)=-3+5(x-2)+3/2(x-2)^2-4/3(x-2)^3$.\nThus $f(1.5) approx T_3(1.5)=-4.958̅$.\n\n(b) The error is at most\n$3/(4!) abs(1.5-2)^4 = 0.0078125$.\nTherefore $f(1.5)>-4.958̅-0.0078125>-5$, so $f(1.5) != -5$.\n\n(c) Substituting $x^2+2$ into the needed terms gives\n$P(x)=-3+5x^2+3/2x^4$.\nThe coefficient of $x$ is $0$, so $g'(0)=0$; the coefficient of $x^2$ is $5=g''(0)/2$, so $g''(0)=10>0$. Hence $g$ has a relative minimum at $x=0$.",
+    "tags": [
+      "1999",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

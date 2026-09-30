@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-1998-frq-03",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be a function that has derivatives of all orders for all real numbers. Assume $f(0)= 5$, $f'(0)= - 3 \\, f''(0)= 1$, and $f'''(0)= 4$.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x = 0$ and use it to approximate $f(0.2)$.\n\n(b) Write the fourth-degree Taylor polynomial for $g$, where $g(x)= f lr((x^(2)))$, about $x = 0$.\n\n(c) Write the third-degree Taylor polynomial for $h$, where $h(x)= integral_(0)^(x) f(t) d t$, about $x = 0$.\n\n(d) Let $h$ be defined as in part (c). Given that $f(1)= 3$, either find the exact value of $h(1)$ or explain why it cannot be determined.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "887f3e41e9152d61a4739abfe0aea2bf0a4b4fe1b67e701d47b01f53b4cba50c",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ]
+}

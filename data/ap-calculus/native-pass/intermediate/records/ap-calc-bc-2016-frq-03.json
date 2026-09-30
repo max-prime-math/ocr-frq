@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2016-frq-03",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2016-frq-03-diagram-01.jpg}\n\\end{center}\n\nGraph of $f$\\\\\nThe figure above shows the graph of the piecewise-linear function $f$. For $-4 \\leq x \\leq 12$, the function $g$ is defined by $g(x)=\\int_{2}^{x} f(t) d t$.\\\\\n(a) Does $g$ have a relative minimum, a relative maximum, or neither at $x=10$ ? Justify your answer.\\\\\n(b) Does the graph of $g$ have a point of inflection at $x=4$ ? Justify your answer.\\\\\n(c) Find the absolute minimum value and the absolute maximum value of $g$ on the interval $-4 \\leq x \\leq 12$. Justify your answers.\\\\\n(d) For $-4 \\leq x \\leq 12$, find all intervals for which $g(x) \\leq 0$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2016-frq-03-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2016-frq-03-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2016_fig2.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC \\\\ 2016 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nThe figure above shows the graph of the piecewise-linear function \\(f\\). For \\(-4 \\leq x \\leq 12\\), the function \\(g\\) is defined by\n\\[\ng(x)=\\int_{2}^{x} f(t) d t\n\\]\n\\begin{itemize}\n\\item[(a)] Does \\(g\\) have a relative minimum, a relative maximum, or neither at \\(x=10\\) ? Justify your answer.\n\\item[(b)] Does the graph of \\(g\\) have a point of inflection at \\(x=4\\) ? Justify your answer.\n\\item[(c)] Find the absolute minimum value and the absolute maximum value of \\(g\\) on the interval \\(-4 \\leq x \\leq 12\\). Justify your answers.\n\\item[(d)] For \\(-4 \\leq x \\leq 12\\), find all intervals for which \\(g(x) \\leq 0\\).\n\\item[(a)] The function \\(g\\) has neither a relative minimum nor a relative maximum at \\(x=10\\) since \\(g^{\\prime}(x)=f(x)\\) and \\(f(x) \\leq 0\\) for \\(8 \\leq x \\leq 12\\).\n\\item[(b)] The graph of \\(g\\) has a point of inflection at \\(x=4\\) since \\(g^{\\prime}(x)=f(x)\\) is increasing for \\(2 \\leq x \\leq 4\\) and decreasing for \\(4 \\leq x \\leq 8\\).\n\\item[(c)] \\(g^{\\prime}(x)=f(x)\\) changes sign only at \\(x=-2\\) and \\(x=6\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(x\\) & \\(g(x)\\) \\\\\n\\hline -4 & -4 \\\\\n\\hline -2 & -8 \\\\\n\\hline 6 & 8 \\\\\n\\hline 12 & -4 \\\\\n\\hline\n\\end{tabular}\nOn the interval \\(-4 \\leq x \\leq 12\\), the absolute minimum value is \\(g(-2)=-8\\) and the absolute maximum value is \\(g(6)=8\\).\n\\item[(d)] \\(g(x) \\leq 0\\) for \\(-4 \\leq x \\leq 2\\) and \\(10 \\leq x \\leq 12\\).\n\\item[] \\(1: g^{\\prime}(x)=f(x)\\) in (a), (b), (c), or (d)\n\n1 : answer with justification\n\n1 : answer with justification\n\n4: \\(\\left\\{\\begin{aligned} & 1: \\text { considers } x=-2 \\text { and } x=6 \\\\ & \\text { as candidates } \\\\ & 1: \\text { considers } x=-4 \\text { and } x=12 \\\\ & 2: \\text { answers with justification }\\end{aligned}\\right.\\)\n\n2 : intervals\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          46,
+          35.0,
+          569,
+          509
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

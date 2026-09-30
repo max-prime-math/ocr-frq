@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-01",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "On a certain workday, the rate, in tons per hour, at which unprocessed gravel arrives at a gravel processing plant is modeled by $G(t)=90+45 \\cos \\left(\\frac{t^{2}}{18}\\right)$, where $t$ is measured in hours and $0 \\leq t \\leq 8$. At the beginning of the workday $(t=0)$, the plant has 500 tons of unprocessed gravel. During the hours of operation, $0 \\leq t \\leq 8$, the plant processes gravel at a constant rate of 100 tons per hour.\\\\\n(a) Find $G^{\\prime}(5)$. Using correct units, interpret your answer in the context of the problem.\\\\\n(b) Find the total amount of unprocessed gravel that arrives at the plant during the hours of operation on this workday.\\\\\n(c) Is the amount of unprocessed gravel at the plant increasing or decreasing at time $t=5$ hours? Show the work that leads to your answer.\\\\\n(d) What is the maximum amount of unprocessed gravel at the plant during the hours of operation on this workday? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 2}\n\nThe graphs of the polar curves \\(r=3\\) and \\(r=4-2 \\sin \\theta\\) are shown in the figure above. The curves intersect when \\(\\theta=\\frac{\\pi}{6}\\) and \\(\\theta=\\frac{5 \\pi}{6}\\).\n\\begin{itemize}\n\\item[(a)] Let \\(S\\) be the shaded region that is inside the graph of \\(r=3\\) and also inside the graph of \\(r=4-2 \\sin \\theta\\). Find the area of \\(S\\).\n\\item[(b)] A particle moves along the polar curve \\(r=4-2 \\sin \\theta\\) so that at time \\(t\\) seconds, \\(\\theta=t^{2}\\). Find the time \\(t\\) in the interval \\(1 \\leq t \\leq 2\\) for which the \\(x\\)-coordinate of the particle's position is -1.\n\\item[(c)] For the particle described in part (b), find the position vector in terms of \\(t\\). Find the velocity vector at time \\(t=1.5\\).\n\\item[(a)] Area \\(=6 \\pi+\\frac{1}{2} \\int_{\\pi / 6}^{5 \\pi / 6}(4-2 \\sin \\theta)^{2} d \\theta=24.709\\) (or 24.708)\n\\item[(b)]\n\\[\n\\begin{aligned}\n& x=r \\cos \\theta \\Rightarrow x(\\theta)=(4-2 \\sin \\theta) \\cos \\theta \\\\\n& x(t)=\\left(4-2 \\sin \\left(t^{2}\\right)\\right) \\cos \\left(t^{2}\\right) \\\\\n& x(t)=-1 \\text { when } t=1.428(\\text { or } 1.427)\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits and constant } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: x(\\theta) \\text { or } x(t) \\\\ 1: x(\\theta)=-1 \\text { or } x(t)=-1 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: \\text { position vector } \\\\ 1: \\text { velocity vector }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(c)]\n\\[\n\\begin{aligned}\n& y=r \\sin \\theta \\Rightarrow y(\\theta)=(4-2 \\sin \\theta) \\sin \\theta \\\\\n& y(t)=\\left(4-2 \\sin \\left(t^{2}\\right)\\right) \\sin \\left(t^{2}\\right)\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n\\text { Position vector } & =\\langle x(t), y(t)\\rangle \\\\\n& =\\left\\langle\\left(4-2 \\sin \\left(t^{2}\\right)\\right) \\cos \\left(t^{2}\\right),\\left(4-2 \\sin \\left(t^{2}\\right)\\right) \\sin \\left(t^{2}\\right)\\right\\rangle\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\nv(1.5) & =\\left\\langle x^{\\prime}(1.5), y^{\\prime}(1.5)\\right\\rangle \\\\\n& =\\langle-8.072,-1.673\\rangle(\\text { or }\\langle-8.072,-1.672\\rangle)\n\\end{aligned}\n\\]\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          568,
+          385
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

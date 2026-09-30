@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2003-form-b-frq-04",
+  "course": "BC",
+  "year": 2003,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003-FORM-B.pdf",
+      "sha256": "a713639f10f24728383e4c9c11b467168128b498a4c07d63f9d69bb258cd39b6",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003-FORM-B.pdf",
+      "sha256": "bd493081be43f5d7853d52cbbd70fe5484ac2c0d212c498663e5bdf240f8f130"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves in the $x y$-plane so that the position of the particle at any time $t$ is given by\n\n$ x(t)= 2 e^(3 t)+ e^(- 7 t) \" and \" y(t)= 3 e^(3 t)- e^(- 2 t) . $\n\n(a) Find the velocity vector for the particle in terms of $t$, and find the speed of the particle at time $t = 0$.\n\n(b) Find $frac(d y,d x)$ in terms of $t$, and find $lim_(t -> oo) frac(d y,d x)$.\n\n(c) Find each value $t$ at which the line tangent to the path of the particle is horizontal, or explain why none exists.\n\n(d) Find each value $t$ at which the line tangent to the path of the particle is vertical, or explain why none exists.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          55,
+          572,
+          316
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "b4d4006f8afcb95029bd4ab257241a495830514c7548df58751c1559a3d7a102",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003-FORM-B.zip"
+    }
+  ]
+}

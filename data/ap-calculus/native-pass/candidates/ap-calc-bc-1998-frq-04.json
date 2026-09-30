@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-1998-frq-04",
+  "course": "BC",
+  "year": 1998,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1998.pdf",
+      "sha256": "421af427c77a660ac9a4e48f28fab6741ec0fa086ce25d3017d09c2c809e8ac6",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1998.pdf",
+      "sha256": "bc862c5682debd9d141c2aae41bd9eec347c20ec06a7fe5a231dd93292c3615f"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation given by $frac(d y,d x)= frac(x y,2)$.\n\n(a) On the axes provided below, sketch a slope field for the given differential equation at the nine points indicated.\n\n#image(\"/imgs/ap-calc-bc-1998-frq-04-diagram-01.jpg\", width: 65%)\n\n(b) Let $y = f(x)$ be the particular solution to the given differential equation with the initial condition $f(0)= 3$. Use Euler's method starting at $x = 0$, with a step size of 0.1, to approximate $f(0.2)$. Show the work that leads to your answer.\n\n(c) Find the particular solution $y = f(x)$ to the given differential equation with the initial condition $f(0)= 3$. Use your solution to find $f(0.2)$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-1998-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-1998-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-1998_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          66,
+          71.33,
+          546,
+          707
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "51a5afb013d5dd71a61ea37da1c03f4290f42c8551363939a2447a7b647f549f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1998.zip"
+    }
+  ]
+}

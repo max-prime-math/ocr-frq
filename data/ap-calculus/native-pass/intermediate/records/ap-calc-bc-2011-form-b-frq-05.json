@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-form-b-frq-05",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(seconds) \\\\\n\\end{tabular} & 0 & 10 & 40 & 60 \\\\\n\\hline\n\\begin{tabular}{c}\n$B(t)$ \\\\\n(meters) \\\\\n\\end{tabular} & 100 & 136 & 9 & 49 \\\\\n\\hline\n\\begin{tabular}{c}\n$v(t)$ \\\\\n(meters per second) \\\\\n\\end{tabular} & 2.0 & 2.3 & 2.5 & 4.6 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nBen rides a unicycle back and forth along a straight east-west track. The twice-differentiable function $B$ models Ben's position on the track, measured in meters from the western end of the track, at time $t$, measured in seconds from the start of the ride. The table above gives values for $B(t)$ and Ben's velocity, $v(t)$, measured in meters per second, at selected times $t$.\\\\\n(a) Use the data in the table to approximate Ben's acceleration at time $t=5$ seconds. Indicate units of measure.\\\\\n(b) Using correct units, interpret the meaning of $\\int_{0}^{60}|v(t)| d t$ in the context of this problem. Approximate $\\int_{0}^{60}|v(t)| d t$ using a left Riemann sum with the subintervals indicated by the data in the table.\\\\\n(c) For $40 \\leq t \\leq 60$, must there be a time $t$ when Ben's velocity is 2 meters per second? Justify your answer.\\\\\n(d) A light is directly above the western end of the track. Ben rides so that at time $t$, the distance $L(t)$ between Ben and the light satisfies $(L(t))^{2}=12^{2}+(B(t))^{2}$. At what rate is the distance between Ben and the light changing at time $t=40$ ?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 5}\n\n\\begin{tabular}[t]{|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 10 & 40 & 60 \\\\\n\\hline \\(B(t)\\) (meters) & 100 & 136 & 9 & 49 \\\\\n\\hline \\(v(t)\\) (meters per second) & 2.0 & 2.3 & 2.5 & 4.6 \\\\\n\\hline\n\\end{tabular}\nBen rides a unicycle back and forth along a straight east-west track. The twice-differentiable function \\(B\\) models Ben's position on the track, measured in meters from the western end of the track, at time \\(t\\), measured in seconds from the start of the ride. The table above gives values for \\(B(t)\\) and Ben's velocity, \\(v(t)\\), measured in meters per second, at selected times \\(t\\).\n\\begin{itemize}\n\\item[(a)] Use the data in the table to approximate Ben's acceleration at time \\(t=5\\) seconds. Indicate units of measure.\n\\item[(b)] Using correct units, interpret the meaning of \\(\\int_{0}^{60}|v(t)| d t\\) in the context of this problem. Approximate \\(\\int_{0}^{60}|v(t)| d t\\) using a left Riemann sum with the subintervals indicated by the data in the table.\n\\item[(c)] For \\(40 \\leq t \\leq 60\\), must there be a time \\(t\\) when Ben's velocity is 2 meters per second? Justify your answer.\n\\item[(d)] A light is directly above the western end of the track. Ben rides so that at time \\(t\\), the distance \\(L(t)\\) between Ben and the light satisfies \\((L(t))^{2}=12^{2}+(B(t))^{2}\\). At what rate is the distance between Ben and the light changing at time \\(t=40\\) ?\n\\item[(a)] \\(a(5) \\approx \\frac{v(10)-v(0)}{10-0}=\\frac{0.3}{10}=0.03\\) meters \\(/ \\mathrm{sec}^{2}\\)\n\\item[(b)] \\(\\int_{0}^{60}|v(t)| d t\\) is the total distance, in meters, Ben rides over the 60-second interval \\(t=0\\) to \\(t=60\\).\n\\[\n\\int_{0}^{60}|v(t)| d t \\approx 2.0 \\cdot 10+2.3(40-10)+2.5(60-40)=139 \\text { meters }\n\\]\n\\item[(c)] Because \\(\\frac{B(60)-B(40)}{60-40}=\\frac{49-9}{20}=2\\), the Mean Value Theorem implies there is a time \\(t, 40<t<60\\), such that \\(v(t)=2\\).\n\\item[(d)] \\(2 L(t) L^{\\prime}(t)=2 B(t) B^{\\prime}(t)\\)\n\\[\nL^{\\prime}(40)=\\frac{B(40) v(40)}{L(40)}=\\frac{9 \\cdot 2.5}{\\sqrt{144+81}}=\\frac{3}{2} \\text { meters } / \\mathrm{sec}\n\\]\n\\end{itemize}\n\n1 : answer\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : meaning of integral } \\\\ 1 \\text { : approximation }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { difference quotient } \\\\ 1: \\text { conclusion with justification }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { derivatives } \\\\ 1: \\text { uses } B^{\\prime}(t)=v(t) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : units in (a) or (b)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          63,
+          572,
+          441
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2024-frq-02",
+  "course": "AB",
+  "year": 2024,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2024.pdf",
+      "sha256": "070c3a4cd277d6aa74c5cb1b0dd5ae631458d71ac7cf5f7dfe2460814aaf08bd",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ]
+  },
+  "rawPrompt": "A particle moves along the \\(x\\)-axis so that its velocity at time \\(t \\geq 0\\) is given by \\(v(t)=\\ln \\left(t^{2}-4 t+5\\right)-0.2 t\\).\n(a) There is one time, \\(t=t_{R}\\), in the interval \\(0<t<2\\) when the particle is at rest (not moving). Find \\(t_{R}\\). For\n\\(0<t<t_{R}\\), is the particle moving to the right or to the left? Give a reason for your answer.\n(b) Find the acceleration of the particle at time \\(t=1.5\\). Show the setup for your calculations. Is the speed of the\nparticle increasing or decreasing at time \\(t=1.5\\) ? Explain your reasoning.\n(c) The position of the particle at time \\(t\\) is \\(x(t)\\), and its position at time \\(t=1\\) is \\(x(1)=-3\\). Find the position of\nthe particle at time \\(t=4\\). Show the setup for your calculations.\n(d) Find the total distance traveled by the particle over the interval \\(1 \\leq t \\leq 4\\). Show the setup for your\ncalculations.\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          53,
+          66,
+          568,
+          342
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          56.736,
+          71.136,
+          550.656,
+          95.32799999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          105.696,
+          546.6239999999999,
+          119.52
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          86.68799999999999,
+          119.80799999999999,
+          484.70399999999995,
+          133.63199999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          143.42399999999998,
+          562.752,
+          157.248
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          87.264,
+          158.39999999999998,
+          417.02399999999994,
+          171.35999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          182.30399999999997,
+          562.752,
+          196.128
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          87.264,
+          198.14399999999998,
+          364.89599999999996,
+          211.10399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          71.136,
+          222.04799999999997,
+          520.1279999999999,
+          235.00799999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          87.264,
+          236.44799999999998,
+          144.576,
+          247.39199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          83.52,
+          310.176,
+          538.2719999999999,
+          323.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          323.13599999999997,
+          489.888,
+          336.09599999999995
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-ab-2024-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2024-frq-02",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

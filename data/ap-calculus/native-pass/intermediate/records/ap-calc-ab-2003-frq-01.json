@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2003-frq-01",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2003-frq-01-diagram-01.png}\nLet \\(R\\) be the shaded region bounded by the graphs of \\(y=\\sqrt{x}\\) and \\(y=e^{-3 x}\\) and the vertical line \\(x=1\\),\nas shown in the figure above.\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is revolved about the horizontal line \\(y=1\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is\na rectangle whose height is 5 times the length of its base in region \\(R\\). Find the volume of this solid.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-frq-01-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-frq-01-diagram-01.png",
+      "sourcePage": 2,
+      "sourceRect": [
+        222.21600341796875,
+        202.9199981689453,
+        390.3599853515625,
+        366.1679992675781
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 1}\n\nLet \\(R\\) be the shaded region bounded by the graphs of \\(y=\\sqrt{x}\\) and \\(y=e^{-3 x}\\) and\n\\begin{itemize}\n\\item[] the vertical line \\(x=1\\), as shown in the figure above.\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is revolved about the horizontal line \\(y=1\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is a rectangle whose height is 5 times the length of its base in region \\(R\\). Find the volume of this solid.\n![](https://cdn.mathpix.com/cropped/fbb345ed-17d4-4bf2-ba31-ab36f2957cbd-1.jpg?height=374&width=385&top_left_y=417&top_left_x=1603)\n\\end{itemize}\n\nPoint of intersection\n\\[\ne^{-3 x}=\\sqrt{x} \\text { at }(T, S)=(0.238734,0.488604)\n\\]\n\\begin{itemize}\n\\item[(a)]\n\\[\n\\begin{aligned}\n\\text { Area } & =\\int_{T}^{1}\\left(\\sqrt{x}-e^{-3 x}\\right) d x \\\\\n& =0.442 \\text { or } 0.443\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{T}^{1}\\left(\\left(1-e^{-3 x}\\right)^{2}-(1-\\sqrt{x})^{2}\\right) d x \\\\\n& =0.453 \\pi \\text { or } 1.423 \\text { or } 1.424\n\\end{aligned}\n\\]\n\\item[(c)]\n\\[\n\\begin{aligned}\n& \\text { Length }=\\sqrt{x}-e^{-3 x} \\\\\n& \\text { Height }=5\\left(\\sqrt{x}-e^{-3 x}\\right) \\\\\n& \\text { Volume }=\\int_{T}^{1} 5\\left(\\sqrt{x}-e^{-3 x}\\right)^{2} d x=1.554\n\\end{aligned}\n\\]\n\\end{itemize}\n\n1: Correct limits in an integral in\n\\begin{itemize}\n\\begin{itemize}\n\\item[(a)] , (b), or (c)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{aligned} 2: \\text { integrand } & \\\\ & <-1>\\text { reversal } \\\\ & <-1>\\text { error with constant } \\\\ & <-1>\\text { omits } 1 \\text { in one radius } \\\\ & <-2>\\text { other errors } \\\\ 1: \\text { answer } & \\end{aligned}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{aligned} 2: \\text { integrand } & \\\\ & <-1> \\\\ & \\quad \\sqrt{x}-e^{-3 x} \\\\ & \\quad \\text { as a factor } \\\\ 1: \\text { answer } & \\end{aligned}\\right.\\)\n\\end{itemize}\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          70,
+          572,
+          502
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          225.21599999999998,
+          205.92,
+          387.35999999999996,
+          363.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          376.128,
+          531.9359999999999,
+          391.67999999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          393.40799999999996,
+          194.688,
+          405.792
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          412.128,
+          168.48,
+          424.51199999999994
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          430.55999999999995,
+          488.448,
+          442.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          451.58399999999995,
+          516.6719999999999,
+          463.96799999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          463.39199999999994,
+          523.0079999999999,
+          476.352
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

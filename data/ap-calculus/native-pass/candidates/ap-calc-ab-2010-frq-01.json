@@ -1,0 +1,186 @@
+{
+  "id": "ap-calc-ab-2010-frq-01",
+  "course": "AB",
+  "year": 2010,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010.pdf",
+      "sha256": "5fd7fa3bf448ed589eb3bc78a622371364bc487a3f14ccfd63012d9b19018c92",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010.pdf",
+      "sha256": "df6d96e694ff56c313250b99bf6a58ed31047284dbe46d041aef09a85ae1fa29"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "There is no snow on Janet's driveway when snow begins to fall at midnight. From midnight to 9 A.M., snow accumulates on the driveway at a rate modeled by $f(t)= 7 t e^(cos t)$ cubic feet per hour, where $t$ is measured in hours since midnight. Janet starts removing snow at 6 A.M. $(t = 6)$. The rate $g(t)$, in cubic feet per hour, at which Janet removes snow from the driveway at time $t$ hours after midnight is modeled by $ g(t)= cases(0 & \" for \" 0 <= t < 6, 125 & \" for \" 6 <= t < 7, 108 & \" for \" 7 <= t <= 9 .) $\n\n(a) How many cubic feet of snow have accumulated on the driveway by 6 A.M.?\n\n(b) Find the rate of change of the volume of snow on the driveway at 8 A.M.\n\n(c) Let $h(t)$ represent the total amount of snow, in cubic feet, that Janet has removed from the driveway at time $t$ hours after midnight. Express $h$ as a piecewise-defined function with domain $0 <= t <= 9$.\n\n(d) How many cubic feet of snow are on the driveway at 9 A.M.?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          437
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          171.93599999999998,
+          541.4399999999999,
+          184.896
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          186.91199999999998,
+          537.6959999999999,
+          201.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          203.61599999999999,
+          542.016,
+          217.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          219.74399999999997,
+          478.65599999999995,
+          232.128
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "math",
+        "rect": [
+          240.19199999999998,
+          237.6,
+          371.23199999999997,
+          282.816
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          290.88,
+          422.784,
+          303.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          308.736,
+          403.48799999999994,
+          321.69599999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          65.664,
+          328.032,
+          528.4799999999999,
+          341.568
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          342.71999999999997,
+          518.4,
+          356.256
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          362.01599999999996,
+          353.952,
+          374.976
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "c7db3b62ae8a5be3545997300cb58cc897363c2fc2aaa96ab692a1fe60eaaf2a",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

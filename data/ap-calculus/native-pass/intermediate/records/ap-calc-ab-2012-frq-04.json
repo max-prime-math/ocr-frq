@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2012-frq-04",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "rawPrompt": "The function \\(f\\) is defined by \\(f(x)=\\sqrt{25-x^{2}}\\) for \\(-5 \\leq x \\leq 5\\).\n(a) Find \\(f^{\\prime}(x)\\).\n(b) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=-3\\).\n(c) Let \\(g\\) be the function defined by \\(g(x)= \\begin{cases}f(x) & \\text { for }-5 \\leq x \\leq-3 \\\\ x+7 & \\text { for }-3<x \\leq 5 .\\end{cases}\\)\nIs \\(g\\) continuous at \\(x=-3\\) ? Use the definition of continuity to explain your answer.\n(d) Find the value of \\(\\int_{0}^{5} x \\sqrt{25-x^{2}} d x\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nThe function \\(f\\) is defined by \\(f(x)=\\sqrt{25-x^{2}}\\) for \\(-5 \\leq x \\leq 5\\).\n\\begin{itemize}\n\\item[(a)] Find \\(f^{\\prime}(x)\\).\n\\item[(b)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=-3\\).\n\\item[(c)] Let \\(g\\) be the function defined by \\(g(x)= \\begin{cases}f(x) & \\text { for }-5 \\leq x \\leq-3 \\\\ x+7 & \\text { for }-3<x \\leq 5 .\\end{cases}\\)\nIs \\(g\\) continuous at \\(x=-3\\) ? Use the definition of continuity to explain your answer.\n\\item[(d)] Find the value of \\(\\int_{0}^{5} x \\sqrt{25-x^{2}} d x\\).\n\\item[(a)] \\(f^{\\prime}(x)=\\frac{1}{2}\\left(25-x^{2}\\right)^{-1 / 2}(-2 x)=\\frac{-x}{\\sqrt{25-x^{2}}}, \\quad-5<x<5\\)\n\\item[(b)] \\(f^{\\prime}(-3)=\\frac{3}{\\sqrt{25-9}}=\\frac{3}{4}\\)\n\\[\nf(-3)=\\sqrt{25-9}=4\n\\]\nAn equation for the tangent line is \\(y=4+\\frac{3}{4}(x+3)\\).\n\\item[(c)] \\(\\lim _{x \\rightarrow-3^{-}} g(x)=\\lim _{x \\rightarrow-3^{-}} f(x)=\\lim _{x \\rightarrow-3^{-}} \\sqrt{25-x^{2}}=4\\)\n\\[\n\\lim _{x \\rightarrow-3^{+}} g(x)=\\lim _{x \\rightarrow-3^{+}}(x+7)=4\n\\]\nTherefore, \\(\\lim _{x \\rightarrow-3} g(x)=4\\).\n\\[\ng(-3)=f(-3)=4\n\\]\nSo, \\(\\lim _{x \\rightarrow-3} g(x)=g(-3)\\).\nTherefore, \\(g\\) is continuous at \\(x=-3\\).\n\\item[(d)] Let \\(u=25-x^{2} \\Rightarrow d u=-2 x d x\\)\n\\[\n\\begin{aligned}\n\\int_{0}^{5} x \\sqrt{25-x^{2}} d x & =-\\frac{1}{2} \\int_{25}^{0} \\sqrt{u} d u \\\\\n& =\\left[-\\frac{1}{2} \\cdot \\frac{2}{3} u^{3 / 2}\\right]_{u=25}^{u=0} \\\\\n& =-\\frac{1}{3}(0-125)=\\frac{125}{3}\n\\end{aligned}\n\\]\n\\end{itemize}\n\n2 : \\(f^{\\prime}(x)\\)\n\\begin{itemize}\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: f^{\\prime}(-3) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { considers one-sided limits } \\\\ 1: \\text { answer with explanation }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          65,
+          572,
+          267
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 2,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          69.984,
+          347.904,
+          87.83999999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          95.32799999999999,
+          136.79999999999998,
+          110.30399999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          129.31199999999998,
+          376.416,
+          142.84799999999998
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.088,
+          160.992,
+          377.568,
+          191.808
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          192.95999999999998,
+          459.07199999999995,
+          205.92
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          215.42399999999998,
+          240.19199999999998,
+          240.19199999999998
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

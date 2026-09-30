@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2003-frq-04",
+  "course": "AB",
+  "year": 2003,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003.pdf",
+      "sha256": "e70e7877b5943b5051363f939a708e440e8f55305db82a77935e173c4971468a",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003.pdf",
+      "sha256": "751b25985e3d9f5c7bfe33b9a1c604ff272d60cb7858fc9ffc9e795a4b50c3e1"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2003-frq-04-diagram-01.png\", width: 65%)\n\nLet $f$ be a function defined on the closed interval $- 3 <= x <= 4$ with $f(0)= 3$. The graph of $f'$, the derivative of $f$, consists of one line segment and a semicircle, as shown above.\n\n(a) On what intervals, if any, is $f$ increasing? Justify your answer.\n\n(b) Find the $x$-coordinate of each point of inflection of the graph of $f$ on the open interval $- 3 < x < 4$. Justify your answer.\n\n(c) Find an equation for the line tangent to the graph of $f$ at the point $(0 \\,3)$.\n\n(d) Find $f(- 3)$ and $f(4)$. Show the work that leads to your answers.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2003-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2003-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        167.20799255371094,
+        203.78399658203125,
+        445.9440002441406,
+        401.5920104980469
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          70,
+          572,
+          556
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "chart",
+        "rect": [
+          170.208,
+          206.784,
+          442.94399999999996,
+          398.592
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          409.53599999999994,
+          556.992,
+          423.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          425.664,
+          365.472,
+          438.04799999999994
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          444.38399999999996,
+          360.864,
+          456.768
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          462.23999999999995,
+          556.992,
+          475.2
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.368,
+          476.352,
+          141.696,
+          487.58399999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          493.63199999999995,
+          403.48799999999994,
+          507.16799999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 16,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          517.2479999999999,
+          368.928,
+          529.632
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "18c0211f73fea1da6376321dc346f6c53b2f64d73773be7f6c7542239fc40f8f",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ]
+}

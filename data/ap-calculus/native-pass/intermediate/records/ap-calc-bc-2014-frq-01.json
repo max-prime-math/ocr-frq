@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2014-frq-01",
+  "course": "BC",
+  "year": 2014,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2014.pdf",
+      "sha256": "b61104e71bee0889fcd84b1f432b816869e38c502236548b5dc64efd6c4575bc",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2014.pdf",
+      "sha256": "4bf46b40c4bfbb9ce12213134f30bc4ed2c335984d06e0b2414cad804e306684"
+    }
+  },
+  "rawPrompt": "Grass clippings are placed in a bin, where they decompose. For $0 \\leq t \\leq 30$, the amount of grass clippings remaining in the bin is modeled by $A(t)=6.687(0.931)^{t}$, where $A(t)$ is measured in pounds and $t$ is measured in days.\\\\\n(a) Find the average rate of change of $A(t)$ over the interval $0 \\leq t \\leq 30$. Indicate units of measure.\\\\\n(b) Find the value of $A^{\\prime}(15)$. Using correct units, interpret the meaning of the value in the context of the problem.\\\\\n(c) Find the time $t$ for which the amount of grass clippings in the bin is equal to the average amount of grass clippings in the bin over the interval $0 \\leq t \\leq 30$.\\\\\n(d) For $t>30, L(t)$, the linear approximation to $A$ at $t=30$, is a better model for the amount of grass clippings remaining in the bin. Use $L(t)$ to predict the time at which there will be 0.5 pound of grass clippings remaining in the bin. Show the work that leads to your answer.\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC \\\\ 2014 SCORING GUIDELINES}\n\n\\section*{Question 1}\n\nGrass clippings are placed in a bin, where they decompose. For \\(0 \\leq t \\leq 30\\), the amount of grass clippings remaining in the bin is modeled by \\(A(t)=6.687(0.931)^{t}\\), where \\(A(t)\\) is measured in pounds and \\(t\\) is measured in days.\n\\begin{itemize}\n\\item[(a)] Find the average rate of change of \\(A(t)\\) over the interval \\(0 \\leq t \\leq 30\\). Indicate units of measure.\n\\item[(b)] Find the value of \\(A^{\\prime}(15)\\). Using correct units, interpret the meaning of the value in the context of the problem.\n\\item[(c)] Find the time \\(t\\) for which the amount of grass clippings in the bin is equal to the average amount of grass clippings in the bin over the interval \\(0 \\leq t \\leq 30\\).\n\\item[(d)] For \\(t>30, L(t)\\), the linear approximation to \\(A\\) at \\(t=30\\), is a better model for the amount of grass clippings remaining in the bin. Use \\(L(t)\\) to predict the time at which there will be 0.5 pound of grass clippings remaining in the bin. Show the work that leads to your answer.\n\\item[(a)] \\(\\frac{A(30)-A(0)}{30-0}=-0.197\\) (or -0.196 ) lbs/day\n\\item[(b)] \\(A^{\\prime}(15)=-0.164\\) (or -0.163)\nThe amount of grass clippings in the bin is decreasing at a rate of 0.164 (or 0.163) lbs/day at time \\(t=15\\) days.\n\\item[(c)] \\(A(t)=\\frac{1}{30} \\int_{0}^{30} A(t) d t \\Rightarrow t=12.415\\) (or 12.414)\n\\item[(d)] \\(L(t)=A(30)+A^{\\prime}(30) \\cdot(t-30)\\)\n\\[\n\\begin{aligned}\n& A^{\\prime}(30)=-0.055976 \\\\\n& A(30)=0.782928 \\\\\n& L(t)=0.5 \\Rightarrow t=35.054\n\\end{aligned}\n\\]\n\\item[1] : answer with units\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: A^{\\prime}(15) \\\\ 1: \\text { interpretation }\\end{array}\\right.\\)\n\\item[2] : \\(\\left\\{\\begin{array}{l}1: \\frac{1}{30} \\int_{0}^{30} A(t) d t \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}2: \\text { expression for } L(t) \\\\ 1: L(t)=0.5 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          568,
+          380
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2014.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

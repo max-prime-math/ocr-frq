@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-02",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2013-frq-02-diagram-01.jpg}\n\\end{center}\nThe graphs of the polar curves $r=3$ and $r=4-2 \\sin \\theta$ are shown in the figure above. The curves intersect when $\\theta=\\frac{\\pi}{6}$ and $\\theta=\\frac{5 \\pi}{6}$.\\\\\n(a) Let $S$ be the shaded region that is inside the graph of $r=3$ and also inside the graph of $r=4-2 \\sin \\theta$. Find the area of $S$.\\\\\n(b) A particle moves along the polar curve $r=4-2 \\sin \\theta$ so that at time $t$ seconds, $\\theta=t^{2}$. Find the time $t$ in the interval $1 \\leq t \\leq 2$ for which the $x$-coordinate of the particle's position is -1 .\\\\\n(c) For the particle described in part (b), find the position vector in terms of $t$. Find the velocity vector at time $t=1.5$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2013-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2013-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2013_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2013 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (minutes) & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\\n\\hline \\(C(t)\\) (ounces) & 0 & 5.3 & 8.8 & 11.2 & 12.8 & 13.8 & 14.5 \\\\\n\\hline\n\\end{tabular}\nHot water is dripping through a coffeemaker, filling a large cup with coffee. The amount of coffee in the cup at time \\(t, 0 \\leq t \\leq 6\\), is given by a differentiable function \\(C\\), where \\(t\\) is measured in minutes. Selected values of \\(C(t)\\), measured in ounces, are given in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to approximate \\(C^{\\prime}(3.5)\\). Show the computations that lead to your answer, and indicate units of measure.\n\\item[(b)] Is there a time \\(t, 2 \\leq t \\leq 4\\), at which \\(C^{\\prime}(t)=2\\) ? Justify your answer.\n\\item[(c)] Use a midpoint sum with three subintervals of equal length indicated by the data in the table to approximate the value of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\). Using correct units, explain the meaning of \\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\) in the context of the problem.\n\\item[(d)] The amount of coffee in the cup, in ounces, is modeled by \\(B(t)=16-16 e^{-0.4 t}\\). Using this model, find the rate at which the amount of coffee in the cup is changing when \\(t=5\\).\n\\item[(a)] \\(C^{\\prime}(3.5) \\approx \\frac{C(4)-C(3)}{4-3}=\\frac{12.8-11.2}{1}=1.6\\) ounces \\(/ \\mathrm{min}\\)\n\\item[(b)] \\(C\\) is differentiable \\(\\Rightarrow C\\) is continuous (on the closed interval)\n\\[\n\\frac{C(4)-C(2)}{4-2}=\\frac{12.8-8.8}{2}=2\n\\]\nTherefore, by the Mean Value Theorem, there is at least one time \\(t, 2<t<4\\), for which \\(C^{\\prime}(t)=2\\).\n\\item[(c)]\n\\[\n\\begin{aligned}\n\\frac{1}{6} \\int_{0}^{6} C(t) d t & \\approx \\frac{1}{6}[2 \\cdot C(1)+2 \\cdot C(3)+2 \\cdot C(5)] \\\\\n& =\\frac{1}{6}(2 \\cdot 5.3+2 \\cdot 11.2+2 \\cdot 13.8) \\\\\n& =\\frac{1}{6}(60.6)=10.1 \\text { ounces }\n\\end{aligned}\n\\]\n\\(\\frac{1}{6} \\int_{0}^{6} C(t) d t\\) is the average amount of coffee in the cup, in ounces, over the time interval \\(0 \\leq t \\leq 6\\) minutes.\n\\item[(d)]\n\\[\n\\begin{aligned}\n& B^{\\prime}(t)=-16(-0.4) e^{-0.4 t}=6.4 e^{-0.4 t} \\\\\n& B^{\\prime}(5)=6.4 e^{-0.4(5)}=\\frac{6.4}{e^{2}} \\text { ounces } / \\mathrm{min}\n\\end{aligned}\n\\]\n\\item[] \\(2:\\left\\{\\begin{array}{l}1 \\text { : approximation } \\\\ 1 \\text { : units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{C(4)-C(2)}{4-2} \\\\ 1: \\text { conclusion, using MVT }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { midpoint sum } \\\\ 1: \\text { approximation } \\\\ 1: \\text { interpretation }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: B^{\\prime}(t) \\\\ 1: B^{\\prime}(5)\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          45,
+          66,
+          568,
+          409
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2014-frq-02",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2014-frq-02-diagram-01.png}\nLet \\(R\\) be the region enclosed by the graph of \\(f(x)=x^{4}-2.3 x^{3}+4\\) and the horizontal line \\(y=4\\), as shown in\nthe figure above.\n(a) Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-2\\).\n(b) Region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is an isosceles\nright triangle with a leg in \\(R\\). Find the volume of the solid.\n(c) The vertical line \\(x=k\\) divides \\(R\\) into two regions with equal areas. Write, but do not solve, an equation\ninvolving integral expressions whose solution gives the value \\(k\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2014-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2014-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        214.72799682617188,
+        55.17599868774414,
+        397.55999755859375,
+        229.3679962158203
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\\begin{itemize}\n\\item[] Let \\(R\\) be the region enclosed by the graph of \\(f(x)=x^{4}-2.3 x^{3}+4\\) and the horizontal line \\(y=4\\), as shown in the figure above.\n\\item[(a)] Find the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=-2\\).\n\\item[(b)] Region \\(R\\) is the base of a solid. For this solid, each cross section perpendicular to the \\(x\\)-axis is an isosceles right triangle with a leg in \\(R\\). Find the volume of the solid.\n(c) The vertical line \\(x=k\\) divides \\(R\\) into two regions with equal areas. Write, but do not solve, an equation involving integral expressions whose solution gives the value \\(k\\).\n![](https://cdn.mathpix.com/cropped/05b4e906-0a40-4072-b3b5-110a59d2e023-1.jpg?height=539&width=559&top_left_y=400&top_left_x=1371)\n\\item[(a)] \\(f(x)=4 \\Rightarrow x=0,2.3\\)\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\pi \\int_{0}^{2.3}\\left[(4+2)^{2}-(f(x)+2)^{2}\\right] d x \\\\\n& =98.868(\\text { or } 98.867)\n\\end{aligned}\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n\\text { Volume } & =\\int_{0}^{2.3} \\frac{1}{2}(4-f(x))^{2} d x \\\\\n& =3.574(\\text { or } 3.573)\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{k}(4-f(x)) d x=\\int_{k}^{2.3}(4-f(x)) d x\\)\n\\item[4] : \\(\\left\\{\\begin{array}{l}2 \\text { : integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { area of one region } \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          54,
+          568,
+          381
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          217.72799999999998,
+          58.175999999999995,
+          394.55999999999995,
+          226.368
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          238.176,
+          564.192,
+          253.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          256.032,
+          140.256,
+          268.416
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          274.176,
+          487.008,
+          287.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          295.2,
+          555.8399999999999,
+          308.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          307.584,
+          344.15999999999997,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          326.01599999999996,
+          548.352,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          338.976,
+          367.488,
+          351.35999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

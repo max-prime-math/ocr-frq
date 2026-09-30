@@ -1,0 +1,70 @@
+{
+  "id": "ap-calc-bc-2017-frq-04",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "At time $t = 0$, a boiled potato is taken from a pot on a stove and left to cool in a kitchen. The internal temperature of the potato is 91 degrees Celsius $lr((\"\"^(degree) upright(C)))$ at time $t = 0$, and the internal temperature of the potato is greater than $27^(degree) upright(C)$ for all times $t > 0$. The internal temperature of the potato at time $t$ minutes can be modeled by the function $H$ that satisfies the differential equation $frac(d H,d t)= - frac(1,4)(H - 27)$, where $H(t)$ is measured in degrees Celsius and $H(0)= 91$.\n\n(a) Write an equation for the line tangent to the graph of $H$ at $t = 0$. Use this equation to approximate the internal temperature of the potato at time $t = 3$.\n\n(b) Use $frac(d^(2) H,d t^(2))$ to determine whether your answer in part (a) is an underestimate or an overestimate of the internal temperature of the potato at time $t = 3$.\n\n(c) For $t < 10$, an alternate model for the internal temperature of the potato at time $t$ minutes is the function $G$ that satisfies the differential equation $frac(d G,d t)= - (G - 27)^(2 \\/ 3)$, where $G(t)$ is measured in degrees Celsius and $G(0)= 91$. Find an expression for $G(t)$. Based on this model, what is the internal temperature of the potato at time $t = 3$ ?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          39,
+          91,
+          570,
+          471
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "29a763de942dc0eb64220f82e9f6a31d94a588bd71bc065b09fa9610e73a92d1",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ]
+}

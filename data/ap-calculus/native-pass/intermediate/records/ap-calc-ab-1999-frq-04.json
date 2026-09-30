@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-1999-frq-04",
+  "course": "AB",
+  "year": 1999,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-1999.pdf",
+      "sha256": "657ca1cafbaf4cc18eac214d05ae0c9305b5b6c3226285c00cb336661590d7dd",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-1999.pdf",
+      "sha256": "f10844ec29c41e7dd08c49956d13f767a3b4525b95ef1ee3d1efa836e81200ef"
+    }
+  },
+  "rawPrompt": "Suppose that the function \\(f\\) has a continuous second derivative for all \\(x\\), and that \\(f(0)=2, f^{\\prime}(0)=-3\\),\nand \\(f^{\\prime \\prime}(0)=0\\). Let \\(g\\) be a function whose derivative is given by \\(g^{\\prime}(x)=e^{-2 x}\\left(3 f(x)+2 f^{\\prime}(x)\\right)\\) for all \\(x\\).\n(a) Write an equation of the line tangent to the graph of \\(f\\) at the point where \\(x=0\\).\n(b) Is there sufficient information to determine whether or not the graph of \\(f\\) has a point of inflection when\n\\(x=0\\) ? Explain your answer.\n(c) Given that \\(g(0)=4\\), write an equation of the line tangent to the graph of \\(g\\) at the point where \\(x=0\\).\n(d) Show that \\(g^{\\prime \\prime}(x)=e^{-2 x}\\left(-6 f(x)-f^{\\prime}(x)+2 f^{\\prime \\prime}(x)\\right)\\). Does \\(g\\) have a local maximum at \\(x=0\\) ?\nJustify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\n\\begin{itemize}\\item[4.] Suppose that the function \\(f\\) has a continuous second derivative for all \\(x\\), and that \\(f(0)=2, f^{\\prime}(0)=-3\\), and \\(f^{\\prime \\prime}(0)=0\\). Let \\(g\\) be a function whose derivative is given by \\(g^{\\prime}(x)=e^{-2 x}\\left(3 f(x)+2 f^{\\prime}(x)\\right)\\) for all \\(x\\).\n\\begin{itemize}\n\\item[(a)] Write an equation of the line tangent to the graph of \\(f\\) at the point where \\(x=0\\).\n\\item[(b)] Is there sufficient information to determine whether or not the graph of \\(f\\) has a point of inflection when \\(x=0\\) ? Explain your answer.\n\\item[(c)] Given that \\(g(0)=4\\), write an equation of the line tangent to the graph of \\(g\\) at the point where \\(x=0\\).\n\\item[(d)] Show that \\(g^{\\prime \\prime}(x)=e^{-2 x}\\left(-6 f(x)-f^{\\prime}(x)+2 f^{\\prime \\prime}(x)\\right)\\). Does \\(g\\) have a local maximum at \\(x=0\\) ? Justify your answer.\n\\end{itemize}\n\\item[(a)] Slope at \\(x=0\\) is \\(f^{\\prime}(0)=-3\\)\nAt \\(x=0, y=2\\)\n\\[\ny-2=-3(x-0)\n\\]\n\\item[(b)] No. Whether \\(f^{\\prime \\prime}(x)\\) changes sign at \\(x=0\\) is unknown. The only given value of \\(f^{\\prime \\prime}(x)\\) is \\(f^{\\prime \\prime}(0)=0\\).\n\\item[(c)] \\(g^{\\prime}(x)=e^{-2 x}\\left(3 f(x)+2 f^{\\prime}(x)\\right)\\)\n\\[\n\\begin{aligned}\n& \\begin{aligned}\ng^{\\prime}(0) & =e^{0}\\left(3 f(0)+2 f^{\\prime}(0)\\right) \\\\\n& =3(2)+2(-3)=0\n\\end{aligned} \\\\\n& y-4=0(x-0) \\\\\n& y=4\n\\end{aligned}\n\\]\n\\item[(d)] \\(g^{\\prime}(x)=e^{-2 x}\\left(3 f(x)+2 f^{\\prime}(x)\\right)\\)\n\\[\n\\begin{aligned}\ng^{\\prime \\prime}(x)= & \\left(-2 e^{-2 x}\\right)\\left(3 f(x)+2 f^{\\prime}(x)\\right) \\\\\n& \\quad+e^{-2 x}\\left(3 f^{\\prime}(x)+2 f^{\\prime \\prime}(x)\\right) \\\\\n= & e^{-2 x}\\left(-6 f(x)-f^{\\prime}(x)+2 f^{\\prime \\prime}(x)\\right) \\\\\ng^{\\prime \\prime}(0)= & e^{0}[(-6)(2)-(-3)+2(0)]=-9\n\\end{aligned}\n\\]\nSince \\(g^{\\prime}(0)=0\\) and \\(g^{\\prime \\prime}(0)<0, g\\) does have a local maximum at \\(x=0\\).\n\\item[1:] equation\n\\item[] \\(2\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\item[] \\(2\\left\\{\\begin{array}{l}1: g^{\\prime}(0) \\\\ 1: \\text { equation }\\end{array}\\right.\\)\n\\item[] \\(4\\left\\{\\begin{aligned} 2: & \\text { verify derivative } \\\\ & 0 / 2 \\text { product or chain rule error } \\\\ & <-1>\\text { algebra errors } \\\\ 1: & g^{\\prime}(0)=0 \\text { and } g^{\\prime \\prime}(0) \\\\ 1: \\text { answer and reasoning } & \\end{aligned}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          39,
+          572,
+          651
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          71.71199999999999,
+          533.088,
+          84.672
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          85.24799999999999,
+          537.6959999999999,
+          100.8
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          113.472,
+          439.77599999999995,
+          127.29599999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          64.512,
+          138.816,
+          543.4559999999999,
+          152.64
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          85.24799999999999,
+          151.77599999999998,
+          219.456,
+          164.16
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          63.93599999999999,
+          176.54399999999998,
+          534.24,
+          190.368
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          203.32799999999997,
+          516.6719999999999,
+          219.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          84.672,
+          219.456,
+          175.968,
+          232.41599999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-17/mathpix-cache/artifacts/ap-calc-ab-1999-frq-04--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-1999-frq-04",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

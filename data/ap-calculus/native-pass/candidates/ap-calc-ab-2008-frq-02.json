@@ -1,0 +1,208 @@
+{
+  "id": "ap-calc-ab-2008-frq-02",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#table(stroke: none, columns: 8, align: (left, left, left, left, left, left, left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.vline(stroke: .5pt, x: 3), table.vline(stroke: .5pt, x: 4), table.vline(stroke: .5pt, x: 5), table.vline(stroke: .5pt, x: 6), table.vline(stroke: .5pt, x: 7), table.vline(stroke: .5pt, x: 8), table.hline(stroke: .5pt), [$t$ (hours)], [0], [1], [3], [4], [7], [8], [9], table.hline(stroke: .5pt), [$L(t)$ (people)], [120], [156], [176], [126], [150], [80], [0], table.hline(stroke: .5pt));\n\nConcert tickets went on sale at noon $(t = 0)$ and were sold out within 9 hours. The number of people waiting in line to purchase tickets at time $t$ is modeled by a twice-differentiable function $L$ for $0 <= t <= 9$. Values of $L(t)$ at various times $t$ are shown in the table above.\n\n(a) Use the data in the table to estimate the rate at which the number of people waiting in line was changing at 5:30 p.m. $(t = 5.5)$. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) Use a trapezoidal sum with three subintervals to estimate the average number of people waiting in line during the first 4 hours that tickets were on sale.\n\n(c) For $0 <= t <= 9$, what is the fewest number of times at which $L'(t)$ must equal 0 ? Give a reason for your answer.\n\n(d) The rate at which tickets were sold for $0 <= t <= 9$ is modeled by $r(t)= 550 t e^(- t \\/ 2)$ tickets per hour. Based on the model, how many tickets were sold by 3 P.M. $(t = 3)$, to the nearest whole number?",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          65,
+          572,
+          417
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          139.392,
+          71.136,
+          471.74399999999997,
+          120.09599999999999
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 30,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          133.05599999999998,
+          549.216,
+          146.88
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 31,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          148.60799999999998,
+          534.24,
+          160.992
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 32,
+        "type": "text",
+        "rect": [
+          64.512,
+          161.56799999999998,
+          312.768,
+          175.968
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 34,
+        "type": "text",
+        "rect": [
+          65.952,
+          183.744,
+          543.4559999999999,
+          196.128
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 35,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          196.70399999999998,
+          518.688,
+          209.664
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 37,
+        "type": "text",
+        "rect": [
+          65.088,
+          217.72799999999998,
+          535.3919999999999,
+          230.688
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 38,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          230.112,
+          296.352,
+          242.49599999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          65.088,
+          248.832,
+          544.608,
+          261.792
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          265.82399999999996,
+          118.368,
+          275.03999999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 43,
+        "type": "text",
+        "rect": [
+          65.088,
+          283.392,
+          564.192,
+          299.808
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          301.82399999999996,
+          472.31999999999994,
+          315.64799999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "0d0e554227b0d3f312d23804c56003835f297eaa4cda1fa34b3060d308b337e2",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

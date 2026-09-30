@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2012-frq-02",
+  "course": "BC",
+  "year": 2012,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2012.pdf",
+      "sha256": "79c15419c0fab55ddc4447f853b5476bc79428ee91a1b51a1a4d93224d0a08f8",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2012.pdf",
+      "sha256": "5b10738ec7ca6ffae5b052b280bac5cfd809610f3192fddeeab34d167ecc1139"
+    }
+  },
+  "rawPrompt": "For $t \\geq 0$, a particle is moving along a curve so that its position at time $t$ is $(x(t), y(t))$. At time $t=2$, the particle is at position $(1,5)$. It is known that $\\frac{d x}{d t}=\\frac{\\sqrt{t+2}}{e^{t}}$ and $\\frac{d y}{d t}=\\sin ^{2} t$.\\\\\n(a) Is the horizontal movement of the particle to the left or to the right at time $t=2$ ? Explain your answer. Find the slope of the path of the particle at time $t=2$.\\\\\n(b) Find the $x$-coordinate of the particle's position at time $t=4$.\\\\\n(c) Find the speed of the particle at time $t=4$. Find the acceleration vector of the particle at time $t=4$.\\\\\n(d) Find the distance traveled by the particle from time $t=2$ to $t=4$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2012 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\nFor \\(t \\geq 0\\), a particle is moving along a curve so that its position at time \\(t\\) is \\((x(t), y(t))\\). At time \\(t=2\\), the particle is at position (1, 5). It is known that \\(\\frac{d x}{d t}=\\frac{\\sqrt{t+2}}{e^{t}}\\) and \\(\\frac{d y}{d t}=\\sin ^{2} t\\).\n\\begin{itemize}\n\\item[(a)] Is the horizontal movement of the particle to the left or to the right at time \\(t=2\\) ? Explain your answer. Find the slope of the path of the particle at time \\(t=2\\).\n\\item[(b)] Find the \\(x\\)-coordinate of the particle's position at time \\(t=4\\).\n\\item[(c)] Find the speed of the particle at time \\(t=4\\). Find the acceleration vector of the particle at time \\(t=4\\).\n\\item[(d)] Find the distance traveled by the particle from time \\(t=2\\) to \\(t=4\\).\n\\item[(a)] \\(\\left.\\frac{d x}{d t}\\right|_{t=2}=\\frac{2}{e^{2}}\\)\nBecause \\(\\left.\\frac{d x}{d t}\\right|_{t=2}>0\\), the particle is moving to the right at time \\(t=2\\).\n\\[\n\\left.\\frac{d y}{d x}\\right|_{t=2}=\\frac{d y /\\left.d t\\right|_{t=2}}{d x /\\left.d t\\right|_{t=2}}=3.055(\\text { or } 3.054)\n\\]\n\\item[(b)] \\(x(4)=1+\\int_{2}^{4} \\frac{\\sqrt{t+2}}{e^{t}} d t=1.253\\) (or 1.252)\n\\item[(c)] Speed \\(=\\sqrt{\\left(x^{\\prime}(4)\\right)^{2}+\\left(y^{\\prime}(4)\\right)^{2}}=0.575\\) (or 0.574)\n\\[\n\\begin{aligned}\n\\text { Acceleration } & =\\left\\langle x^{\\prime \\prime}(4), y^{\\prime \\prime}(4)\\right\\rangle \\\\\n& =\\langle-0.041,0.989\\rangle\n\\end{aligned}\n\\]\n\\item[(d)]\n\\[\n\\begin{aligned}\n\\text { Distance } & =\\int_{2}^{4} \\sqrt{\\left(x^{\\prime}(t)\\right)^{2}+\\left(y^{\\prime}(t)\\right)^{2}} d t \\\\\n& =0.651(\\text { or } 0.650)\n\\end{aligned}\n\\]\n\\end{itemize}\n\n3 : \\(\\left\\{\\begin{array}{l}1 \\text { : moving to the right with reason } \\\\ 1 \\text { : considers } \\frac{d y / d t}{d x / d t} \\\\ 1 \\text { : slope at } t=2\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { speed } \\\\ 1: \\text { acceleration }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\text { integral } \\\\ 1: \\text { answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          65,
+          565,
+          248
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2012.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

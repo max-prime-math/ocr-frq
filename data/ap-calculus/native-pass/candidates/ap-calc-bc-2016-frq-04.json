@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2016-frq-04",
+  "course": "BC",
+  "year": 2016,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2016.pdf",
+      "sha256": "cc8ef7ba04ed471b4b8644645602babf52b8802d1626bbb4a3f237b7bbfdbc65",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2016.pdf",
+      "sha256": "e129a06293d8db3fec3229abca0263791cd715ced6d42ec8c360dafe2a036233"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Consider the differential equation $frac(d y,d x)= x^(2)- frac(1,2) y$.\n\n(a) Find $frac(d^(2) y,d x^(2))$ in terms of $x$ and $y$.\n\n(b) Let $y = f(x)$ be the particular solution to the given differential equation whose graph passes through the point $(- 2 \\,8)$. Does the graph of $f$ have a relative minimum, a relative maximum, or neither at the point $(- 2 \\,8)$ ? Justify your answer.\n\n(c) Let $y = g(x)$ be the particular solution to the given differential equation with $g(- 1)= 2$. Find $lim_(x -> - 1)lr((frac(g(x)- 2,3(x + 1)^(2))))$. Show the work that leads to your answer.\n\n(d) Let $y = h(x)$ be the particular solution to the given differential equation with $h(0)= 2$. Use Euler's method, starting at $x = 0$ with two steps of equal size, to approximate $h(1)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          45,
+          35.0,
+          568,
+          303
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "d6565bf63b31ac199f6063cdf707938943dd60f555bf2188952d6ccad2d9992e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2016.zip"
+    }
+  ]
+}

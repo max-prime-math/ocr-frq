@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2001-frq-03",
+  "course": "AB",
+  "year": 2001,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2001.pdf",
+      "sha256": "64deabe19ea3a1afdd01c9d0e2e6d031100f4b99d851085a53e0001b0ac40bba",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2001.pdf",
+      "sha256": "ddb4ee522fa348b9d6bd44abc100bd3548c139cd37e0e743f5b96820de8b77eb"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2001-frq-03-diagram-01.png\", width: 65%)\n\nA car is traveling on a straight road with velocity 55 ft/sec at time $t = 0$. For $0 <= t <= 18$ seconds, the car's acceleration $a(t)$, in $upright(f t) \\/ upright(s e c)^(2)$, is the piecewise linear function defined by the graph above.\n\n(a) Is the velocity of the car increasing at $t = 2$ seconds? Why or why not?\n\n(b) At what time in the interval $0 <= t <= 18$, other than $t = 0$, is the velocity of the car 55 ft/sec? Why?\n\n(c) On the time interval $0 <= t <= 18$, what is the car's absolute maximum velocity, in ft/sec, and at what time does it occur? Justify your answer.\n\n(d) At what times in the interval $0 <= t <= 18$, if any, is the car's velocity equal to zero? Justify your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2001-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2001-frq-03-diagram-01.png",
+      "sourcePage": 4,
+      "sourceRect": [
+        134.37600708007812,
+        71.30400085449219,
+        479.35198974609375,
+        236.27999877929688
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          70,
+          572,
+          513
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          137.37599999999998,
+          74.30399999999999,
+          476.352,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          245.088,
+          540.8639999999999,
+          257.472
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          258.62399999999997,
+          459.64799999999997,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          281.664,
+          404.64,
+          294.62399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          300.096,
+          529.0559999999999,
+          312.47999999999996
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.664,
+          319.96799999999996,
+          550.656,
+          332.928
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          334.08,
+          237.6,
+          346.464
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          351.35999999999996,
+          543.4559999999999,
+          364.32
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "68a69c2294c4defdb01d1394b7fa838895d47091b9907e58c23cdca624348117",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-18/mathpix-cache/artifacts/ap-calc-ab-2001-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2001-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ]
+}

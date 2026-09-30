@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2003-frq-02",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2003-frq-02-diagram-01.jpg\", width: 65%)\n\nA particle starts at point $A$ on the positive $x$-axis at time $t = 0$ and travels along the curve from $A$ to $B$ to $C$ to $D$, as shown above. The coordinates of the particle's position $(x(t)\\, y(t))$ are differentiable functions of $t$, where $x'(t)= frac(d x,d t)= - 9 cos lr((frac(pi t,6))) sin lr((frac(pi sqrt(t + 1),2)))$ and $y'(t)= frac(d y,d t)$ is not explicitly given. At time $t = 9$, the particle reaches its final position at point $D$ on the positive $x$-axis.\n\n(a) At point $C$, is $frac(d y,d t)$ positive? At point $C$, is $frac(d x,d t)$ positive? Give a reason for each answer.\n\n(b) The slope of the curve is undefined at point $B$. At what time $t$ is the particle at point $B$ ?\n\n(c) The line tangent to the curve at the point $(x(8)\\, y(8))$ has equation $y = frac(5,9) x - 2$. Find the velocity vector and the speed of the particle at this point.\n\n(d) How far apart are points $A$ and $D$, the initial and final positions, respectively, of the particle?",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-02-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-02-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig2.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          69,
+          572,
+          405
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "f80dc74fbcbb031b3ffec802281060a7a94b2c1cd5704ec7f0992aa43c841732",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ]
+}

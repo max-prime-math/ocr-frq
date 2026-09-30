@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2007-form-b-frq-01",
+  "course": "BC",
+  "year": 2007,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2007-FORM-B.pdf",
+      "sha256": "cc4d347b6b63e71fda73d23f8a1c71efc8aba874e37b3f138959c2cf4e29ec8c",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2007-FORM-B.pdf",
+      "sha256": "53b0863b6b00943cccdd932be4b7eac162a0d7097fa0617fe4f8cd6f0ef38d0a"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\includegraphics[width=0.6\\linewidth]{ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg}\n\\end{center}\nLet $R$ be the region bounded by the graph of $y=e^{2 x-x^{2}}$ and the horizontal line $y=2$, and let $S$ be the region bounded by the graph of $y=e^{2 x-x^{2}}$ and the horizontal lines $y=1$ and $y=2$, as shown above.\\\\\n(a) Find the area of $R$.\\\\\n(b) Find the area of $S$.\\\\\n(c) Write, but do not evaluate, an integral expression that gives the volume of the solid generated when $R$ is rotated about the horizontal line $y=1$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2007-form-b-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2007-form-b_fig1.jpg"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2007 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nLet \\(R\\) be the region bounded by the graph of \\(y=e^{2 x-x^{2}}\\) and the horizontal line \\(y=2\\), and let \\(S\\) be the region bounded by the graph of \\(y=e^{2 x-x^{2}}\\) and the horizontal lines \\(y=1\\) and \\(y=2\\), as shown above.\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the area of \\(S\\).\n\\item[(c)] Write, but do not evaluate, an integral expression that gives the volume of the solid generated when \\(R\\) is rotated about the horizontal line \\(y=1\\).\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/24283358-d3b1-4fe6-937d-5dd658dac105-1.jpg?height=501&width=636&top_left_y=393&top_left_x=1319)\n\\[\ne^{2 x-x^{2}}=2 \\text { when } x=0.446057,1.553943\n\\]\nLet \\(P=0.446057\\) and \\(Q=1.553943\\)\n\\begin{itemize}\n\\item[(a)] Area of \\(R=\\int_{P}^{Q}\\left(e^{2 x-x^{2}}-2\\right) d x=0.514\\)\n\\item[(b)] \\(e^{2 x-x^{2}}=1\\) when \\(x=0,2\\)\n\\[\n\\text { Area of } \\begin{aligned}\nS & =\\int_{0}^{2}\\left(e^{2 x-x^{2}}-1\\right) d x-\\text { Area of } R \\\\\n& =2.06016-\\text { Area of } R=1.546\n\\end{aligned}\n\\]\nOR\n\\[\n\\begin{aligned}\n& \\int_{0}^{P}\\left(e^{2 x-x^{2}}-1\\right) d x+(Q-P) \\cdot 1+\\int_{Q}^{2}\\left(e^{2 x-x^{2}}-1\\right) d x \\\\\n& =0.219064+1.107886+0.219064=1.546\n\\end{aligned}\n\\]\n\\item[(c)] Volume \\(=\\pi \\int_{P}^{Q}\\left(\\left(e^{2 x-x^{2}}-1\\right)^{2}-(2-1)^{2}\\right) d x\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}2: \\text { integrand } \\\\ 1: \\text { constant and limits }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          492
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2007-FORM-B.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

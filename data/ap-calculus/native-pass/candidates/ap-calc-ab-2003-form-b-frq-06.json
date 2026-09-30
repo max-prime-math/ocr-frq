@@ -1,0 +1,116 @@
+{
+  "id": "ap-calc-ab-2003-form-b-frq-06",
+  "course": "AB",
+  "year": 2003,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2003-FORM-B.pdf",
+      "sha256": "6d6f388b0fa759112e226195f8c89ba0738428103c20201246aaf0dddda0925c",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2003-FORM-B.pdf",
+      "sha256": "97b5f8ed1ff7a32f229e34a5ec2f5360bead5b08d4198d3200599dd588790f53"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f$ be the function satisfying $f'(x)= x sqrt(f(x))$ for all real numbers $x$, where $f(3)= 25$.\n\n(a) Find $f''(3)$.\n\n(b) Write an expression for $y = f(x)$ by solving the differential equation $frac(d y,d x)= x sqrt(y)$ with the initial condition $f(3)= 25$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          70,
+          572,
+          250
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 6,
+        "line": 2,
+        "type": "list_item",
+        "rect": [
+          49.535999999999994,
+          74.88,
+          470.87999999999994,
+          92.16
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 3,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          99.07199999999999,
+          136.224,
+          112.60799999999999
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          65.088,
+          118.65599999999999,
+          514.944,
+          142.84799999999998
+        ]
+      },
+      {
+        "sourcePage": 6,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          142.84799999999998,
+          178.272,
+          156.384
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "4b5b3a591c5d53f0403bee4118ac3cd26feaaf185c1ca0fd01e2bcb5b90440f9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-20/mathpix-cache/artifacts/ap-calc-ab-2003-form-b-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2003-form-b-frq-06",
+      "sourcePage": 6,
+      "sourceSha256Matches": true
+    }
+  ]
+}

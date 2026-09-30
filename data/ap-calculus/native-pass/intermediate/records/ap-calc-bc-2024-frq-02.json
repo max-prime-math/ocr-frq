@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2024-frq-02",
+  "course": "BC",
+  "year": 2024,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2024.pdf",
+      "sha256": "9ddd4d069db41e83a69ae1ad9095a7ce94dd7c9366645ff289a6dce671172f76",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ]
+  },
+  "rawPrompt": "A particle moving along a curve in the \\(x y\\)-plane has position \\((x(t), y(t))\\) at time \\(t\\) seconds, where \\(x(t)\\) and \\(y(t)\\)\nare measured in centimeters. It is known that \\(x^{\\prime}(t)=8 t-t^{2}\\) and \\(y^{\\prime}(t)=-t+\\sqrt{t^{1.2}+20}\\). At time \\(t=2\\)\nseconds, the particle is at the point (3, 6).\n(a) Find the speed of the particle at time \\(t=2\\) seconds. Show the setup for your calculations.\n(b) Find the total distance traveled by the particle over the time interval \\(0 \\leq t \\leq 2\\). Show the setup for your\ncalculations.\n(c) Find the \\(y\\)-coordinate of the position of the particle at the time \\(t=0\\). Show the setup for your calculations.\n(d) For \\(2 \\leq t \\leq 8\\), the particle remains in the first quadrant. Find all times \\(t\\) in the interval \\(2 \\leq t \\leq 8\\) when the\nparticle is moving toward the \\(x\\)-axis. Give a reason for your answer.\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [],
+  "rawScoringGuide": "",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          53,
+          73,
+          565,
+          347
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          56.736,
+          76.896,
+          560.448,
+          91.29599999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          92.448,
+          530.208,
+          112.032
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          70.27199999999999,
+          118.65599999999999,
+          254.016,
+          132.48
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          142.56,
+          482.11199999999997,
+          155.51999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          71.136,
+          166.176,
+          543.4559999999999,
+          179.136
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          87.264,
+          181.152,
+          144.0,
+          191.51999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          70.27199999999999,
+          203.904,
+          558.4319999999999,
+          216.86399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          71.136,
+          227.51999999999998,
+          555.8399999999999,
+          239.90399999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          87.264,
+          241.63199999999998,
+          388.224,
+          254.016
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          83.52,
+          315.35999999999996,
+          538.2719999999999,
+          328.32
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          131.61599999999999,
+          328.32,
+          489.888,
+          341.28
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-34/mathpix-cache/artifacts/ap-calc-bc-2024-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2024-frq-02",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

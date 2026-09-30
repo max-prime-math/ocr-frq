@@ -1,0 +1,24 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-ab-2005-form-b-frq-04-prompt-58b57b8a-c4d4-42bb-983f-39c27fde2df0-1_516_660_685_748.jpg\", width: 65%)\n\nThe graph of $f$ consists of three line segments.\n\n(a) Let $g(x) = integral_-4^x f(t) dif t$. Find $g(-1)$, $g'(-1)$, and $g''(-1)$, or state that a value does not exist.\n\n(b) Find each $x$-coordinate of an inflection point of $g$ on $(-4, 3)$ and justify.\n\n(c) Let $h(x) = integral_x^3 f(t) dif t$. Find every $x$ in $[-4, 3]$ for which $h(x) = 0$.\n\n(d) Find all intervals on which $h$ is decreasing and justify.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789171200000,
+    "id": "ap-calc-ab-2005-form-b-frq-04",
+    "images": [
+      "ap-calc-ab-2005-form-b-frq-04-prompt-58b57b8a-c4d4-42bb-983f-39c27fde2df0-1_516_660_685_748.jpg"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-6-6",
+    "solution": "(a) The signed area from $-4$ to $-1$ is $-frac(1, 2)(3)(5) = -frac(15, 2)$. By the Fundamental Theorem of Calculus, $g'(-1) = f(-1) = -2$. Since $f$ has a corner at $x=-1$, $g''(-1)$ does not exist.\n\n(b) Since $g' = f$, $g$ changes from concave up to concave down where $f$ changes from increasing to decreasing: $x = 1$.\n\n(c) Evaluating the signed areas gives $h(x)=0$ at $x=-1$, $x=1$, and $x=3$.\n\n(d) $h'(x) = -f(x)$. Thus $h$ is decreasing where $f(x) > 0$, namely on $(0, 2)$.",
+    "tags": [
+      "2005",
+      "Form B",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-6",
+    "updatedAt": 1789171200000
+  },
+  "version": 1
+}

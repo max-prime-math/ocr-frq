@@ -1,0 +1,77 @@
+{
+  "id": "ap-calc-bc-1999-frq-01",
+  "course": "BC",
+  "year": 1999,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-1999.pdf",
+      "sha256": "a30f5096a34c5a77050f45c24c8c7b87e3c8b4765aa2e5c7abf166e8f3b595c5",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-1999.pdf",
+      "sha256": "903a12642700393da862ee79bdc2c4a8a3db9fbab3002046f50d76041e5388d4"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "A particle moves in the $x y$-plane so that its position at any time $t \\, 0 <= t <= pi$, is given by $x(t)= frac(t^(2),2)- ln(1 + t)$ and $y(t)= 3 sin t$.\n\n(a) Sketch the path of the particle in the $x y$-plane below. Indicate the direction of motion along the path.\n\n#image(\"/imgs/ap-calc-bc-1999-frq-01-diagram-01.jpg\", width: 65%)\n\n(b) At what time $t \\, 0 <= t <= pi$, does $x(t)$ attain its minimum value? What is the position $(x(t)\\, y(t))$ of the particle at this time?\n\n(c) At what time $t \\, 0 < t < pi$, is the particle on the $y$-axis? Find the speed and the acceleration vector of the particle at this time.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-1999-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-1999-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-1999_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          40,
+          572,
+          673
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a787d3b50781eb770f3279f331709e676dd97473d25f1df1a0388ff328eaeff7",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-1999.zip"
+    }
+  ]
+}

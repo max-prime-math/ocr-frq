@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2013-frq-05",
+  "course": "BC",
+  "year": 2013,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2013.pdf",
+      "sha256": "26b9e6fcdff8b7ee98a1c4b6180f277424ee8783c161724e31e91232f95c433e",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2013.pdf",
+      "sha256": "73ade56f57e6ceedb71c23c5404bb05633cdb02854b20b43d06e562d666d1c3e"
+    }
+  },
+  "rawPrompt": "Consider the differential equation $\\frac{d y}{d x}=y^{2}(2 x+2)$. Let $y=f(x)$ be the particular solution to the differential equation with initial condition $f(0)=-1$.\\\\\n(a) Find $\\lim _{x \\rightarrow 0} \\frac{f(x)+1}{\\sin x}$. Show the work that leads to your answer.\\\\\n(b) Use Euler's method, starting at $x=0$ with two steps of equal size, to approximate $f\\left(\\frac{1}{2}\\right)$.\\\\\n(c) Find $y=f(x)$, the particular solution to the differential equation with initial condition $f(0)=-1$.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\nNote: This solution is valid for \\(x>-1\\).",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          45,
+          54,
+          568,
+          220
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2013.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

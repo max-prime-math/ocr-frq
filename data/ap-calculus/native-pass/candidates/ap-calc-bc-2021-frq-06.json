@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-bc-2021-frq-06",
+  "course": "BC",
+  "year": 2021,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2021.pdf",
+      "sha256": "027f9ddecd346b92be5f3694700e0c24eed16fdc5904ed340e5407c68ce5457f",
+      "pages": [
+        10
+      ]
+    },
+    "promptPages": [
+      10
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2021.pdf",
+      "sha256": "35af7041250b030c1d34efc291893f49dfb3072a8a4ab31888e27ce72fccb96d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "The function $g$ has derivatives of all orders for all real numbers. The Maclaurin series for $g$ is given by $g(x)= sum_(n = 0)^(oo) frac((- 1)^(n) x^(n),2 e^(n)+ 3)$ on its interval of convergence.\n\n(a) State the conditions necessary to use the integral test to determine convergence of the series $sum_(n = 0)^(oo) frac(1,e^(n))$. Use the integral test to show that $sum_(n = 0)^(oo) frac(1,e^(n))$ converges.\n\n(b) Use the limit comparison test with the series $sum_(n = 0)^(oo) frac(1,e^(n))$ to show that the series $g(1)= sum_(n = 0)^(oo) frac((- 1)^(n),2 e^(n)+ 3)$ converges absolutely.\n\n(c) Determine the radius of convergence of the Maclaurin series for $g$.\n\n(d) The first two terms of the series $g(1)= sum_(n = 0)^(oo) frac((- 1)^(n),2 e^(n)+ 3)$ are used to approximate $g(1)$. Use the alternating series error bound to determine an upper bound on the error of the approximation.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 10,
+        "rect": [
+          45,
+          87,
+          539,
+          491
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 10,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          48.948133785748915,
+          91.56696428571428,
+          522.0174503150752,
+          104.81249999999999
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          115.17857142857142,
+          293.9767329132332,
+          150.3080357142857
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          162.4017857142857,
+          522.3053805138148,
+          195.51562499999997
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.63596703829376,
+          195.51562499999997,
+          310.6766844401358,
+          228.62946428571428
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          65.07222491517209,
+          241.2991071428571,
+          503.014057198255,
+          274.9888392857143
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          84.07561803199225,
+          285.35491071428567,
+          179.6684440135725,
+          298.6004464285714
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.64808531265149,
+          319.62053571428567,
+          378.3402811439651,
+          333.72991071428567
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.64808531265149,
+          346.39955357142856,
+          534.9743092583617,
+          380.66517857142856
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          84.07561803199225,
+          391.03124999999994,
+          445.71594764905484,
+          403.70089285714283
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          66.22394571013088,
+          453.51562499999994,
+          522.0174503150752,
+          466.18526785714283
+        ]
+      },
+      {
+        "sourcePage": 10,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          114.020358700921,
+          472.5200892857142,
+          473.6451769268057,
+          485.1897321428571
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "ca4686bf6420b64fccb608715fd565e32a25fe26ddb85774bbbee58eb20e36f9",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-bc-2021-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-bc-2021-frq-06",
+      "sourcePage": 10,
+      "sourceSha256Matches": true
+    }
+  ]
+}

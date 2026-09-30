@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2018-frq-04",
+  "course": "BC",
+  "year": 2018,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2018.pdf",
+      "sha256": "89e1ca0b0d75d35abd365bcd3588b7904e90d106f80fe83e16cc851f05ce25bb",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2018.pdf",
+      "sha256": "2ddd4badb8b508f1d931d1ea68ac93aacf0bed4021033798aa26278763c2b7c7"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(years) \\\\\n\\end{tabular} & 2 & 3 & 5 & 7 & 10 \\\\\n\\hline\n\\begin{tabular}{c}\n$H(t)$ \\\\\n(meters) \\\\\n\\end{tabular} & 1.5 & 2 & 6 & 11 & 15 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nThe height of a tree at time $t$ is given by a twice-differentiable function $H$, where $H(t)$ is measured in meters and $t$ is measured in years. Selected values of $H(t)$ are given in the table above.\\\\\n(a) Use the data in the table to estimate $H^{\\prime}(6)$. Using correct units, interpret the meaning of $H^{\\prime}(6)$ in the context of the problem.\\\\\n(b) Explain why there must be at least one time $t$, for $2<t<10$, such that $H^{\\prime}(t)=2$.\\\\\n(c) Use a trapezoidal sum with the four subintervals indicated by the data in the table to approximate the average height of the tree over the time interval $2 \\leq t \\leq 10$.\\\\\n(d) The height of the tree, in meters, can also be modeled by the function $G$, given by $G(x)=\\frac{100 x}{1+x}$, where $x$ is the diameter of the base of the tree, in meters. When the tree is 50 meters tall, the diameter of the base of the tree is increasing at a rate of 0.03 meter per year. According to this model, what is the rate of change of the height of the tree with respect to time, in meters per year, at the time when the tree is 50 meters tall?\\\\",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB/CALCULUS BC 2018 SCORING GUIDELINES}\n\nQuestion 4\n\\begin{itemize}\n\\item[(a)] \\(H^{\\prime}(6) \\approx \\frac{H(7)-H(5)}{7-5}=\\frac{11-6}{2}=\\frac{5}{2}\\)\n\\(H^{\\prime}(6)\\) is the rate at which the height of the tree is changing, in meters per year, at time \\(t=6\\) years.\n\\item[(b)] \\(\\frac{H(5)-H(3)}{5-3}=\\frac{6-2}{2}=2\\)\nBecause \\(H\\) is differentiable on \\(3 \\leq t \\leq 5, H\\) is continuous on \\(3 \\leq t \\leq 5\\).\nBy the Mean Value Theorem, there exists a value \\(c, 3<c<5\\), such that \\(H^{\\prime}(c)=2\\).\n\\item[(c)] The average height of the tree over the time interval \\(2 \\leq t \\leq 10\\) is given by \\(\\frac{1}{10-2} \\int_{2}^{10} H(t) d t\\).\n\\[\n\\begin{aligned}\n\\frac{1}{8} \\int_{2}^{10} H(t) d t & \\approx \\frac{1}{8}\\left(\\frac{1.5+2}{2} \\cdot 1+\\frac{2+6}{2} \\cdot 2+\\frac{6+11}{2} \\cdot 2+\\frac{11+15}{2} \\cdot 3\\right) \\\\\n& =\\frac{1}{8}(65.75)=\\frac{263}{32}\n\\end{aligned}\n\\]\nThe average height of the tree over the time interval \\(2 \\leq t \\leq 10\\) is \\(\\frac{263}{32}\\) meters.\n\\item[(d)] \\(G(x)=50 \\Rightarrow x=1\\)\n\\[\n\\begin{aligned}\n& \\frac{d}{d t}(G(x))=\\frac{d}{d x}(G(x)) \\cdot \\frac{d x}{d t}=\\frac{(1+x) 100-100 x \\cdot 1}{(1+x)^{2}} \\cdot \\frac{d x}{d t}=\\frac{100}{(1+x)^{2}} \\cdot \\frac{d x}{d t} \\\\\n& \\left.\\frac{d}{d t}(G(x))\\right|_{x=1}=\\frac{100}{(1+1)^{2}} \\cdot 0.03=\\frac{3}{4}\n\\end{aligned}\n\\]\nAccording to the model, the rate of change of the height of the tree with respect to time when the tree is 50 meters tall is \\(\\frac{3}{4}\\) meter per year.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { estimate } \\\\ 1: \\text { interpretation with units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1: \\frac{H(5)-H(3)}{5-3} \\\\ 1: \\text { conclusion using } \\\\ \\text { Mean Value Theorem }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : trapezoidal sum } \\\\ 1 \\text { : approximation }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}2: \\frac{d}{d t}(G(x)) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\nNote: \\(\\max 1 / 3\\) [1-0] if no chain rule",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          39,
+          74,
+          570,
+          468
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2018.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2003-frq-04",
+  "course": "BC",
+  "year": 2003,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2003.pdf",
+      "sha256": "ad07b54335ab7ee865b0dfacc98dad877ba06f02c3df2da257eb441294f766d4",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2003.pdf",
+      "sha256": "0189f8cb246f4594edf25aa3cd6450ac3a531867e1f4876d0dcd54e96aedbcf2"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2003-frq-04-diagram-01.jpg\", width: 65%)\n\nLet $f$ be a function defined on the closed interval $- 3 <= x <= 4$ with $f(0)= 3$. The graph of $f'$, the derivative of $f$, consists of one line segment and a semicircle, as shown above.\n\n(a) On what intervals, if any, is $f$ increasing? Justify your answer.\n\n(b) Find the $x$-coordinate of each point of inflection of the graph of $f$ on the open interval $- 3 < x < 4$. Justify your answer.\n\n(c) Find an equation for the line tangent to the graph of $f$ at the point ( 0,3 ).\n\n(d) Find $f(- 3)$ and $f(4)$. Show the work that leads to your answers.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2003-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2003-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2003_fig4.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          556
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "85d8c691bee382a728758f7dd4d39f9220dd3bfbb4377d8c918d6595bd6d550e",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2003.zip"
+    }
+  ]
+}

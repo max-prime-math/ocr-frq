@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2001-frq-04",
+  "course": "BC",
+  "year": 2001,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2001.pdf",
+      "sha256": "15746d480e2c251ab8be4e33b6138a49a11b0d5a063610d8f7c0a0be3d634567",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2001.pdf",
+      "sha256": "595bec5597b80cc8d5de97576cef78d5805387b39ee99de9f6a1bff001ca0d88"
+    }
+  },
+  "rawPrompt": "Let $h$ be a function defined for all $x \\neq 0$ such that $h(4)=-3$ and the derivative of $h$ is given by $h^{\\prime}(x)=\\frac{x^{2}-2}{x}$ for all $x \\neq 0$.\\\\\n(a) Find all values of $x$ for which the graph of $h$ has a horizontal tangent, and determine whether $h$ has a local maximum, a local minimum, or neither at each of these values. Justify your answers.\\\\\n(b) On what intervals, if any, is the graph of $h$ concave up? Justify your answer.\\\\\n(c) Write an equation for the line tangent to the graph of $h$ at $x=4$.\\\\\n(d) Does the line tangent to the graph of $h$ at $x=4$ lie above or below the graph of $h$ for $x>4$ ? Why?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\nLet \\(h\\) be a function defined for all \\(x \\neq 0\\) such that \\(h(4)=-3\\) and the derivative of \\(h\\) is given by \\(h^{\\prime}(x)=\\frac{x^{2}-2}{x}\\) for all \\(x \\neq 0\\).\n\\begin{itemize}\n\\item[(a)] Find all values of \\(x\\) for which the graph of \\(h\\) has a horizontal tangent, and determine whether \\(h\\) has a local maximum, a local minimum, or neither at each of these values. Justify your answers.\n\\item[(b)] On what intervals, if any, is the graph of \\(h\\) concave up? Justify your answer.\n\\item[(c)] Write an equation for the line tangent to the graph of \\(h\\) at \\(x=4\\).\n\\item[(d)] Does the line tangent to the graph of \\(h\\) at \\(x=4\\) lie above or below the graph of \\(h\\) for \\(x>4\\) ? Why?\n\\item[(a)] \\(h^{\\prime}(x)=0\\) at \\(x= \\pm \\sqrt{2}\\)\n![](https://cdn.mathpix.com/cropped/420a98e8-9c19-47b1-859a-dedd5e7a00b0-1.jpg?height=146&width=645&top_left_y=1255&top_left_x=352)\nLocal minima at \\(x=-\\sqrt{2}\\) and at \\(x=\\sqrt{2}\\)\n\\item[(b)] \\(h^{\\prime \\prime}(x)=1+\\frac{2}{x^{2}}>0\\) for all \\(x \\neq 0\\). Therefore, the graph of \\(h\\) is concave up for all \\(x \\neq 0\\).\n\\item[(c)] \\(h^{\\prime}(4)=\\frac{16-2}{4}=\\frac{7}{2}\\)\n\\[\ny+3=\\frac{7}{2}(x-4)\n\\]\n\\end{itemize}\n\\(4:\\left\\{\\begin{aligned} 1 & : x= \\pm \\sqrt{2} \\\\ 1 & : \\text { analysis } \\\\ 2 & : \\text { conclusions } \\\\ & <-1>\\text { not dealing with } \\\\ & \\text { discontinuity at } 0\\end{aligned}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: h^{\\prime \\prime}(x) \\\\ 1: h^{\\prime \\prime}(x)>0 \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n1 : tangent line equation\n\n1 : answer with reason\n\\begin{itemize}\n\\item[(d)] The tangent line is below the graph because the graph of \\(h\\) is concave up for \\(x>4\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          68,
+          572,
+          338
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2001.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

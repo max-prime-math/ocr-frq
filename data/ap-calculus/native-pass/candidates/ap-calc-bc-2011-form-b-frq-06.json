@@ -1,0 +1,72 @@
+{
+  "id": "ap-calc-bc-2011-form-b-frq-06",
+  "course": "BC",
+  "year": 2011,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011-FORM-B.pdf",
+      "sha256": "f098163ed8361f31a75f2ca857e5b30dc1d70f6effa2054677fa4fc8285cd05f",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011-FORM-B.pdf",
+      "sha256": "b8accd057da038c2bb3c439e9153738c7a2e8658007bd91290868bf8a6ec3200"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $f(x)= ln lr((1 + x^(3)))$.\n\n(a) The Maclaurin series for $ln(1 + x)$ is $x - frac(x^(2),2)+ frac(x^(3),3)- frac(x^(4),4)+ dots.h.c + (- 1)^(n + 1) dot.c frac(x^(n),n)+ dots.h.c$. Use the series to write the first four nonzero terms and the general term of the Maclaurin series for $f$.\n\n(b) The radius of convergence of the Maclaurin series for $f$ is 1. Determine the interval of convergence. Show the work that leads to your answer.\n\n(c) Write the first four nonzero terms of the Maclaurin series for $f'lr((t^(2)))$. If $g(x)= integral_(0)^(x) f'lr((t^(2))) d t$, use the first two nonzero terms of the Maclaurin series for $g$ to approximate $g(1)$.\n\n(d) The Maclaurin series for $g$, evaluated at $x = 1$, is a convergent alternating series with individual terms that decrease in absolute value to 0. Show that your approximation in part (c) must differ from $g(1)$ by less than $frac(1,5)$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          40,
+          65,
+          572,
+          411
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "958a159c0c5d0a6f9d5d395b2104a07ae55baabb9fa8fd60810b939b440286c6",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011-FORM-B.zip"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2010-frq-02",
+  "course": "BC",
+  "year": 2010,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2010.pdf",
+      "sha256": "d3271e4efd5e30bd1864bb30d74145adf651f2d5275af12f5195549fadf8ad70",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2010.pdf",
+      "sha256": "e46213db3737428fce751fb257cf280817ea166eb88d662511269c53561962c7"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(hours) \\\\\n\\end{tabular} & 0 & 2 & 5 & 7 & 8 \\\\\n\\hline\n\\begin{tabular}{c}\n$E(t)$ \\\\\n(hundreds of \\\\\nentries) \\\\\n\\end{tabular} & 0 & 4 & 13 & 21 & 23 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nA zoo sponsored a one-day contest to name a new baby elephant. Zoo visitors deposited entries in a special box between noon $(t=0)$ and 8 P.M. $(t=8)$. The number of entries in the box $t$ hours after noon is modeled by a differentiable function $E$ for $0 \\leq t \\leq 8$. Values of $E(t)$, in hundreds of entries, at various times $t$ are shown in the table above.\\\\\n(a) Use the data in the table to approximate the rate, in hundreds of entries per hour, at which entries were being deposited at time $t=6$. Show the computations that lead to your answer.\\\\\n(b) Use a trapezoidal sum with the four subintervals given by the table to approximate the value of $\\frac{1}{8} \\int_{0}^{8} E(t) d t$. Using correct units, explain the meaning of $\\frac{1}{8} \\int_{0}^{8} E(t) d t$ in terms of the number of entries.\\\\\n(c) At 8 P.M., volunteers began to process the entries. They processed the entries at a rate modeled by the function $P$, where $P(t)=t^{3}-30 t^{2}+298 t-976$ hundreds of entries per hour for $8 \\leq t \\leq 12$. According to the model, how many entries had not yet been processed by midnight $(t=12)$ ?\\\\\n(d) According to the model from part (c), at what time were the entries being processed most quickly? Justify your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2010 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|}\n\\hline \\(t\\) (hours) & 0 & 2 & 5 & 7 & 8 \\\\\n\\hline \\(E(t)\\) (hundreds of entries) & 0 & 4 & 13 & 21 & 23 \\\\\n\\hline\n\\end{tabular}\nA zoo sponsored a one-day contest to name a new baby elephant. Zoo visitors deposited entries in a special box between noon \\((t=0)\\) and 8 P.M. \\((t=8)\\). The number of entries in the box \\(t\\) hours after noon is modeled by a differentiable function \\(E\\) for \\(0 \\leq t \\leq 8\\). Values of \\(E(t)\\), in hundreds of entries, at various times \\(t\\) are shown in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to approximate the rate, in hundreds of entries per hour, at which entries were being deposited at time \\(t=6\\). Show the computations that lead to your answer.\n\\item[(b)] Use a trapezoidal sum with the four subintervals given by the table to approximate the value of \\(\\frac{1}{8} \\int_{0}^{8} E(t) d t\\). Using correct units, explain the meaning of \\(\\frac{1}{8} \\int_{0}^{8} E(t) d t\\) in terms of the number of entries.\n\\item[(c)] At 8 P.M., volunteers began to process the entries. They processed the entries at a rate modeled by the function \\(P\\), where \\(P(t)=t^{3}-30 t^{2}+298 t-976\\) hundreds of entries per hour for \\(8 \\leq t \\leq 12\\). According to the model, how many entries had not yet been processed by midnight \\((t=12)\\) ?\n\\item[(d)] According to the model from part (c), at what time were the entries being processed most quickly? Justify your answer.\n\\item[(a)] \\(E^{\\prime}(6) \\approx \\frac{E(7)-E(5)}{7-5}=4\\) hundred entries per hour\n\\item[(b)] \\(\\frac{1}{8} \\int_{0}^{8} E(t) d t \\approx\\)\n\\[\n\\frac{1}{8}\\left(2 \\cdot \\frac{E(0)+E(2)}{2}+3 \\cdot \\frac{E(2)+E(5)}{2}+2 \\cdot \\frac{E(5)+E(7)}{2}+1 \\cdot \\frac{E(7)+E(8)}{2}\\right)\n\\]\n\\(=10.687\\) or 10.688\n\\(\\frac{1}{8} \\int_{0}^{8} E(t) d t\\) is the average number of hundreds of entries in the box between noon and 8 P.M.\n\\item[(c)] \\(23-\\int_{8}^{12} P(t) d t=23-16=7\\) hundred entries\n\\item[(d)] \\(P^{\\prime}(t)=0\\) when \\(t=9.183503\\) and \\(t=10.816497\\).\n\n\\begin{tabular}[t]{|l|l|}\n\\hline \\(t\\) & \\(P(t)\\) \\\\\n\\hline 8 & 0 \\\\\n\\hline 9.183503 & 5.088662 \\\\\n\\hline 10.816497 & 2.911338 \\\\\n\\hline 12 & 8 \\\\\n\\hline\n\\end{tabular}\nEntries are being processed most quickly at time \\(t=12\\).\n\\end{itemize}\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { trapezoidal sum } \\\\ 1: \\text { approximation } \\\\ 1: \\text { meaning }\\end{array}\\right.\\)\n\n2 : \\(\\left\\{\\begin{array}{l}1 \\text { : integral } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers } P^{\\prime}(t)=0 \\\\ 1: \\text { identifies candidates } \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          74,
+          572,
+          464
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2010.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2021-frq-03",
+  "course": "AB",
+  "year": 2021,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2021.pdf",
+      "sha256": "8a075582082fce23f5f4b0c1edcfeebcfecc91cf5e27c61d4f5023345b5b9f77",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2021.pdf",
+      "sha256": "a6a19c94bcc2474056b31f3ae036f77d95d1e3ab097c8cfa7d728f59b3102d26"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2021-frq-03-diagram-01.png}\nA company designs spinning toys using the family of functions \\(y=c x \\sqrt{4-x^{2}}\\), where \\(c\\) is a positive\nconstant. The figure above shows the region in the first quadrant bounded by the \\(x\\)-axis and the graph of\n\\(y=c x \\sqrt{4-x^{2}}\\), for some \\(c\\). Each spinning toy is in the shape of the solid generated when such a region is\nrevolved about the \\(x\\)-axis. Both \\(x\\) and \\(y\\) are measured in inches.\n(a) Find the area of the region in the first quadrant bounded by the \\(x\\)-axis and the graph of \\(y=c x \\sqrt{4-x^{2}}\\)\nfor \\(c=6\\).\n(b) It is known that, for \\(y=c x \\sqrt{4-x^{2}}, \\frac{d y}{d x}=\\frac{c\\left(4-2 x^{2}\\right)}{\\sqrt{4-x^{2}}}\\). For a particular spinning toy, the radius of the\nlargest cross-sectional circular slice is 1.2 inches. What is the value of \\(c\\) for this spinning toy?\n(c) For another spinning toy, the volume is \\(2 \\pi\\) cubic inches. What is the value of \\(c\\) for this spinning toy?\nWrite your responses to this question only on the designated pages in the separate Free Response\nbooklet. Write your solution to each part in the space provided for that part.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2021-frq-03-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2021-frq-03-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        183.00291442871094,
+        84.82366180419922,
+        408.1177978515625,
+        192.75669860839844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Part B (AB or BC): Graphing calculator not allowed Question 3}\n\nGeneral Scoring Notes\nAnswers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.\n\nScoring guidelines and notes contain examples of the most common approaches seen in student responses. These guidelines can be applied to alternate approaches to ensure that these alternate approaches are scored appropriately.\n![](https://cdn.mathpix.com/cropped/04d0a896-5b78-45f8-afbb-e42f580a5f40-1.jpg?height=353&width=756&top_left_y=842&top_left_x=683)\nA company designs spinning toys using the family of functions \\(y=c x \\sqrt{4-x^{2}}\\), where \\(c\\) is a positive constant. The figure above shows the region in the first quadrant bounded by the \\(x\\)-axis and the graph of \\(y=c x \\sqrt{4-x^{2}}\\), for some \\(c\\). Each spinning toy is in the shape of the solid generated when such a region is revolved about the \\(x\\)-axis. Both \\(x\\) and \\(y\\) are measured in inches.\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline Model Solution & \\multicolumn{2}{|c|}{Scoring} \\\\\n\\hline \\multicolumn{3}{|l|}{Find the area of the region in the first quadrant bounded by the \\(x\\)-axis and the graph of \\(y=c x \\sqrt{4-x^{2}}\\) for \\(c=6\\).} \\\\\n\\hline \\[\n\\begin{aligned}\n& 6 x \\sqrt{4-x^{2}}=0 \\Rightarrow x=0, x=2 \\\\\n& \\text { Area }=\\int_{0}^{2} 6 x \\sqrt{4-x^{2}} d x\n\\end{aligned}\n\\] & Integrand & 1 point \\\\\n\\hline Let \\(u=4-x^{2}\\).\n\\[\n\\begin{aligned}\n& d u=-2 x d x \\Rightarrow-\\frac{1}{2} d u=x d x \\\\\n& x=0 \\Rightarrow u=4-0^{2}=4 \\\\\n& x=2 \\Rightarrow u=4-2^{2}=0\n\\end{aligned}\n\\]\n\\[\n\\begin{aligned}\n& \\int_{0}^{2} 6 x \\sqrt{4-x^{2}} d x=\\int_{4}^{0} 6\\left(-\\frac{1}{2}\\right) \\sqrt{u} d u=-3 \\int_{4}^{0} u^{1 / 2} d u=3 \\int_{0}^{4} u^{1 / 2} d u \\\\\n& =\\left.2 u^{3 / 2}\\right|_{u=0} ^{u=4}=2 \\cdot 8=16\n\\end{aligned}\n\\] & Antiderivative & 1 point \\\\\n\\hline The area of the region is 16 square inches. & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] Units are not required for any points in this question and are not read if presented (correctly or incorrectly) in any part of the response.\n\\item[-] The first point is earned for presenting \\(c x \\sqrt{4-x^{2}}\\) or \\(6 x \\sqrt{4-x^{2}}\\) as the integrand in a definite integral. Limits of integration (numeric or alphanumeric) must be presented (as part of the definite integral) but do not need to be correct in order to earn the first point.\n\\item[-] If an indefinite integral is presented with an integrand of the correct form, the first point can be earned if the antiderivative (correct or incorrect) is eventually evaluated using the correct limits of integration.\n\\item[-] The second point can be earned without the first point. The second point is earned for the presentation of a correct antiderivative of a function of the form \\(A x \\sqrt{4-x^{2}}\\), for any nonzero constant \\(A\\). If the response has subsequent errors in simplification of the antiderivative or sign errors, the response will earn the second point but will not earn the third point.\n\\item[-] Responses that use \\(u\\)-substitution and have incorrect limits of integration or do not change the limits of integration from \\(x\\) - to \\(u\\)-values are eligible for the second point.\n\\item[-] The response is eligible for the third point only if it has earned the second point.\n\\item[-] The third point is earned only for the answer 16 or equivalent. In the case where a response only presents an indefinite integral, the use of the correct limits of integration to evaluate the antiderivative must be shown to earn the third point.\n\\item[-] The response cannot correct -16 to +16 in order to earn the third point; there is no possible reversal here.\n\\end{itemize}\n\nTotal for part (a) 3 points\n\\begin{itemize}\n\\item[(b)] It is known that, for \\(y=c x \\sqrt{4-x^{2}}, \\frac{d y}{d x}=\\frac{c\\left(4-2 x^{2}\\right)}{\\sqrt{4-x^{2}}}\\). For a particular spinning toy, the radius of the largest cross-sectional circular slice is 1.2 inches. What is the value of \\(c\\) for this spinning toy?\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline The cross-sectional circular slice with the largest radius occurs where \\(c x \\sqrt{4-x^{2}}\\) has its maximum on the interval \\(0<x<2\\).\n\\[\n\\frac{d y}{d x}=\\frac{c\\left(4-2 x^{2}\\right)}{\\sqrt{4-x^{2}}}=0 \\Rightarrow x=\\sqrt{2}\n\\] & Sets \\(\\frac{d y}{d x}=0\\) & 1 point \\\\\n\\hline \\[\n\\begin{aligned}\n& x=\\sqrt{2} \\Rightarrow y=c \\sqrt{2} \\sqrt{4-(\\sqrt{2})^{2}}=2 c \\\\\n& 2 c=1.2 \\Rightarrow c=0.6\n\\end{aligned}\n\\] & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point is earned for setting \\(\\frac{d y}{d x}=0, \\frac{c\\left(4-2 x^{2}\\right)}{\\sqrt{4-x^{2}}}=0\\), or \\(c\\left(4-2 x^{2}\\right)=0\\).\n\\item[-] An unsupported \\(x=\\sqrt{2}\\) does not earn the first point.\n\\item[-] The second point can be earned without the first point but is earned only for the answer \\(c=0.6\\) with supporting work.\n\\end{itemize}\n\nTotal for part (b) 2 points\n\\begin{itemize}\n\\item[(c)] For another spinning toy, the volume is \\(2 \\pi\\) cubic inches. What is the value of \\(c\\) for this spinning toy?\n\n\\begin{tabular}[t]{|l|l|l|}\n\\hline \\multirow[t]{2}{*}{Volume \\(=\\int_{0}^{2} \\pi\\left(c x \\sqrt{4-x^{2}}\\right)^{2} d x=\\pi c^{2} \\int_{0}^{2} x^{2}\\left(4-x^{2}\\right) d x\\)} & Form of the integrand & 1 point \\\\\n\\hline & Limits and constant & 1 point \\\\\n\\hline \\(=\\pi c^{2} \\int_{0}^{2}\\left(4 x^{2}-x^{4}\\right) d x=\\pi c^{2}\\left(\\frac{4}{3} x^{3}-\\left.\\frac{1}{5} x^{5}\\right|_{0} ^{2}\\right)\\) & Antiderivative & 1 point \\\\\n\\hline \\[\n\\begin{aligned}\n& =\\pi c^{2}\\left(\\frac{32}{3}-\\frac{32}{5}\\right)=\\frac{64 \\pi c^{2}}{15} \\\\\n& \\frac{64 \\pi c^{2}}{15}=2 \\pi \\Rightarrow c^{2}=\\frac{15}{32} \\Rightarrow c=\\sqrt{\\frac{15}{32}}\n\\end{aligned}\n\\] & Answer & 1 point \\\\\n\\hline\n\\end{tabular}\n\\end{itemize}\n\nScoring notes:\n\\begin{itemize}\n\\item[-] The first point is earned for presenting an integrand of the form \\(A\\left(x \\sqrt{4-x^{2}}\\right)^{2}\\) in a definite integral with any limits of integration (numeric or alphanumeric) and any nonzero constant \\(A\\). Mishandling the \\(c\\) will result in the response being ineligible for the fourth point.\n\\item[-] The second point can be earned without the first point. The second point is earned for the limits of integration, \\(x=0\\) and \\(x=2\\), and the constant \\(\\pi\\) ( but not for \\(2 \\pi\\) ) as part of an integral with a correct or incorrect integrand.\n\\item[-] If an indefinite integral is presented with the correct constant \\(\\pi\\), the second point can be earned if the antiderivative (correct or incorrect) is evaluated using the correct limits of integration.\n\\item[-] A response that presents \\(2=\\int_{0}^{2}\\left(c x \\sqrt{4-x^{2}}\\right)^{2} d x\\) earns the first and second points.\n\\item[-] The third point is earned for presenting a correct antiderivative of the presented integrand of the form \\(A\\left(x \\sqrt{4-x^{2}}\\right)^{2}\\) for any nonzero \\(A\\). If there are subsequent errors in simplification of the antiderivative, linkage errors, or sign errors, the response will not earn the fourth point.\n\\item[-] The fourth point cannot be earned without the third point. The fourth point is earned only for the correct answer. The expression does not need to be simplified to earn the fourth point.\n\\end{itemize}\n\nTotal for part (c) 4 points\nTotal for question 39 points",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          25,
+          83,
+          530,
+          535
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          186.00290838584587,
+          87.82366071428571,
+          405.1177896267572,
+          189.75669642857142
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          29.36888027144935,
+          205.01785714285714,
+          494.9520116335434,
+          224.02232142857142
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          231.2209821428571,
+          508.1968007755696,
+          244.46651785714283
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          45.20504120213282,
+          245.90624999999997,
+          515.6829859428018,
+          264.3348214285714
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          270.66964285714283,
+          332.27144934561323,
+          283.91517857142856
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          296.87276785714283,
+          519.4260785264179,
+          315.8772321428571
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          63.632573921473586,
+          322.7879464285714,
+          108.83761512360641,
+          334.30580357142856
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          45.78090159961222,
+          352.73437499999994,
+          522.0174503150752,
+          397.3660714285714
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          64.20843431895298,
+          404.27678571428567,
+          481.13136209403785,
+          417.5223214285714
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          45.78090159961222,
+          443.14955357142856,
+          511.9398933591857,
+          457.25892857142856
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          69.96703829374698,
+          496.7075892857142,
+          525.7605428986913,
+          509.95312499999994
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 16,
+        "type": "text",
+        "rect": [
+          117.7634512845371,
+          515.7120535714286,
+          477.38826951042176,
+          528.9575892857142
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-33/mathpix-cache/artifacts/ap-calc-ab-2021-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2021-frq-03",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

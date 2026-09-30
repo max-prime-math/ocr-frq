@@ -1,0 +1,197 @@
+{
+  "id": "ap-calc-ab-2013-frq-01",
+  "course": "AB",
+  "year": 2013,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2013.pdf",
+      "sha256": "fa845fe83537972b9762e1e8c43f00f2f94bf617e8020428c7ce1f6b5ef46cd7",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2013.pdf",
+      "sha256": "652f933eef8103933042e3c9e05eaca17964e238256939989060a613225d753d"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "On a certain workday, the rate, in tons per hour, at which unprocessed gravel arrives at a gravel processing plant is modeled by $G(t)= 90 + 45 cos lr((frac(t^(2),18)))$, where $t$ is measured in hours and $0 <= t <= 8$. At the beginning of the workday $(t = 0)$, the plant has 500 tons of unprocessed gravel. During the hours of operation, $0 <= t <= 8$, the plant processes gravel at a constant rate of 100 tons per hour.\n\n(a) Find $G'(5)$. Using correct units, interpret your answer in the context of the problem.\n\n(b) Find the total amount of unprocessed gravel that arrives at the plant during the hours of operation on this workday.\n\n(c) Is the amount of unprocessed gravel at the plant increasing or decreasing at time $t = 5$ hours? Show the work that leads to your answer.\n\n(d) What is the maximum amount of unprocessed gravel at the plant during the hours of operation on this workday? Justify your answer.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          47,
+          52,
+          568,
+          394
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          171.93599999999998,
+          561.024,
+          184.896
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          184.896,
+          552.9599999999999,
+          216.576
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          219.16799999999998,
+          549.216,
+          233.27999999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          234.432,
+          335.23199999999997,
+          247.39199999999997
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          253.72799999999998,
+          457.91999999999996,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          65.664,
+          274.75199999999995,
+          545.76,
+          287.712
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          287.712,
+          126.14399999999999,
+          299.52
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.664,
+          305.568,
+          544.608,
+          317.952
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          319.392,
+          222.91199999999998,
+          331.2
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.664,
+          336.67199999999997,
+          533.376,
+          349.63199999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          349.056,
+          220.32,
+          362.01599999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "a89c5a742997a0005d496b0a8aa0a73f467c8e8873f3b232cf92d48c44007112",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2013-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2013-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

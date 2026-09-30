@@ -1,0 +1,177 @@
+{
+  "id": "ap-calc-ab-2007-form-b-frq-02",
+  "course": "AB",
+  "year": 2007,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007-FORM-B.pdf",
+      "sha256": "9c053de89559fdff9dc3d2c68d4d0e6a291eb32bae83bc301793b6656c9a0256",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007-FORM-B.pdf",
+      "sha256": "262d617d708fc64aa571d2998feeb3ee8ba3af03c369c8fccd0f7a9f72c33290"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2007-form-b-frq-02-diagram-01.png\", width: 65%)\n\nA particle moves along the $x$-axis so that its velocity $v$ at time $t >= 0$ is given by $v(t)= sin lr((t^(2)))$. The graph of $v$ is shown above for $0 <= t <= sqrt(5 pi)$. The position of the particle at time $t$ is $x(t)$ and its position at time $t = 0$ is $x(0)= 5$.\n\n(a) Find the acceleration of the particle at time $t = 3$.\n\n(b) Find the total distance traveled by the particle from time $t = 0$ to $t = 3$.\n\n(c) Find the position of the particle at time $t = 3$.\n\n(d) For $0 <= t <= sqrt(5 pi)$, find the time $t$ at which the particle is farthest to the right. Explain your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2007-form-b-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2007-form-b-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        173.25599670410156,
+        64.39199829101562,
+        438.45599365234375,
+        234.26400756835938
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          64,
+          572,
+          475
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          176.256,
+          67.392,
+          435.45599999999996,
+          231.26399999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          241.344,
+          562.4639999999999,
+          261.216
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          263.52,
+          555.5519999999999,
+          278.496
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.664,
+          280.79999999999995,
+          109.728,
+          294.33599999999996
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          302.688,
+          304.416,
+          315.64799999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          321.69599999999997,
+          404.06399999999996,
+          334.08
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          340.416,
+          286.56,
+          353.376
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          360.0,
+          521.856,
+          374.976
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "22d3cebd2ab09e6105992b0f934de97e0754f420f69e5302217585f2282bd042",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

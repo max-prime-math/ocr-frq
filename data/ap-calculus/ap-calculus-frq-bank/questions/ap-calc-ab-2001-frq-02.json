@@ -1,0 +1,21 @@
+{
+  "question": {
+    "body": "#table(stroke: none, columns: 2, align: (left, left, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$t$ (days)], [$W(t)$ ( $\"\"^(degree) upright(C)$ )], table.hline(stroke: .5pt), [0], [20], table.hline(stroke: .5pt), [3], [31], table.hline(stroke: .5pt), [6], [28], table.hline(stroke: .5pt), [9], [24], table.hline(stroke: .5pt), [12], [22], table.hline(stroke: .5pt), [15], [21], table.hline(stroke: .5pt));\n\nThe temperature, in degrees Celsius ( $\"\"^(degree) upright(C)$ ), of the water in a pond is a differentiable function $W$ of time $t$. The table above shows the water temperature as recorded every 3 days over a 15-day period.\n\n(a) Use data from the table to find an approximation for $W'(12)$. Show the computations that lead to your answer. Indicate units of measure.\n\n(b) Approximate the average temperature, in degrees Celsius, of the water over the time interval $0 <= t <= 15$ days by using a trapezoidal approximation with subintervals of length $Delta t = 3$ days.\n\n(c) A student proposes the function $P$, given by $P(t)= 20 + 10 t e^((- t \\/ 3))$, as a model for the temperature of the water in the pond at time $t$, where $t$ is measured in days and $P(t)$ is measured in degrees Celsius. Find $P'(12)$. Using appropriate units, explain the meaning of your answer in terms of water temperature.\n\n(d) Use the function $P$ defined in part (c) to find the average value, in degrees Celsius, of $P(t)$ over the time interval $0 <= t <= 15$ days.",
+    "classId": "ap-calculus-ab",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-ab-2001-frq-02",
+    "images": [],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-8-1",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2001",
+      "Part A",
+      "Calculator Active"
+    ],
+    "unitId": "ap-unit-8",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

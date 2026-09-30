@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2000-frq-04",
+  "course": "BC",
+  "year": 2000,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2000.pdf",
+      "sha256": "3d8ea931cf7c92587ae80781d46c8ee5c16eeef6beff6d2dd47bc91046d67056",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2000.pdf",
+      "sha256": "4b2c25346fe8235b27cb420a0479422d9c8c848ebbfe1514d44c90aed4325bca"
+    }
+  },
+  "rawPrompt": "A moving particle has position $(x(t), y(t))$ at time $t$. The position of the particle at time $t=1$ is $(2,6)$, and the velocity vector at any time $t>0$ is given by $\\left(1-\\frac{1}{t^{2}}, 2+\\frac{1}{t^{2}}\\right)$.\\\\\n(a) Find the acceleration vector at time $t=3$.\\\\\n(b) Find the position of the particle at time $t=3$.\\\\\n(c) For what time $t>0$ does the line tangent to the path of the particle at $(x(t), y(t))$ have a slope of 8 ?\\\\\n(d) The particle approaches a line as $t \\rightarrow \\infty$. Find the slope of this line. Show the work that leads to your conclusion.\\\\",
+  "assets": [],
+  "rawScoringGuide": "A moving particle has position \\((x(t), y(t))\\) at time \\(t\\). The position of the particle at time \\(t=1\\) is \\((2,6)\\) and the velocity vector at any time \\(t>0\\) is given by \\(\\left(1-\\frac{1}{t^{2}}, 2+\\frac{1}{t^{2}}\\right)\\).\n\\begin{itemize}\n\\item[(a)] Find the acceleration vector at time \\(t=3\\).\n\\item[(b)] Find the position of the particle at time \\(t=3\\).\n\\item[(c)] For what time \\(t>0\\) does the line tangent to the path of the particle at \\((x(t), y(t))\\) have a slope of 8?\n\\item[(d)] The particle approaches a line as \\(t \\rightarrow \\infty\\). Find the slope of this line. Show the work that leads to your conclusion.\n\\item[(a)] acceleration vector \\(=\\left(x^{\\prime \\prime}(t), y^{\\prime \\prime}(t)\\right)=\\left(\\frac{2}{t^{3}},-\\frac{2}{t^{3}}\\right)\\)\n\\[\n\\left(x^{\\prime \\prime}(3), y^{\\prime \\prime}(3)\\right)=\\left(\\frac{2}{27},-\\frac{2}{27}\\right)\n\\]\n\\item[(b)] \\((x(t), y(t))=\\left(t+\\frac{1}{t}+C_{1}, 2 t-\\frac{1}{t}+C_{2}\\right)\\)\n\\[\n\\begin{aligned}\n& (2,6)=(x(1), y(1))=\\left(2+C_{1}, 1+C_{2}\\right) \\\\\n& C_{1}=0, C_{2}=5 \\\\\n& (x(3), y(3))=\\left(3+\\frac{1}{3}, 6-\\frac{1}{3}+5\\right)=\\left(\\frac{10}{3}, \\frac{32}{3}\\right)\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\frac{d y}{d x}=\\frac{2+\\frac{1}{t^{2}}}{1-\\frac{1}{t^{2}}}=8\\)\n\\[\n\\begin{aligned}\n& 2+\\frac{1}{t^{2}}=8\\left(1-\\frac{1}{t^{2}}\\right) ; \\quad t^{2}=\\frac{9}{6} \\\\\n& t=\\sqrt{\\frac{3}{2}}\n\\end{aligned}\n\\]\n\\item[(d)] \\(\\lim _{t \\rightarrow \\infty} \\frac{d y}{d x}=\\lim _{t \\rightarrow \\infty} \\frac{2+\\frac{1}{t^{2}}}{1-\\frac{1}{t^{2}}}=2\\)\n- or -\nSince \\(x(t) \\rightarrow \\infty\\) as \\(t \\rightarrow \\infty\\), the slope of the line is\n\\[\n\\lim _{t \\rightarrow \\infty} \\frac{y(t)}{x(t)}=\\lim _{t \\rightarrow \\infty} \\frac{2 t-\\frac{1}{t}+5}{t+\\frac{1}{t}}=2\n\\]\n\\end{itemize}\n\\(2 \\begin{cases}1: & \\text { components of acceleration } \\\\ & \\text { vector as a function of } t \\\\ 1: & \\text { acceleration vector at } t=3\\end{cases}\\)\n\\(3 \\begin{cases}1: & \\text { antidifferentiation } \\\\ 1: & \\text { uses initial condition at } t=1 \\\\ 1: & \\text { position at } t=3\\end{cases}\\)\nNote: max 1/3 [1-0-0] if no constants of integration\n\\(2\\left\\{\\begin{array}{l}1: \\quad \\frac{d y}{d x}=8 \\text { as equation in } t \\\\ 1: \\text { solution for } t\\end{array}\\right.\\)\n\\(2 \\begin{cases}1: & \\text { considers limit of } \\frac{d y}{d x} \\text { or } \\frac{y(t)}{x(t)} \\\\ 1: & \\text { answer }\\end{cases}\\)\nNote: 0/2 if no consideration of limit",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          54,
+          572,
+          326
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2000.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

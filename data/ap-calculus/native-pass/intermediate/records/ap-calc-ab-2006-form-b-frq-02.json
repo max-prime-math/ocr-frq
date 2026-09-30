@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2006-form-b-frq-02",
+  "course": "AB",
+  "year": 2006,
+  "form": "B",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2006-FORM-B.pdf",
+      "sha256": "83f4967855ca28ad1b78894c62000e46e3aa865d4ecd6acaf5184abf6049c0a6",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2006-FORM-B.pdf",
+      "sha256": "9810cf1130f0bb7da3c0ca2d4741813eef1f5161acccfefcb931ac2de61309a3"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-ab-2006-form-b-frq-02-diagram-01.png}\nLet \\(f\\) be the function defined for \\(x \\geq 0\\) with \\(f(0)=5\\) and \\(f^{\\prime}\\), the first derivative of \\(f\\), given\nby \\(f^{\\prime}(x)=e^{(-x / 4)} \\sin \\left(x^{2}\\right)\\). The graph of \\(y=f^{\\prime}(x)\\) is shown above.\n(a) Use the graph of \\(f^{\\prime}\\) to determine whether the graph of \\(f\\) is concave up, concave down, or neither on the\ninterval \\(1.7<x<1.9\\). Explain your reasoning.\n(b) On the interval \\(0 \\leq x \\leq 3\\), find the value of \\(x\\) at which \\(f\\) has an absolute maximum. Justify your answer.\n(c) Write an equation for the line tangent to the graph of \\(f\\) at \\(x=2\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2006-form-b-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2006-form-b-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        198.60000610351562,
+        68.13600158691406,
+        409.3680114746094,
+        222.74400329589844
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 2}\n\nLet \\(f\\) be the function defined for \\(x \\geq 0\\) with \\(f(0)=5\\) and \\(f^{\\prime}\\), the first derivative of \\(f\\), given by \\(f^{\\prime}(x)=e^{(-x / 4)} \\sin \\left(x^{2}\\right)\\). The graph of \\(y=f^{\\prime}(x)\\) is shown above.\n\\begin{itemize}\n\\item[(a)] Use the graph of \\(f^{\\prime}\\) to determine whether the graph of \\(f\\) is concave up, concave down, or neither on the interval \\(1.7<x<1.9\\). Explain your reasoning.\n\\item[(b)] On the interval \\(0 \\leq x \\leq 3\\), find the value of \\(x\\) at which \\(f\\) has an absolute maximum. Justify your answer.\n\\end{itemize}\n![](https://cdn.mathpix.com/cropped/f4043484-5954-4a94-a119-dd43cb7b024d-1.jpg?height=496&width=679&top_left_y=303&top_left_x=1259)\n\\begin{itemize}\n\\item[(c)] Write an equation for the line tangent to the graph of \\(f\\) at \\(x=2\\).\n\\item[(a)] On the interval \\(1.7<x<1.9, f^{\\prime}\\) is decreasing and thus \\(f\\) is concave down on this interval.\n\\item[(b)] \\(f^{\\prime}(x)=0\\) when \\(x=0, \\sqrt{\\pi}, \\sqrt{2 \\pi}, \\sqrt{3 \\pi}, \\ldots\\) On \\([0,3] f^{\\prime}\\) changes from positive to negative only at \\(\\sqrt{\\pi}\\). The absolute maximum must occur at \\(x=\\sqrt{\\pi}\\) or at an endpoint.\n\\[\n\\begin{aligned}\n& f(0)=5 \\\\\n& f(\\sqrt{\\pi})=f(0)+\\int_{0}^{\\sqrt{\\pi}} f^{\\prime}(x) d x=5.67911 \\\\\n& f(3)=f(0)+\\int_{0}^{3} f^{\\prime}(x) d x=5.57893\n\\end{aligned}\n\\]\nThis shows that \\(f\\) has an absolute maximum at \\(x=\\sqrt{\\pi}\\).\n\\item[(c)] \\(f(2)=f(0)+\\int_{0}^{2} f^{\\prime}(x) d x=5.62342\\)\n\\[\n\\begin{aligned}\n& f^{\\prime}(2)=e^{-0.5} \\sin (4)=-0.45902 \\\\\n& y-5.623=(-0.459)(x-2)\n\\end{aligned}\n\\]\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1: \\text { answer } \\\\ 1: \\text { reason }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{aligned} & 1: \\text { identifies } \\sqrt{\\pi} \\text { and } 3 \\text { as candidates } \\\\ & \\quad \\text { or - } \\\\ & \\text { indicates that the graph of } f \\\\ & \\text { increases, decreases, then increases } \\\\ & 1: \\text { justifies } f(\\sqrt{\\pi})>f(3) \\\\ & 1: \\text { answer }\\end{aligned}\\right.\\)\n\\(4:\\left\\{\\begin{aligned} 2: & f(2) \\text { expression } \\\\ & 1: \\text { integral } \\\\ & 1: \\text { including } f(0) \\text { term } \\\\ & 1: f^{\\prime}(2) \\\\ & 1: \\text { equation }\\end{aligned}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          67,
+          572,
+          443
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          201.6,
+          71.136,
+          406.368,
+          219.74399999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          232.128,
+          483.84,
+          246.23999999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          63.647999999999996,
+          247.39199999999997,
+          374.976,
+          267.26399999999995
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.088,
+          276.47999999999996,
+          547.1999999999999,
+          289.44
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          291.45599999999996,
+          294.62399999999997,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          310.75199999999995,
+          551.52,
+          323.712
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          330.33599999999996,
+          369.50399999999996,
+          343.87199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-23/mathpix-recovery-cache/artifacts/ap-calc-ab-2006-form-b-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2006-form-b-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

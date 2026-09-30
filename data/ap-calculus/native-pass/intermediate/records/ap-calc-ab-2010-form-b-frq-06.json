@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2010-form-b-frq-06",
+  "course": "AB",
+  "year": 2010,
+  "form": "B",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2010-FORM-B.pdf",
+      "sha256": "f63f5c0d2d0effe21402d40d6c36d5c355932a3b41fcd5727edc5b6b5c55d084",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2010-FORM-B.pdf",
+      "sha256": "cf8f8326cab92d05acce16fd817ac146312d1729110514f69558917d576fff68"
+    }
+  },
+  "rawPrompt": "Two particles move along the \\(x\\)-axis. For \\(0 \\leq t \\leq 6\\), the position of particle \\(P\\) at time \\(t\\) is given by\n\\(p(t)=2 \\cos \\left(\\frac{\\pi}{4} t\\right)\\), while the position of particle \\(R\\) at time \\(t\\) is given by \\(r(t)=t^{3}-6 t^{2}+9 t+3\\).\n(a) For \\(0 \\leq t \\leq 6\\), find all times \\(t\\) during which particle \\(R\\) is moving to the right.\n(b) For \\(0 \\leq t \\leq 6\\), find all times \\(t\\) during which the two particles travel in opposite directions.\n(c) Find the acceleration of particle \\(P\\) at time \\(t=3\\). Is particle \\(P\\) speeding up, slowing down, or doing neither\nat time \\(t=3\\) ? Explain your reasoning.\n(d) Write, but do not evaluate, an expression for the average distance between the two particles on the interval\n\\(1 \\leq t \\leq 3\\).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2010 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 6}\n\nTwo particles move along the \\(x\\)-axis. For \\(0 \\leq t \\leq 6\\), the position of particle \\(P\\) at time \\(t\\) is given by \\(p(t)=2 \\cos \\left(\\frac{\\pi}{4} t\\right)\\), while the position of particle \\(R\\) at time \\(t\\) is given by \\(r(t)=t^{3}-6 t^{2}+9 t+3\\).\n\\begin{itemize}\n\\item[(a)] For \\(0 \\leq t \\leq 6\\), find all times \\(t\\) during which particle \\(R\\) is moving to the right.\n\\item[(b)] For \\(0 \\leq t \\leq 6\\), find all times \\(t\\) during which the two particles travel in opposite directions.\n\\item[(c)] Find the acceleration of particle \\(P\\) at time \\(t=3\\). Is particle \\(P\\) speeding up, slowing down, or doing neither at time \\(t=3\\) ? Explain your reasoning.\n\\item[(d)] Write, but do not evaluate, an expression for the average distance between the two particles on the interval \\(1 \\leq t \\leq 3\\).\n\\item[(a)] \\(r^{\\prime}(t)=3 t^{2}-12 t+9=3(t-1)(t-3)\\)\n\\(r^{\\prime}(t)=0\\) when \\(t=1\\) and \\(t=3\\)\n\\(r^{\\prime}(t)>0\\) for \\(0<t<1\\) and \\(3<t<6\\)\n\\(r^{\\prime}(t)<0\\) for \\(1<t<3\\)\nTherefore \\(R\\) is moving to the right for \\(0<t<1\\) and \\(3<t<6\\).\n\\item[(b)] \\(p^{\\prime}(t)=-2 \\cdot \\frac{\\pi}{4} \\sin \\left(\\frac{\\pi}{4} t\\right)\\)\n\\(p^{\\prime}(t)=0\\) when \\(t=0\\) and \\(t=4\\)\n\\(p^{\\prime}(t)<0\\) for \\(0<t<4\\)\n\\(p^{\\prime}(t)>0\\) for \\(4<t<6\\)\nTherefore the particles travel in opposite directions for \\(0<t<1\\) and \\(3<t<4\\).\n\\item[(c)] \\(p^{\\prime \\prime}(t)=-2 \\cdot \\frac{\\pi}{4} \\cdot \\frac{\\pi}{4} \\cos \\left(\\frac{\\pi}{4} t\\right)\\)\n\\(p^{\\prime \\prime}(3)=-2\\left(\\frac{\\pi}{4}\\right)^{2} \\cos \\left(\\frac{3 \\pi}{4}\\right)=\\frac{\\pi^{2}}{8} \\cdot \\frac{\\sqrt{2}}{2}>0\\)\n\\(p^{\\prime}(3)<0\\)\nTherefore particle \\(P\\) is slowing down at time \\(t=3\\).\n\\item[(d)] \\(\\frac{1}{2} \\int_{1}^{3}|p(t)-r(t)| d t\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: r^{\\prime}(t) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: p^{\\prime}(t) \\\\ 1: \\text { sign analysis for } p^{\\prime}(t) \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: p^{\\prime \\prime}(3) \\\\ 1: \\text { answer with reason }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits and constant }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          451,
+          579,
+          650
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 5,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          476.352,
+          508.60799999999995,
+          489.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          490.176,
+          498.23999999999995,
+          516.6719999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 14,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          524.16,
+          431.424,
+          537.12
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 15,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          543.7439999999999,
+          486.43199999999996,
+          556.704
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.664,
+          564.192,
+          561.8879999999999,
+          577.1519999999999
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          577.1519999999999,
+          259.77599999999995,
+          590.112
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 20,
+        "type": "text",
+        "rect": [
+          65.088,
+          597.5999999999999,
+          554.4,
+          611.136
+        ]
+      },
+      {
+        "sourcePage": 5,
+        "line": 21,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          610.848,
+          129.31199999999998,
+          622.656
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-27/mathpix-recovery-cache/artifacts/ap-calc-ab-2010-form-b-frq-05--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2010-form-b-frq-05",
+      "sourcePage": 5,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

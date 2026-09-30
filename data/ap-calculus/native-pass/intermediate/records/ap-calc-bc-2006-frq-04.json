@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2006-frq-04",
+  "course": "BC",
+  "year": 2006,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006.pdf",
+      "sha256": "eb5e88c6d750bc87b67224ecc198affdbee6183061abb132710ce4872980d521",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006.pdf",
+      "sha256": "bd5c0408bd40aed41a533805b16f63d48037857207b3f83e8fbe142bd31e18ca"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\n\\hline\n\\begin{tabular}{c}\n$t$ \\\\\n(seconds) \\\\\n\\end{tabular} & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\\\\n\\hline\n\\begin{tabular}{c}\n$v(t)$ \\\\\n(feet per second) \\\\\n\\end{tabular} & 5 & 14 & 22 & 29 & 35 & 40 & 44 & 47 & 49 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nRocket $A$ has positive velocity $v(t)$ after being launched upward from an initial height of 0 feet at time $t=0$ seconds. The velocity of the rocket is recorded for selected values of $t$ over the interval $0 \\leq t \\leq 80$ seconds, as shown in the table above.\\\\\n(a) Find the average acceleration of rocket $A$ over the time interval $0 \\leq t \\leq 80$ seconds. Indicate units of measure.\\\\\n(b) Using correct units, explain the meaning of $\\int_{10}^{70} v(t) d t$ in terms of the rocket's flight. Use a midpoint Riemann sum with 3 subintervals of equal length to approximate $\\int_{10}^{70} v(t) d t$.\\\\\n(c) Rocket $B$ is launched upward with an acceleration of $a(t)=\\frac{3}{\\sqrt{t+1}}$ feet per second per second. At time $t=0$ seconds, the initial height of the rocket is 0 feet, and the initial velocity is 2 feet per second. Which of the two rockets is traveling faster at time $t=80$ seconds? Explain your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 4}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (seconds) & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 \\\\\n\\hline \\(v(t)\\) (feet per second) & 5 & 14 & 22 & 29 & 35 & 40 & 44 & 47 & 49 \\\\\n\\hline\n\\end{tabular}\n\nRocket \\(A\\) has positive velocity \\(v(t)\\) after being launched upward from an initial height of 0 feet at time \\(t=0\\) seconds. The velocity of the rocket is recorded for selected values of \\(t\\) over the interval \\(0 \\leq t \\leq 80\\) seconds, as shown in the table above.\n\\begin{itemize}\n\\item[(a)] Find the average acceleration of rocket \\(A\\) over the time interval \\(0 \\leq t \\leq 80\\) seconds. Indicate units of measure.\n\\item[(b)] Using correct units, explain the meaning of \\(\\int_{10}^{70} v(t) d t\\) in terms of the rocket's flight. Use a midpoint Riemann sum with 3 subintervals of equal length to approximate \\(\\int_{10}^{70} v(t) d t\\).\n\\item[(c)] Rocket \\(B\\) is launched upward with an acceleration of \\(a(t)=\\frac{3}{\\sqrt{t+1}}\\) feet per second per second. At time \\(t=0\\) seconds, the initial height of the rocket is 0 feet, and the initial velocity is 2 feet per second. Which of the two rockets is traveling faster at time \\(t=80\\) seconds? Explain your answer.\n\\item[(a)] Average acceleration of rocket \\(A\\) is\n\\[\n\\frac{v(80)-v(0)}{80-0}=\\frac{49-5}{80}=\\frac{11}{20} \\mathrm{ft} / \\mathrm{sec}^{2}\n\\]\n\\item[(b)] Since the velocity is positive, \\(\\int_{10}^{70} v(t) d t\\) represents the distance, in feet, traveled by rocket \\(A\\) from \\(t=10\\) seconds to \\(t=70\\) seconds.\nA midpoint Riemann sum is\n\\[\n\\begin{aligned}\n& 20[v(20)+v(40)+v(60)] \\\\\n& =20[22+35+44]=2020 \\mathrm{ft}\n\\end{aligned}\n\\]\n\\item[(c)] Let \\(v_{B}(t)\\) be the velocity of rocket \\(B\\) at time \\(t\\).\n\\[\n\\begin{aligned}\n& v_{B}(t)=\\int \\frac{3}{\\sqrt{t+1}} d t=6 \\sqrt{t+1}+C \\\\\n& 2=v_{B}(0)=6+C \\\\\n& v_{B}(t)=6 \\sqrt{t+1}-4 \\\\\n& v_{B}(80)=50>49=v(80)\n\\end{aligned}\n\\]\nRocket \\(B\\) is traveling faster at time \\(t=80\\) seconds.\n\\end{itemize}\n\nUnits of \\(\\mathrm{ft} / \\mathrm{sec}^{2}\\) in (a) and ft in (b)\n\n1 : answer\n\\(3:\\left\\{\\begin{array}{l}1: \\text { explanation } \\\\ 1: \\text { uses } v(20), v(40), v(60) \\\\ 1: \\text { value }\\end{array}\\right.\\)\n\\(4:\\left\\{\\begin{array}{l}1: 6 \\sqrt{t+1} \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { finds } v_{B}(80), \\text { compares to } v(80), \\\\ \\quad \\text { and draws a conclusion }\\end{array}\\right.\\)\n\n1 : units in (a) and (b)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          530
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2008-frq-02",
+  "course": "BC",
+  "year": 2008,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2008.pdf",
+      "sha256": "03b33eb234707fece3d699c865ffd6219b3c515a3220cc9a4c364faba8bfc7c5",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2008.pdf",
+      "sha256": "9f6e880bb45af770174406b5eb2500957dd71e9e2e1506e0c19d4dabe0a88ef3"
+    }
+  },
+  "rawPrompt": "\\begin{center}\n\\begin{tabular}{|c||c|c|c|c|c|c|c|}\n\\hline\n$t$ (hours) & 0 & 1 & 3 & 4 & 7 & 8 & 9 \\\\\n\\hline\n$L(t)$ (people) & 120 & 156 & 176 & 126 & 150 & 80 & 0 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\nConcert tickets went on sale at noon $(t=0)$ and were sold out within 9 hours. The number of people waiting in line to purchase tickets at time $t$ is modeled by a twice-differentiable function $L$ for $0 \\leq t \\leq 9$. Values of $L(t)$ at various times $t$ are shown in the table above.\\\\\n(a) Use the data in the table to estimate the rate at which the number of people waiting in line was changing at 5:30 P.M. $(t=5.5)$. Show the computations that lead to your answer. Indicate units of measure.\\\\\n(b) Use a trapezoidal sum with three subintervals to estimate the average number of people waiting in line during the first 4 hours that tickets were on sale.\\\\\n(c) For $0 \\leq t \\leq 9$, what is the fewest number of times at which $L^{\\prime}(t)$ must equal 0 ? Give a reason for your answer.\\\\\n(d) The rate at which tickets were sold for $0 \\leq t \\leq 9$ is modeled by $r(t)=550 t e^{-t / 2}$ tickets per hour. Based on the model, how many tickets were sold by 3 P.M. ( $t=3$ ), to the nearest whole number?",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2008 SCORING GUIDELINES}\n\n\\section*{Question 2}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(t\\) (hours) & 0 & 1 & 3 & 4 & 7 & 8 & 9 \\\\\n\\hline \\(L(t)\\) (people) & 120 & 156 & 176 & 126 & 150 & 80 & 0 \\\\\n\\hline\n\\end{tabular}\nConcert tickets went on sale at noon \\((t=0)\\) and were sold out within 9 hours. The number of people waiting in line to purchase tickets at time \\(t\\) is modeled by a twice-differentiable function \\(L\\) for \\(0 \\leq t \\leq 9\\). Values of \\(L(t)\\) at various times \\(t\\) are shown in the table above.\n\\begin{itemize}\n\\item[(a)] Use the data in the table to estimate the rate at which the number of people waiting in line was changing at 5:30 p.m. \\((t=5.5)\\). Show the computations that lead to your answer. Indicate units of measure.\n\\item[(b)] Use a trapezoidal sum with three subintervals to estimate the average number of people waiting in line during the first 4 hours that tickets were on sale.\n\\item[(c)] For \\(0 \\leq t \\leq 9\\), what is the fewest number of times at which \\(L^{\\prime}(t)\\) must equal 0 ? Give a reason for your answer.\n\\item[(d)] The rate at which tickets were sold for \\(0 \\leq t \\leq 9\\) is modeled by \\(r(t)=550 t e^{-t / 2}\\) tickets per hour. Based on the model, how many tickets were sold by 3 p.m. ( \\(t=3\\) ), to the nearest whole number?\n\\item[(a)] \\(L^{\\prime}(5.5) \\approx \\frac{L(7)-L(4)}{7-4}=\\frac{150-126}{3}=8\\) people per hour\n\\item[(b)] The average number of people waiting in line during the first 4 hours is approximately\n\\[\n\\begin{aligned}\n& \\frac{1}{4}\\left(\\frac{L(0)+L(1)}{2}(1-0)+\\frac{L(1)+L(3)}{2}(3-1)+\\frac{L(3)+L(4)}{2}(4-3)\\right) \\\\\n& =155.25 \\text { people }\n\\end{aligned}\n\\]\n\\item[(c)] \\(L\\) is differentiable on [0, 9] so the Mean Value Theorem implies \\(L^{\\prime}(t)>0\\) for some \\(t\\) in (1, 3) and some \\(t\\) in (4, 7). Similarly, \\(L^{\\prime}(t)<0\\) for some \\(t\\) in (3, 4) and some \\(t\\) in (7, 8). Then, since \\(L^{\\prime}\\) is continuous on [0, 9], the Intermediate Value Theorem implies that \\(L^{\\prime}(t)=0\\) for at least three values of \\(t\\) in [0, 9].\nOR\nThe continuity of \\(L\\) on [1, 4] implies that \\(L\\) attains a maximum value there. Since \\(L(3)>L(1)\\) and \\(L(3)>L(4)\\), this maximum occurs on (1, 4). Similarly, \\(L\\) attains a minimum on \\((3,7)\\) and a maximum on (4, 8). \\(L\\) is differentiable, so \\(L^{\\prime}(t)=0\\) at each relative extreme point on (0, 9). Therefore \\(L^{\\prime}(t)=0\\) for at least three values of \\(t\\) in [0, 9].\n[Note: There is a function \\(L\\) that satisfies the given conditions with \\(L^{\\prime}(t)=0\\) for exactly three values of \\(t\\).]\n\\item[(d)] \\(\\int_{0}^{3} r(t) d t=972.784\\)\nThere were approximately 973 tickets sold by 3 p.m.\n\\end{itemize}\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : estimate } \\\\ 1 \\text { : units }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : trapezoidal sum } \\\\ 1 \\text { : answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers change in } \\\\ \\quad \\text { sign of } L^{\\prime} \\\\ 1: \\text { analysis } \\\\ 1: \\text { conclusion }\\end{array}\\right.\\)\n\nOR\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers relative extrema } \\\\ \\quad \\text { of } L \\text { on }(0,9) \\\\ 1: \\text { analysis } \\\\ 1: \\text { conclusion }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : integrand } \\\\ 1 \\text { : limits and answer }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          40,
+          65,
+          572,
+          417
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2008.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

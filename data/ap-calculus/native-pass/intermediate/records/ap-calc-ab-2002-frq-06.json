@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2002-frq-06",
+  "course": "AB",
+  "year": 2002,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2002.pdf",
+      "sha256": "9e861f0beec0318b6fc98d9217480c08a18cd1cee35e74e3d185d6e328cae811",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2002.pdf",
+      "sha256": "a31414565583f7aeead9d2fe64b92928ad54fdd0ff8830b2c8fdad43cf6d977b"
+    }
+  },
+  "rawPrompt": "\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(x\\) & -1.5 & -1.0 & -0.5 & 0 & 0.5 & 1.0 & 1.5 \\\\\n\\hline \\(f(x)\\) & -1 & -4 & -6 & -7 & -6 & -4 & -1 \\\\\n\\hline \\(f^{\\prime}(x)\\) & -7 & -5 & -3 & 0 & 3 & 5 & 7 \\\\\n\\hline\n\\end{tabular}\nLet \\(f\\) be a function that is differentiable for all real numbers. The table above gives the values of \\(f\\) and its\nderivative \\(f^{\\prime}\\) for selected points \\(x\\) in the closed interval \\(-1.5 \\leq x \\leq 1.5\\). The second derivative of \\(f\\) has\nthe property that \\(f^{\\prime \\prime}(x)>0\\) for \\(-1.5 \\leq x \\leq 1.5\\).\n(a) Evaluate \\(\\int_{0}^{1.5}\\left(3 f^{\\prime}(x)+4\\right) d x\\). Show the work that leads to your answer.\n(b) Write an equation of the line tangent to the graph of \\(f\\) at the point where \\(x=1\\). Use this line to approximate\nthe value of \\(f(1.2)\\). Is this approximation greater than or less than the actual value of \\(f(1.2)\\) ? Give a reason\nfor your answer.\n(c) Find a positive real number \\(r\\) having the property that there must exist a value \\(c\\) with \\(0<c<0.5\\)\nand \\(f^{\\prime \\prime}(c)=r\\). Give a reason for your answer.\n(d) Let \\(g\\) be the function given by \\(g(x)=\\left\\{\\begin{array}{ll}2 x^{2}-x-7 & \\text { for } x<0 \\\\ 2 x^{2}+x-7 & \\text { for } x \\geq 0\\end{array}\\right.\\).\nThe graph of \\(g\\) passes through each of the points \\((x, f(x))\\) given in the table above. Is it possible that\n\\(f\\) and \\(g\\) are the same function? Give a reason for your answer.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB 2002 SCORING GUIDELINES}\n\n\\section*{Question 6}\n\n\\begin{tabular}[t]{|l|l|l|l|l|l|l|l|}\n\\hline \\(x\\) & -1.5 & -1.0 & -0.5 & 0 & 0.5 & 1.0 & 1.5 \\\\\n\\hline \\(f(x)\\) & -1 & -4 & -6 & -7 & -6 & -4 & -1 \\\\\n\\hline \\(f^{\\prime}(x)\\) & -7 & -5 & -3 & 0 & 3 & 5 & 7 \\\\\n\\hline\n\\end{tabular}\nLet \\(f\\) be a function that is differentiable for all real numbers. The table above gives the values of \\(f\\) and its derivative \\(f^{\\prime}\\) for selected points \\(x\\) in the closed interval \\(-1.5 \\leq x \\leq 1.5\\). The second derivative of \\(f\\) has the property that \\(f^{\\prime \\prime}(x)>0\\) for \\(-1.5 \\leq x \\leq 1.5\\).\n\\begin{itemize}\n\\item[(a)] Evaluate \\(\\int_{0}^{1.5}\\left(3 f^{\\prime}(x)+4\\right) d x\\). Show the work that leads to your answer.\n\\item[(b)] Write an equation of the line tangent to the graph of \\(f\\) at the point where \\(x=1\\). Use this line to approximate the value of \\(f(1.2)\\). Is this approximation greater than or less than the actual value of \\(f(1.2)\\) ? Give a reason for your answer.\n\\item[(c)] Find a positive real number \\(r\\) having the property that there must exist a value \\(c\\) with \\(0<c<0.5\\) and \\(f^{\\prime \\prime}(c)=r\\). Give a reason for your answer.\n\\item[(d)] Let \\(g\\) be the function given by \\(g(x)= \\begin{cases}2 x^{2}-x-7 & \\text { for } x<0 \\\\ 2 x^{2}+x-7 & \\text { for } x \\geq 0 .\\end{cases}\\) The graph of \\(g\\) passes through each of the points \\((x, f(x))\\) given in the table above. Is it possible that \\(f\\) and \\(g\\) are the same function? Give a reason for your answer.\n\\item[(a)]\n\\[\n\\begin{aligned}\n& \\int_{0}^{1.5}\\left(3 f^{\\prime}(x)+4\\right) d x=3 \\int_{0}^{1.5} f^{\\prime}(x) d x+\\int_{0}^{1.5} 4 d x \\\\\n& \\quad=3 f(x)+\\left.4 x\\right|_{0} ^{1.5}=3(-1-(-7))+4(1.5)=24\n\\end{aligned}\n\\]\n\\item[(b)] \\(y=5(x-1)-4\\)\n\\(f(1.2) \\approx 5(0.2)-4=-3\\)\nThe approximation is less than \\(f(1.2)\\) because the graph of \\(f\\) is concave up on the interval\n\\(1<x<1.2\\).\n\\item[(c)] By the Mean Value Theorem there is a \\(c\\) with\n\\(0<c<0.5\\) such that\n\\(f^{\\prime \\prime}(c)=\\frac{f^{\\prime}(0.5)-f^{\\prime}(0)}{0.5-0}=\\frac{3-0}{0.5}=6=r\\)\n\\item[(d)]\n\\[\n\\begin{gathered}\n\\lim _{x \\rightarrow 0^{-}} g^{\\prime}(x)=\\lim _{x \\rightarrow 0^{-}}(4 x-1)=-1 \\\\\n\\lim _{x \\rightarrow 0^{+}} g^{\\prime}(x)=\\lim _{x \\rightarrow 0^{+}}(4 x+1)=+1\n\\end{gathered}\n\\]\nThus \\(g^{\\prime}\\) is not continuous at \\(x=0\\), but \\(f^{\\prime}\\) is continuous at \\(x=0\\), so \\(f \\neq g\\).\nOR\n\\(g^{\\prime \\prime}(x)=4\\) for all \\(x \\neq 0\\), but it was shown in part\n(c) that \\(f^{\\prime \\prime}(c)=6\\) for some \\(c \\neq 0\\), so \\(f \\neq g\\).\n\\end{itemize}\n\\(2\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3 \\begin{cases}1: & \\text { tangent line } \\\\ 1: & \\text { computes } y \\text { on tangent line at } x=1.2 \\\\ 1: & \\text { answer with reason }\\end{cases}\\)\n\\(2 \\begin{cases}1: & \\text { reference to MVT for } f^{\\prime} \\text { (or differentiability } \\\\ & \\left.\\text { of } f^{\\prime}\\right) \\\\ 1: & \\text { value of } r \\text { for interval } 0 \\leq x \\leq 0.5\\end{cases}\\)\n\\(2 \\begin{cases}1: & \\text { answers \"no\" with reference to } \\\\ & g^{\\prime} \\text { or } g^{\\prime \\prime} \\\\ 1: & \\text { correct reason }\\end{cases}\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          76,
+          572,
+          432
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 2,
+        "type": "table",
+        "rect": [
+          153.21599999999998,
+          81.50399999999999,
+          458.20799999999997,
+          138.816
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 39,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          150.624,
+          532.8,
+          163.58399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 40,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          163.58399999999997,
+          529.0559999999999,
+          175.968
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 41,
+        "type": "text",
+        "rect": [
+          63.93599999999999,
+          179.712,
+          281.664,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 42,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          201.31199999999998,
+          400.60799999999995,
+          225.504
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 44,
+        "type": "text",
+        "rect": [
+          65.088,
+          232.70399999999998,
+          563.04,
+          245.664
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 45,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          245.664,
+          560.16,
+          258.62399999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 46,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          259.2,
+          156.95999999999998,
+          272.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 48,
+        "type": "text",
+        "rect": [
+          65.088,
+          277.632,
+          522.432,
+          290.592
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 49,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          292.032,
+          291.74399999999997,
+          304.416
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 51,
+        "type": "text",
+        "rect": [
+          65.088,
+          310.176,
+          383.03999999999996,
+          345.31199999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 52,
+        "type": "text",
+        "rect": [
+          82.65599999999999,
+          346.75199999999995,
+          534.24,
+          359.712
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 53,
+        "type": "text",
+        "rect": [
+          80.928,
+          359.712,
+          360.57599999999996,
+          372.67199999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-19/mathpix-cache/artifacts/ap-calc-ab-2002-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2002-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

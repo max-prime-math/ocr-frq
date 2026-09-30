@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-form-b-frq-01",
+  "course": "AB",
+  "year": 2008,
+  "form": "B",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008-FORM-B.pdf",
+      "sha256": "fbb677a84e5c502522e698af497bef103355ec9482783e5e661f5c03f85df2eb",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008-FORM-B.pdf",
+      "sha256": "20c0da48412fe259116c8d818cf92ecb3a783537ca20494c332cf0555e6dbfda"
+    }
+  },
+  "rawPrompt": "Let \\(R\\) be the region in the first quadrant bounded by the graphs of \\(y=\\sqrt{x}\\) and \\(y=\\frac{x}{3}\\).\n(a) Find the area of \\(R\\).\n(b) Find the volume of the solid generated when \\(R\\) is rotated about the vertical line \\(x=-1\\).\n(c) The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(y\\)-axis are squares.\nFind the volume of this solid.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES (Form B)}\n\n\\section*{Question 1}\n\nLet \\(R\\) be the region in the first quadrant bounded by the graphs of \\(y=\\sqrt{x}\\) and \\(y=\\frac{x}{3}\\).\n\\begin{itemize}\n\\item[(a)] Find the area of \\(R\\).\n\\item[(b)] Find the volume of the solid generated when \\(R\\) is rotated about the vertical line \\(x=-1\\).\n\\item[(c)] The region \\(R\\) is the base of a solid. For this solid, the cross sections perpendicular to the \\(y\\)-axis are squares. Find the volume of this solid.\n\\end{itemize}\n\nThe graphs of \\(y=\\sqrt{x}\\) and \\(y=\\frac{x}{3}\\) intersect at the points \\((0,0)\\) and \\((9,3)\\).\n\\begin{itemize}\n\\item[(a)] \\(\\int_{0}^{9}\\left(\\sqrt{x}-\\frac{x}{3}\\right) d x=4.5\\)\nOR\n\\[\n\\int_{0}^{3}\\left(3 y-y^{2}\\right) d y=4.5\n\\]\n\\item[(b)]\n\\[\n\\begin{aligned}\n& \\pi \\int_{0}^{3}\\left((3 y+1)^{2}-\\left(y^{2}+1\\right)^{2}\\right) d y \\\\\n& \\quad=\\frac{207 \\pi}{5}=130.061 \\text { or } 130.062\n\\end{aligned}\n\\]\n\\item[(c)] \\(\\int_{0}^{3}\\left(3 y-y^{2}\\right)^{2} d y=8.1\\)\n\\item[] \\(3:\\left\\{\\begin{array}{l}1: \\text { limits } \\\\ 1: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(4:\\left\\{\\begin{array}{l}1: \\text { constant and limits } \\\\ 2: \\text { integrand } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\item[] \\(2:\\left\\{\\begin{array}{l}1: \\text { integrand } \\\\ 1: \\text { limits and answer }\\end{array}\\right.\\)\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          394
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 7,
+        "type": "list_item",
+        "rect": [
+          50.687999999999995,
+          203.04,
+          451.58399999999995,
+          225.21599999999998
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          232.70399999999998,
+          168.48,
+          245.088
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          251.13599999999997,
+          475.2,
+          263.52
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          270.43199999999996,
+          558.7199999999999,
+          283.392
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.368,
+          282.816,
+          214.272,
+          294.048
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-form-b-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-form-b-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

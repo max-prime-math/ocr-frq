@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2014-frq-06",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "rawPrompt": "Consider the differential equation \\(\\frac{d y}{d x}=(3-y) \\cos x\\). Let \\(y=f(x)\\) be the particular solution to the differential\nequation with the initial condition \\(f(0)=1\\). The function \\(f\\) is defined for all real numbers.\n(a) A portion of the slope field of the differential equation is given below. Sketch the solution curve through the\npoint (0, 1).\n\\includegraphics{ap-calc-ab-2014-frq-06-diagram-01.png}\n(b) Write an equation for the line tangent to the solution curve in part (a) at the point (0, 1). Use the equation to\napproximate \\(f(0.2)\\).\n(c) Find \\(y=f(x)\\), the particular solution to the differential equation with the initial condition \\(f(0)=1\\).",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2014-frq-06-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2014-frq-06-diagram-01.png",
+      "sourcePage": 7,
+      "sourceRect": [
+        162.88800048828125,
+        139.27200317382812,
+        448.5360107421875,
+        420.6000061035156
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{Question 6}\n\nConsider the differential equation \\(\\frac{d y}{d x}=(3-y) \\cos x\\). Let \\(y=f(x)\\) be the particular solution to the differential equation with the initial condition \\(f(0)=1\\). The function \\(f\\) is defined for all real numbers.\n\\begin{itemize}\n\\item[(a)] A portion of the slope field of the differential equation is given below. Sketch the solution curve through the point (0, 1).\n\\item[(b)] Write an equation for the line tangent to the solution curve in part (a) at the point (0, 1). Use the equation to approximate \\(f(0.2)\\).\n\\item[(c)] Find \\(y=f(x)\\), the particular solution to the differential equation with the initial condition \\(f(0)=1\\).\n\\item[(a)]\n![](https://cdn.mathpix.com/cropped/81d14fa1-b948-4490-827e-46897257bdbe-1.jpg?height=722&width=735&top_left_y=937&top_left_x=249)\n\\item[(b)] \\(\\left.\\frac{d y}{d x}\\right|_{(x, y)=(0,1)}=2 \\cos 0=2\\)\nAn equation for the tangent line is \\(y=2 x+1\\).\n\\[\nf(0.2) \\approx 2(0.2)+1=1.4\n\\]\n\\item[(c)] \\(\\frac{d y}{d x}=(3-y) \\cos x\\)\n\\[\n\\begin{aligned}\n& \\int \\frac{d y}{3-y}=\\int \\cos x d x \\\\\n& -\\ln |3-y|=\\sin x+C \\\\\n& -\\ln 2=\\sin 0+C \\Rightarrow C=-\\ln 2 \\\\\n& -\\ln |3-y|=\\sin x-\\ln 2\n\\end{aligned}\n\\]\nBecause \\(y(0)=1, y<3\\), so \\(|3-y|=3-y\\)\n\\[\n\\begin{aligned}\n& 3-y=2 e^{-\\sin x} \\\\\n& y=3-2 e^{-\\sin x}\n\\end{aligned}\n\\]\nNote: this solution is valid for all real numbers.\n\\end{itemize}\n\n1 : solution curve\n\\(2:\\left\\{\\begin{array}{l}1: \\text { tangent line equation } \\\\ 1: \\text { approximation }\\end{array}\\right.\\)\n\\(6:\\left\\{\\begin{array}{l}1: \\text { separation of variables } \\\\ 2: \\text { antiderivatives } \\\\ 1: \\text { constant of integration } \\\\ 1: \\text { uses initial condition } \\\\ 1: \\text { solves for } y\\end{array}\\right.\\)\nNote: \\(\\max 3 / 6[1-2-0-0-0]\\) if no constant of integration\n\nNote: 0/6 if no separation of variables",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          45,
+          54,
+          567,
+          607
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          49.535999999999994,
+          58.751999999999995,
+          560.736,
+          82.94399999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          85.24799999999999,
+          469.43999999999994,
+          99.36
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          65.664,
+          107.136,
+          562.4639999999999,
+          120.09599999999999
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          120.09599999999999,
+          137.37599999999998,
+          133.63199999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "diagram",
+        "rect": [
+          165.88799999999998,
+          142.272,
+          445.53599999999994,
+          417.59999999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          429.40799999999996,
+          561.8879999999999,
+          442.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          444.96,
+          176.256,
+          459.07199999999995
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          467.13599999999997,
+          531.072,
+          481.248
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

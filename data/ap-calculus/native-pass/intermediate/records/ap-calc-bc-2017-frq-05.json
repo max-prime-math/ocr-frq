@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2017-frq-05",
+  "course": "BC",
+  "year": 2017,
+  "form": "standard",
+  "question": 5,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2017.pdf",
+      "sha256": "eefe8a82a234a69a7eb166192b09a603e46a874201d6f65fec50507226dba62f",
+      "pages": [
+        6
+      ]
+    },
+    "promptPages": [
+      6
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2017.pdf",
+      "sha256": "751b85d03203baf4ae242b20cba1ae15f475e6efceaa0220903665100c0cb68a"
+    }
+  },
+  "rawPrompt": "Let $f$ be the function defined by $f(x)=\\frac{3}{2 x^{2}-7 x+5}$.\\\\\n(a) Find the slope of the line tangent to the graph of $f$ at $x=3$.\\\\\n(b) Find the $x$-coordinate of each critical point of $f$ in the interval $1<x<2.5$. Classify each critical point as the location of a relative minimum, a relative maximum, or neither. Justify your answers.\\\\\n(c) Using the identity that $\\frac{3}{2 x^{2}-7 x+5}=\\frac{2}{2 x-5}-\\frac{1}{x-1}$, evaluate $\\int_{5}^{\\infty} f(x) d x$ or show that the integral diverges.\\\\\n(d) Determine whether the series $\\sum_{n=5}^{\\infty} \\frac{3}{2 n^{2}-7 n+5}$ converges or diverges. State the conditions of the test used for determining convergence or divergence.",
+  "assets": [],
+  "rawScoringGuide": "\\section*{Question 5}\n\\begin{itemize}\n\\item[(a)] \\(f^{\\prime}(x)=\\frac{-3(4 x-7)}{\\left(2 x^{2}-7 x+5\\right)^{2}}\\)\n\\[\nf^{\\prime}(3)=\\frac{(-3)(5)}{(18-21+5)^{2}}=-\\frac{15}{4}\n\\]\n\\item[(b)] \\(f^{\\prime}(x)=\\frac{-3(4 x-7)}{\\left(2 x^{2}-7 x+5\\right)^{2}}=0 \\Rightarrow x=\\frac{7}{4}\\)\nThe only critical point in the interval \\(1<x<2.5\\) has \\(x\\)-coordinate \\(\\frac{7}{4}\\).\n\\(f^{\\prime}\\) changes sign from positive to negative at \\(x=\\frac{7}{4}\\).\nTherefore, \\(f\\) has a relative maximum at \\(x=\\frac{7}{4}\\).\n\\item[(c)] \\(\\int_{5}^{\\infty} f(x) d x=\\lim _{b \\rightarrow \\infty} \\int_{5}^{b} \\frac{3}{2 x^{2}-7 x+5} d x=\\lim _{b \\rightarrow \\infty} \\int_{5}^{b}\\left(\\frac{2}{2 x-5}-\\frac{1}{x-1}\\right) d x\\)\n\\[\n\\begin{aligned}\n& =\\lim _{b \\rightarrow \\infty}[\\ln (2 x-5)-\\ln (x-1)]_{5}^{b}=\\lim _{b \\rightarrow \\infty}\\left[\\ln \\left(\\frac{2 x-5}{x-1}\\right)\\right]_{5}^{b} \\\\\n& =\\lim _{b \\rightarrow \\infty}\\left[\\ln \\left(\\frac{2 b-5}{b-1}\\right)-\\ln \\left(\\frac{5}{4}\\right)\\right]=\\ln 2-\\ln \\left(\\frac{5}{4}\\right)=\\ln \\left(\\frac{8}{5}\\right)\n\\end{aligned}\n\\]\n\\item[(d)] \\(f\\) is continuous, positive, and decreasing on \\([5, \\infty)\\).\nThe series converges by the integral test since \\(\\int_{5}^{\\infty} \\frac{3}{2 x^{2}-7 x+5} d x\\) converges.\n\\[\n\\begin{aligned}\n& -\\mathrm{OR}- \\\\\n& \\frac{3}{2 n^{2}-7 n+5}>0 \\text { and } \\frac{1}{n^{2}}>0 \\text { for } n \\geq 5\n\\end{aligned}\n\\]\nSince \\(\\lim _{n \\rightarrow \\infty} \\frac{\\frac{3}{2 n^{2}-7 n+5}}{\\frac{1}{n^{2}}}=\\frac{3}{2}\\) and the series \\(\\sum_{n=5}^{\\infty} \\frac{1}{n^{2}}\\) converges, the series \\(\\sum_{n=5}^{\\infty} \\frac{3}{2 n^{2}-7 n+5}\\) converges by the limit comparison test.\n\\end{itemize}\n\\(2: f^{\\prime}(3)\\)\n\\(2:\\left\\{\\begin{array}{c}1: x \\text {-coordinate } \\\\ 1: \\text { relative maximum } \\\\ \\quad \\text { with justification }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { antiderivative } \\\\ 1: \\text { limit expression } \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\n2 : answer with conditions",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 6,
+        "rect": [
+          39,
+          84,
+          571,
+          360
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2017.zip"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

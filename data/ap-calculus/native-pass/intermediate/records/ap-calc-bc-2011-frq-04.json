@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-bc-2011-frq-04",
+  "course": "BC",
+  "year": 2011,
+  "form": "standard",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2011.pdf",
+      "sha256": "1d5498f630f16dddded018c0eacc629a47b86d80d0ee958bea3ffc76b1ef609f",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2011.pdf",
+      "sha256": "fec9a2a5fb09785536184c754b9a3fefd38ce9c90003687c97d85d8496562fa5"
+    }
+  },
+  "rawPrompt": "\\includegraphics{ap-calc-bc-2011-frq-04-diagram-01.png}\n\nThe continuous function $f$ is defined on the interval $-4 \\leq x \\leq 3$. The graph of $f$ consists of two quarter circles and one line segment, as shown in the figure above. Let $g(x)=2 x+\\int_{0}^{x} f(t) d t$.\\\\\n(a) Find $g(-3)$. Find $g^{\\prime}(x)$ and evaluate $g^{\\prime}(-3)$.\\\\\n(b) Determine the $x$-coordinate of the point at which $g$ has an absolute maximum on the interval $-4 \\leq x \\leq 3$. Justify your answer.\\\\\n(c) Find all values of $x$ on the interval $-4<x<3$ for which the graph of $g$ has a point of inflection. Give a reason for your answer.\\\\\n(d) Find the average rate of change of $f$ on the interval $-4 \\leq x \\leq 3$. There is no point $c,-4<c<3$, for which $f^{\\prime}(c)$ is equal to that average rate of change. Explain why this statement does not contradict the Mean Value Theorem.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2011-frq-04-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2011-frq-04-diagram-01.png",
+      "sourcePage": 5,
+      "sourceRect": [
+        179.0,
+        63.0,
+        433.0,
+        309.0
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS BC \\\\ 2011 SCORING GUIDELINES}\n\n\\section*{Question 4}\n\nThe continuous function \\(f\\) is defined on the interval \\(-4 \\leq x \\leq 3\\). The graph of \\(f\\) consists of two quarter circles and one line segment, as shown in the figure above.\nLet \\(g(x)=2 x+\\int_{0}^{x} f(t) d t\\).\n\\begin{itemize}\n\\item[(a)] Find \\(g(-3)\\). Find \\(g^{\\prime}(x)\\) and evaluate \\(g^{\\prime}(-3)\\).\n\\item[(b)] Determine the \\(x\\)-coordinate of the point at which \\(g\\) has an absolute maximum on the interval \\(-4 \\leq x \\leq 3\\). Justify your answer.\n\\item[(c)] Find all values of \\(x\\) on the interval \\(-4<x<3\\) for which the graph of \\(g\\) has a point of inflection. Give a reason for your answer.\n\\item[(d)] Find the average rate of change of \\(f\\) on the interval \\(-4 \\leq x \\leq 3\\). There is no point \\(c,-4<c<3\\), for which \\(f^{\\prime}(c)\\) is equal to that average rate of change. Explain why this statement does not contradict the Mean Value Theorem.\n\\item[(a)] \\(g(-3)=2(-3)+\\int_{0}^{-3} f(t) d t=-6-\\frac{9 \\pi}{4}\\)\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)=2+f(x) \\\\\n& g^{\\prime}(-3)=2+f(-3)=2\n\\end{aligned}\n\\]\n\\item[(b)] \\(g^{\\prime}(x)=0\\) when \\(f(x)=-2\\). This occurs at \\(x=\\frac{5}{2}\\).\n\\[\n\\begin{aligned}\n& g^{\\prime}(x)>0 \\text { for }-4<x<\\frac{5}{2} \\text { and } g^{\\prime}(x)<0 \\text { for } \\frac{5}{2}<x<3 \\text {. } \\\\\n& \\text { Therefore } g \\text { has an absolute maximum at } x=\\frac{5}{2} \\text {. }\n\\end{aligned}\n\\]\n\\item[(c)] \\(g^{\\prime \\prime}(x)=f^{\\prime}(x)\\) changes sign only at \\(x=0\\). Thus the graph of \\(g\\) has a point of inflection at \\(x=0\\).\n\\end{itemize}\n\\(3:\\left\\{\\begin{array}{l}1: g(-3) \\\\ 1: g^{\\prime}(x) \\\\ 1: g^{\\prime}(-3)\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: \\text { considers } g^{\\prime}(x)=0 \\\\ 1: \\text { identifies interior candidate } \\\\ 1: \\text { answer with justification }\\end{array}\\right.\\)\n\n1 : answer with reason\n\\(2:\\left\\{\\begin{array}{l}1: \\text { average rate of change } \\\\ 1: \\text { explanation }\\end{array}\\right.\\)\n\\begin{itemize}\n\\item[(d)] The average rate of change of \\(f\\) on the interval \\(-4 \\leq x \\leq 3\\) is \\(\\frac{f(3)-f(-4)}{3-(-4)}=-\\frac{2}{7}\\).\nTo apply the Mean Value Theorem, \\(f\\) must be differentiable at each point in the interval \\(-4<x<3\\). However, \\(f\\) is not differentiable at \\(x=-3\\) and \\(x=0\\).\n\\end{itemize}",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          62,
+          572,
+          523
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2011.zip"
+    },
+    {
+      "type": "visually-verified-original-pdf-diagram-recovery",
+      "sourcePage": 5,
+      "sourceRect": [
+        179.0,
+        63.0,
+        433.0,
+        309.0
+      ],
+      "previouslyMisassignedTo": "ap-calc-bc-2011-frq-03"
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

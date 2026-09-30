@@ -1,0 +1,140 @@
+{
+  "id": "ap-calc-ab-2007-frq-01",
+  "course": "AB",
+  "year": 2007,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2007.pdf",
+      "sha256": "27e1668ec32dbf445442b20886292bcffa2a7438aed751751e31cf1df706c3be",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2007.pdf",
+      "sha256": "46bda1fa98bd4908555df686bb6a20d2e3ee31d4271a08554766831dc0281469"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "Let $R$ be the region in the first and second quadrants bounded above by the graph of $y = frac(20,1 + x^(2))$ and below by the horizontal line $y = 2$.\n\n(a) Find the area of $R$.\n\n(b) Find the volume of the solid generated when $R$ is rotated about the $x$-axis.\n\n(c) The region $R$ is the base of a solid. For this solid, the cross sections perpendicular to the $x$-axis are semicircles. Find the volume of this solid.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          410
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 2,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          50.687999999999995,
+          200.44799999999998,
+          543.168,
+          227.808
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          228.95999999999998,
+          191.808,
+          241.344
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 10,
+        "type": "list_item",
+        "rect": [
+          65.088,
+          249.98399999999998,
+          168.48,
+          262.368
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 11,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          267.84,
+          413.28,
+          280.79999999999995
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          65.664,
+          286.56,
+          520.992,
+          298.94399999999996
+        ]
+      },
+      {
+        "sourcePage": 2,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          298.94399999999996,
+          269.28,
+          310.176
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "67aa13301986f921f27c64cefaaa48719eb3371d62330cef06094b02581d74ca",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-24/mathpix-recovery-cache/artifacts/ap-calc-ab-2007-frq-01--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2007-frq-01",
+      "sourcePage": 2,
+      "sourceSha256Matches": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2009-frq-01",
+  "course": "BC",
+  "year": 2009,
+  "form": "standard",
+  "question": 1,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2009.pdf",
+      "sha256": "9de7396e1c4f6e880bc3487cb8ff969b5e77f7cb878167b8d3d1f55f0f4f5a45",
+      "pages": [
+        2
+      ]
+    },
+    "promptPages": [
+      2
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2009.pdf",
+      "sha256": "e5571adedf0cd09dc4c56e01f4623459b7e3958a5af8d3ffef65dae2aa2804be"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2009-frq-01-diagram-01.jpg\", width: 65%)\n\nCaren rides her bicycle along a straight road from home to school, starting at home at time $t = 0$ minutes and arriving at school at time $t = 12$ minutes. During the time interval $0 <= t <= 12$ minutes, her velocity $v(t)$, in miles per minute, is modeled by the piecewise-linear function whose graph is shown above.\n\n(a) Find the acceleration of Caren's bicycle at time $t = 7.5$ minutes. Indicate units of measure.\n\n(b) Using correct units, explain the meaning of $integral_(0)^(12)| v(t)| d t$ in terms of Caren's trip. Find the value of $integral_(0)^(12)| v(t)| d t$.\n\n(c) Shortly after leaving home, Caren realizes she left her calculus homework at home, and she returns to get it. At what time does she turn around to go back home? Give a reason for your answer.\n\n(d) Larry also rides his bicycle along a straight road from home to school in 12 minutes. His velocity is modeled by the function $w$ given by $w(t)= frac(pi,15) sin lr((frac(pi,12) t))$, where $w(t)$ is in miles per minute for $0 <= t <= 12$ minutes. Who lives closer to school: Caren or Larry? Show the work that leads to your answer.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2009-frq-01-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2009-frq-01-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2009_fig1.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 2,
+        "rect": [
+          40,
+          65,
+          572,
+          587
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "5b75380e7bedb094dc63e430044f1097daa42bd2c92a13f8e8d97f726b9df6d4",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2009.zip"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-calc-ab-2008-frq-03",
+  "course": "AB",
+  "year": 2008,
+  "form": "standard",
+  "question": 3,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2008.pdf",
+      "sha256": "4d8b37564b35f55d6064007a6516ab5c12ad04ca1def08b865a1159e2423c4ff",
+      "pages": [
+        4
+      ]
+    },
+    "promptPages": [
+      4
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2008.pdf",
+      "sha256": "22443fbcadae042c8d225475cb3db14a72240ed44b0d255570157c75edc1fc38"
+    }
+  },
+  "rawPrompt": "Oil is leaking from a pipeline on the surface of a lake and forms an oil slick whose volume increases at a\nconstant rate of 2000 cubic centimeters per minute. The oil slick takes the form of a right circular cylinder\nwith both its radius and height changing with time. (Note: The volume \\(V\\) of a right circular cylinder with\nradius \\(r\\) and height \\(h\\) is given by \\(V=\\pi r^{2} h\\).)\n(a) At the instant when the radius of the oil slick is 100 centimeters and the height is 0.5 centimeter, the radius is\nincreasing at the rate of 2.5 centimeters per minute. At this instant, what is the rate of change of the height of\nthe oil slick with respect to time, in centimeters per minute?\n(b) A recovery device arrives on the scene and begins removing oil. The rate at which oil is removed is\n\\(R(t)=400 \\sqrt{t}\\) cubic centimeters per minute, where \\(t\\) is the time in minutes since the device began working.\nOil continues to leak at the rate of 2000 cubic centimeters per minute. Find the time \\(t\\) when the oil slick\nreaches its maximum volume. Justify your answer.\n(c) By the time the recovery device began removing oil, 60,000 cubic centimeters of oil had already leaked.\nWrite, but do not evaluate, an expression involving an integral that gives the volume of oil at the time found\nin part (b).",
+  "assets": [],
+  "rawScoringGuide": "\\section*{AP \\({ }^{\\text {® }}\\) CALCULUS AB \\\\ 2008 SCORING GUIDELINES}\n\n\\section*{Question 3}\n\nOil is leaking from a pipeline on the surface of a lake and forms an oil slick whose volume increases at a constant rate of 2000 cubic centimeters per minute. The oil slick takes the form of a right circular cylinder with both its radius and height changing with time. (Note: The volume \\(V\\) of a right circular cylinder with radius \\(r\\) and height \\(h\\) is given by \\(V=\\pi r^{2} h\\).)\n\\begin{itemize}\n\\item[(a)] At the instant when the radius of the oil slick is 100 centimeters and the height is 0.5 centimeter, the radius is increasing at the rate of 2.5 centimeters per minute. At this instant, what is the rate of change of the height of the oil slick with respect to time, in centimeters per minute?\n\\item[(b)] A recovery device arrives on the scene and begins removing oil. The rate at which oil is removed is \\(R(t)=400 \\sqrt{t}\\) cubic centimeters per minute, where \\(t\\) is the time in minutes since the device began working. Oil continues to leak at the rate of 2000 cubic centimeters per minute. Find the time \\(t\\) when the oil slick reaches its maximum volume. Justify your answer.\n\\item[(c)] By the time the recovery device began removing oil, 60,000 cubic centimeters of oil had already leaked. Write, but do not evaluate, an expression involving an integral that gives the volume of oil at the time found in part (b).\n\\item[(a)] When \\(r=100 \\mathrm{~cm}\\) and \\(h=0.5 \\mathrm{~cm}, \\frac{d V}{d t}=2000 \\mathrm{~cm}^{3} / \\mathrm{min}\\) and \\(\\frac{d r}{d t}=2.5 \\mathrm{~cm} / \\mathrm{min}\\).\n\\[\n\\begin{aligned}\n& \\frac{d V}{d t}=2 \\pi r \\frac{d r}{d t} h+\\pi r^{2} \\frac{d h}{d t} \\\\\n& 2000=2 \\pi(100)(2.5)(0.5)+\\pi(100)^{2} \\frac{d h}{d t} \\\\\n& \\frac{d h}{d t}=0.038 \\text { or } 0.039 \\mathrm{~cm} / \\mathrm{min}\n\\end{aligned}\n\\]\n\\item[(b)] \\(\\frac{d V}{d t}=2000-R(t)\\), so \\(\\frac{d V}{d t}=0\\) when \\(R(t)=2000\\).\nThis occurs when \\(t=25\\) minutes.\nSince \\(\\frac{d V}{d t}>0\\) for \\(0<t<25\\) and \\(\\frac{d V}{d t}<0\\) for \\(t>25\\), the oil slick reaches its maximum volume 25 minutes after the device begins working.\n\\item[(c)] The volume of oil, in \\(\\mathrm{cm}^{3}\\), in the slick at time \\(t=25\\) minutes is given by \\(60,000+\\int_{0}^{25}(2000-R(t)) d t\\).\n\\end{itemize}\n\n4 : \\(\\left\\{\\begin{array}{l}1: \\frac{d V}{d t}=2000 \\text { and } \\frac{d r}{d t}=2.5 \\\\ 2: \\text { expression for } \\frac{d V}{d t} \\\\ 1: \\text { answer }\\end{array}\\right.\\)\n\\(3:\\left\\{\\begin{array}{l}1: R(t)=2000 \\\\ 1: \\text { answer } \\\\ 1: \\text { justification }\\end{array}\\right.\\)\n\\(2:\\left\\{\\begin{array}{l}1 \\text { : limits and initial condition } \\\\ 1: \\text { integrand }\\end{array}\\right.\\)",
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 4,
+        "rect": [
+          40,
+          64,
+          572,
+          442
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 4,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          69.408,
+          527.04,
+          81.79199999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          81.79199999999999,
+          533.952,
+          94.17599999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          94.17599999999999,
+          533.376,
+          106.55999999999999
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 6,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          108.288,
+          271.008,
+          123.264
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          129.31199999999998,
+          565.0559999999999,
+          141.696
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          141.11999999999998,
+          565.0559999999999,
+          154.07999999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          154.07999999999998,
+          349.056,
+          166.464
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          65.088,
+          171.93599999999998,
+          523.0079999999999,
+          184.32
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 13,
+        "type": "text",
+        "rect": [
+          84.09599999999999,
+          184.32,
+          562.4639999999999,
+          199.296
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 14,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          201.02399999999997,
+          544.0319999999999,
+          213.98399999999998
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 15,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          213.408,
+          308.15999999999997,
+          226.368
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 17,
+        "type": "text",
+        "rect": [
+          65.088,
+          232.128,
+          543.4559999999999,
+          244.51199999999997
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 18,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          243.64799999999997,
+          560.736,
+          256.032
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "line": 19,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          256.032,
+          131.328,
+          268.99199999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/tranches/tranche-25/mathpix-recovery-cache/artifacts/ap-calc-ab-2008-frq-03--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2008-frq-03",
+      "sourcePage": 4,
+      "sourceSha256Matches": true
+    }
+  ],
+  "reviewState": "unreviewed-native-draft"
+}

@@ -1,0 +1,164 @@
+{
+  "id": "ap-calc-ab-2012-frq-06",
+  "course": "AB",
+  "year": 2012,
+  "form": "standard",
+  "question": 6,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2012.pdf",
+      "sha256": "96b5f706350648988eddb0b555e6ac7c34cd55985b1424736daec3d82756c92c",
+      "pages": [
+        7
+      ]
+    },
+    "promptPages": [
+      7
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2012.pdf",
+      "sha256": "d659aeef1020a720cf3c31f4f0cc074f49f99e8c19470de1330068257a7cc2b0"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "For $0 <= t <= 12$, a particle moves along the $x$-axis. The velocity of the particle at time $t$ is given by $v(t)= cos lr((frac(pi,6) t))$. The particle is at position $x = - 2$ at time $t = 0$.\n\n(a) For $0 <= t <= 12$, when is the particle moving to the left?\n\n(b) Write, but do not evaluate, an integral expression that gives the total distance traveled by the particle from time $t = 0$ to time $t = 6$.\n\n(c) Find the acceleration of the particle at time $t$. Is the speed of the particle increasing, decreasing, or neither at time $t = 4$ ? Explain your reasoning.\n\n(d) Find the position of the particle at time $t = 4$.",
+  "assets": [],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 7,
+        "rect": [
+          40,
+          64,
+          572,
+          374
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 7,
+        "line": 3,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          68.544,
+          503.13599999999997,
+          82.08
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          65.664,
+          83.52,
+          357.69599999999997,
+          109.44
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 5,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          116.928,
+          331.2,
+          129.88799999999998
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 7,
+        "type": "text",
+        "rect": [
+          65.664,
+          137.37599999999998,
+          553.2479999999999,
+          149.76
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          149.76,
+          198.14399999999998,
+          160.992
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 10,
+        "type": "text",
+        "rect": [
+          65.664,
+          168.19199999999998,
+          563.04,
+          181.152
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          180.576,
+          250.55999999999997,
+          193.53599999999997
+        ]
+      },
+      {
+        "sourcePage": 7,
+        "line": 12,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          201.6,
+          287.13599999999997,
+          214.55999999999997
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "fa5b5d2340989ffc74c16ceb69ac055cc86ca28e59b6df137743f939c557f69a",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-29/mathpix-cache/artifacts/ap-calc-ab-2012-frq-06--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2012-frq-06",
+      "sourcePage": 7,
+      "sourceSha256Matches": true
+    }
+  ]
+}

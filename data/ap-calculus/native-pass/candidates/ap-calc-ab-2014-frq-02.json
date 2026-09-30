@@ -1,0 +1,175 @@
+{
+  "id": "ap-calc-ab-2014-frq-02",
+  "course": "AB",
+  "year": 2014,
+  "form": "standard",
+  "question": 2,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-ab/source-pdfs/AB-2014.pdf",
+      "sha256": "7c538d432a6cd5efd5bf3ac072dc1e51b8b2ac6aed865e54e78544133468f833",
+      "pages": [
+        3
+      ]
+    },
+    "promptPages": [
+      3
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-ab/source-pdfs/SG-AB-2014.pdf",
+      "sha256": "82164a9ecd1b4e6de2865108d1fb459cb9932b41e2dc328aa68dd573feed2db2"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-ab-2014-frq-02-diagram-01.png\", width: 65%)\n\nLet $R$ be the region enclosed by the graph of $f(x)= x^(4)- 2.3 x^(3)+ 4$ and the horizontal line $y = 4$, as shown in the figure above.\n\n(a) Find the volume of the solid generated when $R$ is rotated about the horizontal line $y = - 2$.\n\n(b) Region $R$ is the base of a solid. For this solid, each cross section perpendicular to the $x$-axis is an isosceles right triangle with a leg in $R$. Find the volume of the solid.\n\n(c) The vertical line $x = k$ divides $R$ into two regions with equal areas. Write, but do not solve, an equation involving integral expressions whose solution gives the value $k$.",
+  "assets": [
+    {
+      "name": "ap-calc-ab-2014-frq-02-diagram-01.png",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-ab-2014-frq-02-diagram-01.png",
+      "sourcePage": 3,
+      "sourceRect": [
+        214.72799682617188,
+        55.17599868774414,
+        397.55999755859375,
+        229.3679962158203
+      ],
+      "origin": "original-pdf-diagram-region"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 3,
+        "rect": [
+          43,
+          54,
+          568,
+          381
+        ]
+      }
+    ],
+    "selectedLines": [
+      {
+        "sourcePage": 3,
+        "line": 2,
+        "type": "chart",
+        "rect": [
+          217.72799999999998,
+          58.175999999999995,
+          394.55999999999995,
+          226.368
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 4,
+        "type": "text",
+        "rect": [
+          50.111999999999995,
+          238.176,
+          564.192,
+          253.72799999999998
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 5,
+        "type": "text",
+        "rect": [
+          64.22399999999999,
+          256.032,
+          140.256,
+          268.416
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 6,
+        "type": "list_item",
+        "rect": [
+          65.664,
+          274.176,
+          487.008,
+          287.13599999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 8,
+        "type": "text",
+        "rect": [
+          65.664,
+          295.2,
+          555.8399999999999,
+          308.15999999999997
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 9,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          307.584,
+          344.15999999999997,
+          320.544
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 11,
+        "type": "text",
+        "rect": [
+          65.664,
+          326.01599999999996,
+          548.352,
+          338.976
+        ]
+      },
+      {
+        "sourcePage": 3,
+        "line": 12,
+        "type": "text",
+        "rect": [
+          82.94399999999999,
+          338.976,
+          367.488,
+          351.35999999999996
+        ]
+      }
+    ],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "3a4ae364cd90d36538f82c0c4186aeeb80e7746735f2c90be48fc3ddd8529035",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "source-crop-filtered-mathpix-lines",
+      "path": "data/ap-calculus/fresh-tranches/tranche-30/mathpix-cache/artifacts/ap-calc-ab-2014-frq-02--prompt/lines_json",
+      "cachedQuestionId": "ap-calc-ab-2014-frq-02",
+      "sourcePage": 3,
+      "sourceSha256Matches": true
+    }
+  ]
+}

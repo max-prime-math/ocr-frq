@@ -1,0 +1,23 @@
+{
+  "question": {
+    "body": "#image(\"/imgs/ap-calc-bc-2019-frq-06-diagram-01.png\", width: 65%)\n\n#table(stroke: none, columns: 2, align: (center, center, ), table.vline(stroke: .5pt, x: 0), table.vline(stroke: .5pt, x: 1), table.vline(stroke: .5pt, x: 2), table.hline(stroke: .5pt), [$n$], [$f^((n))(0)$], table.hline(stroke: .5pt), [2], [3], table.hline(stroke: .5pt), [3], [$- frac(23,2)$], table.hline(stroke: .5pt), [4], [54], table.hline(stroke: .5pt));\n\nA function $f$ has derivatives of all orders for all real numbers $x$. A portion of the graph of $f$ is shown above, along with the line tangent to the graph of $f$ at $x = 0$. Selected derivatives of $f$ at $x = 0$ are given in the table above.\n\n(a) Write the third-degree Taylor polynomial for $f$ about $x = 0$.\n\n(b) Write the first three nonzero terms of the Maclaurin series for $e^(x)$. Write the second-degree Taylor polynomial for $e^(x) f(x)$ about $x = 0$.\n\n(c) Let $h$ be the function defined by $h(x)= integral_(0)^(x) f(t) d t$. Use the Taylor polynomial found in part (a) to find an approximation for $h(1)$.\n\n(d) It is known that the Maclaurin series for $h$ converges to $h(x)$ for all real numbers $x$. It is also known that the individual terms of the series for $h(1)$ alternate in sign and decrease in absolute value to 0. Use the alternating series error bound to show that the approximation found in part (c) differs from $h(1)$ by at most 0.45.",
+    "classId": "ap-calculus-bc",
+    "createdAt": 1789342711344,
+    "id": "ap-calc-bc-2019-frq-06",
+    "images": [
+      "ap-calc-bc-2019-frq-06-diagram-01.png"
+    ],
+    "points": 9,
+    "questionType": "frq",
+    "sectionId": "ap-topic-10-14",
+    "solution": "Solution pending review. This first-draft question does not yet include a verified classroom solution.",
+    "tags": [
+      "2019",
+      "Part B",
+      "No Calculator"
+    ],
+    "unitId": "ap-unit-10",
+    "updatedAt": 1790811342795
+  },
+  "version": 1
+}

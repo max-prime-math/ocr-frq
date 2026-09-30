@@ -1,0 +1,79 @@
+{
+  "id": "ap-calc-bc-2006-form-b-frq-04",
+  "course": "BC",
+  "year": 2006,
+  "form": "B",
+  "question": 4,
+  "source": {
+    "prompt": {
+      "path": "data/ap-calculus-bc/source-pdfs/BC-2006-FORM-B.pdf",
+      "sha256": "e5cdf99726e341e968170e978236f09ad82b428fbe5e2f8f36cddc8042c6ce47",
+      "pages": [
+        5
+      ]
+    },
+    "promptPages": [
+      5
+    ],
+    "scoringGuide": {
+      "path": "data/ap-calculus-bc/source-pdfs/SG-BC-2006-FORM-B.pdf",
+      "sha256": "915be6b4b58409e3fc11c0d10c3313744fffe0cb2925498f8a98d57e7633739b"
+    }
+  },
+  "schemaVersion": 1,
+  "bodyTypst": "#image(\"/imgs/ap-calc-bc-2006-form-b-frq-04-diagram-01.jpg\", width: 65%)\n\nThe rate, in calories per minute, at which a person using an exercise machine burns calories is modeled by the function $f$. In the figure above, $f(t)= - frac(1,4) t^(3)+ frac(3,2) t^(2)+ 1$ for $0 <= t <= 4$ and $f$ is piecewise linear for $4 <= t <= 24$.\n\n(a) Find $f'(22)$. Indicate units of measure.\n\n(b) For the time interval $0 <= t <= 24$, at what time $t$ is $f$ increasing at its greatest rate? Show the reasoning that supports your answer.\n\n(c) Find the total number of calories burned over the time interval $6 <= t <= 18$ minutes.\n\n(d) The setting on the machine is now changed so that the person burns $f(t)+ c$ calories per minute. For this setting, find $c$ so that an average of 15 calories per minute is burned during the time interval $6 <= t <= 18$.",
+  "assets": [
+    {
+      "name": "ap-calc-bc-2006-form-b-frq-04-diagram-01.jpg",
+      "path": "data/ap-calculus/native-pass/intermediate/assets/ap-calc-bc-2006-form-b-frq-04-diagram-01.jpg",
+      "origin": "retained-mathpix-tex-zip",
+      "originalReference": "figures/bc-2006-form-b_fig3.jpg"
+    }
+  ],
+  "compile": {
+    "body": true,
+    "errors": {
+      "body": null
+    }
+  },
+  "sourceChecks": {
+    "expectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "detectedSubparts": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "missingSubparts": [],
+    "sourceCrops": [
+      {
+        "page": 5,
+        "rect": [
+          40,
+          66,
+          572,
+          542
+        ]
+      }
+    ],
+    "selectedLines": [],
+    "allImageReferencesResolved": true,
+    "mathematicalAccuracyReviewed": false
+  },
+  "issues": [],
+  "quality": "native-draft",
+  "reviewState": "unreviewed",
+  "sourceRecordSha256": "4ede6d40c76f9be31457f0621ce8e28cee09c18cb0feab9fbe82e4d6e9a21dcb",
+  "converterSha256": "272eff864a6d70486ce2e289ce687721abdf98c2d49f1f82eaeb90ca8560908c",
+  "ocrEvidence": [
+    {
+      "type": "retained-mathpix-tex-zip-resegmented",
+      "path": "data/ap-calculus-bc/mathpix-zips/BC-2006-FORM-B.zip"
+    }
+  ]
+}
